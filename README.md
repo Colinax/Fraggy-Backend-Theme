@@ -1,8 +1,8 @@
 # Fraggy Backend Theme
 Mobile-responsive backend theme for WBCE
 
- * Author: Jonathan Nessier - Neoflow
- * License: GNU General Public License (GPLv3)
+ * Jonathan Nessier - Neoflow
+ * GNU General Public License (GPLv3)
 
 # Changelog
 
