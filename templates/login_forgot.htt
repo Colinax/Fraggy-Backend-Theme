@@ -1,0 +1,132 @@
+<!-- BEGIN main_block -->
+<!DOCTYPE html>
+<html lang="{LANGUAGE}">
+    <head>
+        <title>{SECTION_FORGOT}</title>
+
+        <!-- Meta data -->
+        <meta charset="{CHARSET}">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="{SECTION_FORGOT}" />
+        <meta name="keywords" content="{SECTION_FORGOT}" />
+        <meta name="author" content="Jonathan Nessier, Neoflow" />
+
+        <!-- Vendor CSS -->
+        <link href="{THEME_URL}/vendor/bootstrap/css/bootstrap.css?v1.0-beta1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/vendor/select2/css/select2.min.css?v1.0-beta1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/vendor/select2/css/select2-bootstrap.css?v1.0-beta1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css?v1.0-beta1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/vendor/font-awesome-4.5/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Theme CSS -->
+        <link href="{THEME_URL}/css/theme.css?v1.0-beta1" rel="stylesheet" type="text/css" />
+
+        <!-- Vendor Fonts -->
+        <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
+
+        <!-- Initiliaze vars -->
+        <script>
+            var WB_URL = '{WB_URL}',
+                    THEME_URL = '{THEME_URL}',
+                    ADMIN_URL = '{ADMIN_URL}';
+        </script>
+
+        <!-- Vendor JavaScript -->
+        <script src="{THEME_URL}/vendor/jquery/jquery-2.2.2.min.js?v1.0-beta1"></script>
+        <script src="{THEME_URL}/vendor/bootstrap/js/bootstrap.min.js?v1.0-beta1"></script>
+        <script src="{THEME_URL}/vendor/select2/js/select2.full.min.js?v1.0-beta1"></script>
+        <script src="{THEME_URL}/vendor/moment/moment-with-locales.min.js?v1.0-beta1"></script>
+        <script src="{THEME_URL}/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?v1.0-beta1"></script>
+
+        <!-- Theme JavaScript -->
+        <script src="{THEME_URL}/js/workarounds.js?v1.0-beta1"></script>
+        <script src="{THEME_URL}/js/theme.js?v1.0-beta1"></script>
+
+    </head>
+    <body>
+
+        <div id="wrapper">
+            <div id="page-wrapper-fluid">
+                <div class="page-wrapper">
+                    <div class="container">
+
+                        <div id="loginPage">
+
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-push-6 col-lg-7 col-lg-push-5">
+
+                                    <div class="brand page-brand">
+                                        <div class="hidden-xs">
+                                            <ul class="list-unstyled small">
+                                                <li>Way</li>
+                                                <li>Better</li>
+                                                <li>Content</li>
+                                                <li>Editing</li>
+                                            </ul>
+                                            <strong>Backend</strong>
+                                        </div>
+                                        <div class="visible-xs">
+                                            <i class="wbce-logo"></i> WBCE <strong>Backend</strong>
+                                        </div>
+                                    </div>
+
+                                </div><!-- /.col-sm-6.col-sm-push-6.col-lg-7.col-lg-push-5 -->
+
+                                <div class="col-sm-6 col-sm-pull-6 col-lg-5 col-lg-pull-7">
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">{SECTION_FORGOT}</h3>
+                                        </div>
+                                        <div class="panel-body">
+
+                                            <p>{MESSAGE}</p>
+
+                                            <form name="forgot_pass" action="{ACTION_URL}" method="post" style="{DISPLAY_FORM}">
+                                                <input type="hidden" name="url" value="{URL}" />
+
+                                                <div class="form-group">
+                                                    <label for="inputEmail">{TEXT_EMAIL}</label>
+                                                    <input type="text" maxlength="255" name="email" value="{EMAIL}" id="inputEmail" />
+                                                </div>
+
+                                                <button type="submit" class="btn btn-primary">{TEXT_SEND_DETAILS}</button>
+
+                                            </form>
+
+                                            <hr />
+
+                                            <ul class="list-unstyled">
+                                                <li><a href="{LOGIN_URL}">{TEXT_NEED_TO_LOGIN}</a></li>
+                                            </ul>
+
+                                        </div><!-- /.panel-body -->
+                                    </div><!-- /.panel.panel-default -->
+
+                                    <p class="page-license">
+                                        <!-- Please note: the below reference to the GNU GPL should not be removed, as it provides a link for users to read about warranty, etc. -->
+                                        <a href="http://www.wbce.org/" title="Way Better Content Editing" target="_blank">WBCE</a> is released under the
+                                        <a href="http://www.gnu.org/licenses/gpl.html" title="Released under the GNU General Public License" target="_blank">GNU General Public License</a>.
+                                        <!-- Please note: the above reference to the GNU GPL should not be removed, as it provides a link for users to read about warranty, etc. -->
+                                    </p>
+                                    <p class="page-license">
+                                        <!-- Please note: be fair and do not removed the link to the creator of the template -->
+                                        Template created by <a href="https://www.neoflow.ch" title="Template by Neoflow" target="_blank">Neoflow</a>.
+                                        <!-- Please note: be fair and do not removed the link to the creator of the template -->
+                                    </p>
+
+
+                                </div><!-- /.col-sm-6.col-sm-pull-6.col-lg-5.col-lg-pull-7 -->
+                            </div><!-- /.row -->
+
+                        </div><!-- /#loginPage -->
+
+                    </div><!-- /.container -->
+                </div><!-- /.page-wrapper -->
+            </div><!-- /#page-wrapper-fluid -->
+        </div><!-- /#wrapper -->
+    </body>
+</html>
+<!-- END main_block -->

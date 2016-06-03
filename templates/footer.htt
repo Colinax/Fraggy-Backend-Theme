@@ -1,0 +1,13 @@
+<!-- BEGIN footer_block -->
+</div>
+</div>
+</div><!-- /.container-fluid -->
+</div><!-- /.page-wrapper -->
+</div><!-- /#page-wrapper-sidebar -->
+</div><!-- /#wrapper -->
+
+{BACKEND_BODY_MODULE_JS}
+
+</body>
+</html>
+<!-- END footer_block -->

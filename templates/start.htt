@@ -1,0 +1,148 @@
+<!-- BEGIN main_block -->
+<div id="startPage">
+    <div class="alert alert-danger" style="{DISPLAY_WARNING}">
+        {WARNING}
+    </div>
+
+    <div class="panel panel-secondary">
+        <div class="panel-heading">
+            <h3 class="panel-title">{WELCOME_MESSAGE}</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-lg-4" style="{DISPLAY_PAGES}">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-4 col-lg-3">
+                            <i class="fa fa-fw fa-5x fa-files-o"></i>
+                        </div>
+                        <div class="col-xs-8 col-lg-9 text-right">
+                            <div class="">{PAGES_OVERVIEW}</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{ADMIN_URL}/pages/index.php">
+                    <div class="panel-footer">
+                        <span class="pull-left">{PAGES}</span>
+                        <span class="pull-right"><i class="fa fa-fw fa-chevron-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div><!-- /.panel.panel-primary -->
+        </div><!-- /.col-md-6.col-lg-4 -->
+
+        <div class="col-md-6 col-lg-4" style="{DISPLAY_MEDIA}">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-4 col-lg-3">
+                            <i class="fa fa-fw fa-5x fa-picture-o"></i>
+                        </div>
+                        <div class="col-xs-8 col-lg-9 text-right">
+                            <div class="">{MEDIA_OVERVIEW}</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{ADMIN_URL}/media/index.php">
+                    <div class="panel-footer">
+                        <span class="pull-left">{MEDIA}</span>
+                        <span class="pull-right"><i class="fa fa-fw fa-chevron-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div><!-- /.panel.panel-primary -->
+        </div><!-- /.col-md-6.col-lg-4 -->
+
+        <div class="col-md-6 col-lg-4" style="{DISPLAY_ADDONS}">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <i class="fa fa-fw fa-5x fa-th"></i>
+                        </div>
+                        <div class="col-xs-7 text-right">
+                            <div>{ADDONS_OVERVIEW}</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{ADMIN_URL}/addons/index.php">
+                    <div class="panel-footer">
+                        <span class="pull-left">{ADDONS}</span>
+                        <span class="pull-right"><i class="fa fa-fw fa-chevron-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div><!-- /.panel.panel-primary -->
+        </div><!-- /.col-md-6.col-lg-4 -->
+
+        <div class="col-md-6 col-lg-4" style="{DISPLAY_SETTINGS}">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <i class="fa fa-fw fa-5x fa-cogs"></i>
+                        </div>
+                        <div class="col-xs-7 text-right">
+                            <div>{SETTINGS_OVERVIEW}</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{ADMIN_URL}/settings/index.php">
+                    <div class="panel-footer">
+                        <span class="pull-left">{SETTINGS}</span>
+                        <span class="pull-right"><i class="fa fa-fw fa-chevron-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div><!-- /.panel.panel-primary -->
+        </div><!-- /.col-md-6.col-lg-4 -->
+
+        <div class="col-md-6 col-lg-4" style="{DISPLAY_ADMINTOOLS}">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <i class="fa fa-fw fa-5x fa-cubes"></i>
+                        </div>
+                        <div class="col-xs-7 text-right">
+                            <div>{ADMINTOOLS_OVERVIEW}</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{ADMIN_URL}/admintools/index.php">
+                    <div class="panel-footer">
+                        <span class="pull-left">{ADMINTOOLS}</span>
+                        <span class="pull-right"><i class="fa fa-fw fa-chevron-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div><!-- /.panel.panel-primary -->
+        </div><!-- /.col-md-6.col-lg-4 -->
+
+        <div class="col-md-6 col-lg-4" style="{DISPLAY_ACCESS}">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <i class="fa fa-fw fa-5x fa-users"></i>
+                        </div>
+                        <div class="col-xs-7 text-right">
+                            <div>{ACCESS_OVERVIEW}</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{ADMIN_URL}/access/index.php">
+                    <div class="panel-footer">
+                        <span class="pull-left">{ACCESS}</span>
+                        <span class="pull-right"><i class="fa fa-fw fa-chevron-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div><!-- /.panel.panel-primary -->
+
+        </div><!-- /.col-md-6.col-lg-4 -->
+    </div><!-- /.row -->
+</div><!-- /#startPage -->
+<!-- END main_block -->

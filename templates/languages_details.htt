@@ -1,0 +1,35 @@
+<!-- BEGIN main_block -->
+<div id="addonsPage">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">{HEADING_LANGUAGE_DETAILS}</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-striped">
+                <tr>
+                    <th width="150">{TEXT_NAME}</td>
+                    <td>{NAME}</td>
+                </tr>
+                <tr>
+                    <th>{TEXT_CODE}</td>
+                    <td>{CODE}</td>
+                </tr>
+                <tr>
+                    <th>{TEXT_AUTHOR}</td>
+                    <td>{AUTHOR}</td>
+                </tr>
+                <tr>
+                    <th>{TEXT_VERSION}</td>
+                    <td>{VERSION}</td>
+                </tr>
+                <tr>
+                    <th>{TEXT_DESIGNED_FOR}</td>
+                    <td>Website Baker {DESIGNED_FOR}</td>
+                </tr>
+            </table>
+            <hr />
+            <button class="btn btn-default" onclick="window.location = 'index.php';"><i class="fa fa-fw fa-chevron-left"></i> {TEXT_BACK}</button>
+        </div><!-- /.panel-body -->
+    </div><!-- /.panel.panel-default -->
+</div><!-- /#addonsPage -->
+<!-- END main_block -->

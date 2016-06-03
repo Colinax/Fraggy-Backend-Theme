@@ -1,0 +1,14 @@
+<!-- BEGIN main_block -->
+<div class="alert alert-success">
+    <p>{MESSAGE}</p>
+    <!-- BEGIN show_redirect_block -->
+    <script type="text/javascript">
+        setTimeout("location.href='{REDIRECT}'", {REDIRECT_TIMER});
+    </script>
+    <!-- END show_redirect_block -->
+    <hr />
+    <a href="{REDIRECT}" >
+        <input type="button" name="submit" class="btn btn-success" value="{BACK}" />
+    </a>
+</div>
+<!-- END main_block -->

@@ -1,0 +1,59 @@
+<!-- BEGIN main_block -->
+<div id="pagesPage">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <i class="fa fa-fw fa-bars"></i>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="{ADMIN_URL}/pages/settings.php?page_id={PAGE_IDKEY}"><i class="fa fa-fw fa-cog"></i> {TEXT_CHANGE_SETTINGS}</a>
+                </li>
+                <!-- BEGIN show_section_block -->
+                <li>
+                    <a href="{ADMIN_URL}/pages/sections.php?page_id={PAGE_IDKEY}" style="{DISPLAY_MANAGE_SECTIONS}"><i class="fa fa-fw fa-list-alt"></i> {TEXT_MANAGE_SECTIONS}</a>
+                </li>
+                <!-- END show_section_block -->
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="pageModifyPanel" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                {HEADING_MODIFY_PAGE}
+            </h3>
+        </div>
+        <div class="panel-body">
+            <h4>{TEXT_CURRENT_PAGE}: {PAGE_TITLE}</h4>
+            <ul class="list-inline text-muted {CLASS_DISPLAY_MODIFIED}">
+                <!-- BEGIN show_modify_block -->
+                <li>{LAST_MODIFIED} {MODIFIED_BY} ({MODIFIED_BY_USERNAME})</li>
+                <li>{MODIFIED_WHEN}</li>
+                <li>ID: {PAGE_ID}</li>
+                <!-- END show_modify_block -->
+            </ul>
+        </div><!-- /.panel-body -->
+    </div><!-- /.panel.panel-default -->
+
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        var $pagesPage = $('#pagesPage'),
+                $pageModifyPanel = $pagesPage.find('#pageModifyPanel');
+
+        $pageModifyPanel
+                .find('.panel-body')
+                .append($pagesPage.parent().contents().filter(function () {
+                    return $(this).index() !== 0 && $(this).index() !== 1;
+                }))
+                .find('.section-info')
+                .prepend('<hr />');
+    });
+</script>
+<!-- END main_block -->

@@ -1,0 +1,193 @@
+<!-- BEGIN main_block -->
+<div id="addonsPage">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <i class="fa fa-fw fa-bars"></i>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <!--<li class="active">
+                    <a href="#">{HEADING_INSTALL_MODULE}</a>
+                </li>-->
+                <li>
+                    {URL_TEMPLATES}
+                </li>
+                <li>
+                    {URL_LANGUAGES}
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="panel panel-default {DISPLAY_INSTALL}">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        {HEADING_INSTALL_MODULE}
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <form name="install" enctype="multipart/form-data" action="install.php" method="post">
+                        {FTAN}
+                        <div class="form-group">
+                            <input type="file" name="userfile" class="form-control" />
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="overwrite" value="false" /> {OVERWRITE_NEWER_FILES}
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit" name="submit">
+                                <i class="fa fa-fw fa-plus"></i> {TEXT_INSTALL}
+                            </button>
+                        </div>
+                    </form>
+                </div><!-- /.panel-body -->
+            </div><!-- /.panel.panel-default -->
+
+            <div class="panel panel-default"  class="{DISPLAY_UNINSTALL}">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        {HEADING_UNINSTALL_MODULE}
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <form name="uninstall" action="uninstall.php" method="post">
+                        {FTAN}
+                        <div class="form-group">
+                            <select name="file" class="form-control">
+                                <option value="" selected="selected">{TEXT_PLEASE_SELECT}...</option>
+                                <!-- BEGIN module_list_block -->
+                                <option value="{VALUE}">{NAME}</option>
+                                <!-- END module_list_block -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit" name="submit">
+                                <i class="fa fa-fw fa-times"></i> {TEXT_UNINSTALL}
+                            </button>
+                        </div>
+                    </form>
+                </div><!-- /.panel-body -->
+            </div><!-- /.panel.panel-default -->
+
+            <div class="panel panel-default {DISPLAY_LIST}">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        {HEADING_MODULE_DETAILS}
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <form name="details" action="details.php" method="post">
+                        {FTAN}
+                        <div class="form-group">
+                            <select name="file">
+                                <option value="" selected="selected">{TEXT_PLEASE_SELECT}...</option>
+                                <!-- BEGIN module_list_block -->
+                                <option value="{VALUE}">{NAME}</option>
+                                <!-- END module_list_block -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit" name="submit">
+                                <i class="fa fa-fw fa-info"></i> {TEXT_VIEW_DETAILS}
+                            </button>
+                        </div>
+                    </form>
+                </div><!-- /.panel-body -->
+            </div><!-- /.panel.panel-default -->
+        </div><!-- /.col-lg-6 -->
+
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        {HEADING_INVOKE_MODULE_FILES}
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <p>{TEXT_MANUAL_INSTALLATION}</p>
+
+                    <form name="manual_install" action="manual_install.php" method="post" class="{INSTALL_VISIBLE} form-horizontal">
+                        {FTAN}
+                        <input type="hidden" name="action" value="install" />
+                        <div class="form-group">
+                            <label for="selectManualInstallModule" class="col-sm-3 control-label">{TEXT_FILE}: "install.php"</label>
+                            <div class="col-sm-9">
+                                <select name="file" id="selectManualInstallModule" class="form-control">
+                                    <option value="" selected="selected" id="selectManualUpgradeModule">{TEXT_PLEASE_SELECT}...</option>
+                                    <!-- BEGIN install_list_block -->
+                                    <option value="{VALUE}">{NAME}</option>
+                                    <!-- END install_list_block -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button class="btn btn-primary" type="submit" name="submit">
+                                    <i class="fa fa-fw fa-cog"></i> {TEXT_EXECUTE}
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <hr />
+
+                    <form name="manual_upgrade" action="manual_install.php" method="post" class="{UPGRADE_VISIBLE} form-horizontal">
+                        {FTAN}
+                        <input type="hidden" name="action" value="install" />
+                        <div class="form-group">
+                            <label for="selectManualUpgradeModule" class="col-sm-3 control-label">{TEXT_FILE}: "upgrade.php"</label>
+                            <div class="col-sm-9">
+                                <select name="file" id="selectManualUpgradeModule" class="form-control">
+                                    <option value="" selected="selected" id="selectManualUpgradeModule">{TEXT_PLEASE_SELECT}...</option>
+                                    <!-- BEGIN install_list_block -->
+                                    <option value="{VALUE}">{NAME}</option>
+                                    <!-- END install_list_block -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button class="btn btn-primary" type="submit" name="submit">
+                                    <i class="fa fa-fw fa-cog"></i> {TEXT_EXECUTE}
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <hr />
+
+                    <form name="manual_uninstall" action="manual_install.php" method="post" class="{UNINSTALL_VISIBLE} form-horizontal">
+                        {FTAN}
+                        <input type="hidden" name="action" value="install" />
+                        <div class="form-group">
+                            <label for="selectManualUninstallModule" class="col-sm-3 control-label">{TEXT_FILE}: "uninstall.php"</label>
+                            <div class="col-sm-9">
+                                <select name="file" id="selectManualUninstallModule" class="form-control">
+                                    <option value="" selected="selected" id="selectManualUpgradeModule">{TEXT_PLEASE_SELECT}...</option>
+                                    <!-- BEGIN install_list_block -->
+                                    <option value="{VALUE}">{NAME}</option>
+                                    <!-- END install_list_block -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button class="btn btn-primary" type="submit" name="submit">
+                                    <i class="fa fa-fw fa-cog"></i> {TEXT_EXECUTE}
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="text-warning">{TEXT_MANUAL_INSTALLATION_WARNING}</p>
+                </div><!-- /.panel-body -->
+            </div><!-- /.panel.panel-default -->
+        </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+</div><!-- /#addonsPage -->
+<!-- END main_block -->

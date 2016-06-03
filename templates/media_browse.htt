@@ -1,0 +1,118 @@
+<!-- BEGIN main_block -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Browse media</title>
+
+        <!-- Meta data -->
+        <meta charset="{CHARSET}">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="Browse Media" />
+        <meta name="keywords" content="Browse Media" />
+        <meta name="author" content="Jonathan Nessier, Neoflow" />
+
+        <!-- Vendor CSS -->
+        <link href="{THEME_URL}/vendor/bootstrap/css/bootstrap.css?v1.0-beta1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/vendor/select2/css/select2.min.css?v1.0-beta1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/vendor/select2/css/select2-bootstrap.css?v1.0-beta1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css?v1.0-beta1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/vendor/font-awesome-4.5/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Theme CSS -->
+        <link href="{THEME_URL}/css/theme.css?v1.0-beta1" rel="stylesheet" type="text/css" />
+
+        <!-- Vendor Fonts -->
+        <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
+
+        <!-- Custom CSS -->
+        <style type="text/css">
+            body {
+                min-height: auto;
+                background: #fff;
+            }
+
+            .table {
+                margin: 0;
+            }
+
+            .alert {
+                margin: 20px;
+                text-align: center;
+            }
+        </style>
+
+        <!-- Initiliaze vars -->
+        <script>
+            var WB_URL = '{WB_URL}',
+                    THEME_URL = '{THEME_URL}',
+                    ADMIN_URL = '{ADMIN_URL}';
+        </script>
+
+        <!-- Vendor JavaScript -->
+        <script src="{THEME_URL}/vendor/jquery/jquery-2.2.2.min.js?v1.0-beta1"></script>
+        <script src="{THEME_URL}/vendor/bootstrap/js/bootstrap.min.js?v1.0-beta1"></script>
+        <script src="{THEME_URL}/vendor/select2/js/select2.full.min.js?v1.0-beta1"></script>
+        <script src="{THEME_URL}/vendor/moment/moment-with-locales.min.js?v1.0-beta1"></script>
+        <script src="{THEME_URL}/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?v1.0-beta1"></script>
+
+        <!-- Theme JavaScript -->
+        <script src="{THEME_URL}/js/workarounds.js?v1.0-beta1"></script>
+        <script src="{THEME_URL}/js/theme.js?v1.0-beta1"></script>
+
+        <!-- Custom JavaScript -->
+        <script>
+            $(document).ready(function () {
+                $('#uploadTargetSelect, #createTargetSelect', parent.document.body)
+                        .val('{MEDIA_DIRECTORY}{CURRENT_DIR}')
+                        .trigger('change');
+
+                $('a.icon:not([href^="browse.php"])').hide();
+            });
+        </script>
+
+    </head>
+    <body>
+        <table class="table table-striped" class="{DISPLAY_LIST_TABLE}">
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <a href="{PARENT_DIR_LINK}" class="{DISPLAY_UP_ARROW}">
+                            <i class="fa fa-fw fa-level-up"></i> {TEXT_UP}
+                        </a>
+                    </th>
+                    <th colspan="3" class="text-right">
+                        <span>{TEXT_CURRENT_FOLDER}: {MEDIA_DIRECTORY}{CURRENT_DIR}</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- BEGIN list_block -->
+                <tr>
+                    <td width="40">
+                        <a class="icon" href="{LINK}" target="{LINK_TARGET}">
+                            <img src="{FT_ICON}" border="0" height="16" width="16" />
+                        </a>
+                    </td>
+                    <td>
+                        <a href="{LINK}" target="{LINK_TARGET}">{NAME}</a>
+                    </td>
+                    <td>
+                        <small>{IMAGEDETAIL}</small>
+                    </td>
+                    <td>
+                        <small>{DATE}</small>
+                    </td>
+                    <td class="{DISPLAY_RENAME} text-right">
+                        <a href="rename.php?dir={CURRENT_DIR}&amp;id={TEMP_ID}" title="{TEXT_RENAME}"><i class="fa fa-fw fa-pencil"></i></a>
+                        <a href="javascript:confirm_link('{CONFIRM_DELETE}\n {NAME_SLASHED}', 'delete.php?dir={CURRENT_DIR}&amp;id={TEMP_ID}');" title="{TEXT_DELETE}"><i class="fa fa-fw fa-trash"></i></a>
+                    </td>
+                </tr>
+                <!-- END list_block -->
+            </tbody>
+        </table>
+        <p class="{DISPLAY_NONE_FOUND} alert text-muted">{NONE_FOUND}</p>
+    </body>
+</html>
+<!-- END main_block -->

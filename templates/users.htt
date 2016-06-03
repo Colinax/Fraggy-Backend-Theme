@@ -1,0 +1,79 @@
+<!-- BEGIN main_block -->
+<div id="accessPage">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <i class="fa fa-fw fa-bars"></i>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <!-- BEGIN manage_groups_block -->
+                <li>
+                    <a href="{ADMIN_URL}/groups/index.php"><i class="fa fa-fw fa-users"></i> {TEXT_MANAGE_GROUPS}</a>
+                </li>
+                <!-- END manage_groups_block -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-lg-6">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{HEADING_MODIFY_DELETE_USER}</h3>
+                </div>
+                <div class="panel-body">
+
+                    <form name="users" action="users.php" method="post">
+                        <input type="hidden" name="userstatus" value="{USER_STATUS}" />
+                        {FTAN}
+
+                        <div class="form-group">
+                            <select name="user_id" class="form-control">
+                                <!-- BEGIN list_block -->
+                                <option value="{VALUE}" {STATUS}>{NAME}</option>
+                                <!-- END list_block -->
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" name="modify" class="btn btn-primary {DISPLAY_MODIFY}"><i class="fa fa-fw fa-pencil"></i> {TEXT_MODIFY}</button>
+                            <button type="submit" name="delete" class="btn btn-primary {DISPLAY_DELETE}" onclick="return confirm('{CONFIRM_DELETE}');"><i class="fa fa-fw fa-trash"></i> {TEXT_MODIFY}</button>
+                        </div>
+                        <hr />
+                        <a href="index.php?status={USER_STATUS}" title="{TEXT_USERS}">{USERTYPE}</a>
+                    </form>
+
+                </div><!-- /.panel-body -->
+            </div><!-- /.panel.panel-default -->
+
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+
+        </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+</div><!-- /#accessPage -->
+
+<!-- Custom Javascript -->
+<script>
+
+    // Output fixes
+    $(document).ready(function () {
+        var $row = $('#accessPage').nextAll('.row'),
+                $panel = $row.find('.panel');
+
+        $row.hide();
+
+        $panel.find('.panel-title').html('{HEADING_ADD_USER}');
+        $panel.find('.cancel-btn').hide();
+        $panel.find('.submit-btn i').removeClass('fa-floppy-o').addClass('fa-plus');
+
+        $('#accessPage .row .col-lg-6:last').append($panel);
+
+        $(window).trigger('resize');
+    });
+
+</script>
+<!-- END main_block -->

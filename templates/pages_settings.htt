@@ -1,0 +1,232 @@
+<!-- BEGIN main_block -->
+<div id="pagesPage">
+
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <i class="fa fa-fw fa-bars"></i>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="{ADMIN_URL}/pages/modify.php?page_id={PAGE_IDKEY}"><i class="fa fa-fw fa-pencil"></i> {TEXT_MODIFY_PAGE}</a>
+                </li>
+                <!-- BEGIN show_section_block -->
+                <li style="{DISPLAY_MANAGE_SECTIONS}">
+                    <a href="{ADMIN_URL}/pages/sections.php?page_id={PAGE_IDKEY}" style="{DISPLAY_MANAGE_SECTIONS}"><i class="fa fa-fw fa-list-alt"></i> {TEXT_MANAGE_SECTIONS}</a>
+                </li>
+                <!-- END show_section_block -->
+            </ul>
+        </div>
+    </nav>
+
+    <div id="pageModifyPanel" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                {HEADING_MODIFY_PAGE}
+            </h3>
+        </div>
+        <div class="panel-body">
+            <h4>{TEXT_CURRENT_PAGE}: {PAGE_TITLE}</h4>
+            <ul class="list-inline text-muted {CLASS_DISPLAY_MODIFIED}">
+                <!-- BEGIN show_modify_block -->
+                <li>{LAST_MODIFIED} {MODIFIED_BY} ({MODIFIED_BY_USERNAME})</li>
+                <li>{MODIFIED_WHEN}</li>
+                <li>ID: {PAGE_ID}</li>
+                <!-- END show_modify_block -->
+            </ul>
+
+            <hr />
+
+            <form name="settings" action="settings2.php" method="post" class="form-horizontal">
+
+                <input type="hidden" name="page_id" value="{PAGE_ID}" />
+                {FTAN}
+
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        <div class="form-group">
+                            <label for="inputPageTitle" class="col-sm-3 control-label">{TEXT_PAGE_TITLE}</label>
+                            <div class="col-sm-9">
+                                <input value="{PAGE_TITLE}" type="text" name="page_title" id="inputPageTitle" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputMenuTitle" class="col-sm-3 control-label">{TEXT_MENU_TITLE}</label>
+                            <div class="col-sm-9">
+                                <input value="{MENU_TITLE}" type="text" name="menu_title" id="inputMenuTitle" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputFilename" class="col-sm-3 control-label">{TEXT_FILENAME}</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                    <input type="text" name="link" class="form-control" id="inputFilename" value="{LINK_VALUE}" />
+                                    <div class="input-group-addon">{PAGE_EXTENSION}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="selectParent" class="col-sm-3 control-label">{TEXT_PARENT}</label>
+                            <div class="col-sm-9">
+                                <select name="parent" id="selectParent" class="form-controll">
+                                    <!-- BEGIN page_list_block2 -->
+                                    <option value="{ID}" {SELECTED}>{TITLE}</option>
+                                    <!-- END page_list_block2 -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="textareaDescription" class="col-sm-3 control-label">{TEXT_DESCRIPTION}</label>
+                            <div class="col-sm-9">
+                                <textarea id="textareaDescription" name="description" rows="2" class="form-control vresize">{DESCRIPTION}</textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="textareaKeywords" class="col-sm-3 control-label">{TEXT_KEYWORDS}</label>
+                            <div class="col-sm-9">
+                                <textarea id="textareaKeywords" name="keywords" rows="2" class="form-control vresize">{KEYWORDS}</textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group" style="{DISPLAY_LANGUAGE_LIST}">
+                            <label for="selectLanguage" class="col-sm-3 control-label">{TEXT_LANGUAGE}</label>
+                            <div class="col-sm-9">
+                                <select name="language" id="selectLanguage">
+                                    <!-- BEGIN language_list_block -->
+                                    <option value="{VALUE}"{SELECTED} style="background: {FLAG_LANG_ICONS} no-repeat center left; padding-left: 20px;">{NAME}</option>
+                                    <!-- END language_list_block -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group visible-lg">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" name="save" class="btn btn-primary"><i class="fa fa-fw fa-floppy-o"></i> {TEXT_SAVE} {SECTION_SETTINGS}</button>
+                            </div>
+                        </div>
+
+
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+
+                        <div class="form-group">
+                            <label for="selectTarget" class="col-sm-3 control-label">{TEXT_TARGET}</label>
+                            <div class="col-sm-9">
+                                <select name="target" id="selectTarget">
+                                    <option value="_blank"{BLANK_SELECTED}>{TEXT_NEW_WINDOW}</option>
+                                    <option value="_self"{SELF_SELECTED}>{TEXT_SAME_WINDOW}</option>
+                                    <option value="_top"{TOP_SELECTED}>{TEXT_TOP_FRAME}</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="selectTemplate" class="col-sm-3 control-label">{TEXT_TEMPLATE}</label>
+                            <div class="col-sm-9">
+                                <select name="template" id="selectTemplate">
+                                    <option value="">{TEXT_SYSTEM_DEFAULT}</option>
+                                    <option value="">----------------------</option>
+                                    <!-- BEGIN template_list_block -->
+                                    <option value="{VALUE}"{SELECTED}>{NAME}</option>
+                                    <!-- END template_list_block -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group" style="{DISPLAY_MENU_LIST}">
+                            <label for="selectMenu" class="col-sm-3 control-label">{TEXT_MENU}</label>
+                            <div class="col-sm-9">
+                                <select name="menu" id="selectMenu">
+                                    <!-- BEGIN menu_list_block -->
+                                    <option value="{VALUE}"{SELECTED}>{NAME}</option>
+                                    <!-- END menu_list_block -->
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="selectSearch" class="col-sm-3 control-label">{TEXT_SEARCHING}</label>
+                            <div class="col-sm-9">
+                                <select id="selectSearch" name="searching">
+                                    <option value="1">{TEXT_ENABLED}</option>
+                                    <option value="0" {SEARCHING_DISABLED}>{TEXT_DISABLED}</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="selectVisibility" class="col-sm-3 control-label">{TEXT_VISIBILITY}</label>
+                            <div class="col-sm-9">
+                                <select name="visibility" id="selectVisibility" onchange="javascript: toggle_viewers();" class="form-control">
+                                    <option value="public"{PUBLIC_SELECTED}>{TEXT_PUBLIC}</option>
+                                    <option value="private"{PRIVATE_SELECTED}>{TEXT_PRIVATE}</option>
+                                    <option value="registered"{REGISTERED_SELECTED}>{TEXT_REGISTERED}</option>
+                                    <option value="hidden"{HIDDEN_SELECTED}>{TEXT_HIDDEN}</option>
+                                    <option value="none"{NO_VIS_SELECTED}>{TEXT_NONE}</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">{TEXT_ADMINISTRATORS}</label>
+                            <div class="col-sm-9">
+                                <!-- BEGIN group_list_block -->
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="admin_groups[]" id="admin_group_{ID}" value="{ID}" {CHECKED} {DISABLED} /> {NAME}
+                                    </label>
+                                </div>
+                                <!-- END group_list_block -->
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="allowed_viewers" style="{DISPLAY_VIEWERS}">
+                            <label class="col-sm-3 control-label">{TEXT_ALLOWED_VIEWERS}</label>
+                            <div class="col-sm-9">
+                                <!-- BEGIN group_list_block2 -->
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="viewing_groups[]" id="viewing_group_{ID}" value="{ID}" {CHECKED} {DISABLED} /> {NAME}
+                                    </label>
+                                </div>
+                                <!-- END group_list_block2 -->
+                            </div>
+                        </div>
+
+                        <div class="form-group hidden-lg">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" name="submit" class="btn btn-primary"><i class="fa fa-fw fa-floppy-o"></i> {TEXT_SAVE} {SECTION_SETTINGS}</button>
+                            </div>
+                        </div>
+
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /#row -->
+
+            </form>
+
+        </div><!-- /.panel-body -->
+    </div><!-- /.panel.panel-default -->
+
+</div><!-- /#pagesPage -->
+
+
+<script>
+    function toggle_viewers() {
+        if (document.settings.visibility.value == 'private' || document.settings.visibility.value == 'registered') {
+            document.getElementById('allowed_viewers').style.display = 'block';
+        } else {
+            document.getElementById('allowed_viewers').style.display = 'none';
+        }
+    }
+</script>
+
+<!-- END main_block -->

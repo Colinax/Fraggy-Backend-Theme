@@ -1,0 +1,122 @@
+<!-- BEGIN main_block -->
+<div id="preferencesPage">
+
+    <form name="settings" action="save.php" method="post" class="form-horizontal">
+        <div class="row">
+            <div class="col-lg-6">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">{HEADING_MY_SETTINGS}</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <form name="{FORM_NAME}" id="{FORM_NAME}" action="{ACTION_URL}" method="post">
+                            {FTAN}
+
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">{TEXT_USERNAME}</label>
+                                <div class="col-sm-8">
+                                    <input value="{USERNAME}" type="text" disabled class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputDisplayName" class="col-sm-4 control-label">{TEXT_DISPLAY_NAME}</label>
+                                <div class="col-sm-8">
+                                    <input value="{DISPLAY_NAME}" id="inputDisplayName" name="display_name" type="text" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-sm-4 control-label">{TEXT_EMAIL}</label>
+                                <div class="col-sm-8">
+                                    <input value="{EMAIL}" id="inputEmail" name="email" type="email" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="selectLanguage" class="col-sm-4 control-label">{TEXT_LANGUAGE}</label>
+                                <div class="col-sm-8">
+                                    <select name="language" id="selectLanguage" class="form-control">
+                                        <!-- BEGIN language_list_block -->
+                                        <option value="{CODE}" {SELECTED}>{NAME} ({CODE})</option>
+                                        <!-- END language_list_block -->
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="selectTimezone" class="col-sm-4 control-label">{TEXT_TIMEZONE}</label>
+                                <div class="col-sm-8">
+                                    <select name="timezone" id="selectTimezone" class="form-control">
+                                        <!-- BEGIN timezone_list_block -->
+                                        <option value="{VALUE}" {SELECTED}>{NAME}</option>
+                                        <!-- END timezone_list_block -->
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="selectDateFormat" class="col-sm-4 control-label">{TEXT_DATE_FORMAT}</label>
+                                <div class="col-sm-8">
+                                    <select name="date_format" id="selectDateFormat" class="form-control">
+                                        <!-- BEGIN date_format_list_block -->
+                                        <option value="{VALUE}" {SELECTED}>{NAME}</option>
+                                        <!-- END date_format_list_block -->
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="selectTimeFormat" class="col-sm-4 control-label">{TEXT_TIME_FORMAT}</label>
+                                <div class="col-sm-8">
+                                    <select name="time_format" id="selectTimeFormat" class="form-control">
+                                        <!-- BEGIN time_format_list_block -->
+                                        <option value="{VALUE}" {SELECTED}>{NAME}</option>
+                                        <!-- END time_format_list_block -->
+                                    </select>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div class="form-group">
+                                <label for="inputPassword1" class="col-sm-4 control-label">{TEXT_NEW_PASSWORD}</label>
+                                <div class="col-sm-8">
+                                    <input type="password" id="inputPassword1" autocomplete="off" name="new_password_1" value="{EMPTY_STRING}" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputPassword2" class="col-sm-4 control-label">{TEXT_RETYPE_NEW_PASSWORD}</label>
+                                <div class="col-sm-8">
+                                    <input type="password" id="inputPassword2" autocomplete="off" name="new_password_2" value="{EMPTY_STRING}" class="form-control" />
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div class="form-group">
+                                <label for="inputCurrentPassword" class="col-sm-4 control-label">{TEXT_NEED_CURRENT_PASSWORD}</label>
+                                <div class="col-sm-8">
+                                    <input type="password" id="inputCurrentPassword" autocomplete="off" name="current_password" value="{EMPTY_STRING}" />
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-4 col-sm-8">
+                                    <button type="submit" name="save" class="btn btn-primary"><i class="fa fa-fw fa-floppy-o"></i> {TEXT_SAVE}</button>
+                                </div>
+                            </div>
+
+                    </div><!-- /.panel-body -->
+                </div><!-- /.panel.panel-default -->
+
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </form>
+
+</div><!-- /#preferencesPage -->
+<!-- END main_block -->

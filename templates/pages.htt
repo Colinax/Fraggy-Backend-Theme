@@ -1,0 +1,230 @@
+<!-- BEGIN main_block -->
+<div id="pagesPage">
+    <div class="row">
+        <div class="col-lg-8">
+
+            <div id="pageListPanel" class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{HEADING_ADD_PAGE}</h3>
+                </div>
+                <div class="panel-body">
+
+                </div><!-- /.panel-body -->
+            </div><!-- /.panel.panel-default -->
+
+        </div><!-- /.col-lg-8 -->
+        <div class="col-lg-4">
+
+            <div class="panel panel-default {DISPLAY_ADD}">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{HEADING_ADD_PAGE}</h3>
+                </div>
+                <div class="panel-body">
+
+                    <form name="add" action="add.php" method="post">
+                        {FTAN}
+
+                        <div class="form-group">
+                            <label for="inputTitle">{TEXT_TITLE}</label>
+                            <input type="text" name="title" id="inputTitle" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="selectType">{TEXT_TYPE}</label>
+                            <select id="selectType" name="type" class="form-control">
+                                <!-- BEGIN module_list_block -->
+                                <option value="{VALUE}"{SELECTED}>{NAME}</option>
+                                <!-- END module_list_block -->
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="selectParent">{TEXT_PARENT}</label>
+                            <select id="selectParent" name="parent" class="form-control">
+                                <!-- BEGIN page_list_block2 -->
+                                <option value="{ID}" {DISABLED} style="background: {FLAG_ROOT_ICON} no-repeat center left; padding-left: 20px;">{TITLE}</option>
+                                <!-- END page_list_block2 -->
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="selectVisibility">{TEXT_VISIBILITY}</label>
+                            <select id="selectVisibility" name="visibility" onchange="javascript: toggle_viewers();">
+                                <option value="public"{SELECTED}>{TEXT_PUBLIC}</option>
+                                <option value="private">{TEXT_PRIVATE}</option>
+                                <option value="registered">{TEXT_REGISTERED}</option>
+                                <option value="hidden">{TEXT_HIDDEN}</option>
+                                <option value="none">{TEXT_NONE}</option>
+                            </select>
+                        </div>
+
+
+                        <p><strong>{TEXT_ADMINISTRATORS}</strong></p>
+                        <!-- BEGIN group_list_block -->
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="admin_groups[]" id="admin_group_{ID}" value="{ID}" {CHECKED} {DISABLED} /> {NAME}
+                            </label>
+                        </div>
+                        <!-- END group_list_block -->
+
+
+                        <div id="viewers" style="display: none;">
+                            <p><strong>{TEXT_REGISTERED_VIEWERS}</strong></p>
+                            <!-- BEGIN group_list_block2 -->
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="viewing_groups[]" id="viewing_group_{ID}" value="{ID}" {CHECKED} {DISABLED} /> {NAME}
+                                </label>
+                            </div>
+                            <!-- END group_list_block2 -->
+                        </div>
+
+                        <button type="submit" name="save" class="btn btn-primary"><i class="fa fa-fw fa-plus"></i> {TEXT_ADD}</button>
+
+                    </form>
+
+                </div><!-- /.panel-body -->
+            </div><!-- /.panel.panel-default -->
+
+            <div class="panel panel-default {DISPLAY_INTRO}">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{HEADING_MODIFY_INTRO_PAGE}</h3>
+                </div>
+                <div class="panel-body">
+                    <a class="btn btn-default" href="intro.php">{INTRO_LINK}</a>
+                </div><!-- /.panel-body -->
+            </div><!-- /.panel.panel-default -->
+
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+</div><!-- /#pagesPage -->
+
+<!-- Custom Javascript -->
+<script>
+
+    // Output fixes
+    $(document).ready(function () {
+
+        var $pageList = $('.pages_list'),
+                $pageListTable = $pageList.children('table'),
+                $pageListUl = $pageList.children('ul'),
+                $pageListLegend = $pageList.children('.pages_legend'),
+                $pageListTitle = $pageList.prev(),
+                $pageListPanel = $('#pageListPanel');
+
+        $pageList.removeAttr('style').html('');
+
+        $pageListUl.find('table').addClass('table');
+        $pageListUl.addClass('list-unstyled');
+        $pageListUl.find('ul').addClass('list-unstyled').find('li').removeClass('jsadmin_drag');
+
+        $pageListUl.unbind();
+
+        $pageListUl.find('td').each(function () {
+            var $td = $(this);
+            $td.removeAttr('style');
+            if ($td.index() === 0) {
+                var $a = $td.find('a');
+
+                if ($a.find('img[src^="collapse.png"]')) {
+                    $a.addClass('expanded');
+                }
+
+                $a.html('');
+
+                $a.on('click', function () {
+                    var $this = $(this);
+                    if ($this.hasClass('expanded')) {
+                        $this.removeClass('expanded').html('<i class="fa fa-fw fa-folder-open-o"></i>');
+                    } else {
+                        $this.addClass('expanded').html('<i class="fa fa-fw fa-folder-o"></i>');
+                    }
+                }).click();
+
+            } else if ($td.index() === 1) {
+                var $b = $td.find('b');
+                $td.find('a').append($b.html());
+                $b.remove();
+                $td.after('<td></td>');
+            } else if ($td.index() === 3 || $td.index() === 4) {
+                $td.text($.trim($td.text()));
+            } else if ($td.index() === 5) {
+                $td.append($td.find('small').children());
+                $td.find('div').remove();
+            } else if ($td.index() === 6) {
+                $td.append($td.find('nobr').children());
+                $td.find('small').remove();
+            } else if ($td.index() === 10) {
+                $td.remove();
+            }
+
+
+        });
+        $pageListUl.find('li').each(function () {
+            var $li = $(this);
+            if ($li.children().length === 0) {
+                $li.hide();
+            }
+        });
+        $pageListLegend.removeAttr('style');
+        $pageListPanel.find('h3.panel-title').text($pageListTitle.text());
+        $pageList
+                .append($('<table id="pageListHeader" class="table" />')
+                        .append($('<thead />')
+                                .append($('<tr />')
+                                        .append($('<th />'))
+                                        .append($('<th />').text($.trim($pageListTable.find('td:nth-child(1)').text().replace(':', ''))))
+                                        .append($('<th />'))
+                                        .append($('<th />').text($.trim($pageListTable.find('td:nth-child(2)').text().replace(':', ''))))
+                                        .append($('<th />').text($.trim($pageListTable.find('td:nth-child(3)').text().replace(':', ''))))
+                                        .append($('<th /><th /><th /><th /><th />')))))
+                .append($pageListUl)
+                .append('<hr />')
+                .append($pageListLegend);
+
+        $pageListPanel.find('.panel-body')
+                .append($pageList);
+
+        $pageListTitle.remove();
+        $pageListTable.remove();
+
+        JsAdmin.DD.addMoveButton = function (tr, cell, op) {
+            if (op == 'down') {
+                cell++;
+            }
+            var item = JsAdmin.movable_rows[tr.id];
+            if (!JsAdmin.util.isNodeType(tr, 'tr')) {
+                var rows = tr.getElementsByTagName('tr');
+                tr = rows[0];
+            }
+
+            var html = '<a href="' + item.url + 'move_' + op + '.php' + item.params
+                    + '"><i class="fa fa-fw fa-arrow-circle-' + op
+                    + '"></i></a>';
+            tr.cells[cell].innerHTML = html;
+        };
+    });
+
+    function toggle_viewers() {
+        if (document.add.visibility.value == 'private') {
+            document.getElementById('viewers').style.display = 'block';
+        } else if (document.add.visibility.value == 'registered') {
+            document.getElementById('viewers').style.display = 'block';
+        } else {
+            document.getElementById('viewers').style.display = 'none';
+        }
+    }
+
+    function toggle_visibility(id) {
+        var $list = $('#' + id);
+        if ($list.is(':visible')) {
+            $list.hide();
+        } else {
+            $list.show();
+        }
+    }
+
+</script>
+<!-- END main_block -->

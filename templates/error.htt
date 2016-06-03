@@ -1,0 +1,9 @@
+<!-- BEGIN main_block -->
+<div class="alert alert-danger">
+    <p>{MESSAGE}</p>
+    <hr />
+    <a href="{LINK}" >
+        <input type="button" name="submit" class="btn btn-danger" value="{BACK}" />
+    </a>
+</div>
+<!-- END main_block -->

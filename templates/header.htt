@@ -1,0 +1,142 @@
+<!-- BEGIN header_block -->
+<!DOCTYPE html>
+<html lang="{LANGUAGE}">
+
+    <head>
+        <title>{WEBSITE_TITLE} - {TEXT_ADMINISTRATION} - {SECTION_NAME}</title>
+
+        <!-- Meta data -->
+        <meta charset="{CHARSET}">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="{TEXT_ADMINISTRATION}" />
+        <meta name="keywords" content="{TEXT_ADMINISTRATION}" />
+        <meta name="author" content="Jonathan Nessier, Neoflow" />
+
+        <!-- Vendor CSS -->
+        <link href="{THEME_URL}/vendor/bootstrap/css/bootstrap.css?v1.0-beta1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/vendor/select2/css/select2.min.css?v1.0-beta1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/vendor/select2/css/select2-bootstrap.css?v1.0-beta1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css?v1.0-beta1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/vendor/font-awesome-4.5/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Theme CSS -->
+        <link href="{THEME_URL}/css/theme.css?v1.0-beta1" rel="stylesheet" type="text/css" />
+
+        <!-- Vendor Fonts -->
+        <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
+
+        <!-- WebsiteBaker CSS -->
+        {BACKEND_MODULE_CSS}
+
+        <!-- Initiliaze vars -->
+        <script>
+            var WB_URL = '{WB_URL}',
+                    THEME_URL = '{THEME_URL}',
+                    ADMIN_URL = '{ADMIN_URL}';
+        </script>
+
+        <!-- Vendor JavaScript -->
+        <script src="{THEME_URL}/vendor/jquery/jquery-2.2.2.min.js?v1.0-beta1"></script>
+        <script src="{THEME_URL}/vendor/bootstrap/js/bootstrap.min.js?v1.0-beta1"></script>
+        <script src="{THEME_URL}/vendor/select2/js/select2.full.min.js?v1.0-beta1"></script>
+        <script src="{THEME_URL}/vendor/moment/moment-with-locales.min.js?v1.0-beta1"></script>
+        <script src="{THEME_URL}/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?v1.0-beta1"></script>
+
+        <!-- Theme JavaScript -->
+        <script src="{THEME_URL}/js/workarounds.js?v1.0-beta1"></script>
+        <script src="{THEME_URL}/js/theme.js?v1.0-beta1"></script>
+
+        <!-- WebsiteBaker JavaScript -->
+        <script src="{WB_URL}/include/jquery/jquery-insert.js"></script>
+        <script>
+            function confirm_link(message, url) {
+                if (confirm(message))
+                    location.href = url;
+            }
+        </script>
+        {BACKEND_MODULE_JS}
+
+    </head>
+    <body>
+
+        <div id="wrapper">
+            <div id="page-wrapper-sidebar">
+
+                <nav class="navbar navbar-top navbar-default">
+                    <div class="container-fluid">
+                        <p class="nav navbar-text brand hidden-xs">
+                            {WEBSITE_TITLE}
+                        </p>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="javascript:history.back()" title="{TITLE_BACK}"><i class="fa fa-fw fa-chevron-left"></i><span class="hidden-xs hidden-sm"> {TITLE_BACK}</span></a>
+                            </li>
+                            <li>
+                                <a href="{URL_VIEW}" target="_blank" title="{TITLE_VIEW}"><i class="fa fa-fw fa-desktop"></i><span class="hidden-sm"> {TITLE_VIEW}</span></a>
+                            </li>
+                            <li>
+                                <a href="{ADMIN_URL}/logout/" title="{TITLE_LOGOUT}">{TITLE_LOGOUT} <i class="fa fa-fw fa-sign-out"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <nav class="sidebar">
+                    <div class="sidebar-header">
+                        <a href="{ADMIN_URL}" class="sidebar-brand brand">
+                            <i class="wbce-logo"></i> WBCE <strong>Backend</strong>
+                        </a>
+                        <a href="javascript:void(0);" class="sidebar-toggle collapsed" data-toggle="collapse" data-target=".sidebar-collapse">
+                            <i class="fa fa-fw fa-bars fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="sidebar-collapse collapse">
+                        <div class="sidebar-content hidden-xs">
+                            <p>{CURRENT_USER} <strong>{DISPLAY_NAME}</strong></p>
+                        </div>
+                        <ul class="nav sidebar-nav">
+                            <li class="dashboard"><a href="{ADMIN_URL}/start/index.php" title="{TITLE_START}">{TITLE_START}</a></li>
+                            <!-- BEGIN linkBlock -->
+                            <li class="{CLASS}">
+                                <a href="{LINK}" target="{TARGET}" title="{TITLE}">{TITLE}</a>
+                            </li>
+                            <!-- END linkBlock -->
+                        </ul>
+                        <div class="sidebar-content hidden-xs">
+                            <ul class="list-unstyled">
+                                <li>WBCE Version: {WBCE_VERSION}</li>
+                                <li>Tag: {WBCE_TAG}</li>
+                                <li>Template Version: 1.0-beta1</li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-content hidden-xs">
+                            <p class="small">
+                                <!-- Please note: the below reference to the GNU GPL should not be removed, as it provides a link for users to read about warranty, etc. -->
+                                <a href="http://www.wbce.org/" title="Way Better Content Editing" target="_blank">WBCE</a> is released under the
+                                <a href="http://www.gnu.org/licenses/gpl.html" title="Released under the GNU General Public License" target="_blank">GNU General Public License</a>.
+                                <!-- Please note: the above reference to the GNU GPL should not be removed, as it provides a link for users to read about warranty, etc. -->
+                            </p>
+                            <p class="small">
+                                <!-- Please note: be fair and do not removed the link to the creator of the template -->
+                                Template created by <a href="https://www.neoflow.ch" title="Template by Neoflow" target="_blank">Neoflow</a>.
+                                <!-- Please note: be fair and do not removed the link to the creator of the template -->
+                            </p>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="page-wrapper">
+                    <div class="container-fluid">
+
+                        <div class="page-title">
+                            <h1>
+                                {SECTION_NAME}
+                            </h1>
+                        </div>
+
+                        <div><div>
+                                <!-- END header_block -->
+

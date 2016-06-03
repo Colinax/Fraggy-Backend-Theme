@@ -1,0 +1,30 @@
+<!-- BEGIN main_block -->
+<div id="admintoolsPage">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">{HEADING_ADMINISTRATION_TOOLS}</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-striped">
+                <tbody>
+                    <!-- BEGIN tool_list_block -->
+                    <tr>
+                        <td>
+                            <a href="{ADMIN_URL}/admintools/tool.php?tool={TOOL_DIR}">
+                                {TOOL_NAME}
+                            </a>
+                        </td>
+                        <td>
+                            <p>{TOOL_DESCRIPTION}</p>
+                        </td>
+                    </tr>
+                    <!-- END tool_list_block -->
+                </tbody>
+            </table>
+            <hr />
+            {TOOL_LIST}
+        </div>
+    </div><!-- /.panel.panel-default -->
+</div><!-- /#admintoolsPage -->
+
+<!-- END main_block -->

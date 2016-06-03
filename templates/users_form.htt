@@ -1,0 +1,105 @@
+<!-- BEGIN main_block -->
+<div class="row">
+    <div class="col-lg-6">
+
+        <div class="panel panel-default {DISPLAY_ADD}">
+            <div class="panel-heading">
+                <h3 class="panel-title">{HEADING_MODIFY_USER}</h3>
+            </div>
+            <div class="panel-body">
+
+                <form name="user" action="{ACTION_URL}" method="post" class="form-horizontal">
+                    <input type="hidden" name="user_id" value="{USER_ID}" />
+                    <input type="hidden" name="username_fieldname" value="{USERNAME_FIELDNAME}" />
+                    {FTAN}
+
+                    <div class="form-group">
+                        <label for="inputUsername" class="col-sm-4 control-label">{TEXT_USERNAME}</label>
+                        <div class="col-sm-8">
+                            <input id="inputUsername" name="{USERNAME_FIELDNAME}" maxlength="30" type="text" class="form-control"  value="{USERNAME}" />
+                        </div>
+                    </div>
+
+                    <hr style="{DISPLAY_EXTRA}" />
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-4 control-label">{TEXT_PASSWORD}</label>
+                        <div class="col-sm-8">
+                            <input id="inputPassword" name="password" maxlength="30" type="password" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword2" class="col-sm-4 control-label">{TEXT_RETYPE_PASSWORD}</label>
+                        <div class="col-sm-8">
+                            <input id="inputPassword2" name="password2" maxlength="30" type="password" class="form-control" />
+                            <p class="help-block" style="{DISPLAY_EXTRA}">{CHANGING_PASSWORD}</p>
+                        </div>
+                    </div>
+
+                    <hr style="{DISPLAY_EXTRA}" />
+
+                    <div class="form-group">
+                        <label for="inputDisplayName" class="col-sm-4 control-label">{TEXT_DISPLAY_NAME}</label>
+                        <div class="col-sm-8">
+                            <input id="inputDisplayName" name="display_name" maxlength="255" type="text" class="form-control" value="{DISPLAY_NAME}" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail" class="col-sm-4 control-label">{TEXT_EMAIL}</label>
+                        <div class="col-sm-8">
+                            <input id="inputEmail" name="email" maxlength="255" type="email" class="form-control" value="{EMAIL}" />
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="{DISPLAY_HOME_FOLDERS}">
+                        <label for="selectHomeFolder" class="col-sm-4 control-label">{TEXT_HOME_FOLDER}</label>
+                        <div class="col-sm-8">
+                            <select id="selectHomeFolder" name="home_folder" class="form-control">
+                                <option value="">{TEXT_NONE}</option>
+                                <!-- BEGIN folder_list_block -->
+                                <option value="{FOLDER}"{SELECTED}>{NAME}</option>
+                                <!-- END folder_list_block -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="selectGroup" class="col-sm-4 control-label">{TEXT_GROUP}</label>
+                        <div class="col-sm-8">
+                            <select id="selectGroup" class="form-control" name="groups[]" multiple="multiple" size="5">
+                                <!-- BEGIN group_list_block -->
+                                <option value="{ID}" {SELECTED}>{NAME}</option>
+                                <!-- END group_list_block -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-8 col-sm-offset-4">
+                            <label class="radio-inline">
+                                <input type="radio" name="active[]" id="active" value="1" {ACTIVE_CHECKED} /> {TEXT_ACTIVE}
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="active[]" id="disabled" value="0" {DISABLED_CHECKED} /> {TEXT_DISABLED}
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-8 col-sm-offset-4">
+                            <button type="submit" name="submit" class="btn btn-primary submit-btn"><i class="fa fa-fw fa-floppy-o"></i> {SUBMIT_TITLE}</button>
+                            <a href="index.php" class="btn btn-default cancel-btn pull-right">{TEXT_CANCEL}</a>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div><!-- /.panel-body -->
+        </div><!-- /.panel.panel-default -->
+
+    </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+<!-- END main_block -->

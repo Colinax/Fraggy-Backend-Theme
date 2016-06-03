@@ -1,0 +1,334 @@
+<!-- BEGIN main_block -->
+<div class="row">
+    <div class="col-lg-6">
+
+        <div class="panel panel-default {DISPLAY_ADD}">
+            <div class="panel-heading">
+                <h3 class="panel-title">{HEADING_MODIFY_GROUP}</h3>
+            </div>
+            <div class="panel-body">
+
+                <form name="group" action="{ACTION_URL}" method="post" class="form-horizontal">
+                    <input type="hidden" name="advanced" value="{ADVANCED}" />
+                    <input type="hidden" name="group_id" value="{GROUP_ID}" />
+                    {FTAN}
+
+                    <div class="form-group">
+                        <label for="inputGroupName" class="col-sm-4 control-label">{TEXT_DISPLAY_NAME}</label>
+                        <div class="col-sm-8">
+                            <input id="inputGroupName" name="group_name" maxlength="255" type="text" class="form-control" value="{GROUP_NAME}" />
+                        </div>
+                    </div>
+
+                    <div class="basic-form-group" style="{DISPLAY_BASIC}">
+
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">{TEXT_SYSTEM_PERMISSIONS}</label>
+                            <div class="col-sm-8">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="pages" value="1" {pages_checked} /> {SECTION_PAGES}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="media" value="1" {media_checked} /> {SECTION_MEDIA}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="modules" value="1" {modules_checked} /> {SECTION_MODULES}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="templates" value="1" {templates_checked} /> {SECTION_TEMPLATES}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="languages" value="1" {languages_checked} /> {SECTION_LANGUAGES}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="settings" value="1" {settings_checked} /> {SECTION_SETTINGS}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="users" value="1" {users_checked} /> {SECTION_USERS}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="groups" value="1" {groups_checked} /> {SECTION_GROUPS}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="admintools" value="1" {admintools_checked} /> {SECTION_ADMINTOOLS}
+                                        </label>
+                                    </div>
+                                </div><!-- /.row -->
+                            </div><!-- /.col-sm-8 -->
+                        </div><!-- /.form-group -->
+
+                    </div><!-- /.basic-form-group -->
+
+                    <div class="advanced-form-group" style="{DISPLAY_ADVANCED}">
+
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">{TEXT_SYSTEM_PERMISSIONS}</label>
+                            <div class="col-sm-8">
+
+                                <h5>{SECTION_PAGES}</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="pages_view" type="checkbox" value="1" {pages_view_checked} /> {TEXT_VIEW}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="pages_add" type="checkbox" value="1" {pages_add_checked} /> {TEXT_ADD}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="pages_settings" type="checkbox" value="1" {pages_settings_checked} /> {TEXT_MODIFY_SETTINGS}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="pages_modify" type="checkbox" value="1" {pages_modify_checked} /> {TEXT_MODIFY_CONTENT}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="pages_intro" type="checkbox" value="1" {pages_intro_checked} /> {HEADING_MODIFY_INTRO_PAGE}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="pages_delete" type="checkbox" value="1" {pages_delete_checked} /> {TEXT_DELETE}
+                                        </label>
+                                    </div>
+                                </div><!-- /.row -->
+
+                                <h5>{SECTION_MEDIA}</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="media_view" type="checkbox" value="1" {media_view_checked} /> {TEXT_VIEW}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="media_upload" type="checkbox" value="1" {media_upload_checked} /> {TEXT_UPLOAD_FILES}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="media_rename" type="checkbox" value="1" {media_rename_checked} /> {TEXT_RENAME}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="media_delete" type="checkbox" value="1" {media_delete_checked} /> {TEXT_DELETE}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="media_create" type="checkbox" value="1" {media_create_checked} /> {TEXT_CREATE_FOLDER}
+                                        </label>
+                                    </div>
+                                </div><!-- /.row -->
+
+                                <h5>{SECTION_MODULES}</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="modules_view" type="checkbox" value="1" {modules_view_checked} /> {TEXT_VIEW}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="modules_install" type="checkbox" value="1" {modules_install_checked} /> {TEXT_ADD}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="modules_uninstall" type="checkbox" value="1" {modules_uninstall_checked} /> {TEXT_DELETE}
+                                        </label>
+                                    </div>
+                                </div><!-- /.row -->
+
+                                <h5>{SECTION_TEMPLATES}</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="templates_view" type="checkbox" value="1" {templates_view_checked} /> {TEXT_VIEW}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="templates_install" type="checkbox" value="1" {templates_install_checked} /> {TEXT_ADD}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="templates_uninstall" type="checkbox" value="1" {templates_uninstall_checked} /> {TEXT_DELETE}
+                                        </label>
+                                    </div>
+                                </div><!-- /.row -->
+
+                                <h5>{SECTION_LANGUAGES}</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="languages_view" type="checkbox" value="1" {languages_view_checked} /> {TEXT_VIEW}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="languages_install" type="checkbox" value="1" {languages_install_checked} /> {TEXT_ADD}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="languages_uninstall" type="checkbox" value="1" {languages_uninstall_checked} /> {TEXT_DELETE}
+                                        </label>
+                                    </div>
+                                </div><!-- /.row -->
+
+                                <h5>{SECTION_SETTINGS}</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="settings_basic" type="checkbox" value="1" {settings_basic_checked} /> {TEXT_BASIC}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="settings_advanced" type="checkbox" value="1" {settings_advanced_checked} /> {TEXT_ADVANCED}
+                                        </label>
+                                    </div>
+                                </div><!-- /.row -->
+
+                                <h5>{SECTION_USERS}</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="users_view" type="checkbox" value="1" {users_view_checked} /> {TEXT_VIEW}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="users_add" type="checkbox" value="1" {users_add_checked} /> {TEXT_ADD}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="users_modify" type="checkbox" value="1" {users_modify_checked} /> {TEXT_MODIFY}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="users_delete" type="checkbox" value="1" {users_delete_checked} /> {TEXT_DELETE}
+                                        </label>
+                                    </div>
+                                </div><!-- /.row -->
+
+                                <h5>{SECTION_GROUPS}</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="groups_view" type="checkbox" value="1" {groups_view_checked} /> {TEXT_VIEW}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="groups_add" type="checkbox" value="1" {groups_add_checked} /> {TEXT_ADD}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="groups_modify" type="checkbox" value="1" {groups_modify_checked} /> {TEXT_MODIFY}
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="groups_delete" type="checkbox" value="1" {groups_delete_checked} /> {TEXT_DELETE}
+                                        </label>
+                                    </div>
+                                </div><!-- /.row -->
+
+                                <h5>{SECTION_ADMINTOOLS}</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="checkbox-inline">
+                                            <input name="admintools_settings" type="checkbox" value="1" {admintools_settings_checked} /> {TEXT_MODIFY_SETTINGS}
+                                        </label>
+                                    </div>
+                                </div><!-- /.row -->
+
+                            </div><!-- /.col-sm-8 -->
+                        </div><!-- /.form-group -->
+
+                    </div><!-- /.advanced-form-group -->
+
+
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">{TEXT_MODULE_PERMISSIONS}</label>
+                        <div class="col-sm-8">
+                            <div class="row">
+                                <!-- BEGIN module_list_block -->
+                                <div class="col-md-6">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" name="module_permissions[]" id="m_{VALUE}" value="{VALUE}" {CHECKED} /> {NAME}
+                                    </label>
+                                </div>
+                                <!-- END module_list_block -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">{TEXT_TEMPLATE_PERMISSIONS}</label>
+                        <div class="col-sm-8">
+                            <div class="row">
+                                <!-- BEGIN template_list_block -->
+                                <div class="col-md-6">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" name="template_permissions[]" id="m_{VALUE}" value="{VALUE}" {CHECKED} /> {NAME}
+                                    </label>
+                                </div>
+                                <!-- END template_list_block -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-4 col-sm-8">
+                            <button type="submit" name="save" class="btn btn-primary"><i class="fa fa-fw fa-floppy-o"></i> {SUBMIT_TITLE}</button>
+                            <a href="javascript:document.getElementById('advanced').submit();" class="btn btn-default pull-right" title="{ADVANCED_BUTTON}">{ADVANCED_BUTTON}</a>
+                        </div>
+                    </div>
+
+                </form>
+
+                <form id="advanced" name="advanced" action="{ADVANCED_LINK}" method="post">
+                    <input type="hidden" name="group_id" value="{GROUP_ID}" />
+                    <input type="hidden" name="action" value="modify" />
+                    <input type="hidden" name="advanced" value="{ADVANCED_BUTTON}" />
+                    {FTAN}
+                </form>
+
+            </div><!-- /.panel-body -->
+        </div><!-- /.panel.panel-default -->
+    </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+<!-- END main_block -->

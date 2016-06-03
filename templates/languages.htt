@@ -1,0 +1,103 @@
+<!-- BEGIN main_block -->
+<div id="addonsPage">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <i class="fa fa-fw fa-bars"></i>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    {URL_MODULES}
+                </li>
+                <li>
+                    {URL_TEMPLATES}
+                </li>
+                <!--<li class="active">
+                    <a href="#">{HEADING_INSTALL_LANGUAGE}</a>
+                </li>-->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="panel panel-default {DISPLAY_INSTALL}">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        {HEADING_INSTALL_LANGUAGE}
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <form name="install" enctype="multipart/form-data" action="install.php" method="post">
+                        {FTAN}
+                        <div class="form-group">
+                            <input class="form-control" type="file" name="userfile" />
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit" name="submit">
+                                <i class="fa fa-fw fa-plus"></i> {TEXT_INSTALL}
+                            </button>
+                        </div>
+                    </form>
+                </div><!-- /.panel-body -->
+            </div><!-- /.panel.panel-default -->
+        </div><!-- /.col-lg-6 -->
+
+        <div class="col-lg-6">
+            <div class="panel panel-default {DISPLAY_UNINSTALL}">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        {HEADING_UNINSTALL_LANGUAGE}
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <form name="uninstall" action="uninstall.php" method="post">
+                        {FTAN}
+                        <div class="form-group">
+                            <select name="code" class="form-control">
+                                <option value="" selected="selected">{TEXT_PLEASE_SELECT}...</option>
+                                <!-- BEGIN language_list_block -->
+                                <option value="{VALUE}">{NAME}</option>
+                                <!-- END language_list_block -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit" name="submit">
+                                <i class="fa fa-fw fa-times"></i> {TEXT_UNINSTALL}
+                            </button>
+                        </div>
+                    </form>
+                </div><!-- /.panel-body -->
+            </div><!-- /.panel.panel-default -->
+        </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+
+    <div class="panel panel-default {DISPLAY_LIST}">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                {HEADING_LANGUAGE_DETAILS}
+            </h3>
+        </div>
+        <div class="panel-body">
+            <form name="details" action="details.php" method="post">
+                {FTAN}
+                <div class="form-group">
+                    <select name="code" class="form-control">
+                        <option value="" selected="selected">{TEXT_PLEASE_SELECT}...</option>
+                        <!-- BEGIN language_list_block -->
+                        <option value="{VALUE}">{NAME}</option>
+                        <!-- END language_list_block -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit" name="submit">
+                        <i class="fa fa-fw fa-info"></i> {TEXT_VIEW_DETAILS}
+                    </button>
+                </div>
+            </form>
+        </div><!-- /.panel-body -->
+    </div><!-- /.panel.panel-default -->
+</div><!-- /#addonsPage -->
+<!-- END main_block -->
