@@ -1,5 +1,5 @@
 # Fraggy Backend Theme
-### Mobile-responsive backend theme for WBCE
+** Mobile-responsive backend theme for WBCE **
 
 ## Changelog
 
