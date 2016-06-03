@@ -1,13 +1,13 @@
 # Fraggy Backend Theme
-## Mobile-responsive backend theme for WBCE
+### Mobile-responsive backend theme for WBCE
 
-# Changelog
+## Changelog
 
 1.0-beta1 - 2016-06-03
 
  * First beta release
 
-## Author
+### Author
 
 * Jonathan Nessier [https://www.neoflow.ch][Neoflow]
 
