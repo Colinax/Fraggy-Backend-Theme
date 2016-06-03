@@ -3,7 +3,7 @@
 
 ## Changelog
 
-1.0-beta1 - 2016-06-03
+### 1.0-beta1 - 2016-06-03
 
  * First beta release
 
