@@ -7,7 +7,7 @@
 
  * First beta release
 
-### Author
+## Author
 
 * Jonathan Nessier, [Neoflow](https://www.neoflow.ch)
 
