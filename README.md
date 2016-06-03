@@ -11,6 +11,6 @@
 
 * Jonathan Nessier, [Neoflow](https://www.neoflow.ch)
 
-Thanks to [WBCE](http://wbce.org) community for your support and testing.
+Thanks to the [WBCE](http://wbce.org) community for your support and testing.
 
 Copyright © 2016 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | GNU General Public License (GPLv3)
