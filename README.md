@@ -9,7 +9,7 @@
 
 ### Author
 
-* Jonathan Nessier [Neoflow](https://www.neoflow.ch)
+* Jonathan Nessier, [Neoflow](https://www.neoflow.ch)
 
 Thanks to [WBCE](http://wbce.org) community for your support and testing.
 
