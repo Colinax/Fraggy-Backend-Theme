@@ -40,7 +40,7 @@
 
                         <div class="form-group">
                             <button type="submit" name="modify" class="btn btn-primary {DISPLAY_MODIFY}"><i class="fa fa-fw fa-pencil"></i> {TEXT_MODIFY}</button>
-                            <button type="submit" name="delete" class="btn btn-primary {DISPLAY_DELETE}" onclick="return confirm('{CONFIRM_DELETE}');"><i class="fa fa-fw fa-trash"></i> {TEXT_MODIFY}</button>
+                            <button type="submit" name="delete" class="btn btn-primary {DISPLAY_DELETE}" onclick="return confirm('{CONFIRM_DELETE}');"><i class="fa fa-fw fa-trash"></i> {TEXT_DELETE}</button>
                         </div>
                         <hr />
                         <a href="index.php?status={USER_STATUS}" title="{TEXT_USERS}">{USERTYPE}</a>

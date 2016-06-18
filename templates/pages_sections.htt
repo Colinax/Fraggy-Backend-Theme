@@ -99,6 +99,8 @@
                             </tbody>
                         </table>
 
+                        <button class="btn btn-primary" name="save" type="submit"><i class="fa fa-fw fa-floppy-o"></i> {TEXT_SAVE}</button>
+
                     </form>
 
                 </div><!-- /.panel-body -->

@@ -72,11 +72,12 @@ $(function () {
         } else if ($this.prop('src').indexOf('add_child.png') > -1) {
             $this.parent().html('<i class="fa fa-fw fa-files-o"></i>');
         }
-
-
     });
 
-
+    var $welcomeMessage = $('#welcomeMessage'),
+            welcomeMessageText = $welcomeMessage.text();
+    welcomeMessageText = welcomeMessageText.replace('imBackend', 'im Backend');
+    $welcomeMessage.text(welcomeMessageText);
 
     if (typeof CKEDITOR !== 'undefined') {
         CKEDITOR.on('instanceReady', function () {

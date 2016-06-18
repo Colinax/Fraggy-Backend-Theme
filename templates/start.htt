@@ -6,7 +6,7 @@
 
     <div class="panel panel-secondary">
         <div class="panel-heading">
-            <h3 class="panel-title">{WELCOME_MESSAGE}</h2>
+            <h3 class="panel-title" id="welcomeMessage">{WELCOME_MESSAGE}</h2>
         </div>
     </div>
 
