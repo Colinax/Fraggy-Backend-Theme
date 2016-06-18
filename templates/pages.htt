@@ -116,14 +116,23 @@
 
         $pageList.removeAttr('style').html('');
 
-        $pageListUl.find('table').addClass('table');
+        $pageListUl.find('table').each(function (index) {
+            var $this = $(this);
+
+            $this.addClass('table');
+            if (index % 2 === 0) {
+                $this.addClass('table-striped');
+            }
+        });
+
         $pageListUl.addClass('list-unstyled');
         $pageListUl.find('ul').addClass('list-unstyled').find('li').removeClass('jsadmin_drag');
 
         $pageListUl.unbind();
 
         $pageListUl.find('td').each(function () {
-            var $td = $(this);
+            var $td = $(this),
+                    $menuTitle = $('<small class="hidden-lg" />');
             $td.removeAttr('style');
             if ($td.index() === 0) {
                 var $a = $td.find('a');
@@ -149,7 +158,15 @@
                 $b.remove();
                 $td.after('<td></td>');
             } else if ($td.index() === 3 || $td.index() === 4) {
+
                 $td.text($.trim($td.text()));
+
+                if ($td.index() === 3) {
+                    $menuTitle.text($td.text());
+                    $td.prev().prev().find('div').append('<br />').append($menuTitle);
+
+                }
+
             } else if ($td.index() === 5) {
                 $td.append($td.find('small').children());
                 $td.find('div').remove();

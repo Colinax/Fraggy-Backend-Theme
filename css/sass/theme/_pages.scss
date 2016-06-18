@@ -34,9 +34,12 @@
             border: 0;
         }
 
-
         table {
             margin: 0;
+
+            &.striped {
+                background: $table-bg-accent;
+            }
 
             td, th {
                 vertical-align: middle;
@@ -220,8 +223,8 @@
                 td, th {
                     &:nth-child(4) {
                         display: table-cell;
-                        width: 300px;
-                        max-width: 300px;
+                        width: 200px;
+                        max-width: 200px;
                     }
                 }
             }

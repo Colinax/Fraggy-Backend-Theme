@@ -5,8 +5,11 @@
 
 ### 1.0-beta2 - work in progress
 
- * Fixed some buttons
+ * Added striped table to list of pages
+ * Moved select backend theme out of advanced settings
+ * Fixed some buttons and labels
  * Added space between "im" and "Backend" of german welcome message
+ * Optimized responsive design
 
 ### 1.0-beta1 - 2016-06-03
 

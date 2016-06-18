@@ -51,6 +51,8 @@ $(function () {
     });
 
 
+
+
     $('a > img').each(function () {
         var $this = $(this);
         if ($this.prop('src').indexOf('modify_16.png') > -1) {

@@ -309,6 +309,17 @@
                             </div>
                         </div>
 
+                        <div class="form-group">
+                            <label for="selectTheme" class="col-sm-4 control-label">{TEXT_THEME}</label>
+                            <div class="col-sm-8">
+                                <select id="selectTheme" name="default_theme">
+                                    <!-- BEGIN theme_list_block -->
+                                    <option value="{FILE}" {SELECTED}>{NAME}</option>
+                                    <!-- END theme_list_block -->
+                                </select>
+                            </div>
+                        </div>
+
                         <div class="advanced-form-group" {DISPLAY_ADVANCED}>
 
                             <hr />
@@ -321,17 +332,6 @@
                                         <!-- BEGIN charset_list_block -->
                                         <option value="{VALUE}" {SELECTED}>{NAME}</option>
                                         <!-- END charset_list_block -->
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="selectTheme" class="col-sm-4 control-label">{TEXT_THEME}</label>
-                                <div class="col-sm-8">
-                                    <select id="selectTheme" name="default_theme">
-                                        <!-- BEGIN theme_list_block -->
-                                        <option value="{FILE}" {SELECTED}>{NAME}</option>
-                                        <!-- END theme_list_block -->
                                     </select>
                                 </div>
                             </div>
