@@ -3,6 +3,11 @@
 
 ## Changelog
 
+### 1.0-beta2 - work in progress
+
+ * Fixed some buttons
+ * Added space between "im" and "Backend" of welcome message
+
 ### 1.0-beta1 - 2016-06-03
 
  * First beta release
