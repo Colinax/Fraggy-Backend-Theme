@@ -119,8 +119,10 @@
     });
 
     $('#uploadTargetSelect').on('change', function () {
-        var url = 'browse.php?dir=' + this.value.substr(6, 100);
-        $('#mediaBrowser').prop('src', url);
+        if ($(this).data('silent') == 0) {
+            var url = 'browse.php?dir=' + this.value.substr(6, 100);
+            $('#mediaBrowser').prop('src', url);
+        }
     });
 
     $('#mediaBrowser').on('load', function () {

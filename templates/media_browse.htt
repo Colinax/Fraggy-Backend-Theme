@@ -64,11 +64,13 @@
         <!-- Custom JavaScript -->
         <script>
             $(document).ready(function () {
-                $('#uploadTargetSelect, #createTargetSelect', parent.document.body)
-                        .val('{MEDIA_DIRECTORY}{CURRENT_DIR}')
-                        .trigger('change');
 
-                $('a.icon:not([href^="browse.php"])').hide();
+
+                window.parent.$('#uploadTargetSelect, #createTargetSelect').data('silent', 1).val('{MEDIA_DIRECTORY}{CURRENT_DIR}').trigger('change').data('silent', 0);
+
+                $('a > img[src$="blank_16.png"]').parent().hide();
+
+                // $('a.icon:not([href^="browse.php"])').hide();
             });
         </script>
 

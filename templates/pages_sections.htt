@@ -71,7 +71,7 @@
                                         <input type="text" class="form-control" id="namesection{VAR_SECTION_ID}" name="namesection{VAR_SECTION_ID}" value="{NAMESECTION}" />
                                     </td>
                                     <td class="hidden-xs hidden-sm">
-                                        <div class="input-group date" id="startDate">
+                                        <div class="input-group date datetimepicker" id="startDate">
                                             <input type="text" name="start_date{VAR_SECTION_ID}" value="{VALUE_PUBL_START}" class="form-control" />
                                             <span class="input-group-addon" style="cursor:pointer;">
                                                 <i class="fa fa-fw fa-calendar"></i>
@@ -79,7 +79,7 @@
                                         </div>
                                     </td>
                                     <td class="hidden-xs hidden-sm">
-                                        <div class="input-group date" id="endDate">
+                                        <div class="input-group date datetimepicker" id="endDate">
                                             <input type="text" datepicker-append-to-body="true" name="end_date{VAR_SECTION_ID}" value="{VALUE_PUBL_END}"  class="form-control" />
                                             <span class="input-group-addon" style="cursor:pointer;">
                                                 <i class="fa fa-fw fa-calendar"></i>

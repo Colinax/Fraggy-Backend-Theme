@@ -5,6 +5,8 @@
 
 ### 1.0-beta2 - work in progress
 
+ * Added thumbnails for images in media page
+ * Fixed calendar on sections page
  * Added striped table to list of pages
  * Moved select backend theme out of advanced settings
  * Fixed some buttons and labels
