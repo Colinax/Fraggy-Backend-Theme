@@ -13,7 +13,7 @@ If you are installing the theme for the first time, use the template installatio
 
 ## Changelog
 
-### v1.0-beta2 - work in progress, planned for 2016-06-20
+### v1.0-beta2 - released on 2016-06-20
 
  * Fixed a lot of small design bugs
  * Fixed calendar on sections page
