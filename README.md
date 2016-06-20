@@ -26,9 +26,6 @@ If you are installing the theme for the first time, use the template installatio
 
  * First beta release
 
-## Roadmap
-
-
 ## Author
 
 * Jonathan Nessier, [Neoflow](https://www.neoflow.ch)
