@@ -3,7 +3,7 @@
 
 ## Changelog
 
-### 1.0-beta2 - work in progress
+### 1.0-beta2 - work in progress, planned for 2016-06-20
 
  * Fixed a lot of small design bugs
  * Fixed calendar on sections page
@@ -12,9 +12,11 @@
  * Moved backend theme selection to general settings
  * Added space between "im" and "Backend" of german welcome message
 
-### 1.0-beta1 - 2016-06-03
+### 1.0-beta1 - released on 2016-06-03
 
  * First beta release
+
+ [Download] (https://github.com/rjgamer/Fraggy-Backend-Theme/releases/tag/v1.0-beta1)
 
 ## Author
 
