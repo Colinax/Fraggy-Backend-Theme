@@ -1,11 +1,19 @@
 # Fraggy Backend Theme
 **Mobile-responsive backend theme for [WBCE](http://wbce.org)**
 
-[Download] (https://github.com/rjgamer/Fraggy-Backend-Theme/releases/tag/v1.0-beta1) | [License] (https://github.com/rjgamer/Fraggy-Backend-Theme/blob/master/LICENSE.md) | Roadmap ()
+## Download
+
+You can download the newest source code release [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases) and the distributed release without source files [here](https://fraggy.neoflow.ch/downloads/).
+
+## Installation
+
+If you are installing the theme for the first time, use the template installation in the WBCE backend and follow the instructions. 
+
+**Attention:** If you want to update the backend theme, then you have to unistall the old installation first!
 
 ## Changelog
 
-### 1.0-beta2 - work in progress, planned for 2016-06-20
+### v1.0-beta2 - work in progress, planned for 2016-06-20
 
  * Fixed a lot of small design bugs
  * Fixed calendar on sections page
@@ -14,9 +22,11 @@
  * Moved backend theme selection to general settings
  * Added space between "im" and "Backend" of german welcome message
 
-### 1.0-beta1 - released on 2016-06-03
+### v1.0-beta1 - released on 2016-06-03
 
  * First beta release
+
+## Roadmap
 
 
 ## Author
