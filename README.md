@@ -5,10 +5,10 @@
 
 ### 1.0-beta2 - work in progress
 
- * Fixed a lot of design bugs
- * Added thumbnails for images in media page
+ * Fixed a lot of small design bugs
  * Fixed calendar on sections page
- * Moved select backend theme out of advanced settings
+ * Added thumbnails for images in media page
+ * Moved backend theme selection to general settings
  * Added space between "im" and "Backend" of german welcome message
 
 ### 1.0-beta1 - 2016-06-03
