@@ -1,6 +1,8 @@
 # Fraggy Backend Theme
 **Mobile-responsive backend theme for WBCE**
 
+Download newest release [here] (https://github.com/rjgamer/Fraggy-Backend-Theme/releases/tag/v1.0-beta1).
+
 ## Changelog
 
 ### 1.0-beta2 - work in progress, planned for 2016-06-20
@@ -16,7 +18,6 @@
 
  * First beta release
 
- [Download] (https://github.com/rjgamer/Fraggy-Backend-Theme/releases/tag/v1.0-beta1)
 
 ## Author
 
