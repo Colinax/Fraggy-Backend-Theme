@@ -7,8 +7,8 @@
     </script>
     <!-- END show_redirect_block -->
     <hr />
-    <a href="{REDIRECT}" >
-        <input type="button" name="submit" class="btn btn-success" value="{BACK}" />
+    <a href="{REDIRECT}" class="btn btn-success">
+        <i class="fa fa-fw fa-arrow-circle-left"></i> {BACK}
     </a>
 </div>
 <!-- END main_block -->

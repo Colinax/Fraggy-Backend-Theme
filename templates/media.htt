@@ -10,6 +10,11 @@
                 </div>
                 <div class="panel-body">
                     <iframe name="mediaBrowser" scrolling="no" id="mediaBrowser" src="browse.php" frameborder="0"></iframe>
+                    <hr />
+                    <span class="{DISPLAY_SETTINGS} pull-right">
+                        <a href="setparameter.php" target="mediaBrowser" class="btn btn-default"><i class="fa fa-fw fa-cog"></i> {CHANGE_SETTINGS}</a>
+                        <a href="browse.php?dir={CURRENT_DIR}" target="mediaBrowser" class="btn btn-default"><i class="fa fa-fw fa-refresh"></i>  {TEXT_RELOAD}</a>
+                    </span>
                 </div><!-- /.panel-body -->
             </div><!-- /.panel.panel-default -->
         </div><!-- /.col-lg-8.col-lg-push-4 -->

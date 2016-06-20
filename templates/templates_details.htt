@@ -30,8 +30,9 @@
                 </tr>
             </table>
             <hr />
-            <button class="btn btn-default" onclick="window.location = 'index.php';"><i class="fa fa-fw fa-chevron-left"></i> {TEXT_BACK}</button>
-
+            <a href="index.php" class="btn btn-default">
+                <i class="fa fa-fw fa-arrow-circle-left"></i> {TEXT_BACK}
+            </a>
         </div><!-- /.panel-body -->
     </div><!-- /.panel.panel-default -->
 

@@ -1,0 +1,125 @@
+<!-- BEGIN main_block -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Set upload parameter</title>
+
+        <!-- Meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="Set upload parameter" />
+        <meta name="keywords" content="Set upload parameter" />
+        <meta name="author" content="Jonathan Nessier, Neoflow" />
+
+        <!-- Vendor CSS -->
+        <link href="../../templates/fraggy/vendor/bootstrap/css/bootstrap.css?v1.0-beta2" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy/vendor/select2/css/select2.min.css?v1.0-beta2" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy/vendor/select2/css/select2-bootstrap.css?v1.0-beta2" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css?v1.0-beta2" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy/vendor/font-awesome-4.5/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Theme CSS -->
+        <link href="../../templates/fraggy/css/theme.css?v1.0-beta2" rel="stylesheet" type="text/css" />
+
+        <!-- Vendor Fonts -->
+        <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
+
+        <!-- Custom CSS -->
+        <style type="text/css">
+            body {
+                min-height: auto;
+                background: #fff;
+            }
+
+            .hide {
+                display: none;
+            }
+
+        </style>
+
+        <!-- Initiliaze vars -->
+        <script>
+            var WB_URL = '../..',
+                    THEME_URL = '../../templates/fraggy',
+                    ADMIN_URL = '{ADMIN_URL}';
+        </script>
+
+        <!-- Vendor JavaScript -->
+        <script src="../../templates/fraggy/vendor/jquery/jquery-2.2.2.min.js?v1.0-beta2"></script>
+        <script src="../../templates/fraggy/vendor/bootstrap/js/bootstrap.min.js?v1.0-beta2"></script>
+        <script src="../../templates/fraggy/vendor/select2/js/select2.full.min.js?v1.0-beta2"></script>
+        <script src="../../templates/fraggy/vendor/moment/moment-with-locales.min.js?v1.0-beta2"></script>
+        <script src="../../templates/fraggy/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?v1.0-beta2"></script>
+
+        <!-- Theme JavaScript -->
+        <script src="../../templates/fraggy/js/workarounds.js?v1.0-beta2"></script>
+        <script src="../../templates/fraggy/js/theme.js?v1.0-beta2"></script>
+
+        <!-- Custom JavaScript -->
+        <script>
+            $(document).ready(function () {
+
+            });
+        </script>
+
+    </head>
+    <body>
+
+        <div class="container-fluid">
+
+            <h4>{TEXT_HEADER}</h4>
+
+            <form method="post" action="{ADMIN_URL}/media/setparameter.php" class="{DISPLAY_LIST_TABLE} form-horizontal">
+                <input type="hidden" name="dir" value="{DIR}" />
+                <input type="hidden" name="old_name" value="{FILENAME}" />
+                <input type="hidden" name="id" value="{FILE_ID}" />
+                {FTAN}
+
+                <div class="form-group {DISPLAY_ADMIN}">
+                    <label class="col-sm-2 control-label">{SETTINGS}</label>
+                    <div class="col-sm-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="show_thumbs" {NO_SHOW_THUMBS_SELECTED}> {NO_SHOW_THUMBS}
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="admin_only" {ADMIN_ONLY_SELECTED}> {ADMIN_ONLY}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <!-- BEGIN list_block -->
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">{PATH_NAME}</label>
+                    <label class="col-sm-2 control-label">{WIDTH}</label>
+                    <div class="col-sm-2">
+                        <div class="input-group">
+                            <input size="5" type="text" class="form-control" name="{FIELD_NAME_W}" value="{CUR_WIDTH}">
+                            <div class="input-group-addon">px</div>
+                        </div>
+                    </div>
+                    <label class="col-sm-2 control-label">{HEIGHT}</label>
+                    <div class="col-sm-2">
+                        <div class="input-group">
+                            <input size="5" type="text" class="form-control" name="{FIELD_NAME_H}" value="{CUR_HEIGHT}">
+                            <div class="input-group-addon">px</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END list_block -->
+                <button class="btn btn-primary" type="submit" name="save"><i class="fa fa-fw fa-floppy-o"></i> {SAVE_TEXT}</button>
+                <a href="browse.php" class="btn btn-default">
+                    <i class="fa fa-fw fa-arrow-circle-left"></i> {BACK}
+                </a>
+            </form>
+
+        </div>
+
+    </body>
+</html>
+<!-- END main_block -->

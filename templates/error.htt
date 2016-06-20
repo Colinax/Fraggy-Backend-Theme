@@ -2,8 +2,8 @@
 <div class="alert alert-danger">
     <p>{MESSAGE}</p>
     <hr />
-    <a href="{LINK}" >
-        <input type="button" name="submit" class="btn btn-danger" value="{BACK}" />
+    <a href="{LINK}" class="btn btn-danger">
+        <i class="fa fa-fw fa-arrow-circle-left"></i> {BACK}
     </a>
 </div>
 <!-- END main_block -->

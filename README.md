@@ -9,7 +9,7 @@ You can download the newest source code release [here](https://github.com/rjgame
 
 If you are installing the theme for the first time, use the template installation in the WBCE backend and follow the instructions. 
 
-**Attention:** If you want to update the backend theme, then you have to unistall the old installation first!
+**Attention:** If you want to update the backend theme, then you have to uninstall the old installation first!
 
 ## Changelog
 
@@ -17,7 +17,9 @@ If you are installing the theme for the first time, use the template installatio
 
  * Fixed a lot of small design bugs
  * Fixed calendar on sections page
- * Added thumbnails for images in media page
+ * Added options for media browser
+ * Added reload button for media browser
+ * Added thumbnails for images in media browser
  * Added message about design issues on third-party pages 
  * Moved backend theme selection to general settings
  * Added space between "im" and "Backend" of german welcome message
