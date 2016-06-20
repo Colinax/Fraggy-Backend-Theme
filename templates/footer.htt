@@ -1,8 +1,25 @@
 <!-- BEGIN footer_block -->
 </div>
 </div>
+
+<div class="visible-xs">
+    <p class="small text-center">
+        <!-- Please note: the below reference to the GNU GPL should not be removed, as it provides a link for users to read about warranty, etc. -->
+        <a href="http://www.wbce.org/" title="Way Better Content Editing" target="_blank">WBCE</a> is released under the
+        <a href="http://www.gnu.org/licenses/gpl.html" title="Released under the GNU General Public License" target="_blank">GNU General Public License</a>.
+        <!-- Please note: the above reference to the GNU GPL should not be removed, as it provides a link for users to read about warranty, etc. -->
+    </p>
+    <p class="small text-center">
+        <!-- Please note: be fair and do not removed the link to the creator of the template -->
+        Template created by <a href="https://www.neoflow.ch" title="Template by Neoflow" target="_blank">Neoflow</a>.
+        <!-- Please note: be fair and do not removed the link to the creator of the template -->
+    </p>
+</div>
+
 </div><!-- /.container-fluid -->
 </div><!-- /.page-wrapper -->
+
+
 </div><!-- /#page-wrapper-sidebar -->
 </div><!-- /#wrapper -->
 
