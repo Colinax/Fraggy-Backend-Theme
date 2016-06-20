@@ -128,8 +128,7 @@
                                 <!-- END module_block -->
                             </select>
                         </div>
-                        <input type="submit" name="submit" value="{TEXT_ADD}" class="btn btn-primary" />
-
+                        <button class="btn btn-primary" name="submit" type="submit"><i class="fa fa-fw fa-plus"></i> {TEXT_ADD}</button>
                     </form>
 
                 </div><!-- /.panel-body -->
