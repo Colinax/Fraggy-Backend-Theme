@@ -99,11 +99,13 @@ a.text-danger:focus {
 .table-responsive {
   overflow-x: auto; }
 
-.form-horizontal .control-label {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; }
-
+/*.form-horizontal {
+    .control-label {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}*/
 .form-control[type="file"] {
   padding: 0;
   border: 0; }

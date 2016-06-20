@@ -8,6 +8,7 @@
  * Fixed a lot of small design bugs
  * Fixed calendar on sections page
  * Added thumbnails for images in media page
+ * Added message about design issues on third-party pages 
  * Moved backend theme selection to general settings
  * Added space between "im" and "Backend" of german welcome message
 

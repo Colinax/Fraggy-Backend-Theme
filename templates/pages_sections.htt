@@ -60,7 +60,7 @@
                                 <tr>
                                     <td>{LINK_MODIFY_URL_VAR_MODUL_NAME}</td>
                                     <td class="{INPUT_ATTRIBUTE}">
-                                        <select name="block{VAR_SECTION_ID}" class="form-control">
+                                        <select name="block{VAR_SECTION_ID}" id="selectBlock{VAR_SECTION_ID}" class="form-control">
                                             {SET_NONE_DISPLAY_OPTION}
                                             <!-- BEGIN block_block -->
                                             <option value="{VALUE}"{SELECTED}>{NAME}</option>

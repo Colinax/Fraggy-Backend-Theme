@@ -29,13 +29,15 @@ $(function () {
         $sidebarNav.find('li.access > a').prepend('<i class="icon fa fa-fw fa-users fa-fw"></i> ');
     });
 
-    var $pageWrapperContainer = $('.page-wrapper .container-fluid');
+    var $pageWrapperContainer = $('.page-wrapper .container-fluid'),
+            $message = $('<p class="alert alert-info">The content isn\'t part of the WBCE core and don\'t follow the design rules of your current backend theme, which can lead to unknown design issues!</p>');
     if ($pageWrapperContainer.find('.panel, .alert').length === 0) {
         $pageWrapperContainer
                 .find('> div')
                 .addClass('panel panel-default')
                 .find('> div')
-                .addClass('panel-body');
+                .addClass('panel-body')
+                .prepend($message);
     }
 
     $('#addonsPage nav.navbar a').each(function () {
