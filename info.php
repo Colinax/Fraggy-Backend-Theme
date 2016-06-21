@@ -9,7 +9,7 @@
 $template_directory = 'fraggy';
 $template_name = 'Fraggy Backend Theme';
 $template_function = 'theme';
-$template_version = '1.0-beta2';
+$template_version = '1.0';
 $template_platform = '1.1.x';
 $template_author = 'Jonathan Nessier - <a href="https://www.neoflow.ch" target="_blank">Neoflow</a>';
 $template_license = '<a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU General Public License (GPLv3)</a>';
