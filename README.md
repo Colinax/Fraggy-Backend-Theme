@@ -17,7 +17,7 @@ If you are installing the theme for the first time, use the template installatio
 
  * Fixed saving of input fields on settings page
 
-### v1.0 - released on 2016-06-20
+### v1.0-beta2 - released on 2016-06-20
 
  * Fixed a lot of small design bugs
  * Fixed calendar on sections page
