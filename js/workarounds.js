@@ -1,7 +1,5 @@
 $(function () {
 
-    var $designIssueMessage = $designIssueMessage = $('<p class="alert alert-info">The content isn\'t part of the WBCE core and don\'t follow the design rules of your current backend theme, which can lead to unknown design issues!</p>');
-
     $('button, input[type="button"], input[type="reset"]')
             .addClass('btn')
             .addClass('btn-default');
@@ -37,11 +35,8 @@ $(function () {
                 .find('> div')
                 .addClass('panel panel-default')
                 .find('> div')
-                .addClass('panel-body')
-                .prepend($designIssueMessage);
+                .addClass('panel-body');
     }
-
-    $('#pageModifyPanel .panel-body').prepend($designIssueMessage);
 
     $('#addonsPage nav.navbar a').each(function () {
         var $this = $(this);
@@ -52,11 +47,7 @@ $(function () {
         } else if ($this.attr('href').indexOf('languages') > -1) {
             $this.prepend('<i class="fa fa-fw fa-language"></i> ');
         }
-
     });
-
-
-
 
     $('a > img').each(function () {
         var $this = $(this);
