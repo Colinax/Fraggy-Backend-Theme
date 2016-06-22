@@ -13,7 +13,7 @@ If you are installing the theme for the first time, use the template installatio
 
 ## Changelog
 
-### v1.0 - coming end of june 2016
+### v1.0 - released on 2016-06-22
 
  * Fixed saving of input fields on settings page
  * Removed message about design issues on third-party pages
