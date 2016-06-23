@@ -654,7 +654,7 @@ nav.sidebar {
       width: 80px; }
     #pagesPage #pageListPanel table td:last-child, #pagesPage #pageListPanel table th:last-child {
       text-align: right; }
-    #pagesPage #pageListPanel table td:nth-child(4), #pagesPage #pageListPanel table td:nth-child(5), #pagesPage #pageListPanel table td:nth-child(6), #pagesPage #pageListPanel table td:nth-child(7), #pagesPage #pageListPanel table td:last-child, #pagesPage #pageListPanel table th:nth-child(4), #pagesPage #pageListPanel table th:nth-child(5), #pagesPage #pageListPanel table th:nth-child(6), #pagesPage #pageListPanel table th:nth-child(7), #pagesPage #pageListPanel table th:last-child {
+    #pagesPage #pageListPanel table td:nth-child(4), #pagesPage #pageListPanel table td:nth-child(5), #pagesPage #pageListPanel table td:nth-child(6), #pagesPage #pageListPanel table td:nth-child(7), #pagesPage #pageListPanel table th:nth-child(4), #pagesPage #pageListPanel table th:nth-child(5), #pagesPage #pageListPanel table th:nth-child(6), #pagesPage #pageListPanel table th:nth-child(7) {
       display: none; }
     #pagesPage #pageListPanel table td > a, #pagesPage #pageListPanel table th > a {
       height: 16px;
@@ -686,7 +686,7 @@ nav.sidebar {
   #pagesPage #pageListPanel table td:nth-child(6), #pagesPage #pageListPanel table th:nth-child(6) {
     display: table-cell; } }
 @media (min-width: 992px) {
-  #pagesPage #pageListPanel table td:nth-child(5), #pagesPage #pageListPanel table td:nth-child(7), #pagesPage #pageListPanel table td:last-child, #pagesPage #pageListPanel table th:nth-child(5), #pagesPage #pageListPanel table th:nth-child(7), #pagesPage #pageListPanel table th:last-child {
+  #pagesPage #pageListPanel table td:nth-child(5), #pagesPage #pageListPanel table td:nth-child(7), #pagesPage #pageListPanel table th:nth-child(5), #pagesPage #pageListPanel table th:nth-child(7) {
     display: table-cell; } }
 @media (min-width: 1500px) {
   #loginPage .row {
