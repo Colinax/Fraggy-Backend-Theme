@@ -20,6 +20,10 @@ If you are installing the theme for the first time, use the template installatio
 
 ## Changelog
 
+### v1.0.2 - work in progress
+
+ * Added delete icons for pages on xtra-small resolution
+
 ### v1.0.1 - released on 2016-06-23
 
  * [Fixed issue #8](https://github.com/rjgamer/Fraggy-Backend-Theme/issues/8)
