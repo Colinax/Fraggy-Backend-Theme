@@ -139,7 +139,7 @@
 
                     <form name="manual_upgrade" action="manual_install.php" method="post" class="{UPGRADE_VISIBLE} form-horizontal">
                         {FTAN}
-                        <input type="hidden" name="action" value="install" />
+                        <input type="hidden" name="action" value="upgrade" />
                         <div class="form-group">
                             <label for="selectManualUpgradeModule" class="col-sm-3 control-label">{TEXT_FILE}: "upgrade.php"</label>
                             <div class="col-sm-9">
@@ -164,7 +164,7 @@
 
                     <form name="manual_uninstall" action="manual_install.php" method="post" class="{UNINSTALL_VISIBLE} form-horizontal">
                         {FTAN}
-                        <input type="hidden" name="action" value="install" />
+                        <input type="hidden" name="action" value="uninstall" />
                         <div class="form-group">
                             <label for="selectManualUninstallModule" class="col-sm-3 control-label">{TEXT_FILE}: "uninstall.php"</label>
                             <div class="col-sm-9">
