@@ -26,7 +26,7 @@ If you are installing the theme for the first time, use the template installatio
 
 ### v1.0-beta2 - released on 2016-06-20
 
- * [Fixed issues](https://github.com/rjgamer/Fraggy-Backend-Theme/issues?q=milestone%3Av1.0-beta2+is%3Aclosed)
+ * [Fixed 6 issues](https://github.com/rjgamer/Fraggy-Backend-Theme/issues?q=milestone%3Av1.0-beta2+is%3Aclosed)
  * Fixed calendar on sections page
  * Added options for media browser
  * Added reload button for media browser
