@@ -17,17 +17,16 @@ If you are installing the theme for the first time, use the template installatio
 
 ### v1.0.1 - released on 2016-06-23
 
- * Fixed issue #7
+ * [Fixed issue #8](https://github.com/rjgamer/Fraggy-Backend-Theme/issues/8)
 
 ### v1.0 - released on 2016-06-22
 
- * Fixed issue #6
+ * [Fixed issue #7](https://github.com/rjgamer/Fraggy-Backend-Theme/issues/7)
  * Removed message about design issues on third-party pages
 
 ### v1.0-beta2 - released on 2016-06-20
 
- * Fixed a lot of small design bugs
- * Fixed issues [#1 - #6](https://github.com/rjgamer/Fraggy-Backend-Theme/issues?q=milestone%3Av1.0-beta2+is%3Aclosed)
+ * [Fixed issues](https://github.com/rjgamer/Fraggy-Backend-Theme/issues?q=milestone%3Av1.0-beta2+is%3Aclosed)
  * Fixed calendar on sections page
  * Added options for media browser
  * Added reload button for media browser
