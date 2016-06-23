@@ -1,5 +1,9 @@
 # Fraggy
-Responsive and bootstrap based backend theme for [WBCE](http://wbce.org).
+
+![](https://fraggy.neoflow.ch/example.jpg "Fraggy in action")
+
+## About
+Fraggy is a responsive and Bootstrap based backend theme for [WBCE](http://wbce.org).
 
 **Attention:** There might be some design issues at the backend of older modules, but usually the modules still work as expected.
 
