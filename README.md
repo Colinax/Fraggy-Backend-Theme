@@ -1,6 +1,6 @@
 # Fraggy
 
-![Fraggy will give you a great UX for your WBCE backend!](https://fraggy.neoflow.ch/example.jpg "Fraggy will give you a great UX for your WBCE backend!")
+![Get a great UX in your WBCE backend with Fraggy!](https://fraggy.neoflow.ch/example.jpg "Get a great UX in your WBCE backend with Fraggy")
 
 ## About
 
