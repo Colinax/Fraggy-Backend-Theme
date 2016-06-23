@@ -1,5 +1,7 @@
-# Fraggy Backend Theme
-Mobile-responsive backend theme for [WBCE](http://wbce.org)
+# Fraggy
+Responsive and bootstrap based backend theme for [WBCE](http://wbce.org).
+
+**Attention:** There might be some design issues at the backend of older modules, but usually the modules still work as expected.
 
 ## Download
 
@@ -13,14 +15,19 @@ If you are installing the theme for the first time, use the template installatio
 
 ## Changelog
 
+### v1.0.1 - released on 2016-06-23
+
+ * Fixed issue #7
+
 ### v1.0 - released on 2016-06-22
 
- * Fixed saving of input fields on settings page
+ * Fixed issue #6
  * Removed message about design issues on third-party pages
 
 ### v1.0-beta2 - released on 2016-06-20
 
  * Fixed a lot of small design bugs
+ * Fixed issue #1, #2, #3, #4, #5
  * Fixed calendar on sections page
  * Added options for media browser
  * Added reload button for media browser
