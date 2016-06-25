@@ -14,14 +14,14 @@
         <meta name="author" content="Jonathan Nessier, Neoflow" />
 
         <!-- Vendor CSS -->
-        <link href="../../templates/fraggy/vendor/bootstrap/css/bootstrap.css?v1.0" rel="stylesheet" type="text/css" />
-        <link href="../../templates/fraggy/vendor/select2/css/select2.min.css?v1.0" rel="stylesheet" type="text/css" />
-        <link href="../../templates/fraggy/vendor/select2/css/select2-bootstrap.css?v1.0" rel="stylesheet" type="text/css" />
-        <link href="../../templates/fraggy/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css?v1.0" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy/vendor/bootstrap/css/bootstrap.css?v1.0.2" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy/vendor/select2/css/select2.min.css?v1.0.2" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy/vendor/select2/css/select2-bootstrap.css?v1.0.2" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css?v1.0.2" rel="stylesheet" type="text/css" />
         <link href="../../templates/fraggy/vendor/font-awesome-4.5/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
         <!-- Theme CSS -->
-        <link href="../../templates/fraggy/css/theme.css?v1.0" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy/css/theme.css?v1.0.2" rel="stylesheet" type="text/css" />
 
         <!-- Vendor Fonts -->
         <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
@@ -47,15 +47,15 @@
         </script>
 
         <!-- Vendor JavaScript -->
-        <script src="../../templates/fraggy/vendor/jquery/jquery-2.2.2.min.js?v1.0"></script>
-        <script src="../../templates/fraggy/vendor/bootstrap/js/bootstrap.min.js?v1.0"></script>
-        <script src="../../templates/fraggy/vendor/select2/js/select2.full.min.js?v1.0"></script>
-        <script src="../../templates/fraggy/vendor/moment/moment-with-locales.min.js?v1.0"></script>
-        <script src="../../templates/fraggy/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?v1.0"></script>
+        <script src="../../templates/fraggy/vendor/jquery/jquery-2.2.2.min.js?v1.0.2"></script>
+        <script src="../../templates/fraggy/vendor/bootstrap/js/bootstrap.min.js?v1.0.2"></script>
+        <script src="../../templates/fraggy/vendor/select2/js/select2.full.min.js?v1.0.2"></script>
+        <script src="../../templates/fraggy/vendor/moment/moment-with-locales.min.js?v1.0.2"></script>
+        <script src="../../templates/fraggy/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?v1.0.2"></script>
 
         <!-- Theme JavaScript -->
-        <script src="../../templates/fraggy/js/workarounds.js?v1.0"></script>
-        <script src="../../templates/fraggy/js/theme.js?v1.0"></script>
+        <script src="../../templates/fraggy/js/workarounds.js?v1.0.2"></script>
+        <script src="../../templates/fraggy/js/theme.js?v1.0.2"></script>
 
         <!-- Custom JavaScript -->
         <script>
