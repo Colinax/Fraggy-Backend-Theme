@@ -20,7 +20,7 @@ If you are installing the theme for the first time, use the template installatio
 
 ## Changelog
 
-### v1.0.2 - work in progress
+### v1.0.2 - release on 2016-06-25
 
  * Added delete icons for pages on xtra-small resolution
 
