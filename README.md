@@ -28,14 +28,15 @@ Rename your logo to additional-logo.png and move it to the image folder of your 
 
 ## Changelog
 
-### v1.1 - work in progress
+### v1.1 - released on 2016-06-28
 
  * Added flag icons
- * Fixed cookies to get state of collapsed page tree saved
- * Added optional customer logo
- * Add PHP version
+ * Fixed cookies for page tree
+ * Added additional logo
+ * Added API to get system information
+ * Added PHP version to sidebar
 
-### v1.0.2 - release on 2016-06-25
+### v1.0.2 - released on 2016-06-25
 
  * Added delete icons for pages on xtra-small resolution
 
