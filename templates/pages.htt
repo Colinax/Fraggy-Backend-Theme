@@ -137,18 +137,18 @@
             if ($td.index() === 0) {
                 var $a = $td.find('a');
 
-                /*if ($a.find('img[src^="collapse.png"]')) {
-                 $a.addClass('expanded');
-                 }*/
+                if ($a.find('img[src^="collapse.png"]') && !$a.hasClass('collapsed')) {
+                    $a.addClass('expanded');
+                }
 
                 $a.html('');
 
                 $a.on('click', function () {
                     var $this = $(this);
                     if ($this.hasClass('expanded')) {
-                        $this.removeClass('expanded').html('<i class="fa fa-fw fa-folder-open-o"></i>');
+                        $this.removeClass('expanded').addClass('collapsed').html('<i class="fa fa-fw fa-folder-open-o"></i>');
                     } else {
-                        $this.addClass('expanded').html('<i class="fa fa-fw fa-folder-o"></i>');
+                        $this.addClass('expanded').removeClass('collapsed').html('<i class="fa fa-fw fa-folder-o"></i>');
                     }
                 }).click();
 
@@ -179,12 +179,15 @@
 
 
         });
+
+
         $pageListUl.find('li').each(function () {
             var $li = $(this);
             if ($li.children().length === 0) {
                 $li.hide();
             }
         });
+
         $pageListLegend.removeAttr('style');
         $pageListPanel.find('h3.panel-title').text($pageListTitle.text());
         $pageList
@@ -224,6 +227,19 @@
         };
     });
 
+
+    $('.pages_list ul').each(function () {
+        if (Cookies.get(this.id) === 'hidden' && this.id !== 'p0') {
+            var $list = $('#' + this.id);
+            $list.prev().find('td:first a').addClass('collapsed');
+
+            $list.hide();
+            console.log(this.id + ' ' + Cookies.get(this.id));
+        }
+
+    });
+
+
     function toggle_viewers() {
         if (document.add.visibility.value == 'private') {
             document.getElementById('viewers').style.display = 'block';
@@ -238,8 +254,10 @@
         var $list = $('#' + id);
         if ($list.is(':visible')) {
             $list.hide();
+            Cookies.set(id, 'hidden', {path: ''});
         } else {
             $list.show();
+            Cookies.set(id, 'visible', {path: ''});
         }
     }
 
