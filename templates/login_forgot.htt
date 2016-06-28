@@ -67,6 +67,9 @@
                                                 <li>Editing</li>
                                             </ul>
                                             <strong>Backend</strong>
+                                            <div id="additionalLogo">
+                                                <img alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" />
+                                            </div>
                                         </div>
                                         <div class="visible-xs">
                                             <i class="wbce-logo"></i> WBCE <strong>Backend</strong>
@@ -118,6 +121,9 @@
                                         <!-- Please note: be fair and do not removed the link to the creator of the template -->
                                     </p>
 
+                                    <div id="additionalFooterLogo" class="visible-xs">
+                                        <img alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" />
+                                    </div>
 
                                 </div><!-- /.col-sm-6.col-sm-pull-6.col-lg-5.col-lg-pull-7 -->
                             </div><!-- /.row -->

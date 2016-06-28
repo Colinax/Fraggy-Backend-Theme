@@ -23,6 +23,25 @@ body {
   min-height: 100%;
   background-color: #E6E6E6; }
 
+#additionalLogo {
+  display: none; }
+  #additionalLogo img {
+    width: auto;
+    height: auto;
+    max-width: 250px;
+    max-height: 125px;
+    margin: auto; }
+
+#additionalFooterLogo {
+  display: none;
+  text-align: center; }
+  #additionalFooterLogo img {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 50px;
+    margin: auto; }
+
 @font-face {
   font-family: 'wbce';
   src: url("../fonts/wbce.ttf?ypeln0") format("truetype"), url("../fonts/wbce.woff?ypeln0") format("woff"), url("../fonts/wbce.svg?ypeln0#wbce") format("svg");
@@ -482,6 +501,9 @@ nav.sidebar {
   background: #303641;
   position: relative;
   border-bottom: 1px solid #ddd; }
+  nav.sidebar #additionalLogo {
+    text-align: center;
+    margin: 0 0 10px 0; }
   nav.sidebar .sidebar-header {
     width: 100%;
     display: block;
@@ -610,6 +632,11 @@ nav.sidebar {
 
 #loginPage .row {
   margin-top: 30px; }
+#loginPage #additionalLogo {
+  margin: 10px 0 0 0; }
+  #loginPage #additionalLogo img {
+    max-width: 200px;
+    max-height: 100px; }
 
 #accessPage h5 {
   margin-bottom: 0; }

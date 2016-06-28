@@ -96,6 +96,11 @@
                     </div>
                     <div class="sidebar-collapse collapse">
                         <div class="sidebar-content hidden-xs">
+
+                            <div id="additionalLogo">
+                                <img alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" />
+                            </div>
+
                             <p>{CURRENT_USER} <strong>{DISPLAY_NAME}</strong></p>
                         </div>
                         <ul class="nav sidebar-nav">

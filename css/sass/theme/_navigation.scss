@@ -28,6 +28,11 @@ nav {
         position: relative;
         border-bottom: 1px solid #ddd;
 
+        #additionalLogo {
+            text-align: center;
+            margin: 0 0 10px 0;
+        }
+
         .sidebar-header {
             width: 100%;
             display: block;

@@ -22,9 +22,9 @@ If you are installing the theme for the first time, use the template installatio
 
 ### Additional logo
 
-Set the name of your logo to additional-logo.png and move it to the image folder of your backend theme installation.
+Rename your logo to additional-logo.png and move it to the image folder of your backend theme installation.
 
-**Attention** The logo has to be PNG-based based and should have a max width of 250px as max height of 100px.
+**Attention** The logo must be a PNG-based image and should have a max width of 250px and a max height of 125px.
 
 ## Changelog
 

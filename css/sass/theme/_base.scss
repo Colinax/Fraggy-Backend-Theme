@@ -7,3 +7,28 @@ body {
     min-height: 100%;
     background-color: $gray-light;
 }
+
+#additionalLogo {
+    display: none;
+
+    img {
+        width: auto;
+        height: auto;
+        max-width: 250px;
+        max-height: 125px;
+        margin: auto;
+    }
+}
+
+#additionalFooterLogo {
+    display: none;
+    text-align: center;
+
+    img {
+        width: auto;
+        height: auto;
+        max-width: 100px;
+        max-height: 50px;
+        margin: auto;
+    }
+}
