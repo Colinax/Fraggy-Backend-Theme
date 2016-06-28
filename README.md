@@ -20,6 +20,10 @@ If you are installing the theme for the first time, use the template installatio
 
 ## Changelog
 
+### v1.1 - work in progress
+
+ * Added flag icons
+
 ### v1.0.2 - release on 2016-06-25
 
  * Added delete icons for pages on xtra-small resolution
@@ -30,23 +34,7 @@ If you are installing the theme for the first time, use the template installatio
 
 ### v1.0 - released on 2016-06-22
 
- * [Fixed issue #7](https://github.com/rjgamer/Fraggy-Backend-Theme/issues/7)
- * Removed message about design issues on third-party pages
-
-### v1.0-beta2 - released on 2016-06-20
-
- * [Fixed 6 issues](https://github.com/rjgamer/Fraggy-Backend-Theme/issues?q=milestone%3Av1.0-beta2+is%3Aclosed)
- * Fixed calendar on sections page
- * Added options for media browser
- * Added reload button for media browser
- * Added thumbnails for images in media browser
- * Added message about design issues on third-party pages
- * Moved backend theme selection to general settings
- * Added space between "im" and "Backend" of german welcome message
-
-### v1.0-beta1 - released on 2016-06-03
-
- * First beta release
+ * Major release
 
 ## Author
 
