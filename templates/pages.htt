@@ -137,9 +137,9 @@
             if ($td.index() === 0) {
                 var $a = $td.find('a');
 
-                if ($a.find('img[src^="collapse.png"]')) {
-                    $a.addClass('expanded');
-                }
+                /*if ($a.find('img[src^="collapse.png"]')) {
+                 $a.addClass('expanded');
+                 }*/
 
                 $a.html('');
 

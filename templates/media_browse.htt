@@ -53,6 +53,7 @@
         <!-- Vendor JavaScript -->
         <script src="{THEME_URL}/vendor/jquery/jquery-2.2.2.min.js?v1.0.2"></script>
         <script src="{THEME_URL}/vendor/bootstrap/js/bootstrap.min.js?v1.0.2"></script>
+        <script src="{THEME_URL}/vendor/js-cookie/js.cookie-2.1.2.min.js?v1.0.2"></script>
         <script src="{THEME_URL}/vendor/select2/js/select2.full.min.js?v1.0.2"></script>
         <script src="{THEME_URL}/vendor/moment/moment-with-locales.min.js?v1.0.2"></script>
         <script src="{THEME_URL}/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?v1.0.2"></script>
