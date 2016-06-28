@@ -227,18 +227,13 @@
         };
     });
 
-
     $('.pages_list ul').each(function () {
         if (Cookies.get(this.id) === 'hidden' && this.id !== 'p0') {
             var $list = $('#' + this.id);
             $list.prev().find('td:first a').addClass('collapsed');
-
             $list.hide();
-            console.log(this.id + ' ' + Cookies.get(this.id));
         }
-
     });
-
 
     function toggle_viewers() {
         if (document.add.visibility.value == 'private') {
