@@ -87,9 +87,6 @@
 
                 <nav class="sidebar">
                     <div class="sidebar-header">
-                        <!-- <a href="{ADMIN_URL}" class="sidebar-brand brand">
-                            <i class="wbce-logo"></i> WBCE <strong>Backend</strong>
-                        </a>-->
                         <a href="{ADMIN_URL}" class="sidebar-logo theme-logo">
                             <img src="{THEME_URL}/images/theme-logo.png" alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" />
                         </a>

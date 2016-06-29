@@ -82,7 +82,7 @@
 
 }
 
-@media(min-width:768px) {
+@media(min-width: $screen-sm) {
     .navbar {
         .navbar-text {
             margin: 15px 0;
@@ -121,7 +121,7 @@
     }
 }
 
-@media(min-width:768px) {
+@media(min-width: $screen-sm) {
     .dropdown, .btn-group {
         &.open  > ul {
             &.dropdown-menu {

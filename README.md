@@ -30,12 +30,12 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ### v1.2 - released on 2016-06-29
 
- * Added five different color styles
+ * Added five more color styles
  * Added color switcher to sidebar
- * Added theme logo
  * Added system info on start page
+ * Replaced additional logo with theme logo
  * Removed sidebar brand
- * Removed additional logo
+ * Removed WBCE logo font
 
 ### v1.1 - released on 2016-06-28
 

@@ -14,10 +14,6 @@
         Theme created by <a href="https://www.neoflow.ch" title="Template by Neoflow" target="_blank">Neoflow</a>.
         <!-- Please note: be fair and do not removed the link to the creator of the template -->
     </p>
-
-    <div id="additionalFooterLogo">
-        <img alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" />
-    </div>
 </div>
 
 </div><!-- /.container-fluid -->

@@ -187,7 +187,7 @@ nav {
     }
 }
 
-@media(min-width:768px) {
+@media(min-width: $screen-sm) {
     nav {
         &.navbar {
             &.navbar-top {
