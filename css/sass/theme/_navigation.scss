@@ -86,7 +86,6 @@ nav {
             .sidebar-content {
                 padding: 15px;
                 color: $sidebar-text-color;
-                display: none;
                 background: lighten($sidebar-bg, 2.5%);
 
                 ul, p {
@@ -101,46 +100,6 @@ nav {
                     &:hover, &:active {
                         color: darken(#fff, 10%);
                     }
-                }
-
-                ul {
-                    &.colors {
-
-                        li {
-
-                            a {
-                                height: 30px;
-                                width: 30px;
-                                display: block;
-                                @include transition(all ease .3s);
-
-                                &.yellow {
-                                    background: $yellow;
-
-                                    &:hover {
-                                        background: darken($yellow, 10%);
-                                    }
-                                }
-
-                                &.green {
-                                    background: $green;
-
-                                    &:hover {
-                                        background: darken($green, 10%);
-                                    }
-                                }
-
-                                &.violet {
-                                    background: $violet;
-
-                                    &:hover {
-                                        background: darken($violet, 10%);
-                                    }
-                                }
-                            }
-                        }
-                    }
-
                 }
             }
 
@@ -281,10 +240,6 @@ nav {
             .sidebar-collapse {
                 border-top: 0;
                 display: block;
-
-                .sidebar-content {
-                    display: block;
-                }
 
                 .sidebar-nav {
                     padding: 15px 0;

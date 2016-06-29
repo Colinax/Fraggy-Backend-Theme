@@ -144,5 +144,12 @@
 
         </div><!-- /.col-md-6.col-lg-4 -->
     </div><!-- /.row -->
+
+    <div id="statusPanel" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">System Information</h3>
+        </div>
+    </div><!-- /.panel.panel-primary -->
+
 </div><!-- /#startPage -->
 <!-- END main_block -->

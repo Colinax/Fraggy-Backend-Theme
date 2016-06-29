@@ -28,11 +28,13 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
-### v1.2 - work in progress
+### v1.2 - released on 2016-06-29
 
- * Added color switcher
+ * Added five different color styles
+ * Added color switcher to sidebar
  * Added theme logo
- * Remove sidebar brand
+ * Added system info on start page
+ * Removed sidebar brand
  * Removed additional logo
 
 ### v1.1 - released on 2016-06-28

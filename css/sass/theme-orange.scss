@@ -1,3 +1,12 @@
+// Colors
+@import 'colors';
+
+// Set secondary brand
+$brand-secondary: $orange;
+
+// Vars
+@import 'variables';
+
 // Bootstrap vars & mixins
 @import '../../vendor/bootstrap/css/sass/bootstrap/variables';
 @import '../../vendor/bootstrap/css/sass/bootstrap/mixins';
@@ -15,4 +24,4 @@
 @import 'theme/brand';
 @import 'theme/navigation';
 @import 'theme/pages';
-
+@import 'theme/color-switcher';

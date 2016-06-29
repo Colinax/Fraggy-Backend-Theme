@@ -61,18 +61,18 @@ body {
   content: "\e900"; }
 
 .text-secondary {
-  color: violet; }
+  color: #CB5656; }
 
 a.text-secondary:hover,
 a.text-secondary:focus {
-  color: #e855e8; }
+  color: #b63838; }
 
 .bg-secondary {
-  background-color: violet; }
+  background-color: #CB5656; }
 
 a.bg-secondary:hover,
 a.bg-secondary:focus {
-  background-color: #e855e8; }
+  background-color: #b63838; }
 
 .text-primary {
   color: #303641; }
@@ -375,23 +375,23 @@ label {
     color: #e6e6e6; }
 
 .panel-secondary {
-  border-color: violet; }
+  border-color: #CB5656; }
   .panel-secondary > .panel-heading {
     color: #fff;
-    background-color: violet;
-    border-color: violet; }
+    background-color: #CB5656;
+    border-color: #CB5656; }
     .panel-secondary > .panel-heading + .panel-collapse > .panel-body {
-      border-top-color: violet; }
+      border-top-color: #CB5656; }
     .panel-secondary > .panel-heading .badge {
-      color: violet;
+      color: #CB5656;
       background-color: #fff; }
   .panel-secondary > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: violet; }
+    border-bottom-color: #CB5656; }
   .panel-secondary a .panel-footer {
-    color: violet;
+    color: #CB5656;
     text-decoration: none; }
     .panel-secondary a .panel-footer:hover, .panel-secondary a .panel-footer:focus {
-      color: #e53fe5; }
+      color: #a33232; }
 
 .panel-success a .panel-footer {
   color: #43AC6A;
@@ -479,7 +479,7 @@ label {
   font-weight: normal;
   text-transform: uppercase; }
   .brand strong {
-    color: violet; }
+    color: #CB5656; }
 
 nav.navbar.navbar-top {
   position: relative;
@@ -541,7 +541,6 @@ nav.sidebar {
     nav.sidebar .sidebar-collapse .sidebar-content {
       padding: 15px;
       color: #fff;
-      display: none;
       background: #353c48; }
       nav.sidebar .sidebar-collapse .sidebar-content ul:last-of-type, nav.sidebar .sidebar-collapse .sidebar-content p:last-of-type {
         margin-bottom: 0; }
@@ -549,25 +548,6 @@ nav.sidebar {
         color: #fff; }
         nav.sidebar .sidebar-collapse .sidebar-content a:hover, nav.sidebar .sidebar-collapse .sidebar-content a:active {
           color: #e6e6e6; }
-      nav.sidebar .sidebar-collapse .sidebar-content ul.colors a {
-        height: 20px;
-        width: 20px;
-        display: block;
-        -webkit-transition: all ease 0.3s;
-        -o-transition: all ease 0.3s;
-        transition: all ease 0.3s; }
-        nav.sidebar .sidebar-collapse .sidebar-content ul.colors a.yellow {
-          background: yellow; }
-          nav.sidebar .sidebar-collapse .sidebar-content ul.colors a.yellow:hover {
-            background: #cccc00; }
-        nav.sidebar .sidebar-collapse .sidebar-content ul.colors a.green {
-          background: #45A246; }
-          nav.sidebar .sidebar-collapse .sidebar-content ul.colors a.green:hover {
-            background: #367e37; }
-        nav.sidebar .sidebar-collapse .sidebar-content ul.colors a.violet {
-          background: violet; }
-          nav.sidebar .sidebar-collapse .sidebar-content ul.colors a.violet:hover {
-            background: #e855e8; }
     nav.sidebar .sidebar-collapse .sidebar-nav {
       background: #303641;
       border-top: 0; }
@@ -600,16 +580,16 @@ nav.sidebar {
             border-color: transparent; }
         nav.sidebar .sidebar-collapse .sidebar-nav li ul li.current > a, nav.sidebar .sidebar-collapse .sidebar-nav li ul li.active > a {
           color: #fff;
-          background: violet;
-          border-color: violet; }
+          background: #CB5656;
+          border-color: #CB5656; }
         nav.sidebar .sidebar-collapse .sidebar-nav li ul li a {
           padding: 6px 25px 6px 57px;
           height: 36px; }
         nav.sidebar .sidebar-collapse .sidebar-nav li ul li ul li a {
           padding-left: 77px; }
         nav.sidebar .sidebar-collapse .sidebar-nav li.current > a, nav.sidebar .sidebar-collapse .sidebar-nav li.active > a {
-          background: violet;
-          border-color: violet; }
+          background: #CB5656;
+          border-color: #CB5656; }
           nav.sidebar .sidebar-collapse .sidebar-nav li.current > a i, nav.sidebar .sidebar-collapse .sidebar-nav li.active > a i {
             color: #fff; }
           nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sidebar .sidebar-collapse .sidebar-nav li.active > a .arrow:before {
@@ -651,8 +631,6 @@ nav.sidebar {
     nav.sidebar .sidebar-collapse {
       border-top: 0;
       display: block; }
-      nav.sidebar .sidebar-collapse .sidebar-content {
-        display: block; }
       nav.sidebar .sidebar-collapse .sidebar-nav {
         padding: 15px 0; } }
 #mediaPage iframe#mediaBrowser {
@@ -752,5 +730,47 @@ nav.sidebar {
     display: table-cell;
     width: 200px;
     max-width: 200px; } }
+#colorSwitcher {
+  font-size: 0;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 0; }
+  #colorSwitcher li {
+    display: inline-block;
+    font-size: 0;
+    padding: 0 4px; }
+    #colorSwitcher li a {
+      font-size: 0;
+      height: 28px;
+      width: 28px;
+      display: block;
+      -webkit-transition: all ease 0.3s;
+      -o-transition: all ease 0.3s;
+      transition: all ease 0.3s; }
+      #colorSwitcher li a.olive-green {
+        background: #99BD51; }
+        #colorSwitcher li a.olive-green:hover {
+          background: #7e9f3c; }
+      #colorSwitcher li a.green {
+        background: #45A246; }
+        #colorSwitcher li a.green:hover {
+          background: #367e37; }
+      #colorSwitcher li a.red {
+        background: #CB5656; }
+        #colorSwitcher li a.red:hover {
+          background: #b63838; }
+      #colorSwitcher li a.blue {
+        background: #337979; }
+        #colorSwitcher li a.blue:hover {
+          background: #245555; }
+      #colorSwitcher li a.orange {
+        background: #CB8B56; }
+        #colorSwitcher li a.orange:hover {
+          background: #b67138; }
+      #colorSwitcher li a.pink {
+        background: #A2457A; }
+        #colorSwitcher li a.pink:hover {
+          background: #7e365f; }
 
-/*# sourceMappingURL=theme-violet.css.map */
+/*# sourceMappingURL=theme-red.css.map */
