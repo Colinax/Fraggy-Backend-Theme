@@ -13,7 +13,7 @@ include '../../../config.php';
 include 'functions/phpinfo2array.php';
 
 // Check wether referer is from the same domain or throw forbidden HTTP code
-if (strpos($_SERVER['HTTP_REFERER'], WB_URL) !== false || 1 == 1) {
+if (strpos($_SERVER['HTTP_REFERER'], WB_URL) !== false) {
 
     // Set content type header
     header('Content-Type: application/json');
