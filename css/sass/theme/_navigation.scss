@@ -28,11 +28,6 @@ nav {
         position: relative;
         border-bottom: 1px solid #ddd;
 
-        #additionalLogo {
-            text-align: center;
-            margin: 0 0 10px 0;
-        }
-
         .sidebar-header {
             width: 100%;
             display: block;
@@ -42,6 +37,21 @@ nav {
             position: relative;
             height: 70px;
             line-height: 50px;
+
+            #additionalLogo {
+                text-align: center;
+                margin: 0 0 10px 0;
+            }
+
+            .sidebar-logo {
+                width: auto;
+                height: 50px;
+                display: inline-block;
+
+                img {
+                    max-height: 50px;
+                }
+            }
 
             .sidebar-brand {
                 font-size: 20px;
@@ -91,6 +101,46 @@ nav {
                     &:hover, &:active {
                         color: darken(#fff, 10%);
                     }
+                }
+
+                ul {
+                    &.colors {
+
+                        li {
+
+                            a {
+                                height: 30px;
+                                width: 30px;
+                                display: block;
+                                @include transition(all ease .3s);
+
+                                &.yellow {
+                                    background: $yellow;
+
+                                    &:hover {
+                                        background: darken($yellow, 10%);
+                                    }
+                                }
+
+                                &.green {
+                                    background: $green;
+
+                                    &:hover {
+                                        background: darken($green, 10%);
+                                    }
+                                }
+
+                                &.violet {
+                                    background: $violet;
+
+                                    &:hover {
+                                        background: darken($violet, 10%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                 }
             }
 
@@ -204,8 +254,19 @@ nav {
             margin: 0;
 
             .sidebar-header {
-                height: $navbar-height;
-                line-height: $navbar-height - 20px;
+                height: auto;
+
+                .sidebar-logo {
+                    width: 250px;
+                    margin: 0 -15px;
+                    text-align: center;
+                    height: auto;
+                    display: block;
+
+                    img {
+                        max-height: 125px;
+                    }
+                }
 
                 .sidebar-toggle {
                     display: none;

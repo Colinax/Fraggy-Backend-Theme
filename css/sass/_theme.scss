@@ -1,6 +1,3 @@
-// Theme vars
-@import 'variables';
-
 // Bootstrap vars & mixins
 @import '../../vendor/bootstrap/css/sass/bootstrap/variables';
 @import '../../vendor/bootstrap/css/sass/bootstrap/mixins';
@@ -18,5 +15,4 @@
 @import 'theme/brand';
 @import 'theme/navigation';
 @import 'theme/pages';
-
 

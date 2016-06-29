@@ -1,5 +1,5 @@
 // Variables
-$gray-base: #000 !default;
+$gray-base: #000;
 $gray-darker: #222;
 $gray-dark: #444;
 $gray: #666;
@@ -7,7 +7,7 @@ $gray-light: #E6E6E6;
 $gray-lighter: #F2F2F2;
 
 $brand-primary: #303641;
-$brand-secondary: #45A246;
+$brand-secondary: #45A246 !default;
 $brand-success: #43AC6A;
 $brand-info: #528FC4;
 $brand-warning: #EA981E;

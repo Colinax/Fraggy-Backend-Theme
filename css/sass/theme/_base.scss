@@ -8,9 +8,7 @@ body {
     background-color: $gray-light;
 }
 
-#additionalLogo {
-    display: none;
-
+.theme-logo {
     img {
         width: auto;
         height: auto;
@@ -20,8 +18,7 @@ body {
     }
 }
 
-#additionalFooterLogo {
-    display: none;
+.theme-footer-logo {
     text-align: center;
 
     img {

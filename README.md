@@ -20,13 +20,20 @@ If you are installing the theme for the first time, use the template installatio
 
 **Attention:** If you want to update the backend theme, then you have to uninstall the old installation first!
 
-### Additional logo
+### Theme logo
 
-Rename your logo to additional-logo.png and replace the existing one in the image folder of your backend theme installation.
+If you want to replace the default theme logo, then you have to create a logo image called theme-logo.png and replace the existing one in the image folder of your backend theme installation.
 
 **Attention:** The logo must be a PNG-based image and should have a max width of 250px and a max height of 125px.
 
 ## Changelog
+
+### v1.2 - work in progress
+
+ * Added color switcher
+ * Added theme logo
+ * Remove sidebar brand
+ * Removed additional logo
 
 ### v1.1 - released on 2016-06-28
 
