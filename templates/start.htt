@@ -145,9 +145,9 @@
         </div><!-- /.col-md-6.col-lg-4 -->
     </div><!-- /.row -->
 
-    <div id="statusPanel" class="panel panel-default">
+    <div id="serverInfoPanel" class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">System Information</h3>
+            <h3 class="panel-title">Server Information</h3>
         </div>
     </div><!-- /.panel.panel-primary -->
 
