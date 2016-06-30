@@ -6,6 +6,10 @@
  * @copyright Jonathan Nessier, Neoflow
  * @license GNU General Public License (GPLv3)
  */
+if (!defined('WB_PATH')) {
+    die(header('Location: ../../index.php'));
+}
+
 $template_directory = 'fraggy';
 $template_name = 'Fraggy Backend Theme';
 $template_function = 'theme';
