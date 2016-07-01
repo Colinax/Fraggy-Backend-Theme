@@ -30,7 +30,8 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ### v1.2.1 - work in progress
 
- * Deleted not needed images
+ * Fixed #9
+ * Deleted not needed icon images
 
 ### v1.2 - released on 2016-06-29
 
