@@ -85,5 +85,13 @@ $(function () {
 
     $('form[action="intro2.php"] table:first').addClass('table');
 
+    if ($('.jcalendar').length) {
+        $.insert(WB_URL + '/include/jscalendar/calendar-system.css');
+    }
+
+    if ($('.jsadmin').length) {
+        $.insert(WB_URL + '/modules/jsadmin/backend.css');
+    }
+    $('#publishdate, #enddate').css({'width': 150, 'display': 'inline-block'});
 
 });
