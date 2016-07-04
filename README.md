@@ -28,7 +28,7 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
-### v1.2.1 - work in progress
+### v1.2.1 - released on 2016-07-04
 
  * Fixed #9
  * Fixed #10
