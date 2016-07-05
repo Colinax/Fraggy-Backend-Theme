@@ -42,6 +42,7 @@
         <script src="{THEME_URL}/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?v1.2.1"></script>
 
         <!-- Theme JavaScript -->
+        <script src="{THEME_URL}/js/jquery.fileselect.js?v1.2.1"></script>
         <script src="{THEME_URL}/js/workarounds.js?v1.2.1"></script>
         <script src="{THEME_URL}/js/theme.js?v1.2.1"></script>
 

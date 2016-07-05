@@ -28,6 +28,10 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
+### v1.3 - work in progress
+
+ * Added new file select
+
 ### v1.2.1 - released on 2016-07-04
 
  * Fixed #9
