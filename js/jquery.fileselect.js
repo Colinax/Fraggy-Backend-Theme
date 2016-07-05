@@ -4,7 +4,7 @@
         var settings = $.extend({
             browseBtnClass: 'btn btn-primary',
             browseIcon: '<i class="fa fa-fw fa-folder-open"></i>',
-            limit: -1
+            limit: false
         }, options);
 
         var translations = {
