@@ -51,7 +51,7 @@
                             </label>
                         </div>
                         <div class="form-group">
-                            <input type="file" data-limit="0.5" name="file1" class="form-control" />
+                            <input type="file" name="file1" class="form-control" />
                         </div>
                         <div class="form-group">
                             <input type="file" name="file2" class="form-control" />
