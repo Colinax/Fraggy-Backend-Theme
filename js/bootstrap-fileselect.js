@@ -1,6 +1,5 @@
 (function (window, $) {
 
-
     var Fileselect = function (fileInput, options) {
         this.$fileInput = $(fileInput);
         this.options = options;
@@ -11,14 +10,13 @@
         this.$labelInput = $('<input>', {type: 'text', class: 'form-control', readyonly: true});
         this.translations = {
             'en': {
-                'browse': 'Browse'
+                'browse': 'Browse',
+                'filelimit': 'Only [num] file(s) allowed'
             },
             'de': {
-                'browse': 'Durchsuchen'
+                'browse': 'Durchsuchen',
+                'filelimit': 'Nur [num] Datei(en) erlaubt'
             },
-            'fr': {
-                'browse': 'Navigateur'
-            }
         };
     };
     Fileselect.prototype = {
@@ -72,7 +70,7 @@
 
             if (this.config.limit) {
                 if (files.length > parseInt(this.config.limit)) {
-                    alert('zuvieleeee dateien');
+                    alert(this.translations.filelimit.replace('[num]', this.config.limit));
                     this.$fileInput.val(null);
                     return false;
                 }

@@ -55,7 +55,7 @@
         <script src="../../templates/fraggy/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?v1.3"></script>
 
         <!-- Theme JavaScript -->
-        <script src="../../js/jquery.fileselect.js?v1.3"></script>
+        <script src="../../js/bootstrap-fileselect.js?v1.3"></script>
         <script src="../../templates/fraggy/js/workarounds.js?v1.3"></script>
         <script src="../../templates/fraggy/js/theme.js?v1.3"></script>
 
