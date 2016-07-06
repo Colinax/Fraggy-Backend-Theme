@@ -40,9 +40,9 @@
         <script src="{THEME_URL}/vendor/select2/js/select2.full.min.js?v1.3"></script>
         <script src="{THEME_URL}/vendor/moment/moment-with-locales.min.js?v1.3"></script>
         <script src="{THEME_URL}/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?v1.3"></script>
+        <script src="{THEME_URL}/vendor/bootstrap-fileselect/bootstrap-fileselect.min.js?v1.3"></script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/bootstrap-fileselect.js?v1.3"></script>
         <script src="{THEME_URL}/js/workarounds.js?v1.3"></script>
         <script src="{THEME_URL}/js/theme.js?v1.3"></script>
 

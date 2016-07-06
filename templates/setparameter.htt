@@ -53,10 +53,10 @@
         <script src="../../templates/fraggy/vendor/select2/js/select2.full.min.js?v1.3"></script>
         <script src="../../templates/fraggy/vendor/moment/moment-with-locales.min.js?v1.3"></script>
         <script src="../../templates/fraggy/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?v1.3"></script>
+        <script src="../../vendor/bootstrap-fileselect/bootstrap-fileselect.min.js?v1.3"></script>
 
         <!-- Theme JavaScript -->
-        <script src="../../js/bootstrap-fileselect.js?v1.3"></script>
-        <script src="../../templates/fraggy/js/workarounds.js?v1.3"></script>
+        <script src="../../js/workarounds.js?v1.3"></script>
         <script src="../../templates/fraggy/js/theme.js?v1.3"></script>
 
     </head>
