@@ -30,6 +30,7 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ### v1.2.3 - work in progress
 
+ * Updated jQuery plugins
  * Removed unused name on modify page
 
 ### v1.2.2 - released on 2016-07-07
