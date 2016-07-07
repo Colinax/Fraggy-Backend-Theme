@@ -50,7 +50,8 @@
         $pageModifyPanel
                 .find('.panel-body')
                 .append($pagesPage.parent().contents().filter(function () {
-                    return $(this).index() !== 0 && $(this).index() !== 1;
+                    var $this = $(this);
+                    return $this.index() !== 0 && $this.index() !== 1;
                 }))
                 .find('.section-info')
                 .prepend('<hr />')
