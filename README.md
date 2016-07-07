@@ -28,7 +28,7 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
-### v1.2.2 - work in progress
+### v1.2.2 - released on 2016-07-07
 
  * Added new upload form control
 
