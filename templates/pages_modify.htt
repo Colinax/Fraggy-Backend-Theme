@@ -53,7 +53,8 @@
                     return $(this).index() !== 0 && $(this).index() !== 1;
                 }))
                 .find('.section-info')
-                .prepend('<hr />');
+                .prepend('<hr />')
+                .find('b:last').hide();
     });
 </script>
 <!-- END main_block -->
