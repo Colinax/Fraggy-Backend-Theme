@@ -32,6 +32,7 @@ If you want to replace the default theme logo, then you have to create a logo im
 
  * Updated jQuery plugins
  * Tweaked design stylings
+ * Removed architecture and IPv6 from API
 
 ### v1.2.2 - released on 2016-07-07
 
