@@ -10,7 +10,7 @@ if (!defined('WB_PATH')) {
     die(header('Location: ../../index.php'));
 }
 
-$template_directory = 'fraggy';
+$template_directory = 'fraggy-backend-theme';
 $template_name = 'Fraggy Backend Theme';
 $template_function = 'theme';
 $template_version = '1.2.2';
