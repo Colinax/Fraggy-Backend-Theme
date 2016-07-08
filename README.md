@@ -28,7 +28,7 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
-### v1.2.3 - work in progress
+### v1.3 - work in progress
 
  * Updated jQuery plugins
  * Tweaked design stylings
