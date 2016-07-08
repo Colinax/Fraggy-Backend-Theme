@@ -19,10 +19,10 @@ if (strpos($_SERVER['HTTP_REFERER'], WB_URL) !== false) {
     header('Content-Type: application/json');
 
     // Encode and render json data
-    if (isset($_GET['advanced2'])) {
+    if (isset($_GET['advanced'])) {
         $phpinfo = phpinfo2array('phpinfo');
         echo json_encode(phpinfo2array());
-    } elseif (isset($_GET['advanced'])) {
+    } elseif (isset($_GET['server'])) {
         $phpinfo = phpinfo2array('phpinfo');
         echo json_encode(array(
             'php' => array(
@@ -32,10 +32,7 @@ if (strpos($_SERVER['HTTP_REFERER'], WB_URL) !== false) {
             ),
             'server' => array(
                 'system' => $phpinfo['System'],
-                'architecture' => $phpinfo['Architecture'],
                 'server_api' => $phpinfo['Server API'],
-                'thread_safety' => $phpinfo['Thread Safety'],
-                'ipv6_support' => $phpinfo['IPv6 Support'],
             ),
         ));
     } else {
