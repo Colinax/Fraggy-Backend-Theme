@@ -23,6 +23,8 @@
     }
 }*/
 
+
+
 .form-control[type="file"] {
     padding: 0;
     border: 0;
@@ -237,13 +239,28 @@ label {
         }
     }
 
+    > .nav-tabs, > .nav-pills {
+        li {
+            a {
+                font-weight: normal;
+                color: $gray;
+
+                &:hover {
+                    color: $navbar-default-link-hover-color;
+                }
+            }
+        }
+    }
+
     > .nav-tabs {
         li {
+
             &:hover, &:active, &:focus {
                 a {
                     border-top: none;
                 }
             }
+
             &:first-child {
                 a {
                     border-left: none;
