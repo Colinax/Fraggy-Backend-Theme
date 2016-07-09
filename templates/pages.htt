@@ -130,9 +130,11 @@
 
         $pageListUl.unbind();
 
+
+
         $pageListUl.find('td').each(function () {
             var $td = $(this),
-                    $menuTitle = $('<small class="hidden-lg" />');
+                    $menuTitle = $('<small />');
             $td.removeAttr('style');
             if ($td.index() === 0) {
                 var $a = $td.find('a');
@@ -157,6 +159,9 @@
                 $td.find('a').append($b.html());
                 $b.remove();
                 $td.after('<td></td>');
+
+            } else if ($td.index() === 2) {
+                //$td.hide();
             } else if ($td.index() === 3 || $td.index() === 4) {
 
                 $td.text($.trim($td.text()));
@@ -164,7 +169,7 @@
                 if ($td.index() === 3) {
                     $menuTitle.text($td.text());
                     $td.prev().prev().find('div').append('<br />').append($menuTitle);
-
+                    $td.hide();
                 }
 
             } else if ($td.index() === 5) {
@@ -195,9 +200,9 @@
                         .append($('<thead />')
                                 .append($('<tr />')
                                         .append($('<th />'))
-                                        .append($('<th />').text($.trim($pageListTable.find('td:nth-child(1)').text().replace(':', ''))))
-                                        .append($('<th />'))
-                                        .append($('<th />').text($.trim($pageListTable.find('td:nth-child(2)').text().replace(':', ''))))
+                                        .append($('<th />').text($.trim($pageListTable.find('td:nth-child(1)').text().replace(':', '')) + ' / ' + $.trim($pageListTable.find('td:nth-child(2)').text().replace(':', ''))))
+                                        .append($('<th />').hide())
+                                        .append($('<th />').hide())
                                         .append($('<th />').text($.trim($pageListTable.find('td:nth-child(3)').text().replace(':', ''))))
                                         .append($('<th /><th /><th /><th /><th />')))))
                 .append($pageListUl)
