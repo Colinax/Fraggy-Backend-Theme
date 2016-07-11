@@ -31,6 +31,8 @@ If you want to replace the default theme logo, then you have to create a logo im
 ### v1.3.1 - work in progress
 
  * Fixed #12
+ * Fixed #13
+ * Removed back button for success messages
 
 ### v1.3 - released on 2016-07-08
 
