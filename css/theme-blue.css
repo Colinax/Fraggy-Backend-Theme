@@ -714,6 +714,11 @@ nav.sidebar {
 
   #pagesPage #pageListPanel table td:nth-child(6), #pagesPage #pageListPanel table th:nth-child(6) {
     display: table-cell; } }
+#ibox .alert {
+  margin: 0; }
+  #ibox .alert .btn, #ibox .alert hr {
+    display: none; }
+
 @media (min-width: 992px) {
   #pagesPage #pageListPanel table td:nth-child(5), #pagesPage #pageListPanel table td:nth-child(7), #pagesPage #pageListPanel table th:nth-child(5), #pagesPage #pageListPanel table th:nth-child(7) {
     display: table-cell; } }
