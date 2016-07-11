@@ -32,6 +32,7 @@ If you want to replace the default theme logo, then you have to create a logo im
 
  * Fixed #12
  * Fixed #13
+ * Added home/frontend button on login page
 
 ### v1.3 - released on 2016-07-08
 

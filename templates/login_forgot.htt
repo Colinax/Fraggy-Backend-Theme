@@ -105,6 +105,9 @@
                                             </ul>
 
                                         </div><!-- /.panel-body -->
+                                        <div class="panel-footer text-right">
+                                            <a class="btn btn-xs btn-default" href="{WB_URL}"><i class="fa fa-fw fa-desktop"></i> {TEXT_HOME}</a>
+                                        </div>
                                     </div><!-- /.panel.panel-default -->
 
                                     <p class="page-license">
