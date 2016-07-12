@@ -152,4 +152,33 @@
     </div><!-- /.panel.panel-primary -->
 
 </div><!-- /#startPage -->
+
+<script>
+    $(function () {
+        var $serverInfoPanel = $(this).find('#serverInfoPanel'),
+                $table = $('<table>', {
+                    'class': 'table table-striped'
+                }),
+                $tableBody = $('<tbody>');
+
+        $.ajax({
+            dataType: 'json',
+            url: THEME_URL + '/api/sysinfo.php?server',
+            success: function (data) {
+                $tableBody
+                        .append('<tr><td>PHP Version</td><td>' + data.php.version + '</td></tr>')
+                        .append('<tr><td>Loaded Extensions</td><td>' + data.php.loaded_extensions + '</td></tr>')
+                        .append('<tr><td>System</td><td>' + data.server.system + '</td></tr>')
+                        .append('<tr><td>Server API</td><td>' + data.server.server_api + '</td></tr>')
+                $table.prepend($tableBody);
+                $serverInfoPanel.append($table);
+                $(window).resize();
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                $serverInfoPanel.remove();
+            }
+        });
+    });
+</script>
+
 <!-- END main_block -->
