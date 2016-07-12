@@ -28,11 +28,12 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
-### v1.3.1 - work in progress
+### v1.3.1 - released on 2016-07-12
 
  * Fixed #12
  * Fixed #13
  * Added home/frontend button on login page
+ * Switched to MIT license
 
 ### v1.3 - released on 2016-07-08
 
