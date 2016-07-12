@@ -4,7 +4,7 @@
  * Mobile-responsive backend theme for WBCE
  *
  * @copyright Jonathan Nessier, Neoflow
- * @license GNU General Public License (GPLv3)
+ * @license The MIT License (MIT)
  */
 if (!defined('WB_PATH')) {
     die(header('Location: ../../index.php'));
@@ -16,6 +16,6 @@ $template_function = 'theme';
 $template_version = '1.3';
 $template_platform = '1.1.x';
 $template_author = 'Jonathan Nessier - <a href="https://www.neoflow.ch" target="_blank">Neoflow</a>';
-$template_license = '<a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU General Public License (GPLv3)</a>';
+$template_license = '<a href="https://github.com/Neoflow/Fraggy-Backend-Theme/blob/master/LICENSE" target="_blank">MIT License</a>';
 $template_license_terms = '-';
 $template_description = 'Mobile-responsive backend theme for WBCE';
