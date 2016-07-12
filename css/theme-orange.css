@@ -315,17 +315,18 @@ label {
 .nav-tabs + .panel {
   margin-top: -1px; }
 
+.nav-tabs li a, .nav-pills li a {
+  font-weight: normal;
+  color: #666; }
+  .nav-tabs li a:hover, .nav-pills li a:hover {
+    color: #333; }
+
 .panel {
   border-width: 3px 0 0 0;
   -webkit-box-shadow: none;
   box-shadow: none; }
   .panel > .table td, .panel > .table th {
     padding: 8px 15px; }
-  .panel > .nav-tabs li a, .panel > .nav-pills li a {
-    font-weight: normal;
-    color: #666; }
-    .panel > .nav-tabs li a:hover, .panel > .nav-pills li a:hover {
-      color: #333; }
   .panel > .nav-tabs li:hover a, .panel > .nav-tabs li:active a, .panel > .nav-tabs li:focus a {
     border-top: none; }
   .panel > .nav-tabs li:first-child a {
