@@ -60,7 +60,7 @@
         <script src="{THEME_URL}/vendor/bootstrap-fileselect/bootstrap-fileselect.min.js?v1.3.1"></script>
 
         <!-- WBCE helper JavaScript -->
-        <script src="{WB_URL}/include/jquery/jquery-insert.js"></script>
+        <script src="../../include/jquery/jquery-insert.js"></script>
         <script>
             function confirm_link(message, url) {
                 if (confirm(message))

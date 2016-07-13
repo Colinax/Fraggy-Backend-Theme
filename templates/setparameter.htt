@@ -14,14 +14,14 @@
         <meta name="author" content="Jonathan Nessier, Neoflow" />
 
         <!-- Theme vendor CSS -->
-        <link href="../../templates/fraggy/vendor/bootstrap/css/bootstrap.css?v1.3.1" rel="stylesheet" type="text/css" />
-        <link href="../../templates/fraggy/vendor/select2/css/select2.min.css?v1.3.1" rel="stylesheet" type="text/css" />
-        <link href="../../templates/fraggy/vendor/select2/css/select2-bootstrap.css?v1.3.1" rel="stylesheet" type="text/css" />
-        <link href="../../templates/fraggy/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css?v1.3.1" rel="stylesheet" type="text/css" />
-        <link href="../../templates/fraggy/vendor/font-awesome-4.5/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy-backend-theme/vendor/bootstrap/css/bootstrap.css?v1.3.1" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy-backend-theme/vendor/select2/css/select2.min.css?v1.3.1" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy-backend-theme/vendor/select2/css/select2-bootstrap.css?v1.3.1" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy-backend-theme/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css?v1.3.1" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy-backend-theme/vendor/font-awesome-4.5/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
         <!-- Theme core CSS -->
-        <link href="../../templates/fraggy/css/theme-green.css?v1.3.1" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy-backend-theme/css/theme-green.css?v1.3.1" rel="stylesheet" type="text/css" />
 
         <!-- Theme vendor fonts -->
         <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
@@ -41,18 +41,18 @@
         <!-- Initiliaze vars -->
         <script>
             var WB_URL = '../..',
-                    THEME_URL = '../../templates/fraggy',
+                    THEME_URL = '../../templates/fraggy-backend-theme',
                     ADMIN_URL = '{ADMIN_URL}';
         </script>
 
         <!-- Theme vendor JavaScript -->
-        <script src="../../templates/fraggy/vendor/jquery/jquery-2.2.2.min.js?v1.3.1"></script>
-        <script src="../../templates/fraggy/vendor/bootstrap/js/bootstrap.min.js?v1.3.1"></script>
-        <script src="../../templates/fraggy/vendor/js-cookie/js.cookie-2.1.2.min.js?v1.3.1"></script>
-        <script src="../../templates/fraggy/vendor/select2/js/select2.full.min.js?v1.3.1"></script>
-        <script src="../../templates/fraggy/vendor/moment/moment-with-locales.min.js?v1.3.1"></script>
-        <script src="../../templates/fraggy/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?v1.3.1"></script>
-        <script src="../../templates/fraggy/vendor/bootstrap-fileselect/bootstrap-fileselect.min.js?v1.3.1"></script>
+        <script src="../../templates/fraggy-backend-theme/vendor/jquery/jquery-2.2.2.min.js?v1.3.1"></script>
+        <script src="../../templates/fraggy-backend-theme/vendor/bootstrap/js/bootstrap.min.js?v1.3.1"></script>
+        <script src="../../templates/fraggy-backend-theme/vendor/js-cookie/js.cookie-2.1.2.min.js?v1.3.1"></script>
+        <script src="../../templates/fraggy-backend-theme/vendor/select2/js/select2.full.min.js?v1.3.1"></script>
+        <script src="../../templates/fraggy-backend-theme/vendor/moment/moment-with-locales.min.js?v1.3.1"></script>
+        <script src="../../templates/fraggy-backend-theme/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?v1.3.1"></script>
+        <script src="../../templates/fraggy-backend-theme/vendor/bootstrap-fileselect/bootstrap-fileselect.min.js?v1.3.1"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="../../include/jquery/jquery-insert.js"></script>
@@ -64,8 +64,8 @@
         </script>
 
         <!-- Theme core JavaScript -->
-        <script src="../../templates/fraggy/js/jquery.workarounds.js?v1.3.1"></script>
-        <script src="../../templates/fraggy/js/jquery.theme.js?v1.3.1"></script>
+        <script src="../../templates/fraggy-backend-theme/js/jquery.workarounds.js?v1.3.1"></script>
+        <script src="../../templates/fraggy-backend-theme/js/jquery.theme.js?v1.3.1"></script>
         <script>
             Theme.init();
         </script>
@@ -118,10 +118,14 @@
                     </div>
                 </div>
                 <!-- END list_block -->
-                <button class="btn btn-primary" type="submit" name="save"><i class="fa fa-fw fa-floppy-o"></i> {SAVE_TEXT}</button>
-                <a href="browse.php" class="btn btn-default">
-                    <i class="fa fa-fw fa-arrow-circle-left"></i> {BACK}
-                </a>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button class="btn btn-primary" type="submit" name="save"><i class="fa fa-fw fa-floppy-o"></i> {SAVE_TEXT}</button>
+                        <a href="browse.php" class="btn btn-default">
+                            <i class="fa fa-fw fa-arrow-circle-left"></i> {BACK}
+                        </a>
+                    </div>
+                </div>
             </form>
 
         </div>
