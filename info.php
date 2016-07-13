@@ -1,7 +1,7 @@
 <?php
 /**
  * Fraggy Backend Theme
- * Mobile-responsive backend theme for WBCE
+ * Responsive and Bootstrap based backend theme for WBCE
  *
  * @copyright Jonathan Nessier, Neoflow
  * @license The MIT License (MIT)
@@ -18,4 +18,4 @@ $template_platform = '1.1.x';
 $template_author = 'Jonathan Nessier - <a href="https://www.neoflow.ch" target="_blank">Neoflow</a>';
 $template_license = '<a href="https://github.com/Neoflow/Fraggy-Backend-Theme/blob/master/LICENSE" target="_blank">MIT License</a>';
 $template_license_terms = '-';
-$template_description = 'Mobile-responsive backend theme for WBCE';
+$template_description = 'Responsive and Bootstrap based backend theme for WBCE';
