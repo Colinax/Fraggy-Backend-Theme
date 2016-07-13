@@ -74,6 +74,7 @@ $(function () {
 
     var $welcomeMessage = $('#welcomeMessage'),
             welcomeMessageText = $welcomeMessage.text();
+
     welcomeMessageText = welcomeMessageText.replace('imBackend', 'im Backend');
     $welcomeMessage.text(welcomeMessageText);
 

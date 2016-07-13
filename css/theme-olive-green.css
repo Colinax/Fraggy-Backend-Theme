@@ -731,17 +731,17 @@ nav.sidebar {
     display: table-cell;
     width: 200px;
     max-width: 200px; } }
-#colorSwitcher {
+#stylesheet-switcher {
   font-size: 0;
   width: 100%;
   text-align: center;
   display: block;
   margin: 0; }
-  #colorSwitcher li {
+  #stylesheet-switcher li {
     display: inline-block;
     font-size: 0;
     padding: 0 4px; }
-    #colorSwitcher li a {
+    #stylesheet-switcher li a {
       font-size: 0;
       height: 28px;
       width: 28px;
@@ -749,29 +749,29 @@ nav.sidebar {
       -webkit-transition: all ease 0.3s;
       -o-transition: all ease 0.3s;
       transition: all ease 0.3s; }
-      #colorSwitcher li a.olive-green {
+      #stylesheet-switcher li a.olive-green {
         background: #99BD51; }
-        #colorSwitcher li a.olive-green:hover {
+        #stylesheet-switcher li a.olive-green:hover {
           background: #7e9f3c; }
-      #colorSwitcher li a.green {
+      #stylesheet-switcher li a.green {
         background: #45A246; }
-        #colorSwitcher li a.green:hover {
+        #stylesheet-switcher li a.green:hover {
           background: #367e37; }
-      #colorSwitcher li a.red {
+      #stylesheet-switcher li a.red {
         background: #CB5656; }
-        #colorSwitcher li a.red:hover {
+        #stylesheet-switcher li a.red:hover {
           background: #b63838; }
-      #colorSwitcher li a.blue {
+      #stylesheet-switcher li a.blue {
         background: #337979; }
-        #colorSwitcher li a.blue:hover {
+        #stylesheet-switcher li a.blue:hover {
           background: #245555; }
-      #colorSwitcher li a.orange {
+      #stylesheet-switcher li a.orange {
         background: #CB8B56; }
-        #colorSwitcher li a.orange:hover {
+        #stylesheet-switcher li a.orange:hover {
           background: #b67138; }
-      #colorSwitcher li a.pink {
+      #stylesheet-switcher li a.pink {
         background: #A2457A; }
-        #colorSwitcher li a.pink:hover {
+        #stylesheet-switcher li a.pink:hover {
           background: #7e365f; }
 
 /*# sourceMappingURL=theme-olive-green.css.map */

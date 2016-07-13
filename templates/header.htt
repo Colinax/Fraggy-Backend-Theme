@@ -22,7 +22,7 @@
         <link href="{THEME_URL}/vendor/font-awesome-4.5/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
         <!-- Theme core CSS -->
-        <link id="themeStylesheet" href="{THEME_URL}/css/theme-green.css?v1.3.1" rel="stylesheet" type="text/css" />
+        <link id="switchable" href="{THEME_URL}/css/theme-green.css?v1.3.1" rel="stylesheet" type="text/css" />
 
         <!-- Theme vendor fonts -->
         <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
@@ -58,6 +58,9 @@
         <!-- Theme core JavaScript -->
         <script src="{THEME_URL}/js/jquery.workarounds.js?v1.3.1"></script>
         <script src="{THEME_URL}/js/jquery.theme.js?v1.3.1"></script>
+        <script>
+            Theme.init();
+        </script>
 
         {BACKEND_MODULE_JS}
 
@@ -109,7 +112,7 @@
                             <!-- END linkBlock -->
                         </ul>
                         <div class="sidebar-content small">
-                            <ul id="colorSwitcher" class="list-inline">
+                            <ul id="stylesheet-switcher" class="list-inline">
                                 <li><a class="green" href="{THEME_URL}/css/theme-green.css?v1.3.1"></a></li>
                                 <li><a class="red" href="{THEME_URL}/css/theme-red.css?v1.3.1"></a></li>
                                 <li><a class="olive-green" href="{THEME_URL}/css/theme-olive-green.css?v1.3.1"></a></li>

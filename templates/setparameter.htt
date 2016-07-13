@@ -66,6 +66,9 @@
         <!-- Theme core JavaScript -->
         <script src="../../templates/fraggy/js/jquery.workarounds.js?v1.3.1"></script>
         <script src="../../templates/fraggy/js/jquery.theme.js?v1.3.1"></script>
+        <script>
+            Theme.init();
+        </script>
 
     </head>
     <body>
