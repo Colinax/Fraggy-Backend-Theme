@@ -13,17 +13,17 @@
         <meta name="keywords" content="{SECTION_FORGOT}" />
         <meta name="author" content="Jonathan Nessier, Neoflow" />
 
-        <!-- Vendor CSS -->
+        <!-- Theme vendor CSS -->
         <link href="{THEME_URL}/vendor/bootstrap/css/bootstrap.css?v1.3.1" rel="stylesheet" type="text/css" />
         <link href="{THEME_URL}/vendor/select2/css/select2.min.css?v1.3.1" rel="stylesheet" type="text/css" />
         <link href="{THEME_URL}/vendor/select2/css/select2-bootstrap.css?v1.3.1" rel="stylesheet" type="text/css" />
         <link href="{THEME_URL}/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css?v1.3.1" rel="stylesheet" type="text/css" />
         <link href="{THEME_URL}/vendor/font-awesome-4.5/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
-        <!-- Theme CSS -->
+        <!-- Theme core CSS -->
         <link href="{THEME_URL}/css/theme-green.css?v1.3.1" rel="stylesheet" type="text/css" />
 
-        <!-- Vendor Fonts -->
+        <!-- Theme vendor fonts -->
         <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
 
         <!-- Initiliaze vars -->
@@ -33,7 +33,7 @@
                     ADMIN_URL = '{ADMIN_URL}';
         </script>
 
-        <!-- Vendor JavaScript -->
+        <!-- Theme vendor JavaScript -->
         <script src="{THEME_URL}/vendor/jquery/jquery-2.2.2.min.js?v1.3.1"></script>
         <script src="{THEME_URL}/vendor/bootstrap/js/bootstrap.min.js?v1.3.1"></script>
         <script src="{THEME_URL}/vendor/js-cookie/js.cookie-2.1.2.min.js?v1.3.1"></script>
@@ -42,8 +42,16 @@
         <script src="{THEME_URL}/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?v1.3.1"></script>
         <script src="{THEME_URL}/vendor/bootstrap-fileselect/bootstrap-fileselect.min.js?v1.3.1"></script>
 
-        <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/jquery.helper.js?v1.3.1"></script>
+        <!-- WBCE helper JavaScript -->
+        <script src="{WB_URL}/include/jquery/jquery-insert.js"></script>
+        <script>
+            function confirm_link(message, url) {
+                if (confirm(message))
+                    location.href = url;
+            }
+        </script>
+
+        <!-- Theme core JavaScript -->
         <script src="{THEME_URL}/js/jquery.workarounds.js?v1.3.1"></script>
         <script src="{THEME_URL}/js/jquery.theme.js?v1.3.1"></script>
 
