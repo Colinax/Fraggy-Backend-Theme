@@ -35,6 +35,7 @@ If you want to replace the default theme logo, then you have to create a logo im
  * Added home/frontend button on login page
  * Switched to MIT license
  * Refactored JavaScript code
+ * Fixed script and link urls
 
 ### v1.3 - released on 2016-07-08
 
