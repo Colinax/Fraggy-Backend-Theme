@@ -42,7 +42,7 @@
 </div>
 
 <script>
-    $(document).ready(function () {
+    $(function () {
 
         var $pagesPage = $('#pagesPage'),
                 $pageModifyPanel = $pagesPage.find('#pageModifyPanel');
