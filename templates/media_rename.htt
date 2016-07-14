@@ -72,7 +72,9 @@
         <script src="{THEME_URL}/js/jquery.workarounds.js?v1.3.1"></script>
         <script src="{THEME_URL}/js/jquery.theme.js?v1.3.1"></script>
         <script>
-            Theme.init();
+            $(document).ready(function () {
+                Theme.init();
+            });
         </script>
 
         <!-- Custom Javascript -->
