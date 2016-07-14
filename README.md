@@ -30,12 +30,12 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ### v1.4 - work in progress
 
- * Fixed #12
- * Fixed #13
- * Added home/frontend button on login page
- * Switched to MIT license
- * Refactored JavaScript code
- * Fixed script and link urls
+ * Fixed issue #12
+ * Fixed issue #13
+ * Added home button link on login pages
+ * Switched to The MIT license
+ * Refactored theme JavaScript
+ * Fixed some urls to script and stylesheet resources
 
 ### v1.3 - released on 2016-07-08
 
@@ -50,9 +50,9 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ### v1.2.1 - released on 2016-07-04
 
- * Fixed #9
- * Fixed #10
- * Fixed #11
+ * Fixed issue #9
+ * Fixed issue #10
+ * Fixed issue #11
  * Deleted not needed icon images
 
 ### v1.2 - released on 2016-06-29
@@ -78,7 +78,7 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ### v1.0.1 - released on 2016-06-23
 
- * Fixed #8
+ * Fixed issue #8
 
 ### v1.0 - released on 2016-06-22
 
