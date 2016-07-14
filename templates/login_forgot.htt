@@ -14,14 +14,14 @@
         <meta name="author" content="Jonathan Nessier, Neoflow" />
 
         <!-- Theme vendor CSS -->
-        <link href="{THEME_URL}/vendor/bootstrap/css/bootstrap.css?v1.3.1" rel="stylesheet" type="text/css" />
-        <link href="{THEME_URL}/vendor/select2/css/select2.min.css?v1.3.1" rel="stylesheet" type="text/css" />
-        <link href="{THEME_URL}/vendor/select2/css/select2-bootstrap.css?v1.3.1" rel="stylesheet" type="text/css" />
-        <link href="{THEME_URL}/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css?v1.3.1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/vendor/bootstrap/css/bootstrap.css?v1.4" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/vendor/select2/css/select2.min.css?v1.4" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/vendor/select2/css/select2-bootstrap.css?v1.4" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css?v1.4" rel="stylesheet" type="text/css" />
         <link href="{THEME_URL}/vendor/font-awesome-4.5/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
         <!-- Theme core CSS -->
-        <link href="{THEME_URL}/css/theme-green.css?v1.3.1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/css/theme-green.css?v1.4" rel="stylesheet" type="text/css" />
 
         <!-- Theme vendor fonts -->
         <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
@@ -34,13 +34,13 @@
         </script>
 
         <!-- Theme vendor JavaScript -->
-        <script src="{THEME_URL}/vendor/jquery/jquery-2.2.2.min.js?v1.3.1"></script>
-        <script src="{THEME_URL}/vendor/bootstrap/js/bootstrap.min.js?v1.3.1"></script>
-        <script src="{THEME_URL}/vendor/js-cookie/js.cookie-2.1.2.min.js?v1.3.1"></script>
-        <script src="{THEME_URL}/vendor/select2/js/select2.full.min.js?v1.3.1"></script>
-        <script src="{THEME_URL}/vendor/moment/moment-with-locales.min.js?v1.3.1"></script>
-        <script src="{THEME_URL}/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?v1.3.1"></script>
-        <script src="{THEME_URL}/vendor/bootstrap-fileselect/bootstrap-fileselect.min.js?v1.3.1"></script>
+        <script src="{THEME_URL}/vendor/jquery/jquery-2.2.2.min.js?v1.4"></script>
+        <script src="{THEME_URL}/vendor/bootstrap/js/bootstrap.min.js?v1.4"></script>
+        <script src="{THEME_URL}/vendor/js-cookie/js.cookie-2.1.2.min.js?v1.4"></script>
+        <script src="{THEME_URL}/vendor/select2/js/select2.full.min.js?v1.4"></script>
+        <script src="{THEME_URL}/vendor/moment/moment-with-locales.min.js?v1.4"></script>
+        <script src="{THEME_URL}/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?v1.4"></script>
+        <script src="{THEME_URL}/vendor/bootstrap-fileselect/bootstrap-fileselect.min.js?v1.4"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="{WB_URL}/include/jquery/jquery-insert.js"></script>
@@ -52,8 +52,8 @@
         </script>
 
         <!-- Theme core JavaScript -->
-        <script src="{THEME_URL}/js/jquery.workarounds.js?v1.3.1"></script>
-        <script src="{THEME_URL}/js/jquery.theme.js?v1.3.1"></script>
+        <script src="{THEME_URL}/js/jquery.workarounds.js?v1.4"></script>
+        <script src="{THEME_URL}/js/jquery.theme.js?v1.4"></script>
         <script>
             $(document).ready(function () {
                 Theme.init();
