@@ -39,8 +39,7 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ### Older versions
 
-You can see the summary of Fraggy Backend theme releases and the changes in each
-release [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
+You can see the summary releases and the changes in each release [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
 
 ## Author
 
