@@ -36,6 +36,7 @@ If you want to replace the default theme logo, then you have to create a logo im
  * Switched to The MIT license
  * Refactored theme JavaScript
  * Fixed some urls to script and stylesheet resources
+ * Added favicon
 
 ### Older versions
 
