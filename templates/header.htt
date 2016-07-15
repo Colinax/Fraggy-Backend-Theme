@@ -5,14 +5,20 @@
     <head>
         <title>{WEBSITE_TITLE} - {TEXT_ADMINISTRATION} - {SECTION_NAME}</title>
 
-        <!-- Meta data -->
+        <!-- Theme meta data -->
         <meta charset="{CHARSET}">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- Website meta data -->
         <meta name="description" content="{TEXT_ADMINISTRATION}" />
         <meta name="keywords" content="{TEXT_ADMINISTRATION}" />
         <meta name="author" content="Jonathan Nessier, Neoflow" />
+
+        <!-- Theme favicons -->
+        <link href="{THEME_URL}/images/favicons/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
+        <link href="{THEME_URL}/images/favicons/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16" />
+        <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme vendor CSS -->
         <link href="{THEME_URL}/vendor/bootstrap/css/bootstrap.css?v1.4" rel="stylesheet" type="text/css" />
