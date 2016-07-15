@@ -1,10 +1,10 @@
-# Fraggy
+# Fraggy Backend Theme
 
-![Reponsive backend theme for WBCE](https://fraggy.neoflow.ch/media/example.png "Reponsive backend theme for WBCE")
+![Responsive and Bootstrap based backend theme for WBCE](https://fraggy.neoflow.ch/media/example.png "Responsive and Bootstrap based backend theme for WBCE")
 
 ## About
 
-Fraggy is a responsive and Bootstrap based backend theme for [WBCE](http://wbce.org).
+Fraggy Backend Theme is a responsive and Bootstrap based template for the backend of [WBCE](http://wbce.org)
 
 **Attention:** There might be some design issues at the backend of older modules, but usually the modules still work as expected.
 
@@ -37,52 +37,10 @@ If you want to replace the default theme logo, then you have to create a logo im
  * Refactored theme JavaScript
  * Fixed some urls to script and stylesheet resources
 
-### v1.3 - released on 2016-07-08
+### Older versions
 
- * Updated jQuery plugins
- * Tweaked design stylings
- * Removed architecture and IPv6 from API
- * Renamed theme folder to fraggy-backend-theme
-
-### v1.2.2 - released on 2016-07-07
-
- * Added new upload form control
-
-### v1.2.1 - released on 2016-07-04
-
- * Fixed issue #9
- * Fixed issue #10
- * Fixed issue #11
- * Deleted not needed icon images
-
-### v1.2 - released on 2016-06-29
-
- * Added five more color styles
- * Added color switcher to sidebar
- * Added system info on start page
- * Replaced additional logo with theme logo
- * Removed sidebar brand
- * Removed WBCE logo font
-
-### v1.1 - released on 2016-06-28
-
- * Added flag icons
- * Fixed cookies for page tree
- * Added additional logo
- * Added API to get system information
- * Added PHP version to sidebar
-
-### v1.0.2 - released on 2016-06-25
-
- * Added delete icons for pages on xtra-small resolution
-
-### v1.0.1 - released on 2016-06-23
-
- * Fixed issue #8
-
-### v1.0 - released on 2016-06-22
-
- * First release
+You can see the summary of Fraggy Backend theme releases and the changes in each
+release [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
 
 ## Author
 
