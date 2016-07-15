@@ -15,16 +15,6 @@
     overflow-x: auto;
 }
 
-/*.form-horizontal {
-    .control-label {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-}*/
-
-
-
 .form-control[type="file"] {
     padding: 0;
     border: 0;
@@ -68,16 +58,6 @@
                 font-family: $headings-font-family;
                 font-size: 14px;
                 font-weight: normal;
-            }
-
-            /*            &.active > a, &.open > a {
-                            &, &:hover, &:focus {
-                                color: $brand-primary;
-                            }
-                        }*/
-
-            .dropdown-menu {
-                min-width: auto;
             }
         }
     }
@@ -210,10 +190,6 @@ label {
 .text-2x {
     font-size: 24px;
 }
-/*
-.btn-secondary {
-    @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
-}*/
 
 .alert {
     border-width: 3px 0 0 0;
@@ -281,7 +257,6 @@ label {
     }
 
     .panel-heading {
-        /*border-bottom: 0;*/
         font-size: 16px;
 
         .panel-title {
