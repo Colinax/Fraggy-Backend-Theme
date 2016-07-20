@@ -1,6 +1,6 @@
 # Fraggy Backend Theme
 
-![Responsive and Bootstrap based backend theme for WBCE](https://fraggy.neoflow.ch/media/example.png "Responsive and Bootstrap based backend theme for WBCE")
+![Responsive and Bootstrap based backend theme for WBCE](https://github.com/Neoflow/Fraggy-Backend-Theme/blob/master/images/example.png "Responsive and Bootstrap based backend theme for WBCE")
 
 ## About
 
