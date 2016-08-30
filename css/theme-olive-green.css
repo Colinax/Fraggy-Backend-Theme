@@ -771,7 +771,7 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
     display: block;
   }
   nav.sidebar .sidebar-header .sidebar-logo img {
-    max-height: 125px;
+    max-height: 86px;
   }
   nav.sidebar .sidebar-header .sidebar-toggle {
     display: none;
