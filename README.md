@@ -28,6 +28,10 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
+### v1.4.1 - work in progress
+
+ * Reduced max height of logo image from 125px to 86px for width higher than xtra-small
+
 ### v1.4 - released on 2016-07-15
 
  * Fixed issue #12
