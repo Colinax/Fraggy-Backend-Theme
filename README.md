@@ -24,23 +24,14 @@ If you are installing the theme for the first time, use the template installatio
 
 If you want to replace the default theme logo, then you have to create a logo image called theme-logo.png and replace the existing one in the image folder of your backend theme installation.
 
-**Attention:** The logo must be a PNG-based image and should have a max width of 250px and a max height of 125px.
+**Attention:** The logo must be a PNG-based image and should have a max width of 250px and a max height of 86px.
 
 ## Changelog
 
-### v1.4.1 - work in progress
+### v1.4.1 - released on 2016-08-31
 
- * Reduced max height of logo image from 125px to 86px for width higher than xtra-small
-
-### v1.4 - released on 2016-07-15
-
- * Fixed issue #12
- * Fixed issue #13
- * Added home button link on login pages
- * Switched to The MIT license
- * Refactored theme JavaScript
- * Fixed some urls to script and stylesheet resources
- * Added favicon
+ * Reduced max height of the logo image from 125px to 86px on the sidebar
+ * Made server information panel collapsable
 
 ### Older versions
 
