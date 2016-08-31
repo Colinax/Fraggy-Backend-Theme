@@ -57,7 +57,6 @@ var Theme = (function () {
                 $sidebar.height('');
                 $navXsStacked.addClass('nav-stacked');
             }
-            console.log('resize');
         }).trigger('theme-resize');
     };
 
