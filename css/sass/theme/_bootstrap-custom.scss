@@ -261,6 +261,25 @@ label {
 
         .panel-title {
             font-weight: normal;
+
+            a[data-toggle] {
+                &:after {
+                    font-family: FontAwesome;
+                    content: "\f102";
+                    padding-left: 5px;
+                    font-weight: normal;
+                }
+
+                &.collapsed {
+                    &:after {
+                        content: "\f103";
+                    }
+                }
+
+                &:hover, &:focus {
+                    text-decoration: none;
+                }
+            }
         }
     }
 

@@ -147,9 +147,12 @@
 
     <div id="serverInfoPanel" class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">Server Information</h3>
+            <h3 class="panel-title">
+                <a data-toggle="collapse" href="#serverInfoTable">Server Information</a>
+            </h3>
         </div>
-    </div><!-- /.panel.panel-primary -->
+
+    </div><!-- /.panel.panel-default -->
 
 </div><!-- /#startPage -->
 
@@ -157,7 +160,8 @@
     $(function () {
         var $serverInfoPanel = $(this).find('#serverInfoPanel'),
                 $table = $('<table>', {
-                    'class': 'table table-striped'
+                    'class': 'table table-striped panel-collapse collapse in',
+                    'id': 'serverInfoTable'
                 }),
                 $tableBody = $('<tbody>');
 
@@ -165,19 +169,35 @@
             dataType: 'json',
             url: THEME_URL + '/api/sysinfo.php?server',
             success: function (data) {
+
+                if (Cookies.get('serverInfoPanel') === 'collapsed') {
+                    $serverInfoPanel.find('h3 > a').addClass('collapsed');
+                    $table.removeClass('in');
+                    Cookies.remove('serverInfoPanel');
+                }
+
                 $tableBody
                         .append('<tr><td>PHP Version</td><td>' + data.php.version + '</td></tr>')
                         .append('<tr><td>Loaded Extensions</td><td>' + data.php.loaded_extensions + '</td></tr>')
                         .append('<tr><td>System</td><td>' + data.server.system + '</td></tr>')
                         .append('<tr><td>Server API</td><td>' + data.server.server_api + '</td></tr>')
                 $table.prepend($tableBody);
-                $serverInfoPanel.append($table);
+                $serverInfoPanel
+                        .append($table)
+                        .on('hidden.bs.collapse', function (e) {
+                            Cookies.set('serverInfoPanel', 'collapsed');
+                        })
+                        .on('shown.bs.collapse hidden.bs.collapse', function () {
+                            $(window).trigger('theme-resize');
+                        });
+
                 $(window).resize();
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 $serverInfoPanel.remove();
             }
         });
+
     });
 </script>
 

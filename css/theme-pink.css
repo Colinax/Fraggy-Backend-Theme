@@ -412,6 +412,18 @@ label {
 .panel .panel-heading .panel-title {
   font-weight: normal;
 }
+.panel .panel-heading .panel-title a[data-toggle]:after {
+  font-family: FontAwesome;
+  content: "\f102";
+  padding-left: 5px;
+  font-weight: normal;
+}
+.panel .panel-heading .panel-title a[data-toggle].collapsed:after {
+  content: "\f103";
+}
+.panel .panel-heading .panel-title a[data-toggle]:hover, .panel .panel-heading .panel-title a[data-toggle]:focus {
+  text-decoration: none;
+}
 .panel .panel-heading + .panel-footer, .panel .panel-heading + * > .panel-footer {
   border-top: 0;
 }
