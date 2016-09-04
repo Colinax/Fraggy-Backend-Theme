@@ -28,9 +28,10 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
-### v2.0.0 - work in progress
+### v1.4.1 - released on 2016-08-31
 
- * Refactored settings and preferences pages
+ * Reduced max height of the logo image from 125px to 86px on the sidebar
+ * Made server information panel collapsable
 
 ### Older versions
 
