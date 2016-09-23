@@ -72,7 +72,8 @@
         <script src="{THEME_URL}/js/theme.js?v1.5.0"></script>
         <script>
             $(document).ready(function () {
-                Theme.init();
+                // Not needed
+                // Theme.init();
             });
         </script>
 
