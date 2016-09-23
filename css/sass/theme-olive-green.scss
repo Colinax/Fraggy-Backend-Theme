@@ -1,5 +1,6 @@
-// Vars
-@import 'variables';
+// Bootstrap helper
+@import "vendor/bootstrap/variables";
+@import "vendor/bootstrap/mixins";
 
 // Colors
 @import 'colors';
@@ -7,8 +8,8 @@
 // Set secondary brand
 $brand-secondary: $olive-green;
 
-// Vendor
-@import 'vendor';
+// Variables
+@import 'variables';
 
 // Theme
 @import 'theme';

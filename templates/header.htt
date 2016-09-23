@@ -21,7 +21,8 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link id="switchable" href="{THEME_URL}/css/theme-green.css?v1.5.0" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/css/vendor.min.css?v1.5.0" rel="stylesheet" type="text/css" />
+        <link id="switchable" href="{THEME_URL}/css/theme-green.min.css?v1.5.0" rel="stylesheet" type="text/css" />
 
         <!-- Theme third-party vendor fonts -->
         <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
@@ -55,8 +56,8 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/workarounds.js?v1.5.0"></script>
-        <script src="{THEME_URL}/js/theme.js?v1.5.0"></script>
+        <script src="{THEME_URL}/js/workarounds.min.js?v1.5.0"></script>
+        <script src="{THEME_URL}/js/theme.min.js?v1.5.0"></script>
         <script>
             $(document).ready(function () {
                 Theme.init();
@@ -114,12 +115,12 @@
                         </ul>
                         <div class="sidebar-content small">
                             <ul id="stylesheet-switcher" class="list-inline">
-                                <li><a class="green" href="{THEME_URL}/css/theme-green.css?v1.5.0"></a></li>
-                                <li><a class="red" href="{THEME_URL}/css/theme-red.css?v1.5.0"></a></li>
-                                <li><a class="olive-green" href="{THEME_URL}/css/theme-olive-green.css?v1.5.0"></a></li>
-                                <li><a class="blue" href="{THEME_URL}/css/theme-blue.css?v1.5.0"></a></li>
-                                <li><a class="orange" href="{THEME_URL}/css/theme-orange.css?v1.5.0"></a></li>
-                                <li><a class="pink" href="{THEME_URL}/css/theme-pink.css?v1.5.0"></a></li>
+                                <li><a class="green" href="{THEME_URL}/css/theme-green.min.css?v1.5.0"></a></li>
+                                <li><a class="red" href="{THEME_URL}/css/theme-red.min.css?v1.5.0"></a></li>
+                                <li><a class="olive-green" href="{THEME_URL}/css/theme-olive-green.min.css?v1.5.0"></a></li>
+                                <li><a class="blue" href="{THEME_URL}/css/theme-blue.min.css?v1.5.0"></a></li>
+                                <li><a class="orange" href="{THEME_URL}/css/theme-orange.min.css?v1.5.0"></a></li>
+                                <li><a class="pink" href="{THEME_URL}/css/theme-pink.min.css?v1.5.0"></a></li>
                             </ul>
                             <div class="hidden-xs">
                                 <hr />

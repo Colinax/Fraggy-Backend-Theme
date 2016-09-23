@@ -20,7 +20,8 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link id="switchable" href="{THEME_URL}/css/theme-green.css?v1.5.0" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/css/vendor.min.css?v1.5.0" rel="stylesheet" type="text/css" />
+        <link id="switchable" href="{THEME_URL}/css/theme-green.min.css?v1.5.0" rel="stylesheet" type="text/css" />
 
         <!-- Theme third-party vendor fonts -->
         <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
@@ -68,8 +69,8 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/workarounds.js?v1.5.0"></script>
-        <script src="{THEME_URL}/js/theme.js?v1.5.0"></script>
+        <script src="{THEME_URL}/js/workarounds.min.js?v1.5.0"></script>
+        <script src="{THEME_URL}/js/theme.min.js?v1.5.0"></script>
         <script>
             $(document).ready(function () {
                 // Not needed
