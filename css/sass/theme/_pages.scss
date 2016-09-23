@@ -37,6 +37,13 @@
         }
     }
 
+    #pageModifyPanel {
+        .cke {
+            box-shadow: none;
+            border-color: $gray-light;
+        }
+    }
+
     #pageListPanel {
 
         #pageListHeader {
@@ -116,7 +123,6 @@
                     width: 16px;
                 }
             }
-
         }
 
         .p0 {
@@ -168,12 +174,8 @@
                         }
                     }
                 }
-
-
             }
         }
-
-
     }
 }
 

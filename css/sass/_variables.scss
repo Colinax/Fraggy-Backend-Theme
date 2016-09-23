@@ -1,10 +1,15 @@
-// Variables
+// Font Awesome
+$fa-font-path: '../fonts/Font-Awesome/';
+
+// Bootstrap
 $gray-base: #000;
 $gray-darker: #222;
 $gray-dark: #444;
 $gray: #666;
 $gray-light: #E6E6E6;
 $gray-lighter: #F2F2F2;
+
+$icon-font-path: '../fonts/Glyphicons-Halflings/';
 
 $brand-primary: #303641;
 $brand-secondary: #45A246 !default;
@@ -123,5 +128,3 @@ $alert-warning-border: darken($brand-warning, 5%);
 $state-danger-text: #fff;
 $state-danger-bg: $brand-danger;
 $alert-danger-border: darken($brand-danger, 5%);
-
-$icon-font-path: '../fonts/';
