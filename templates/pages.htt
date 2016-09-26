@@ -141,14 +141,7 @@
                 if ($a.length > 0) {
                     $a.html('');
 
-                    var match = $a.prop('href').match('[p][0-9]');
-                    if (match.length > 0) {
-                        var id = match[0];
-                        $a.prop('href', '#');
-                        $a.attr('data-id', id);
-                    }
-
-                    $a.on('collapse-list', function () {
+                    $a.on('collapse-list', function (e) {
                         var $this = $(this);
                         $this
                                 .removeClass('expanded')
@@ -156,11 +149,12 @@
                                 .html('<i class="fa fa-fw fa-folder-open-o"></i>');
 
                         var id = $this.data('id');
-                        $('#' + id).hide();
+                        $('#' + id, $pageListUl).hide();
                         Cookies.set(id, 'collapsed');
+                        //console.log('fire: collapse-list for #' + id);
                     });
 
-                    $a.on('expand-list', function () {
+                    $a.on('expand-list', function (e) {
                         var $this = $(this);
                         $this
                                 .removeClass('collapsed')
@@ -168,11 +162,14 @@
                                 .html('<i class="fa fa-fw fa-folder-o"></i>');
 
                         var id = $this.data('id');
-                        $('#' + id).show();
+                        $('#' + id, $pageListUl).show();
                         Cookies.set(id, 'expanded');
+                        //console.log('fired: expand-list for #' + id);
                     });
 
-                    $a.on('click', function () {
+                    $a.on('click', function (e) {
+                        e.preventDefault();
+
                         var $this = $(this);
                         if ($this.hasClass('collapsed')) {
                             $this.trigger('expand-list');
@@ -180,6 +177,20 @@
                             $this.trigger('collapse-list');
                         }
                     });
+
+                    var match = $a.prop('href').match('[p][0-9]');
+                    if (match.length > 0) {
+                        var id = match[0];
+                        $a.attr('href', '#');
+                        $a.attr('data-id', id);
+
+                        if (Cookies.get(id) === 'expanded') {
+                            $a.trigger('expand-list');
+                        } else {
+                            $a.trigger('collapse-list');
+                        }
+                    }
+
                 }
 
             } else if ($td.index() === 1) {
@@ -257,15 +268,7 @@
             tr.cells[cell].innerHTML = html;
         };
 
-        $('ul', $pageList).each(function () {
-            if (this.id !== 'p0') {
-                if (Cookies.get(this.id) === 'expanded') {
-                    $('a[data-id="' + this.id + '"]', $pageList).trigger('expand-list');
-                } else if (Cookies.get(this.id) === 'collapsed' || Cookies.get(this.id) === undefined) {
-                    $('a[data-id="' + this.id + '"]', $pageList).trigger('collapse-list');
-                }
-            }
-        });
+
     });
 
 
