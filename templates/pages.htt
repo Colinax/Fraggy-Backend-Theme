@@ -178,7 +178,7 @@
                         }
                     });
 
-                    var match = $a.prop('href').match('[p][0-9]');
+                    var match = $a.prop('href').match('[p][0-9]+');
                     if (match.length > 0) {
                         var id = match[0];
                         $a.attr('href', '#');
