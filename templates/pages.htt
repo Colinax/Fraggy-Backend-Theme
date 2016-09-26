@@ -138,24 +138,48 @@
             $td.removeAttr('style');
             if ($td.index() === 0) {
                 var $a = $td.find('a');
+                if ($a.length > 0) {
+                    $a.html('');
 
-                if ($a.find('img[src^="collapse.png"]') && !$a.hasClass('collapsed')) {
-                    $a.addClass('expanded');
-                }
-
-                $a.html('');
-
-                $a.on('click', function () {
-                    var $this = $(this);
-                    if ($this.hasClass('expanded')) {
-                        $this.removeClass('expanded').addClass('collapsed').html('<i class="fa fa-fw fa-folder-open-o"></i>');
-                    } else {
-                        $this.addClass('expanded').removeClass('collapsed').html('<i class="fa fa-fw fa-folder-o"></i>');
+                    var match = $a.prop('href').match('[p][0-9]');
+                    if (match.length > 0) {
+                        var id = match[0];
+                        $a.prop('href', '#');
+                        $a.attr('data-id', id);
                     }
-                }).click();
 
-                if ($a.length > 0 && Cookies.get($a.prop('href').match('[p][0-9]')[0]) === undefined) {
-                    window.location.href = $a.prop('href');
+                    $a.on('collapse-list', function () {
+                        var $this = $(this);
+                        $this
+                                .removeClass('expanded')
+                                .addClass('collapsed')
+                                .html('<i class="fa fa-fw fa-folder-open-o"></i>');
+
+                        var id = $this.data('id');
+                        $('#' + id).hide();
+                        Cookies.set(id, 'collapsed');
+                    });
+
+                    $a.on('expand-list', function () {
+                        var $this = $(this);
+                        $this
+                                .removeClass('collapsed')
+                                .addClass('expanded')
+                                .html('<i class="fa fa-fw fa-folder-o"></i>');
+
+                        var id = $this.data('id');
+                        $('#' + id).show();
+                        Cookies.set(id, 'expanded');
+                    });
+
+                    $a.on('click', function () {
+                        var $this = $(this);
+                        if ($this.hasClass('collapsed')) {
+                            $this.trigger('expand-list');
+                        } else {
+                            $this.trigger('collapse-list');
+                        }
+                    });
                 }
 
             } else if ($td.index() === 1) {
@@ -185,8 +209,6 @@
             } else if ($td.index() === 10) {
                 $td.remove();
             }
-
-
         });
 
 
@@ -234,15 +256,19 @@
                     + '"></i></a>';
             tr.cells[cell].innerHTML = html;
         };
+
+        $('ul', $pageList).each(function () {
+            if (this.id !== 'p0') {
+                if (Cookies.get(this.id) === 'expanded') {
+                    $('a[data-id="' + this.id + '"]', $pageList).trigger('expand-list');
+                } else if (Cookies.get(this.id) === 'collapsed' || Cookies.get(this.id) === undefined) {
+                    $('a[data-id="' + this.id + '"]', $pageList).trigger('collapse-list');
+                }
+            }
+        });
     });
 
-    $('.pages_list ul').each(function () {
-        if (Cookies.get(this.id) === 'hidden' && this.id !== 'p0') {
-            var $list = $('#' + this.id);
-            $list.prev().find('td:first a').addClass('collapsed');
-            $list.hide();
-        }
-    });
+
 
     function toggle_viewers() {
         if (document.add.visibility.value == 'private') {
@@ -257,13 +283,12 @@
     function toggle_visibility(id) {
         var $list = $('#' + id);
         if ($list.is(':visible')) {
-            $list.hide();
-            Cookies.set(id, 'hidden', {path: ''});
+            hide_list(id);
         } else {
-            $list.show();
-            Cookies.set(id, 'visible', {path: ''});
+            make_list_visible(id);
         }
     }
+
 
 </script>
 <!-- END main_block -->
