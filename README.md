@@ -28,14 +28,9 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
-### v1.5.0 - released on 23.09.2016
+### v1.5.1 - work in progress
 
- * Redesigned CKEditor
- * Minified theme and workaround JavaScript files
- * Put together and minified vendor CSS files to one file
- * Minified theme CSS file
- * Updated jQuery to v2.2.4
- * Updated Bootstrap to v3.3.7
+ * Page tree closed per default
 
 ### Older versions
 
