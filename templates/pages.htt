@@ -130,8 +130,6 @@
 
         $pageListUl.unbind();
 
-
-
         $pageListUl.find('td').each(function () {
             var $td = $(this),
                     $menuTitle = $('<small />');
@@ -151,7 +149,7 @@
                         var id = $this.data('id');
                         $('#' + id, $pageListUl).hide();
                         Cookies.set(id, 'collapsed');
-                        //console.log('fire: collapse-list for #' + id);
+                        //console.log('fired: collapse-list for #' + id);
                     });
 
                     $a.on('expand-list', function (e) {
@@ -267,11 +265,7 @@
                     + '"></i></a>';
             tr.cells[cell].innerHTML = html;
         };
-
-
     });
-
-
 
     function toggle_viewers() {
         if (document.add.visibility.value == 'private') {
@@ -280,15 +274,6 @@
             document.getElementById('viewers').style.display = 'block';
         } else {
             document.getElementById('viewers').style.display = 'none';
-        }
-    }
-
-    function toggle_visibility(id) {
-        var $list = $('#' + id);
-        if ($list.is(':visible')) {
-            hide_list(id);
-        } else {
-            make_list_visible(id);
         }
     }
 
