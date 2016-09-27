@@ -43,7 +43,7 @@ var Theme = (function () {
             });
         });
 
-        if (Cookies.get('cssFile') !== 'undefined') {
+        if (Cookies.get('cssFile') !== undefined) {
             $switchableLink.attr('href', Cookies.get('cssFile'));
         }
     };
