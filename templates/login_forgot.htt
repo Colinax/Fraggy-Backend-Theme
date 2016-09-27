@@ -20,8 +20,8 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link href="{THEME_URL}/css/vendor.min.css?v1.5.0" rel="stylesheet" type="text/css" />
-        <link id="switchable" href="{THEME_URL}/css/theme-green.min.css?v1.5.0" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/css/vendor.min.css?v1.5.1" rel="stylesheet" type="text/css" />
+        <link id="switchable" href="{THEME_URL}/css/theme-green.min.css?v1.5.1" rel="stylesheet" type="text/css" />
 
         <!-- Theme third-party vendor fonts -->
         <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
@@ -34,13 +34,13 @@
         </script>
 
         <!-- Vendor JavaScript -->
-        <script src="{THEME_URL}/js/vendor/jquery-2.2.4.min.js?v1.5.0"></script>
-        <script src="{THEME_URL}/js/vendor/bootstrap.min.js?v1.5.0"></script>
-        <script src="{THEME_URL}/js/vendor/js.cookie-2.1.2.min.js?v1.5.0"></script>
-        <script src="{THEME_URL}/js/vendor/select2/select2.full.min.js?v1.5.0"></script>
-        <script src="{THEME_URL}/js/vendor/moment-with-locales.min.js?v1.5.0"></script>
-        <script src="{THEME_URL}/js/vendor/bootstrap-datetimepicker.min.js?v1.5.0"></script>
-        <script src="{THEME_URL}/js/vendor/bootstrap-fileselect.min.js?v1.5.0"></script>
+        <script src="{THEME_URL}/js/vendor/jquery-2.2.4.min.js?v1.5.1"></script>
+        <script src="{THEME_URL}/js/vendor/bootstrap.min.js?v1.5.1"></script>
+        <script src="{THEME_URL}/js/vendor/js.cookie-2.1.2.min.js?v1.5.1"></script>
+        <script src="{THEME_URL}/js/vendor/select2/select2.full.min.js?v1.5.1"></script>
+        <script src="{THEME_URL}/js/vendor/moment-with-locales.min.js?v1.5.1"></script>
+        <script src="{THEME_URL}/js/vendor/bootstrap-datetimepicker.min.js?v1.5.1"></script>
+        <script src="{THEME_URL}/js/vendor/bootstrap-fileselect.min.js?v1.5.1"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="{WB_URL}/include/jquery/jquery-insert.js"></script>
@@ -52,8 +52,8 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/workarounds.min.js?v1.5.0"></script>
-        <script src="{THEME_URL}/js/theme.min.js?v1.5.0"></script>
+        <script src="{THEME_URL}/js/workarounds.min.js?v1.5.1"></script>
+        <script src="{THEME_URL}/js/theme.min.js?v1.5.1"></script>
         <script>
             $(document).ready(function () {
                 Theme.init();
