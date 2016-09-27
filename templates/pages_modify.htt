@@ -55,6 +55,9 @@
                 }))
                 .find('.section-info')
                 .prepend('<hr />');
+
+        $(window).trigger('theme-resize');
+
     });
 </script>
 <!-- END main_block -->
