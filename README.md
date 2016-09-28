@@ -28,7 +28,7 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
-### v1.5.1 - work in progress
+### v1.5.1 - released on 2016-09-28
 
  * Page tree closed per default
  * Fixed sidebar height on some admin pages
