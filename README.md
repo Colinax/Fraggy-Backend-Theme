@@ -30,7 +30,9 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ### v1.5.2 - work in progress
 
- * Added module-based templates
+ * Added module-based templates (for coming new WBCE version)
+ * Optimized datetimepicker plugin
+ * Optimized source handling
 
 ### Older versions
 
