@@ -1,9 +1,8 @@
 /*!
- * Fraggy Backend Theme v1.5.0
- * Jonathan Nessier, Neoflow.ch | The MIT License (MIT)
+ * Fraggy Backend Theme v1.5.2
+ * Jonathan Nessier, Neoflow (https://neoflow.ch) | The MIT License (MIT)
  * Responsive and Bootstrap based backend theme for WBCE
  */
-
 var Theme = (function () {
 
     this.init = function () {

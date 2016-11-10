@@ -1,9 +1,3 @@
-/*!
- * Fraggy Backend Theme v1.5.0
- * Jonathan Nessier, Neoflow.ch | The MIT License (MIT)
- * Responsive and Bootstrap based backend theme for WBCE
- */
-
 $(function () {
 
     $('button, input[type="button"], input[type="reset"]')
