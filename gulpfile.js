@@ -12,7 +12,8 @@ var saveLicense = require('uglify-save-license');
 var pjson = require('./package.json');
 
 gulp.task('build-scss', function () {
-    return gulp.src('./src/sass/**/*.scss')
+    return gulp
+            .src(['./src/sass/**/*.scss'])
             .pipe(sass({
                 outputStyle: 'expanded'
             }).on('error', sass.logError))
@@ -21,7 +22,11 @@ gulp.task('build-scss', function () {
 });
 
 gulp.task('minify-css', function () {
-    return gulp.src(['./css/*.css', '!./css/*.min.css'])
+    return gulp
+            .src([
+                './css/*.css',
+                '!./css/*.min.css'
+            ])
             .pipe(cleanCSS())
             .pipe(rename({
                 suffix: '.min'
@@ -32,17 +37,18 @@ gulp.task('minify-css', function () {
 });
 
 gulp.task('build-js', function () {
-    return gulp.src([
-        './src/js/vendor/**/*.js',
-        './src/js/theme/*.js'])
+    return gulp
+            .src(['./src/js/*.js'])
             .pipe(concat('script.js'))
             .pipe(gulp.dest('./js'));
 });
 
 gulp.task('minify-js', function () {
-    return gulp.src([
-        './js/script.js',
-        '!./js/script.min.js'])
+    return gulp
+            .src([
+                './js/script.js',
+                '!./js/script.min.js'
+            ])
             .pipe(uglify({
                 output: {
                     comments: saveLicense
@@ -60,7 +66,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('zip', function () {
-    return gulp.src(['./**', '!./package.json', '!./gulpfile.js', '!./node_modules{,/**}', '!./nbproject{,/**}', '!./css/src{,/**}', '!./js/src{,/**}', '!*.zip'])
+    return gulp.src(['./**', '!./package.json', '!./gulpfile.js', '!./node_modules{,/**}', '!./nbproject{,/**}', '!./src{,/**}', '!*.zip'])
             .pipe(zip(pjson.name + '-' + pjson.version + '.zip'))
             .pipe(gulp.dest('./'));
 });
