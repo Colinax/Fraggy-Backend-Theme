@@ -1,0 +1,15 @@
+// Bootstrap helper
+@import "vendor/bootstrap/variables";
+@import "vendor/bootstrap/mixins";
+
+// Colors
+@import 'colors';
+
+// Set secondary brand
+$brand-secondary: $pink;
+
+// Variables
+@import 'variables';
+
+// Theme
+@import 'theme';

@@ -1,6 +1,6 @@
 {
     "name": "fraggy-backend-theme",
-    "version": "1.5.1",
+    "version": "1.5.2",
     "description": "Responsive and Bootstrap based backend theme for WBCE",
     "main": "index.js",
     "scripts": {
@@ -17,8 +17,10 @@
         "gulp-clean-css": "^2.0.12",
         "gulp-concat": "^2.6.0",
         "gulp-rename": "^1.2.2",
+        "gulp-replace": "^0.5.4",
         "gulp-sass": "^2.3.2",
         "gulp-uglify": "^2.0.0",
+        "uglify-save-license": "^0.4.1",
         "gulp-zip": "^3.2.0"
     }
 }
