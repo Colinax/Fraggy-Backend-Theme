@@ -32,6 +32,7 @@ If you want to replace the default theme logo, then you have to create a logo im
 
  * Added module-based templates (for coming new WBCE version)
  * Optimized datetimepicker plugin
+ * Merged theme.js und workaround.js to script.js
  * Optimized source handling
 
 ### Older versions
