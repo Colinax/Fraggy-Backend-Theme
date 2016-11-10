@@ -91,10 +91,14 @@ var Theme = (function () {
             $(this).select2('open');
         });
 
-        $('.datetimepicker').datetimepicker({
-            locale: 'en',
-            format: 'D.M.Y HH:mm',
-            useCurrent: false
+        $('.datetimepicker').each(function () {
+            var $this = $(this);
+            $this.datetimepicker({
+                locale: $this.data('language') || navigator.language || navigator.userLanguage,
+                format: $this.data('format') || 'D.M.Y HH:mm',
+                useCurrent: false
+            });
+
         });
     };
 
