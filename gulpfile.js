@@ -8,6 +8,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var replace = require('gulp-replace');
 var saveLicense = require('uglify-save-license');
+var zip = require('gulp-zip');
 
 var pjson = require('./package.json');
 
