@@ -1,0 +1,100 @@
+// Wrappers
+#wrapper {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#page-wrapper-sidebar {
+    .page-wrapper {
+        padding: 15px 0;
+        position: relative;
+        background: $gray-light;
+
+        .page-title {
+            margin: -15px -15px 15px -15px;
+            padding: 15px;
+            background: $gray-lighter;
+
+            h1 {
+                margin: 0;
+                font-size: 18px;
+                color: $gray;
+            }
+        }
+    }
+}
+
+#page-wrapper-fluid {
+    background: $brand-primary;
+    min-height: 100vh;
+
+    .page-wrapper {
+        .page-brand {
+            font-size: 20px;
+            margin: 0 0 30px 0;
+            display: block;
+            width: 100%;
+            line-height: 24px;
+            color: #fff;
+        }
+
+        .page-motto {
+            font-size: 28px;
+            color: #fff;
+            font-family: $headings-font-family;
+        }
+
+        .page-license {
+            color: #fff;
+            text-align: center;
+
+            a {
+                color: #fff;
+
+                &:hover, &:focus {
+                    color: darken(#fff, 10%);
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: $screen-sm) {
+
+    #page-wrapper-fluid {
+        .page-wrapper {
+            padding: 30px 30px 30px 30px;
+
+            .page-brand {
+                font-size: 44px;
+                line-height: 48px;
+            }
+        }
+    }
+
+    #page-wrapper-sidebar {
+        .navbar-top {
+            padding: 0 0 0 250px;
+        }
+
+        .page-wrapper {
+            margin: 0 0 0 250px;
+            padding: 30px 15px 0;
+
+            .page-title {
+                margin: -30px -30px 15px -30px;
+                padding: 15px 30px;
+
+                h1 {
+                    font-size: 24px;
+                }
+            }
+
+        }
+    }
+
+}
+
+@media(min-width: $screen-md) {
+
+}
