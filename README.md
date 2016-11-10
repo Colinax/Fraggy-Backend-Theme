@@ -28,7 +28,7 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
-### v1.5.2 - work in progress
+### v1.5.2 - published on 2016-11-10
 
  * Added module-based templates (for coming new WBCE version)
  * Optimized datetimepicker plugin
