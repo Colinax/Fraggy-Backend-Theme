@@ -13,7 +13,7 @@ if (!defined('WB_PATH')) {
 $template_directory = 'fraggy-backend-theme';
 $template_name = 'Fraggy Backend Theme';
 $template_function = 'theme';
-$template_version = '1.5.1';
+$template_version = '1.5.2';
 $template_platform = '1.1.x';
 $template_author = 'Jonathan Nessier - <a href="https://www.neoflow.ch" target="_blank">Neoflow</a>';
 $template_license = '<a href="https://github.com/Neoflow/Fraggy-Backend-Theme/blob/master/LICENSE" target="_blank">MIT License</a>';

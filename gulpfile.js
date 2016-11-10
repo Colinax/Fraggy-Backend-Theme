@@ -60,9 +60,9 @@ gulp.task('minify-js', function () {
 
 gulp.task('watch', function () {
     gulp.watch(['./src/sass/**/*.scss'], ['build-scss']);
-    gulp.watch(['./css/style.css'], ['minify-css']);
+    gulp.watch(['./css/*.css', '!./css/*.min.css'], ['minify-css']);
     gulp.watch(['./src/js/**/*.js'], ['build-js']);
-    gulp.watch(['./js/script.js'], ['minify-js']);
+    gulp.watch(['./js/script.js', '!./js/script.min.js'], ['minify-js']);
 });
 
 gulp.task('zip', function () {

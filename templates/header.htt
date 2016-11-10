@@ -125,7 +125,7 @@
                                 <hr />
                                 <ul class="list-inline versions">
                                     <li>WBCE: {WBCE_VERSION}</li>
-                                    <li>Theme: 1.5.1</li>
+                                    <li>Theme: 1.5.2</li>
                                     <li>PHP: <span class="php"></span></li>
                                 </ul>
                                 <hr />
