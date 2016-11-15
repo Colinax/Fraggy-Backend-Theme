@@ -20,8 +20,8 @@
         <link href="../../templates/fraggy-backend-theme/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link href="../../templates/fraggy-backend-theme/css/vendor.min.css?v1.5.2" rel="stylesheet" type="text/css" />
-        <link id="switchable" href="../../templates/fraggy-backend-theme/css/theme-green.min.css?v1.5.2" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy-backend-theme/css/vendor.min.css?v1.5.3" rel="stylesheet" type="text/css" />
+        <link id="switchable" href="../../templates/fraggy-backend-theme/css/theme-green.min.css?v1.5.3" rel="stylesheet" type="text/css" />
 
         <!-- Theme third-party vendor fonts -->
         <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
@@ -46,13 +46,13 @@
         </script>
 
         <!-- Vendor JavaScript -->
-        <script src="../../templates/fraggy-backend-theme/js/vendor/jquery-2.2.4.min.js?v1.5.2"></script>
-        <script src="../../templates/fraggy-backend-theme/js/vendor/bootstrap.min.js?v1.5.2"></script>
-        <script src="../../templates/fraggy-backend-theme/js/vendor/js.cookie-2.1.2.min.js?v1.5.2"></script>
-        <script src="../../templates/fraggy-backend-theme/js/vendor/select2/select2.full.min.js?v1.5.2"></script>
-        <script src="../../templates/fraggy-backend-theme/js/vendor/moment-with-locales.min.js?v1.5.2"></script>
-        <script src="../../templates/fraggy-backend-theme/js/vendor/bootstrap-datetimepicker.min.js?v1.5.2"></script>
-        <script src="../../templates/fraggy-backend-theme/js/vendor/bootstrap-fileselect.min.js?v1.5.2"></script>
+        <script src="../../templates/fraggy-backend-theme/js/vendor/jquery-2.2.4.min.js?v1.5.3"></script>
+        <script src="../../templates/fraggy-backend-theme/js/vendor/bootstrap.min.js?v1.5.3"></script>
+        <script src="../../templates/fraggy-backend-theme/js/vendor/js.cookie-2.1.2.min.js?v1.5.3"></script>
+        <script src="../../templates/fraggy-backend-theme/js/vendor/select2/select2.full.min.js?v1.5.3"></script>
+        <script src="../../templates/fraggy-backend-theme/js/vendor/moment-with-locales.min.js?v1.5.3"></script>
+        <script src="../../templates/fraggy-backend-theme/js/vendor/bootstrap-datetimepicker.min.js?v1.5.3"></script>
+        <script src="../../templates/fraggy-backend-theme/js/vendor/bootstrap-fileselect.min.js?v1.5.3"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="../../include/jquery/jquery-insert.js"></script>
@@ -64,7 +64,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="../../templates/fraggy-backend-theme/js/script.min.js?v1.5.2"></script>
+        <script src="../../templates/fraggy-backend-theme/js/script.min.js?v1.5.3"></script>
         <script>
             $(document).ready(function () {
                 Theme.init();
