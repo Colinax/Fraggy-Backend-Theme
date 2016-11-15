@@ -364,6 +364,10 @@ a:focus {
   box-shadow: none;
 }
 
+.label-default {
+  color: #666;
+}
+
 label {
   font-weight: 600;
 }
