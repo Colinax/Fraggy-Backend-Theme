@@ -28,9 +28,11 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
-### v1.5.3 - work in progress
+### v1.5.3 - published on 2016-12-15
 
  * Fixed font color for default labels
+ * Fixed datepicker save bug
+ * Optimized source building
 
 ### Older versions
 

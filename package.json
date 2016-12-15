@@ -1,9 +1,35 @@
 {
-    "name": "fraggy-backend-theme", "version": "1.5.3", "description": "Responsive and Bootstrap based backend theme for WBCE", "main": "index.js", "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    }, "author": "Jonathan Nessier, Neoflow.ch", "license": "MIT", "repository": {
-        "type": "git", "url": "https://github.com/Neoflow/Fraggy-Backend-Theme.git"
-    }, "devDependencies": {
-        "gulp": "^3.9.1", "gulp-clean-css": "^2.0.12", "gulp-concat": "^2.6.0", "gulp-rename": "^1.2.2", "gulp-replace": "^0.5.4", "gulp-sass": "^2.3.2", "gulp-uglify": "^2.0.0", "uglify-save-license": "^0.4.1", "gulp-zip": "^3.2.0"
-    }
+  "name": "fraggy-backend-theme",
+  "version": "1.5.3",
+  "description": "Responsive and Bootstrap based backend theme for WBCE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Nessier, Neoflow.ch",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Neoflow/Fraggy-Backend-Theme.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.8.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-inject-string": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-strip-comments": "^2.4.3",
+    "gulp-strip-css-comments": "^1.2.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp-zip": "^3.2.0",
+    "postcss-font-weights": "^3.0.0",
+    "postcss-media-queries-drop-redundant": "0.0.1",
+    "run-sequence": "^1.2.2"
+  }
 }

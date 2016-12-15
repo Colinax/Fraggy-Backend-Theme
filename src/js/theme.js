@@ -95,10 +95,17 @@ var Theme = (function () {
             var $this = $(this);
             $this.datetimepicker({
                 locale: $this.data('language') || navigator.language || navigator.userLanguage,
-                format: $this.data('format') || 'D.M.Y HH:mm',
-                useCurrent: false
+                format: 'DD.M.Y HH:mm',
+                extraFormats: ['M/D/Y HH:mm'],
+                useCurrent: false,
+                keepOpen: true,
+                /* inline: true,*/
+            }).on('dp.change', function (e) {
+                var format = 'Y-M-D HH:mm';
+                var target = $('input', this).data('target');
+                console.log(target);
+                $(target).val(e.date.format(format));
             });
-
         });
     };
 
