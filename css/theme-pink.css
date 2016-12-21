@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
- * Fraggy Backend Theme v1.5.3
+ * Fraggy Backend Theme v1.5.4
  * Jonathan Nessier, Neoflow (https://neoflow.ch) | Licensed under MIT
  * Responsive and Bootstrap based backend theme for WBCE
  */
@@ -464,6 +464,9 @@ fieldset[disabled] .btn-inverse.focus {
 #wrapper {
   width: 100%;
   min-height: 100vh;
+}
+#page-wrapper-sidebar {
+  position: relative;
 }
 #page-wrapper-sidebar .page-wrapper {
   padding: 15px 0;

@@ -600,6 +600,10 @@ fieldset[disabled] .btn-inverse.focus {
   min-height: 100vh;
 }
 
+#page-wrapper-sidebar {
+  position: relative;
+}
+
 #page-wrapper-sidebar .page-wrapper {
   padding: 15px 0;
   position: relative;
