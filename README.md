@@ -31,6 +31,7 @@ If you want to replace the default theme logo, then you have to create a logo im
 ### v1.5.4 - work in progress
 
  * Fixed sidebar height when content is higher.
+ * Optimized datetimepicker plugin initialization.
 
 ### Older versions
 
