@@ -1,5 +1,5 @@
 /*
- * Fraggy Backend Theme v1.5.4
+ * Fraggy Backend Theme v1.5.3
  * Jonathan Nessier, Neoflow (https://neoflow.ch) | Licensed under MIT
  * Responsive and Bootstrap based backend theme for WBCE
  */
@@ -49,17 +49,14 @@ var Theme = (function () {
 
     var initResizeListener = function () {
         var $window = $(window),
-                $sidebar = $('nav.sidebar'),
                 $navXsStacked = $('ul.nav-xs-stacked'),
                 $serverInfoPanel = $('div#serverInfoPanel');
 
         $window.on('resize theme-resize', function () {
             if ($window.outerWidth() > 768) {
-                $sidebar.height($('body').outerHeight());
                 $navXsStacked.removeClass('nav-stacked');
                 $serverInfoPanel.find('h3 > a[href="collapsed"]').trigger('click');
             } else {
-                $sidebar.height('');
                 $navXsStacked.addClass('nav-stacked');
             }
         }).trigger('theme-resize');
