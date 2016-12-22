@@ -28,7 +28,7 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
-### v1.5.4 - work in progress
+### v1.5.4 - released on 2016-12-22
 
  * Fixed sidebar height when content is higher.
  * Optimized datetimepicker plugin initialization.
@@ -43,4 +43,4 @@ You can see the summary of releases and the changes in each release [here](https
 
 Thanks to the [WBCE](http://wbce.org) community for your support and testing.
 
-Copyright © 2016-2017 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | The MIT License (MIT)
+Copyright © 2016-2017 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Licensed under MIT

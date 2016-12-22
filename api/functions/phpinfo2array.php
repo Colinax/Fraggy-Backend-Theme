@@ -3,8 +3,8 @@
  * Fraggy Backend Theme
  * Responsive and Bootstrap based backend theme for WBCE
  *
- * @copyright Jonathan Nessier, Neoflow
- * @license The MIT License (MIT)
+ * @copyright 2016-2017 Jonathan Nessier, Neoflow (https://neoflow.ch)
+ * @license MIT
  */
 if (!defined('WB_PATH')) {
     die(header('Location: ../../index.php'));
