@@ -196,9 +196,6 @@ $(function () {
                 });
             });
         });
-        CKEDITOR.on('instanceReady', function () {
-            $(window).resize();
-        });
     }
 
     $('form[action="intro2.php"] table:first').addClass('table');
