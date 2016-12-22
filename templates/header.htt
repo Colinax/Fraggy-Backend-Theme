@@ -21,8 +21,8 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link href="{THEME_URL}/css/vendor.min.css?v1.5.4" rel="stylesheet" type="text/css" />
-        <link id="switchable" href="{THEME_URL}/css/theme-green.min.css?v1.5.4" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/css/vendor.min.css?v1.5.5" rel="stylesheet" type="text/css" />
+        <link id="switchable" href="{THEME_URL}/css/theme-green.min.css?v1.5.5" rel="stylesheet" type="text/css" />
 
         <!-- Theme third-party vendor fonts -->
         <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
@@ -38,13 +38,13 @@
         </script>
 
         <!-- Vendor JavaScript -->
-        <script src="{THEME_URL}/js/vendor/jquery-2.2.4.min.js?v1.5.4"></script>
-        <script src="{THEME_URL}/js/vendor/bootstrap.min.js?v1.5.4"></script>
-        <script src="{THEME_URL}/js/vendor/js.cookie-2.1.2.min.js?v1.5.4"></script>
-        <script src="{THEME_URL}/js/vendor/select2/select2.full.min.js?v1.5.4"></script>
-        <script src="{THEME_URL}/js/vendor/moment-with-locales.min.js?v1.5.4"></script>
-        <script src="{THEME_URL}/js/vendor/bootstrap-datetimepicker.min.js?v1.5.4"></script>
-        <script src="{THEME_URL}/js/vendor/bootstrap-fileselect.min.js?v1.5.4"></script>
+        <script src="{THEME_URL}/js/vendor/jquery-2.2.4.min.js?v1.5.5"></script>
+        <script src="{THEME_URL}/js/vendor/bootstrap.min.js?v1.5.5"></script>
+        <script src="{THEME_URL}/js/vendor/js.cookie-2.1.2.min.js?v1.5.5"></script>
+        <script src="{THEME_URL}/js/vendor/select2/select2.full.min.js?v1.5.5"></script>
+        <script src="{THEME_URL}/js/vendor/moment-with-locales.min.js?v1.5.5"></script>
+        <script src="{THEME_URL}/js/vendor/bootstrap-datetimepicker.min.js?v1.5.5"></script>
+        <script src="{THEME_URL}/js/vendor/bootstrap-fileselect.min.js?v1.5.5"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="{WB_URL}/include/jquery/jquery-insert.js"></script>
@@ -56,7 +56,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.min.js?v1.5.4"></script>
+        <script src="{THEME_URL}/js/script.min.js?v1.5.5"></script>
         <script>
             $(document).ready(function () {
                 Theme.init();
@@ -114,18 +114,18 @@
                         </ul>
                         <div class="sidebar-content small">
                             <ul id="stylesheet-switcher" class="list-inline">
-                                <li><a class="green" href="{THEME_URL}/css/theme-green.min.css?v1.5.4"></a></li>
-                                <li><a class="red" href="{THEME_URL}/css/theme-red.min.css?v1.5.4"></a></li>
-                                <li><a class="olive-green" href="{THEME_URL}/css/theme-olive-green.min.css?v1.5.4"></a></li>
-                                <li><a class="blue" href="{THEME_URL}/css/theme-blue.min.css?v1.5.4"></a></li>
-                                <li><a class="orange" href="{THEME_URL}/css/theme-orange.min.css?v1.5.4"></a></li>
-                                <li><a class="pink" href="{THEME_URL}/css/theme-pink.min.css?v1.5.4"></a></li>
+                                <li><a class="green" href="{THEME_URL}/css/theme-green.min.css?v1.5.5"></a></li>
+                                <li><a class="red" href="{THEME_URL}/css/theme-red.min.css?v1.5.5"></a></li>
+                                <li><a class="olive-green" href="{THEME_URL}/css/theme-olive-green.min.css?v1.5.5"></a></li>
+                                <li><a class="blue" href="{THEME_URL}/css/theme-blue.min.css?v1.5.5"></a></li>
+                                <li><a class="orange" href="{THEME_URL}/css/theme-orange.min.css?v1.5.5"></a></li>
+                                <li><a class="pink" href="{THEME_URL}/css/theme-pink.min.css?v1.5.5"></a></li>
                             </ul>
                             <div class="hidden-xs">
                                 <hr />
                                 <ul class="list-inline versions">
                                     <li>WBCE: {WBCE_VERSION}</li>
-                                    <li>Theme: 1.5.4</li>
+                                    <li>Theme: 1.5.5</li>
                                     <li>PHP: <span class="php"></span></li>
                                 </ul>
                                 <hr />

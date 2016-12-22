@@ -28,11 +28,9 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
-### v1.5.4 - released on 2016-12-22
+### v1.5.5 - work in progress
 
- * Fixed sidebar height when content is higher
- * Optimized datetimepicker plugin initialization
- * Added page code select in page settings
+ * Added time format select in settings
 
 ### Older versions
 
