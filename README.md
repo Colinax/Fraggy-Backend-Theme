@@ -30,8 +30,9 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ### v1.5.4 - released on 2016-12-22
 
- * Fixed sidebar height when content is higher.
- * Optimized datetimepicker plugin initialization.
+ * Fixed sidebar height when content is higher
+ * Optimized datetimepicker plugin initialization
+ * Added page code select in page settings
 
 ### Older versions
 
