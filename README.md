@@ -30,7 +30,8 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ### v1.5.5 - work in progress
 
- * Added time format select in settings
+ * Added select for time format in settings
+ * Merged vendor JS files to script.js for faster loading speed (except jQuery) 
 
 ### Older versions
 

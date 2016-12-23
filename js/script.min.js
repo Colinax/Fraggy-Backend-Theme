@@ -8,7 +8,6 @@
  * This template integrates components from the following projects
  *
  *   Font Awesome 4.7.0 by @davegandy | fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- *   jQuery v3.1.1 | (c) jQuery Foundation | jquery.org/license
  *   Bootstrap v3.3.7 | Copyright 2011-2016 Twitter, Inc. | MIT License
  *   Bootstrap Fileslect v1.3 | (c) 2016-2017 Jonathan Nessier, Neoflow | MIT License
  *   Bootstrap Datetimepicker v4.17.42 | Copyright (c) 2015 Jonathan Peterson | MIT License
