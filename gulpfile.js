@@ -57,12 +57,22 @@ gulp.task('css:minify', function () {
 });
 
 gulp.task('js:build', function () {
-    return gulp.src(['./src/js/*.js'])
+    return gulp.src([
+        './src/js/workarounds.js',
+        './src/js/vendor/bootstrap.min.js',
+        './src/js/vendor/js.cookie.min.js',
+        './src/js/vendor/select2.full.min.js',
+        './src/js/vendor/moment-with-locales.min.js',
+        './src/js/vendor/bootstrap-datetimepicker.min.js',
+        './src/js/vendor/bootstrap-fileselect.min.js',
+        './src/js/theme.js'
+    ])
             .pipe(stripComments())
             .pipe(concat('script.js'))
             .pipe(injectString.prepend(sourceHeader + '\n'))
             .pipe(gulp.dest('./js'));
 });
+
 
 gulp.task('js:minify', function () {
     return gulp.src(['./js/script.js'])
@@ -71,23 +81,17 @@ gulp.task('js:minify', function () {
             .pipe(injectString.prepend(sourceHeader + '\n'))
             .pipe(gulp.dest('./js'));
 });
-
 gulp.task('src:rebuild', function () {
     runSequence('js:build', 'js:minify', 'scss:build', 'css:build', 'css:minify');
 });
-
 gulp.task('watch', function () {
     gulp.watch(['./src/sass/**/*.scss'], function () {
         runSequence('scss:build', 'css:build', 'css:minify');
     });
-//    gulp.watch(['./src/css/*.css'], ['css:build']);
-//    gulp.watch(['./css/*.css'], ['css:minify']);
     gulp.watch(['./src/js/*.js'], function () {
         runSequence('js:build', 'js:minify');
     });
-    //gulp.watch(['./js/script.js'], ['js:minify']);
 });
-
 gulp.task('zip', function () {
     return gulp.src(['./**', '!./package.json', '!./gulpfile.js', '!./node_modules{,/**}', '!./nbproject{,/**}', '!./src{,/**}', '!*.zip'])
             .pipe(zip(pjson.name + '-' + pjson.version + '.zip'))

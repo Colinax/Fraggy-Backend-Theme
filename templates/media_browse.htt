@@ -50,14 +50,8 @@
                     ADMIN_URL = '{ADMIN_URL}';
         </script>
 
-        <!-- Vendor JavaScript -->
-        <script src="{THEME_URL}/js/vendor/jquery-2.2.4.min.js?v1.5.5"></script>
-        <script src="{THEME_URL}/js/vendor/bootstrap.min.js?v1.5.5"></script>
-        <script src="{THEME_URL}/js/vendor/js.cookie-2.1.2.min.js?v1.5.5"></script>
-        <script src="{THEME_URL}/js/vendor/select2/select2.full.min.js?v1.5.5"></script>
-        <script src="{THEME_URL}/js/vendor/moment-with-locales.min.js?v1.5.5"></script>
-        <script src="{THEME_URL}/js/vendor/bootstrap-datetimepicker.min.js?v1.5.5"></script>
-        <script src="{THEME_URL}/js/vendor/bootstrap-fileselect.min.js?v1.5.5"></script>
+        <!-- Theme jQuery -->
+        <script src="{THEME_URL}/js/jquery.min.js?v1.5.5"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="../../include/jquery/jquery-insert.js"></script>
