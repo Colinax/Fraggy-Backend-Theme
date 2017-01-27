@@ -272,7 +272,7 @@ var Theme = (function () {
             var $this = $(this);
             $this.datetimepicker({
                 locale: $this.data('language') || navigator.language || navigator.userLanguage,
-                format: $this.data('format') ? $this.data('format') : 'DD.M.Y HH:mm',
+                format: $this.data('format') ? $this.data('format') : 'DD.MM.Y HH:mm',
                 extraFormats: ['M/D/Y HH:mm'],
                 useCurrent: false
             });
