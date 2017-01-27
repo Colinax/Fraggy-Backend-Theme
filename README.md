@@ -28,10 +28,9 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
-### v1.5.5 - released on 2016-12-23
+### v1.5.6 - work in progress
 
- * Added select for time format in settings
- * Merged vendor JS files to script.js for faster loading speed (except jQuery)
+ * Optimized date format of datetimepicker
 
 ### Older versions
 
