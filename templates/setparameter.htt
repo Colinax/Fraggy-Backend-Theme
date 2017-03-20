@@ -20,8 +20,8 @@
         <link href="../../templates/fraggy-backend-theme/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link href="../../templates/fraggy-backend-theme/css/vendor.min.css?v1.5.5" rel="stylesheet" type="text/css" />
-        <link id="switchable" href="../../templates/fraggy-backend-theme/css/theme-green.min.css?v1.5.5" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy-backend-theme/css/vendor.min.css?v1.5.6" rel="stylesheet" type="text/css" />
+        <link id="switchable" href="../../templates/fraggy-backend-theme/css/theme-green.min.css?v1.5.6" rel="stylesheet" type="text/css" />
 
         <!-- Theme third-party vendor fonts -->
         <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
@@ -46,7 +46,7 @@
         </script>
 
         <!-- Theme jQuery -->
-        <script src="../../templates/fraggy-backend-theme/js/jquery.min.js?v1.5.5"></script>
+        <script src="../../templates/fraggy-backend-theme/js/jquery.min.js?v1.5.6"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="../../include/jquery/jquery-insert.js"></script>
@@ -58,7 +58,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="../../templates/fraggy-backend-theme/js/script.min.js?v1.5.5"></script>
+        <script src="../../templates/fraggy-backend-theme/js/script.min.js?v1.5.6"></script>
         <script>
             $(document).ready(function () {
                 Theme.init();
