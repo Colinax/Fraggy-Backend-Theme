@@ -94,6 +94,10 @@
                                         <label class="checkbox-inline">
                                             <input name="pages_add" type="checkbox" value="1" {pages_add_checked} /> {TEXT_ADD}
                                         </label>
+                                        <label class="checkbox-inline" style="margin-left: 10px;">
+                                            <input name="pages_add_l0" type="checkbox" value="1" {pages_add_l0_checked} /> (<span class="small">{TEXT_LEVEL} 0</span>)
+                                        </label>
+
                                     </div>
                                     <div class="col-md-6">
                                         <label class="checkbox-inline">
