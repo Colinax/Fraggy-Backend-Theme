@@ -31,6 +31,7 @@ If you want to replace the default theme logo, then you have to create a logo im
 ### v1.5.6 - work in progress
 
  * Optimized date format of datetimepicker
+ * Fixed #19
 
 ### Older versions
 
