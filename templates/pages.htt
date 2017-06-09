@@ -149,7 +149,6 @@
                         var id = $this.data('id');
                         $('#' + id, $pageListUl).hide();
                         Cookies.set(id, 'collapsed');
-                        //console.log('fired: collapse-list for #' + id);
                     });
 
                     $a.on('expand-list', function (e) {
@@ -162,7 +161,6 @@
                         var id = $this.data('id');
                         $('#' + id, $pageListUl).show();
                         Cookies.set(id, 'expanded');
-                        //console.log('fired: expand-list for #' + id);
                     });
 
                     $a.on('click', function (e) {
@@ -188,27 +186,20 @@
                             $a.trigger('collapse-list');
                         }
                     }
-
                 }
-
             } else if ($td.index() === 1) {
                 var $b = $td.find('b');
                 $td.find('a').append($b.html());
                 $b.remove();
                 $td.after('<td></td>');
 
-            } else if ($td.index() === 2) {
-                //$td.hide();
             } else if ($td.index() === 3 || $td.index() === 4) {
-
                 $td.text($.trim($td.text()));
-
                 if ($td.index() === 3) {
                     $menuTitle.text($td.text());
                     $td.prev().prev().find('div').append('<br />').append($menuTitle);
                     $td.hide();
                 }
-
             } else if ($td.index() === 5) {
                 $td.append($td.find('small').children());
                 $td.find('div').remove();
@@ -219,7 +210,6 @@
                 $td.remove();
             }
         });
-
 
         $pageListUl.find('li').each(function () {
             var $li = $(this);
