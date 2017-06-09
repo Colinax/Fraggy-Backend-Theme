@@ -837,6 +837,8 @@ nav.sidebar .sidebar-collapse .sidebar-nav li a {
 nav.sidebar .sidebar-collapse .sidebar-nav li a .icon {
   margin-right: 10px;
   font-size: 14px;
+  width: 18px;
+  display: inline-block;
 }
 
 nav.sidebar .sidebar-collapse .sidebar-nav li a .arrow {
@@ -961,6 +963,10 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
 
 #pagesPage #sectionTable td:nth-child(4), #pagesPage #sectionTable td:nth-child(5) {
   white-space: nowrap;
+}
+
+#pagesPage .section-info {
+  margin: 20px 0;
 }
 
 #pagesPage #pageListPanel #pageListHeader {

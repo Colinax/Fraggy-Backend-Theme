@@ -19,14 +19,14 @@ $(function () {
             $sidebarNav.find('li:first').addClass('current');
         }
 
-        $sidebarNav.find('li.dashboard > a').prepend('<i class="icon fa fa-fw fa-tachometer fa-fw"></i> ');
-        $sidebarNav.find('li.preferences > a').prepend('<i class="icon fa fa-fw fa-cog fa-fw"></i> ');
-        $sidebarNav.find('li.pages > a').prepend('<i class="icon fa fa-fw fa-files-o fa-fw"></i> ');
-        $sidebarNav.find('li.media > a').prepend('<i class="icon fa fa-fw fa-picture-o fa-fw"></i> ');
-        $sidebarNav.find('li.addons > a').prepend('<i class="icon fa fa-fw fa-th"></i> ');
-        $sidebarNav.find('li.settings > a').prepend('<i class="icon fa fa-fw fa-cogs fa-fw"></i> ');
-        $sidebarNav.find('li.admintools > a').prepend('<i class="icon fa fa-fw fa-cubes fa-fw"></i> ');
-        $sidebarNav.find('li.access > a').prepend('<i class="icon fa fa-fw fa-users fa-fw"></i> ');
+        $sidebarNav.find('li.dashboard > a > .icon').append('<i class="fa fa-fw fa-tachometer fa-fw"></i> ');
+        $sidebarNav.find('li.preferences > a > .icon').append('<i class="fa fa-fw fa-cog fa-fw"></i> ');
+        $sidebarNav.find('li.pages > a > .icon').append('<i class="fa fa-fw fa-files-o fa-fw"></i> ');
+        $sidebarNav.find('li.media > a > .icon').append('<i class="fa fa-fw fa-picture-o fa-fw"></i> ');
+        $sidebarNav.find('li.addons > a > .icon').append('<i class="fa fa-fw fa-th"></i> ');
+        $sidebarNav.find('li.settings > a > .icon').append('<i class="fa fa-fw fa-cogs fa-fw"></i> ');
+        $sidebarNav.find('li.admintools > a > .icon').append('<i class="fa fa-fw fa-cubes fa-fw"></i> ');
+        $sidebarNav.find('li.access > a > .icon').append('<i class="fa fa-fw fa-users fa-fw"></i> ');
     });
 
     var $pageWrapperContainer = $('.page-wrapper .container-fluid');

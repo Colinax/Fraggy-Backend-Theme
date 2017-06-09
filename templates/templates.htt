@@ -12,9 +12,9 @@
                 <li>
                     {URL_MODULES}
                 </li>
-                <!--<li class="active">
-                    <a href="#">{HEADING_INSTALL_TEMPLATE}</a>
-                </li>-->
+                <li class="active">
+                    <a href="#"><i class="fa fa-fw fa-paint-brush"></i> {HEADING_INSTALL_TEMPLATE}</a>
+                </li>
                 <li>
                     {URL_LANGUAGES}
                 </li>

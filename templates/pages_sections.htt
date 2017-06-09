@@ -15,6 +15,9 @@
                 <li>
                     <a href="{ADMIN_URL}/pages/settings.php?page_id={PAGE_IDKEY}"><i class="fa fa-fw fa-cog"></i> {TEXT_CHANGE_SETTINGS}</a>
                 </li>
+                <li class="active">
+                    <a href="#"><i class="fa fa-fw fa-list-alt"></i> {HEADING_MANAGE_SECTIONS}</a>
+                </li>
             </ul>
         </div>
     </nav>

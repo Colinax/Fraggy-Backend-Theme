@@ -8,9 +8,9 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav">
-                <!--<li class="active">
-                    <a href="#">{HEADING_INSTALL_MODULE}</a>
-                </li>-->
+                <li class="active">
+                    <a href="#"><i class="fa fa-fw fa-puzzle-piece"></i> {HEADING_INSTALL_MODULE}</a>
+                </li>
                 <li>
                     {URL_TEMPLATES}
                 </li>

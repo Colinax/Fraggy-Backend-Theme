@@ -12,6 +12,9 @@
                 <li>
                     <a href="{ADMIN_URL}/pages/modify.php?page_id={PAGE_IDKEY}"><i class="fa fa-fw fa-pencil"></i> {TEXT_MODIFY_PAGE}</a>
                 </li>
+                <li class="active">
+                    <a href="#"><i class="fa fa-fw fa-cog"></i> {HEADING_MODIFY_PAGE_SETTINGS}</a>
+                </li>
                 <!-- BEGIN show_section_block -->
                 <li style="{DISPLAY_MANAGE_SECTIONS}">
                     <a href="{ADMIN_URL}/pages/sections.php?page_id={PAGE_IDKEY}" style="{DISPLAY_MANAGE_SECTIONS}"><i class="fa fa-fw fa-list-alt"></i> {TEXT_MANAGE_SECTIONS}</a>

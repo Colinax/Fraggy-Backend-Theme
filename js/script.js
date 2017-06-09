@@ -1,5 +1,5 @@
 /*
- * FRAGGY BACKEND THEME v1.5.6
+ * FRAGGY BACKEND THEME v1.6.0
  * Responsive and Bootstrap based backend theme for WBCE
  *
  * Copright (c) 2016-2017 Jonathan Nessier, Neoflow (https://www.neoflow.ch)
@@ -9,7 +9,7 @@
  *
  *   Font Awesome 4.7.0 by @davegandy | fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  *   Bootstrap v3.3.7 | Copyright 2011-2016 Twitter, Inc. | MIT License
- *   Bootstrap Fileslect v1.3 | (c) 2016-2017 Jonathan Nessier, Neoflow | MIT License
+ *   Bootstrap Fileselect v1.3 | (c) 2016-2017 Jonathan Nessier, Neoflow | MIT License
  *   Bootstrap Datetimepicker v4.17.42 | Copyright (c) 2015 Jonathan Peterson | MIT License
  *   Moment with locales | by Tim Wood, Iskren Chernev and contributors | MIT License
  *   JavaScript Cookie v2.1.2 | by Klaus Hartl, Fagner Brack and contributors | MIT License
@@ -35,14 +35,14 @@ $(function () {
             $sidebarNav.find('li:first').addClass('current');
         }
 
-        $sidebarNav.find('li.dashboard > a').prepend('<i class="icon fa fa-fw fa-tachometer fa-fw"></i> ');
-        $sidebarNav.find('li.preferences > a').prepend('<i class="icon fa fa-fw fa-cog fa-fw"></i> ');
-        $sidebarNav.find('li.pages > a').prepend('<i class="icon fa fa-fw fa-files-o fa-fw"></i> ');
-        $sidebarNav.find('li.media > a').prepend('<i class="icon fa fa-fw fa-picture-o fa-fw"></i> ');
-        $sidebarNav.find('li.addons > a').prepend('<i class="icon fa fa-fw fa-th"></i> ');
-        $sidebarNav.find('li.settings > a').prepend('<i class="icon fa fa-fw fa-cogs fa-fw"></i> ');
-        $sidebarNav.find('li.admintools > a').prepend('<i class="icon fa fa-fw fa-cubes fa-fw"></i> ');
-        $sidebarNav.find('li.access > a').prepend('<i class="icon fa fa-fw fa-users fa-fw"></i> ');
+        $sidebarNav.find('li.dashboard > a > .icon').append('<i class="fa fa-fw fa-tachometer fa-fw"></i> ');
+        $sidebarNav.find('li.preferences > a > .icon').append('<i class="fa fa-fw fa-cog fa-fw"></i> ');
+        $sidebarNav.find('li.pages > a > .icon').append('<i class="fa fa-fw fa-files-o fa-fw"></i> ');
+        $sidebarNav.find('li.media > a > .icon').append('<i class="fa fa-fw fa-picture-o fa-fw"></i> ');
+        $sidebarNav.find('li.addons > a > .icon').append('<i class="fa fa-fw fa-th"></i> ');
+        $sidebarNav.find('li.settings > a > .icon').append('<i class="fa fa-fw fa-cogs fa-fw"></i> ');
+        $sidebarNav.find('li.admintools > a > .icon').append('<i class="fa fa-fw fa-cubes fa-fw"></i> ');
+        $sidebarNav.find('li.access > a > .icon').append('<i class="fa fa-fw fa-users fa-fw"></i> ');
     });
 
     var $pageWrapperContainer = $('.page-wrapper .container-fluid');

@@ -14,9 +14,9 @@
                 <li>
                     {URL_TEMPLATES}
                 </li>
-                <!--<li class="active">
-                    <a href="#">{HEADING_INSTALL_LANGUAGE}</a>
-                </li>-->
+                <li class="active">
+                    <a href="#"><i class="fa fa-fw fa-language"></i> {HEADING_INSTALL_LANGUAGE}</a>
+                </li>
             </ul>
         </div>
     </nav>
