@@ -1,6 +1,6 @@
 {
   "name": "fraggy-backend-theme",
-  "version": "1.5.6",
+  "version": "1.6.0",
   "description": "Responsive and Bootstrap based backend theme for WBCE",
   "main": "index.js",
   "scripts": {

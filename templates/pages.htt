@@ -215,7 +215,7 @@
             } else if ($td.index() === 6) {
                 $td.append($td.find('nobr').children());
                 $td.find('small').remove();
-            } else if ($td.index() === 10) {
+            } else if ($td.index() === 11) {
                 $td.remove();
             }
         });
