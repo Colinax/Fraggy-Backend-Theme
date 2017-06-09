@@ -9,7 +9,7 @@
  *
  *   Font Awesome 4.7.0 by @davegandy | fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  *   Bootstrap v3.3.7 | Copyright 2011-2016 Twitter, Inc. | MIT License
- *   Bootstrap Fileslect v1.3 | (c) 2016-2017 Jonathan Nessier, Neoflow | MIT License
+ *   Bootstrap Fileselect v1.3 | (c) 2016-2017 Jonathan Nessier, Neoflow | MIT License
  *   Bootstrap Datetimepicker v4.17.42 | Copyright (c) 2015 Jonathan Peterson | MIT License
  *   Moment with locales | by Tim Wood, Iskren Chernev and contributors | MIT License
  *   JavaScript Cookie v2.1.2 | by Klaus Hartl, Fagner Brack and contributors | MIT License

@@ -28,7 +28,7 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
-### v1.6.0 - Released on 2017-06-09
+### v1.6.0-beta - Released on 2017-06-09
 
  * Fixed #20
  * Optimized for WBCE 1.2
