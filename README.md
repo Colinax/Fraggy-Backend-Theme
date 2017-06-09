@@ -28,10 +28,10 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
-### v1.6.0 - Released on 2017-03-21
+### v1.6.0 - Released on 2017-06-09
 
- * Optimized date format of datetimepicker
- * Fixed #19
+ * Fixed #20
+ * Optimized for WBCE 1.2
 
 ### Older versions
 
