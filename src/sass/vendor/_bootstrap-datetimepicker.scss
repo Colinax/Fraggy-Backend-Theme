@@ -1,8 +1,5 @@
-/*!
- * Datetimepicker for Bootstrap 3
- * ! version : 4.7.14
- * https://github.com/Eonasdan/bootstrap-datetimepicker/
- */
+// Import bootstrap variables including default color palette and fonts
+//@import "../../node_modules/bootstrap/less/variables.less";
 
 .sr-only {
     position: absolute;
@@ -14,6 +11,7 @@
     clip: rect(0,0,0,0);
     border: 0;
 }
+
 /*!
  * Datetimepicker for Bootstrap 3
  * ! version : 4.7.14
@@ -38,10 +36,6 @@ $bs-datetimepicker-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) !default;
         margin: 2px 0;
         padding: 4px;
         width: 19em;
-
-        td {
-            white-space: normal;
-        }
 
         &.timepicker-sbs {
             @media (min-width: $screen-sm-min) {
@@ -362,3 +356,4 @@ $bs-datetimepicker-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) !default;
         cursor: pointer;
     }
 }
+
