@@ -75,25 +75,6 @@
                 }
 
                 &:nth-child(3) {
-                    width: 0;
-                    padding: 0;
-                }
-
-
-                &:nth-child(4) {
-                    width: 200px;
-                    max-width: 200px;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-
-                &:nth-child(5) {
-                    white-space: nowrap;
-                    width: 80px;
-                }
-
-                &:nth-child(6) {
                     white-space: nowrap;
                     width: 80px;
                 }
@@ -242,8 +223,8 @@
                 td, th {
                     &:nth-child(4) {
                         display: table-cell;
-                        width: 200px;
-                        max-width: 200px;
+                        width: 80px;
+                        max-width: 80px;
                     }
                 }
             }

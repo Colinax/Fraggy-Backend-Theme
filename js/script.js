@@ -85,6 +85,8 @@ $(function () {
             $this.parent().html('<i class="fa fa-fw fa-folder-o"></i>');
         } else if ($this.prop('src').indexOf('add_child.png') > -1) {
             $this.parent().html('<i class="fa fa-fw fa-files-o"></i>');
+        } else if ($this.prop('src').indexOf('restore_16.png') > -1) {
+            $this.parent().html('<i class="fa fa-fw fa-recycle"></i>');
         }
     });
 

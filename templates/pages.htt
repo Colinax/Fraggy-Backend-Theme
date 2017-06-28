@@ -188,26 +188,26 @@
                     }
                 }
             } else if ($td.index() === 1) {
-                var $b = $td.find('b');
-                $td.find('a').append($b.html());
-                $b.remove();
-                $td.after('<td></td>');
+                /* var $b = $td.find('b');
+                 $td.find('a').append($b.html());
+                 $b.remove();
+                 $td.after('<td></td>');*/
 
             } else if ($td.index() === 3 || $td.index() === 4) {
-                $td.text($.trim($td.text()));
-                if ($td.index() === 3) {
-                    $menuTitle.text($td.text());
-                    $td.prev().prev().find('div').append('<br />').append($menuTitle);
-                    $td.hide();
-                }
+                /*  $td.text($.trim($td.text()));
+                 if ($td.index() === 3) {
+                 $menuTitle.text($td.text());
+                 $td.prev().prev().find('div').append('<br />').append($menuTitle);
+                 $td.hide();
+                 }*/
             } else if ($td.index() === 5) {
-                $td.append($td.find('small').children());
-                $td.find('div').remove();
+                //  $td.append($td.find('small').children());
+                // $td.find('div').remove();
             } else if ($td.index() === 6) {
-                $td.append($td.find('nobr').children());
-                $td.find('small').remove();
+                //  $td.append($td.find('nobr').children());
+                //  $td.find('small').remove();
             } else if ($td.index() === 11) {
-                $td.remove();
+                //$td.remove();
             }
         });
 
@@ -226,10 +226,8 @@
                                 .append($('<tr />')
                                         .append($('<th />'))
                                         .append($('<th />').text($.trim($pageListTable.find('td:nth-child(1)').text().replace(':', '')) + ' / ' + $.trim($pageListTable.find('td:nth-child(2)').text().replace(':', ''))))
-                                        .append($('<th />').hide())
-                                        .append($('<th />').hide())
                                         .append($('<th />').text($.trim($pageListTable.find('td:nth-child(3)').text().replace(':', ''))))
-                                        .append($('<th /><th /><th /><th /><th />')))))
+                                        .append($('<th /><th /><th /><th /><th /><th />')))))
                 .append($pageListUl)
                 .append('<hr />')
                 .append($pageListLegend);
@@ -241,9 +239,11 @@
         $pageListTable.remove();
 
         JsAdmin.DD.addMoveButton = function (tr, cell, op) {
+            cell = cell - 2;
             if (op == 'down') {
                 cell++;
             }
+
             var item = JsAdmin.movable_rows[tr.id];
             if (!JsAdmin.util.isNodeType(tr, 'tr')) {
                 var rows = tr.getElementsByTagName('tr');
@@ -255,6 +255,21 @@
                     + '"></i></a>';
             tr.cells[cell].innerHTML = html;
         };
+
+        JsAdmin.DD.deleteMoveButton = function (tr, cell, op) {
+            cell = cell - 2;
+            if (op == 'down') {
+                cell++;
+            }
+            if (!JsAdmin.util.isNodeType(tr, 'tr')) {
+                var rows = tr.getElementsByTagName('tr');
+                tr = rows[0];
+            }
+
+            tr.cells[cell].innerHTML = "";
+        };
+
+
     });
 
     function toggle_viewers() {
