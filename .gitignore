@@ -1,3 +1,4 @@
 *nbproject*
 *node_modules*
-*fraggy-backend-theme-*.zip
+*fraggy-backend-theme-*.zip$
+*package-lock.json
