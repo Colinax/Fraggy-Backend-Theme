@@ -16,7 +16,7 @@ if (!defined('WB_PATH'))
 /**
  * do the DB query to grab for all pages first
  */
-$pages = $database->query("SELECT *	FROM `" . TABLE_PREFIX . "pages` ORDER BY position ASC");
+$pages = $database->query("SELECT * FROM `" . TABLE_PREFIX . "pages` ORDER BY position ASC");
 $number_all_pages = $pages->numRows();
 
 $refs = array();
@@ -147,7 +147,7 @@ function draw_pagetree($pages_list) {
         <li class="p{PARENT}">
             <table class="pages_view" cellspacing="0" cellpadding="0" border="0">
                 <tr>
-                    <td style="{padding_left}; vertical-align: top;">
+                    <td style="vertical-align: top;">
                         <?php if ($expandable == true): ?>
                             <a href="javascript: toggle_visibility('p{PAGE_ID}');" title="<?php echo $plus_minusTitle; ?>"><img src="{THEME_ICONS}/<?php echo $plus_minusIcon; ?>.png" onclick="toggle_plus_minus('{PAGE_ID}');" name="plus_minus_{PAGE_ID}" border="0" alt="<?php echo $plus_minusAlt; ?>" /></a>
                         <?php else: ?>
