@@ -250,7 +250,7 @@ function draw_pagetree($pages_list) {
                     </td>
                     <td class="list_actions">
                         <?php if ($canAddChild) : ?>
-                            <a href="javascript:add_child_page('{PAGE_ID}');" title="<?php echo $HEADING['ADD_CHILD_PAGE']; ?>"><img src="{THEME_ICONS}/add_child.png" name="addpage_{PAGE_ID}" border="0" alt="[+]" /></a>
+                            <a href="javascript:add_child_page2('{PAGE_ID}');" title="<?php echo $HEADING['ADD_CHILD_PAGE']; ?>"><img src="{THEME_ICONS}/add_child.png" name="addpage_{PAGE_ID}" border="0" alt="[+]" /></a>
                         <?php endif; //$canAddChild  ?>
                     </td>
                 </tr>

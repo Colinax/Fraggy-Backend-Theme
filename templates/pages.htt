@@ -103,6 +103,14 @@
 
 <!-- Custom Javascript -->
 <script>
+    function add_child_page2(page_id)
+    {
+        // find and select the page in the parent dropdown
+        $('#selectParent').val(page_id).trigger('change');
+
+        // set focus to add form
+        document.add.title.focus();
+    }
 
     // Output fixes
     $(document).ready(function () {
