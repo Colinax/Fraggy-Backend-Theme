@@ -1,34 +1,32 @@
-# Fraggy Backend Theme
-
 ![Responsive and Bootstrap based backend theme for WBCE](https://github.com/Neoflow/Fraggy-Backend-Theme/blob/master/images/example.png "Responsive and Bootstrap based backend theme for WBCE")
 
-## About
+# About
 
 Fraggy Backend Theme is a responsive and Bootstrap based template for the backend of [WBCE](http://wbce.org)
 
 **Attention:** There might be some design issues at the backend of older modules, but usually the modules still work as expected.
 
-## Download
+# Download
 
-You can download the newest source code release [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases) and the distributed release without source files [here](https://fraggy.neoflow.ch/downloads/).
+You can download the newest source code release and the distributed release without source files [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
 
-## Installation
+# Installation
 
-### Theme
+## Theme
 
 If you are installing the theme for the first time, use the template installation in the WBCE backend and follow the instructions.
 
 **Attention:** If you want to update the backend theme, then you have to uninstall the old installation first!
 
-### Theme logo
+## Theme logo
 
 If you want to replace the default theme logo, then you have to create a logo image called theme-logo.png and replace the existing one in the image folder of your backend theme installation.
 
 **Attention:** The logo must be a PNG-based image and should have a max width of 250px and a max height of 86px.
 
-## Changelog
+# Changelog
 
-### v1.6.0 - Released on 2017-06-30
+## v1.6.0 - Released on 2017-06-30
 
  * Optimized for WBCE 1.2
  * Fixed #20
@@ -40,11 +38,17 @@ If you want to replace the default theme logo, then you have to create a logo im
  * Updated Bootstrap Datetimepicker
  * Fixed missing timepicker in Bootstrap Datetimepicker
 
-### Older versions
+## Older versions
 
 You can see the summary of releases and the changes in each release [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
 
-## Author
+# Donation
+
+If you like my work or are using it for commercial websites then please donate, or just buy me a beer or two to help me keep Fraggy Backend Theme up to date.
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/JonathanNessier){:target="_blank"}
+
+# Author
 
 * Jonathan Nessier, [Neoflow](https://www.neoflow.ch)
 
