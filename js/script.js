@@ -1,5 +1,5 @@
 /*
- * FRAGGY BACKEND THEME v1.6.0
+ * FRAGGY BACKEND THEME v1.7.0-alpha1
  * Responsive and Bootstrap based backend theme for WBCE
  *
  * Copright (c) 2016-2017 Jonathan Nessier, Neoflow | neoflow.ch
@@ -160,9 +160,10 @@ var Theme = (function () {
 
     var initStylesheetSwitcher = function () {
 
-        var $switchableLink = $('#switchable');
+        var $switchableLink = $('#switchable'),
+                $stylesheetSwitchBtn = $('#stylesheet-switcher a');
 
-        $('#stylesheet-switcher a').on('click', function (e) {
+        $stylesheetSwitchBtn.on('click', function (e) {
             e.preventDefault();
 
             var cssFile = $(this).blur().attr('href');
@@ -176,7 +177,7 @@ var Theme = (function () {
                             'href': cssFile
                         });
 
-                Cookies.set('cssFile', cssFile);
+                localStorage.cssFile = cssFile;
 
                 $switchableLink.after($newSwitchableLink);
 
@@ -188,9 +189,10 @@ var Theme = (function () {
             });
         });
 
-        if (Cookies.get('cssFile') !== undefined) {
-            $switchableLink.attr('href', Cookies.get('cssFile'));
+        if (localStorage.cssFile === undefined) {
+            localStorage.cssFile = $stylesheetSwitchBtn.first().attr('href')
         }
+        $switchableLink.attr('href', localStorage.cssFile);
     };
 
     var initResizeListener = function () {

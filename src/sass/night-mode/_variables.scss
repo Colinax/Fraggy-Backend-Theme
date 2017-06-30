@@ -1,0 +1,35 @@
+$gray-base: darken($brand-primary, 20%);
+
+$gray-darker: darken($brand-primary, 10%);
+$gray-dark: $brand-primary;
+$gray: lighten($brand-primary, 5%);
+$gray-light: lighten($brand-primary, 8%);
+$gray-lighter: lighten($brand-primary, 12%);
+$gray-lightest: lighten($brand-primary, 40%);
+
+$panel-default-border: $gray-dark;
+$panel-default-heading-bg: $gray-dark;
+$panel-bg: $gray;
+$panel-footer-bg: $gray;
+
+$link-color: #eee;
+$link-hover-color: darken(#eee, 15%);
+
+$text-color: #eee;
+
+$table-border-color: $gray-dark;
+
+$text-muted: $gray-lightest;
+
+$navbar-default-bg: $gray-dark;
+$navbar-default-border: $gray-dark;
+$navbar-default-link-color: #eee;
+$navbar-default-link-active-bg: darken($navbar-default-bg, 2.5%);
+$navbar-default-link-active-color: #eee;
+$navbar-default-link-hover-color: #eee;
+$navbar-default-link-hover-bg: darken($navbar-default-bg, 2.5%);
+$navbar-default-color: #eee;
+
+$input-border: $gray-dark;
+$input-color: #eee;
+$input-bg: $gray-lighter;

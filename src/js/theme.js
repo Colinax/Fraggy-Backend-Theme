@@ -1,5 +1,5 @@
 /*!
- * Fraggy Backend Theme v1.6.0
+ * Fraggy Backend Theme v1.7.0-alpha1
  * Jonathan Nessier, Neoflow (https://neoflow.ch) | Licensed under MIT
  * Responsive and Bootstrap based backend theme for WBCE
  */
@@ -46,7 +46,6 @@ var Theme = (function () {
         if (localStorage.cssFile === undefined) {
             localStorage.cssFile = $stylesheetSwitchBtn.first().attr('href')
         }
-
         $switchableLink.attr('href', localStorage.cssFile);
     };
 

@@ -1,0 +1,23 @@
+// Bootstrap helper
+@import "vendor/bootstrap/mixins";
+
+// Colors
+@import 'colors';
+
+// Set secondary brand
+$brand-secondary: darken($red, 10%);
+
+// Variables
+@import 'variables';
+
+// Night mode variables
+@import 'night-mode/variables';
+
+// Vendor
+@import 'vendor';
+
+// Theme
+@import 'theme';
+
+// Night mode base
+@import 'night-mode/base';

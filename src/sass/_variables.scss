@@ -6,13 +6,13 @@ $gray-base: #000;
 $gray-darker: #222;
 $gray-dark: #444;
 $gray: #666;
-$gray-light: #E6E6E6; 
+$gray-light: #E6E6E6;
 $gray-lighter: #F2F2F2;
 
 $icon-font-path: '../fonts/Glyphicons-Halflings/';
 
 $brand-primary: #303641;
-$brand-secondary: #45A246 !default;
+$brand-secondary: #303641 !default;
 $brand-success: #43AC6A;
 $brand-info: #528FC4;
 $brand-warning: #EA981E;
@@ -56,7 +56,7 @@ $sidebar-link-active-color: #fff;
 $sidebar-link-active-bg: $brand-secondary;
 $sidebar-link-active-border-color: $brand-secondary;
 $sidebar-border-color: lighten($sidebar-bg, 5%);
-$sidebar-text-color: #fff;
+$sidebar-text-color: #fff; 
 
 $border-radius-base: 0;
 $border-radius-large: 0;

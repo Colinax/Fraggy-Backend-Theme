@@ -86,10 +86,12 @@ gulp.task('src:rebuild', function () {
 });
 gulp.task('watch', function () {
     gulp.watch(['./src/sass/**/*.scss'], function () {
-        runSequence('scss:build', 'css:build', 'css:minify');
+        //   runSequence('scss:build', 'css:build', 'css:minify');
+        runSequence('scss:build', 'css:build');
     });
     gulp.watch(['./src/js/*.js'], function () {
-        runSequence('js:build', 'js:minify');
+        //    runSequence('js:build', 'js:minify');
+        runSequence('js:build');
     });
 });
 gulp.task('zip', function () {

@@ -1,0 +1,39 @@
+.panel-default {
+    @include panel-links($link-color, $gray-base);
+
+    .panel-title {
+        color: $text-color;
+    }
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: lighten($gray-dark, 2.5%);
+}
+
+nav.navbar.navbar-top {
+    box-shadow: none !important;
+}
+
+.input-group-addon {
+    color: #eee;
+}
+
+#page-wrapper-sidebar {
+    .page-wrapper {
+        .page-title {
+            background: $gray;
+
+            h1 {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.form-control {
+    &:focus {
+        background: $input-bg;
+        border-color: $gray-darker;
+    }
+}
+
