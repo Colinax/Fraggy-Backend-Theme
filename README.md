@@ -28,23 +28,17 @@ If you want to replace the default theme logo, then you have to create a logo im
 
 ## Changelog
 
-### v1.6.0-rc1 - Released on 2017-06-29
+### v1.6.0 - Released on 2017-06-30
 
+ * Optimized for WBCE 1.2
+ * Fixed #20
  * Fixed #21
  * Fixed #22
-
-### v1.6.0-beta2 - Released on 2017-06-28
-
  * Updated dependencies (for development only)
  * Optimized page tree
  * Fixed missing Bootstrap icons
  * Updated Bootstrap Datetimepicker
- * Fixed missing timepicker
-
-### v1.6.0-beta - Released on 2017-06-09
-
- * Fixed #20
- * Optimized for WBCE 1.2
+ * Fixed missing timepicker in Bootstrap Datetimepicker
 
 ### Older versions
 

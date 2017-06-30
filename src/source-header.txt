@@ -2,15 +2,15 @@
  * FRAGGY BACKEND THEME v{VERSION}
  * Responsive and Bootstrap based backend theme for WBCE
  *
- * Copright (c) 2016-2017 Jonathan Nessier, Neoflow (https://www.neoflow.ch)
+ * Copright (c) 2016-2017 Jonathan Nessier, Neoflow | neoflow.ch
  * Licensed under MIT | github.com/Neoflow/Fraggy-Backend-Theme
  *
  * This template integrates components from the following projects
  *
- *   Font Awesome 4.7.0 by @davegandy | fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT)
- *   Bootstrap v3.3.7 | Copyright 2011-2016 Twitter, Inc. | MIT
+ *   Font Awesome 4.7.0 | by Dave Gandy | fontawesome.io/license
+ *   Bootstrap v3.3.7 | (c) 2011-2017 Twitter, Inc. | MIT
  *   Bootstrap Fileselect v1.3 | (c) 2016-2017 Jonathan Nessier, Neoflow | MIT
- *   Bootstrap Datetimepicker v4.17.47 | Copyright (c) 2015-217 Jonathan Peterson | MIT
+ *   Bootstrap Datetimepicker v4.17.47 | (c) 2015-217 Jonathan Peterson | MIT
  *   Moment with locales | by Tim Wood, Iskren Chernev and contributors | MIT
  *   JavaScript Cookie v2.1.2 | by Klaus Hartl, Fagner Brack and contributors | MIT
  *   Select2 4.0.3 | (c) 2012-2015 Kevin Brown, Igor Vaynberg, and Select2 contributors | MIT
