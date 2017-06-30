@@ -6,6 +6,25 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 > There might be some design issues at the backend of older modules, but usually the modules still work as expected.
 
+# Changelog
+
+## v1.6.0 - Current release
+
+ * Optimized for WBCE 1.2
+ * Fixed #20
+ * Fixed #21
+ * Fixed #22
+ * Updated dependencies (for development only)
+ * Optimized page tree
+ * Fixed missing Bootstrap icons
+ * Updated Bootstrap Datetimepicker
+ * Fixed missing timepicker in Bootstrap Datetimepicker
+
+## Older versions
+
+You can see the summary of releases and the changes in each release [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
+
+
 # Download
 
 You can download the newest source code release and the distributed release without source files [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
@@ -33,24 +52,6 @@ The support is provided by the community in the [forum of WBCE](https://forum.wb
 If you like my work or are using it for commercial websites then please donate, or just buy me a beer or two to help me keep Fraggy Backend Theme up to date.
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/JonathanNessier)
-
-# Changelog
-
-**v1.6.0 - Released on 2017-06-30**
-
- * Optimized for WBCE 1.2
- * Fixed #20
- * Fixed #21
- * Fixed #22
- * Updated dependencies (for development only)
- * Optimized page tree
- * Fixed missing Bootstrap icons
- * Updated Bootstrap Datetimepicker
- * Fixed missing timepicker in Bootstrap Datetimepicker
-
-## Older versions
-
-You can see the summary of releases and the changes in each release [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
 
 # Author
 
