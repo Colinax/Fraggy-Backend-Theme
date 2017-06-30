@@ -20,18 +20,22 @@ var Theme = (function () {
         $stylesheetSwitchBtn.on('click', function (e) {
             e.preventDefault();
 
-            var cssFile = $(this).blur().attr('href');
+            var stylesheetUrl = $(this).blur().attr('href');
 
             $('body').fadeTo(400, 0, function () {
-
                 var $body = $(this),
                         $newSwitchableLink = $('<link>', {
                             'rel': 'stylesheet',
                             'type': 'text/css',
-                            'href': cssFile
+                            'href': stylesheetUrl
                         });
 
-                localStorage.cssFile = cssFile;
+                localStorage.setItem('stylesheetUrl', stylesheetUrl);
+
+                // Reload iframes
+                $('iframe').each(function () {
+                    this.contentWindow.location.reload();
+                });
 
                 $switchableLink.after($newSwitchableLink);
 
@@ -42,11 +46,6 @@ var Theme = (function () {
                 });
             });
         });
-
-        if (localStorage.cssFile === undefined) {
-            localStorage.cssFile = $stylesheetSwitchBtn.first().attr('href')
-        }
-        $switchableLink.attr('href', localStorage.cssFile);
     };
 
     var initResizeListener = function () {
