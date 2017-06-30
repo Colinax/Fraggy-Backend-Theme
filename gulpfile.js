@@ -60,7 +60,6 @@ gulp.task('js:build', function () {
     return gulp.src([
         './src/js/workarounds.js',
         './src/js/vendor/bootstrap.min.js',
-        './src/js/vendor/js.cookie.min.js',
         './src/js/vendor/select2.full.min.js',
         './src/js/vendor/moment-with-locales.min.js',
         './src/js/vendor/bootstrap-datetimepicker.min.js',

@@ -12,6 +12,8 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
  * Added night mode
  * Optimized stylesheet switcher
+ * Switched from cookies to localStorage
+ * Removed JavaScript Cookie plugin
 
 ## v1.6.0 - Current release
 
