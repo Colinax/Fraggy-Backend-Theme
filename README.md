@@ -2,9 +2,9 @@
 
 # About
 
-Fraggy Backend Theme is a responsive and Bootstrap based template for the backend of [WBCE](http://wbce.org)
+Fraggy Backend Theme is a responsive and Bootstrap based template for the backend of [WBCE](http://wbce.org).
 
-**Attention:** There might be some design issues at the backend of older modules, but usually the modules still work as expected.
+> There might be some design issues at the backend of older modules, but usually the modules still work as expected.
 
 # Download
 
@@ -16,17 +16,27 @@ You can download the newest source code release and the distributed release with
 
 If you are installing the theme for the first time, use the template installation in the WBCE backend and follow the instructions.
 
-**Attention:** If you want to update the backend theme, then you have to uninstall the old installation first!
+> If you want to update the backend theme, then you have to uninstall the old installation first!
 
 ## Theme logo
 
 If you want to replace the default theme logo, then you have to create a logo image called theme-logo.png and replace the existing one in the image folder of your backend theme installation.
 
-**Attention:** The logo must be a PNG-based image and should have a max width of 250px and a max height of 86px.
+> The logo must be a PNG-based image and should have a max width of 250px and a max height of 86px.
+
+# Support
+
+The support is provided by the community in the [forum of WBCE](https://forum.wbce.org).
+
+# Donation
+
+If you like my work or are using it for commercial websites then please donate, or just buy me a beer or two to help me keep Fraggy Backend Theme up to date.
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/JonathanNessier)
 
 # Changelog
 
-## v1.6.0 - Released on 2017-06-30
+**v1.6.0 - Released on 2017-06-30**
 
  * Optimized for WBCE 1.2
  * Fixed #20
@@ -41,12 +51,6 @@ If you want to replace the default theme logo, then you have to create a logo im
 ## Older versions
 
 You can see the summary of releases and the changes in each release [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
-
-# Donation
-
-If you like my work or are using it for commercial websites then please donate, or just buy me a beer or two to help me keep Fraggy Backend Theme up to date.
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/JonathanNessier){:target="_blank"}
 
 # Author
 
