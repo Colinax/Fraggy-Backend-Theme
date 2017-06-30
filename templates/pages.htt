@@ -113,16 +113,16 @@
                 $pageListTitle = $pageList.prev(),
                 $pageListPanel = $('#pageListPanel');
 
-        $pageList.removeAttr('style').html('');
 
-        $pageListUl.find('table').each(function (index) {
-            var $this = $(this);
 
-            $this.addClass('table');
-            if (index % 2 === 0) {
-                $this.addClass('table-striped');
-            }
-        });
+        /*$pageListUl.find('table').each(function (index) {
+         var $this = $(this);
+
+         $this.addClass('table');
+         if (index % 2 === 0) {
+         $this.addClass('table-striped');
+         }
+         });*/
 
         $pageListUl.addClass('list-unstyled');
         $pageListUl.find('ul').addClass('list-unstyled').find('li').removeClass('jsadmin_drag');
@@ -195,25 +195,19 @@
             }
         });
 
-        $pageListLegend.removeAttr('style');
+        // $pageListLegend.removeAttr('style');
         $pageListPanel.find('h3.panel-title').text($pageListTitle.text());
-        $pageList
-                .append($('<table id="pageListHeader" class="table" />')
-                        .append($('<thead />')
-                                .append($('<tr />')
-                                        .append($('<th />'))
-                                        .append($('<th />').text($.trim($pageListTable.find('td:nth-child(1)').text().replace(':', '')) + ' / ' + $.trim($pageListTable.find('td:nth-child(2)').text().replace(':', ''))))
-                                        .append($('<th />').text($.trim($pageListTable.find('td:nth-child(3)').text().replace(':', ''))))
-                                        .append($('<th /><th /><th /><th /><th /><th />')))))
-                .append($pageListUl)
-                .append('<hr />')
-                .append($pageListLegend);
+        /*$pageList
+         .append($pageListUl)
+         .append('<hr />')
+         .append($pageListLegend);*/
 
-        $pageListPanel.find('.panel-body')
+        $pageListPanel
+                .find('.panel-body')
                 .append($pageList);
 
-        $pageListTitle.remove();
-        $pageListTable.remove();
+        //   $pageListTitle.remove();
+        //    $pageListTable.remove();
 
         JsAdmin.DD.addMoveButton = function (tr, cell, op) {
             cell = cell - 2;

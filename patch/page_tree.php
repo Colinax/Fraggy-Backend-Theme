@@ -51,7 +51,8 @@ while ($page = $pages->fetchRow()) {
  *
  * 	function draw_pagetree()
  */
-function draw_pagetree($pages_list) {
+function draw_pagetree($pages_list)
+{
     global $admin, $database, $use_working_copy, $icons_dir, $TEXT, $HEADING, $MESSAGE;
     $siblings = count($pages_list);
 
@@ -145,23 +146,39 @@ function draw_pagetree($pages_list) {
         ob_start();
         ?>
         <li class="p{PARENT}">
-            <table class="pages_view" cellspacing="0" cellpadding="0" border="0">
-                <tr>
-                    <td style="vertical-align: top;">
+
+            <table class="table">
+                <tr class="<?= $p['visibility'] ?>">
+                    <td class="toggle">
                         <?php if ($expandable == true): ?>
                             <a href="javascript: toggle_visibility('p{PAGE_ID}');" title="<?php echo $plus_minusTitle; ?>"><img src="{THEME_ICONS}/<?php echo $plus_minusIcon; ?>.png" onclick="toggle_plus_minus('{PAGE_ID}');" name="plus_minus_{PAGE_ID}" border="0" alt="<?php echo $plus_minusAlt; ?>" /></a>
                         <?php else: ?>
                             <img src="{THEME_ICONS}/empty.png" border="0" alt="" />
                         <?php endif; ?>
                     </td>
-                    <td class="list_menu_title1" style="width: auto; overflow:hidden;" >
-                        <div style="padding-left:25px; background-image:url({status_icon}); background-repeat:no-repeat; background-position:top left; line-height:20px;">
-                            <a <?= ($canModifyPage ? 'href="{modifyPageURL}"' : 'href="#"') ?> title="<?php echo $HEADING['MODIFY_PAGE']; ?>">
-                                {MENU_TITLE}</a>
-                            <br /><small>{PAGE_TITLE}</small>
-                        </div>
+                    <td class="visibility">
+                        <?php if ($p['visibility'] === 'public') { ?>
+                            <i class="fa fa-eye"></i>
+                        <?php } else if ($p['visibility'] === 'private') { ?>
+                            <i class="fa fa-eye-slash"></i>
+                        <?php } else if ($p['visibility'] === 'registered') { ?>
+                            <i class="fa fa-key"></i>
+                        <?php } else if ($p['visibility'] === 'hidden') { ?>
+                            <i class="fa fa-lock"></i>
+                        <?php } else if ($p['visibility'] === 'deleted') { ?>
+                            <i class="fa fa-trash-o"></i>
+                        <?php } else { ?>
+                            <i class="fa fa-ban"></i>
+                        <?php } ?>
                     </td>
-                    <td class="list_page_id text-center" style="width: 50px;">{PAGE_ID}</td>
+                    <td class="title">
+                        <a <?= ($canModifyPage ? 'href="{modifyPageURL}"' : 'href="#"') ?> title="<?= $HEADING['MODIFY_PAGE'] ?>">
+                            {MENU_TITLE}
+                        </a>
+                        <br />
+                        <small>{PAGE_TITLE}</small>
+                    </td>
+                    <td class="id">{PAGE_ID}</td>
                     <?php
                     // check if thorns working copy is installed
                     if ($use_working_copy):
@@ -181,11 +198,11 @@ function draw_pagetree($pages_list) {
                             else:
                                 ?>
                                 <img src="{THEME_ICONS}/empty.png" border="0" alt="" />
-                            <?php endif; // $canModifyPage ?>
+                            <?php endif; // $canModifyPage  ?>
                         </td>
-                    <?php endif; //$use_working_copy ?>
+                    <?php endif; //$use_working_copy  ?>
 
-                    <td>
+                    <td class="modify">
 
                         <?php if ($canModifyPage) : ?>
                             <a href="{modifyPageURL}" title="<?php echo $HEADING['MODIFY_PAGE']; ?>"><img src="{THEME_ICONS}/modify_16.png" border="0" alt="[<?php echo $TEXT['MODIFY']; ?>]" /></a>
@@ -223,35 +240,33 @@ function draw_pagetree($pages_list) {
 
                     </td>
                     <td class="list_actions">
-                        <small>
-                            <?php if ($p['visibility'] != 'deleted' && $p['visibility'] != 'none') : ?>
-                                <a href="{frontendViewURL}" target="_blank" title="<?php echo $TEXT['VIEW']; ?> (Frontend)"><img src="{THEME_ICONS}/view_16.png" border="0" alt="[<?php echo $TEXT['VIEW']; ?>]" /></a>
-                            <?php else: ?>
-                                <img src="{THEME_ICONS}/empty.png" border="0" alt="" />
-                            <?php endif; //$p['visibility'] != 'deleted' && $p['visibility'] != 'none'  ?>
-                        </small>
+                        <?php if ($p['visibility'] != 'deleted' && $p['visibility'] != 'none') { ?>
+                            <a href="{frontendViewURL}" target="_blank" title="<?php echo $TEXT['VIEW']; ?> (Frontend)"><img src="{THEME_ICONS}/view_16.png" border="0" alt="[<?php echo $TEXT['VIEW']; ?>]" /></a>
+                        <?php } else { ?>
+                            <img src="{THEME_ICONS}/empty.png" border="0" alt="" />
+                        <?php } ?>
                     </td>
                     <td class="list_actions">
-                        <?php if ($canMoveUP) : ?>
-                            <a href="../pages/move_up.php?page_id={PAGE_ID}" title="<?php echo $TEXT['MOVE_UP']; ?>"><img src="{THEME_ICONS}/up_16.png" border="0" alt="/\" /></a>
-                            <?php endif; //$canMoveUP ?>
-                                                                                                                      </td>
-                                                                                                                      <td class="list_actions">
-                                                                                                                      <?php if ($canMoveDOWN) : ?>
-                                                                                                                          <a href="../pages/move_down.php?page_id={PAGE_ID}" title="<?php echo $TEXT['MOVE_DOWN']; ?>"><img src="{THEME_ICONS}/down_16.png" border="0" alt="\/" /></a>
-                                                                                                                      <?php endif; //$canMoveDOWN  ?>
+                        <?php if ($canMoveUP) { ?>
+                            <a href="../pages/move_up.php?page_id={PAGE_ID}" title="<?php echo $TEXT['MOVE_UP']; ?>"><img src="{THEME_ICONS}/up_16.png" border="0" alt="" /></a>
+                        <?php } ?>
+                    </td>
+                    <td class="list_actions">
+                        <?php if ($canMoveDOWN) : ?>
+                            <a href="../pages/move_down.php?page_id={PAGE_ID}" title="<?php echo $TEXT['MOVE_DOWN']; ?>"><img src="{THEME_ICONS}/down_16.png" border="0" alt="\/" /></a>
+                        <?php endif; ?>
                     </td>
                     <td class="list_actions">
                         <?php if ($canDeleteAndModify) : ?>
                             <a href="javascript:confirm_link('PageID: {PAGE_ID}\n\n\t<?php echo $MESSAGE['PAGES_DELETE_CONFIRM']; ?>?','../pages/delete.php?page_id={pageIDKEY}');" title="<?php echo $TEXT['DELETE']; ?>"><img src="{THEME_ICONS}/delete_16.png" border="0" alt="[x]" /></a>
                         <?php else: ?>
                             <img src="{THEME_ICONS}/empty.png" border="0" alt="" />
-                        <?php endif; //canDeleteAndModify ?>
+                        <?php endif; //canDeleteAndModify  ?>
                     </td>
                     <td class="list_actions">
                         <?php if ($canAddChild) : ?>
                             <a href="javascript:add_child_page2('{PAGE_ID}');" title="<?php echo $HEADING['ADD_CHILD_PAGE']; ?>"><img src="{THEME_ICONS}/add_child.png" name="addpage_{PAGE_ID}" border="0" alt="[+]" /></a>
-                        <?php endif; //$canAddChild  ?>
+                        <?php endif; //$canAddChild   ?>
                     </td>
                 </tr>
             </table>
@@ -280,17 +295,23 @@ function draw_pagetree($pages_list) {
 ?>
 <div class="jsadmin"></div>
 <h2><?php echo $MENU['PAGES']; ?></h2>
-<div class="pages_list" style="margin: 4px; padding: 4px; border: solid 2px #d5dde7 !important">
-    <table cellspacing="0" cellpadding="0" border="0" <?php if (empty($pages_list)): ?>style="display:none;"<?php endif; ?>>
-        <tbody>
-            <tr>
-                <td style="width:330px;padding:3px"><small><?php echo $TEXT['VISIBILITY']; ?></small> / <?php echo $TEXT['MENU_TITLE']; ?>:</td>
-                <td style="text-align:left;width:330px;"><tt> &lt;title&gt;</tt> (<?php echo $TEXT['PAGE_TITLE']; ?>):</td>
-        <td class="header_list_page_id" style="text-align:left;"><small>PageID:</small></td>
-        <td class=""><?php echo $TEXT['MODIFY']; ?>:</td>
-        <td class=""><?php echo $TEXT['ACTIONS']; ?>:</td>
-        </tr>
-        </tbody>
+<div class="pages_list">
+
+    <table id="pageListHeader" class="table" <?= (empty($pages_list) ? 'style="display:none;"' : '') ?>>
+        <thead>
+        <th class="toggle"></th>
+        <th class="visibility"></th>
+        <th class="title">
+            <?= $TEXT['VISIBILITY'] ?> / <?= $TEXT['MENU_TITLE'] ?>
+        </th>
+        <th>PageID</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        </thead>
     </table>
     <?php
     if (!empty($pages_list))

@@ -13143,7 +13143,7 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
   vertical-align: middle;
 }
 
-#pagesPage #sectionTable td:nth-child(4), #pagesPage #sectionTable td:nth-child(5) {
+#pagesPage #sectionTable td:nth-child(5), #pagesPage #sectionTable td:nth-child(6) {
   white-space: nowrap;
 }
 
@@ -13157,10 +13157,17 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
 
 #pagesPage #pageListPanel table {
   margin: 0;
+  
 }
 
-#pagesPage #pageListPanel table.striped {
-  background: #f9f9f9;
+#pagesPage #pageListPanel table tr.deleted {
+  background: #fcf8e3;
+  font-style: italic;
+}
+
+#pagesPage #pageListPanel table tr.private, #pagesPage #pageListPanel table tr.hidden, #pagesPage #pageListPanel table tr.registered {
+  background: #F2F2F2;
+  font-style: italic;
 }
 
 #pagesPage #pageListPanel table td, #pagesPage #pageListPanel table th {
@@ -13169,65 +13176,42 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
   text-align: center;
 }
 
-#pagesPage #pageListPanel table td:nth-child(2), #pagesPage #pageListPanel table th:nth-child(2) {
+#pagesPage #pageListPanel table td.title, #pagesPage #pageListPanel table th.title {
   width: auto;
-}
-
-#pagesPage #pageListPanel table td:nth-child(2) > a, #pagesPage #pageListPanel table th:nth-child(2) > a {
-  width: auto;
-  height: auto;
-  line-height: inherit;
-  display: inherit;
-}
-
-#pagesPage #pageListPanel table td:nth-child(2), #pagesPage #pageListPanel table td:nth-child(4), #pagesPage #pageListPanel table th:nth-child(2), #pagesPage #pageListPanel table th:nth-child(4) {
+  max-width: 50%;
   text-align: left;
 }
 
-#pagesPage #pageListPanel table td:nth-child(3), #pagesPage #pageListPanel table th:nth-child(3) {
-  white-space: nowrap;
+#pagesPage #pageListPanel table td.modify, #pagesPage #pageListPanel table th.modify {
   width: 80px;
-}
-
-#pagesPage #pageListPanel table td:last-child, #pagesPage #pageListPanel table th:last-child {
-  text-align: right;
-}
-
-#pagesPage #pageListPanel table td:nth-child(4), #pagesPage #pageListPanel table td:nth-child(5), #pagesPage #pageListPanel table td:nth-child(6), #pagesPage #pageListPanel table td:nth-child(7), #pagesPage #pageListPanel table th:nth-child(4), #pagesPage #pageListPanel table th:nth-child(5), #pagesPage #pageListPanel table th:nth-child(6), #pagesPage #pageListPanel table th:nth-child(7) {
-  display: none;
-}
-
-#pagesPage #pageListPanel table td > a, #pagesPage #pageListPanel table th > a {
-  height: 16px;
-  width: 16px;
-  line-height: 16px;
-  display: inline-block;
-}
-
-#pagesPage #pageListPanel table td img, #pagesPage #pageListPanel table th img {
-  vertical-align: top;
-  height: 16px;
-  width: 16px;
 }
 
 #pagesPage #pageListPanel .p0:first-child > table td {
   border: 0;
 }
 
-#pagesPage #pageListPanel ul ul td:nth-child(2) div {
-  margin: 0 -20px 0 20px;
+#pagesPage #pageListPanel ul ul td {
+  padding: 6px 8px;
 }
 
-#pagesPage #pageListPanel ul ul ul td:nth-child(2) div {
-  margin: 0 -35px 0 35px;
+#pagesPage #pageListPanel ul ul td.toggle {
+  width: 60px;
+  padding-left: 20px;
 }
 
-#pagesPage #pageListPanel ul ul ul ul td:nth-child(2) div {
-  margin: 0 -50px 0 50px;
+#pagesPage #pageListPanel ul ul ul td.toggle {
+  width: 75px;
+  padding-left: 35px;
 }
 
-#pagesPage #pageListPanel ul ul ul ul ul td:nth-child(2) div {
-  margin: 0 -65px 0 65px;
+#pagesPage #pageListPanel ul ul ul ul td.toggle {
+  width: 90px;
+  padding-left: 50px;
+}
+
+#pagesPage #pageListPanel ul ul ul ul ul td.toggle {
+  width: 105px;
+  padding-left: 65px;
 }
 
 @media (min-width: 768px) {
@@ -13237,8 +13221,8 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
   #accessPage #usertypeBtn {
     float: right;
   }
-  #pagesPage #pageListPanel table td:nth-child(6), #pagesPage #pageListPanel table th:nth-child(6) {
-    display: table-cell;
+  #pagesPage #pageListPanel table {
+    
   }
 }
 
@@ -13251,8 +13235,8 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
 }
 
 @media (min-width: 992px) {
-  #pagesPage #pageListPanel table td:nth-child(5), #pagesPage #pageListPanel table td:nth-child(7), #pagesPage #pageListPanel table th:nth-child(5), #pagesPage #pageListPanel table th:nth-child(7) {
-    display: table-cell;
+  #pagesPage #pageListPanel table {
+    
   }
 }
 
@@ -13260,10 +13244,8 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
   #loginPage .row {
     margin-top: 150px;
   }
-  #pagesPage #pageListPanel table td:nth-child(4), #pagesPage #pageListPanel table th:nth-child(4) {
-    display: table-cell;
-    width: 80px;
-    max-width: 80px;
+  #pagesPage #pageListPanel table {
+    
   }
 }
 
