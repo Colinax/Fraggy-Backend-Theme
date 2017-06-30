@@ -2,53 +2,60 @@
 layout: fraggy
 ---
 
-# Fraggy Backend Theme
-
-![Responsive and Bootstrap based backend theme for WBCE](https://github.com/Neoflow/Fraggy-Backend-Theme/blob/master/images/example.png "Responsive and Bootstrap based backend theme for WBCE")
-
-## About
-
 Fraggy Backend Theme is a responsive and Bootstrap based template for the backend of [WBCE](http://wbce.org)
 
 **Attention:** There might be some design issues at the backend of older modules, but usually the modules still work as expected.
 
-## Download
+![Responsive and Bootstrap based backend theme for WBCE](img/example.png "Responsive and Bootstrap based backend theme for WBCE")
+
+# Download
 
 You can download the newest source code release [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases) and the distributed release without source files [here](https://fraggy.neoflow.ch/downloads/).
 
-## Installation
+# License
 
-### Theme
+Fraggy Backend Theme is licensed under the MIT license for all non-commercial, personal, or open source projects and websites.
+
+A commercial license is required for all commercial websites (e.g. every company website or personal website when your selling products or offering services).
+
+## Commercial licensing
+
+Purchasing is done by Binpress and only takes seconds. Once purchased, you'll receive a commercial license PDF and you are allowed to use Fraggy Backend Theme in your commercial applications.
+
+There are two types of commercial licenses for Fraggy Backend Theme.
+
+COMMERCIAL | EXTENDED
+:------------: | :-------------:
+Limited to 1 commercial website | Unlimited commercial websites
+Future updates | Future updates
+***14 EURO*** | ***149 EURO***
+
+## License conditions
+
+* You are not allowed to give away or resell a commercial license.
+* The license don't guarantee any support or development.
+* The support is provided by the community in the forum of WBCE.org
+* 10% of the license fees are donated to WBCE.
+
+# Installation
+
+## Theme
 
 If you are installing the theme for the first time, use the template installation in the WBCE backend and follow the instructions.
 
 **Attention:** If you want to update the backend theme, then you have to uninstall the old installation first!
 
-### Theme logo
+## Theme logo
 
 If you want to replace the default theme logo, then you have to create a logo image called theme-logo.png and replace the existing one in the image folder of your backend theme installation.
 
 **Attention:** The logo must be a PNG-based image and should have a max width of 250px and a max height of 86px.
 
-## Changelog
-
-### v1.6.0 - Released on 2017-06-30
-
- * Optimized for WBCE 1.2
- * Fixed #20
- * Fixed #21
- * Fixed #22
- * Updated dependencies (for development only)
- * Optimized page tree
- * Fixed missing Bootstrap icons
- * Updated Bootstrap Datetimepicker
- * Fixed missing timepicker in Bootstrap Datetimepicker
-
-### Older versions
+# Changelog
 
 You can see the summary of releases and the changes in each release [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
 
-## Author
+# Author
 
 * Jonathan Nessier, [Neoflow](https://www.neoflow.ch)
 
