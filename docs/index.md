@@ -10,7 +10,7 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Download
 
-You can download the newest source code release [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases) and the distributed release without source files [here](https://fraggy.neoflow.ch/downloads/).
+You can download the newest source code release and the distributed release without source files [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
 
 # License
 
@@ -30,12 +30,14 @@ Limited to 1 commercial website | Unlimited commercial websites
 Future updates | Future updates
 ***14 EURO*** | ***149 EURO***
 
+You can buy the license [here](#).
+
 ## License conditions
 
 * You are not allowed to give away or resell a commercial license.
 * The license don't guarantee any support or development.
-* The support is provided by the community in the forum of WBCE.org
-* 10% of the license fees are donated to WBCE.
+* The support is provided by the community in the forum of [WBCE](http://wbce.org).
+* 10% of the license fees are donated to [WBCE](http://wbce.org).
 
 # Installation
 
