@@ -93,7 +93,7 @@ gulp.task('watch', function () {
     });
 });
 gulp.task('zip', function () {
-    return gulp.src(['./**', '!./package.json', '!./gulpfile.js', '!./node_modules{,/**}', '!./docs{,/**}', '!./nbproject{,/**}', '!./src{,/**}', '!*.zip'])
+    return gulp.src(['./**', '!./package.json', '!./gulpfile.js', '!./node_modules{,/**}', '!./nbproject{,/**}', '!./src{,/**}', '!*.zip'])
             .pipe(zip(pjson.name + '-' + pjson.version + '.zip'))
             .pipe(gulp.dest('./'));
 });
