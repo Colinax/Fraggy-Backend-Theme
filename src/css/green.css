@@ -13160,14 +13160,8 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
   
 }
 
-#pagesPage #pageListPanel table tr.deleted {
-  background: #fcf8e3;
-  font-style: italic;
-}
-
-#pagesPage #pageListPanel table tr.private, #pagesPage #pageListPanel table tr.hidden, #pagesPage #pageListPanel table tr.registered {
-  background: #F2F2F2;
-  font-style: italic;
+#pagesPage #pageListPanel table tr {
+  
 }
 
 #pagesPage #pageListPanel table td, #pagesPage #pageListPanel table th {
@@ -13182,12 +13176,8 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
   text-align: left;
 }
 
-#pagesPage #pageListPanel table td.modify, #pagesPage #pageListPanel table th.modify {
+#pagesPage #pageListPanel table td.modify, #pagesPage #pageListPanel table td.id, #pagesPage #pageListPanel table th.modify, #pagesPage #pageListPanel table th.id {
   width: 80px;
-}
-
-#pagesPage #pageListPanel .p0:first-child > table td {
-  border: 0;
 }
 
 #pagesPage #pageListPanel ul ul td {
@@ -13328,9 +13318,11 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
   border-color: #E6E6E6 !important;
 }
 
-.fraggy-page-module-fix {
-  margin: 0 -15px;
-  background: #E6E6E6;
-  padding: 20px 0 0 0;
-  border-top: 15px solid #fff;
+ul.jsadmin_drag_area {
+  border: none !important;
+  outline: 3px solid #45A246;
+}
+
+.pages_list li {
+  margin-bottom: 0 !important;
 }

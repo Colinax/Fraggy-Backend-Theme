@@ -27,6 +27,7 @@
 }
 
 #pagesPage {
+
     #sectionTable {
         td {
             vertical-align: middle;
@@ -51,15 +52,13 @@
             margin: 0;
 
             tr {
-                &.deleted {
-                    background: #fcf8e3;
-                    font-style: italic;
-                }
+                /*                &.deleted {
+                                    font-style: italic;
+                                }
 
-                &.private, &.hidden, &.registered {
-                    background: $gray-lighter;
-                    font-style: italic;
-                }
+                                &.private, &.hidden, &.registered {
+                                    background: $gray-light;
+                                }*/
             }
 
             td, th {
@@ -73,9 +72,11 @@
                     text-align: left;
                 }
 
-                &.modify {
+                &.modify, &.id {
                     width: 80px;
                 }
+
+
             }
             /*
                         &:nth-child(3) {
@@ -120,16 +121,6 @@
                             width: 16px;
                         }
                     } */
-        }
-
-        .p0 {
-            &:first-child {
-                > table {
-                    td {
-                        border: 0;
-                    }
-                }
-            }
         }
 
         ul {

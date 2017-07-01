@@ -56,7 +56,7 @@ function draw_pagetree($pages_list)
     global $admin, $database, $use_working_copy, $icons_dir, $TEXT, $HEADING, $MESSAGE;
     $siblings = count($pages_list);
 
-    $html = "<ul id=\"p%d\" %s>\n";
+    $html = "<ul class=\"list-unstyled\" id=\"p%d\" %s>\n";
     foreach ($pages_list as $key => $p) {
 
         // Get user perms
@@ -150,11 +150,9 @@ function draw_pagetree($pages_list)
             <table class="table">
                 <tr class="<?= $p['visibility'] ?>">
                     <td class="toggle">
-                        <?php if ($expandable == true): ?>
-                            <a href="javascript: toggle_visibility('p{PAGE_ID}');" title="<?php echo $plus_minusTitle; ?>"><img src="{THEME_ICONS}/<?php echo $plus_minusIcon; ?>.png" onclick="toggle_plus_minus('{PAGE_ID}');" name="plus_minus_{PAGE_ID}" border="0" alt="<?php echo $plus_minusAlt; ?>" /></a>
-                        <?php else: ?>
-                            <img src="{THEME_ICONS}/empty.png" border="0" alt="" />
-                        <?php endif; ?>
+                        <?php if ($expandable == true) { ?>
+                            <a href="#" data-id="p{PAGE_ID}"><i class="fa fa-fw fa-folder-open-o"></i></a>
+                        <?php } ?>
                     </td>
                     <td class="visibility">
                         <?php if ($p['visibility'] === 'public') { ?>
@@ -281,7 +279,7 @@ function draw_pagetree($pages_list)
             //continue;
         } else {
             $html .= str_replace(array_keys($placeholders), array_values($placeholders), $item_template);
-            $html .= sprintf('<ul id="p%d" class="page_list"><li>&nbsp;</li></ul>', $p['page_id']) . "\n";
+            //  $html .= sprintf('<ul id="p%d" class="list-unstyled" style="margin: 0;"><li>&nbsp;</li></ul>', $p['page_id']) . "\n";
         }
     }
     $html .= '</ul>';
@@ -294,8 +292,10 @@ function draw_pagetree($pages_list)
 }
 ?>
 <div class="jsadmin"></div>
-<h2><?php echo $MENU['PAGES']; ?></h2>
-<div class="pages_list">
+
+<div class="pages_list" style="display: none;">
+
+    <h2><?= $MENU['PAGES'] ?></h2>
 
     <table id="pageListHeader" class="table" <?= (empty($pages_list) ? 'style="display:none;"' : '') ?>>
         <thead>
@@ -304,8 +304,8 @@ function draw_pagetree($pages_list)
         <th class="title">
             <?= $TEXT['VISIBILITY'] ?> / <?= $TEXT['MENU_TITLE'] ?>
         </th>
-        <th>PageID</th>
-        <th></th>
+        <th class="id">PageID</th>
+        <th class="modify"></th>
         <th></th>
         <th></th>
         <th></th>
@@ -317,7 +317,7 @@ function draw_pagetree($pages_list)
     if (!empty($pages_list))
         echo draw_pagetree($pages_list);
     else
-        echo '<div style="background-color:#E6F4D9; border:1px solid;margin:4px;padding:4px;text-align:center;">(' . $TEXT['NONE_FOUND'] . ')</div>';
+        echo $TEXT['NONE_FOUND'];
     ?>
     <span style="float:right;"><?php echo $MENU['PAGES']; ?>: <?php echo $number_all_pages; ?>&nbsp;</span>
     <?php $visibility_legend = array('public', 'hidden', 'registered', 'private', 'none', 'deleted');

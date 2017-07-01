@@ -3,9 +3,12 @@
     border-color: $gray-light !important;
 }
 
-.fraggy-page-module-fix {
-    margin: 0 -15px;
-    background: #E6E6E6;
-    padding: 20px 0 0 0;
-    border-top: 15px solid #fff;
+ul.jsadmin_drag_area {
+    border: none !important;
+    outline: 3px solid $brand-secondary;
+    // background: rgba($brand-secondary, 0.5) !important;
+}
+
+.pages_list li {
+    margin-bottom: 0 !important;
 }

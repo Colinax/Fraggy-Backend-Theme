@@ -32,7 +32,7 @@
         </div>
         <div class="panel-body">
             <h4>{TEXT_CURRENT_PAGE}: {PAGE_TITLE}</h4>
-            <ul class="list-inline text-muted {CLASS_DISPLAY_MODIFIED}">
+            <ul class="list-inline {CLASS_DISPLAY_MODIFIED}">
                 <!-- BEGIN show_modify_block -->
                 <li>{LAST_MODIFIED} {MODIFIED_BY} ({MODIFIED_BY_USERNAME})</li>
                 <li>{MODIFIED_WHEN}</li>

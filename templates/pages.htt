@@ -5,7 +5,7 @@
 
             <div id="pageListPanel" class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">{HEADING_ADD_PAGE}</h3>
+                    <h3 class="panel-title"></h3>
                 </div>
                 <div class="panel-body">
 
@@ -103,114 +103,94 @@
 
 <!-- Custom Javascript -->
 <script>
+
+    function fixStripes($pageListUl) {
+        $pageListUl.find('table').each(function (index) {
+            var $this = $(this);
+
+            $this.addClass('table');
+            if (index % 2 === 0) {
+                $this.addClass('table-striped');
+            } else {
+                $this.removeClass('table-striped');
+            }
+        });
+    }
+
     // Output fixes
     $(document).ready(function () {
 
         var $pageList = $('.pages_list'),
-                $pageListTable = $pageList.children('table'),
                 $pageListUl = $pageList.children('ul'),
-                $pageListLegend = $pageList.children('.pages_legend'),
-                $pageListTitle = $pageList.prev(),
+                $pageListTitle = $pageList.find('h2:first'),
                 $pageListPanel = $('#pageListPanel');
 
+        var $toggleLinks = $('.toggle a');
+
+        $toggleLinks
+                .on('collapse-list', function (e) {
+                    var $this = $(this);
+                    $this
+                            .removeClass('expanded')
+                            .addClass('collapsed')
+                            .html('<i class="fa fa-fw fa-folder-open-o"></i>');
+
+                    var id = $this.data('id');
+                    $('#' + id, $pageListUl).hide();
+                    localStorage.setItem(id, 'collapsed');
+                })
+                .on('expand-list', function (e) {
+                    var $this = $(this);
+                    $this
+                            .removeClass('collapsed')
+                            .addClass('expanded')
+                            .html('<i class="fa fa-fw fa-folder-o"></i>');
+
+                    var id = $this.data('id');
+                    $('#' + id, $pageListUl).show();
+                    localStorage.setItem(id, 'expanded');
+                })
+                .on('click', function (e) {
+                    e.preventDefault();
+
+                    var $this = $(this);
+                    if ($this.hasClass('collapsed')) {
+                        $this.trigger('expand-list');
+                    } else {
+                        $this.trigger('collapse-list');
+                    }
+                });
+
+        $toggleLinks.each(function () {
+            var $this = $(this);
+
+            var id = $this.data('id');
+            if (localStorage.getItem(id) === 'expanded') {
+                $this.trigger('expand-list');
+            } else {
+                $this.trigger('collapse-list');
+            }
+        });
+
+        fixStripes($pageListUl);
 
 
-        /*$pageListUl.find('table').each(function (index) {
-         var $this = $(this);
-
-         $this.addClass('table');
-         if (index % 2 === 0) {
-         $this.addClass('table-striped');
-         }
-         });*/
-
-        $pageListUl.addClass('list-unstyled');
-        $pageListUl.find('ul').addClass('list-unstyled').find('li').removeClass('jsadmin_drag');
-
+        $pageListUl.find('li').removeClass('jsadmin_drag');
         $pageListUl.unbind();
 
-        $pageListUl.find('td').each(function () {
-            var $td = $(this);
-
-            if ($td.index() === 0) {
-                var $a = $td.find('a');
-                if ($a.length > 0) {
-                    $a.html('');
-
-                    $a.on('collapse-list', function (e) {
-                        var $this = $(this);
-                        $this
-                                .removeClass('expanded')
-                                .addClass('collapsed')
-                                .html('<i class="fa fa-fw fa-folder-open-o"></i>');
-
-                        var id = $this.data('id');
-                        $('#' + id, $pageListUl).hide();
-                        localStorage.setItem(id, 'collapsed');
-                    });
-
-                    $a.on('expand-list', function (e) {
-                        var $this = $(this);
-                        $this
-                                .removeClass('collapsed')
-                                .addClass('expanded')
-                                .html('<i class="fa fa-fw fa-folder-o"></i>');
-
-                        var id = $this.data('id');
-                        $('#' + id, $pageListUl).show();
-                        localStorage.setItem(id, 'expanded');
-                    });
-
-                    $a.on('click', function (e) {
-                        e.preventDefault();
-
-                        var $this = $(this);
-                        if ($this.hasClass('collapsed')) {
-                            $this.trigger('expand-list');
-                        } else {
-                            $this.trigger('collapse-list');
-                        }
-                    });
-
-                    var match = $a.prop('href').match('[p][0-9]+');
-                    if (match.length > 0) {
-                        var id = match[0];
-                        $a.attr('href', '#');
-                        $a.attr('data-id', id);
-
-                        if (localStorage.getItem(id) === 'expanded') {
-                            $a.trigger('expand-list');
-                        } else {
-                            $a.trigger('collapse-list');
-                        }
-                    }
-                }
-            }
-        });
-
-        $pageListUl.find('li').each(function () {
-            var $li = $(this);
-            if ($li.children().length === 0) {
-                $li.hide();
-            }
-        });
-
-        // $pageListLegend.removeAttr('style');
         $pageListPanel.find('h3.panel-title').text($pageListTitle.text());
-        /*$pageList
-         .append($pageListUl)
-         .append('<hr />')
-         .append($pageListLegend);*/
 
         $pageListPanel
                 .find('.panel-body')
                 .append($pageList);
 
-        //   $pageListTitle.remove();
-        //    $pageListTable.remove();
+        $pageListTitle.remove();
+
+        $pageList.show();
+
 
         JsAdmin.DD.addMoveButton = function (tr, cell, op) {
-            cell = cell - 2;
+            cell = cell - 1;
             if (op == 'down') {
                 cell++;
             }
@@ -221,6 +201,8 @@
                 tr = rows[0];
             }
 
+            fixStripes($pageListUl);
+
             var html = '<a href="' + item.url + 'move_' + op + '.php' + item.params
                     + '"><i class="fa fa-fw fa-arrow-circle-' + op
                     + '"></i></a>';
@@ -228,7 +210,7 @@
         };
 
         JsAdmin.DD.deleteMoveButton = function (tr, cell, op) {
-            cell = cell - 2;
+            cell = cell - 1;
             if (op == 'down') {
                 cell++;
             }
@@ -236,6 +218,8 @@
                 var rows = tr.getElementsByTagName('tr');
                 tr = rows[0];
             }
+
+            fixStripes($pageListUl);
 
             tr.cells[cell].innerHTML = "";
         };
