@@ -1,10 +1,10 @@
 $gray-base: darken($brand-primary, 20%);
 
-$gray-darker: darken($brand-primary, 10%);
-$gray-dark: $brand-primary;
-$gray: lighten($brand-primary, 5%);
-$gray-light: lighten($brand-primary, 8%);
-$gray-lighter: lighten($brand-primary, 12%);
+$gray-darker: $brand-primary;
+$gray-dark: lighten($brand-primary, 5%);
+$gray: lighten($brand-primary, 10%);
+$gray-light: lighten($brand-primary, 15%);
+$gray-lighter: lighten($brand-primary, 20%);
 $gray-lightest: lighten($brand-primary, 40%);
 
 $panel-default-border: $gray-dark;

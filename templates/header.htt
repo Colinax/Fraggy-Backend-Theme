@@ -21,7 +21,6 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <!--<link href="{THEME_URL}/css/base.min.css?v1.7.0-alpha1" rel="stylesheet" type="text/css" />-->
         <link id="switchable" href="{THEME_URL}/css/green.css?v1.7.0-alpha1" rel="stylesheet" type="text/css" />
         <script>
             if (localStorage.getItem('stylesheetUrl')) {
