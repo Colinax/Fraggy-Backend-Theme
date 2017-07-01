@@ -21,7 +21,7 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link href="{THEME_URL}/css/base.min.css?v1.7.0-alpha1" rel="stylesheet" type="text/css" />
+        <!--<link href="{THEME_URL}/css/base.min.css?v1.7.0-alpha1" rel="stylesheet" type="text/css" />-->
         <link id="switchable" href="{THEME_URL}/css/green.css?v1.7.0-alpha1" rel="stylesheet" type="text/css" />
         <script>
             if (localStorage.getItem('stylesheetUrl')) {
@@ -113,19 +113,12 @@
                         </ul>
                         <div class="sidebar-content small">
                             <ul id="stylesheet-switcher" class="list-inline">
-                                <li><a class="green" href="{THEME_URL}/css/green.min.css?v1.7.0-alpha1"></a></li>
-                                <li><a class="red" href="{THEME_URL}/css/red.min.css?v1.7.0-alpha1"></a></li>
-                                <li><a class="olive-green" href="{THEME_URL}/css/olive-green.min.css?v1.7.0-alpha1"></a></li>
-                                <li><a class="blue" href="{THEME_URL}/css/blue.min.css?v1.7.0-alpha1"></a></li>
-                                <li><a class="orange" href="{THEME_URL}/css/orange.min.css?v1.7.0-alpha1"></a></li>
-                                <li><a class="pink" href="{THEME_URL}/css/pink.min.css?v1.7.0-alpha1"></a></li>
-
-                                <li><a class="green-night" href="{THEME_URL}/css/green-night.min.css?v1.7.0-alpha1"></a></li>
-                                <li><a class="red-night" href="{THEME_URL}/css/red-night.min.css?v1.7.0-alpha1"></a></li>
-                                <li><a class="olive-green-night" href="{THEME_URL}/css/olive-green-night.min.css?v1.7.0-alpha1"></a></li>
-                                <li><a class="blue-night" href="{THEME_URL}/css/blue-night.min.css?v1.7.0-alpha1"></a></li>
-                                <li><a class="orange-night" href="{THEME_URL}/css/orange-night.min.css?v1.7.0-alpha1"></a></li>
-                                <li><a class="pink-night" href="{THEME_URL}/css/pink-night.min.css?v1.7.0-alpha1"></a></li>
+                                <li><a class="green" href="{THEME_URL}/css/green.css?v1.7.0-alpha1"><span></span><span></span></a></li>
+                                <li><a class="red" href="{THEME_URL}/css/red.css?v1.7.0-alpha1"><span></span><span></span></a></li>
+                                <li><a class="blue" href="{THEME_URL}/css/blue.css?v1.7.0-alpha1"><span></span><span></span></a></li>
+                                <li><a class="green dark" href="{THEME_URL}/css/green-dark.css?v1.7.0-alpha1"><span></span><span></span></a></li>
+                                <li><a class="red dark" href="{THEME_URL}/css/red-dark.css?v1.7.0-alpha1"><span></span><span></span></a></li>
+                                <li><a class="blue dark" href="{THEME_URL}/css/blue-dark.css?v1.7.0-alpha1"><span></span><span></span></a></li>
                             </ul>
 
                             <div class="hidden-xs">

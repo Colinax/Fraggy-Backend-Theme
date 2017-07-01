@@ -12232,21 +12232,21 @@ body {
 }
 
 .text-secondary {
-  color: #CB5656;
+  color: #45A246;
 }
 
 a.text-secondary:hover,
 a.text-secondary:focus {
-  color: #b63838;
+  color: #367e37;
 }
 
 .bg-secondary {
-  background-color: #CB5656;
+  background-color: #45A246;
 }
 
 a.bg-secondary:hover,
 a.bg-secondary:focus {
-  background-color: #b63838;
+  background-color: #367e37;
 }
 
 .text-primary {
@@ -12710,35 +12710,35 @@ fieldset[disabled] .btn-inverse.focus {
 }
 
 .panel-secondary {
-  border-color: #CB5656;
+  border-color: #45A246;
 }
 
 .panel-secondary > .panel-heading {
   color: #fff;
-  background-color: #CB5656;
-  border-color: #CB5656;
+  background-color: #45A246;
+  border-color: #45A246;
 }
 
 .panel-secondary > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #CB5656;
+  border-top-color: #45A246;
 }
 
 .panel-secondary > .panel-heading .badge {
-  color: #CB5656;
+  color: #45A246;
   background-color: #fff;
 }
 
 .panel-secondary > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #CB5656;
+  border-bottom-color: #45A246;
 }
 
 .panel-secondary a .panel-footer {
-  color: #CB5656;
+  color: #45A246;
   text-decoration: none;
 }
 
 .panel-secondary a .panel-footer:hover, .panel-secondary a .panel-footer:focus {
-  color: #a33232;
+  color: #2e6c2f;
 }
 
 .panel-success a .panel-footer {
@@ -12870,7 +12870,7 @@ fieldset[disabled] .btn-inverse.focus {
 }
 
 .brand strong {
-  color: #CB5656;
+  color: #45A246;
 }
 
 .brand .theme-logo img {
@@ -13041,8 +13041,8 @@ nav.sidebar .sidebar-collapse .sidebar-nav li a:hover, nav.sidebar .sidebar-coll
 
 nav.sidebar .sidebar-collapse .sidebar-nav li ul li.current > a, nav.sidebar .sidebar-collapse .sidebar-nav li ul li.active > a {
   color: #fff;
-  background: #CB5656;
-  border-color: #CB5656;
+  background: #45A246;
+  border-color: #45A246;
 }
 
 nav.sidebar .sidebar-collapse .sidebar-nav li ul li a {
@@ -13055,8 +13055,8 @@ nav.sidebar .sidebar-collapse .sidebar-nav li ul li ul li a {
 }
 
 nav.sidebar .sidebar-collapse .sidebar-nav li.current > a, nav.sidebar .sidebar-collapse .sidebar-nav li.active > a {
-  background: #CB5656;
-  border-color: #CB5656;
+  background: #45A246;
+  border-color: #45A246;
 }
 
 nav.sidebar .sidebar-collapse .sidebar-nav li.current > a i, nav.sidebar .sidebar-collapse .sidebar-nav li.active > a i {
@@ -13268,59 +13268,105 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
   height: 28px;
   width: 28px;
   display: block;
-  position: relative;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
-#stylesheet-switcher li a span {
-  height: 100%;
-  position: absolute;
-  width: 50%;
-  -webkit-transition: background ease 0.3s;
-  -o-transition: background ease 0.3s;
-  transition: background ease 0.3s;
-  left: 0;
+#stylesheet-switcher li a.olive-green {
+  background: #99BD51;
 }
 
-#stylesheet-switcher li a span:last-of-type {
-  background: #E6E6E6;
-  right: 0;
-  left: 50%;
+#stylesheet-switcher li a.olive-green:hover {
+  background: #7e9f3c;
 }
 
-#stylesheet-switcher li a:hover span:last-of-type {
-  background: #cdcdcd;
+#stylesheet-switcher li a.olive-green-night {
+  background: #7e9f3c;
 }
 
-#stylesheet-switcher li a.dark span:last-of-type {
-  background: #303641;
+#stylesheet-switcher li a.olive-green-night:hover {
+  background: #6f8c35;
 }
 
-#stylesheet-switcher li a.dark:hover span:last-of-type {
-  background: #1a1e24;
-}
-
-#stylesheet-switcher li a.green span:first-of-type {
+#stylesheet-switcher li a.green {
   background: #45A246;
 }
 
-#stylesheet-switcher li a.green:hover span:first-of-type {
+#stylesheet-switcher li a.green:hover {
   background: #367e37;
 }
 
-#stylesheet-switcher li a.red span:first-of-type {
+#stylesheet-switcher li a.green-night {
+  background: #367e37;
+}
+
+#stylesheet-switcher li a.green-night:hover {
+  background: #2e6c2f;
+}
+
+#stylesheet-switcher li a.red {
   background: #CB5656;
 }
 
-#stylesheet-switcher li a.red:hover span:first-of-type {
+#stylesheet-switcher li a.red:hover {
   background: #b63838;
 }
 
-#stylesheet-switcher li a.blue span:first-of-type {
+#stylesheet-switcher li a.red-night {
+  background: #b63838;
+}
+
+#stylesheet-switcher li a.red-night:hover {
+  background: #a33232;
+}
+
+#stylesheet-switcher li a.blue {
   background: #337979;
 }
 
-#stylesheet-switcher li a.blue:hover span:first-of-type {
+#stylesheet-switcher li a.blue:hover {
   background: #245555;
+}
+
+#stylesheet-switcher li a.blue-night {
+  background: #245555;
+}
+
+#stylesheet-switcher li a.blue-night:hover {
+  background: #1c4343;
+}
+
+#stylesheet-switcher li a.orange {
+  background: #CB8B56;
+}
+
+#stylesheet-switcher li a.orange:hover {
+  background: #b67138;
+}
+
+#stylesheet-switcher li a.orange-night {
+  background: #b67138;
+}
+
+#stylesheet-switcher li a.orange-night:hover {
+  background: #a36532;
+}
+
+#stylesheet-switcher li a.pink {
+  background: #A2457A;
+}
+
+#stylesheet-switcher li a.pink:hover {
+  background: #7e365f;
+}
+
+#stylesheet-switcher li a.pink-night {
+  background: #7e365f;
+}
+
+#stylesheet-switcher li a.pink-night:hover {
+  background: #6c2e52;
 }
 
 .cke {

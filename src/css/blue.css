@@ -13268,105 +13268,59 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
   height: 28px;
   width: 28px;
   display: block;
-  -webkit-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-  transition: all ease 0.3s;
+  position: relative;
 }
 
-#stylesheet-switcher li a.olive-green {
-  background: #99BD51;
+#stylesheet-switcher li a span {
+  height: 100%;
+  position: absolute;
+  width: 50%;
+  -webkit-transition: background ease 0.3s;
+  -o-transition: background ease 0.3s;
+  transition: background ease 0.3s;
+  left: 0;
 }
 
-#stylesheet-switcher li a.olive-green:hover {
-  background: #7e9f3c;
+#stylesheet-switcher li a span:last-of-type {
+  background: #E6E6E6;
+  right: 0;
+  left: 50%;
 }
 
-#stylesheet-switcher li a.olive-green-night {
-  background: #7e9f3c;
+#stylesheet-switcher li a:hover span:last-of-type {
+  background: #cdcdcd;
 }
 
-#stylesheet-switcher li a.olive-green-night:hover {
-  background: #6f8c35;
+#stylesheet-switcher li a.dark span:last-of-type {
+  background: #303641;
 }
 
-#stylesheet-switcher li a.green {
+#stylesheet-switcher li a.dark:hover span:last-of-type {
+  background: #1a1e24;
+}
+
+#stylesheet-switcher li a.green span:first-of-type {
   background: #45A246;
 }
 
-#stylesheet-switcher li a.green:hover {
+#stylesheet-switcher li a.green:hover span:first-of-type {
   background: #367e37;
 }
 
-#stylesheet-switcher li a.green-night {
-  background: #367e37;
-}
-
-#stylesheet-switcher li a.green-night:hover {
-  background: #2e6c2f;
-}
-
-#stylesheet-switcher li a.red {
+#stylesheet-switcher li a.red span:first-of-type {
   background: #CB5656;
 }
 
-#stylesheet-switcher li a.red:hover {
+#stylesheet-switcher li a.red:hover span:first-of-type {
   background: #b63838;
 }
 
-#stylesheet-switcher li a.red-night {
-  background: #b63838;
-}
-
-#stylesheet-switcher li a.red-night:hover {
-  background: #a33232;
-}
-
-#stylesheet-switcher li a.blue {
+#stylesheet-switcher li a.blue span:first-of-type {
   background: #337979;
 }
 
-#stylesheet-switcher li a.blue:hover {
+#stylesheet-switcher li a.blue:hover span:first-of-type {
   background: #245555;
-}
-
-#stylesheet-switcher li a.blue-night {
-  background: #245555;
-}
-
-#stylesheet-switcher li a.blue-night:hover {
-  background: #1c4343;
-}
-
-#stylesheet-switcher li a.orange {
-  background: #CB8B56;
-}
-
-#stylesheet-switcher li a.orange:hover {
-  background: #b67138;
-}
-
-#stylesheet-switcher li a.orange-night {
-  background: #b67138;
-}
-
-#stylesheet-switcher li a.orange-night:hover {
-  background: #a36532;
-}
-
-#stylesheet-switcher li a.pink {
-  background: #A2457A;
-}
-
-#stylesheet-switcher li a.pink:hover {
-  background: #7e365f;
-}
-
-#stylesheet-switcher li a.pink-night {
-  background: #7e365f;
-}
-
-#stylesheet-switcher li a.pink-night:hover {
-  background: #6c2e52;
 }
 
 .cke {

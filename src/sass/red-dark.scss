@@ -5,7 +5,7 @@
 @import 'colors';
 
 // Set secondary brand
-$brand-secondary: darken($red, 10%);
+$brand-secondary: $red;
 
 // Variables
 @import 'variables';

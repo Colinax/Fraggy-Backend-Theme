@@ -15,103 +15,95 @@
             height: 28px;
             width: 28px;
             display: block;
-            @include transition(all ease .3s);
 
-            &.olive-green {
-                background: $olive-green;
+            position: relative;
 
-                &:hover {
-                    background: darken($olive-green, 10%);
+            span {
+                height: 100%;
+                position: absolute;
+                width: 50%;
+                @include transition(background ease .3s);
+                left: 0;
+
+                &:last-of-type {
+                    background: #E6E6E6;
+                    right: 0;
+                    left: 50%;
                 }
             }
 
-            &.olive-green-night {
-                background: darken($olive-green, 10%);
+            &:hover {
+                span {
+                    &:last-of-type {
+                        background: darken(#E6E6E6, 10%);
+                    }
+                }
+            }
+
+            &.dark {
+                span {
+                    &:last-of-type {
+                        background: $brand-primary;
+                    }
+                }
 
                 &:hover {
-                    background: darken($olive-green, 15%);
+                    span {
+                        &:last-of-type {
+                            background: darken($brand-primary, 10%);
+                        }
+                    }
                 }
             }
 
             &.green {
-                background: $green;
-
-                &:hover {
-                    background: darken($green, 10%);
+                span {
+                    &:first-of-type {
+                        background: $green;
+                    }
                 }
-            }
-
-            &.green-night {
-                background: darken($green, 10%);
 
                 &:hover {
-                    background: darken($green, 15%);
+                    span {
+                        &:first-of-type {
+                            background: darken($green, 10%);
+                        }
+                    }
                 }
             }
 
             &.red {
-                background: $red;
-
-                &:hover {
-                    background: darken($red, 10%);
+                span {
+                    &:first-of-type {
+                        background: $red;
+                    }
                 }
-            }
-
-            &.red-night {
-                background: darken($red, 10%);
 
                 &:hover {
-                    background: darken($red, 15%);
+                    span {
+                        &:first-of-type {
+                            background: darken($red, 10%);
+                        }
+                    }
                 }
             }
 
             &.blue {
-                background: $blue;
+                span {
+                    &:first-of-type {
+                        background: $blue;
+                    }
+                }
 
                 &:hover {
-                    background: darken($blue, 10%);
+                    span {
+                        &:first-of-type {
+                            background: darken($blue, 10%);
+                        }
+                    }
                 }
             }
 
-            &.blue-night {
-                background: darken($blue, 10%);
-
-                &:hover {
-                    background: darken($blue, 15%);
-                }
-            }
-
-            &.orange {
-                background: $orange;
-
-                &:hover {
-                    background: darken($orange, 10%);
-                }
-            }
-
-            &.orange-night {
-                background: darken($orange, 10%);
-
-                &:hover {
-                    background: darken($orange, 15%);
-                }
-            }
-
-            &.pink {
-                background: $pink;
-
-                &:hover {
-                    background: darken($pink, 10%);
-                }
-            }
-
-            &.pink-night {
-                background: darken($pink, 10%);
-
-                &:hover {
-                    background: darken($pink, 15%);
-                }
-            }
         }
     }
 }
