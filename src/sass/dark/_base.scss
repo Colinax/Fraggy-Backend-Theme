@@ -30,7 +30,7 @@ nav.navbar.navbar-top {
     }
 }
 
-.form-control {
+.form-control:not([type="file"]) {
     &:focus {
         background: $input-bg;
         border-color: $gray-darker;

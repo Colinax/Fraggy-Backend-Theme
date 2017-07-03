@@ -37,10 +37,10 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999) {
             $canModify = true;
         }
 
-        // $expandable plus/minus
-        $isExpandable = $page['children'];
+        // Check wether page has child pages
+        $hasChildren = (isset($page['children']) && count($pages['children']) > 0);
 
-        // Check detailed user perm
+        // Check detailed user permissions
         $canMoveUp = ($page['position'] != 1 && $admin->get_permission('pages_settings') && $canModify);
         $canMoveDown = ($page['position'] != $numberOfSiblingPages && $admin->get_permission('pages_settings') && $canModify);
         $canDeleteAndModify = ($admin->get_permission('pages_delete') && $canModify);
@@ -70,11 +70,11 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999) {
 
         ob_start();
         ?>
-        <li class="p<?= $page['parent'] ?> <?= ($isExpandable ? 'has-siblings' : '') ?>">
+        <li class="p<?= $page['parent'] ?> <?= ($hasChildren ? 'has-children' : '') ?>">
             <table class="table">
                 <tr class="<?= $page['visibility'] ?>">
                     <td class="toggle">
-                        <?php if ($isExpandable) { ?>
+                        <?php if ($hasChildren) { ?>
                             <a href="#" data-id="p{PAGE_ID}"><i class="fa fa-fw fa-folder-open"></i></a>
                         <?php } ?>
                     </td>
@@ -144,7 +144,7 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999) {
                 </tr>
             </table>
 
-            <?php if ($isExpandable) { ?>
+            <?php if ($hasChildren) { ?>
                 <ul id="p<?= $page['page_id'] ?>" class="list-unstyled">
                     <?= renderPageTree($page['children'], $level + 1, $levelLimit) ?>
                 </ul>

@@ -1928,10 +1928,10 @@ output {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
 }
 .form-control:focus {
-  border-color: #ddd;
+  border-color: #303641;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(221, 221, 221, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(221, 221, 221, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(48, 54, 65, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(48, 54, 65, 0.6);
 }
 .form-control::-moz-placeholder {
   color: #999;
@@ -1949,7 +1949,7 @@ output {
 }
 .form-control[disabled], .form-control[readonly],
 fieldset[disabled] .form-control {
-  background-color: #cbcfd8;
+  background-color: #505b6d;
   opacity: 1;
 }
 .form-control[disabled],
@@ -8225,24 +8225,25 @@ button.close {
   
 }
 .select2-container--bootstrap .select2-selection {
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   background-color: #5b677c;
   border: 1px solid #464e5e;
   border-radius: 0;
   color: #e8eaee;
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
   outline: 0;
 }
+.select2-container--bootstrap .select2-selection.form-control {
+  border-radius: 0;
+}
 .select2-container--bootstrap .select2-search--dropdown .select2-search__field {
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   background-color: #5b677c;
   border: 1px solid #464e5e;
   border-radius: 0;
   color: #e8eaee;
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
 .select2-container--bootstrap .select2-search__field {
@@ -8265,16 +8266,9 @@ button.close {
 }
 .select2-container--bootstrap .select2-results__option {
   padding: 6px 12px;
-  margin: 0 0 1px 0;
   
   
   
-}
-.select2-container--bootstrap .select2-results__option::before {
-  font-family: FontAwesome;
-  content: "";
-  width: 20px;
-  display: inline-block;
 }
 .select2-container--bootstrap .select2-results__option[role=group] {
   padding: 0;
@@ -8285,10 +8279,7 @@ button.close {
 }
 .select2-container--bootstrap .select2-results__option[aria-selected=true] {
   background-color: #f5f5f5;
-  color: #e8eaee;
-}
-.select2-container--bootstrap .select2-results__option[aria-selected=true]::before {
-  content: "\f00c";
+  color: #3b4250;
 }
 .select2-container--bootstrap .select2-results__option--highlighted[aria-selected] {
   background-color: #303641;
@@ -8329,15 +8320,14 @@ button.close {
   white-space: nowrap;
 }
 .select2-container--bootstrap.select2-container--focus .select2-selection, .select2-container--bootstrap.select2-container--open .select2-selection {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(48, 54, 65, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(48, 54, 65, 0.6);
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
-  background: #fff;
-  border-color: #464e5e;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  border-color: #303641;
 }
 .select2-container--bootstrap.select2-container--open {
   
@@ -8365,7 +8355,7 @@ button.close {
   margin-right: 10px;
 }
 .select2-container--bootstrap .select2-selection__clear:hover {
-  color: #333;
+  color: #fff;
 }
 .select2-container--bootstrap.select2-container--disabled .select2-selection {
   border-color: #464e5e;
@@ -8378,7 +8368,7 @@ button.close {
 }
 .select2-container--bootstrap.select2-container--disabled .select2-selection,
 .select2-container--bootstrap.select2-container--disabled .select2-selection--multiple .select2-selection__choice {
-  background-color: #cbcfd8;
+  background-color: #505b6d;
 }
 .select2-container--bootstrap.select2-container--disabled .select2-selection__clear,
 .select2-container--bootstrap.select2-container--disabled .select2-selection--multiple .select2-selection__choice__remove {
@@ -8387,19 +8377,14 @@ button.close {
 .select2-container--bootstrap .select2-dropdown {
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  border-color: #ddd;
+  border-color: #303641;
   overflow-x: hidden;
-  border-top: 1px solid #eaeaea;
   margin-top: -1px;
-  border-radius: 0;
-  color: #e8eaee;
 }
 .select2-container--bootstrap .select2-dropdown--above {
-  -webkit-box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.175);
+  -webkit-box-shadow: 0px -6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0px -6px 12px rgba(0, 0, 0, 0.175);
   margin-top: 1px;
-  border-bottom: 1px solid #eaeaea;
-  border-radius: 0;
 }
 .select2-container--bootstrap .select2-results > .select2-results__options {
   max-height: 200px;
@@ -8439,6 +8424,8 @@ button.close {
 }
 .select2-container--bootstrap .select2-selection--multiple {
   min-height: 34px;
+  padding: 0;
+  height: auto;
   
   
   
@@ -8487,25 +8474,14 @@ button.close {
   margin-right: 3px;
 }
 .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice__remove:hover {
-  color: #333;
+  color: #fff;
 }
 .select2-container--bootstrap .select2-selection--multiple .select2-selection__clear {
   margin-top: 6px;
 }
-.select2-container--bootstrap.input-sm, .input-group-sm > .select2-container--bootstrap.form-control,
-.input-group-sm > .select2-container--bootstrap.input-group-addon,
-.input-group-sm > .input-group-btn > .select2-container--bootstrap.btn, .select2-container--bootstrap.input-lg, .input-group-lg > .select2-container--bootstrap.form-control,
-.input-group-lg > .select2-container--bootstrap.input-group-addon,
-.input-group-lg > .input-group-btn > .select2-container--bootstrap.btn {
-  border-radius: 0;
-  font-size: 12px;
-  height: auto;
-  line-height: 1;
-  padding: 0;
-}
-.select2-container--bootstrap.input-sm .select2-selection--single, .input-group-sm > .select2-container--bootstrap.form-control .select2-selection--single,
-.input-group-sm > .select2-container--bootstrap.input-group-addon .select2-selection--single,
-.input-group-sm > .input-group-btn > .select2-container--bootstrap.btn .select2-selection--single,
+.select2-container--bootstrap .select2-selection--single.input-sm, .select2-container--bootstrap .input-group-sm > .select2-selection--single.form-control, .select2-container--bootstrap
+.input-group-sm > .select2-selection--single.input-group-addon, .select2-container--bootstrap
+.input-group-sm > .input-group-btn > .select2-selection--single.btn,
 .input-group-sm .select2-container--bootstrap .select2-selection--single,
 .form-group-sm .select2-container--bootstrap .select2-selection--single {
   border-radius: 0;
@@ -8515,23 +8491,24 @@ button.close {
   padding: 5px 22px 5px 10px;
   
 }
-.select2-container--bootstrap.input-sm .select2-selection--single .select2-selection__arrow b, .input-group-sm > .select2-container--bootstrap.form-control .select2-selection--single .select2-selection__arrow b,
-.input-group-sm > .select2-container--bootstrap.input-group-addon .select2-selection--single .select2-selection__arrow b,
-.input-group-sm > .input-group-btn > .select2-container--bootstrap.btn .select2-selection--single .select2-selection__arrow b,
+.select2-container--bootstrap .select2-selection--single.input-sm .select2-selection__arrow b, .select2-container--bootstrap .input-group-sm > .select2-selection--single.form-control .select2-selection__arrow b, .select2-container--bootstrap
+.input-group-sm > .select2-selection--single.input-group-addon .select2-selection__arrow b, .select2-container--bootstrap
+.input-group-sm > .input-group-btn > .select2-selection--single.btn .select2-selection__arrow b,
 .input-group-sm .select2-container--bootstrap .select2-selection--single .select2-selection__arrow b,
 .form-group-sm .select2-container--bootstrap .select2-selection--single .select2-selection__arrow b {
   margin-left: -5px;
 }
-.select2-container--bootstrap.input-sm .select2-selection--multiple, .input-group-sm > .select2-container--bootstrap.form-control .select2-selection--multiple,
-.input-group-sm > .select2-container--bootstrap.input-group-addon .select2-selection--multiple,
-.input-group-sm > .input-group-btn > .select2-container--bootstrap.btn .select2-selection--multiple,
+.select2-container--bootstrap .select2-selection--multiple.input-sm, .select2-container--bootstrap .input-group-sm > .select2-selection--multiple.form-control, .select2-container--bootstrap
+.input-group-sm > .select2-selection--multiple.input-group-addon, .select2-container--bootstrap
+.input-group-sm > .input-group-btn > .select2-selection--multiple.btn,
 .input-group-sm .select2-container--bootstrap .select2-selection--multiple,
 .form-group-sm .select2-container--bootstrap .select2-selection--multiple {
   min-height: 30px;
+  border-radius: 0;
 }
-.select2-container--bootstrap.input-sm .select2-selection--multiple .select2-selection__choice, .input-group-sm > .select2-container--bootstrap.form-control .select2-selection--multiple .select2-selection__choice,
-.input-group-sm > .select2-container--bootstrap.input-group-addon .select2-selection--multiple .select2-selection__choice,
-.input-group-sm > .input-group-btn > .select2-container--bootstrap.btn .select2-selection--multiple .select2-selection__choice,
+.select2-container--bootstrap .select2-selection--multiple.input-sm .select2-selection__choice, .select2-container--bootstrap .input-group-sm > .select2-selection--multiple.form-control .select2-selection__choice, .select2-container--bootstrap
+.input-group-sm > .select2-selection--multiple.input-group-addon .select2-selection__choice, .select2-container--bootstrap
+.input-group-sm > .input-group-btn > .select2-selection--multiple.btn .select2-selection__choice,
 .input-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice,
 .form-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice {
   font-size: 12px;
@@ -8539,9 +8516,9 @@ button.close {
   margin: 4px 0 0 5px;
   padding: 0 5px;
 }
-.select2-container--bootstrap.input-sm .select2-selection--multiple .select2-search--inline .select2-search__field, .input-group-sm > .select2-container--bootstrap.form-control .select2-selection--multiple .select2-search--inline .select2-search__field,
-.input-group-sm > .select2-container--bootstrap.input-group-addon .select2-selection--multiple .select2-search--inline .select2-search__field,
-.input-group-sm > .input-group-btn > .select2-container--bootstrap.btn .select2-selection--multiple .select2-search--inline .select2-search__field,
+.select2-container--bootstrap .select2-selection--multiple.input-sm .select2-search--inline .select2-search__field, .select2-container--bootstrap .input-group-sm > .select2-selection--multiple.form-control .select2-search--inline .select2-search__field, .select2-container--bootstrap
+.input-group-sm > .select2-selection--multiple.input-group-addon .select2-search--inline .select2-search__field, .select2-container--bootstrap
+.input-group-sm > .input-group-btn > .select2-selection--multiple.btn .select2-search--inline .select2-search__field,
 .input-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field,
 .form-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field {
   padding: 0 10px;
@@ -8549,16 +8526,16 @@ button.close {
   height: 28px;
   line-height: 1.5;
 }
-.select2-container--bootstrap.input-sm .select2-selection--multiple .select2-selection__clear, .input-group-sm > .select2-container--bootstrap.form-control .select2-selection--multiple .select2-selection__clear,
-.input-group-sm > .select2-container--bootstrap.input-group-addon .select2-selection--multiple .select2-selection__clear,
-.input-group-sm > .input-group-btn > .select2-container--bootstrap.btn .select2-selection--multiple .select2-selection__clear,
+.select2-container--bootstrap .select2-selection--multiple.input-sm .select2-selection__clear, .select2-container--bootstrap .input-group-sm > .select2-selection--multiple.form-control .select2-selection__clear, .select2-container--bootstrap
+.input-group-sm > .select2-selection--multiple.input-group-addon .select2-selection__clear, .select2-container--bootstrap
+.input-group-sm > .input-group-btn > .select2-selection--multiple.btn .select2-selection__clear,
 .input-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-selection__clear,
 .form-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-selection__clear {
   margin-top: 5px;
 }
-.select2-container--bootstrap.input-lg .select2-selection--single, .input-group-lg > .select2-container--bootstrap.form-control .select2-selection--single,
-.input-group-lg > .select2-container--bootstrap.input-group-addon .select2-selection--single,
-.input-group-lg > .input-group-btn > .select2-container--bootstrap.btn .select2-selection--single,
+.select2-container--bootstrap .select2-selection--single.input-lg, .select2-container--bootstrap .input-group-lg > .select2-selection--single.form-control, .select2-container--bootstrap
+.input-group-lg > .select2-selection--single.input-group-addon, .select2-container--bootstrap
+.input-group-lg > .input-group-btn > .select2-selection--single.btn,
 .input-group-lg .select2-container--bootstrap .select2-selection--single,
 .form-group-lg .select2-container--bootstrap .select2-selection--single {
   border-radius: 0;
@@ -8568,16 +8545,16 @@ button.close {
   padding: 10px 31px 10px 16px;
   
 }
-.select2-container--bootstrap.input-lg .select2-selection--single .select2-selection__arrow, .input-group-lg > .select2-container--bootstrap.form-control .select2-selection--single .select2-selection__arrow,
-.input-group-lg > .select2-container--bootstrap.input-group-addon .select2-selection--single .select2-selection__arrow,
-.input-group-lg > .input-group-btn > .select2-container--bootstrap.btn .select2-selection--single .select2-selection__arrow,
+.select2-container--bootstrap .select2-selection--single.input-lg .select2-selection__arrow, .select2-container--bootstrap .input-group-lg > .select2-selection--single.form-control .select2-selection__arrow, .select2-container--bootstrap
+.input-group-lg > .select2-selection--single.input-group-addon .select2-selection__arrow, .select2-container--bootstrap
+.input-group-lg > .input-group-btn > .select2-selection--single.btn .select2-selection__arrow,
 .input-group-lg .select2-container--bootstrap .select2-selection--single .select2-selection__arrow,
 .form-group-lg .select2-container--bootstrap .select2-selection--single .select2-selection__arrow {
   width: 5px;
 }
-.select2-container--bootstrap.input-lg .select2-selection--single .select2-selection__arrow b, .input-group-lg > .select2-container--bootstrap.form-control .select2-selection--single .select2-selection__arrow b,
-.input-group-lg > .select2-container--bootstrap.input-group-addon .select2-selection--single .select2-selection__arrow b,
-.input-group-lg > .input-group-btn > .select2-container--bootstrap.btn .select2-selection--single .select2-selection__arrow b,
+.select2-container--bootstrap .select2-selection--single.input-lg .select2-selection__arrow b, .select2-container--bootstrap .input-group-lg > .select2-selection--single.form-control .select2-selection__arrow b, .select2-container--bootstrap
+.input-group-lg > .select2-selection--single.input-group-addon .select2-selection__arrow b, .select2-container--bootstrap
+.input-group-lg > .input-group-btn > .select2-selection--single.btn .select2-selection__arrow b,
 .input-group-lg .select2-container--bootstrap .select2-selection--single .select2-selection__arrow b,
 .form-group-lg .select2-container--bootstrap .select2-selection--single .select2-selection__arrow b {
   border-width: 5px 5px 0 5px;
@@ -8585,27 +8562,28 @@ button.close {
   margin-left: -10px;
   margin-top: -2.5px;
 }
-.select2-container--bootstrap.input-lg .select2-selection--multiple, .input-group-lg > .select2-container--bootstrap.form-control .select2-selection--multiple,
-.input-group-lg > .select2-container--bootstrap.input-group-addon .select2-selection--multiple,
-.input-group-lg > .input-group-btn > .select2-container--bootstrap.btn .select2-selection--multiple,
+.select2-container--bootstrap .select2-selection--multiple.input-lg, .select2-container--bootstrap .input-group-lg > .select2-selection--multiple.form-control, .select2-container--bootstrap
+.input-group-lg > .select2-selection--multiple.input-group-addon, .select2-container--bootstrap
+.input-group-lg > .input-group-btn > .select2-selection--multiple.btn,
 .input-group-lg .select2-container--bootstrap .select2-selection--multiple,
 .form-group-lg .select2-container--bootstrap .select2-selection--multiple {
   min-height: 46px;
+  border-radius: 0;
 }
-.select2-container--bootstrap.input-lg .select2-selection--multiple .select2-selection__choice, .input-group-lg > .select2-container--bootstrap.form-control .select2-selection--multiple .select2-selection__choice,
-.input-group-lg > .select2-container--bootstrap.input-group-addon .select2-selection--multiple .select2-selection__choice,
-.input-group-lg > .input-group-btn > .select2-container--bootstrap.btn .select2-selection--multiple .select2-selection__choice,
+.select2-container--bootstrap .select2-selection--multiple.input-lg .select2-selection__choice, .select2-container--bootstrap .input-group-lg > .select2-selection--multiple.form-control .select2-selection__choice, .select2-container--bootstrap
+.input-group-lg > .select2-selection--multiple.input-group-addon .select2-selection__choice, .select2-container--bootstrap
+.input-group-lg > .input-group-btn > .select2-selection--multiple.btn .select2-selection__choice,
 .input-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice,
 .form-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice {
   font-size: 18px;
   line-height: 1.33333;
-  border-radius: 4px;
+  border-radius: 0;
   margin: 9px 0 0 8px;
   padding: 0 10px;
 }
-.select2-container--bootstrap.input-lg .select2-selection--multiple .select2-search--inline .select2-search__field, .input-group-lg > .select2-container--bootstrap.form-control .select2-selection--multiple .select2-search--inline .select2-search__field,
-.input-group-lg > .select2-container--bootstrap.input-group-addon .select2-selection--multiple .select2-search--inline .select2-search__field,
-.input-group-lg > .input-group-btn > .select2-container--bootstrap.btn .select2-selection--multiple .select2-search--inline .select2-search__field,
+.select2-container--bootstrap .select2-selection--multiple.input-lg .select2-search--inline .select2-search__field, .select2-container--bootstrap .input-group-lg > .select2-selection--multiple.form-control .select2-search--inline .select2-search__field, .select2-container--bootstrap
+.input-group-lg > .select2-selection--multiple.input-group-addon .select2-search--inline .select2-search__field, .select2-container--bootstrap
+.input-group-lg > .input-group-btn > .select2-selection--multiple.btn .select2-search--inline .select2-search__field,
 .input-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field,
 .form-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field {
   padding: 0 16px;
@@ -8613,28 +8591,28 @@ button.close {
   height: 44px;
   line-height: 1.33333;
 }
-.select2-container--bootstrap.input-lg .select2-selection--multiple .select2-selection__clear, .input-group-lg > .select2-container--bootstrap.form-control .select2-selection--multiple .select2-selection__clear,
-.input-group-lg > .select2-container--bootstrap.input-group-addon .select2-selection--multiple .select2-selection__clear,
-.input-group-lg > .input-group-btn > .select2-container--bootstrap.btn .select2-selection--multiple .select2-selection__clear,
+.select2-container--bootstrap .select2-selection--multiple.input-lg .select2-selection__clear, .select2-container--bootstrap .input-group-lg > .select2-selection--multiple.form-control .select2-selection__clear, .select2-container--bootstrap
+.input-group-lg > .select2-selection--multiple.input-group-addon .select2-selection__clear, .select2-container--bootstrap
+.input-group-lg > .input-group-btn > .select2-selection--multiple.btn .select2-selection__clear,
 .input-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-selection__clear,
 .form-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-selection__clear {
   margin-top: 10px;
 }
-.select2-container--bootstrap.input-lg.select2-container--open .select2-selection--single, .input-group-lg > .select2-container--bootstrap.select2-container--open.form-control .select2-selection--single,
-.input-group-lg > .select2-container--bootstrap.select2-container--open.input-group-addon .select2-selection--single,
-.input-group-lg > .input-group-btn > .select2-container--bootstrap.select2-container--open.btn .select2-selection--single {
+.select2-container--bootstrap .select2-selection.input-lg.select2-container--open .select2-selection--single, .select2-container--bootstrap .input-group-lg > .select2-selection.select2-container--open.form-control .select2-selection--single, .select2-container--bootstrap
+.input-group-lg > .select2-selection.select2-container--open.input-group-addon .select2-selection--single, .select2-container--bootstrap
+.input-group-lg > .input-group-btn > .select2-selection.select2-container--open.btn .select2-selection--single {
   
 }
-.select2-container--bootstrap.input-lg.select2-container--open .select2-selection--single .select2-selection__arrow b, .input-group-lg > .select2-container--bootstrap.select2-container--open.form-control .select2-selection--single .select2-selection__arrow b,
-.input-group-lg > .select2-container--bootstrap.select2-container--open.input-group-addon .select2-selection--single .select2-selection__arrow b,
-.input-group-lg > .input-group-btn > .select2-container--bootstrap.select2-container--open.btn .select2-selection--single .select2-selection__arrow b {
+.select2-container--bootstrap .select2-selection.input-lg.select2-container--open .select2-selection--single .select2-selection__arrow b, .select2-container--bootstrap .input-group-lg > .select2-selection.select2-container--open.form-control .select2-selection--single .select2-selection__arrow b, .select2-container--bootstrap
+.input-group-lg > .select2-selection.select2-container--open.input-group-addon .select2-selection--single .select2-selection__arrow b, .select2-container--bootstrap
+.input-group-lg > .input-group-btn > .select2-selection.select2-container--open.btn .select2-selection--single .select2-selection__arrow b {
   border-color: transparent transparent #999 transparent;
   border-width: 0 5px 5px 5px;
 }
-.input-group-lg .select2-container--bootstrap.select2-container--open .select2-selection--single {
+.input-group-lg .select2-container--bootstrap .select2-selection.select2-container--open .select2-selection--single {
   
 }
-.input-group-lg .select2-container--bootstrap.select2-container--open .select2-selection--single .select2-selection__arrow b {
+.input-group-lg .select2-container--bootstrap .select2-selection.select2-container--open .select2-selection--single .select2-selection__arrow b {
   border-color: transparent transparent #999 transparent;
   border-width: 0 5px 5px 5px;
 }
@@ -8663,7 +8641,8 @@ button.close {
   margin-left: 0;
 }
 .select2-container--bootstrap[dir="rtl"] .select2-selection--multiple .select2-selection__choice,
-.select2-container--bootstrap[dir="rtl"] .select2-selection--multiple .select2-selection__placeholder {
+.select2-container--bootstrap[dir="rtl"] .select2-selection--multiple .select2-selection__placeholder,
+.select2-container--bootstrap[dir="rtl"] .select2-selection--multiple .select2-search--inline {
   float: right;
 }
 .select2-container--bootstrap[dir="rtl"] .select2-selection--multiple .select2-selection__choice {
@@ -8680,7 +8659,9 @@ button.close {
 }
 .has-warning .select2-container--focus .select2-selection,
 .has-warning .select2-container--open .select2-selection {
-  
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+  border-color: #e6e6e6;
 }
 .has-warning.select2-drop-active {
   border-color: #e6e6e6;
@@ -8694,7 +8675,9 @@ button.close {
 }
 .has-error .select2-container--focus .select2-selection,
 .has-error .select2-container--open .select2-selection {
-  
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+  border-color: #e6e6e6;
 }
 .has-error.select2-drop-active {
   border-color: #e6e6e6;
@@ -8708,7 +8691,9 @@ button.close {
 }
 .has-success .select2-container--focus .select2-selection,
 .has-success .select2-container--open .select2-selection {
-  
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+  border-color: #e6e6e6;
 }
 .has-success.select2-drop-active {
   border-color: #e6e6e6;
@@ -8716,37 +8701,44 @@ button.close {
 .has-success.select2-drop-active.select2-drop.select2-drop-above {
   border-top-color: #e6e6e6;
 }
-.input-group .select2-container--bootstrap {
+.input-group > .select2-hidden-accessible:first-child + .select2-container--bootstrap > .selection > .select2-selection,
+.input-group > .select2-hidden-accessible:first-child + .select2-container--bootstrap > .selection > .select2-selection.form-control {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.input-group > .select2-hidden-accessible:not(:first-child) + .select2-container--bootstrap:not(:last-child) > .selection > .select2-selection,
+.input-group > .select2-hidden-accessible:not(:first-child) + .select2-container--bootstrap:not(:last-child) > .selection > .select2-selection.form-control {
+  border-radius: 0;
+}
+.input-group > .select2-hidden-accessible:not(:first-child):not(:last-child) + .select2-container--bootstrap:last-child > .selection > .select2-selection,
+.input-group > .select2-hidden-accessible:not(:first-child):not(:last-child) + .select2-container--bootstrap:last-child > .selection > .select2-selection.form-control {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.input-group > .select2-container--bootstrap {
   display: table;
   table-layout: fixed;
   position: relative;
   z-index: 2;
-  float: left;
   width: 100%;
   margin-bottom: 0;
+  
+  
 }
-.input-group.select2-bootstrap-prepend .select2-container--bootstrap .select2-selection {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
+.input-group > .select2-container--bootstrap > .selection > .select2-selection.form-control {
+  float: none;
 }
-.input-group.select2-bootstrap-append .select2-container--bootstrap .select2-selection {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
+.input-group > .select2-container--bootstrap.select2-container--open, .input-group > .select2-container--bootstrap.select2-container--focus {
+  z-index: 3;
 }
-.select2-bootstrap-append .select2-container--bootstrap,
-.select2-bootstrap-append .input-group-btn,
-.select2-bootstrap-append .input-group-btn .btn,
-.select2-bootstrap-prepend .select2-container--bootstrap,
-.select2-bootstrap-prepend .input-group-btn,
-.select2-bootstrap-prepend .input-group-btn .btn {
+.input-group > .select2-container--bootstrap,
+.input-group > .select2-container--bootstrap .input-group-btn,
+.input-group > .select2-container--bootstrap .input-group-btn .btn {
   vertical-align: top;
 }
 .form-control.select2-hidden-accessible {
   position: absolute !important;
   width: 1px !important;
-}
-.form-inline .select2-container--bootstrap {
-  display: inline-block;
 }
 .noresize {
   resize: none;
@@ -9593,7 +9585,7 @@ nav.navbar.navbar-top {
 #page-wrapper-sidebar .page-wrapper .page-title h1 {
   color: #e8eaee;
 }
-.form-control:focus {
+.form-control:not([type="file"]):focus {
   background: #5b677c;
   border-color: #303641;
 }
@@ -10098,6 +10090,9 @@ nav.navbar.navbar-top {
   }
   .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
     width: 38em;
+  }
+  .form-inline .select2-container--bootstrap {
+    display: inline-block;
   }
   .navbar .navbar-text {
     margin: 15px 0;

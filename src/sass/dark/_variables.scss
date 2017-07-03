@@ -31,8 +31,11 @@ $navbar-default-link-hover-bg: darken($navbar-default-bg, 2.5%);
 $navbar-default-color: $text-color;
 
 $input-border: $gray-dark;
+$input-border-focus: $gray-darker;
 $input-color: $gray-lightest;
 $input-bg: $gray-light;
+$input-bg-disabled: darken($gray-light, 5%);
+
 
 $input-group-addon-bg: $gray;
 
