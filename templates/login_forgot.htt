@@ -20,12 +20,17 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link id="switchable" href="{THEME_URL}/css/green.min.css?v1.7.0-alpha2" rel="stylesheet" type="text/css" />
         <script>
+            var stylesheetUrl = '{THEME_URL}/css/green.css?v1.7.0-alpha2';
             if (localStorage.getItem('stylesheetUrl')) {
-                document.getElementById('switchable').setAttribute('href', localStorage.getItem('stylesheetUrl'));
+                stylesheetUrl = localStorage.getItem('stylesheetUrl');
             }
+            document.write('<link id="switchable" href="' + stylesheetUrl + '" rel="stylesheet" type="text/css" />');
         </script>
+
+        <noscript>
+        <link id="switchable" href="{THEME_URL}/css/green.css?v1.7.0-alpha2" rel="stylesheet" type="text/css" />
+        </noscript>
 
         <!-- Theme third-party vendor fonts -->
         <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />

@@ -12781,26 +12781,15 @@ fieldset[disabled] .btn-inverse.focus {
   color: #b62525;
 }
 
-.select2-container--bootstrap .select2-dropdown {
-  border-color: #222;
-  background: #E6E6E6;
-  color: #444;
-}
-
-.select2-container--bootstrap .select2-results__option--highlighted[aria-selected] {
-  background: #222;
-  color: #444;
-}
-
-.select2-container--bootstrap .select2-results__option[aria-selected=true] {
-  background: #444;
-  color: #444;
-}
-
 .select2-dropdown {
   border-radius: 0;
 }
 
+.select2-container--bootstrap .select2-selection,
+.select2-container--bootstrap.select2-container--focus .select2-selection,
+.select2-container--bootstrap.select2-container--open .select2-selection {
+  box-shadow: none;
+}
 
 #wrapper {
   width: 100%;

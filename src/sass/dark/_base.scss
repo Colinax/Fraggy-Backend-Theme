@@ -49,3 +49,19 @@ nav.navbar.navbar-top {
 .cke {
     border-color: $gray;
 }
+
+.select2-container--bootstrap .select2-dropdown {
+    border-color: $gray-darker;
+    background: $gray-light;
+    color: $text-color;
+}
+
+.select2-container--bootstrap .select2-results__option--highlighted[aria-selected] {
+    background: $gray-darker;
+    color: $text-color;
+}
+
+.select2-container--bootstrap .select2-results__option[aria-selected=true] {
+    background: $gray-dark;
+    color: $text-color;
+}
