@@ -15,7 +15,7 @@ nav.navbar.navbar-top {
 }
 
 .input-group-addon {
-    color: #eee;
+    color: $input-color;
 }
 
 #page-wrapper-sidebar {
@@ -24,7 +24,7 @@ nav.navbar.navbar-top {
             background: $gray;
 
             h1 {
-                color: #fff;
+                color: $gray-lightest;
             }
         }
     }

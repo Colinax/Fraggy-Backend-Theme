@@ -9454,10 +9454,6 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
 }
 #pagesPage #pageListPanel table {
   margin: 0;
-  
-}
-#pagesPage #pageListPanel table tr {
-  
 }
 #pagesPage #pageListPanel table td, #pagesPage #pageListPanel table th {
   vertical-align: middle;
@@ -9472,24 +9468,27 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
 #pagesPage #pageListPanel table td.modify, #pagesPage #pageListPanel table td.id, #pagesPage #pageListPanel table th.modify, #pagesPage #pageListPanel table th.id {
   width: 80px;
 }
+#pagesPage #pageListPanel table td.modify, #pagesPage #pageListPanel table th.modify {
+  text-align: left;
+}
 #pagesPage #pageListPanel ul ul td {
-  padding: 6px 8px;
+  padding: 4px 8px;
 }
 #pagesPage #pageListPanel ul ul td.toggle {
-  width: 60px;
-  padding-left: 20px;
+  width: 80px;
+  padding-left: 40px;
 }
 #pagesPage #pageListPanel ul ul ul td.toggle {
-  width: 75px;
-  padding-left: 35px;
+  width: 120px;
+  padding-left: 80px;
 }
 #pagesPage #pageListPanel ul ul ul ul td.toggle {
-  width: 90px;
-  padding-left: 50px;
+  width: 160px;
+  padding-left: 120px;
 }
 #pagesPage #pageListPanel ul ul ul ul ul td.toggle {
-  width: 105px;
-  padding-left: 65px;
+  width: 200px;
+  padding-left: 160px;
 }
 #ibox .alert {
   margin: 0;
@@ -9563,7 +9562,7 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
 }
 ul.jsadmin_drag_area {
   border: none !important;
-  outline: 3px solid #337979;
+  outline: 2px dashed #ddd;
 }
 .pages_list li {
   margin-bottom: 0 !important;

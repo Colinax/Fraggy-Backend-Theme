@@ -5,7 +5,7 @@
 
             <div id="pageListPanel" class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title"></h3>
+                    <h3 class="panel-title">{PAGES}</h3>
                 </div>
                 <div class="panel-body">
 
@@ -104,28 +104,25 @@
 <!-- Custom Javascript -->
 <script>
 
-    function fixStripes($pageListUl) {
-        $pageListUl.find('table').each(function (index) {
-            var $this = $(this);
-
-            $this.addClass('table');
-            if (index % 2 === 0) {
-                $this.addClass('table-striped');
-            } else {
-                $this.removeClass('table-striped');
-            }
-        });
-    }
 
     // Output fixes
-    $(document).ready(function () {
+    $(function () {
+
+        function refreshStripes() {
+            $pageListUl.find('li:visible > table').each(function (index) {
+                if (index % 2 === 0) {
+                    $(this).addClass('table-striped');
+                } else {
+                    $(this).removeClass('table-striped');
+                }
+            });
+        }
 
         var $pageList = $('.pages_list'),
                 $pageListUl = $pageList.children('ul'),
                 $pageListTitle = $pageList.find('h2:first'),
-                $pageListPanel = $('#pageListPanel');
-
-        var $toggleLinks = $('.toggle a');
+                $pageListPanel = $('#pageListPanel'),
+                $toggleLinks = $('.toggle a');
 
         $toggleLinks
                 .on('collapse-list', function (e) {
@@ -133,22 +130,24 @@
                     $this
                             .removeClass('expanded')
                             .addClass('collapsed')
-                            .html('<i class="fa fa-fw fa-folder-open-o"></i>');
+                            .html('<i class="fa fa-fw fa-folder"></i>');
 
                     var id = $this.data('id');
                     $('#' + id, $pageListUl).hide();
                     localStorage.setItem(id, 'collapsed');
+                    refreshStripes();
                 })
                 .on('expand-list', function (e) {
                     var $this = $(this);
                     $this
                             .removeClass('collapsed')
                             .addClass('expanded')
-                            .html('<i class="fa fa-fw fa-folder-o"></i>');
+                            .html('<i class="fa fa-fw fa-folder-open"></i>');
 
                     var id = $this.data('id');
                     $('#' + id, $pageListUl).show();
                     localStorage.setItem(id, 'expanded');
+                    refreshStripes();
                 })
                 .on('click', function (e) {
                     e.preventDefault();
@@ -165,29 +164,23 @@
             var $this = $(this);
 
             var id = $this.data('id');
-            if (localStorage.getItem(id) === 'expanded') {
-                $this.trigger('expand-list');
-            } else {
+            if (localStorage.getItem(id) === 'collapsed') {
                 $this.trigger('collapse-list');
+            } else {
+                $this.trigger('expand-list');
             }
         });
 
-        fixStripes($pageListUl);
-
-
-        $pageListUl.find('li').removeClass('jsadmin_drag');
-        $pageListUl.unbind();
-
         $pageListPanel.find('h3.panel-title').text($pageListTitle.text());
+        $pageListTitle.remove();
 
         $pageListPanel
                 .find('.panel-body')
                 .append($pageList);
 
-        $pageListTitle.remove();
-
         $pageList.show();
 
+        refreshStripes();
 
         JsAdmin.DD.addMoveButton = function (tr, cell, op) {
             cell = cell - 1;
@@ -195,13 +188,13 @@
                 cell++;
             }
 
+            refreshStripes();
+
             var item = JsAdmin.movable_rows[tr.id];
             if (!JsAdmin.util.isNodeType(tr, 'tr')) {
                 var rows = tr.getElementsByTagName('tr');
                 tr = rows[0];
             }
-
-            fixStripes($pageListUl);
 
             var html = '<a href="' + item.url + 'move_' + op + '.php' + item.params
                     + '"><i class="fa fa-fw fa-arrow-circle-' + op
@@ -214,30 +207,19 @@
             if (op == 'down') {
                 cell++;
             }
+
+            refreshStripes();
+
             if (!JsAdmin.util.isNodeType(tr, 'tr')) {
                 var rows = tr.getElementsByTagName('tr');
                 tr = rows[0];
             }
 
-            fixStripes($pageListUl);
-
-            tr.cells[cell].innerHTML = "";
+            tr.cells[cell].innerHTML = '';
         };
-
-
     });
 
-    function toggle_viewers() {
-        if (document.add.visibility.value == 'private') {
-            document.getElementById('viewers').style.display = 'block';
-        } else if (document.add.visibility.value == 'registered') {
-            document.getElementById('viewers').style.display = 'block';
-        } else {
-            document.getElementById('viewers').style.display = 'none';
-        }
-    }
-
-    function add_child_page2(page_id)
+    function addChildPage(page_id)
     {
         // find and select the page in the parent dropdown
         $('#selectParent').val(page_id).trigger('change');
@@ -245,7 +227,6 @@
         // set focus to add form
         document.add.title.focus();
     }
-
 
 </script>
 <!-- END main_block -->

@@ -1,13 +1,10 @@
 $(function () {
 
     $('button, input[type="button"], input[type="reset"]')
-            .addClass('btn')
-            .addClass('btn-default');
+            .addClass('btn btn-default');
 
     $('button[type="submit"], input[type="submit"]')
-            .addClass('btn')
-            .removeClass('btn-default')
-            .addClass('btn-primary');
+            .addClass('btn btn-primary').removeClass('btn-default');
 
     $('input[type="text"], input[type="password"], textarea, select')
             .addClass('form-control');

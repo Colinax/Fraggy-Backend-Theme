@@ -51,16 +51,6 @@
         table {
             margin: 0;
 
-            tr {
-                /*                &.deleted {
-                                    font-style: italic;
-                                }
-
-                                &.private, &.hidden, &.registered {
-                                    background: $gray-light;
-                                }*/
-            }
-
             td, th {
                 vertical-align: middle;
                 width: 40px;
@@ -76,85 +66,46 @@
                     width: 80px;
                 }
 
-
+                &.modify {
+                    text-align: left;
+                }
             }
-            /*
-                        &:nth-child(3) {
-                            width: auto;
-
-                            > a {
-                                width: auto;
-                                height: auto;
-                                line-height: inherit;
-                                display: inherit;
-                            }
-                        }
-
-                        &:nth-child(3), &:nth-child(5) {
-                            text-align: left;
-                        }
-
-                        &:nth-child(4) {
-                            white-space: nowrap;
-                            width: 80px;
-                        }
-
-                        &:last-child {
-                            text-align: right;
-                        }
-
-                        &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8) {
-                            display: none;
-                        }
-
-
-                        > a {
-                            height: 16px;
-                            width: 16px;
-                            line-height: 16px;
-                            display: inline-block;
-                        }
-
-                        img {
-                            vertical-align: top;
-                            height: 16px;
-                            width: 16px;
-                        }
-                    } */
         }
 
         ul {
             ul {
+
                 td {
-                    padding: 6px 8px;
+                    padding: 4px 8px;
 
                     &.toggle {
-                        width: 60px;
-                        padding-left: 20px;
+                        width: 80px;
+                        padding-left: 40px;
                     }
                 }
+
 
                 ul {
                     td {
                         &.toggle {
-                            width: 75px;
-                            padding-left: 35px;
+                            width: 120px;
+                            padding-left: 80px;
                         }
                     }
 
                     ul {
                         td {
                             &.toggle {
-                                width: 90px;
-                                padding-left: 50px;
+                                width: 160px;
+                                padding-left: 120px;
                             }
                         }
 
                         ul {
                             td {
                                 &.toggle {
-                                    width: 105px;
-                                    padding-left: 65px;
+                                    width: 200px;
+                                    padding-left: 160px;
                                 }
                             }
                         }

@@ -11,7 +11,7 @@ $brand-secondary: $green;
 @import 'variables';
 
 // Night mode variables
-@import 'night-mode/variables';
+@import 'dark/variables';
 
 // Vendor
 @import 'vendor';
@@ -20,4 +20,4 @@ $brand-secondary: $green;
 @import 'theme';
 
 // Night mode base
-@import 'night-mode/base';
+@import 'dark/base';
