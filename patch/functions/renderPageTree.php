@@ -38,7 +38,7 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999) {
         }
 
         // Check wether page has child pages
-        $hasChildren = (isset($page['children']) && count($pages['children']) > 0);
+        $hasChildren = (isset($page['children']) && count($page['children']) > 0);
 
         // Check detailed user permissions
         $canMoveUp = ($page['position'] != 1 && $admin->get_permission('pages_settings') && $canModify);
