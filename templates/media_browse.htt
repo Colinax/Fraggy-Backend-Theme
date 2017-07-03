@@ -20,7 +20,7 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link id="switchable" href="{THEME_URL}/css/green.min.css?v1.7.0-alpha1" rel="stylesheet" type="text/css" />
+        <link id="switchable" href="{THEME_URL}/css/green.min.css?v1.7.0-alpha2" rel="stylesheet" type="text/css" />
         <script>
             if (localStorage.getItem('stylesheetUrl')) {
                 document.getElementById('switchable').setAttribute('href', localStorage.getItem('stylesheetUrl'));
@@ -32,19 +32,7 @@
 
         <!-- Custom CSS -->
         <style type="text/css">
-            body {
-                min-height: auto;
-                background: #fff;
-            }
 
-            .table {
-                margin: 0;
-            }
-
-            .alert {
-                margin: 20px;
-                text-align: center;
-            }
         </style>
 
         <!-- Initiliaze vars -->
@@ -55,7 +43,7 @@
         </script>
 
         <!-- Theme jQuery -->
-        <script src="{THEME_URL}/js/jquery.min.js?v1.7.0-alpha1"></script>
+        <script src="{THEME_URL}/js/jquery.min.js?v1.7.0-alpha2"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="../../include/jquery/jquery-insert.js"></script>
@@ -67,7 +55,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.min.js?v1.7.0-alpha1"></script>
+        <script src="{THEME_URL}/js/script.min.js?v1.7.0-alpha2"></script>
         <script>
             $(document).ready(function () {
                 Theme.init();
@@ -83,7 +71,7 @@
         </script>
 
     </head>
-    <body>
+    <body id="mediaBrowsePage">
         <table class="table table-striped" class="{DISPLAY_LIST_TABLE}">
             <thead>
                 <tr>
@@ -100,9 +88,9 @@
             <tbody>
                 <!-- BEGIN list_block -->
                 <tr>
-                    <td width="40">
+                    <td class="thumb">
                         <a class="icon" href="{LINK}" target="{LINK_TARGET}">
-                            <img src="{FT_ICON}" border="0" height="16" width="16" />
+                            <img src="{FT_ICON}" class="img-responsive" />
                         </a>
                     </td>
                     <td>

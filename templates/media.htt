@@ -131,6 +131,7 @@
     });
 
     $('#mediaBrowser').on('load', function () {
+        console.log(this.contentWindow.document.body.offsetHeight);
         this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
     });
 </script>

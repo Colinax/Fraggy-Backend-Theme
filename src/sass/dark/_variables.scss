@@ -8,7 +8,7 @@ $gray-lighter: lighten($brand-primary, 60%);
 $gray-lightest: lighten($brand-primary, 70%);
 
 $panel-default-border: $gray-dark;
-$panel-default-heading-bg: $gray-dark;
+$panel-default-heading-bg: $gray;
 $panel-bg: $gray;
 $panel-footer-bg: $gray;
 
@@ -36,9 +36,16 @@ $input-color: $gray-lightest;
 $input-bg: $gray-light;
 $input-bg-disabled: darken($gray-light, 5%);
 
-
 $input-group-addon-bg: $gray;
 
 $btn-default-color: #fff;
 $btn-default-bg: $gray-light;
 $btn-default-border: $gray-dark;
+
+$dropdown-bg: $gray-light;
+$dropdown-border: $gray-darker;
+
+$bs-datetimepicker-primary-border-color: $gray-darker;
+$bs-datetimepicker-btn-hover-bg: $gray-darker;
+$bs-datetimepicker-disabled-color: lighten($gray, 15%);
+$bs-datetimepicker-alternate-color: lighten($gray, 15%);

@@ -20,7 +20,7 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link id="switchable" href="{THEME_URL}/css/green.min.css?v1.7.0-alpha1" rel="stylesheet" type="text/css" />
+        <link id="switchable" href="{THEME_URL}/css/green.min.css?v1.7.0-alpha2" rel="stylesheet" type="text/css" />
         <script>
             if (localStorage.getItem('stylesheetUrl')) {
                 document.getElementById('switchable').setAttribute('href', localStorage.getItem('stylesheetUrl'));
@@ -55,7 +55,7 @@
         </script>
 
         <!-- Theme jQuery -->
-        <script src="{THEME_URL}/js/jquery.min.js?v1.7.0-alpha1"></script>
+        <script src="{THEME_URL}/js/jquery.min.js?v1.7.0-alpha2"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="../../include/jquery/jquery-insert.js"></script>
@@ -67,7 +67,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.min.js?v1.7.0-alpha1"></script>
+        <script src="{THEME_URL}/js/script.min.js?v1.7.0-alpha2"></script>
         <script>
             $(document).ready(function () {
                 Theme.init();

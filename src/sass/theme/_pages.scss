@@ -154,6 +154,17 @@
     }
 }
 
+#mediaBrowsePage {
+    background: #fff;
+
+    .thumb {
+        width: 80px;
+
+        img {
+            max-height: 80px;
+        }
+    }
+}
 
 @media(min-width: $screen-md) {
     #pagesPage {

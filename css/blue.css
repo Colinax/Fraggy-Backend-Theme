@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
- * FRAGGY BACKEND THEME v1.7.0-alpha1
+ * FRAGGY BACKEND THEME v1.7.0-alpha2
  * Responsive and Bootstrap based backend theme for WBCE
  *
  * Copright (c) 2016-2017 Jonathan Nessier, Neoflow | neoflow.ch
@@ -7888,6 +7888,9 @@ button.close {
   padding: 0 5px;
   width: 100%;
 }
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+  list-style: none;
+}
 .select2-container--default .select2-selection--multiple .select2-selection__placeholder {
   color: #999;
   margin-top: 5px;
@@ -8781,6 +8784,10 @@ body {
   max-height: 50px;
   margin: auto;
 }
+*:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
 .text-secondary {
   color: #337979;
 }
@@ -9209,6 +9216,22 @@ fieldset[disabled] .btn-inverse.focus {
 .panel-danger a .panel-footer:hover, .panel-danger a .panel-footer:focus {
   color: #b62525;
 }
+.select2-container--bootstrap .select2-dropdown {
+  border-color: #222;
+  background: #E6E6E6;
+  color: #444;
+}
+.select2-container--bootstrap .select2-results__option--highlighted[aria-selected] {
+  background: #222;
+  color: #444;
+}
+.select2-container--bootstrap .select2-results__option[aria-selected=true] {
+  background: #444;
+  color: #444;
+}
+.select2-dropdown {
+  border-radius: 0;
+}
 #wrapper {
   width: 100%;
   min-height: 100vh;
@@ -9487,6 +9510,15 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
 }
 #ibox .alert .btn, #ibox .alert hr {
   display: none;
+}
+#mediaBrowsePage {
+  background: #fff;
+}
+#mediaBrowsePage .thumb {
+  width: 80px;
+}
+#mediaBrowsePage .thumb img {
+  max-height: 80px;
 }
 #stylesheet-switcher {
   font-size: 0;

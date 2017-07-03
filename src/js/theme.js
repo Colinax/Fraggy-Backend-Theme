@@ -1,5 +1,5 @@
 /*!
- * Fraggy Backend Theme v1.7.0-alpha1
+ * Fraggy Backend Theme v1.7.0-alpha2
  * Jonathan Nessier, Neoflow (https://neoflow.ch) | Licensed under MIT
  * Responsive and Bootstrap based backend theme for WBCE
  */
@@ -34,7 +34,10 @@ var Theme = (function () {
 
                 // Reload iframes
                 $('iframe').each(function () {
-                    this.contentWindow.location.reload();
+                    var $this = $(this);
+                    if ($this.attr('src').length > 0) {
+                        this.contentWindow.location.reload();
+                    }
                 });
 
                 $switchableLink.after($newSwitchableLink);
@@ -95,7 +98,7 @@ var Theme = (function () {
                 locale: $this.data('language') || navigator.language || navigator.userLanguage,
                 format: $this.data('format') ? $this.data('format') : 'DD.MM.Y HH:mm',
                 extraFormats: ['M/D/Y HH:mm'],
-                useCurrent: false
+                useCurrent: false,
             });
         });
     };

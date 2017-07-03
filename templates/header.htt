@@ -21,7 +21,7 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link id="switchable" href="{THEME_URL}/css/green.css?v1.7.0-alpha1" rel="stylesheet" type="text/css" />
+        <link id="switchable" href="{THEME_URL}/css/green.css?v1.7.0-alpha2" rel="stylesheet" type="text/css" />
         <script>
             if (localStorage.getItem('stylesheetUrl')) {
                 document.getElementById('switchable').setAttribute('href', localStorage.getItem('stylesheetUrl'));
@@ -42,7 +42,7 @@
         </script>
 
         <!-- Theme jQuery -->
-        <script src="{THEME_URL}/js/jquery.min.js?v1.7.0-alpha1"></script>
+        <script src="{THEME_URL}/js/jquery.min.js?v1.7.0-alpha2"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="{WB_URL}/include/jquery/jquery-insert.js"></script>
@@ -54,7 +54,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.js?v1.7.0-alpha1"></script>
+        <script src="{THEME_URL}/js/script.js?v1.7.0-alpha2"></script>
         <script>
             $(document).ready(function () {
                 Theme.init();
@@ -112,19 +112,19 @@
                         </ul>
                         <div class="sidebar-content small">
                             <ul id="stylesheet-switcher" class="list-inline">
-                                <li><a class="green" href="{THEME_URL}/css/green.css?v1.7.0-alpha1"><span></span><span></span></a></li>
-                                <li><a class="red" href="{THEME_URL}/css/red.css?v1.7.0-alpha1"><span></span><span></span></a></li>
-                                <li><a class="blue" href="{THEME_URL}/css/blue.css?v1.7.0-alpha1"><span></span><span></span></a></li>
-                                <li><a class="green dark" href="{THEME_URL}/css/green-dark.css?v1.7.0-alpha1"><span></span><span></span></a></li>
-                                <li><a class="red dark" href="{THEME_URL}/css/red-dark.css?v1.7.0-alpha1"><span></span><span></span></a></li>
-                                <li><a class="blue dark" href="{THEME_URL}/css/blue-dark.css?v1.7.0-alpha1"><span></span><span></span></a></li>
+                                <li><a class="green" href="{THEME_URL}/css/green.css?v1.7.0-alpha2"><span></span><span></span></a></li>
+                                <li><a class="red" href="{THEME_URL}/css/red.css?v1.7.0-alpha2"><span></span><span></span></a></li>
+                                <li><a class="blue" href="{THEME_URL}/css/blue.css?v1.7.0-alpha2"><span></span><span></span></a></li>
+                                <li><a class="green dark" href="{THEME_URL}/css/green-dark.css?v1.7.0-alpha2"><span></span><span></span></a></li>
+                                <li><a class="red dark" href="{THEME_URL}/css/red-dark.css?v1.7.0-alpha2"><span></span><span></span></a></li>
+                                <li><a class="blue dark" href="{THEME_URL}/css/blue-dark.css?v1.7.0-alpha2"><span></span><span></span></a></li>
                             </ul>
 
                             <div class="hidden-xs">
                                 <hr />
                                 <ul class="list-inline versions">
                                     <li>WBCE: {WBCE_VERSION}</li>
-                                    <li>Theme: 1.7.0-alpha1</li>
+                                    <li>Theme: 1.7.0-alpha2</li>
                                     <li>PHP: <span class="php"></span></li>
                                 </ul>
                                 <hr />
