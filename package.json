@@ -30,6 +30,7 @@
     "gulp-zip": "^4.0.0",
     "postcss-font-weights": "^4.0.0",
     "postcss-media-queries-drop-redundant": "0.0.1",
-    "run-sequence": "^1.2.2"
-  }
+    "run-sequence": "^2.0.0"
+  },
+  "dependencies": {}
 }
