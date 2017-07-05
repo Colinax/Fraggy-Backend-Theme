@@ -60,7 +60,7 @@
 <script>
 
     // Output fixes
-    $(document).ready(function () {
+    $(function () {
         var $row = $('#accessPage').nextAll('.row'),
                 $panel = $row.find('.panel');
 

@@ -169,7 +169,7 @@
                         <div class="form-group">
                             <label for="selectVisibility" class="col-sm-3 control-label">{TEXT_VISIBILITY}</label>
                             <div class="col-sm-9">
-                                <select name="visibility" id="selectVisibility" onchange="javascript: toggle_viewers();" class="form-control">
+                                <select name="visibility" id="selectVisibility" onchange="javascript: toggleViewers();" class="form-control">
                                     <option value="public"{PUBLIC_SELECTED}>{TEXT_PUBLIC}</option>
                                     <option value="private"{PRIVATE_SELECTED}>{TEXT_PRIVATE}</option>
                                     <option value="registered"{REGISTERED_SELECTED}>{TEXT_REGISTERED}</option>
@@ -232,9 +232,9 @@
 
 </div><!-- /#pagesPage -->
 
-
+<!-- Custom JavaScript -->
 <script>
-    function toggle_viewers() {
+    function toggleViewers() {
         if (document.settings.visibility.value == 'private' || document.settings.visibility.value == 'registered') {
             document.getElementById('allowed_viewers').style.display = 'block';
         } else {

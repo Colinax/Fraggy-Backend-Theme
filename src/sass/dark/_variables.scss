@@ -1,9 +1,9 @@
 $gray-base: darken($brand-primary, 20%);
 
 $gray-darker: $brand-primary;
-$gray-dark: lighten($brand-primary, 10%);
-$gray: lighten($brand-primary, 15%);
-$gray-light: lighten($brand-primary, 20%);
+$gray-dark: lighten($brand-primary, 35%);
+$gray: lighten($brand-primary, 45%);
+$gray-light: lighten($brand-primary, 50%);
 $gray-lighter: lighten($brand-primary, 60%);
 $gray-lightest: lighten($brand-primary, 70%);
 
@@ -12,10 +12,10 @@ $panel-default-heading-bg: $gray;
 $panel-bg: $gray;
 $panel-footer-bg: $gray;
 
-$link-color: $gray-lightest;
-$link-hover-color: darken($gray-lightest, 15%);
+$link-color: $gray-darker;
+$link-hover-color: darken($gray-darker, 15%);
 
-$text-color: $gray-lightest;
+$text-color: $gray-darker;
 
 $table-border-color: $gray-dark;
 
@@ -32,13 +32,13 @@ $navbar-default-color: $text-color;
 
 $input-border: $gray-dark;
 $input-border-focus: $gray-darker;
-$input-color: $gray-lightest;
+$input-color: $gray-darker;
 $input-bg: $gray-light;
 $input-bg-disabled: darken($gray-light, 5%);
 
 $input-group-addon-bg: $gray;
 
-$btn-default-color: #fff;
+$btn-default-color: $gray-darker;
 $btn-default-bg: $gray-light;
 $btn-default-border: $gray-dark;
 

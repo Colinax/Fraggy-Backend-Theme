@@ -44,6 +44,7 @@
 
 </div>
 
+<!-- Custom Javascript -->
 <script>
     $(function () {
 
@@ -52,10 +53,10 @@
 
         $pageModifyPanel
                 .find('.panel-body')
-                .append('<div class="module-area">' + $pagesPage.parent().contents().filter(function () {
+                .append($pagesPage.parent().contents().filter(function () {
                     var $this = $(this);
                     return $this.index() !== 0 && $this.index() !== 1;
-                }) + '</div>')
+                }))
                 .find('.section-info')
                 .before('<hr />');
 

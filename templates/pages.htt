@@ -49,7 +49,7 @@
 
                         <div class="form-group">
                             <label for="selectVisibility">{TEXT_VISIBILITY}</label>
-                            <select id="selectVisibility" name="visibility" onchange="javascript: toggle_viewers();">
+                            <select id="selectVisibility" name="visibility" onchange="javascript: toggleViewers();">
                                 <option value="public"{SELECTED}>{TEXT_PUBLIC}</option>
                                 <option value="private">{TEXT_PRIVATE}</option>
                                 <option value="registered">{TEXT_REGISTERED}</option>
@@ -102,7 +102,6 @@
 
 <!-- Custom Javascript -->
 <script>
-
 
     // Output fixes
     $(function () {
@@ -273,6 +272,16 @@
 
         // set focus to add form
         document.add.title.focus();
+    }
+
+    function toggleViewers() {
+        if (document.add.visibility.value == 'private') {
+            document.getElementById('viewers').style.display = 'block';
+        } else if (document.add.visibility.value == 'registered') {
+            document.getElementById('viewers').style.display = 'block';
+        } else {
+            document.getElementById('viewers').style.display = 'none';
+        }
     }
 
 </script>

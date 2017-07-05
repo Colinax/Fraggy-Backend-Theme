@@ -21,7 +21,6 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <script></script>
         <script>
             var stylesheetUrl = '{THEME_URL}/css/green.css?v1.7.0-alpha3';
             if (localStorage.getItem('stylesheetUrl')) {

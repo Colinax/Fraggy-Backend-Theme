@@ -156,6 +156,7 @@
 
 </div><!-- /#startPage -->
 
+<!-- Custom JavaScript -->
 <script>
     $(function () {
         var $serverInfoPanel = $(this).find('#serverInfoPanel'),
