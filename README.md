@@ -8,7 +8,7 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Changelog
 
-## v1.7.0-alpha3 - Work in progress
+## v1.7.0-beta1 - Current Pre-Release
 
  * Removed theme colors (orange, olive-green and pink)
  * Added dark mode for theme colors (green, blue and red)

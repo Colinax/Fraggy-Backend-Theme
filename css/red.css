@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
- * FRAGGY BACKEND THEME v1.7.0-alpha3
+ * FRAGGY BACKEND THEME v1.7.0-beta1
  * Responsive and Bootstrap based backend theme for WBCE
  *
  * Copright (c) 2016-2017 Jonathan Nessier, Neoflow | neoflow.ch
@@ -8930,6 +8930,10 @@ a.text-danger:focus {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   font-weight: normal;
+}
+.btn {
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
 }
 .dropdown.open > ul.dropdown-menu, .btn-group.open > ul.dropdown-menu {
   border-top: 1px solid #303641;

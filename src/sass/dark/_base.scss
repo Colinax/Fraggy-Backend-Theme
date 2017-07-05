@@ -27,13 +27,19 @@ nav.navbar.navbar-top {
     color: $input-color;
 }
 
+body {
+    background: $gray-darker;
+}
+
 #page-wrapper-sidebar {
     .page-wrapper {
+        background: $gray-darker;
+
         .page-title {
-            background: $gray;
+            background: $gray-dark;
 
             h1 {
-                color: $gray-darker;
+                color: $brand-primary;
             }
         }
     }
@@ -51,7 +57,7 @@ nav.navbar.navbar-top {
 }
 
 .select2-container--bootstrap .select2-dropdown {
-    border-color: $gray-darker;
+    border-color: $input-border-focus;
     background: $gray-light;
     color: $text-color;
 }

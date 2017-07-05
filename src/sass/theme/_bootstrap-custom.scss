@@ -76,6 +76,10 @@
     }
 }
 
+.btn {
+    transition: all ease .3s;
+}
+
 .dropdown, .btn-group {
     &.open > ul {
         &.dropdown-menu {

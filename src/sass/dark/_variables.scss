@@ -1,51 +1,50 @@
-$gray-base: darken($brand-primary, 20%);
+$gray-base: $brand-primary;
+$gray-darker: lighten($gray-base, 40%);
+$gray-dark: lighten($gray-base, 50%);
+$gray: lighten($gray-base, 60%);
+$gray-light: lighten($gray-base, 70%);
+$gray-lighter: lighten($gray-base, 80%);
+$gray-lightest: lighten($gray-base, 90%);
 
-$gray-darker: $brand-primary;
-$gray-dark: lighten($brand-primary, 35%);
-$gray: lighten($brand-primary, 45%);
-$gray-light: lighten($brand-primary, 50%);
-$gray-lighter: lighten($brand-primary, 60%);
-$gray-lightest: lighten($brand-primary, 70%);
-
-$panel-default-border: $gray-dark;
+$panel-default-border: darken($gray, 5%);
 $panel-default-heading-bg: $gray;
 $panel-bg: $gray;
 $panel-footer-bg: $gray;
 
-$link-color: $gray-darker;
-$link-hover-color: darken($gray-darker, 15%);
+$link-color: $brand-primary;
+$link-hover-color: darken($brand-primary, 15%);
 
-$text-color: $gray-darker;
+$text-color: $brand-primary;
 
 $table-border-color: $gray-dark;
 
-$text-muted: $gray-lighter;
+$text-muted: $gray;
 
-$navbar-default-bg: $gray-dark;
-$navbar-default-border: $gray-dark;
+$navbar-default-bg: $gray;
+$navbar-default-border: darken($gray, 5%);
 $navbar-default-link-color: $link-color;
-$navbar-default-link-active-bg: darken($navbar-default-bg, 2.5%);
+$navbar-default-link-active-bg: darken($gray, 5%);
 $navbar-default-link-active-color: $link-color;
 $navbar-default-link-hover-color: $link-hover-color;
-$navbar-default-link-hover-bg: darken($navbar-default-bg, 2.5%);
+$navbar-default-link-hover-bg: transparent;
 $navbar-default-color: $text-color;
 
 $input-border: $gray-dark;
-$input-border-focus: $gray-darker;
-$input-color: $gray-darker;
+$input-border-focus: darken($gray-darker, 5%);
+$input-color: $brand-primary;
 $input-bg: $gray-light;
 $input-bg-disabled: darken($gray-light, 5%);
 
 $input-group-addon-bg: $gray;
 
-$btn-default-color: $gray-darker;
-$btn-default-bg: $gray-light;
-$btn-default-border: $gray-dark;
+$btn-default-color: $brand-primary;
+$btn-default-bg: $gray-dark;
+$btn-default-border: $gray-darker;
 
-$dropdown-bg: $gray-light;
-$dropdown-border: $gray-darker;
+$dropdown-bg: $gray;
+$dropdown-border: $gray-dark;
 
 $bs-datetimepicker-primary-border-color: $gray-darker;
-$bs-datetimepicker-btn-hover-bg: $gray-darker;
-$bs-datetimepicker-disabled-color: lighten($gray, 15%);
-$bs-datetimepicker-alternate-color: lighten($gray, 15%);
+$bs-datetimepicker-btn-hover-bg: $gray-dark;
+$bs-datetimepicker-disabled-color: $gray-lighter;
+$bs-datetimepicker-alternate-color: $gray-lightest;

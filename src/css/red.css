@@ -12418,6 +12418,10 @@ a.text-danger:focus {
   }
 }
 
+.btn {
+  transition: all ease .3s;
+}
+
 .dropdown.open > ul.dropdown-menu, .btn-group.open > ul.dropdown-menu {
   border-top: 1px solid #303641;
   border-left: 0;
