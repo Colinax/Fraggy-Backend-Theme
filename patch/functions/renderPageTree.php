@@ -98,8 +98,8 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999) {
                         <br />
                         <small>{PAGE_TITLE}</small>
                     </td>
-                    <td class="id">{PAGE_ID}</td>
-                    <td class="modify">
+                    <td class="id hidden-xs hidden-sm">{PAGE_ID}</td>
+                    <td class="modify hidden-xs hidden-sm">
                         <?php if ($canModifyPage) { ?>
                             <a href="{modifyPageURL}" title="<?= $HEADING['MODIFY_PAGE'] ?>"><i class="fa fa-fw fa-pencil"></i></a>
                             <?php
@@ -113,10 +113,10 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999) {
                         }
                         if ($canManageSections) {
                             ?>
-                            <a href="{modifySectionsUrl}" title="<?= $HEADING['MANAGE_SECTIONS'] ?>"><i class="fa fa-list-alt" aria-hidden="true"></i></a>
+                            <a href="{modifySectionsURL}" title="<?= $HEADING['MANAGE_SECTIONS'] ?>"><i class="fa fa-list-alt" aria-hidden="true"></i></a>
                         <?php } ?>
                     </td>
-                    <td>
+                    <td class="hidden-xs hidden-sm">
                         <?php if ($page['visibility'] != 'deleted' && $page['visibility'] != 'none') { ?>
                             <a href="{frontendViewURL}" target="_blank" title="<?= $TEXT['VIEW'] ?> (Frontend)"><i class="fa fa-desktop" aria-hidden="true"></i></a>
                         <?php } ?>
@@ -136,7 +136,7 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999) {
                             <a href="javascript:confirm_link('PageID: {PAGE_ID}\n\n\t<?= $MESSAGE['PAGES_DELETE_CONFIRM'] ?>?','../pages/delete.php?page_id={pageIDKEY}');" title="<?= $TEXT['DELETE'] ?>"><i class="fa fa-trash" aria-hidden="true"></i></a>
                         <?php } ?>
                     </td>
-                    <td>
+                    <td class="hidden-xs hidden-sm">
                         <?php if ($canAddChild && $level < $levelLimit) { ?>
                             <a href="javascript:addChildPage('{PAGE_ID}');" title="<?= $HEADING['ADD_CHILD_PAGE'] ?>"><i class="fa fa-files-o" aria-hidden="true"></i></a>
                         <?php } ?>

@@ -63,13 +63,13 @@ $pageLevelLimit = $settings['value'];
         <th class="title">
             <?= $TEXT['VISIBILITY'] ?> / <?= $TEXT['MENU_TITLE'] ?>
         </th>
-        <th class="id">PageID</th>
-        <th class="modify"></th>
+        <th class="id hidden-xs hidden-sm">PageID</th>
+        <th class="modify hidden-xs hidden-sm"></th>
+        <th class="hidden-xs hidden-sm"></th>
         <th></th>
         <th></th>
         <th></th>
-        <th></th>
-        <th></th>
+        <th class="hidden-xs hidden-sm"></th>
         </thead>
     </table>
     <?php if (count($pages) > 0) { ?>

@@ -64,7 +64,10 @@ gulp.task('js:build', function () {
         './src/js/vendor/moment-with-locales.min.js',
         './src/js/vendor/bootstrap-datetimepicker.min.js',
         './src/js/vendor/bootstrap-fileselect.min.js',
-        './src/js/theme.js'
+        './src/js/vendor.js',
+        './src/js/resize-listener.js',
+        './src/js/php-version-loader.js',
+        './src/js/stylesheet-switcher.js'
     ])
             .pipe(stripComments())
             .pipe(concat('script.js'))

@@ -7427,6 +7427,55 @@ button.close {
   overflow: visible;
   clip: auto;
 }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto//Roboto-Regular.eot");
+  src: url("../fonts/Roboto//Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto//Roboto-Regular.woff") format("woff"), url("../fonts/Roboto//Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url("../fonts/Roboto//RobotoCondensed-Bold.eot");
+  src: url("../fonts/Roboto//RobotoCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto//RobotoCondensed-Bold.woff") format("woff"), url("../fonts/Roboto//RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto//Roboto-Bold.eot");
+  src: url("../fonts/Roboto//Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto//Roboto-Bold.woff") format("woff"), url("../fonts/Roboto//Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto//Roboto-Medium.eot");
+  src: url("../fonts/Roboto//Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto//Roboto-Medium.woff") format("woff"), url("../fonts/Roboto//Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto//Roboto-Italic.eot");
+  src: url("../fonts/Roboto//Roboto-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto//Roboto-Italic.woff") format("woff"), url("../fonts/Roboto//Roboto-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url("../fonts/RobotoCondensed//RobotoCondensed-Regular.eot");
+  src: url("../fonts/RobotoCondensed//RobotoCondensed-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed//RobotoCondensed-Regular.woff") format("woff"), url("../fonts/RobotoCondensed//RobotoCondensed-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url("../fonts/RobotoCondensed//RobotoCondensed-Bold.eot");
+  src: url("../fonts/RobotoCondensed//RobotoCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed//RobotoCondensed-Bold.woff") format("woff"), url("../fonts/RobotoCondensed//RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 .sr-only, .bootstrap-datetimepicker-widget .btn[data-action="incrementHours"]::after, .bootstrap-datetimepicker-widget .btn[data-action="incrementMinutes"]::after, .bootstrap-datetimepicker-widget .btn[data-action="decrementHours"]::after, .bootstrap-datetimepicker-widget .btn[data-action="decrementMinutes"]::after, .bootstrap-datetimepicker-widget .btn[data-action="showHours"]::after, .bootstrap-datetimepicker-widget .btn[data-action="showMinutes"]::after, .bootstrap-datetimepicker-widget .btn[data-action="togglePeriod"]::after, .bootstrap-datetimepicker-widget .btn[data-action="clear"]::after, .bootstrap-datetimepicker-widget .btn[data-action="today"]::after, .bootstrap-datetimepicker-widget .picker-switch::after, .bootstrap-datetimepicker-widget table th.prev::after, .bootstrap-datetimepicker-widget table th.next::after {
   position: absolute;
   width: 1px;
@@ -9516,21 +9565,21 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
 #stylesheet-switcher {
   font-size: 0;
   width: 100%;
-  text-align: center;
   display: block;
   margin: 0;
 }
 #stylesheet-switcher li {
   display: inline-block;
   font-size: 0;
-  padding: 0 4px 4px;
+  padding: 3px;
 }
 #stylesheet-switcher li a {
   font-size: 0;
-  height: 28px;
-  width: 28px;
+  height: 30px;
+  width: 30px;
   display: block;
   position: relative;
+  border: 1px solid #303641;
 }
 #stylesheet-switcher li a span {
   height: 100%;
@@ -9546,13 +9595,13 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
   left: 50%;
 }
 #stylesheet-switcher li a:hover span:last-of-type {
-  background: #cdcdcd;
+  background: #9a9a9a;
 }
 #stylesheet-switcher li a.dark span:last-of-type {
-  background: #303641;
+  background: #464e5e;
 }
 #stylesheet-switcher li a.dark:hover span:last-of-type {
-  background: #1a1e24;
+  background: #3b4250;
 }
 #stylesheet-switcher li a.green span:first-of-type {
   background: #45A246;
@@ -10356,7 +10405,7 @@ ul.jsadmin_drag_area {
     
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .container {
     width: 1170px;
   }
@@ -10841,7 +10890,7 @@ ul.jsadmin_drag_area {
     display: none !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .visible-md {
     display: block !important;
   }

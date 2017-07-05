@@ -21,7 +21,7 @@
 
         <!-- Theme CSS -->
         <script>
-            var stylesheetUrl = '{THEME_URL}/css/green.css?v1.7.0-alpha2';
+            var stylesheetUrl = '{THEME_URL}/css/green.css?v1.7.0-alpha3';
             if (localStorage.getItem('stylesheetUrl')) {
                 stylesheetUrl = localStorage.getItem('stylesheetUrl');
             }
@@ -29,11 +29,8 @@
         </script>
 
         <noscript>
-        <link id="switchable" href="{THEME_URL}/css/green.css?v1.7.0-alpha2" rel="stylesheet" type="text/css" />
+        <link id="switchable" href="{THEME_URL}/css/green.css?v1.7.0-alpha3" rel="stylesheet" type="text/css" />
         </noscript>
-
-        <!-- Theme third-party vendor fonts -->
-        <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
 
         <!-- Initiliaze vars -->
         <script>
@@ -43,7 +40,7 @@
         </script>
 
         <!-- Theme jQuery -->
-        <script src="{THEME_URL}/js/jquery.min.js?v1.7.0-alpha2"></script>
+        <script src="{THEME_URL}/js/jquery.min.js?v1.7.0-alpha3"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="{WB_URL}/include/jquery/jquery-insert.js"></script>
@@ -55,12 +52,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.min.js?v1.7.0-alpha2"></script>
-        <script>
-            $(document).ready(function () {
-                Theme.init();
-            });
-        </script>
+        <script src="{THEME_URL}/js/script.min.js?v1.7.0-alpha3"></script>
 
     </head>
     <body>

@@ -6,7 +6,7 @@ $(function () {
     $('button[type="submit"], input[type="submit"]')
             .addClass('btn btn-primary').removeClass('btn-default');
 
-    $('input[type="text"], input[type="password"], textarea, select')
+    $('input[type="text"], input[type="password"], textarea')
             .addClass('form-control');
 
     $('.sidebar-nav').each(function () {
@@ -77,22 +77,22 @@ $(function () {
     welcomeMessageText = welcomeMessageText.replace('imBackend', 'im Backend');
     $welcomeMessage.text(welcomeMessageText);
 
-    if (typeof CKEDITOR !== 'undefined') {
-        CKEDITOR.on('instanceLoaded', function () {
-            $.each(CKEDITOR.instances, function (index, instance) {
-                if (localStorage.getItem('stylesheetUrl').indexOf('dark') >= 0) {
-                    instance.setUiColor('#5b677c');
-                } else {
-                    instance.setUiColor('#eeeeee');
-                }
-
-                $(instance.element).css({
-                    'border': 0,
-                    'box-shadow': 'none'
-                });
-            });
-        });
-    }
+//    if (typeof CKEDITOR !== 'undefined') {
+//        CKEDITOR.on('instanceLoaded', function () {
+//            $.each(CKEDITOR.instances, function (index, instance) {
+//                if (localStorage.getItem('stylesheetUrl').indexOf('dark') >= 0) {
+//                    instance.setUiColor('#5b677c');
+//                } else {
+//                    instance.setUiColor('#eeeeee');
+//                }
+//
+//                $(instance.element).css({
+//                    'border': 0,
+//                    'box-shadow': 'none'
+//                });
+//            });
+//        });
+//    }
 
     $('form[action="intro2.php"] table:first').addClass('table');
 

@@ -21,7 +21,7 @@
 
         <!-- Theme CSS -->
         <script>
-            var stylesheetUrl = '{THEME_URL}/css/green.css?v1.7.0-alpha2';
+            var stylesheetUrl = '{THEME_URL}/css/green.css?v1.7.0-alpha3';
             if (localStorage.getItem('stylesheetUrl')) {
                 stylesheetUrl = localStorage.getItem('stylesheetUrl');
             }
@@ -29,16 +29,8 @@
         </script>
 
         <noscript>
-        <link id="switchable" href="{THEME_URL}/css/green.css?v1.7.0-alpha2" rel="stylesheet" type="text/css" />
+        <link id="switchable" href="{THEME_URL}/css/green.css?v1.7.0-alpha3" rel="stylesheet" type="text/css" />
         </noscript>
-
-        <!-- Theme third-party vendor fonts -->
-        <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
-
-        <!-- Custom CSS -->
-        <style type="text/css">
-
-        </style>
 
         <!-- Initiliaze vars -->
         <script>
@@ -48,7 +40,7 @@
         </script>
 
         <!-- Theme jQuery -->
-        <script src="{THEME_URL}/js/jquery.min.js?v1.7.0-alpha2"></script>
+        <script src="{THEME_URL}/js/jquery.min.js?v1.7.0-alpha3"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="../../include/jquery/jquery-insert.js"></script>
@@ -60,20 +52,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.min.js?v1.7.0-alpha2"></script>
-        <script>
-            $(document).ready(function () {
-                Theme.init();
-            });
-        </script>
-
-        <!-- Custom JavaScript -->
-        <script>
-            $(document).ready(function () {
-                window.parent.$('#uploadTargetSelect, #createTargetSelect').data('silent', 1).val('{MEDIA_DIRECTORY}{CURRENT_DIR}').trigger('change').data('silent', 0);
-                $('a > img[src$="blank_16.png"]').parent().hide();
-            });
-        </script>
+        <script src="{THEME_URL}/js/script.min.js?v1.7.0-alpha3"></script>
 
     </head>
     <body id="mediaBrowsePage">
@@ -116,6 +95,13 @@
             </tbody>
         </table>
         <p class="{DISPLAY_NONE_FOUND} alert text-muted">{NONE_FOUND}</p>
+
+        <!-- Custom JavaScript -->
+        <script>
+            window.parent.$('#uploadTargetSelect, #createTargetSelect').data('silent', 1).val('{MEDIA_DIRECTORY}{CURRENT_DIR}').trigger('change').data('silent', 0);
+            $('a > img[src$="blank_16.png"]').parent().hide();
+        </script>
+
     </body>
 </html>
 <!-- END main_block -->
