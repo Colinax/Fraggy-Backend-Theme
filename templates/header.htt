@@ -97,7 +97,7 @@
                     </div>
                     <div class="sidebar-collapse collapse">
                         <div class="sidebar-content hidden-xs">
-                            <p>{CURRENT_USER} <strong>{DISPLAY_NAME}</strong></p>
+                            <p>{CURRENT_USER}<br /><strong>{DISPLAY_NAME}</strong></p>
                         </div>
                         <ul class="nav sidebar-nav">
                             <li class="dashboard"><a href="{ADMIN_URL}/start/index.php" title="{TITLE_START}"><span class="icon"></span>{TITLE_START}</a></li>
