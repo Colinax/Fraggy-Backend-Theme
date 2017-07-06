@@ -98,7 +98,7 @@ gulp.task('watch', function () {
 gulp.task('zip:build', function () {
     return gulp.src([
         './**',
-        '!./package.*',
+        '!./package*',
         '!./gulpfile.js',
         '!./node_modules{,/**}',
         '!./nbproject{,/**}',
