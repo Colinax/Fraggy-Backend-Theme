@@ -19,7 +19,6 @@ if (is_file(WB_PATH . '/templates/fraggy-backend-theme/languages/' . LANGUAGE . 
     require_once WB_PATH . '/templates/fraggy-backend-theme/languages/EN.php';
 }
 
-echo $TEXT['COLLAPSE_ALL_PAGES'];
 
 // Include functions
 require_once 'functions/renderPageTree.php';
@@ -88,7 +87,7 @@ $pageLevelLimit = $settings['value'];
         <div class="row">
             <div class="col-sm-6">
                 <p class="small">
-                    <a href="#" class="btn-collapse"><?= $TEXT['COLLAPSE_ALL'] ?></a> / 
+                    <a href="#" class="btn-collapse"><?= $TEXT['COLLAPSE_ALL'] ?></a> /
                     <a href="#" class="btn-expand"><?= $TEXT['EXPAND_ALL'] ?></a>
                 </p>
             </div>
