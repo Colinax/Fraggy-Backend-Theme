@@ -43,7 +43,6 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 You can see the summary of releases and the changes in each release [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
 
-
 # Download
 
 You can download the newest source code release and the distributed release without source files [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
@@ -76,6 +75,6 @@ If you like my work or are using it for commercial websites then please donate, 
 
 * Jonathan Nessier, [Neoflow](https://www.neoflow.ch)
 
-Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to better-work and colinax for their donations!
+Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to Jörg Laas (https://www.jlhd.com/)  and colinax (https://forum.wbce.org/profile.php?id=160) for their donations!
 
 Copyright © 2016-2017 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Licensed under MIT
