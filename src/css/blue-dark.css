@@ -13239,12 +13239,6 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
   text-align: center;
 }
 
-#pagesPage #pageListPanel table td.toggle, #pagesPage #pageListPanel table th.toggle {
-  width: content-box;
-  max-width: 40px;
-  min-width: 0px;
-}
-
 #pagesPage #pageListPanel table td.title, #pagesPage #pageListPanel table th.title {
   width: auto;
   max-width: 50%;
