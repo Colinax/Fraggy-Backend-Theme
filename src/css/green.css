@@ -12692,7 +12692,13 @@ fieldset[disabled] .btn-inverse.focus {
 }
 
 .nav-tabs li a:hover, .nav-pills li a:hover {
+  background: transparent;
   color: #333;
+}
+
+.nav-tabs li.active a, .nav-pills li.active a {
+  background: #F2F2F2;
+  color: #666;
 }
 
 .panel {

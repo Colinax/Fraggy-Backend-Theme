@@ -9156,7 +9156,12 @@ fieldset[disabled] .btn-inverse.focus {
   font-family: "Roboto Condensed", sans-serif;
 }
 .nav-tabs li a:hover, .nav-pills li a:hover {
+  background: transparent;
   color: #333;
+}
+.nav-tabs li.active a, .nav-pills li.active a {
+  background: #F2F2F2;
+  color: #666;
 }
 .panel {
   border-width: 3px 0 0 0;

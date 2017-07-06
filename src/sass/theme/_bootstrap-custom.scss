@@ -219,9 +219,16 @@ label {
             color: $navbar-default-link-color;
             font-family: $headings-font-family;
 
-
             &:hover {
+                background: transparent;
                 color: $navbar-default-link-hover-color;
+            }
+        }
+
+        &.active {
+            a {
+                background: $navbar-default-link-active-bg;
+                color: $navbar-default-link-active-color;
             }
         }
     }
