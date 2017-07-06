@@ -8,13 +8,7 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Changelog
 
-## v1.7.0 - Work in progress
-
- * Added responsive table for server information
- * Removed not needed echo
- * Fixed height of media browser when window was resized
-
-## v1.7.0-beta2 - Current Pre-Release
+## v1.7.0 - Current release
 
  * Removed theme colors (orange, olive-green and pink)
  * Added dark mode for theme colors (green, blue and red)
@@ -26,18 +20,8 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
  * Moved fonts from Google Font CDN
  * Optimized javascript performance
  * Added collapse / expand all links for pages
-
-## v1.6.0 - Current release
-
- * Optimized for WBCE 1.2
- * Fixed #20
- * Fixed #21
- * Fixed #22
- * Updated dependencies (for development only)
- * Optimized page tree
- * Fixed missing Bootstrap icons
- * Updated Bootstrap Datetimepicker
- * Fixed missing timepicker in Bootstrap Datetimepicker
+ * Added responsive table for server information
+ * Fixed height of media browser when window was resized
 
 ## Older versions
 
