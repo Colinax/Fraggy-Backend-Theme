@@ -9500,6 +9500,9 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
   max-width: 200px;
   max-height: 100px;
 }
+#mediaBrowsePage, #mediaRenamePage, #setParameterPage {
+  background: #666;
+}
 #accessPage h5 {
   margin-bottom: 0;
 }

@@ -12687,7 +12687,7 @@ fieldset[disabled] .btn-inverse.focus {
 
 .nav-tabs li a, .nav-pills li a {
   font-weight: normal;
-  color: #cbcfd8;
+  color: #101115;
 }
 
 .nav-tabs li a:hover, .nav-pills li a:hover {
@@ -13209,6 +13209,10 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
   max-height: 100px;
 }
 
+#mediaBrowsePage, #mediaRenamePage, #setParameterPage {
+  background: #cbcfd8;
+}
+
 #accessPage h5 {
   margin-bottom: 0;
 }
@@ -13427,10 +13431,6 @@ ul.jsadmin_drag_area {
 
 .panel-default hr {
   border-color: #adb5c3;
-}
-
-#mediaBrowsePage, #mediaRenamePage {
-  background: #cbcfd8;
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
