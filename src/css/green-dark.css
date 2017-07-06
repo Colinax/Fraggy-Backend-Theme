@@ -13435,7 +13435,7 @@ ul.jsadmin_drag_area {
 }
 
 .label-default {
-  color: #101115;
+  color: #909aad;
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
@@ -13492,5 +13492,9 @@ body {
 }
 
 .select2-container--bootstrap .select2-selection--single .select2-selection__rendered {
+  color: #101115;
+}
+
+.select2-container--bootstrap .select2-selection--multiple .select2-selection__choice__remove {
   color: #101115;
 }

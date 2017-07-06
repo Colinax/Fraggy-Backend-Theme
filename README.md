@@ -13,7 +13,8 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
  * Fixed #23
  * Fixed background color of media settings
  * Fixed font-family and link color of nav-pills
- * Fixed text color of labels
+ * Fixed text color of labels in dark-mode
+ * Fixed select2 styling in dark-mode
 
 ## v1.7.0 - Current release
 
