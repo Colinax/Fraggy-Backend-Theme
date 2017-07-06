@@ -10,6 +10,9 @@
     }
 }
 
+.label-default {
+    color: $text-color;
+}
 
 .table-striped > tbody > tr:nth-of-type(odd) {
     background-color: lighten($gray-dark, 2.5%);

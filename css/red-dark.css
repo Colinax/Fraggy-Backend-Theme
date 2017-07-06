@@ -9656,6 +9656,9 @@ ul.jsadmin_drag_area {
 .panel-default hr {
   border-color: #adb5c3;
 }
+.label-default {
+  color: #101115;
+}
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #b5bcc8;
 }
