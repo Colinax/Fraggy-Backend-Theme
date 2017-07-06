@@ -8,3 +8,7 @@
 .select2-container--bootstrap.select2-container--open .select2-selection {
     box-shadow: none;
 }
+
+.select2-container--bootstrap .select2-results__option[aria-disabled=true] {
+    color: lighten($gray, 10%);
+}

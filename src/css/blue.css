@@ -12858,6 +12858,10 @@ fieldset[disabled] .btn-inverse.focus {
   box-shadow: none;
 }
 
+.select2-container--bootstrap .select2-results__option[aria-disabled=true] {
+  color: gray;
+}
+
 #wrapper {
   width: 100%;
   min-height: 100vh;
