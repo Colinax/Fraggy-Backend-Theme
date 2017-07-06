@@ -130,9 +130,21 @@
         }
     });
 
-    $('#mediaBrowser').on('load', function () {
-        console.log(this.contentWindow.document.body.offsetHeight);
-        this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
+    $(function () {
+        var $mediaBrowser = $('#mediaBrowser');
+
+        $mediaBrowser.on('load', function () {
+            // Reset height first to 0 to get the real offset height of contentWindow
+            this.style.height = 0;
+            this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
+        });
+
+        $(window).on('resize', function () {
+            $mediaBrowser.load();
+        });
     });
+
+
+
 </script>
 <!-- END main_block -->

@@ -1,5 +1,5 @@
 /*
- * FRAGGY BACKEND THEME v1.7.0-beta2
+ * FRAGGY BACKEND THEME v1.7.0
  * Responsive and Bootstrap based backend theme for WBCE
  *
  * Copright (c) 2016-2017 Jonathan Nessier, Neoflow | neoflow.ch
@@ -8,6 +8,8 @@
  * This template integrates components from the following projects
  *
  *   Font Awesome 4.7.0 | by Dave Gandy | fontawesome.io/license
+ *   Roboto & Roboto Condensed | by Christian Robertson | Apache License 2.0.
+ *   jQuery v2.2.4 | (c) jQuery Foundation | jquery.org/license
  *   Bootstrap v3.3.7 | (c) 2011-2017 Twitter, Inc. | MIT
  *   Bootstrap Fileselect v1.3 | (c) 2016-2017 Jonathan Nessier, Neoflow | MIT
  *   Bootstrap Datetimepicker v4.17.47 | (c) 2015-217 Jonathan Peterson | MIT
@@ -32,14 +34,14 @@ $(function () {
             $sidebarNav.find('li:first').addClass('current');
         }
 
-        $sidebarNav.find('li.dashboard > a > .icon').append('<i class="fa fa-fw fa-tachometer fa-fw"></i> ');
-        $sidebarNav.find('li.preferences > a > .icon').append('<i class="fa fa-fw fa-cog fa-fw"></i> ');
-        $sidebarNav.find('li.pages > a > .icon').append('<i class="fa fa-fw fa-files-o fa-fw"></i> ');
-        $sidebarNav.find('li.media > a > .icon').append('<i class="fa fa-fw fa-picture-o fa-fw"></i> ');
+        $sidebarNav.find('li.dashboard > a > .icon').append('<i class="fa fa-fw fa-tachometer"></i> ');
+        $sidebarNav.find('li.preferences > a > .icon').append('<i class="fa fa-fw fa-cog"></i> ');
+        $sidebarNav.find('li.pages > a > .icon').append('<i class="fa fa-fw fa-files-o"></i> ');
+        $sidebarNav.find('li.media > a > .icon').append('<i class="fa fa-fw fa-picture-o"></i> ');
         $sidebarNav.find('li.addons > a > .icon').append('<i class="fa fa-fw fa-th"></i> ');
-        $sidebarNav.find('li.settings > a > .icon').append('<i class="fa fa-fw fa-cogs fa-fw"></i> ');
-        $sidebarNav.find('li.admintools > a > .icon').append('<i class="fa fa-fw fa-cubes fa-fw"></i> ');
-        $sidebarNav.find('li.access > a > .icon').append('<i class="fa fa-fw fa-users fa-fw"></i> ');
+        $sidebarNav.find('li.settings > a > .icon').append('<i class="fa fa-fw fa-cogs"></i> ');
+        $sidebarNav.find('li.admintools > a > .icon').append('<i class="fa fa-fw fa-cubes"></i> ');
+        $sidebarNav.find('li.access > a > .icon').append('<i class="fa fa-fw fa-users"></i> ');
     });
 
     var $pageWrapperContainer = $('.page-wrapper .container-fluid');
@@ -79,9 +81,9 @@ $(function () {
         } else if ($this.prop('src').indexOf('delete_16.png') > -1) {
             $this.parent().html('<i class="fa fa-fw fa-trash"></i>');
         } else if ($this.prop('src').indexOf('folder_16.png') > -1) {
-            $this.parent().html('<i class="fa fa-fw fa-folder-o"></i>');
+            $this.parent().html('<i class="fa fa-fw fa-folder"></i>');
         } else if ($this.prop('src').indexOf('add_child.png') > -1) {
-            $this.parent().html('<i class="fa fa-fw fa-files-o"></i>');
+            $this.parent().html('<i class="fa fa-fw fa-files"></i>');
         } else if ($this.prop('src').indexOf('restore_16.png') > -1) {
             $this.parent().html('<i class="fa fa-fw fa-recycle"></i>');
         }

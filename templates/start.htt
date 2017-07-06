@@ -161,10 +161,13 @@
     $(function () {
         var $serverInfoPanel = $(this).find('#serverInfoPanel'),
                 $table = $('<table>', {
-                    'class': 'table table-striped',
+                    'class': 'table table-striped table-',
                     'id': 'serverInfoTable'
                 }),
-                $tableBody = $('<tbody>');
+                $tableBody = $('<tbody>'),
+                $tableResponsive = $('<div>', {
+                    'class': 'table-responsive'
+                });
 
         $.ajax({
             dataType: 'json',
@@ -177,7 +180,8 @@
                         .append('<tr><td>Server API</td><td>' + data.server.server_api + '</td></tr>');
 
                 $table.prepend($tableBody);
-                $serverInfoPanel.append($table);
+                $tableResponsive.append($table);
+                $serverInfoPanel.append($tableResponsive);
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 $serverInfoPanel.remove();

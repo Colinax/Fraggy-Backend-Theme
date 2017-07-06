@@ -16,14 +16,14 @@ $(function () {
             $sidebarNav.find('li:first').addClass('current');
         }
 
-        $sidebarNav.find('li.dashboard > a > .icon').append('<i class="fa fa-fw fa-tachometer fa-fw"></i> ');
-        $sidebarNav.find('li.preferences > a > .icon').append('<i class="fa fa-fw fa-cog fa-fw"></i> ');
-        $sidebarNav.find('li.pages > a > .icon').append('<i class="fa fa-fw fa-files-o fa-fw"></i> ');
-        $sidebarNav.find('li.media > a > .icon').append('<i class="fa fa-fw fa-picture-o fa-fw"></i> ');
+        $sidebarNav.find('li.dashboard > a > .icon').append('<i class="fa fa-fw fa-tachometer"></i> ');
+        $sidebarNav.find('li.preferences > a > .icon').append('<i class="fa fa-fw fa-cog"></i> ');
+        $sidebarNav.find('li.pages > a > .icon').append('<i class="fa fa-fw fa-files-o"></i> ');
+        $sidebarNav.find('li.media > a > .icon').append('<i class="fa fa-fw fa-picture-o"></i> ');
         $sidebarNav.find('li.addons > a > .icon').append('<i class="fa fa-fw fa-th"></i> ');
-        $sidebarNav.find('li.settings > a > .icon').append('<i class="fa fa-fw fa-cogs fa-fw"></i> ');
-        $sidebarNav.find('li.admintools > a > .icon').append('<i class="fa fa-fw fa-cubes fa-fw"></i> ');
-        $sidebarNav.find('li.access > a > .icon').append('<i class="fa fa-fw fa-users fa-fw"></i> ');
+        $sidebarNav.find('li.settings > a > .icon').append('<i class="fa fa-fw fa-cogs"></i> ');
+        $sidebarNav.find('li.admintools > a > .icon').append('<i class="fa fa-fw fa-cubes"></i> ');
+        $sidebarNav.find('li.access > a > .icon').append('<i class="fa fa-fw fa-users"></i> ');
     });
 
     var $pageWrapperContainer = $('.page-wrapper .container-fluid');
@@ -63,9 +63,9 @@ $(function () {
         } else if ($this.prop('src').indexOf('delete_16.png') > -1) {
             $this.parent().html('<i class="fa fa-fw fa-trash"></i>');
         } else if ($this.prop('src').indexOf('folder_16.png') > -1) {
-            $this.parent().html('<i class="fa fa-fw fa-folder-o"></i>');
+            $this.parent().html('<i class="fa fa-fw fa-folder"></i>');
         } else if ($this.prop('src').indexOf('add_child.png') > -1) {
-            $this.parent().html('<i class="fa fa-fw fa-files-o"></i>');
+            $this.parent().html('<i class="fa fa-fw fa-files"></i>');
         } else if ($this.prop('src').indexOf('restore_16.png') > -1) {
             $this.parent().html('<i class="fa fa-fw fa-recycle"></i>');
         }
