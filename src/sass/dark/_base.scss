@@ -57,17 +57,17 @@ body {
 
 .select2-container--bootstrap .select2-dropdown {
     border-color: $input-border-focus;
-    background: $gray-lighter;
+    background: $input-bg;
     color: $text-color;
 }
 
 .select2-container--bootstrap .select2-results__option--highlighted[aria-selected] {
-    background: $gray-light;
+    background: $gray;
     color: $text-color;
 }
 
 .select2-container--bootstrap .select2-results__option[aria-selected=true] {
-    background: $gray;
+    background: $gray-dark;
     color: $text-color;
 }
 

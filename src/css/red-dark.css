@@ -13487,17 +13487,17 @@ body {
 
 .select2-container--bootstrap .select2-dropdown {
   border-color: #818da2;
-  background: white;
-  color: #101115;
-}
-
-.select2-container--bootstrap .select2-results__option--highlighted[aria-selected] {
   background: #e8eaee;
   color: #101115;
 }
 
-.select2-container--bootstrap .select2-results__option[aria-selected=true] {
+.select2-container--bootstrap .select2-results__option--highlighted[aria-selected] {
   background: #cbcfd8;
+  color: #101115;
+}
+
+.select2-container--bootstrap .select2-results__option[aria-selected=true] {
+  background: #adb5c3;
   color: #101115;
 }
 
