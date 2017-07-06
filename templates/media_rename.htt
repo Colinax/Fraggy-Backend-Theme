@@ -21,7 +21,7 @@
 
         <!-- Theme CSS -->
         <script>
-            var stylesheetUrl = '{THEME_URL}/css/green.min.css?v1.7.0-beta1';
+            var stylesheetUrl = '{THEME_URL}/css/green.min.css?vv1.7.0-rc1';
             if (localStorage.getItem('stylesheetUrl')) {
                 stylesheetUrl = localStorage.getItem('stylesheetUrl');
             }
@@ -29,7 +29,7 @@
         </script>
 
         <noscript>
-        <link id="switchable" href="{THEME_URL}/css/green.min.css?v1.7.0-beta1" rel="stylesheet" type="text/css" />
+        <link id="switchable" href="{THEME_URL}/css/green.min.css?vv1.7.0-rc1" rel="stylesheet" type="text/css" />
         </noscript>
 
         <!-- Custom CSS -->
@@ -52,7 +52,7 @@
         </script>
 
         <!-- Theme jQuery -->
-        <script src="{THEME_URL}/js/jquery.min.js?v1.7.0-beta1"></script>
+        <script src="{THEME_URL}/js/jquery.min.js?vv1.7.0-rc1"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="../../include/jquery/jquery-insert.js"></script>
@@ -64,7 +64,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.min.js?v1.7.0-beta1"></script>
+        <script src="{THEME_URL}/js/script.min.js?vv1.7.0-rc1"></script>
 
     </head>
     <body id="mediaRenamePage">
