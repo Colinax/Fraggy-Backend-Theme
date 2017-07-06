@@ -95,7 +95,7 @@ gulp.task('watch', function () {
         //runSequence('js:build');
     });
 });
-gulp.task('zip', function () {
+gulp.task('zip:build', function () {
     return gulp.src([
         './**',
         '!./package.*',
