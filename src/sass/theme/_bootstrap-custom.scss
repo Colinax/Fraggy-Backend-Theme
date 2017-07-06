@@ -217,6 +217,8 @@ label {
         a {
             font-weight: normal;
             color: $navbar-default-link-color;
+            font-family: $headings-font-family;
+
 
             &:hover {
                 color: $navbar-default-link-hover-color;

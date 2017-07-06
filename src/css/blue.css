@@ -12688,6 +12688,7 @@ fieldset[disabled] .btn-inverse.focus {
 .nav-tabs li a, .nav-pills li a {
   font-weight: normal;
   color: #666;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .nav-tabs li a:hover, .nav-pills li a:hover {
