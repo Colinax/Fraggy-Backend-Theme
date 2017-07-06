@@ -12,6 +12,15 @@
 if (!defined('WB_PATH'))
     die(header('Location: ../../index.php'));
 
+// Include translation
+if (is_file(WB_PATH . '/templates/fraggy-backend-theme/languages/' . LANGUAGE . '.php')) {
+    require_once WB_PATH . '/templates/fraggy-backend-theme/languages/' . LANGUAGE . '.php';
+} else {
+    require_once WB_PATH . '/templates/fraggy-backend-theme/languages/EN.php';
+}
+
+echo $TEXT['COLLAPSE_ALL_PAGES'];
+
 // Include functions
 require_once 'functions/renderPageTree.php';
 
@@ -76,9 +85,17 @@ $pageLevelLimit = $settings['value'];
         <ul class="list_pages list-unstyled" id="p0">
             <?= renderPageTree($pages, 1, $pageLevelLimit) ?>
         </ul>
-        <p class="text-right small">
-            <?= $MENU['PAGES'] ?>: <?= $numberOfPages ?>
-        </p>
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="small">
+                    <a href="#" class="btn-collapse"><?= $TEXT['COLLAPSE_ALL'] ?></a> / 
+                    <a href="#" class="btn-expand"><?= $TEXT['EXPAND_ALL'] ?></a>
+                </p>
+            </div>
+            <div class="hidden-xs col-sm-6">
+                <p class="text-right small"><?= $MENU['PAGES'] ?>: <?= $numberOfPages ?></p>
+            </div>
+        </div>
     <?php } else { ?>
         <p class="text-center">
             <?= $TEXT['NONE_FOUND'] ?>
