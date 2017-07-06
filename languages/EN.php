@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Fraggy Backend Theme
  * Responsive and Bootstrap based backend theme for WBCE
@@ -12,3 +13,6 @@ $template_description = 'Responsive and Bootstrap based backend theme for WBCE';
 $TEXT['ADMIN_ONLY'] = 'Settings for administrator only';
 $TEXT['NO_SHOW_THUMBS'] = 'Hide thumbnails';
 $TEXT['TEXT_HEADER'] = 'Set maximum imagesize for a folder (resizing on new uploads only)';
+
+$TEXT['COLLAPSE_ALL'] = 'Collapse all';
+$TEXT['EXPAND_ALL'] = 'Expand all';
