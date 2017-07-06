@@ -29,6 +29,9 @@ $navbar-default-link-hover-color: $link-hover-color;
 $navbar-default-link-hover-bg: transparent;
 $navbar-default-color: $text-color;
 
+$nav-pills-active-link-hover-bg: $navbar-default-link-active-bg;
+$nav-pills-active-link-hover-color: $navbar-default-link-active-color;
+
 $input-border: $gray-dark;
 $input-border-focus: darken($gray-darker, 5%);
 $input-color: $brand-primary;
@@ -47,4 +50,4 @@ $dropdown-border: $gray-dark;
 $bs-datetimepicker-primary-border-color: $gray-darker;
 $bs-datetimepicker-btn-hover-bg: $gray-dark;
 $bs-datetimepicker-disabled-color: $gray-lighter;
-$bs-datetimepicker-alternate-color: $gray-lightest; 
+$bs-datetimepicker-alternate-color: $gray-lightest;

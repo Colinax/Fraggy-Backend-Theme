@@ -117,12 +117,8 @@ $navbar-default-link-color: $gray;
 $navbar-default-link-active-bg: $gray-lighter;
 $navbar-default-link-active-color: $gray;
 
-$navbar-inverse-bg: $gray-dark;
-$navbar-inverse-link-color: #fff;
-$navbar-inverse-link-hover-bg: $gray-darker;
-$navbar-inverse-link-hover-color: $brand-primary;
-
-
+$nav-pills-active-link-hover-bg: $navbar-default-link-active-bg;
+$nav-pills-active-link-hover-color: $navbar-default-link-active-color;
 
 $state-success-text: #fff;
 $state-success-bg: $brand-success;
