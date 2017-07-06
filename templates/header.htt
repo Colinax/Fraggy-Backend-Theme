@@ -22,7 +22,7 @@
 
         <!-- Theme CSS -->
         <script>
-            var stylesheetUrl = '{THEME_URL}/css/green.min.css?vv1.7.0-rc1';
+            var stylesheetUrl = '{THEME_URL}/css/green.min.css?v1.7.0-beta2';
             if (localStorage.getItem('stylesheetUrl')) {
                 stylesheetUrl = localStorage.getItem('stylesheetUrl');
             }
@@ -30,7 +30,7 @@
         </script>
 
         <noscript>
-        <link id="switchable" href="{THEME_URL}/css/green.min.css?vv1.7.0-rc1" rel="stylesheet" type="text/css" />
+        <link id="switchable" href="{THEME_URL}/css/green.min.css?v1.7.0-beta2" rel="stylesheet" type="text/css" />
         </noscript>
 
         <!-- WebsiteBaker CSS -->
@@ -44,7 +44,7 @@
         </script>
 
         <!-- Theme jQuery -->
-        <script src="{THEME_URL}/js/jquery.min.js?vv1.7.0-rc1"></script>
+        <script src="{THEME_URL}/js/jquery.min.js?v1.7.0-beta2"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="{WB_URL}/include/jquery/jquery-insert.js"></script>
@@ -56,7 +56,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.min.js?vv1.7.0-rc1"></script>
+        <script src="{THEME_URL}/js/script.min.js?v1.7.0-beta2"></script>
 
         {BACKEND_MODULE_JS}
 
@@ -109,19 +109,19 @@
                         </ul>
                         <div class="sidebar-content small">
                             <ul id="stylesheet-switcher" class="list-inline text-center">
-                                <li><a class="green" href="{THEME_URL}/css/green.min.css?vv1.7.0-rc1"><span></span><span></span></a></li>
-                                <li><a class="red" href="{THEME_URL}/css/red.min.css?vv1.7.0-rc1"><span></span><span></span></a></li>
-                                <li><a class="blue" href="{THEME_URL}/css/blue.min.css?vv1.7.0-rc1"><span></span><span></span></a></li>
-                                <li><a class="green dark" href="{THEME_URL}/css/green-dark.min.css?vv1.7.0-rc1"><span></span><span></span></a></li>
-                                <li><a class="red dark" href="{THEME_URL}/css/red-dark.min.css?vv1.7.0-rc1"><span></span><span></span></a></li>
-                                <li><a class="blue dark" href="{THEME_URL}/css/blue-dark.min.css?vv1.7.0-rc1"><span></span><span></span></a></li>
+                                <li><a class="green" href="{THEME_URL}/css/green.min.css?v1.7.0-beta2"><span></span><span></span></a></li>
+                                <li><a class="red" href="{THEME_URL}/css/red.min.css?v1.7.0-beta2"><span></span><span></span></a></li>
+                                <li><a class="blue" href="{THEME_URL}/css/blue.min.css?v1.7.0-beta2"><span></span><span></span></a></li>
+                                <li><a class="green dark" href="{THEME_URL}/css/green-dark.min.css?v1.7.0-beta2"><span></span><span></span></a></li>
+                                <li><a class="red dark" href="{THEME_URL}/css/red-dark.min.css?v1.7.0-beta2"><span></span><span></span></a></li>
+                                <li><a class="blue dark" href="{THEME_URL}/css/blue-dark.min.css?v1.7.0-beta2"><span></span><span></span></a></li>
                             </ul>
 
                             <div class="hidden-xs">
                                 <hr />
                                 <ul class="list-inline versions">
                                     <li>WBCE: {WBCE_VERSION}</li>
-                                    <li>Theme: v1.7.0-rc1</li>
+                                    <li>Theme: 1.7.0-beta2</li>
                                     <li>PHP: <span class="php"></span></li>
                                 </ul>
                                 <hr />

@@ -9,6 +9,8 @@
                 </div>
                 <div class="panel-body">
 
+
+
                 </div><!-- /.panel-body -->
             </div><!-- /.panel.panel-default -->
 
@@ -120,7 +122,9 @@
                 $pageListUl = $pageList.children('ul'),
                 $pageListTitle = $pageList.find('h2:first'),
                 $pageListPanel = $('#pageListPanel'),
-                $toggleLinks = $('.toggle a');
+                $toggleLinks = $('.toggle a'),
+                $btnExpand = $('.btn-expand'),
+                $btnCollapse = $('.btn-collapse');
 
         $toggleLinks
                 .on('collapse-list', function (e) {
@@ -169,12 +173,25 @@
             }
         });
 
+        $btnCollapse.on('click', function (e) {
+            e.preventDefault;
+            $toggleLinks.trigger('collapse-list');
+            $btnCollapse.blur();
+        });
+
+        $btnExpand.on('click', function (e) {
+            e.preventDefault;
+            $toggleLinks.trigger('expand-list');
+            $btnExpand.blur();
+        });
+
+
         $pageListPanel.find('h3.panel-title').text($pageListTitle.text());
         $pageListTitle.remove();
 
         $pageListPanel
                 .find('.panel-body')
-                .append($pageList);
+                .prepend($pageList);
 
         $pageList.show();
 
