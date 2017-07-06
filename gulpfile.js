@@ -34,7 +34,6 @@ gulp.task('css:build', function () {
     return gulp.src(['./src/css/*.css'])
             .pipe(postcss([
                 require('autoprefixer')({browsers: ['last 2 version', '> 10%']}),
-                //  require('postcss-media-queries-drop-redundant')(),
                 require('css-mqpacker')(),
             ]))
             .pipe(replace(/([\r\n]{2,})/igm, '\r\n'))
