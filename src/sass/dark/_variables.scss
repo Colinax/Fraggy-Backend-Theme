@@ -11,10 +11,10 @@ $panel-default-heading-bg: $gray;
 $panel-bg: $gray;
 $panel-footer-bg: $gray;
 
-$link-color: $brand-primary;
-$link-hover-color: darken($brand-primary, 15%);
+$link-color: darken($brand-primary, 15%);
+$link-hover-color: $brand-primary;
 
-$text-color: $brand-primary;
+$text-color: darken($brand-primary, 15%);
 
 $table-border-color: $gray-dark;
 
@@ -47,4 +47,4 @@ $dropdown-border: $gray-dark;
 $bs-datetimepicker-primary-border-color: $gray-darker;
 $bs-datetimepicker-btn-hover-bg: $gray-dark;
 $bs-datetimepicker-disabled-color: $gray-lighter;
-$bs-datetimepicker-alternate-color: $gray-lightest;
+$bs-datetimepicker-alternate-color: $gray-lightest; 
