@@ -99,7 +99,7 @@
         <!-- Custom JavaScript -->
         <script>
             window.parent.$('#uploadTargetSelect, #createTargetSelect').data('silent', 1).val('{MEDIA_DIRECTORY}{CURRENT_DIR}').trigger('change').data('silent', 0);
-            $('a > img[src$="blank_16.png"]').replaceWith('<i class="fa fa-fw fa-file"></i>');
+            $('a > img[src$="blank_16.png"]').html('');
         </script>
 
     </body>
