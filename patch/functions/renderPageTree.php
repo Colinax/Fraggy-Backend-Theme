@@ -7,7 +7,8 @@
  * @param int $levelLimit
  * @return string
  */
-function renderPageTree($pages, $level = 1, $levelLimit = 999) {
+function renderPageTree($pages, $level = 1, $levelLimit = 999)
+{
 
     global $admin, $database, $TEXT, $HEADING, $MESSAGE;
 
@@ -72,7 +73,7 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999) {
         ?>
         <li class="p<?= $page['parent'] ?> <?= ($hasChildren ? 'has-children' : '') ?>">
             <table class="table">
-                <tr class="<?= $page['visibility'] ?>">
+                <tr class="is-<?= $page['visibility'] ?>">
                     <td class="toggle">
                         <?php if ($hasChildren) { ?>
                             <a href="#" data-id="p{PAGE_ID}"><i class="fa fa-fw fa-folder-open"></i></a>
