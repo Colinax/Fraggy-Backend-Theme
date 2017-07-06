@@ -8,6 +8,12 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Changelog
 
+## v1.7.0 - Work in progress
+
+ * Added responsive table for server information
+ * Removed not needed echo
+ * Fixed height of media browser when window was resized
+
 ## v1.7.0-beta2 - Current Pre-Release
 
  * Removed theme colors (orange, olive-green and pink)
@@ -70,6 +76,6 @@ If you like my work or are using it for commercial websites then please donate, 
 
 * Jonathan Nessier, [Neoflow](https://www.neoflow.ch)
 
-Thanks to the [WBCE](http://wbce.org) community for your support and testing.
+Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to better-work and colinax for their donations!
 
 Copyright © 2016-2017 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Licensed under MIT
