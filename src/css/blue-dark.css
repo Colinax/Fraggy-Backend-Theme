@@ -12859,7 +12859,7 @@ fieldset[disabled] .btn-inverse.focus {
 }
 
 .select2-container--bootstrap .select2-results__option[aria-disabled=true] {
-  color: #e8eaee;
+  color: #e1e3e9;
 }
 
 #wrapper {
