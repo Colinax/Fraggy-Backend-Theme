@@ -5580,11 +5580,11 @@ a.label:hover, a.label:focus {
 }
 
 .label-default {
-  background-color: #e8eaee;
+  background-color: #909aad;
 }
 
 .label-default[href]:hover, .label-default[href]:focus {
-  background-color: #cbcfd8;
+  background-color: #738097;
 }
 
 .label-primary {
@@ -13221,7 +13221,7 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
 }
 
 #mediaBrowsePage, #mediaRenamePage, #setParameterPage {
-  background: #cbcfd8;
+  background: #fff;
 }
 
 #accessPage h5 {
@@ -13310,10 +13310,6 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
 
 #ibox .alert .btn, #ibox .alert hr {
   display: none;
-}
-
-#mediaBrowsePage {
-  background: #fff;
 }
 
 #mediaBrowsePage .thumb {
@@ -13444,10 +13440,6 @@ ul.jsadmin_drag_area {
   border-color: #adb5c3;
 }
 
-.label-default {
-  color: #909aad;
-}
-
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #b5bcc8;
 }
@@ -13481,8 +13473,16 @@ body {
   border-color: #909aad;
 }
 
+.label-default {
+  color: #101115;
+}
+
 .cke {
   border-color: #cbcfd8;
+}
+
+#mediaBrowsePage, #mediaRenamePage, #setParameterPage {
+  background: #cbcfd8;
 }
 
 .select2-container--bootstrap .select2-dropdown {
@@ -13507,6 +13507,12 @@ body {
 
 .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice__remove {
   color: #101115;
+}
+
+.select2-container--bootstrap .select2-selection--multiple .select2-selection__choice {
+  background: #cbcfd8;
+  color: #101115;
+  border-color: #adb5c3;
 }
 
 .select2-container--bootstrap .select2-results__option[aria-disabled=true] {

@@ -13221,7 +13221,7 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
 }
 
 #mediaBrowsePage, #mediaRenamePage, #setParameterPage {
-  background: #666;
+  background: #fff;
 }
 
 #accessPage h5 {
@@ -13310,10 +13310,6 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
 
 #ibox .alert .btn, #ibox .alert hr {
   display: none;
-}
-
-#mediaBrowsePage {
-  background: #fff;
 }
 
 #mediaBrowsePage .thumb {

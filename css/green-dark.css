@@ -3708,10 +3708,10 @@ a.label:hover, a.label:focus {
   cursor: pointer;
 }
 .label-default {
-  background-color: #e8eaee;
+  background-color: #909aad;
 }
 .label-default[href]:hover, .label-default[href]:focus {
-  background-color: #cbcfd8;
+  background-color: #738097;
 }
 .label-primary {
   background-color: #303641;
@@ -9510,7 +9510,7 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
   max-height: 100px;
 }
 #mediaBrowsePage, #mediaRenamePage, #setParameterPage {
-  background: #cbcfd8;
+  background: #fff;
 }
 #accessPage h5 {
   margin-bottom: 0;
@@ -9570,9 +9570,6 @@ nav.sidebar .sidebar-collapse .sidebar-nav li.current > a .arrow:before, nav.sid
 }
 #ibox .alert .btn, #ibox .alert hr {
   display: none;
-}
-#mediaBrowsePage {
-  background: #fff;
 }
 #mediaBrowsePage .thumb {
   width: 80px;
@@ -9664,9 +9661,6 @@ ul.jsadmin_drag_area {
 .panel-default hr {
   border-color: #adb5c3;
 }
-.label-default {
-  color: #909aad;
-}
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #b5bcc8;
 }
@@ -9693,8 +9687,14 @@ body {
   background: #e8eaee;
   border-color: #909aad;
 }
+.label-default {
+  color: #101115;
+}
 .cke {
   border-color: #cbcfd8;
+}
+#mediaBrowsePage, #mediaRenamePage, #setParameterPage {
+  background: #cbcfd8;
 }
 .select2-container--bootstrap .select2-dropdown {
   border-color: #818da2;
@@ -9714,6 +9714,11 @@ body {
 }
 .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice__remove {
   color: #101115;
+}
+.select2-container--bootstrap .select2-selection--multiple .select2-selection__choice {
+  background: #cbcfd8;
+  color: #101115;
+  border-color: #adb5c3;
 }
 .select2-container--bootstrap .select2-results__option[aria-disabled=true] {
   color: #adb5c3;

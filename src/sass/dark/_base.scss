@@ -10,10 +10,6 @@
     }
 }
 
-.label-default {
-    color: $gray-darker;
-}
-
 .table-striped > tbody > tr:nth-of-type(odd) {
     background-color: lighten($gray-dark, 2.5%);
 }
@@ -51,8 +47,16 @@ body {
     }
 }
 
+.label-default {
+    color: $text-color;
+}
+
 .cke {
     border-color: $gray;
+}
+
+#mediaBrowsePage, #mediaRenamePage, #setParameterPage {
+    background: $panel-bg;
 }
 
 .select2-container--bootstrap .select2-dropdown {
@@ -77,6 +81,12 @@ body {
 
 .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice__remove {
     color: $text-color;
+}
+
+.select2-container--bootstrap .select2-selection--multiple .select2-selection__choice {
+    background: $gray;
+    color: $text-color;
+    border-color: $input-border;
 }
 
 .select2-container--bootstrap .select2-results__option[aria-disabled=true] {
