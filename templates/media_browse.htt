@@ -21,7 +21,7 @@
 
         <!-- Theme CSS -->
         <script>
-            var stylesheetUrl = '{THEME_URL}/css/green.min.css?v1.7.1';
+            var stylesheetUrl = '{THEME_URL}/css/green.min.css?v2.0.0-alpha1';
             if (localStorage.getItem('stylesheetUrl')) {
                 stylesheetUrl = localStorage.getItem('stylesheetUrl');
             }
@@ -29,7 +29,7 @@
         </script>
 
         <noscript>
-        <link id="switchable" href="{THEME_URL}/css/green.min.css?v1.7.1" rel="stylesheet" type="text/css" />
+        <link id="switchable" href="{THEME_URL}/css/green.min.css?v2.0.0-alpha1" rel="stylesheet" type="text/css" />
         </noscript>
 
         <!-- Initiliaze vars -->
@@ -40,7 +40,7 @@
         </script>
 
         <!-- Theme jQuery -->
-        <script src="{THEME_URL}/js/jquery.min.js?v1.7.1"></script>
+        <script src="{THEME_URL}/js/jquery.min.js?v2.0.0-alpha1"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="../../include/jquery/jquery-insert.js"></script>
@@ -52,7 +52,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.min.js?v1.7.1"></script>
+        <script src="{THEME_URL}/js/script.min.js?v2.0.0-alpha1"></script>
 
     </head>
     <body id="mediaBrowsePage">
@@ -74,7 +74,7 @@
                 <tr>
                     <td class="thumb">
                         <a class="icon" href="{LINK}" target="{LINK_TARGET}">
-                            <img src="{FT_ICON}" class="img-responsive" />
+                            <img src="{FT_ICON}" class="img-fluid" />
                         </a>
                     </td>
                     <td>

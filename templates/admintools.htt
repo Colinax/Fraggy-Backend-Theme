@@ -1,10 +1,10 @@
 <!-- BEGIN main_block -->
 <div id="admintoolsPage">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">{HEADING_ADMINISTRATION_TOOLS}</h3>
-        </div>
-        <div class="panel-body">
+    <div class="card">
+        <h4 class="card-header">
+            {HEADING_ADMINISTRATION_TOOLS}
+        </h4>
+        <div class="card-body">
             <table class="table table-striped">
                 <tbody>
                     <!-- BEGIN tool_list_block -->
@@ -24,7 +24,7 @@
             <hr />
             {TOOL_LIST}
         </div>
-    </div><!-- /.panel.panel-default -->
+    </div>
 </div><!-- /#admintoolsPage -->
 
 <!-- END main_block -->

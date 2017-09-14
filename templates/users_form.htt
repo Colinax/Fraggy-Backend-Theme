@@ -2,11 +2,11 @@
 <div class="row">
     <div class="col-lg-6">
 
-        <div class="panel panel-default {DISPLAY_ADD}">
-            <div class="panel-heading">
-                <h3 class="panel-title">{HEADING_MODIFY_USER}</h3>
-            </div>
-            <div class="panel-body">
+        <div class="card {DISPLAY_ADD}">
+            <h4 class="card-header">
+                {HEADING_MODIFY_USER}
+            </h4>
+            <div class="card-body">
 
                 <form name="user" action="{ACTION_URL}" method="post" class="form-horizontal">
                     <input type="hidden" name="user_id" value="{USER_ID}" />
@@ -90,14 +90,14 @@
                     <div class="form-group">
                         <div class="col-sm-8 col-sm-offset-4">
                             <button type="submit" name="submit" class="btn btn-primary submit-btn"><i class="fa fa-fw fa-floppy-o"></i> {SUBMIT_TITLE}</button>
-                            <a href="index.php" class="btn btn-default cancel-btn pull-right">{TEXT_CANCEL}</a>
+                            <a href="index.php" class="btn btn-outline-light cancel-btn pull-right">{TEXT_CANCEL}</a>
                         </div>
                     </div>
 
                 </form>
 
-            </div><!-- /.panel-body -->
-        </div><!-- /.panel.panel-default -->
+            </div>
+        </div>
 
     </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->

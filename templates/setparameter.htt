@@ -21,7 +21,7 @@
 
         <!-- Theme CSS -->
         <script>
-            var stylesheetUrl = '../../templates/fraggy-backend-theme/css/green.min.css?v1.7.1';
+            var stylesheetUrl = '../../templates/fraggy-backend-theme/css/green.min.css?v2.0.0-alpha1';
             if (localStorage.getItem('stylesheetUrl')) {
                 stylesheetUrl = localStorage.getItem('stylesheetUrl');
             }
@@ -29,7 +29,7 @@
         </script>
 
         <noscript>
-        <link id="switchable" href="../../templates/fraggy-backend-theme/css/green.min.css?v1.7.1" rel="stylesheet" type="text/css" />
+        <link id="switchable" href="../../templates/fraggy-backend-theme/css/green.min.css?v2.0.0-alpha1" rel="stylesheet" type="text/css" />
         </noscript>
 
         <!-- Custom CSS -->
@@ -51,7 +51,7 @@
         </script>
 
         <!-- Theme jQuery -->
-        <script src="../../templates/fraggy-backend-theme/js/jquery.min.js?v1.7.1"></script>
+        <script src="../../templates/fraggy-backend-theme/js/jquery.min.js?v2.0.0-alpha1"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="../../include/jquery/jquery-insert.js"></script>
@@ -63,7 +63,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="../../templates/fraggy-backend-theme/js/script.min.js?v1.7.1"></script>
+        <script src="../../templates/fraggy-backend-theme/js/script.min.js?v2.0.0-alpha1"></script>
 
     </head>
     <body id="setParameterPage">
@@ -116,7 +116,7 @@
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <button class="btn btn-primary" type="submit" name="save"><i class="fa fa-fw fa-floppy-o"></i> {SAVE_TEXT}</button>
-                        <a href="browse.php" class="btn btn-default">
+                        <a href="browse.php" class="btn btn-outline-light">
                             <i class="fa fa-fw fa-arrow-circle-left"></i> {BACK}
                         </a>
                     </div>

@@ -1,51 +1,5 @@
 $(function () {
 
-    $('button, input[type="button"], input[type="reset"]')
-            .addClass('btn btn-default');
-
-    $('button[type="submit"], input[type="submit"]')
-            .addClass('btn btn-primary').removeClass('btn-default');
-
-    $('input[type="text"], input[type="password"], textarea')
-            .addClass('form-control');
-
-    $('.sidebar-nav').each(function () {
-        var $sidebarNav = $(this);
-
-        if ($sidebarNav.find('li.current').length === 0) {
-            $sidebarNav.find('li:first').addClass('current');
-        }
-
-        $sidebarNav.find('li.dashboard > a > .icon').append('<i class="fa fa-fw fa-tachometer"></i> ');
-        $sidebarNav.find('li.preferences > a > .icon').append('<i class="fa fa-fw fa-cog"></i> ');
-        $sidebarNav.find('li.pages > a > .icon').append('<i class="fa fa-fw fa-files-o"></i> ');
-        $sidebarNav.find('li.media > a > .icon').append('<i class="fa fa-fw fa-picture-o"></i> ');
-        $sidebarNav.find('li.addons > a > .icon').append('<i class="fa fa-fw fa-th"></i> ');
-        $sidebarNav.find('li.settings > a > .icon').append('<i class="fa fa-fw fa-cogs"></i> ');
-        $sidebarNav.find('li.admintools > a > .icon').append('<i class="fa fa-fw fa-cubes"></i> ');
-        $sidebarNav.find('li.access > a > .icon').append('<i class="fa fa-fw fa-users"></i> ');
-    });
-
-    var $pageWrapperContainer = $('.page-wrapper .container-fluid');
-    if ($pageWrapperContainer.find('.panel, .alert').length === 0) {
-        $pageWrapperContainer
-                .find('> div')
-                .addClass('panel panel-default')
-                .find('> div')
-                .addClass('panel-body');
-    }
-
-    $('#addonsPage nav.navbar a').each(function () {
-        var $this = $(this);
-        if ($this.attr('href').indexOf('templates') > -1) {
-            $this.prepend('<i class="fa fa-fw fa-paint-brush"></i> ');
-        } else if ($this.attr('href').indexOf('modules') > -1) {
-            $this.prepend('<i class="fa fa-fw fa-puzzle-piece"></i> ');
-        } else if ($this.attr('href').indexOf('languages') > -1) {
-            $this.prepend('<i class="fa fa-fw fa-language"></i> ');
-        }
-    });
-
     $('a > img').each(function () {
         var $this = $(this);
         if ($this.prop('src').indexOf('modify_16.png') > -1) {
@@ -71,28 +25,41 @@ $(function () {
         }
     });
 
+    $('button, input[type="button"], input[type="reset"]')
+            .addClass('btn btn-outline-light');
+
+    $('button[type="submit"], input[type="submit"]')
+            .addClass('btn btn-primary')
+            .removeClass('btn-outline-light');
+
+    $('input[type="text"], input[type="password"], textarea')
+            .addClass('form-control');
+
+    var $contentBody = $('#content > .content-body');
+    if ($contentBody.find('.card, .alert').length === 0) {
+        $contentBody
+                .find('> div')
+                .addClass('card')
+                .find('> div')
+                .addClass('card-body');
+    }
+
+    $('#addonsPage nav.navbar a').each(function () {
+        var $this = $(this);
+        if ($this.attr('href').indexOf('templates') > -1) {
+            $this.prepend('<i class="fa fa-fw fa-paint-brush"></i> ');
+        } else if ($this.attr('href').indexOf('modules') > -1) {
+            $this.prepend('<i class="fa fa-fw fa-puzzle-piece"></i> ');
+        } else if ($this.attr('href').indexOf('languages') > -1) {
+            $this.prepend('<i class="fa fa-fw fa-language"></i> ');
+        }
+    });
+
     var $welcomeMessage = $('#welcomeMessage'),
             welcomeMessageText = $welcomeMessage.text();
 
     welcomeMessageText = welcomeMessageText.replace('imBackend', 'im Backend');
     $welcomeMessage.text(welcomeMessageText);
-
-//    if (typeof CKEDITOR !== 'undefined') {
-//        CKEDITOR.on('instanceLoaded', function () {
-//            $.each(CKEDITOR.instances, function (index, instance) {
-//                if (localStorage.getItem('stylesheetUrl').indexOf('dark') >= 0) {
-//                    instance.setUiColor('#5b677c');
-//                } else {
-//                    instance.setUiColor('#eeeeee');
-//                }
-//
-//                $(instance.element).css({
-//                    'border': 0,
-//                    'box-shadow': 'none'
-//                });
-//            });
-//        });
-//    }
 
     $('form[action="intro2.php"] table:first').addClass('table');
 
@@ -105,4 +72,6 @@ $(function () {
     }
     $('#publishdate, #enddate').css({'width': 150, 'display': 'inline-block'});
 
+
 });
+

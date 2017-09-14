@@ -2,31 +2,27 @@
 <div id="mediaPage">
     <div class="row">
         <div class="col-lg-8 col-lg-push-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        {HEADING_BROWSE_MEDIA}
-                    </h3>
-                </div>
-                <div class="panel-body">
+            <div class="card">
+                <h4 class="card-header">
+                    {HEADING_BROWSE_MEDIA}
+                </h4>
+                <div class="card-body">
                     <iframe name="mediaBrowser" scrolling="no" id="mediaBrowser" src="browse.php" frameborder="0"></iframe>
                     <hr />
                     <span class="{DISPLAY_SETTINGS} pull-right">
-                        <a href="setparameter.php" target="mediaBrowser" class="btn btn-default"><i class="fa fa-fw fa-cog"></i> {CHANGE_SETTINGS}</a>
-                        <a href="browse.php?dir={CURRENT_DIR}" target="mediaBrowser" class="btn btn-default"><i class="fa fa-fw fa-refresh"></i>  {TEXT_RELOAD}</a>
+                        <a href="setparameter.php" target="mediaBrowser" class="btn btn-outline-light"><i class="fa fa-fw fa-cog"></i> {CHANGE_SETTINGS}</a>
+                        <a href="browse.php?dir={CURRENT_DIR}" target="mediaBrowser" class="btn btn-outline-light"><i class="fa fa-fw fa-refresh"></i>  {TEXT_RELOAD}</a>
                     </span>
-                </div><!-- /.panel-body -->
-            </div><!-- /.panel.panel-default -->
+                </div>
+            </div>
         </div><!-- /.col-lg-8.col-lg-push-4 -->
 
         <div class="col-lg-4 col-lg-pull-8">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        {HEADING_UPLOAD_FILES}
-                    </h3>
-                </div>
-                <div class="panel-body">
+            <div class="card">
+                <h4 class="card-header">
+                    {HEADING_UPLOAD_FILES}
+                </h4>
+                <div class="card-body">
                     <form name="upload" action="upload.php" method="post" enctype="multipart/form-data" class="{DISPLAY_UPLOAD}">
                         {FTAN}
                         <div class="form-group">
@@ -71,16 +67,14 @@
                             <i class="fa fa-fw fa-upload"></i> {TEXT_UPLOAD_FILES}
                         </button>
                     </form>
-                </div><!-- /.panel-body -->
-            </div><!-- /.panel.panel-default -->
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        {HEADING_CREATE_FOLDER}
-                    </h3>
                 </div>
-                <div class="panel-body">
+            </div>
+
+            <div class="card">
+                <h4 class="card-header">
+                    {HEADING_CREATE_FOLDER}
+                </h4>
+                <div class="card-body">
                     <form name="create" action="create.php" method="post" class="{DISPLAY_CREATE}">
                         {FTAN}
                         <div class="form-group">
@@ -104,8 +98,8 @@
                             <i class="fa fa-fw fa-plus"></i> {TEXT_CREATE_FOLDER}
                         </button>
                     </form>
-                </div><!-- /.panel-body -->
-            </div><!-- /.panel.panel-default -->
+                </div>
+            </div>
         </div><!-- /.col-lg-4.col-lg-pull-8 -->
     </div><!-- /.row -->
 </div><!-- /#mediaPage -->

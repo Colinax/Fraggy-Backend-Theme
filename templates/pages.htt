@@ -3,25 +3,25 @@
     <div class="row">
         <div class="col-lg-8">
 
-            <div id="pageListPanel" class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">{PAGES}</h3>
+            <div id="pageListCard" class="card">
+                <h4 class="card-header">
+                    {PAGES}
+                </h4>
+                <div class="card-body">
+
+
+
                 </div>
-                <div class="panel-body">
-
-
-
-                </div><!-- /.panel-body -->
-            </div><!-- /.panel.panel-default -->
+            </div>
 
         </div><!-- /.col-lg-8 -->
         <div class="col-lg-4">
 
-            <div class="panel panel-default {DISPLAY_ADD}">
-                <div class="panel-heading">
-                    <h3 class="panel-title">{HEADING_ADD_PAGE}</h3>
-                </div>
-                <div class="panel-body">
+            <div class="card {DISPLAY_ADD}">
+                <h4 class="card-header">
+                    {HEADING_ADD_PAGE}
+                </h4>
+                <div class="card-body">
 
                     <form name="add" action="add.php" method="post">
                         {FTAN}
@@ -85,17 +85,17 @@
 
                     </form>
 
-                </div><!-- /.panel-body -->
-            </div><!-- /.panel.panel-default -->
-
-            <div class="panel panel-default {DISPLAY_INTRO}">
-                <div class="panel-heading">
-                    <h3 class="panel-title">{HEADING_MODIFY_INTRO_PAGE}</h3>
                 </div>
-                <div class="panel-body">
-                    <a class="btn btn-default" href="intro.php">{INTRO_LINK}</a>
-                </div><!-- /.panel-body -->
-            </div><!-- /.panel.panel-default -->
+            </div>
+
+            <!--<div class="card {DISPLAY_INTRO}">
+                <h4 class="card-header">
+                    {HEADING_MODIFY_INTRO_PAGE}
+                </h4>
+                <div class="card-body">
+                    <a class="btn btn-outline-light" href="intro.php">{INTRO_LINK}</a>
+                </div>
+            </div>-->
 
         </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
@@ -121,7 +121,7 @@
         var $pageList = $('.pages_list'),
                 $pageListUl = $pageList.children('ul'),
                 $pageListTitle = $pageList.find('h2:first'),
-                $pageListPanel = $('#pageListPanel'),
+                $pageListCard = $('#pageListCard'),
                 $toggleLinks = $('.toggle a'),
                 $btnExpand = $('.btn-expand'),
                 $btnCollapse = $('.btn-collapse');
@@ -185,12 +185,11 @@
             $btnExpand.blur();
         });
 
-
-        $pageListPanel.find('h3.panel-title').text($pageListTitle.text());
+        $pageListCard.find('h4.card-header').text($pageListTitle.text());
         $pageListTitle.remove();
 
-        $pageListPanel
-                .find('.panel-body')
+        $pageListCard
+                .find('.card-body')
                 .prepend($pageList);
 
         $pageList.show();

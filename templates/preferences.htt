@@ -5,11 +5,11 @@
         <div class="row">
             <div class="col-lg-6">
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">{HEADING_MY_SETTINGS}</h3>
-                    </div>
-                    <div class="panel-body">
+                <div class="card">
+                    <h4 class="card-header">
+                        {HEADING_MY_SETTINGS}
+                    </h4>
+                    <div class="card-body">
 
                         <form name="{FORM_NAME}" id="{FORM_NAME}" action="{ACTION_URL}" method="post">
                             {FTAN}
@@ -111,8 +111,8 @@
                                 </div>
                             </div>
 
-                    </div><!-- /.panel-body -->
-                </div><!-- /.panel.panel-default -->
+                    </div>
+                </div>
 
             </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->

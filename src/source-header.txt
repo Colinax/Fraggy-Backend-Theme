@@ -7,12 +7,13 @@
  *
  * This template integrates components from the following projects
  *
- *   Font Awesome 4.7.0 | by Dave Gandy | fontawesome.io/license
- *   Roboto & Roboto Condensed | by Christian Robertson | Apache License 2.0.
- *   jQuery v2.2.4 | (c) jQuery Foundation | jquery.org/license
- *   Bootstrap v3.3.7 | (c) 2011-2017 Twitter, Inc. | MIT
- *   Bootstrap Fileselect v1.3 | (c) 2016-2017 Jonathan Nessier, Neoflow | MIT
- *   Bootstrap Datetimepicker v4.17.47 | (c) 2015-217 Jonathan Peterson | MIT
- *   Moment with locales | by Tim Wood, Iskren Chernev and contributors | MIT
- *   Select2 4.0.3 | (c) 2012-2015 Kevin Brown, Igor Vaynberg, and Select2 contributors | MIT
+ *   Roboto & Roboto Condensed | (c) Christian Robertson and Google | Apache License 2.0
+ *   Font Awesome 4.7.0 by @davegandy | fontawesome.io/license
+ *   jQuery v3.2.1 | (c) jQuery Foundation | jquery.org/license
+ *   Bootstrap v4.0.0-beta | (c) The Bootstrap Authors | MIT
+ *   Popper.js v1.12.0 | (c) Federico Zivolo | MIT
+ *   Select2 v4.0.3 | (c) Kevin Brown, Igor Vaynberg, and Select2 contributors | MIT
+ *   FooTable v3.1.6 | (c) Steven Usher & Brad Vincent | GPLv3
+ *   Nicescroll v3.7.6 | (c) InuYaksa | MIT
+ *   Bootstrap Fileselect v2.0.0 | (c) Jonathan Nessier, Neoflow | MIT
  */

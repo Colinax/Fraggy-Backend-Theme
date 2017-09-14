@@ -1,11 +1,11 @@
 <!-- BEGIN main_block -->
 <div id="addonsPage">
 
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">{HEADING_TEMPLATE_DETAILS}</h3>
-        </div>
-        <div class="panel-body">
+    <div class="card">
+        <h4 class="card-header">
+            {HEADING_TEMPLATE_DETAILS}
+        </h4>
+        <div class="card-body">
 
             <table class="table table-striped">
                 <tr>
@@ -30,11 +30,11 @@
                 </tr>
             </table>
             <hr />
-            <a href="index.php" class="btn btn-default">
+            <a href="index.php" class="btn btn-outline-light">
                 <i class="fa fa-fw fa-arrow-circle-left"></i> {TEXT_BACK}
             </a>
-        </div><!-- /.panel-body -->
-    </div><!-- /.panel.panel-default -->
+        </div>
+    </div>
 
 </div><!-- /#addonsPage -->
 <!-- END main_block -->

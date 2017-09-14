@@ -24,13 +24,9 @@
 
     <div class="row">
         <div class="col-lg-6">
-            <div class="panel panel-default {DISPLAY_INSTALL}">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        {HEADING_INSTALL_TEMPLATE}
-                    </h3>
-                </div>
-                <div class="panel-body">
+            <div class="card {DISPLAY_INSTALL}">
+
+                <div class="card-body">
                     <form name="install" enctype="multipart/form-data" action="install.php" method="post">
                         {FTAN}
                         <div class="form-group">
@@ -42,18 +38,16 @@
                             </button>
                         </div>
                     </form>
-                </div><!-- /.panel-body -->
-            </div><!-- /.panel.panel-default -->
+                </div>
+            </div>
         </div><!-- /.col-lg-6 -->
 
         <div class="col-lg-6">
-            <div class="panel panel-default {DISPLAY_UNINSTALL}">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        {HEADING_UNINSTALL_TEMPLATE}
-                    </h3>
-                </div>
-                <div class="panel-body">
+            <div class="card {DISPLAY_UNINSTALL}">
+                <h4 class="card-header">
+                    {HEADING_UNINSTALL_TEMPLATE}
+                </h4>
+                <div class="card-body">
                     <form name="uninstall" action="uninstall.php" method="post">
                         {FTAN}
                         <div class="form-group">
@@ -70,18 +64,16 @@
                             </button>
                         </div>
                     </form>
-                </div><!-- /.panel-body -->
-            </div><!-- /.panel.panel-default -->
+                </div>
+            </div>
         </div><!-- /.col-lg-6 -->
     </div><!-- /.row -->
 
-    <div class="panel panel-default {DISPLAY_LIST}">
-        <div class="panel-heading">
-            <h3 class="panel-title">
-                {HEADING_TEMPLATE_DETAILS}
-            </h3>
-        </div>
-        <div class="panel-body">
+    <div class="card {DISPLAY_LIST}">
+        <h4 class="card-header">
+            {HEADING_TEMPLATE_DETAILS}
+        </h4>
+        <div class="card-body">
             <form name="details" action="details.php" method="post">
                 {FTAN}
                 <div class="form-group">
@@ -98,8 +90,8 @@
                     </button>
                 </div>
             </form>
-        </div><!-- /.panel-body -->
-    </div><!-- /.panel.panel-default -->
+        </div>
+    </div>
 
 </div><!-- /#addonsPage -->
 <!-- END main_block -->

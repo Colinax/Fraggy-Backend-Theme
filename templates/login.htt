@@ -1,4 +1,4 @@
-<!-- BEGIN main_block -->
+<!-- BEGIN header_block -->
 <!DOCTYPE html>
 <html lang="{LANGUAGE}">
 
@@ -21,136 +21,128 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <script>
-            var stylesheetUrl = '{THEME_URL}/css/green.min.css?v1.7.1';
-            if (localStorage.getItem('stylesheetUrl')) {
-                stylesheetUrl = localStorage.getItem('stylesheetUrl');
-            }
-            document.write('<link id="switchable" href="' + stylesheetUrl + '" rel="stylesheet" type="text/css" />');
-        </script>
+        <link id="switchable" href="{THEME_URL}/css/style.css?v2.0.0-alpha1" rel="stylesheet" type="text/css" />
 
-        <noscript>
-        <link id="switchable" href="{THEME_URL}/css/green.min.css?v1.7.1" rel="stylesheet" type="text/css" />
-        </noscript>
+        <!-- WebsiteBaker CSS -->
+        {BACKEND_MODULE_CSS}
 
         <!-- Initiliaze vars -->
         <script>
             var WB_URL = '{WB_URL}',
                     THEME_URL = '{THEME_URL}',
-                    ADMIN_URL = '{ADMIN_URL}';
+                    ADMIN_URL = '{ADMIN_URL}',
+                    LANGUAGE_CODE = '{LANGUAGE}';
         </script>
 
         <!-- Theme jQuery -->
-        <script src="{THEME_URL}/js/jquery.min.js?v1.7.1"></script>
-        <script>
-            if (localStorage.getItem('stylesheetUrl')) {
-                document.getElementById('switchable').setAttribute('href', localStorage.getItem('stylesheetUrl'));
-            }
-        </script>
+        <script src="{THEME_URL}/js/jquery.min.js?v2.0.0-alpha1"></script>
 
         <!-- WBCE helper JavaScript -->
         <script src="{WB_URL}/include/jquery/jquery-insert.js"></script>
-
-        <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.min.js?v1.7.1"></script>
         <script>
-            $(document).ready(function () {
-                Theme.init();
-            });
+            function confirm_link(message, url) {
+                if (confirm(message))
+                    location.href = url;
+            }
         </script>
 
+        <!-- Theme JavaScript -->
+        <script src="{THEME_URL}/js/script.js?v2.0.0-alpha1"></script>
+
+        {BACKEND_MODULE_JS}
+
     </head>
-    <body>
+    <body class="fixed-nav prepage">
 
-        <div id="wrapper">
-            <div id="page-wrapper-fluid">
-                <div class="page-wrapper">
-                    <div class="container">
+        <div id="content">
+            <div class="container-fluid">
 
-                        <div id="loginPage">
+                <div id="prepage">
 
-                            <div class="row">
-                                <div class="col-sm-6 col-sm-push-6 col-lg-7 col-lg-push-5">
+                    <div class="row">
+                        <div class="col-md-6 mx-md-auto col-lg-4">
+                            <header id="prepageHeader">
 
-                                    <div class="brand page-brand">
-                                        <div class="hidden-xs">
-                                            <ul class="list-unstyled small">
-                                                <li>Way</li>
-                                                <li>Better</li>
-                                                <li>Content</li>
-                                                <li>Editing</li>
-                                            </ul>
-                                            <strong>Backend</strong>
-                                        </div>
-                                        <a href="{ADMIN_URL}" class="theme-logo">
-                                            <img src="{THEME_URL}/images/theme-logo.png" alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" />
+                                <span class="brand">
+                                    <img src="{WB_URL}/media/backend-theme-logo.png" class="img-fluid" onerror="this.onerror=null;this.src='{THEME_URL}/images/theme-logo.png';" alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" />
+                                </span>
+
+                            </header>
+                        </div>
+                    </div>
+
+                    <div id="loginPage">
+
+                        <div class="row">
+                            <div class="col-md-6 mx-md-auto col-lg-4">
+
+                                <div class="card">
+                                    <h4 class="card-header">
+                                        {TEXT_LOGIN}
+                                    </h4>
+                                    <div class="card-body">
+
+                                        <p>{MESSAGE}</p>
+
+                                        <form name="login" action="{ACTION_URL}" method="post" autocomplete="off">
+                                            <input type="hidden" name="url" value="{URL}" />
+                                            <input type="hidden" name="username_fieldname" value="{USERNAME_FIELDNAME}" />
+                                            <input type="hidden" name="password_fieldname" value="{PASSWORD_FIELDNAME}" autocomplete="off" />
+
+                                            <div class="form-group">
+                                                <label for="inputUsername">{TEXT_USERNAME}</label>
+                                                <input class="form-control" type="text" maxlength="{MAX_USERNAME_LEN}" name="{USERNAME_FIELDNAME}" value="{USERNAME}" id="inputUsername" />
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="inputPassword">{TEXT_PASSWORD}</label>
+                                                <input class="form-control" type="password" autocomplete="off" maxlength="{MAX_PASSWORD_LEN}" name="{PASSWORD_FIELDNAME}" id="inputPassword" />
+                                            </div>
+
+                                            <button type="submit" class="btn btn-primary">{TEXT_LOGIN}</button>
+                                        </form>
+
+                                        <hr />
+
+                                        <ul class="list-unstyled">
+                                            <li><a href="{FORGOTTEN_DETAILS_APP}">{TEXT_FORGOTTEN_DETAILS}</a></li>
+
+                                        </ul>
+
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="btn btn-sm btn-outline-light" href="{WB_URL}">
+                                            <i class="fa fa-fw fa-desktop"></i> {TEXT_HOME}
                                         </a>
                                     </div>
+                                </div>
 
-                                </div><!-- /.col-sm-6.col-sm-push-6.col-lg-7.col-lg-push-5 -->
+                            </div>
+                        </div>
 
-                                <div class="col-sm-6 col-sm-pull-6 col-lg-5 col-lg-pull-7">
+                    </div>
 
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h3 class="panel-title">{TEXT_LOGIN}</h3>
-                                        </div>
-                                        <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6 mx-md-auto col-lg-4">
+                            <footer id="prepageFooter">
+                                <p class="page-license">
+                                    <!-- Please note: the below reference to the GNU GPL should not be removed, as it provides a link for users to read about warranty, etc. -->
+                                    <a href="http://www.wbce.org/" title="Way Better Content Editing" target="_blank">WBCE</a> is released under the
+                                    <a href="http://www.gnu.org/licenses/gpl.html" title="Released under the GNU General Public License" target="_blank">GNU General Public License</a>.
+                                    <!-- Please note: the above reference to the GNU GPL should not be removed, as it provides a link for users to read about warranty, etc. -->
+                                </p>
+                                <p class="page-license">
+                                    <!-- Please note: be fair and do not removed the link to the creator of the template -->
+                                    Theme created by <a href="https://www.neoflow.ch" title="Neoflow" target="_blank">Neoflow</a>.
+                                    <!-- Please note: be fair and do not removed the link to the creator of the template -->
+                                </p>
+                            </footer>
+                        </div>
+                    </div>
 
-                                            <p>{MESSAGE}</p>
-
-                                            <form name="login" action="{ACTION_URL}" method="post" autocomplete="off">
-                                                <input type="hidden" name="url" value="{URL}" />
-                                                <input type="hidden" name="username_fieldname" value="{USERNAME_FIELDNAME}" />
-                                                <input type="hidden" name="password_fieldname" value="{PASSWORD_FIELDNAME}" autocomplete="off" />
-
-                                                <div class="form-group">
-                                                    <label for="inputUsername">{TEXT_USERNAME}</label>
-                                                    <input type="text" maxlength="{MAX_USERNAME_LEN}" name="{USERNAME_FIELDNAME}" value="{USERNAME}" id="inputUsername" />
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label for="inputPassword">{TEXT_PASSWORD}</label>
-                                                    <input type="password" autocomplete="off" maxlength="{MAX_PASSWORD_LEN}" name="{PASSWORD_FIELDNAME}" id="inputPassword" />
-                                                </div>
-
-                                                <button type="submit" class="btn btn-primary">{TEXT_LOGIN}</button>
-                                            </form>
-
-                                            <hr />
-
-                                            <ul class="list-unstyled">
-                                                <li><a href="{FORGOTTEN_DETAILS_APP}">{TEXT_FORGOTTEN_DETAILS}</a></li>
-
-                                            </ul>
-
-                                        </div><!-- /.panel-body -->
-                                        <div class="panel-footer text-right">
-                                            <a class="btn btn-xs btn-default" href="{WB_URL}"><i class="fa fa-fw fa-desktop"></i> {TEXT_HOME}</a>
-                                        </div>
-                                    </div><!-- /.panel.panel-default -->
-
-                                    <p class="page-license">
-                                        <!-- Please note: the below reference to the GNU GPL should not be removed, as it provides a link for users to read about warranty, etc. -->
-                                        <a href="http://www.wbce.org/" title="Way Better Content Editing" target="_blank">WBCE</a> is released under the
-                                        <a href="http://www.gnu.org/licenses/gpl.html" title="Released under the GNU General Public License" target="_blank">GNU General Public License</a>.
-                                        <!-- Please note: the above reference to the GNU GPL should not be removed, as it provides a link for users to read about warranty, etc. -->
-                                    </p>
-                                    <p class="page-license">
-                                        <!-- Please note: be fair and do not removed the link to the creator of the template -->
-                                        Theme created by <a href="https://www.neoflow.ch" title="Neoflow" target="_blank">Neoflow</a>.
-                                        <!-- Please note: be fair and do not removed the link to the creator of the template -->
-                                    </p>
-
-                                </div><!-- /.col-sm-6.col-sm-pull-6.col-lg-5.col-lg-pull-7 -->
-                            </div><!-- /.row -->
-
-                        </div><!-- /#loginPage -->
-
-                    </div><!-- /.container -->
-                </div><!-- /.page-wrapper -->
-            </div><!-- /#page-wrapper-fluid -->
-        </div><!-- /#wrapper -->
+                </div>
+            </div>
+        </div>
     </body>
 </html>
 <!-- END main_block -->

@@ -20,11 +20,11 @@
     <div class="row">
         <div class="col-lg-6">
 
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">{HEADING_MODIFY_DELETE_GROUP}</h3>
-                </div>
-                <div class="panel-body">
+            <div class="card">
+                <h4 class="card-header">
+                    {HEADING_MODIFY_DELETE_GROUP}
+                </h4>
+                <div class="card-body">
 
                     <form name="groups" action="groups.php" method="post">
                         {FTAN}
@@ -45,8 +45,8 @@
                         </div>
                     </form>
 
-                </div><!-- /.panel-body -->
-            </div><!-- /.panel.panel-default -->
+                </div>
+            </div>
 
         </div><!-- /.col-lg-6 -->
         <div class="col-lg-6">
@@ -61,16 +61,14 @@
     // Output fixes
     $(document).ready(function () {
         var $row = $('#accessPage').nextAll('.row'),
-                $panel = $row.find('.panel');
+                $card = $row.find('.card');
 
         $row.hide();
 
-        $panel.find('.panel-title').html('{HEADING_ADD_GROUP}');
-        $panel.find('.cancel-btn').hide();
+        $card.find('.card-header').html('{HEADING_ADD_GROUP}');
+        $card.find('.cancel-btn').hide();
 
-        $('#accessPage .row .col-lg-6:last').append($panel);
-
-        $(window).trigger('resize');
+        $('#accessPage .row .col-lg-6:last').append($card);
 
     });
 

@@ -10,11 +10,11 @@
         <div class="row">
             <div class="col-lg-6">
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">{HEADING_GENERAL_SETTINGS}</h3>
-                    </div>
-                    <div class="panel-body">
+                <div class="card">
+                    <h4 class="card-header">
+                        {HEADING_GENERAL_SETTINGS}
+                    </h4>
+                    <div class="card-body">
 
                         <div class="form-group">
                             <label for="inputWebsiteTitle" class="col-sm-4 control-label">{TEXT_WEBSITE_TITLE}</label>
@@ -250,18 +250,18 @@
                         <div class="form-group">
                             <div class="col-sm-offset-4 col-sm-8">
                                 <button type="submit" name="submit" class="btn btn-primary"><i class="fa fa-fw fa-floppy-o"></i> {TEXT_SAVE}</button>
-                                <a href="{ADVANCED_LINK}" class="btn btn-default pull-right {DISPLAY_ADVANCED_BUTTON}" title="{MODE_SWITCH_WARNING}">{ADVANCED_BUTTON}</a>
+                                <a href="{ADVANCED_LINK}" class="btn btn-outline-light pull-right {DISPLAY_ADVANCED_BUTTON}" title="{MODE_SWITCH_WARNING}">{ADVANCED_BUTTON}</a>
                             </div>
                         </div>
 
-                    </div><!-- /.panel-body -->
-                </div><!-- /.panel.panel-default -->
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">{HEADING_DEFAULT_SETTINGS}</h3>
                     </div>
-                    <div class="panel-body">
+                </div>
+
+                <div class="card">
+                    <h4 class="card-header">
+                        {HEADING_DEFAULT_SETTINGS}
+                    </h4>
+                    <div class="card-body">
 
                         <div class="form-group">
                             <label for="selectDefaultLanguage" class="col-sm-4 control-label">{TEXT_LANGUAGE}</label>
@@ -355,21 +355,21 @@
                         <div class="form-group">
                             <div class="col-sm-offset-4 col-sm-8">
                                 <button type="submit" name="submit" class="btn btn-primary"><i class="fa fa-fw fa-floppy-o"></i> {TEXT_SAVE}</button>
-                                <a href="{ADVANCED_LINK}" class="btn btn-default pull-right {DISPLAY_ADVANCED_BUTTON}" title="{MODE_SWITCH_WARNING}">{ADVANCED_BUTTON}</a>
+                                <a href="{ADVANCED_LINK}" class="btn btn-outline-light pull-right {DISPLAY_ADVANCED_BUTTON}" title="{MODE_SWITCH_WARNING}">{ADVANCED_BUTTON}</a>
                             </div>
                         </div>
 
-                    </div><!-- /.panel-body -->
-                </div><!-- /.panel.panel-default -->
+                    </div>
+                </div>
 
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-6">
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">{HEADING_SEARCH_SETTINGS}</h3>
-                    </div>
-                    <div class="panel-body">
+                <div class="card">
+                    <h4 class="card-header">
+                        {HEADING_SEARCH_SETTINGS}
+                    </h4>
+                    <div class="card-body">
 
                         <div class="form-group">
                             <label for="selectVisibility" class="col-sm-4 control-label">{TEXT_VISIBILITY}</label>
@@ -468,18 +468,18 @@
                         <div class="form-group">
                             <div class="col-sm-offset-4 col-sm-8">
                                 <button type="submit" name="submit" class="btn btn-primary"><i class="fa fa-fw fa-floppy-o"></i> {TEXT_SAVE}</button>
-                                <a href="{ADVANCED_LINK}" class="btn btn-default pull-right {DISPLAY_ADVANCED_BUTTON}" title="{MODE_SWITCH_WARNING}">{ADVANCED_BUTTON}</a>
+                                <a href="{ADVANCED_LINK}" class="btn btn-outline-light pull-right {DISPLAY_ADVANCED_BUTTON}" title="{MODE_SWITCH_WARNING}">{ADVANCED_BUTTON}</a>
                             </div>
                         </div>
 
-                    </div><!-- /.panel-body -->
-                </div><!-- /.panel.panel-default -->
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">{HEADING_SERVER_SETTINGS}</h3>
                     </div>
-                    <div class="panel-body">
+                </div>
+
+                <div class="card">
+                    <h4 class="card-header">
+                        {HEADING_SERVER_SETTINGS}
+                    </h4>
+                    <div class="card-body">
 
                         <div class="form-group" id="radiosOperationSystem">
                             <label class="col-sm-4 control-label">{TEXT_SERVER_OPERATING_SYSTEM}</label>
@@ -705,18 +705,18 @@
                         <div class="form-group">
                             <div class="col-sm-offset-4 col-sm-8">
                                 <button type="submit" name="submit" class="btn btn-primary"><i class="fa fa-fw fa-floppy-o"></i> {TEXT_SAVE}</button>
-                                <a href="{ADVANCED_LINK}" class="btn btn-default pull-right {DISPLAY_ADVANCED_BUTTON}" title="{MODE_SWITCH_WARNING}">{ADVANCED_BUTTON}</a>
+                                <a href="{ADVANCED_LINK}" class="btn btn-outline-light pull-right {DISPLAY_ADVANCED_BUTTON}" title="{MODE_SWITCH_WARNING}">{ADVANCED_BUTTON}</a>
                             </div>
                         </div>
 
-                    </div><!-- /.panel-body -->
-                </div><!-- /.panel.panel-default -->
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">{HEADING_WBMAILER_SETTINGS}</h3>
                     </div>
-                    <div class="panel-body">
+                </div>
+
+                <div class="card">
+                    <h4 class="card-header">
+                        {HEADING_WBMAILER_SETTINGS}
+                    </h4>
+                    <div class="card-body">
 
                         <!--<p>{TEXT_WBMAILER_DEFAULT_SETTINGS_NOTICE}</p>-->
 
@@ -785,12 +785,12 @@
                         <div class="form-group">
                             <div class="col-sm-offset-4 col-sm-8">
                                 <button type="submit" name="submit" class="btn btn-primary"><i class="fa fa-fw fa-floppy-o"></i> {TEXT_SAVE}</button>
-                                <a href="{ADVANCED_LINK}" class="btn btn-default pull-right {DISPLAY_ADVANCED_BUTTON}" title="{MODE_SWITCH_WARNING}">{ADVANCED_BUTTON}</a>
+                                <a href="{ADVANCED_LINK}" class="btn btn-outline-light pull-right {DISPLAY_ADVANCED_BUTTON}" title="{MODE_SWITCH_WARNING}">{ADVANCED_BUTTON}</a>
                             </div>
                         </div>
 
-                    </div><!-- /.panel-body -->
-                </div><!-- /.panel.panel-default -->
+                    </div>
+                </div>
 
             </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->

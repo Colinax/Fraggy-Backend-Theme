@@ -20,11 +20,11 @@
     <div class="row">
         <div class="col-lg-6">
 
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">{HEADING_MODIFY_DELETE_USER}</h3>
-                </div>
-                <div class="panel-body">
+            <div class="card">
+                <h4 class="card-header">
+                    {HEADING_MODIFY_DELETE_USER}
+                </h4>
+                <div class="card-body">
 
                     <form name="users" action="users.php" method="post">
                         <input type="hidden" name="userstatus" value="{USER_STATUS}" />
@@ -46,8 +46,8 @@
                         <a href="index.php?status={USER_STATUS}" title="{TEXT_USERS}">{USERTYPE}</a>
                     </form>
 
-                </div><!-- /.panel-body -->
-            </div><!-- /.panel.panel-default -->
+                </div>
+            </div>
 
         </div><!-- /.col-lg-6 -->
         <div class="col-lg-6">
@@ -62,15 +62,15 @@
     // Output fixes
     $(function () {
         var $row = $('#accessPage').nextAll('.row'),
-                $panel = $row.find('.panel');
+                $card = $row.find('.card');
 
         $row.hide();
 
-        $panel.find('.panel-title').html('{HEADING_ADD_USER}');
-        $panel.find('.cancel-btn').hide();
-        $panel.find('.submit-btn i').removeClass('fa-floppy-o').addClass('fa-plus');
+        $card.find('.card-header').html('{HEADING_ADD_USER}');
+        $card.find('.cancel-btn').hide();
+        $card.find('.submit-btn i').removeClass('fa-floppy-o').addClass('fa-plus');
 
-        $('#accessPage .row .col-lg-6:last').append($panel);
+        $('#accessPage .row .col-lg-6:last').append($card);
 
         $(window).trigger('resize');
     });

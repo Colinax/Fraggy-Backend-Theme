@@ -8,7 +8,7 @@ if (count(get_included_files()) == 1) {
     <div class="row">
         <?php foreach ($myTools as $tool) { ?>
             <div class="col-md-6 col-lg-4">
-                <div class="panel panel-primary">
+                <div class="card">
                     <div class="panel-heading">
                         <div class="row">
                             <div class="col-xs-4 col-lg-3">

@@ -25,13 +25,11 @@
     <div class="row">
         <div class="col-lg-8">
 
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        {HEADING_MANAGE_SECTIONS}
-                    </h3>
-                </div>
-                <div class="panel-body">
+            <div class="card">
+                <h4 class="card-header">
+                    {HEADING_MANAGE_SECTIONS}
+                </h4>
+                <div class="card-body">
                     <h4>{TEXT_CURRENT_PAGE}: {PAGE_TITLE}</h4>
                     <ul class="list-inline">
                         <li>ID: {PAGE_ID}</li>
@@ -109,19 +107,17 @@
 
                     </form>
 
-                </div><!-- /.panel-body -->
-            </div><!-- /.panel.panel-default -->
+                </div>
+            </div>
 
         </div><!-- /.col-lg-8 -->
         <div class="col-lg-4">
 
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        {TEXT_ADD_SECTION}
-                    </h3>
-                </div>
-                <div class="panel-body">
+            <div class="card">
+                <h4 class="card-header">
+                    {TEXT_ADD_SECTION}
+                </h4>
+                <div class="card-body">
 
                     <form name="add" action="{ADMIN_URL}/pages/sections.php?page_id={PAGE_IDKEY}" method="post">
                         <input type="hidden" name="page_id" value="{PAGE_IDKEY}"  />
@@ -137,8 +133,8 @@
                         <button class="btn btn-primary" name="submit" type="submit"><i class="fa fa-fw fa-plus"></i> {TEXT_ADD}</button>
                     </form>
 
-                </div><!-- /.panel-body -->
-            </div><!-- /.panel.panel-default -->
+                </div>
+            </div>
 
         </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
