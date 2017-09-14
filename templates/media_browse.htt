@@ -20,30 +20,24 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <script>
-            var stylesheetUrl = '{THEME_URL}/css/green.min.css?v2.0.0-alpha1';
-            if (localStorage.getItem('stylesheetUrl')) {
-                stylesheetUrl = localStorage.getItem('stylesheetUrl');
-            }
-            document.write('<link id="switchable" href="' + stylesheetUrl + '" rel="stylesheet" type="text/css" />');
-        </script>
+        <link id="switchable" href="{THEME_URL}/css/style.css?v2.0.0-alpha1" rel="stylesheet" type="text/css" />
 
-        <noscript>
-        <link id="switchable" href="{THEME_URL}/css/green.min.css?v2.0.0-alpha1" rel="stylesheet" type="text/css" />
-        </noscript>
+        <!-- WebsiteBaker CSS -->
+        {BACKEND_MODULE_CSS}
 
         <!-- Initiliaze vars -->
         <script>
             var WB_URL = '{WB_URL}',
                     THEME_URL = '{THEME_URL}',
-                    ADMIN_URL = '{ADMIN_URL}';
+                    ADMIN_URL = '{ADMIN_URL}',
+                    LANGUAGE_CODE = '{LANGUAGE}';
         </script>
 
         <!-- Theme jQuery -->
         <script src="{THEME_URL}/js/jquery.min.js?v2.0.0-alpha1"></script>
 
         <!-- WBCE helper JavaScript -->
-        <script src="../../include/jquery/jquery-insert.js"></script>
+        <script src="{WB_URL}/include/jquery/jquery-insert.js"></script>
         <script>
             function confirm_link(message, url) {
                 if (confirm(message))
@@ -52,7 +46,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.min.js?v2.0.0-alpha1"></script>
+        <script src="{THEME_URL}/js/script.js?v2.0.0-alpha1"></script>
 
     </head>
     <body id="mediaBrowsePage">

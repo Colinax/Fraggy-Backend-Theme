@@ -95,7 +95,7 @@
                 </div>
                 <hr />
                 <!-- BEGIN list_block -->
-                <div class="form-group">
+                <div class="form-group row">
                     <label class="col-sm-4 control-label">{PATH_NAME}</label>
                     <label class="col-sm-2 control-label">{WIDTH}</label>
                     <div class="col-sm-2">
@@ -113,8 +113,8 @@
                     </div>
                 </div>
                 <!-- END list_block -->
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
+                <div class="form-group row">
+                    <div class="offset-sm-2 col-sm-10">
                         <button class="btn btn-primary" type="submit" name="save"><i class="fa fa-fw fa-floppy-o"></i> {SAVE_TEXT}</button>
                         <a href="browse.php" class="btn btn-outline-light">
                             <i class="fa fa-fw fa-arrow-circle-left"></i> {BACK}

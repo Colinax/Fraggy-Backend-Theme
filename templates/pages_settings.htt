@@ -48,21 +48,21 @@
                 <div class="row">
                     <div class="col-lg-6">
 
-                        <div class="form-group">
+                        <div class="form-group row">
                             <label for="inputPageTitle" class="col-sm-3 control-label">{TEXT_PAGE_TITLE}</label>
                             <div class="col-sm-9">
                                 <input value="{PAGE_TITLE}" type="text" name="page_title" id="inputPageTitle" class="form-control" />
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group row">
                             <label for="inputMenuTitle" class="col-sm-3 control-label">{TEXT_MENU_TITLE}</label>
                             <div class="col-sm-9">
                                 <input value="{MENU_TITLE}" type="text" name="menu_title" id="inputMenuTitle" class="form-control" />
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group row">
                             <label for="inputFilename" class="col-sm-3 control-label">{TEXT_FILENAME}</label>
                             <div class="col-sm-9">
                                 <div class="input-group">
@@ -72,7 +72,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group row">
                             <label for="selectParent" class="col-sm-3 control-label">{TEXT_PARENT}</label>
                             <div class="col-sm-9">
                                 <select name="parent" id="selectParent" class="form-controll">
@@ -83,21 +83,21 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group row">
                             <label for="textareaDescription" class="col-sm-3 control-label">{TEXT_DESCRIPTION}</label>
                             <div class="col-sm-9">
                                 <textarea id="textareaDescription" name="description" rows="2" class="form-control vresize">{DESCRIPTION}</textarea>
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group row">
                             <label for="textareaKeywords" class="col-sm-3 control-label">{TEXT_KEYWORDS}</label>
                             <div class="col-sm-9">
                                 <textarea id="textareaKeywords" name="keywords" rows="2" class="form-control vresize">{KEYWORDS}</textarea>
                             </div>
                         </div>
 
-                        <div class="form-group" style="{DISPLAY_LANGUAGE_LIST}">
+                        <div class="form-group row" style="{DISPLAY_LANGUAGE_LIST}">
                             <label for="selectLanguage" class="col-sm-3 control-label">{TEXT_LANGUAGE}</label>
                             <div class="col-sm-9">
                                 <select name="language" id="selectLanguage">
@@ -109,7 +109,7 @@
                         </div>
 
                         <div class="form-group visible-lg">
-                            <div class="col-sm-offset-3 col-sm-9">
+                            <div class="offset-sm-3 col-sm-9">
                                 <button type="submit" name="save" class="btn btn-primary"><i class="fa fa-fw fa-floppy-o"></i> {TEXT_SAVE} {SECTION_SETTINGS}</button>
                             </div>
                         </div>
@@ -118,7 +118,7 @@
                     </div><!-- /.col-lg-6 -->
                     <div class="col-lg-6">
 
-                        <div class="form-group">
+                        <div class="form-group row">
                             <label for="selectTarget" class="col-sm-3 control-label">{TEXT_TARGET}</label>
                             <div class="col-sm-9">
                                 <select name="target" id="selectTarget">
@@ -129,7 +129,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group row">
                             <label for="selectTemplate" class="col-sm-3 control-label">{TEXT_TEMPLATE}</label>
                             <div class="col-sm-9">
                                 <select name="template" id="selectTemplate">
@@ -142,7 +142,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group" style="{DISPLAY_MENU_LIST}">
+                        <div class="form-group row" style="{DISPLAY_MENU_LIST}">
                             <label for="selectMenu" class="col-sm-3 control-label">{TEXT_MENU}</label>
                             <div class="col-sm-9">
                                 <select name="menu" id="selectMenu">
@@ -154,7 +154,7 @@
                         </div>
 
 
-                        <div class="form-group">
+                        <div class="form-group row">
                             <label for="selectSearch" class="col-sm-3 control-label">{TEXT_SEARCHING}</label>
                             <div class="col-sm-9">
                                 <select id="selectSearch" name="searching">
@@ -164,7 +164,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group row">
                             <label for="selectVisibility" class="col-sm-3 control-label">{TEXT_VISIBILITY}</label>
                             <div class="col-sm-9">
                                 <select name="visibility" id="selectVisibility" onchange="javascript: toggleViewers();" class="form-control">
@@ -177,7 +177,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group row">
                             <label class="col-sm-3 control-label">{TEXT_ADMINISTRATORS}</label>
                             <div class="col-sm-9">
                                 <!-- BEGIN group_list_block -->
@@ -190,7 +190,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group" id="allowed_viewers" style="{DISPLAY_VIEWERS}">
+                        <div class="form-group row" id="allowed_viewers" style="{DISPLAY_VIEWERS}">
                             <label class="col-sm-3 control-label">{TEXT_ALLOWED_VIEWERS}</label>
                             <div class="col-sm-9">
                                 <!-- BEGIN group_list_block2 -->
@@ -203,7 +203,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group" {DISPLAY_CODE_PAGE_LIST}>
+                        <div class="form-group row" {DISPLAY_CODE_PAGE_LIST}>
                             <label for="selectPageCode" class="col-sm-3 control-label">{TEXT_PAGE_CODE}</label>
                             <div class="col-sm-9">
                                 <select name="page_code" id="selectPageCode">
@@ -215,7 +215,7 @@
                         </div>
 
                         <div class="form-group hidden-lg">
-                            <div class="col-sm-offset-3 col-sm-9">
+                            <div class="offset-sm-3 col-sm-9">
                                 <button type="submit" name="submit" class="btn btn-primary"><i class="fa fa-fw fa-floppy-o"></i> {TEXT_SAVE} {SECTION_SETTINGS}</button>
                             </div>
                         </div>

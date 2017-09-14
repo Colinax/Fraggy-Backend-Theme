@@ -39,7 +39,7 @@
         margin: 20px 0;
     }
 
-    #pageListPanel {
+    #pageListCard {
 
         #pageListHeader {
             border: 0;
@@ -76,7 +76,7 @@
                     padding: 4px 8px;
 
                     &.toggle {
-                        width: 80px;
+                        width: 100px;
                         padding-left: 40px;
                     }
                 }
@@ -129,5 +129,9 @@
         img {
             max-height: 80px;
         }
+    }
+
+    .hide {
+        display: none;
     }
 }

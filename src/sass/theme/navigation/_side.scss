@@ -141,8 +141,8 @@
         line-height: ($sidenav-base-height - ($navbar-padding-y * 2));
 
         .brand {
-            > span {
-                display: none;
+            img {
+                height: ($sidenav-base-height - ($navbar-padding-y * 2));
             }
         }
     }
@@ -157,8 +157,6 @@
             }
         }
     }
-
-
 
     @include media-breakpoint-up(lg) {
         margin-top: 0;
@@ -195,6 +193,12 @@
             background: $sidenav-content-bg;
             margin-top: $spacer;
 
+            a {
+                &, &:hover, &:active {
+                    color: $white;
+                }
+            }
+
             :last-child {
                 margin-bottom: 0;
             }
@@ -207,8 +211,9 @@
             line-height: inherit;
 
             .brand {
-                > span {
-                    display: block;
+                img {
+                    height: auto;
+                    max-height: 64px;
                 }
             }
         }

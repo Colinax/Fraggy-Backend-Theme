@@ -9560,6 +9560,7 @@ body.prepage #content {
 }
 .brand img {
   margin: auto;
+  height: auto;
 }
 .brand > span {
   padding: 0.5rem 0 0;
@@ -9766,44 +9767,44 @@ table.footable-details > tbody > tr > th:nth-child(1) {
 #pagesPage .section-info {
   margin: 20px 0;
 }
-#pagesPage #pageListPanel #pageListHeader {
+#pagesPage #pageListCard #pageListHeader {
   border: 0;
 }
-#pagesPage #pageListPanel table {
+#pagesPage #pageListCard table {
   margin: 0;
 }
-#pagesPage #pageListPanel table td, #pagesPage #pageListPanel table th {
+#pagesPage #pageListCard table td, #pagesPage #pageListCard table th {
   vertical-align: middle;
   width: 40px;
   text-align: center;
 }
-#pagesPage #pageListPanel table td.title, #pagesPage #pageListPanel table th.title {
+#pagesPage #pageListCard table td.title, #pagesPage #pageListCard table th.title {
   width: auto;
   max-width: 50%;
   text-align: left;
 }
-#pagesPage #pageListPanel table td.modify, #pagesPage #pageListPanel table td.id, #pagesPage #pageListPanel table th.modify, #pagesPage #pageListPanel table th.id {
+#pagesPage #pageListCard table td.modify, #pagesPage #pageListCard table td.id, #pagesPage #pageListCard table th.modify, #pagesPage #pageListCard table th.id {
   width: 100px;
 }
-#pagesPage #pageListPanel table td.modify, #pagesPage #pageListPanel table th.modify {
+#pagesPage #pageListCard table td.modify, #pagesPage #pageListCard table th.modify {
   text-align: left;
 }
-#pagesPage #pageListPanel ul ul td {
+#pagesPage #pageListCard ul ul td {
   padding: 4px 8px;
 }
-#pagesPage #pageListPanel ul ul td.toggle {
-  width: 80px;
+#pagesPage #pageListCard ul ul td.toggle {
+  width: 100px;
   padding-left: 40px;
 }
-#pagesPage #pageListPanel ul ul ul td.toggle {
+#pagesPage #pageListCard ul ul ul td.toggle {
   width: 120px;
   padding-left: 80px;
 }
-#pagesPage #pageListPanel ul ul ul ul td.toggle {
+#pagesPage #pageListCard ul ul ul ul td.toggle {
   width: 160px;
   padding-left: 120px;
 }
-#pagesPage #pageListPanel ul ul ul ul ul td.toggle {
+#pagesPage #pageListCard ul ul ul ul ul td.toggle {
   width: 200px;
   padding-left: 160px;
 }
@@ -9818,6 +9819,9 @@ table.footable-details > tbody > tr > th:nth-child(1) {
 }
 #mediaBrowsePage .thumb img {
   max-height: 80px;
+}
+#mediaBrowsePage .hide {
+  display: none;
 }
 #topNavigation {
   height: 2.5rem;
@@ -9956,8 +9960,8 @@ table.footable-details > tbody > tr > th:nth-child(1) {
   height: 3rem;
   line-height: 3rem;
 }
-#sideNavigation .sidenav-brand .brand > span {
-  display: none;
+#sideNavigation .sidenav-brand .brand img {
+  height: 3rem;
 }
 #sideNavigation .sidenav-toggle-btn {
   display: none;
@@ -12766,6 +12770,9 @@ legend {
     background: #353c48;
     margin-top: 1rem;
   }
+  #sideNavigation .sidenav-content a, #sideNavigation .sidenav-content a:hover, #sideNavigation .sidenav-content a:active {
+    color: #fff;
+  }
   #sideNavigation .sidenav-content :last-child {
     margin-bottom: 0;
   }
@@ -12775,8 +12782,9 @@ legend {
     height: auto;
     line-height: inherit;
   }
-  #sideNavigation .sidenav-brand .brand > span {
-    display: block;
+  #sideNavigation .sidenav-brand .brand img {
+    height: auto;
+    max-height: 64px;
   }
   #sideNavigation .navbar-collapse {
     overflow: visible;
