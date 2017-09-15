@@ -20,41 +20,20 @@
         <link href="../../templates/fraggy-backend-theme/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <script>
-            var stylesheetUrl = '../../templates/fraggy-backend-theme/css/green.min.css?v2.0.0-alpha1';
-            if (localStorage.getItem('stylesheetUrl')) {
-                stylesheetUrl = localStorage.getItem('stylesheetUrl');
-            }
-            document.write('<link id="switchable" href="' + stylesheetUrl + '" rel="stylesheet" type="text/css" />');
-        </script>
-
-        <noscript>
-        <link id="switchable" href="../../templates/fraggy-backend-theme/css/green.min.css?v2.0.0-alpha1" rel="stylesheet" type="text/css" />
-        </noscript>
-
-        <!-- Custom CSS -->
-        <style type="text/css">
-            body {
-                min-height: fit-content;
-            }
-
-            .hide {
-                display: none;
-            }
-        </style>
+        <link href="../../templates/fraggy-backend-theme/css/style.css?v2.0.0-alpha1" rel="stylesheet" type="text/css" />
 
         <!-- Initiliaze vars -->
         <script>
             var WB_URL = '../..',
                     THEME_URL = '../../templates/fraggy-backend-theme',
-                    ADMIN_URL = '{ADMIN_URL}';
+                    ADMIN_URL = '{ADMIN_URL}',
+                    LANGUAGE_CODE = navigator.language || navigator.userLanguage;
         </script>
 
         <!-- Theme jQuery -->
         <script src="../../templates/fraggy-backend-theme/js/jquery.min.js?v2.0.0-alpha1"></script>
 
         <!-- WBCE helper JavaScript -->
-        <script src="../../include/jquery/jquery-insert.js"></script>
         <script>
             function confirm_link(message, url) {
                 if (confirm(message))
@@ -63,7 +42,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="../../templates/fraggy-backend-theme/js/script.min.js?v2.0.0-alpha1"></script>
+        <script src="../../templates/fraggy-backend-theme/js/script.js?v2.0.0-alpha1"></script>
 
     </head>
     <body id="setParameterPage">
@@ -79,7 +58,7 @@
                 {FTAN}
 
                 <div class="form-group {DISPLAY_ADMIN}">
-                    <label class="col-sm-2 control-label">{SETTINGS}</label>
+                    <label class="col-sm-2 col-form-label">{SETTINGS}</label>
                     <div class="col-sm-10">
                         <div class="checkbox">
                             <label>
@@ -96,15 +75,15 @@
                 <hr />
                 <!-- BEGIN list_block -->
                 <div class="form-group row">
-                    <label class="col-sm-4 control-label">{PATH_NAME}</label>
-                    <label class="col-sm-2 control-label">{WIDTH}</label>
+                    <label class="col-sm-4 col-form-label">{PATH_NAME}</label>
+                    <label class="col-sm-2 col-form-label">{WIDTH}</label>
                     <div class="col-sm-2">
                         <div class="input-group">
                             <input size="5" type="text" class="form-control" name="{FIELD_NAME_W}" value="{CUR_WIDTH}">
                             <div class="input-group-addon">px</div>
                         </div>
                     </div>
-                    <label class="col-sm-2 control-label">{HEIGHT}</label>
+                    <label class="col-sm-2 col-form-label">{HEIGHT}</label>
                     <div class="col-sm-2">
                         <div class="input-group">
                             <input size="5" type="text" class="form-control" name="{FIELD_NAME_H}" value="{CUR_HEIGHT}">
@@ -113,13 +92,11 @@
                     </div>
                 </div>
                 <!-- END list_block -->
-                <div class="form-group row">
-                    <div class="offset-sm-2 col-sm-10">
-                        <button class="btn btn-primary" type="submit" name="save"><i class="fa fa-fw fa-floppy-o"></i> {SAVE_TEXT}</button>
-                        <a href="browse.php" class="btn btn-outline-light">
-                            <i class="fa fa-fw fa-arrow-circle-left"></i> {BACK}
-                        </a>
-                    </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit" name="save"><i class="fa fa-fw fa-floppy-o"></i> {SAVE_TEXT}</button>
+                    <a href="browse.php" class="btn btn-outline-light">
+                        <i class="fa fa-fw fa-arrow-circle-left"></i> {BACK}
+                    </a>
                 </div>
             </form>
 

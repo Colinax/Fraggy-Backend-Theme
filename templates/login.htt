@@ -21,7 +21,7 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link id="switchable" href="{THEME_URL}/css/style.css?v2.0.0-alpha1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/css/style.css?v2.0.0-alpha1" rel="stylesheet" type="text/css" />
 
         <!-- WebsiteBaker CSS -->
         {BACKEND_MODULE_CSS}
@@ -38,7 +38,6 @@
         <script src="{THEME_URL}/js/jquery.min.js?v2.0.0-alpha1"></script>
 
         <!-- WBCE helper JavaScript -->
-        <script src="{WB_URL}/include/jquery/jquery-insert.js"></script>
         <script>
             function confirm_link(message, url) {
                 if (confirm(message))
@@ -62,11 +61,9 @@
                     <div class="row">
                         <div class="col-md-6 mx-md-auto col-lg-4">
                             <header id="prepageHeader">
-
                                 <span class="brand">
-                                    <img src="{WB_URL}/media/backend-theme-logo.png" class="img-fluid" onerror="this.onerror=null;this.src='{THEME_URL}/images/theme-logo.png';" alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" />
+                                    <img src="{THEME_URL}/images/theme-logo.png" class="img-fluid" alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" />
                                 </span>
-
                             </header>
                         </div>
                     </div>

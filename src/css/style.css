@@ -3080,7 +3080,7 @@
   content: "";
 }
 
-.sr-only {
+.sr-only, .bootstrap-datetimepicker-widget .btn[data-action="incrementHours"]::after, .bootstrap-datetimepicker-widget .btn[data-action="incrementMinutes"]::after, .bootstrap-datetimepicker-widget .btn[data-action="decrementHours"]::after, .bootstrap-datetimepicker-widget .btn[data-action="decrementMinutes"]::after, .bootstrap-datetimepicker-widget .btn[data-action="showHours"]::after, .bootstrap-datetimepicker-widget .btn[data-action="showMinutes"]::after, .bootstrap-datetimepicker-widget .btn[data-action="togglePeriod"]::after, .bootstrap-datetimepicker-widget .btn[data-action="clear"]::after, .bootstrap-datetimepicker-widget .btn[data-action="today"]::after, .bootstrap-datetimepicker-widget .picker-switch::after, .bootstrap-datetimepicker-widget table th.prev::after, .bootstrap-datetimepicker-widget table th.next::after {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -5411,8 +5411,8 @@ table {
 }
 
 caption {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.65rem 0.75rem;
+  padding-bottom: 0.65rem 0.75rem;
   color: #79798c;
   text-align: left;
   caption-side: bottom;
@@ -6526,7 +6526,7 @@ pre code {
 
 .table th,
 .table td {
-  padding: 0.75rem;
+  padding: 0.65rem 0.75rem;
   vertical-align: top;
   border-top: 1px solid #e7e7ea;
 }
@@ -7659,7 +7659,7 @@ fieldset[disabled] a.btn {
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.2;
   border-radius: 0;
 }
 
@@ -9052,7 +9052,7 @@ tbody.collapse.show {
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .pagination-sm .page-item:first-child .page-link {
@@ -11237,7 +11237,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   }
 }
 
-.sr-only {
+.sr-only, .bootstrap-datetimepicker-widget .btn[data-action="incrementHours"]::after, .bootstrap-datetimepicker-widget .btn[data-action="incrementMinutes"]::after, .bootstrap-datetimepicker-widget .btn[data-action="decrementHours"]::after, .bootstrap-datetimepicker-widget .btn[data-action="decrementMinutes"]::after, .bootstrap-datetimepicker-widget .btn[data-action="showHours"]::after, .bootstrap-datetimepicker-widget .btn[data-action="showMinutes"]::after, .bootstrap-datetimepicker-widget .btn[data-action="togglePeriod"]::after, .bootstrap-datetimepicker-widget .btn[data-action="clear"]::after, .bootstrap-datetimepicker-widget .btn[data-action="today"]::after, .bootstrap-datetimepicker-widget .picker-switch::after, .bootstrap-datetimepicker-widget table th.prev::after, .bootstrap-datetimepicker-widget table th.next::after {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -13900,396 +13900,306 @@ a.text-dark:focus, a.text-dark:hover {
   }
 }
 
-
-table.footable,
-table.footable-details {
-  position: relative;
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
+.bootstrap-datetimepicker-widget {
+  list-style: none;
 }
 
-table.footable-details {
-  margin-bottom: 0;
-}
-
-table.footable-hide-fouc {
-  display: none;
-}
-
-table > tbody > tr > td > span.footable-toggle {
-  margin-right: 8px;
-  opacity: 0.3;
-}
-
-table > tbody > tr > td > span.footable-toggle.last-column {
-  margin-left: 8px;
-  float: right;
-}
-
-table.table-condensed > tbody > tr > td > span.footable-toggle {
-  margin-right: 5px;
-}
-
-table.footable-details > tbody > tr > th:nth-child(1) {
-  min-width: 40px;
-  width: 120px;
-}
-
-table.footable-details > tbody > tr > td:nth-child(2) {
-  word-break: break-all;
-}
-
-table.footable-details > thead > tr:first-child > th,
-table.footable-details > thead > tr:first-child > td,
-table.footable-details > tbody > tr:first-child > th,
-table.footable-details > tbody > tr:first-child > td,
-table.footable-details > tfoot > tr:first-child > th,
-table.footable-details > tfoot > tr:first-child > td {
-  border-top-width: 0;
-}
-
-table.footable-details.table-bordered > thead > tr:first-child > th,
-table.footable-details.table-bordered > thead > tr:first-child > td,
-table.footable-details.table-bordered > tbody > tr:first-child > th,
-table.footable-details.table-bordered > tbody > tr:first-child > td,
-table.footable-details.table-bordered > tfoot > tr:first-child > th,
-table.footable-details.table-bordered > tfoot > tr:first-child > td {
-  border-top-width: 1px;
-}
-
-div.footable-loader {
-  vertical-align: middle;
-  text-align: center;
-  height: 300px;
-  position: relative;
-}
-
-div.footable-loader > span.fooicon {
-  display: inline-block;
-  opacity: 0.3;
-  font-size: 30px;
-  line-height: 32px;
-  width: 32px;
-  height: 32px;
-  margin-top: -16px;
-  margin-left: -16px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-animation: fooicon-spin-r 2s infinite linear;
-  animation: fooicon-spin-r 2s infinite linear;
-}
-
-table.footable > tbody > tr.footable-empty > td {
-  vertical-align: middle;
-  text-align: center;
-  font-size: 30px;
-}
-
-table.footable > tbody > tr > td,
-table.footable > tbody > tr > th {
-  display: none;
-}
-
-table.footable > tbody > tr.footable-empty > td,
-table.footable > tbody > tr.footable-empty > th,
-table.footable > tbody > tr.footable-detail-row > td,
-table.footable > tbody > tr.footable-detail-row > th {
-  display: table-cell;
-}
-
-@-webkit-keyframes fooicon-spin-r {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-
-@keyframes fooicon-spin-r {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-
-.fooicon {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-family: 'Glyphicons Halflings' !important;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.fooicon:before,
-.fooicon:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.fooicon-loader:before {
-  content: "\e030";
-}
-
-.fooicon-plus:before {
-  content: "\2b";
-}
-
-.fooicon-minus:before {
-  content: "\2212";
-}
-
-.fooicon-search:before {
-  content: "\e003";
-}
-
-.fooicon-remove:before {
-  content: "\e014";
-}
-
-.fooicon-sort:before {
-  content: "\e150";
-}
-
-.fooicon-sort-asc:before {
-  content: "\e155";
-}
-
-.fooicon-sort-desc:before {
-  content: "\e156";
-}
-
-.fooicon-pencil:before {
-  content: "\270f";
-}
-
-.fooicon-trash:before {
-  content: "\e020";
-}
-
-.fooicon-eye-close:before {
-  content: "\e106";
-}
-
-.fooicon-flash:before {
-  content: "\e162";
-}
-
-.fooicon-cog:before {
-  content: "\e019";
-}
-
-.fooicon-stats:before {
-  content: "\e185";
-}
-
-table.footable > thead > tr.footable-filtering > th {
-  border-bottom-width: 1px;
-  font-weight: normal;
-}
-
-.footable-filtering-external.footable-filtering-right,
-table.footable > thead > tr.footable-filtering > th,
-table.footable.footable-filtering-right > thead > tr.footable-filtering > th {
-  text-align: right;
-}
-
-.footable-filtering-external.footable-filtering-left,
-table.footable.footable-filtering-left > thead > tr.footable-filtering > th {
-  text-align: left;
-}
-
-.footable-filtering-external.footable-filtering-center,
-table.footable.footable-filtering-center > thead > tr.footable-filtering > th {
-  text-align: center;
-}
-
-table.footable > thead > tr.footable-filtering > th div.form-group {
-  margin-bottom: 0;
-}
-
-table.footable > thead > tr.footable-filtering > th div.form-group + div.form-group {
-  margin-top: 5px;
-}
-
-table.footable > thead > tr.footable-filtering > th div.input-group {
-  width: 100%;
-}
-
-.footable-filtering-external ul.dropdown-menu > li > a.checkbox,
-table.footable > thead > tr.footable-filtering > th ul.dropdown-menu > li > a.checkbox {
-  margin: 0;
+.bootstrap-datetimepicker-widget.dropdown-menu {
   display: block;
-  position: relative;
+  margin: 2px 0;
+  padding: 4px;
+  width: 12.8vw;
 }
 
-.footable-filtering-external ul.dropdown-menu > li > a.checkbox > label,
-table.footable > thead > tr.footable-filtering > th ul.dropdown-menu > li > a.checkbox > label {
-  display: block;
-  padding-left: 20px;
-}
-
-.footable-filtering-external ul.dropdown-menu > li > a.checkbox input[type="checkbox"],
-table.footable > thead > tr.footable-filtering > th ul.dropdown-menu > li > a.checkbox input[type="checkbox"] {
-  position: absolute;
-  margin-left: -20px;
+@media (min-width: 648px) {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+    width: 38em;
+  }
 }
 
 @media (min-width: 768px) {
-  table.footable > thead > tr.footable-filtering > th div.input-group {
-    width: auto;
-  }
-  table.footable > thead > tr.footable-filtering > th div.form-group {
-    margin-left: 2px;
-    margin-right: 2px;
-  }
-  table.footable > thead > tr.footable-filtering > th div.form-group + div.form-group {
-    margin-top: 0;
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+    width: 38em;
   }
 }
 
-table.footable > thead > tr > td.footable-sortable,
-table.footable > thead > tr > th.footable-sortable,
-table.footable > tbody > tr > td.footable-sortable,
-table.footable > tbody > tr > th.footable-sortable,
-table.footable > tfoot > tr > td.footable-sortable,
-table.footable > tfoot > tr > th.footable-sortable {
-  position: relative;
-  padding-right: 30px;
-  cursor: pointer;
+@media (min-width: 992px) {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+    width: 38em;
+  }
 }
 
-td.footable-sortable > span.fooicon,
-th.footable-sortable > span.fooicon {
-  position: absolute;
-  right: 6px;
-  top: 50%;
-  margin-top: -7px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in;
-}
-
-td.footable-sortable:hover > span.fooicon,
-th.footable-sortable:hover > span.fooicon {
-  opacity: 1;
-}
-
-td.footable-sortable.footable-asc > span.fooicon,
-th.footable-sortable.footable-asc > span.fooicon,
-td.footable-sortable.footable-desc > span.fooicon,
-th.footable-sortable.footable-desc > span.fooicon {
-  opacity: 1;
-}
-
-
-table.footable-sorting-disabled td.footable-sortable.footable-asc > span.fooicon,
-table.footable-sorting-disabled td.footable-sortable.footable-desc > span.fooicon,
-table.footable-sorting-disabled td.footable-sortable:hover > span.fooicon,
-table.footable-sorting-disabled th.footable-sortable.footable-asc > span.fooicon,
-table.footable-sorting-disabled th.footable-sortable.footable-desc > span.fooicon,
-table.footable-sorting-disabled th.footable-sortable:hover > span.fooicon {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.footable-paging-external ul.pagination,
-table.footable > tfoot > tr.footable-paging > td > ul.pagination {
-  margin: 10px 0 0 0;
-}
-
-.footable-paging-external span.label,
-table.footable > tfoot > tr.footable-paging > td > span.label {
+.bootstrap-datetimepicker-widget.dropdown-menu:before, .bootstrap-datetimepicker-widget.dropdown-menu:after {
+  content: '';
   display: inline-block;
-  margin: 0 0 10px 0;
-  padding: 4px 10px;
+  position: absolute;
 }
 
-.footable-paging-external.footable-paging-center,
-table.footable > tfoot > tr.footable-paging > td,
-table.footable-paging-center > tfoot > tr.footable-paging > td {
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom:before {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ccc;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  top: -7px;
+  left: 7px;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom:after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid white;
+  top: -6px;
+  left: 8px;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu.top:before {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #ccc;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  bottom: -7px;
+  left: 6px;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu.top:after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid white;
+  bottom: -6px;
+  left: 7px;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu.float-right:before {
+  left: auto;
+  right: 6px;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu.float-right:after {
+  left: auto;
+  right: 7px;
+}
+
+.bootstrap-datetimepicker-widget .list-unstyled {
+  margin: 0;
+}
+
+.bootstrap-datetimepicker-widget a[data-action] {
+  padding: 6px 0;
+}
+
+.bootstrap-datetimepicker-widget a[data-action]:active {
+  box-shadow: none;
+}
+
+.bootstrap-datetimepicker-widget .timepicker-hour, .bootstrap-datetimepicker-widget .timepicker-minute, .bootstrap-datetimepicker-widget .timepicker-second {
+  width: 54px;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.bootstrap-datetimepicker-widget button[data-action] {
+  padding: 6px;
+}
+
+.bootstrap-datetimepicker-widget .btn[data-action="incrementHours"]::after {
+  content: "Increment Hours";
+}
+
+.bootstrap-datetimepicker-widget .btn[data-action="incrementMinutes"]::after {
+  content: "Increment Minutes";
+}
+
+.bootstrap-datetimepicker-widget .btn[data-action="decrementHours"]::after {
+  content: "Decrement Hours";
+}
+
+.bootstrap-datetimepicker-widget .btn[data-action="decrementMinutes"]::after {
+  content: "Decrement Minutes";
+}
+
+.bootstrap-datetimepicker-widget .btn[data-action="showHours"]::after {
+  content: "Show Hours";
+}
+
+.bootstrap-datetimepicker-widget .btn[data-action="showMinutes"]::after {
+  content: "Show Minutes";
+}
+
+.bootstrap-datetimepicker-widget .btn[data-action="togglePeriod"]::after {
+  content: "Toggle AM/PM";
+}
+
+.bootstrap-datetimepicker-widget .btn[data-action="clear"]::after {
+  content: "Clear the picker";
+}
+
+.bootstrap-datetimepicker-widget .btn[data-action="today"]::after {
+  content: "Set the date to today";
+}
+
+.bootstrap-datetimepicker-widget .picker-switch {
   text-align: center;
 }
 
-.footable-paging-external.footable-paging-left,
-table.footable-paging-left > tfoot > tr.footable-paging > td {
-  text-align: left;
+.bootstrap-datetimepicker-widget .picker-switch::after {
+  content: "Toggle Date and Time Screens";
 }
 
-.footable-paging-external.footable-paging-right,
-table.footable-paging-right > tfoot > tr.footable-paging > td {
-  text-align: right;
+.bootstrap-datetimepicker-widget .picker-switch td {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: auto;
+  line-height: inherit;
 }
 
-ul.pagination > li.footable-page {
-  display: none;
+.bootstrap-datetimepicker-widget .picker-switch td span {
+  line-height: 2.5;
+  height: 2.5em;
+  width: 100%;
 }
 
-ul.pagination > li.footable-page.visible {
-  display: inline;
+.bootstrap-datetimepicker-widget table {
+  width: 100%;
+  margin: 0;
 }
 
-td.footable-editing {
-  width: 90px;
-  max-width: 90px;
+.bootstrap-datetimepicker-widget table td,
+.bootstrap-datetimepicker-widget table th {
+  text-align: center;
+  border-radius: 0;
 }
 
-table.footable-editing-no-edit td.footable-editing,
-table.footable-editing-no-delete td.footable-editing,
-table.footable-editing-no-view td.footable-editing {
-  width: 70px;
-  max-width: 70px;
+.bootstrap-datetimepicker-widget table th {
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
 }
 
-table.footable-editing-no-edit.footable-editing-no-delete td.footable-editing,
-table.footable-editing-no-edit.footable-editing-no-view td.footable-editing,
-table.footable-editing-no-delete.footable-editing-no-view td.footable-editing {
-  width: 50px;
-  max-width: 50px;
+.bootstrap-datetimepicker-widget table th.picker-switch {
+  width: 145px;
 }
 
-table.footable-editing-no-edit.footable-editing-no-delete.footable-editing-no-view td.footable-editing,
-table.footable-editing-no-edit.footable-editing-no-delete.footable-editing-no-view th.footable-editing {
-  width: 0;
-  max-width: 0;
-  display: none !important;
+.bootstrap-datetimepicker-widget table th.disabled, .bootstrap-datetimepicker-widget table th.disabled:hover {
+  background: none;
+  color: #79798c;
+  cursor: not-allowed;
 }
 
-table.footable-editing-right td.footable-editing,
-table.footable-editing-right tr.footable-editing {
-  text-align: right;
+.bootstrap-datetimepicker-widget table th.prev::after {
+  content: "Previous Month";
 }
 
-table.footable-editing-left td.footable-editing,
-table.footable-editing-left tr.footable-editing {
-  text-align: left;
+.bootstrap-datetimepicker-widget table th.next::after {
+  content: "Next Month";
 }
 
-table.footable-editing button.footable-add,
-table.footable-editing button.footable-hide,
-table.footable-editing-show button.footable-show,
-table.footable-editing.footable-editing-always-show button.footable-show,
-table.footable-editing.footable-editing-always-show button.footable-hide,
-table.footable-editing.footable-editing-always-show.footable-editing-no-add tr.footable-editing {
-  display: none;
+.bootstrap-datetimepicker-widget table thead tr:first-child th {
+  cursor: pointer;
 }
 
-table.footable-editing.footable-editing-show button.footable-add,
-table.footable-editing.footable-editing-show button.footable-hide,
-table.footable-editing.footable-editing-always-show button.footable-add {
+.bootstrap-datetimepicker-widget table thead tr:first-child th:hover {
+  background: #e7e7ea;
+}
+
+.bootstrap-datetimepicker-widget table td {
+  height: 54px;
+  line-height: 54px;
+  width: 54px;
+}
+
+.bootstrap-datetimepicker-widget table td.cw {
+  font-size: .8em;
+  height: 20px;
+  line-height: 20px;
+  color: #79798c;
+}
+
+.bootstrap-datetimepicker-widget table td.day {
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+}
+
+.bootstrap-datetimepicker-widget table td.day:hover, .bootstrap-datetimepicker-widget table td.hour:hover, .bootstrap-datetimepicker-widget table td.minute:hover, .bootstrap-datetimepicker-widget table td.second:hover {
+  background: #e7e7ea;
+  cursor: pointer;
+}
+
+.bootstrap-datetimepicker-widget table td.old, .bootstrap-datetimepicker-widget table td.new {
+  color: #79798c;
+}
+
+.bootstrap-datetimepicker-widget table td.today {
+  position: relative;
+}
+
+.bootstrap-datetimepicker-widget table td.today:before {
+  content: '';
   display: inline-block;
+  border: solid transparent;
+  border-width: 0 0 7px 7px;
+  border-bottom-color: #45a246;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+
+.bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
+  background-color: #45a246;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.bootstrap-datetimepicker-widget table td.active.today:before {
+  border-bottom-color: #fff;
+}
+
+.bootstrap-datetimepicker-widget table td.disabled, .bootstrap-datetimepicker-widget table td.disabled:hover {
+  background: none;
+  color: #79798c;
+  cursor: not-allowed;
+}
+
+.bootstrap-datetimepicker-widget table td span {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+  margin: 2px 1.5px;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.bootstrap-datetimepicker-widget table td span:hover {
+  background: #e7e7ea;
+}
+
+.bootstrap-datetimepicker-widget table td span.active {
+  background-color: #45a246;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.bootstrap-datetimepicker-widget table td span.old {
+  color: #79798c;
+}
+
+.bootstrap-datetimepicker-widget table td span.disabled, .bootstrap-datetimepicker-widget table td span.disabled:hover {
+  background: none;
+  color: #79798c;
+  cursor: not-allowed;
+}
+
+.bootstrap-datetimepicker-widget.usetwentyfour td.hour {
+  height: 27px;
+  line-height: 27px;
+}
+
+.input-group.date .input-group-addon {
+  cursor: pointer;
 }
 
 .smaller {
@@ -14315,6 +14225,10 @@ h1, h2, h3, h4, h5, h6,
 
 a {
   font-weight: bold;
+}
+
+small, .small {
+  line-height: 1.2;
 }
 
 body {
@@ -14461,220 +14375,6 @@ body.prepage #content {
   }
 }
 
-#debugbar {
-  position: fixed;
-  left: 0;
-  z-index: 99999;
-  bottom: 0;
-  width: 100%;
-  color: #fff;
-  background: rgba(74, 74, 85, 0.4);
-}
-
-#debugbar > .btn {
-  margin: 0 1rem 0 0;
-}
-
-#debugbar > .btn .btn-icon:before {
-  content: '\f107';
-  font-family: 'FontAwesome';
-}
-
-#debugbar > .btn.collapsed .btn-icon:before {
-  content: '\f105';
-}
-
-#debugbar > ul {
-  margin: 0;
-  font-size: 11px;
-}
-
-#debugbar > ul li {
-  height: 22px;
-  line-height: 22px;
-}
-
-#debugbarBody {
-  clear: right;
-  background: rgba(74, 74, 85, 0.8);
-  position: relative;
-  color: #fff;
-}
-
-#debugbarBody h4 {
-  border-bottom: 1px solid #fff;
-  margin: 0;
-  padding: 10px 0 5px;
-  color: #fff;
-}
-
-#debugbarBody p {
-  margin: 0;
-  padding: 5px 0;
-}
-
-#debugbarBody ul {
-  padding: 0 0 5px 0;
-  margin: 0;
-}
-
-#debugbarBody ul li {
-  padding: 5px 15px 5px 0;
-}
-
-.footable-filtering-search {
-  float: right;
-}
-
-.footable-filtering-search .dropdown-toggle {
-  display: none;
-}
-
-.footable-filtering th {
-  border-top: 0;
-}
-
-tr.footable-detail-row > td {
-  padding-top: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-tr.footable-detail-row > td th, tr.footable-detail-row > td td {
-  padding-top: 0.45rem !important;
-  padding-bottom: 0.45rem !important;
-}
-
-tr.footable-detail-row > td td {
-  word-break: normal !important;
-}
-
-table.footable-details > tbody > tr > td:nth-child(2) {
-  word-break: normal;
-}
-
-div.footable-loader {
-  height: 100px;
-  max-height: 500px;
-}
-
-table.footable > tbody > tr.footable-empty > td {
-  font-size: 1rem;
-}
-
-table > tbody > tr > td > span.footable-toggle {
-  opacity: 1;
-  cursor: pointer;
-  color: #4a4a55;
-}
-
-table > tbody > tr > td > span.footable-toggle:hover {
-  color: #4a4a55;
-}
-
-table.footable-details > tbody > tr > th:nth-child(1) {
-  min-width: 40px;
-  width: 80px;
-}
-
-
-.footable-toggle {
-  top: 0;
-  padding: 0.25rem 0.5rem;
-  border: 1px solid transparent;
-  line-height: 1.5;
-  font-size: 0.875rem;
-  width: 2.24971rem;
-  text-align: center;
-  color: #d9d9de;
-  background-color: transparent;
-  background-image: none;
-  border-color: #d9d9de;
-}
-
-.footable-toggle:hover {
-  color: #4a4a55;
-  background-color: #d9d9de;
-  border-color: #d9d9de;
-}
-
-.footable-toggle:focus, .footable-toggle.focus {
-  box-shadow: 0 0 0 3px rgba(217, 217, 222, 0.5);
-}
-
-.footable-toggle.disabled, .footable-toggle:disabled {
-  color: #d9d9de;
-  background-color: transparent;
-}
-
-.footable-toggle:active, .footable-toggle.active,
-.show > .footable-toggle.dropdown-toggle {
-  color: #4a4a55;
-  background-color: #d9d9de;
-  border-color: #d9d9de;
-}
-
-.footable-filtering-search .fooicon-remove,
-.footable-filtering-search .fooicon-search {
-  width: 1.28571rem;
-}
-
-.fooicon {
-  font-family: FontAwesome !important;
-}
-
-.fooicon-loader:before {
-  content: "\f01e" !important;
-}
-
-.fooicon-plus:before {
-  content: "\f067" !important;
-}
-
-.fooicon-minus:before {
-  content: "\f068" !important;
-}
-
-.fooicon-search:before {
-  content: "\f002" !important;
-}
-
-.fooicon-remove:before {
-  content: "\f00d" !important;
-}
-
-.fooicon-sort:before {
-  content: "\f0dc" !important;
-}
-
-.fooicon-sort-asc:before {
-  content: "\f0de" !important;
-}
-
-.fooicon-sort-desc:before {
-  content: "\f0dd" !important;
-}
-
-.fooicon-pencil:before {
-  content: "\f040" !important;
-}
-
-.fooicon-trash:before {
-  content: "\f1f8" !important;
-}
-
-.fooicon-eye-close:before {
-  content: "\f070" !important;
-}
-
-.fooicon-flash:before {
-  content: "\f0e7" !important;
-}
-
-.fooicon-cog:before {
-  content: "\f013" !important;
-}
-
 #mediaPage iframe#mediaBrowser {
   width: 100%;
   overflow: hidden;
@@ -14682,6 +14382,29 @@ table.footable-details > tbody > tr > th:nth-child(1) {
 
 #mediaBrowsePage, #mediaRenamePage, #setParameterPage {
   background: #fff;
+  padding-top: 1rem;
+}
+
+#mediaBrowsePage body, #mediaRenamePage body, #setParameterPage body {
+  min-height: fit-content;
+}
+
+#mediaBrowsePage .hide, #mediaRenamePage .hide, #setParameterPage .hide {
+  display: none;
+}
+
+#mediaBrowsePage .table, #mediaRenamePage .table, #setParameterPage .table {
+  margin: 0;
+}
+
+#mediaBrowsePage .alert, #mediaRenamePage .alert, #setParameterPage .alert {
+  margin: 20px;
+  text-align: center;
+}
+
+#alertPage {
+  background: #fff;
+  padding: 1rem;
 }
 
 #accessPage h5 {
@@ -14726,6 +14449,12 @@ table.footable-details > tbody > tr > th:nth-child(1) {
   text-align: left;
 }
 
+#pagesPage #pageListCard table td.visibility, #pagesPage #pageListCard table th.visibility {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  width: 30px;
+}
+
 #pagesPage #pageListCard table td.modify, #pagesPage #pageListCard table td.id, #pagesPage #pageListCard table th.modify, #pagesPage #pageListCard table th.id {
   width: 100px;
 }
@@ -14735,27 +14464,29 @@ table.footable-details > tbody > tr > th:nth-child(1) {
 }
 
 #pagesPage #pageListCard ul ul td {
-  padding: 4px 8px;
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
 }
 
 #pagesPage #pageListCard ul ul td.toggle {
-  width: 100px;
-  padding-left: 40px;
+  width: 60px;
+  padding-left: 20px;
+  padding-right: 0.2rem;
 }
 
 #pagesPage #pageListCard ul ul ul td.toggle {
-  width: 120px;
-  padding-left: 80px;
+  width: 80px;
+  padding-left: 40px;
 }
 
 #pagesPage #pageListCard ul ul ul ul td.toggle {
-  width: 160px;
-  padding-left: 120px;
+  width: 100px;
+  padding-left: 60px;
 }
 
 #pagesPage #pageListCard ul ul ul ul ul td.toggle {
-  width: 200px;
-  padding-left: 160px;
+  width: 120px;
+  padding-left: 80px;
 }
 
 #ibox .alert {
@@ -14792,6 +14523,10 @@ table.footable-details > tbody > tr > th:nth-child(1) {
   padding: 0 0.66rem;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: normal;
+}
+
+#topNavigation .navbar-nav .nav-item:last-child .nav-link {
+  padding-right: 0;
 }
 
 #topNavigation .navbar-nav .active .nav-link, #topNavigation .navbar-nav .show .nav-link {
@@ -14866,6 +14601,7 @@ table.footable-details > tbody > tr > th:nth-child(1) {
 #sideNavigation .navbar-collapse .navbar-nav .nav-item .nav-link {
   cursor: pointer;
   font-weight: normal;
+  font-size: 1.125rem;
 }
 
 #sideNavigation .navbar-collapse .navbar-sidenav {
@@ -14890,6 +14626,7 @@ table.footable-details > tbody > tr > th:nth-child(1) {
   border: 0 solid transparent;
   color: #fff;
   background: transparent;
+  transition: color .3s ease, background .3s ease, border .3s ease;
 }
 
 #sideNavigation .navbar-collapse .navbar-sidenav .nav-link.nav-link-collapse:after {
@@ -14903,9 +14640,9 @@ table.footable-details > tbody > tr > th:nth-child(1) {
 }
 
 #sideNavigation .navbar-collapse .navbar-sidenav .nav-link[aria-expanded="true"], #sideNavigation .navbar-collapse .navbar-sidenav .nav-link:hover {
-  border-color: transparent;
-  color: #fff;
-  background: #2e343e;
+  border-color: #45a246;
+  color: #45a246;
+  background: #2c313b;
 }
 
 #sideNavigation .navbar-collapse .navbar-sidenav .sidenav-second-level {
@@ -14927,29 +14664,29 @@ table.footable-details > tbody > tr > th:nth-child(1) {
 }
 
 #sideNavigation .navbar-collapse .navbar-sidenav [aria-expanded="true"] {
-  border-color: transparent;
-  color: #fff;
-  background: #2e343e;
+  border-color: #45a246;
+  color: #45a246;
+  background: #2c313b;
 }
 
 #sideNavigation .navbar-collapse .navbar-sidenav [aria-expanded="true"] + .sidenav-second-level {
-  background: #2e343e;
+  background: #2c313b;
 }
 
 #sideNavigation .navbar-collapse .navbar-sidenav .active > .nav-link {
   border-color: #45a246;
-  color: #45a246;
-  background: #2c313b;
+  color: #fff;
+  background: #45a246;
 }
 
 #sideNavigation .navbar-collapse .navbar-sidenav .active > .nav-link:focus, #sideNavigation .navbar-collapse .navbar-sidenav .active > .nav-link:hover {
   border-color: #45a246;
-  color: #45a246;
-  background: #2c313b;
+  color: #fff;
+  background: #45a246;
 }
 
 #sideNavigation .navbar-collapse .navbar-sidenav .active > .sidenav-second-level {
-  background: #2c313b;
+  background: #45a246;
 }
 
 #sideNavigation .navbar-collapse .navbar-sidenav .active > .sidenav-second-level .active > .nav-link {
@@ -15020,20 +14757,24 @@ table.footable-details > tbody > tr > th:nth-child(1) {
     margin-top: 1rem;
   }
   #sideNavigation .sidenav-content a, #sideNavigation .sidenav-content a:hover, #sideNavigation .sidenav-content a:active {
-    color: #fff;
+    color: #45a246;
   }
   #sideNavigation .sidenav-content :last-child {
     margin-bottom: 0;
   }
   #sideNavigation .sidenav-brand {
     display: block;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     height: auto;
     line-height: inherit;
   }
+  #sideNavigation .sidenav-brand .brand {
+    height: 96px;
+    line-height: 96px;
+  }
   #sideNavigation .sidenav-brand .brand img {
     height: auto;
-    max-height: 64px;
+    max-height: 96px;
   }
   #sideNavigation .navbar-collapse {
     overflow: visible;
@@ -15042,7 +14783,6 @@ table.footable-details > tbody > tr > th:nth-child(1) {
     width: auto;
   }
   #sideNavigation .navbar-collapse .navbar-sidenav {
-    margin-top: 0;
     display: block;
     width: 100%;
   }
@@ -15449,8 +15189,9 @@ legend {
   margin-left: 0;
 }
 
-.table td {
+.table td, .table th {
   vertical-align: middle;
+  line-height: 1.2;
 }
 
 .table .table {

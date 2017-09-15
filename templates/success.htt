@@ -1,4 +1,5 @@
 <!-- BEGIN main_block -->
+<link href="../../templates/fraggy-backend-theme/css/style.css?v2.0.0-alpha1" rel="stylesheet" type="text/css" />
 <div class="alert alert-success">
     <p>{MESSAGE}</p>
     <!-- BEGIN show_redirect_block -->
@@ -11,4 +12,22 @@
         <i class="fa fa-fw fa-arrow-circle-left"></i> {BACK}
     </a>
 </div>
+
+<script>
+    if (typeof jQuery == 'undefined') {
+        var script = document.createElement("SCRIPT");
+        script.src = '../../templates/fraggy-backend-theme/js/jquery.min.js?v2.0.0-alpha1';
+        script.type = 'text/javascript';
+        script.onload = function () {
+            var $ = window.jQuery;
+            if ($('.alert').parent().is('body')) {
+                $('body').css({
+                    background: '#fff',
+                    padding: '0.75rem'
+                });
+            }
+        };
+        document.getElementsByTagName("head")[0].appendChild(script);
+    }
+</script>
 <!-- END main_block -->

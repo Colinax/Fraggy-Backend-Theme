@@ -17,42 +17,42 @@
                     <div class="card-body">
 
                         <div class="form-group row">
-                            <label for="inputWebsiteTitle" class="col-sm-4 control-label">{TEXT_WEBSITE_TITLE}</label>
+                            <label for="inputWebsiteTitle" class="col-sm-4 col-form-label">{TEXT_WEBSITE_TITLE}</label>
                             <div class="col-sm-8">
                                 <input value="{WEBSITE_TITLE}" type="text" name="website_title" id="inputWebsiteTitle" class="form-control" />
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="textareaWebsiteDescription" class="col-sm-4 control-label">{TEXT_WEBSITE_DESCRIPTION}</label>
+                            <label for="textareaWebsiteDescription" class="col-sm-4 col-form-label">{TEXT_WEBSITE_DESCRIPTION}</label>
                             <div class="col-sm-8">
                                 <textarea id="textareaWebsiteDescription" name="website_description" rows="2" class="form-control vresize">{WEBSITE_DESCRIPTION}</textarea>
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="textareaWebsiteKeywords" class="col-sm-4 control-label">{TEXT_WEBSITE_KEYWORDS}</label>
+                            <label for="textareaWebsiteKeywords" class="col-sm-4 col-form-label">{TEXT_WEBSITE_KEYWORDS}</label>
                             <div class="col-sm-8">
                                 <textarea id="textareaWebsiteKeywords" name="website_keywords" rows="2" class="form-control vresize">{WEBSITE_KEYWORDS}</textarea>
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="textareaWebsiteHeader" class="col-sm-4 control-label">{TEXT_WEBSITE_HEADER}</label>
+                            <label for="textareaWebsiteHeader" class="col-sm-4 col-form-label">{TEXT_WEBSITE_HEADER}</label>
                             <div class="col-sm-8">
                                 <textarea id="textareaWebsiteHeader" name="website_header" rows="2" class="form-control vresize">{WEBSITE_HEADER}</textarea>
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="textareaWebsiteFooter" class="col-sm-4 control-label">{TEXT_WEBSITE_FOOTER}</label>
+                            <label for="textareaWebsiteFooter" class="col-sm-4 col-form-label">{TEXT_WEBSITE_FOOTER}</label>
                             <div class="col-sm-8">
                                 <textarea id="textareaWebsiteFooter" name="website_footer" rows="2" class="form-control vresize">{WEBSITE_FOOTER}</textarea>
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label class="col-sm-4 control-label">{TEXT_HOME_FOLDERS}</label>
+                            <label class="col-sm-4 col-form-label">{TEXT_HOME_FOLDERS}</label>
                             <div class="col-sm-8">
                                 <label class="radio-inline">
                                     <input type="radio" name="home_folders" id="home_folders_true" value="true" {HOME_FOLDERS_ENABLED} /> {TEXT_ENABLED}
@@ -64,7 +64,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label class="col-sm-4 control-label">{TEXT_INTRO_PAGE}</label>
+                            <label class="col-sm-4 col-form-label">{TEXT_INTRO_PAGE}</label>
                             <div class="col-sm-8">
                                 <label class="radio-inline">
                                     <input type="radio" name="intro_page" id="intro_page_true" value="true" {INTRO_PAGE_ENABLED} /> {TEXT_ENABLED}
@@ -76,7 +76,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label class="col-sm-4 control-label">{TEXT_LOGIN}</label>
+                            <label class="col-sm-4 col-form-label">{TEXT_LOGIN}</label>
                             <div class="col-sm-8">
                                 <label class="radio-inline">
                                     <input type="radio" name="frontend_login" id="frontend_login_true" value="true" {PRIVATE_ENABLED} /> {TEXT_ENABLED}
@@ -89,7 +89,7 @@
 
 
                         <div class="form-group row">
-                            <label for="selectFrontendSignup" class="col-sm-4 control-label">{TEXT_SIGNUP}</label>
+                            <label for="selectFrontendSignup" class="col-sm-4 col-form-label">{TEXT_SIGNUP}</label>
                             <div class="col-sm-8">
                                 <select id="selectFrontendSignup" name="frontend_signup">
                                     <option value="false">{TEXT_DISABLED}</option>
@@ -105,7 +105,7 @@
                             <hr />
 
                             <div class="form-group row">
-                                <label for="selectPageLevelLimit" class="col-sm-4 control-label">{TEXT_PAGE_LEVEL_LIMIT}</label>
+                                <label for="selectPageLevelLimit" class="col-sm-4 col-form-label">{TEXT_PAGE_LEVEL_LIMIT}</label>
                                 <div class="col-sm-8">
                                     <select id="selectPageLevelLimit" name="page_level_limit">
                                         <!-- BEGIN page_level_limit_list_block -->
@@ -116,7 +116,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-sm-4 control-label">{TEXT_PAGE_TRASH}</label>
+                                <label class="col-sm-4 col-form-label">{TEXT_PAGE_TRASH}</label>
                                 <div class="col-sm-8">
                                     <label class="radio-inline">
                                         <input type="radio" name="page_trash" id="page_trash_inline" value="inline" {PAGE_TRASH_INLINE} /> {TEXT_ENABLED}
@@ -131,7 +131,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-sm-4 control-label">{TEXT_PAGE_LANGUAGES}</label>
+                                <label class="col-sm-4 col-form-label">{TEXT_PAGE_LANGUAGES}</label>
                                 <div class="col-sm-8">
                                     <label class="radio-inline">
                                         <input type="radio" name="page_languages" id="page_languages_true" value="true" {PAGE_LANGUAGES_ENABLED} /> {TEXT_ENABLED}
@@ -143,7 +143,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-sm-4 control-label">{TEXT_MULTIPLE_MENUS}</label>
+                                <label class="col-sm-4 col-form-label">{TEXT_MULTIPLE_MENUS}</label>
                                 <div class="col-sm-8">
                                     <label class="radio-inline">
                                         <input type="radio" name="multiple_menus" id="multiple_menus_true" value="true" {MULTIPLE_MENUS_ENABLED} /> {TEXT_ENABLED}
@@ -155,7 +155,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-sm-4 control-label">{TEXT_MANAGE_SECTIONS}</label>
+                                <label class="col-sm-4 col-form-label">{TEXT_MANAGE_SECTIONS}</label>
                                 <div class="col-sm-8">
                                     <label class="radio-inline">
                                         <input type="radio" name="manage_sections" id="manage_sections_true" value="true" {MANAGE_SECTIONS_ENABLED} /> {TEXT_ENABLED}
@@ -167,7 +167,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-sm-4 control-label">{TEXT_SECTION_BLOCKS}</label>
+                                <label class="col-sm-4 col-form-label">{TEXT_SECTION_BLOCKS}</label>
                                 <div class="col-sm-8">
                                     <label class="radio-inline">
                                         <input type="radio" name="section_blocks" id="section_blocks_true" value="true" {SECTION_BLOCKS_ENABLED} /> {TEXT_ENABLED}
@@ -179,7 +179,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-sm-4 control-label">{TEXT_HOMEPAGE_REDIRECTION}</label>
+                                <label class="col-sm-4 col-form-label">{TEXT_HOMEPAGE_REDIRECTION}</label>
                                 <div class="col-sm-8">
                                     <label class="radio-inline">
                                         <input type="radio" name="homepage_redirection" id="homepage_redirection_true" value="true" {HOMEPAGE_REDIRECTION_ENABLED} /> {TEXT_ENABLED}
@@ -191,7 +191,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-sm-4 control-label">{TEXT_SMART_LOGIN}</label>
+                                <label class="col-sm-4 col-form-label">{TEXT_SMART_LOGIN}</label>
                                 <div class="col-sm-8">
                                     <label class="radio-inline">
                                         <input type="radio" name="smart_login" id="smart_login_true" value="true" {SMART_LOGIN_ENABLED} /> {TEXT_ENABLED}
@@ -203,7 +203,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="inputWebsiteTitle" class="col-sm-4 control-label">{TEXT_REDIRECT_AFTER}</label>
+                                <label for="inputWebsiteTitle" class="col-sm-4 col-form-label">{TEXT_REDIRECT_AFTER}</label>
                                 <div class="col-sm-8">
                                     <div class="input-group">
                                         <div class="input-group-addon">ms</div>
@@ -214,7 +214,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="selectErrorLevel" class="col-sm-4 control-label">{TEXT_PHP_ERROR_LEVEL}</label>
+                                <label for="selectErrorLevel" class="col-sm-4 col-form-label">{TEXT_PHP_ERROR_LEVEL}</label>
                                 <div class="col-sm-8">
                                     <select id="selectErrorLevel" name="er_level">
                                         <option value="">{TEXT_PLEASE_SELECT}...</option>
@@ -226,14 +226,14 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="inputWysiwygStyle" class="col-sm-4 control-label">{TEXT_WYSIWYG_STYLE}</label>
+                                <label for="inputWysiwygStyle" class="col-sm-4 col-form-label">{TEXT_WYSIWYG_STYLE}</label>
                                 <div class="col-sm-8">
                                     <input id="inputWysiwygStyle" type="text" name="wysiwyg_style" value="{WYSIWYG_STYLE}" />
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="selectWysiwygEditor" class="col-sm-4 control-label">{TEXT_WYSIWYG_EDITOR}</label>
+                                <label for="selectWysiwygEditor" class="col-sm-4 col-form-label">{TEXT_WYSIWYG_EDITOR}</label>
                                 <div class="col-sm-8">
                                     <select id="selectWysiwygEditor" name="wysiwyg_editor">
                                         <!-- BEGIN editor_list_block -->
@@ -264,7 +264,7 @@
                     <div class="card-body">
 
                         <div class="form-group row">
-                            <label for="selectDefaultLanguage" class="col-sm-4 control-label">{TEXT_LANGUAGE}</label>
+                            <label for="selectDefaultLanguage" class="col-sm-4 col-form-label">{TEXT_LANGUAGE}</label>
                             <div class="col-sm-8">
                                 <select id="selectDefaultLanguage" name="default_language">
                                     <!-- BEGIN language_list_block -->
@@ -275,7 +275,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="selectDefaultTimezone" class="col-sm-4 control-label">{TEXT_TIMEZONE}</label>
+                            <label for="selectDefaultTimezone" class="col-sm-4 col-form-label">{TEXT_TIMEZONE}</label>
                             <div class="col-sm-8">
                                 <select id="selectDefaultTimezone" name="default_timezone">
                                     <option value="0">{TEXT_PLEASE_SELECT}...</option>
@@ -287,7 +287,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="selectDateFormat" class="col-sm-4 control-label">{TEXT_DATE_FORMAT}</label>
+                            <label for="selectDateFormat" class="col-sm-4 col-form-label">{TEXT_DATE_FORMAT}</label>
                             <div class="col-sm-8">
                                 <select id="selectDateFormat" name="default_date_format">
                                     <option value="M d Y">{TEXT_PLEASE_SELECT}...</option>
@@ -299,7 +299,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="selectTimeFormat" class="col-sm-4 control-label">{TEXT_TIME_FORMAT}</label>
+                            <label for="selectTimeFormat" class="col-sm-4 col-form-label">{TEXT_TIME_FORMAT}</label>
                             <div class="col-sm-8">
                                 <select id="selectTimeFormat" name="default_time_format">
                                     <option value="g:i A">{TEXT_PLEASE_SELECT}...</option>
@@ -311,7 +311,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="selectTemplate" class="col-sm-4 control-label">{TEXT_TEMPLATE}</label>
+                            <label for="selectTemplate" class="col-sm-4 col-form-label">{TEXT_TEMPLATE}</label>
                             <div class="col-sm-8">
                                 <select id="selectTemplate" name="default_template">
                                     <!-- BEGIN template_list_block -->
@@ -322,7 +322,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="selectTheme" class="col-sm-4 control-label">{TEXT_THEME}</label>
+                            <label for="selectTheme" class="col-sm-4 col-form-label">{TEXT_THEME}</label>
                             <div class="col-sm-8">
                                 <select id="selectTheme" name="default_theme">
                                     <!-- BEGIN theme_list_block -->
@@ -337,7 +337,7 @@
                             <hr />
 
                             <div class="form-group row">
-                                <label for="selectDefaultCharset" class="col-sm-4 control-label">{TEXT_CHARSET}</label>
+                                <label for="selectDefaultCharset" class="col-sm-4 col-form-label">{TEXT_CHARSET}</label>
                                 <div class="col-sm-8">
                                     <select id="selectDefaultCharset" name="default_charset">
                                         <option value="">{TEXT_PLEASE_SELECT}...</option>
@@ -372,7 +372,7 @@
                     <div class="card-body">
 
                         <div class="form-group row">
-                            <label for="selectVisibility" class="col-sm-4 control-label">{TEXT_VISIBILITY}</label>
+                            <label for="selectVisibility" class="col-sm-4 col-form-label">{TEXT_VISIBILITY}</label>
                             <div class="col-sm-8">
                                 <select id="selectVisibility" name="search">
                                     <option value="public">{TEXT_PUBLIC}</option>
@@ -384,7 +384,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="selectTemplate2" class="col-sm-4 control-label">{TEXT_TEMPLATE}</label>
+                            <label for="selectTemplate2" class="col-sm-4 col-form-label">{TEXT_TEMPLATE}</label>
                             <div class="col-sm-8">
                                 <select id="selectTemplate2" name="search_template">
                                     <!-- BEGIN search_template_list_block -->
@@ -399,63 +399,63 @@
                             <hr />
 
                             <div class="form-group row">
-                                <label for="textareaSearchHeader" class="col-sm-4 control-label">{TEXT_HEADER}</label>
+                                <label for="textareaSearchHeader" class="col-sm-4 col-form-label">{TEXT_HEADER}</label>
                                 <div class="col-sm-8">
                                     <textarea id="textareaSearchHeader" name="search_header" rows="3" class="form-control vresize">{SEARCH_HEADER}</textarea>
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="textareaSearchResultsHeader" class="col-sm-4 control-label">{TEXT_RESULTS_HEADER}</label>
+                                <label for="textareaSearchResultsHeader" class="col-sm-4 col-form-label">{TEXT_RESULTS_HEADER}</label>
                                 <div class="col-sm-8">
                                     <textarea id="textareaSearchResultsHeader" name="search_results_header" rows="3" class="form-control vresize">{SEARCH_RESULTS_HEADER}</textarea>
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="textareaSearchResultsLoop" class="col-sm-4 control-label">{TEXT_RESULTS_LOOP}</label>
+                                <label for="textareaSearchResultsLoop" class="col-sm-4 col-form-label">{TEXT_RESULTS_LOOP}</label>
                                 <div class="col-sm-8">
                                     <textarea id="textareaSearchResultsLoop" name="search_results_loop" rows="3" class="form-control vresize">{SEARCH_RESULTS_LOOP}</textarea>
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="textareaSearchResultsFooter" class="col-sm-4 control-label">{TEXT_RESULTS_FOOTER}</label>
+                                <label for="textareaSearchResultsFooter" class="col-sm-4 col-form-label">{TEXT_RESULTS_FOOTER}</label>
                                 <div class="col-sm-8">
                                     <textarea id="textareaSearchResultsFooter" name="search_results_footer" rows="2" class="form-control vresize">{SEARCH_RESULTS_FOOTER}</textarea>
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="textareaSearchNoResults" class="col-sm-4 control-label">{TEXT_NO_RESULTS}</label>
+                                <label for="textareaSearchNoResults" class="col-sm-4 col-form-label">{TEXT_NO_RESULTS}</label>
                                 <div class="col-sm-8">
                                     <textarea id="textareaSearchNoResults" name="search_no_results" rows="2" class="form-control vresize">{SEARCH_NO_RESULTS}</textarea>
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="textareaSearchFooter" class="col-sm-4 control-label">{TEXT_FOOTER}</label>
+                                <label for="textareaSearchFooter" class="col-sm-4 col-form-label">{TEXT_FOOTER}</label>
                                 <div class="col-sm-8">
                                     <textarea id="textareaSearchFooter" name="search_footer" rows="2" class="form-control vresize">{SEARCH_FOOTER}</textarea>
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="inputSearchModuleOrder" class="col-sm-4 control-label">{TEXT_MODULE_ORDER}</label>
+                                <label for="inputSearchModuleOrder" class="col-sm-4 col-form-label">{TEXT_MODULE_ORDER}</label>
                                 <div class="col-sm-8">
                                     <input id="inputSearchModuleOrder" type="text" name="search_module_order" value="{SEARCH_MODULE_ORDER}" class="form-control" />
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="inputSearchMaxExcerpt" class="col-sm-4 control-label">{TEXT_MAX_EXCERPT}</label>
+                                <label for="inputSearchMaxExcerpt" class="col-sm-4 col-form-label">{TEXT_MAX_EXCERPT}</label>
                                 <div class="col-sm-8">
                                     <input id="inputSearchMaxExcerpt" type="text" name="search_max_excerpt" value="{SEARCH_MAX_EXCERPT}" class="form-control" />
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="inputSearchMaxTimeLimit" class="col-sm-4 control-label">{TEXT_TIME_LIMIT}</label>
+                                <label for="inputSearchMaxTimeLimit" class="col-sm-4 col-form-label">{TEXT_TIME_LIMIT}</label>
                                 <div class="col-sm-8">
                                     <input id="inputSearchMaxTimeLimit" type="text" name="search_time_limit" value="{SEARCH_TIME_LIMIT}" class="form-control" />
                                 </div>
@@ -482,7 +482,7 @@
                     <div class="card-body">
 
                         <div class="form-group row" id="radiosOperationSystem">
-                            <label class="col-sm-4 control-label">{TEXT_SERVER_OPERATING_SYSTEM}</label>
+                            <label class="col-sm-4 col-form-label">{TEXT_SERVER_OPERATING_SYSTEM}</label>
                             <div class="col-sm-8">
                                 <label class="radio-inline">
                                     <input type="radio" name="operating_system" id="operating_system_linux" value="linux" {LINUX_SELECTED} /> {TEXT_LINUX_UNIX_BASED}
@@ -494,7 +494,7 @@
                         </div>
 
                         <div class="form-group form-write-rights">
-                            <label class="col-sm-4 control-label">{TEXT_FILESYSTEM_PERMISSIONS}</label>
+                            <label class="col-sm-4 col-form-label">{TEXT_FILESYSTEM_PERMISSIONS}</label>
                             <div class="col-sm-8">
                                 <div class="checkbox">
                                     <label>
@@ -650,49 +650,49 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="inputPagesDirectory" class="col-sm-4 control-label">{TEXT_PAGES_DIRECTORY}</label>
+                                <label for="inputPagesDirectory" class="col-sm-4 col-form-label">{TEXT_PAGES_DIRECTORY}</label>
                                 <div class="col-sm-8">
                                     <input type="text" id="inputPagesDirectory" name="pages_directory" value="{PAGES_DIRECTORY}" class="form-control" />
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="inputMediaDirectory" class="col-sm-4 control-label">{TEXT_MEDIA_DIRECTORY}</label>
+                                <label for="inputMediaDirectory" class="col-sm-4 col-form-label">{TEXT_MEDIA_DIRECTORY}</label>
                                 <div class="col-sm-8">
                                     <input type="text" id="inputMediaDirectory" name="media_directory" value="{MEDIA_DIRECTORY}" class="form-control" />
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="inputPageExtension" class="col-sm-4 control-label">{TEXT_PAGE_EXTENSION}</label>
+                                <label for="inputPageExtension" class="col-sm-4 col-form-label">{TEXT_PAGE_EXTENSION}</label>
                                 <div class="col-sm-8">
                                     <input type="text" id="inputPageExtension" name="page_extension" value="{PAGE_EXTENSION}" class="form-control" />
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="inputPageSpacer" class="col-sm-4 control-label">{TEXT_PAGE_SPACER}</label>
+                                <label for="inputPageSpacer" class="col-sm-4 col-form-label">{TEXT_PAGE_SPACER}</label>
                                 <div class="col-sm-8">
                                     <input type="text" id="inputPageSpacer" name="page_spacer" value="{PAGE_SPACER}" class="form-control" />
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="inputRenameFilesOnUpload" class="col-sm-4 control-label">{TEXT_RENAME_FILES_ON_UPLOAD}</label>
+                                <label for="inputRenameFilesOnUpload" class="col-sm-4 col-form-label">{TEXT_RENAME_FILES_ON_UPLOAD}</label>
                                 <div class="col-sm-8">
                                     <input type="text" id="inputRenameFilesOnUpload" name="rename_files_on_upload" value="{RENAME_FILES_ON_UPLOAD}" class="form-control" />
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="inputSessionIdentifier" class="col-sm-4 control-label">{TEXT_SESSION_IDENTIFIER}</label>
+                                <label for="inputSessionIdentifier" class="col-sm-4 col-form-label">{TEXT_SESSION_IDENTIFIER}</label>
                                 <div class="col-sm-8">
                                     <input type="text" id="inputSessionIdentifier" name="app_name" value="{APP_NAME}" class="form-control" />
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="inputSectionAnchor" class="col-sm-4 control-label">{TEXT_SEC_ANCHOR}</label>
+                                <label for="inputSectionAnchor" class="col-sm-4 col-form-label">{TEXT_SEC_ANCHOR}</label>
                                 <div class="col-sm-8">
                                     <input type="text" id="inputSectionAnchor" name="sec_anchor" value="{SEC_ANCHOR}" class="form-control" />
                                 </div>
@@ -721,21 +721,21 @@
                         <!--<p>{TEXT_WBMAILER_DEFAULT_SETTINGS_NOTICE}</p>-->
 
                         <div class="form-group row">
-                            <label for="inputSenderMail" class="col-sm-4 control-label">{TEXT_WBMAILER_DEFAULT_SENDER_MAIL}</label>
+                            <label for="inputSenderMail" class="col-sm-4 col-form-label">{TEXT_WBMAILER_DEFAULT_SENDER_MAIL}</label>
                             <div class="col-sm-8">
                                 <input type="text" id="inputSenderMail" name="server_email" value="{SERVER_EMAIL}" class="form-control" />
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="inputSenderName" class="col-sm-4 control-label">{TEXT_WBMAILER_DEFAULT_SENDER_NAME}</label>
+                            <label for="inputSenderName" class="col-sm-4 col-form-label">{TEXT_WBMAILER_DEFAULT_SENDER_NAME}</label>
                             <div class="col-sm-8">
                                 <input type="text" id="inputSenderName" name="wbmailer_default_sendername" value="{WBMAILER_DEFAULT_SENDERNAME}" class="form-control" />
                             </div>
                         </div>
 
                         <div class="form-group row" id="wbmailerFunction">
-                            <label class="col-sm-4 control-label">{TEXT_WBMAILER_FUNCTION}</label>
+                            <label class="col-sm-4 col-form-label">{TEXT_WBMAILER_FUNCTION}</label>
                             <div class="col-sm-8">
                                 <label class="radio-inline">
                                     <input type="radio" name="wbmailer_routine" value="phpmail" {PHPMAIL_SELECTED} /> {TEXT_WBMAILER_PHP}
@@ -753,14 +753,14 @@
                         </div>
 
                         <div class="form-group form-smtp-settings" {SMTP_VISIBILITY}>
-                            <label for="inputSmtpHost" class="col-sm-4 control-label">{TEXT_WBMAILER_SMTP_HOST}</label>
+                            <label for="inputSmtpHost" class="col-sm-4 col-form-label">{TEXT_WBMAILER_SMTP_HOST}</label>
                             <div class="col-sm-8">
                                 <input type="text" id="inputSmtpHost" name="wbmailer_smtp_host" value="{WBMAILER_SMTP_HOST}" class="form-control" />
                             </div>
                         </div>
 
                         <!--<div class="form-group form-smtp-settings" {SMTP_VISIBILITY}>
-                            <label class="col-sm-4 control-label">{TEXT_WBMAILER_SMTP_AUTH}</label>
+                            <label class="col-sm-4 col-form-label">{TEXT_WBMAILER_SMTP_AUTH}</label>
                             <div class="col-sm-8">
                                 <label class="checkbox-inline">
                                     <input type="checkbox" name="wbmailer_smtp_auth" id="wbmailer_smtp_auth" value="true" disabled="disabled" {SMTP_AUTH_SELECTED} /> {TEXT_WBMAILER_SMTP_AUTH_NOTICE}
@@ -769,14 +769,14 @@
                         </div>-->
 
                         <div class="form-group form-smtp-settings" {SMTP_VISIBILITY}>
-                            <label for="inputSmptUsername" class="col-sm-4 control-label">{TEXT_WBMAILER_SMTP_USERNAME}</label>
+                            <label for="inputSmptUsername" class="col-sm-4 col-form-label">{TEXT_WBMAILER_SMTP_USERNAME}</label>
                             <div class="col-sm-8">
                                 <input type="text" id="inputSmptUsername" name="wbmailer_smtp_username" value="{WBMAILER_SMTP_USERNAME}" class="form-control" />
                             </div>
                         </div>
 
                         <div class="form-group form-smtp-settings" {SMTP_VISIBILITY}>
-                            <label for="inputSmptPassword" class="col-sm-4 control-label">{TEXT_WBMAILER_SMTP_PASSWORD}</label>
+                            <label for="inputSmptPassword" class="col-sm-4 col-form-label">{TEXT_WBMAILER_SMTP_PASSWORD}</label>
                             <div class="col-sm-8">
                                 <input type="text" id="inputSmptPassword" name="wbmailer_smtp_password" value="{WBMAILER_SMTP_PASSWORD}" class="form-control" />
                             </div>

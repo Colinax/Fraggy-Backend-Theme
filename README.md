@@ -8,13 +8,18 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Changelog
 
-## v1.7.1 - Current release
+## v2.0.0-alpha1 - Early access
 
- * Fixed #23
- * Fixed background color of media settings
- * Fixed font-family and link color of nav-pills
- * Fixed text color of labels in dark-mode
- * Fixed select2 styling
+ * Updated Bootstrap from 3.3.7 to 4.0.0-beta
+ * Updated jQuery form 2.2.4 to 3.2.1
+ * Removed color and dark styling modes to simplify maintenance
+ * Replaced jQuery Insert with InsertLoader
+ * Redesigned default theme logo
+ * Refactored navigations
+
+# ToDo
+
+ * Add working datetime picker for Bootstrap 4
 
 ## Older versions
 

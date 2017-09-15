@@ -60,6 +60,7 @@ while ($page = $queryPages->fetchRow()) {
 $querySettings = $database->query('SELECT `value` FROM `' . TABLE_PREFIX . 'settings` WHERE `name` = "page_level_limit"');
 $settings = $querySettings->fetchRow();
 $pageLevelLimit = $settings['value'];
+
 ?>
 <div class="jsadmin"></div>
 <div class="pages_list" style="display: none;">
@@ -71,13 +72,13 @@ $pageLevelLimit = $settings['value'];
         <th class="title">
             <?= $TEXT['VISIBILITY'] ?> / <?= $TEXT['MENU_TITLE'] ?>
         </th>
-        <th class="id hidden-xs hidden-sm">PageID</th>
-        <th class="modify hidden-xs hidden-sm"></th>
-        <th class="hidden-xs hidden-sm"></th>
+        <th class="id d-none d-md-table-cell">PageID</th>
+        <th class="modify d-none d-md-table-cell"></th>
+        <th class="d-none d-md-table-cell"></th>
         <th></th>
         <th></th>
         <th></th>
-        <th class="hidden-xs hidden-sm"></th>
+        <th class="d-none d-md-table-cell"></th>
         </thead>
     </table>
     <?php if (count($pages) > 0) { ?>
@@ -102,12 +103,13 @@ $pageLevelLimit = $settings['value'];
         <?php
     }
     $visibilityLegends = array('public', 'hidden', 'registered', 'private', 'none', 'deleted');
+
     ?>
     <hr />
     <p class="h5"><?= $TEXT['VISIBILITY'] ?> (<?= $MENU['PAGES'] ?>)</p>
     <ul class="list-inline">
         <?php foreach ($visibilityLegends as $legend) { ?>
-            <li>
+            <li class="list-inline-item">
                 <?php if ($legend === 'public') { ?>
                     <i class="fa fa-fw fa-eye"></i>
                 <?php } else if ($legend === 'private') { ?>

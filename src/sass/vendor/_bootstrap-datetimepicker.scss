@@ -18,12 +18,12 @@
  * https://github.com/Eonasdan/bootstrap-datetimepicker/
  */
 $bs-datetimepicker-timepicker-font-size: 1.2em !default;
-$bs-datetimepicker-active-bg: $btn-primary-bg !default;
-$bs-datetimepicker-active-color: $btn-primary-color !default;
-$bs-datetimepicker-border-radius: $border-radius-base !default;
-$bs-datetimepicker-btn-hover-bg: $gray-lighter !default;
-$bs-datetimepicker-disabled-color: $gray-light !default;
-$bs-datetimepicker-alternate-color: $gray-light !default;
+$bs-datetimepicker-active-bg: theme-color('primary') !default;
+$bs-datetimepicker-active-color: theme-color('primary') !default;
+$bs-datetimepicker-border-radius: $border-radius !default;
+$bs-datetimepicker-btn-hover-bg: $gray-200 !default;
+$bs-datetimepicker-disabled-color: $gray-150 !default;
+$bs-datetimepicker-alternate-color: $gray-150 !default;
 $bs-datetimepicker-secondary-border-color: #ccc !default;
 $bs-datetimepicker-secondary-border-color-rgba: rgba(0, 0, 0, 0.2) !default;
 $bs-datetimepicker-primary-border-color: white !default;
@@ -32,21 +32,29 @@ $bs-datetimepicker-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) !default;
 .bootstrap-datetimepicker-widget {
     list-style: none;
 
+    @extend .table;
+    @extend .table-sm;
+    @extend .mb-0;
+
+    th, td {
+        @extend .border-0;
+    }
+
     &.dropdown-menu {
         margin: 2px 0;
         padding: 4px;
         width: 19em;
 
         &.timepicker-sbs {
-            @media (min-width: $screen-sm-min) {
+            @include media-breakpoint-up(sm) {
                 width: 38em;
             }
 
-            @media (min-width: $screen-md-min) {
+            @include media-breakpoint-up(md) {
                 width: 38em;
             }
 
-            @media (min-width: $screen-lg-min) {
+            @include media-breakpoint-up(lg) {
                 width: 38em;
             }
         }

@@ -20,24 +20,23 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link id="switchable" href="{THEME_URL}/css/style.css?v2.0.0-alpha1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/css/style.css?v2.0.0-alpha1" rel="stylesheet" type="text/css" />
 
         <!-- WebsiteBaker CSS -->
         {BACKEND_MODULE_CSS}
 
         <!-- Initiliaze vars -->
         <script>
-            var WB_URL = '{WB_URL}',
+            var WB_URL = '../../',
                     THEME_URL = '{THEME_URL}',
-                    ADMIN_URL = '{ADMIN_URL}',
-                    LANGUAGE_CODE = '{LANGUAGE}';
+                    ADMIN_URL = '../../admin/',
+                    LANGUAGE_CODE = navigator.language || navigator.userLanguage;
         </script>
 
         <!-- Theme jQuery -->
         <script src="{THEME_URL}/js/jquery.min.js?v2.0.0-alpha1"></script>
 
         <!-- WBCE helper JavaScript -->
-        <script src="{WB_URL}/include/jquery/jquery-insert.js"></script>
         <script>
             function confirm_link(message, url) {
                 if (confirm(message))
@@ -74,13 +73,13 @@
                     <td>
                         <a href="{LINK}" target="{LINK_TARGET}">{NAME}</a>
                     </td>
-                    <td>
-                        <small>{IMAGEDETAIL}</small>
+                    <td class="d-none d-md-table-cell">
+                        <small class="nowrap">{IMAGEDETAIL}</small>
                     </td>
-                    <td>
+                    <td class="d-none d-md-table-cell">
                         <small>{DATE}</small>
                     </td>
-                    <td class="{DISPLAY_RENAME} text-right">
+                    <td class="{DISPLAY_RENAME} text-right nowrap">
                         <a href="rename.php?dir={CURRENT_DIR}&amp;id={TEMP_ID}" title="{TEXT_RENAME}"><i class="fa fa-fw fa-pencil"></i></a>
                         <a href="javascript:confirm_link('{CONFIRM_DELETE}\n {NAME_SLASHED}', 'delete.php?dir={CURRENT_DIR}&amp;id={TEMP_ID}');" title="{TEXT_DELETE}"><i class="fa fa-fw fa-trash"></i></a>
                     </td>

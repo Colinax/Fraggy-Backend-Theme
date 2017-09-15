@@ -1,26 +1,22 @@
 <!-- BEGIN main_block -->
 <div id="addonsPage">
 
-    <nav class="navbar navbar-default">
-        <div class="navbar-header">
-            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                <i class="fa fa-fw fa-bars"></i>
-            </a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li>
-                    {URL_MODULES}
-                </li>
-                <li class="active">
-                    <a href="#"><i class="fa fa-fw fa-paint-brush"></i> {HEADING_INSTALL_TEMPLATE}</a>
-                </li>
-                <li>
-                    {URL_LANGUAGES}
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="card">
+        <ul class="nav nav-pills flex-column flex-sm-row">
+            <li class="nav-item flex-sm-fill text-sm-center">
+                {URL_MODULES}
+            </li>
+            <!--<li class="nav-item flex-sm-fill text-sm-center">
+                <a class="nav-link active" href="#">
+                    <i class="fa fa-fw fa-paint-brush"></i> {HEADING_INSTALL_TEMPLATE}
+                </a>
+            </li>-->
+            <li class="nav-item flex-sm-fill text-sm-center">
+                {URL_LANGUAGES}
+            </li>
+        </ul>
+    </div>
+
 
     <div class="row">
         <div class="col-lg-6">

@@ -189,8 +189,10 @@
         $pageListTitle.remove();
 
         $pageListCard
-                .find('.card-body')
-                .prepend($pageList);
+                .find('.card-header')
+                .after($pageList.find('#pageListHeader'), $pageList.find('.list_pages'));
+
+        $pageListCard.find('.card-body').append($pageList);
 
         $pageList.show();
 

@@ -1,6 +1,7 @@
 .table {
-    td {
+    td, th {
         vertical-align: middle;
+        line-height: $line-height-sm;
     }
 
     .table {

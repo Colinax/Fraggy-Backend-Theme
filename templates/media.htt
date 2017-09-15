@@ -6,16 +6,20 @@
                 <h4 class="card-header">
                     {HEADING_BROWSE_MEDIA}
                 </h4>
+                <iframe name="mediaBrowser" scrolling="no" id="mediaBrowser" src="browse.php" frameborder="0"></iframe>
                 <div class="card-body">
-                    <iframe name="mediaBrowser" scrolling="no" id="mediaBrowser" src="browse.php" frameborder="0"></iframe>
                     <hr />
                     <span class="{DISPLAY_SETTINGS} pull-right">
-                        <a href="setparameter.php" target="mediaBrowser" class="btn btn-outline-light"><i class="fa fa-fw fa-cog"></i> {CHANGE_SETTINGS}</a>
-                        <a href="browse.php?dir={CURRENT_DIR}" target="mediaBrowser" class="btn btn-outline-light"><i class="fa fa-fw fa-refresh"></i>  {TEXT_RELOAD}</a>
+                        <a href="setparameter.php" target="mediaBrowser" class="btn btn-outline-light">
+                            <i class="fa fa-fw fa-cog"></i> {CHANGE_SETTINGS}
+                        </a>
+                        <a href="browse.php?dir={CURRENT_DIR}" target="mediaBrowser" class="btn btn-outline-light">
+                            <i class="fa fa-fw fa-refresh"></i>  {TEXT_RELOAD}
+                        </a>
                     </span>
                 </div>
             </div>
-        </div><!-- /.col-lg-8.col-lg-push-4 -->
+        </div>
 
         <div class="col-lg-4 col-lg-pull-8">
             <div class="card">
@@ -127,14 +131,14 @@
     $(function () {
         var $mediaBrowser = $('#mediaBrowser');
 
-        $mediaBrowser.on('load', function () {
+        $mediaBrowser.on('load reload', function () {
             // Reset height first to 0 to get the real offset height of contentWindow
             this.style.height = 0;
             this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
         });
 
         $(window).on('resize', function () {
-            $mediaBrowser.load();
+            $mediaBrowser.trigger('reload');
         });
     });
 

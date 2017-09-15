@@ -13,7 +13,7 @@
 // Vendor styles
 @import 'vendor/bootstrap';
 @import 'vendor/select2';
-@import 'vendor/footable.bootstrap';
+@import 'vendor/tempusdominus-bootstrap-4';
 
 // Theme components
 @import 'theme/utilities.scss';
@@ -22,8 +22,6 @@
 @import 'theme/header.scss';
 @import 'theme/brand.scss';
 @import 'theme/content.scss';
-@import 'theme/debugbar.scss';
-@import 'theme/footable.scss';
 @import 'theme/pages.scss';
 @import 'theme/navigation/top.scss';
 @import 'theme/navigation/side.scss';

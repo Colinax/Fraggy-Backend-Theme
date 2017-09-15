@@ -14,7 +14,7 @@
                     {FTAN}
 
                     <div class="form-group row">
-                        <label for="inputUsername" class="col-sm-4 control-label">{TEXT_USERNAME}</label>
+                        <label for="inputUsername" class="col-sm-4 col-form-label">{TEXT_USERNAME}</label>
                         <div class="col-sm-8">
                             <input id="inputUsername" name="{USERNAME_FIELDNAME}" maxlength="30" type="text" class="form-control"  value="{USERNAME}" />
                         </div>
@@ -23,14 +23,14 @@
                     <hr style="{DISPLAY_EXTRA}" />
 
                     <div class="form-group row">
-                        <label for="inputPassword" class="col-sm-4 control-label">{TEXT_PASSWORD}</label>
+                        <label for="inputPassword" class="col-sm-4 col-form-label">{TEXT_PASSWORD}</label>
                         <div class="col-sm-8">
                             <input id="inputPassword" name="password" maxlength="30" type="password" class="form-control" />
                         </div>
                     </div>
 
                     <div class="form-group row">
-                        <label for="inputPassword2" class="col-sm-4 control-label">{TEXT_RETYPE_PASSWORD}</label>
+                        <label for="inputPassword2" class="col-sm-4 col-form-label">{TEXT_RETYPE_PASSWORD}</label>
                         <div class="col-sm-8">
                             <input id="inputPassword2" name="password2" maxlength="30" type="password" class="form-control" />
                             <p class="help-block" style="{DISPLAY_EXTRA}">{CHANGING_PASSWORD}</p>
@@ -40,21 +40,21 @@
                     <hr style="{DISPLAY_EXTRA}" />
 
                     <div class="form-group row">
-                        <label for="inputDisplayName" class="col-sm-4 control-label">{TEXT_DISPLAY_NAME}</label>
+                        <label for="inputDisplayName" class="col-sm-4 col-form-label">{TEXT_DISPLAY_NAME}</label>
                         <div class="col-sm-8">
                             <input id="inputDisplayName" name="display_name" maxlength="255" type="text" class="form-control" value="{DISPLAY_NAME}" />
                         </div>
                     </div>
 
                     <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-4 control-label">{TEXT_EMAIL}</label>
+                        <label for="inputEmail" class="col-sm-4 col-form-label">{TEXT_EMAIL}</label>
                         <div class="col-sm-8">
                             <input id="inputEmail" name="email" maxlength="255" type="email" class="form-control" value="{EMAIL}" />
                         </div>
                     </div>
 
                     <div class="form-group row" style="{DISPLAY_HOME_FOLDERS}">
-                        <label for="selectHomeFolder" class="col-sm-4 control-label">{TEXT_HOME_FOLDER}</label>
+                        <label for="selectHomeFolder" class="col-sm-4 col-form-label">{TEXT_HOME_FOLDER}</label>
                         <div class="col-sm-8">
                             <select id="selectHomeFolder" name="home_folder" class="form-control">
                                 <option value="">{TEXT_NONE}</option>
@@ -66,7 +66,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="selectGroup" class="col-sm-4 control-label">{TEXT_GROUP}</label>
+                        <label for="selectGroup" class="col-sm-4 col-form-label">{TEXT_GROUP}</label>
                         <div class="col-sm-8">
                             <select id="selectGroup" class="form-control" name="groups[]" multiple="multiple" size="5">
                                 <!-- BEGIN group_list_block -->

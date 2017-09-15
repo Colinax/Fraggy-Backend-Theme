@@ -25,7 +25,7 @@ $(function () {
         }
     });
 
-    $('button, input[type="button"], input[type="reset"]')
+    $('button:not(.sidenav-toggler), input[type="button"], input[type="reset"]')
             .addClass('btn btn-outline-light');
 
     $('button[type="submit"], input[type="submit"]')
@@ -44,8 +44,8 @@ $(function () {
                 .addClass('card-body');
     }
 
-    $('#addonsPage nav.navbar a').each(function () {
-        var $this = $(this);
+    $('#addonsPage .nav-pills a').each(function () {
+        var $this = $(this).addClass('nav-link');
         if ($this.attr('href').indexOf('templates') > -1) {
             $this.prepend('<i class="fa fa-fw fa-paint-brush"></i> ');
         } else if ($this.attr('href').indexOf('modules') > -1) {
@@ -54,6 +54,23 @@ $(function () {
             $this.prepend('<i class="fa fa-fw fa-language"></i> ');
         }
     });
+
+    $('.adminModuleWrapper').each(function () {
+        var $adminToolCard = $('<div />', {class: 'card'}),
+                $adminToolCardHeader = $('<h4 />', {class: 'card-header'}),
+                $adminToolCardBody = $('<div />', {class: 'card-body'}),
+                $headingTitle = $('.content-body h4:first').hide(),
+                adminToolTitle = $headingTitle.find('a').prop('title');
+
+        $adminToolCardHeader.text(adminToolTitle);
+        $adminToolCardBody.html($(this));
+        $adminToolCard.append($adminToolCardHeader, $adminToolCardBody);
+
+        $headingTitle.remove();
+
+        $('.content-body').prepend($adminToolCard);
+    });
+
 
     var $welcomeMessage = $('#welcomeMessage'),
             welcomeMessageText = $welcomeMessage.text();
@@ -71,7 +88,6 @@ $(function () {
         $.insert(WB_URL + '/modules/jsadmin/backend.css');
     }
     $('#publishdate, #enddate').css({'width': 150, 'display': 'inline-block'});
-
 
 });
 

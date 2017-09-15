@@ -74,6 +74,8 @@ $border-radius-sm: 0;
 
 $caret-width: .3rem;
 
+$line-height-sm: 1.2;
+
 // Grid breakpoints (Bootstrap)
 $grid-breakpoints: (
 xs: 0,
@@ -108,7 +110,7 @@ $link-color: $body-color;
 $link-hover-color: $body-color;
 
 // Table (Bootstrap)
-$table-cell-padding: .75rem;
+$table-cell-padding: .65rem .75rem;
 $table-cell-padding-sm: .45rem;
 
 // Form (Bootstrap)
@@ -233,13 +235,14 @@ $sidenav-link-border-color: transparent;
 $sidenav-link-color: $white;
 $sidenav-link-bg: transparent;
 
-$sidenav-link-hover-border-color: transparent;
-$sidenav-link-hover-color: $white;
-$sidenav-link-hover-bg: darken($sidenav-bg, 1%);
+$sidenav-link-hover-border-color: theme-color('primary');
+$sidenav-link-hover-color: theme-color('primary');
+$sidenav-link-hover-bg: darken($sidenav-bg, 2%);
 
 $sidenav-link-active-border-color: theme-color('primary');
-$sidenav-link-active-color: theme-color('primary');
-$sidenav-link-active-bg: darken($sidenav-bg, 2%);
+$sidenav-link-active-color: $white;
+$sidenav-link-active-bg: theme-color('primary');
+
 
 $sidenav-second-level-link-hover-border-color: transparent;
 $sidenav-second-level-link-hover-color: $white;

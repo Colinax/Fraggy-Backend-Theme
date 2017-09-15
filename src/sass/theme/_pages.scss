@@ -7,8 +7,30 @@
 
 #mediaBrowsePage, #mediaRenamePage, #setParameterPage {
     background: #fff;
+    padding-top: $spacer;
+
+    body {
+        min-height: fit-content;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .table {
+        margin: 0;
+    }
+
+    .alert {
+        margin: 20px;
+        text-align: center;
+    }
 }
 
+#alertPage {
+    background: #fff;
+    padding: $spacer;
+}
 
 #accessPage {
     h5 {
@@ -59,6 +81,12 @@
                     text-align: left;
                 }
 
+                &.visibility {
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    width: 30px;
+                }
+
                 &.modify, &.id {
                     width: 100px;
                 }
@@ -73,36 +101,37 @@
             ul {
 
                 td {
-                    padding: 4px 8px;
+                    padding-top: $table-cell-padding-sm;
+                    padding-bottom: $table-cell-padding-sm;
 
                     &.toggle {
-                        width: 100px;
-                        padding-left: 40px;
+                        width: 60px;
+                        padding-left: 20px;
+                        padding-right: 0.2rem;
                     }
                 }
-
 
                 ul {
                     td {
                         &.toggle {
-                            width: 120px;
-                            padding-left: 80px;
+                            width: 80px;
+                            padding-left: 40px;
                         }
                     }
 
                     ul {
                         td {
                             &.toggle {
-                                width: 160px;
-                                padding-left: 120px;
+                                width: 100px;
+                                padding-left: 60px;
                             }
                         }
 
                         ul {
                             td {
                                 &.toggle {
-                                    width: 200px;
-                                    padding-left: 160px;
+                                    width: 120px;
+                                    padding-left: 80px;
                                 }
                             }
                         }

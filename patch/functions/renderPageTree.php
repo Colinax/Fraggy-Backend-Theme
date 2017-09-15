@@ -70,6 +70,7 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999)
         );
 
         ob_start();
+
         ?>
         <li class="p<?= $page['parent'] ?> <?= ($hasChildren ? 'has-children' : '') ?>">
             <table class="table">
@@ -99,13 +100,14 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999)
                         <br />
                         <small>{PAGE_TITLE}</small>
                     </td>
-                    <td class="id hidden-xs hidden-sm">{PAGE_ID}</td>
-                    <td class="modify hidden-xs hidden-sm">
+                    <td class="id d-none d-md-table-cell">{PAGE_ID}</td>
+                    <td class="modify d-none d-md-table-cell">
                         <?php if ($canModifyPage) { ?>
                             <a href="{modifyPageURL}" title="<?= $HEADING['MODIFY_PAGE'] ?>"><i class="fa fa-fw fa-pencil"></i></a>
                             <?php
                         }
                         if ($page['visibility'] != 'deleted' && $canModifySettings) {
+
                             ?>
                             <a href="{modifySettingsURL}" title="<?= $HEADING['MODIFY_PAGE_SETTINGS'] ?>"><i class="fa fa-fw fa-cog"></i></a>
                         <?php } else if ($page['visibility'] == 'deleted') { ?>
@@ -113,11 +115,12 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999)
                             <?php
                         }
                         if ($canManageSections) {
+
                             ?>
                             <a href="{modifySectionsURL}" title="<?= $HEADING['MANAGE_SECTIONS'] ?>"><i class="fa fa-list-alt" aria-hidden="true"></i></a>
                         <?php } ?>
                     </td>
-                    <td class="hidden-xs hidden-sm">
+                    <td class="d-none d-md-table-cell">
                         <?php if ($page['visibility'] != 'deleted' && $page['visibility'] != 'none') { ?>
                             <a href="{frontendViewURL}" target="_blank" title="<?= $TEXT['VIEW'] ?> (Frontend)"><i class="fa fa-desktop" aria-hidden="true"></i></a>
                         <?php } ?>
@@ -134,10 +137,10 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999)
                     </td>
                     <td>
                         <?php if ($canDeleteAndModify) { ?>
-                            <a href="javascript:confirm_link('PageID: {PAGE_ID}\n\n\t<?= $MESSAGE['PAGES_DELETE_CONFIRM'] ?>?','../pages/delete.php?page_id={pageIDKEY}');" title="<?= $TEXT['DELETE'] ?>"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            <a href="javascript:confirm_link('PageID: {PAGE_ID}\n\n<?= $MESSAGE['PAGES_DELETE_CONFIRM'] ?>?','../pages/delete.php?page_id={pageIDKEY}');" title="<?= $TEXT['DELETE'] ?>"><i class="fa fa-trash" aria-hidden="true"></i></a>
                         <?php } ?>
                     </td>
-                    <td class="hidden-xs hidden-sm">
+                    <td class="d-none d-md-table-cell">
                         <?php if ($canAddChild && $level < $levelLimit) { ?>
                             <a href="javascript:addChildPage('{PAGE_ID}');" title="<?= $HEADING['ADD_CHILD_PAGE'] ?>"><i class="fa fa-files-o" aria-hidden="true"></i></a>
                         <?php } ?>

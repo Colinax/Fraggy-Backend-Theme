@@ -4,24 +4,23 @@
         <h4 class="card-header">
             {HEADING_ADMINISTRATION_TOOLS}
         </h4>
+        <table class="table table-striped">
+            <tbody>
+                <!-- BEGIN tool_list_block -->
+                <tr>
+                    <td>
+                        <a href="{ADMIN_URL}/admintools/tool.php?tool={TOOL_DIR}">
+                            {TOOL_NAME}
+                        </a>
+                    </td>
+                    <td>
+                        {TOOL_DESCRIPTION}
+                    </td>
+                </tr>
+                <!-- END tool_list_block -->
+            </tbody>
+        </table>
         <div class="card-body">
-            <table class="table table-striped">
-                <tbody>
-                    <!-- BEGIN tool_list_block -->
-                    <tr>
-                        <td>
-                            <a href="{ADMIN_URL}/admintools/tool.php?tool={TOOL_DIR}">
-                                {TOOL_NAME}
-                            </a>
-                        </td>
-                        <td>
-                            <p>{TOOL_DESCRIPTION}</p>
-                        </td>
-                    </tr>
-                    <!-- END tool_list_block -->
-                </tbody>
-            </table>
-            <hr />
             {TOOL_LIST}
         </div>
     </div>

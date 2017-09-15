@@ -23,6 +23,7 @@
                 .nav-link {
                     cursor: pointer;
                     font-weight: normal;
+                    font-size: $font-size-lg;
                 }
             }
         }
@@ -48,6 +49,7 @@
                 border: 0 solid $sidenav-link-border-color;
                 color: $sidenav-link-color;
                 background: $sidenav-link-bg;
+                transition: color .3s ease, background .3s ease, border .3s ease;
 
                 &.nav-link-collapse {
                     &:after {
@@ -195,7 +197,7 @@
 
             a {
                 &, &:hover, &:active {
-                    color: $white;
+                    color: theme-color('primary');
                 }
             }
 
@@ -206,14 +208,17 @@
 
         .sidenav-brand {
             display: block;
-            padding: ($navbar-padding-y * 2);
+            padding: ($navbar-padding-y * 2) ($navbar-padding-y * 2) 0 ($navbar-padding-y * 2);
             height: auto;
             line-height: inherit;
 
             .brand {
+                height: 96px;
+                line-height: 96px;
+
                 img {
                     height: auto;
-                    max-height: 64px;
+                    max-height: 96px;
                 }
             }
         }
@@ -225,7 +230,6 @@
             width: auto;
 
             .navbar-sidenav {
-                margin-top: 0;
                 display: block;
                 width: 100%;
 
