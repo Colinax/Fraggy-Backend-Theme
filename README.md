@@ -24,6 +24,7 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 # ToDo
 
  * Add working datetime picker for Bootstrap 4
+ * Redesign favicon based on new theme logo
 
 ## Older versions
 
