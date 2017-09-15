@@ -9483,6 +9483,9 @@ body {
 body.fixed-nav {
   padding-top: 6.5rem;
 }
+body.fixed-nav.prepage {
+  padding-top: 0;
+}
 body.prepage #sideNavigation {
   display: none;
   width: 0;
@@ -12483,6 +12486,9 @@ legend {
   }
   body.fixed-nav {
     padding-top: 3rem;
+  }
+  body.fixed-nav.prepage {
+    padding-top: 0;
   }
   body.prepage {
     padding-top: 0;

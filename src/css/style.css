@@ -14287,6 +14287,16 @@ body.fixed-nav {
   }
 }
 
+body.fixed-nav.prepage {
+  padding-top: 0;
+}
+
+@media (min-width: 992px) {
+  body.fixed-nav.prepage {
+    padding-top: 0;
+  }
+}
+
 body.prepage #sideNavigation {
   display: none;
   width: 0;
