@@ -11,9 +11,9 @@
  *   Font Awesome 4.7.0 by @davegandy | fontawesome.io/license
  *   jQuery v3.2.1 | (c) jQuery Foundation | jquery.org/license
  *   Bootstrap v4.0.0-beta | (c) The Bootstrap Authors | MIT
+ *   InsertLoader 1.0 | (c) Jonathan Nessier, Neoflow | MIT
  *   Popper.js v1.12.0 | (c) Federico Zivolo | MIT
  *   Select2 v4.0.3 | (c) Kevin Brown, Igor Vaynberg, and Select2 contributors | MIT
- *   FooTable v3.1.6 | (c) Steven Usher & Brad Vincent | GPLv3
  *   Nicescroll v3.7.6 | (c) InuYaksa | MIT
  *   Bootstrap Fileselect v2.0.0 | (c) Jonathan Nessier, Neoflow | MIT
  */
