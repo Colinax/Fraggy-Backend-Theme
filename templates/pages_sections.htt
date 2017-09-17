@@ -75,17 +75,17 @@
                                         <input type="text" class="form-control" id="namesection{VAR_SECTION_ID}" name="namesection{VAR_SECTION_ID}" value="{NAMESECTION}" />
                                     </td>
                                     <td class="visible-lg">
-                                        <div class="input-group date datetimepicker">
-                                            <input type="text" name="start_date{VAR_SECTION_ID}" value="{VALUE_PUBL_START}" class="form-control" />
-                                            <span class="input-group-addon" style="cursor:pointer;" >
+                                        <div class="input-group date datetimepicker" id="startDate" data-target-input="nearest">
+                                            <input type="text" name="start_date{VAR_SECTION_ID}" value="{VALUE_PUBL_START}" class="form-control datetimepicker-input" data-target="#startDate" />
+                                            <span class="input-group-addon" style="cursor:pointer;" data-target="#startDate" data-toggle="datetimepicker">
                                                 <i class="fa fa-fw fa-calendar"></i>
                                             </span>
                                         </div>
                                     </td>
                                     <td class="visible-lg">
-                                        <div class="input-group date datetimepicker" id="endDate">
-                                            <input type="text" datepicker-append-to-body="true" name="end_date{VAR_SECTION_ID}" value="{VALUE_PUBL_END}"  class="form-control" />
-                                            <span class="input-group-addon" style="cursor:pointer;">
+                                        <div class="input-group date datetimepicker" id="endDate" data-target-input="nearest">
+                                            <input type="text" name="end_date{VAR_SECTION_ID}" value="{VALUE_PUBL_END}"  class="form-control datetimepicker-input" data-target="#endDate" />
+                                            <span class="input-group-addon" style="cursor:pointer;" data-target="#endDate" data-toggle="datetimepicker">
                                                 <i class="fa fa-fw fa-calendar"></i>
                                             </span>
                                         </div>
