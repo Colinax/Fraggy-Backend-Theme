@@ -15,6 +15,7 @@
  *   Popper.js v1.12.0 | (c) Federico Zivolo | MIT
  *   Select2 v4.0.3 | (c) Kevin Brown, Igor Vaynberg, and Select2 contributors | MIT
  *   Nicescroll v3.7.6 | (c) InuYaksa | MIT
+ *   Tempus Dominus Bootstrap4 v5.0.0-alpha7 | (c) Jonathan Peterson | MIT
  *   Bootstrap Fileselect v2.0.0 | (c) Jonathan Nessier, Neoflow | MIT
  */
 $(function () {
@@ -3078,7 +3079,9 @@ function formatTime(time) {
     return hours + ':' + minutes + ':' + seconds;
 }
 
-
+function replaceAll(str, find, replace) {
+    return str.toString().replace(new RegExp(find, 'g'), replace);
+}
 $(function () {
     $('.collapse-history')
             .each(function () {
@@ -3144,10 +3147,10 @@ $(function () {
 
     $('.datetimepicker').each(function () {
         var $this = $(this);
+        console.log($this.data('format') ? replaceAll($this.data('format'), '%', '') : 'DD.MM.Y HH:mm');
         $this.datetimepicker({
             locale: $this.data('language') || LANGUAGE_CODE,
-            format: $this.data('format') ? $this.data('format') : 'DD.MM.Y HH:mm',
-            extraFormats: ['M/D/Y HH:mm'],
+            format: 'DD.MM.Y HH:mm',
             useCurrent: false
         });
     });

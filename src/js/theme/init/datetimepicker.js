@@ -3,10 +3,10 @@ $(function () {
 
     $('.datetimepicker').each(function () {
         var $this = $(this);
+        console.log($this.data('format') ? replaceAll($this.data('format'), '%', '') : 'DD.MM.Y HH:mm');
         $this.datetimepicker({
             locale: $this.data('language') || LANGUAGE_CODE,
-            format: $this.data('format') ? $this.data('format') : 'DD.MM.Y HH:mm',
-            extraFormats: ['M/D/Y HH:mm'],
+            format: 'DD.MM.Y HH:mm',
             useCurrent: false
         });
     });

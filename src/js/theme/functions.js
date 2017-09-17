@@ -16,3 +16,13 @@ function formatTime(time) {
     return hours + ':' + minutes + ':' + seconds;
 }
 
+/**
+ * Search and replace all in string
+ * @param {string} str
+ * @param {string} find
+ * @param {string} replace
+ * @returns {string}
+ */
+function replaceAll(str, find, replace) {
+    return str.toString().replace(new RegExp(find, 'g'), replace);
+}

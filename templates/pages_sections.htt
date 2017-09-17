@@ -75,7 +75,7 @@
                                         <input type="text" class="form-control" id="namesection{VAR_SECTION_ID}" name="namesection{VAR_SECTION_ID}" value="{NAMESECTION}" />
                                     </td>
                                     <td class="visible-lg">
-                                        <div class="input-group date datetimepicker" id="startDate" data-target-input="nearest">
+                                        <div class="input-group date datetimepicker" data-format="{jscal_ifformat}" id="startDate" data-target-input="nearest">
                                             <input type="text" name="start_date{VAR_SECTION_ID}" value="{VALUE_PUBL_START}" class="form-control datetimepicker-input" data-target="#startDate" />
                                             <span class="input-group-addon" style="cursor:pointer;" data-target="#startDate" data-toggle="datetimepicker">
                                                 <i class="fa fa-fw fa-calendar"></i>
