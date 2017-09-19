@@ -21,7 +21,7 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link href="{THEME_URL}/css/style.css?v2.0.0-alpha1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/css/style.css?v2.0.0-alpha2" rel="stylesheet" type="text/css" />
 
         <!-- WebsiteBaker CSS -->
         {BACKEND_MODULE_CSS}
@@ -35,7 +35,7 @@
         </script>
 
         <!-- Theme jQuery -->
-        <script src="{THEME_URL}/js/jquery.min.js?v2.0.0-alpha1"></script>
+        <script src="{THEME_URL}/js/jquery.min.js?v2.0.0-alpha2"></script>
 
         <!-- WBCE helper JavaScript -->
         <script>
@@ -46,7 +46,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.js?v2.0.0-alpha1"></script>
+        <script src="{THEME_URL}/js/script.js?v2.0.0-alpha2"></script>
 
         {BACKEND_MODULE_JS}
 
