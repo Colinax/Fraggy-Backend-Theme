@@ -58,21 +58,26 @@ gulp.task('css:minify', function () {
 gulp.task('js:build', function () {
     return gulp.src([
         './src/js/workarounds.js',
+
         './src/js/vendor/popper.min.js',
         './src/js/vendor/bootstrap.min.js',
+
         './src/js/vendor/bootstrap-fileselect.min.js',
 
-        './src/js/vendor/moment-with-locales.min.js',
-        './src/js/vendor/tempusdominus-bootstrap-4.js',
+        './src/js/vendor/jquery.datetimepicker.full.min.js',
 
         './src/js/vendor/jquery.easing.min.js',
         './src/js/vendor/jquery.nicescroll.min.js',
+
         './src/js/vendor/select2.min.js',
+
         './src/js/vendor/jquery-insert.js',
+
         './src/js/theme/base.js',
         './src/js/theme/navigation.js',
         './src/js/theme/functions.js',
         './src/js/theme/collapse-history.js',
+
         './src/js/theme/init/select2.js',
         './src/js/theme/init/fileselect.js',
         './src/js/theme/init/datetimepicker.js'

@@ -72,9 +72,9 @@ $pageLevelLimit = $settings['value'];
         <th class="title">
             <?= $TEXT['VISIBILITY'] ?> / <?= $TEXT['MENU_TITLE'] ?>
         </th>
-        <th class="id d-none d-md-table-cell">PageID</th>
-        <th class="modify d-none d-md-table-cell"></th>
-        <th class="d-none d-md-table-cell"></th>
+        <th class="id d-none d-lg-table-cell">PageID</th>
+        <th class="modify d-none d-xl-table-cell"></th>
+        <th class="d-none d-lg-table-cell"></th>
         <th></th>
         <th></th>
         <th></th>

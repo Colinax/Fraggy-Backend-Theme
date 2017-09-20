@@ -13,7 +13,8 @@
 // Vendor styles
 @import 'vendor/bootstrap';
 @import 'vendor/select2';
-@import 'vendor/tempusdominus-bootstrap-4';
+//@import 'vendor/tempusdominus-bootstrap-4';
+@import 'vendor/jquery.datetimepicker'; 
 
 // Theme components
 @import 'theme/utilities.scss';

@@ -5,31 +5,31 @@
         <h4 class="card-header">
             {HEADING_TEMPLATE_DETAILS}
         </h4>
-        <div class="card-body">
 
-            <table class="table table-striped">
-                <tr>
-                    <th width="150">{TEXT_NAME}</td>
-                    <td>{NAME}</td>
-                </tr>
-                <tr>
-                    <th>{TEXT_AUTHOR}</th>
-                    <td>{AUTHOR}</td>
-                </tr>
-                <tr>
-                    <th>{TEXT_VERSION}</th>
-                    <td>{VERSION}</td>
-                </tr>
-                <tr>
-                    <th>{TEXT_DESIGNED_FOR}</th>
-                    <td>WBCE {DESIGNED_FOR}</td>
-                </tr>
-                <tr>
-                    <th>{TEXT_DESCRIPTION}</th>
-                    <td>{DESCRIPTION}</td>
-                </tr>
-            </table>
-            <hr />
+
+        <table class="table table-responsive table-striped">
+            <tr>
+                <th width="150">{TEXT_NAME}</td>
+                <td>{NAME}</td>
+            </tr>
+            <tr>
+                <th>{TEXT_AUTHOR}</th>
+                <td>{AUTHOR}</td>
+            </tr>
+            <tr>
+                <th>{TEXT_VERSION}</th>
+                <td>{VERSION}</td>
+            </tr>
+            <tr>
+                <th>{TEXT_DESIGNED_FOR}</th>
+                <td>WBCE {DESIGNED_FOR}</td>
+            </tr>
+            <tr>
+                <th>{TEXT_DESCRIPTION}</th>
+                <td>{DESCRIPTION}</td>
+            </tr>
+        </table>
+        <div class="card-body">
             <a href="index.php" class="btn btn-outline-light">
                 <i class="fa fa-fw fa-arrow-circle-left"></i> {TEXT_BACK}
             </a>

@@ -8,10 +8,11 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Changelog
 
-## v2.0.0-alpha2 - Work in progress
+## v2.0.0-beta1 - Prerelease
 
  * Updated Roboto font
  * Redesigned favicon based on new theme logo
+ * Added new datetime picker for sections
 
 ## v2.0.0-alpha1 - Early access
 
@@ -21,10 +22,6 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
  * Replaced jQuery Insert with InsertLoader
  * Redesigned default theme logo
  * Refactored navigations
-
-# ToDo
-
- * Add working datetime picker for Bootstrap 4
 
 ## Older versions
 

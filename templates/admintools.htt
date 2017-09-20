@@ -4,7 +4,7 @@
         <h4 class="card-header">
             {HEADING_ADMINISTRATION_TOOLS}
         </h4>
-        <table class="table table-striped">
+        <table class="table table-responsive table-striped">
             <tbody>
                 <!-- BEGIN tool_list_block -->
                 <tr>

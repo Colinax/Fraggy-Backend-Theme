@@ -4,30 +4,30 @@
         <h4 class="card-header">
             {HEADING_LANGUAGE_DETAILS}
         </h4>
+
+        <table class="table table-responsive table-striped">
+            <tr>
+                <th width="150">{TEXT_NAME}</td>
+                <td>{NAME}</td>
+            </tr>
+            <tr>
+                <th>{TEXT_CODE}</td>
+                <td>{CODE}</td>
+            </tr>
+            <tr>
+                <th>{TEXT_AUTHOR}</td>
+                <td>{AUTHOR}</td>
+            </tr>
+            <tr>
+                <th>{TEXT_VERSION}</td>
+                <td>{VERSION}</td>
+            </tr>
+            <tr>
+                <th>{TEXT_DESIGNED_FOR}</td>
+                <td>Website Baker {DESIGNED_FOR}</td>
+            </tr>
+        </table>
         <div class="card-body">
-            <table class="table table-striped">
-                <tr>
-                    <th width="150">{TEXT_NAME}</td>
-                    <td>{NAME}</td>
-                </tr>
-                <tr>
-                    <th>{TEXT_CODE}</td>
-                    <td>{CODE}</td>
-                </tr>
-                <tr>
-                    <th>{TEXT_AUTHOR}</td>
-                    <td>{AUTHOR}</td>
-                </tr>
-                <tr>
-                    <th>{TEXT_VERSION}</td>
-                    <td>{VERSION}</td>
-                </tr>
-                <tr>
-                    <th>{TEXT_DESIGNED_FOR}</td>
-                    <td>Website Baker {DESIGNED_FOR}</td>
-                </tr>
-            </table>
-            <hr />
             <a href="index.php" class="btn btn-outline-light">
                 <i class="fa fa-fw fa-arrow-circle-left"></i> {TEXT_BACK}
             </a>

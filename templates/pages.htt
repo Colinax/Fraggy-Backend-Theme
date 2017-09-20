@@ -1,7 +1,7 @@
 <!-- BEGIN main_block -->
 <div id="pagesPage">
     <div class="row">
-        <div class="col-lg-8">
+        <div class="col-xl-8">
 
             <div id="pageListCard" class="card">
                 <h4 class="card-header">
@@ -9,13 +9,11 @@
                 </h4>
                 <div class="card-body">
 
-
-
                 </div>
             </div>
 
-        </div><!-- /.col-lg-8 -->
-        <div class="col-lg-4">
+        </div>
+        <div class="col-xl-4">
 
             <div class="card {DISPLAY_ADD}">
                 <h4 class="card-header">
@@ -97,8 +95,8 @@
                 </div>
             </div>-->
 
-        </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+        </div>
+    </div>
 
 </div><!-- /#pagesPage -->
 

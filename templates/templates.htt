@@ -19,9 +19,11 @@
 
 
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-4 col-xl-6">
             <div class="card {DISPLAY_INSTALL}">
-
+                <h4 class="card-header">
+                    {HEADING_INSTALL_TEMPLATE}
+                </h4>
                 <div class="card-body">
                     <form name="install" enctype="multipart/form-data" action="install.php" method="post">
                         {FTAN}
@@ -36,7 +38,7 @@
                     </form>
                 </div>
             </div>
-        </div><!-- /.col-lg-6 -->
+        </div>
 
         <div class="col-lg-6">
             <div class="card {DISPLAY_UNINSTALL}">
@@ -62,8 +64,8 @@
                     </form>
                 </div>
             </div>
-        </div><!-- /.col-lg-6 -->
-    </div><!-- /.row -->
+        </div>
+    </div>
 
     <div class="card {DISPLAY_LIST}">
         <h4 class="card-header">
