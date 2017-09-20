@@ -1,4 +1,4 @@
-![Responsive and Bootstrap based backend theme for WBCE](https://github.com/Neoflow/Fraggy-Backend-Theme/blob/master/images/example-2.0.0.png "Responsive and Bootstrap based backend theme for WBCE")
+![Responsive and Bootstrap based backend theme for WBCE](https://github.com/Neoflow/Fraggy-Backend-Theme/blob/v2.0.0/images/example-2.0.0.png "Responsive and Bootstrap based backend theme for WBCE")
 
 # About
 
@@ -13,9 +13,6 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
  * Updated Roboto font
  * Redesigned favicon based on new theme logo
  * Added new datetime picker for sections
-
-## v2.0.0-alpha1 - Early access
-
  * Updated Bootstrap from 3.3.7 to 4.0.0-beta
  * Updated jQuery form 2.2.4 to 3.2.1
  * Removed color and dark styling modes to simplify maintenance
