@@ -21,7 +21,7 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link href="{THEME_URL}/css/style.css?v2.0.0-beta1" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/css/style.css?v2.0.0-beta2" rel="stylesheet" type="text/css" />
 
         <!-- WBCE module CSS -->
         {BACKEND_MODULE_CSS}
@@ -35,7 +35,7 @@
         </script>
 
         <!-- Theme jQuery -->
-        <script src="{THEME_URL}/js/jquery.min.js?v2.0.0-beta1"></script>
+        <script src="{THEME_URL}/js/jquery.min.js?v2.0.0-beta2"></script>
 
         <!-- WBCE helper JavaScript -->
         <script>
@@ -46,7 +46,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.js?v2.0.0-beta1"></script>
+        <script src="{THEME_URL}/js/script.js?v2.0.0-beta2"></script>
 
         {BACKEND_MODULE_JS}
 
@@ -137,7 +137,7 @@
             <div class="sidenav-content small">
                 <ul class="list-inline versions">
                     <li class="list-inline-item">WBCE: {WBCE_VERSION}</li>
-                    <li class="list-inline-item">Theme: 2.0.0-beta1</li>
+                    <li class="list-inline-item">Theme: 2.0.0-beta2</li>
                 </ul>
                 <hr />
                 <p>
