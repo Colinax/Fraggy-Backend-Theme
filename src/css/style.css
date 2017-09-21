@@ -15275,6 +15275,14 @@ body.prepage #content {
   margin: 0 0 10px 0;
 }
 
+.card-body .nav-tabs {
+  margin-bottom: 10px;
+}
+
+.card-body .card {
+  border-width: 1px;
+}
+
 .btn {
   cursor: pointer;
 }
