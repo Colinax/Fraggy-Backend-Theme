@@ -54,6 +54,7 @@ $(function () {
         });
     };
 
+    // Add scrollbar
     $sideNavigation.addScrollbar();
 
     // Remove scrollbar function
