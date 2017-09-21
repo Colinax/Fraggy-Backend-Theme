@@ -73,9 +73,10 @@
     padding-left: $spacer;
     padding-right: $spacer;
 
-    &.card-header-dark {
-        background: theme-color('dark');
-        color: $white;
+    &.bg-secondary {
+        a {
+            color: theme-color('primary');
+        }
     }
 }
 

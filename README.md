@@ -13,6 +13,7 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
  * Fixed inline elements
  * Fixed #25
  * Optimized side navigation
+ * Refactored custom backend theme logo replacement
 
 ## v2.0.0-beta2 - Prerelease
 
@@ -44,9 +45,9 @@ If you are installing the theme for the first time, use the template installatio
 
 ## Theme logo
 
-If you want to replace the default theme logo, then you have to create a logo image called theme-logo.png and replace the existing one in the image folder of your backend theme installation.
+If you want to use a custom backend theme logo, then you have to create a logo image with the name backend-theme-logo.png and upload it in the root-directory of the media folder.
 
-> The logo must be a PNG-based image and should have a max width of 250px and a max height of 86px.
+> The logo must be a PNG-based image and should have a max width of 224px and a max height of 96px.
 
 # Support
 

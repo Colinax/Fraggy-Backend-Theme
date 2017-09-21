@@ -206,6 +206,21 @@ $.fn.preventDefaultClickBehaviour = function () {
     return this;
 };
 
+function formatTime(time) {
+    var seconds = Math.floor(time % 60),
+            minutes = Math.floor((time / 60) % 60),
+            hours = Math.floor((time / (60 * 60)) % 24);
+
+    hours = hours < 10 ? '0' + hours : hours;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    return hours + ':' + minutes + ':' + seconds;
+}
+
+function replaceAll(str, find, replace) {
+    return str.toString().replace(new RegExp(find, 'g'), replace);
+}
 $(function () {
 
     var $sideNavigation = $('#sideNavigation')
@@ -274,21 +289,22 @@ $(function () {
     }
 
 });
-function formatTime(time) {
-    var seconds = Math.floor(time % 60),
-            minutes = Math.floor((time / 60) % 60),
-            hours = Math.floor((time / (60 * 60)) % 24);
+$(function () {
 
-    hours = hours < 10 ? '0' + hours : hours;
-    minutes = minutes < 10 ? '0' + minutes : minutes;
-    seconds = seconds < 10 ? '0' + seconds : seconds;
+    var $brandImg = $('.brand img'),
+            backendThemeLogoUrl = WB_URL + '/media/backend-theme-logo.png';
+    $.ajax({
+        url: backendThemeLogoUrl,
+        cache: true,
+        processData: false,
+        error: function () {
+            backendThemeLogoUrl = THEME_URL + '/images/theme-logo.png';
+        },
+    }).always(function () {
+        $brandImg.attr('src', backendThemeLogoUrl).show();
+    });
 
-    return hours + ':' + minutes + ':' + seconds;
-}
-
-function replaceAll(str, find, replace) {
-    return str.toString().replace(new RegExp(find, 'g'), replace);
-}
+});
 $(function () {
     $('.collapse-history')
             .each(function () {

@@ -96,7 +96,7 @@
 
             <div class="sidenav-brand">
                 <span class="brand">
-                    <img src="{THEME_URL}/images/theme-logo.png" class="img-fluid" alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" />
+                    <img class="img-fluid" alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" style="display: none;" />
                 </span>
             </div>
 

@@ -15262,9 +15262,8 @@ body.prepage #content {
   padding-right: 1rem;
 }
 
-.card-header.card-header-dark {
-  background: #4a4a55;
-  color: #fff;
+.card-header.bg-secondary a {
+  color: #45a246;
 }
 
 .card-footer {
