@@ -256,6 +256,8 @@ $(function () {
         });
     };
 
+    $sideNavigation.addScrollbar();
+
     $sideNavigation.removeScrollbar = function () {
         $sideNavigation.getNiceScroll().remove();
     };

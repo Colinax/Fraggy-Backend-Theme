@@ -54,6 +54,8 @@ $(function () {
         });
     };
 
+    $sideNavigation.addScrollbar();
+
     // Remove scrollbar function
     $sideNavigation.removeScrollbar = function () {
         $sideNavigation.getNiceScroll().remove();
