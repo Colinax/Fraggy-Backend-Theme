@@ -37,10 +37,50 @@
                 margin-right: -2.5rem;
                 width: 1.5rem;
                 display: inline-block;
+
+                @extend .fa;
             }
 
             .nav-link-text {
                 padding-left: 3rem;
+            }
+
+            .nav-item {
+                &.item-preferences {
+                    .nav-link-icon {
+                        @extend .fa-cog;
+                    }
+                }
+                &.item-pages {
+                    .nav-link-icon {
+                        @extend .fa-files-o;
+                    }
+                }
+                &.item-media {
+                    .nav-link-icon {
+                        @extend .fa-picture-o;
+                    }
+                }
+                &.item-addons {
+                    .nav-link-icon {
+                        @extend .fa-th;
+                    }
+                }
+                &.item-settings {
+                    .nav-link-icon {
+                        @extend .fa-cogs;
+                    }
+                }
+                &.item-admintools {
+                    .nav-link-icon {
+                        @extend .fa-cubes;
+                    }
+                }
+                &.item-access {
+                    .nav-link-icon {
+                        @extend .fa-users;
+                    }
+                }
             }
 
             .nav-link {
@@ -100,7 +140,7 @@
                 }
             }
 
-            .active,  {
+            .active, .current  {
                 > .nav-link {
                     border-color: $sidenav-link-active-border-color;
                     color: $sidenav-link-active-color;
@@ -116,7 +156,7 @@
                 > .sidenav-second-level {
                     background: $sidenav-link-active-bg;
 
-                    .active {
+                    .active, .current {
                         > .nav-link {
                             border-color: $sidenav-second-level-link-active-border-color;
                             color: $sidenav-second-level-link-active-color;

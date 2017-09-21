@@ -111,7 +111,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.fa {
+.fa, #sideNavigation .navbar-collapse .navbar-sidenav .nav-link-icon {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -169,10 +169,10 @@
 .fa-pull-right {
   float: right;
 }
-.fa.fa-pull-left {
+.fa.fa-pull-left, #sideNavigation .navbar-collapse .navbar-sidenav .fa-pull-left.nav-link-icon {
   margin-right: .3em;
 }
-.fa.fa-pull-right {
+.fa.fa-pull-right, #sideNavigation .navbar-collapse .navbar-sidenav .fa-pull-right.nav-link-icon {
   margin-left: .3em;
 }
 .pull-right {
@@ -181,10 +181,10 @@
 .pull-left {
   float: left;
 }
-.fa.pull-left {
+.fa.pull-left, #sideNavigation .navbar-collapse .navbar-sidenav .pull-left.nav-link-icon {
   margin-right: .3em;
 }
-.fa.pull-right {
+.fa.pull-right, #sideNavigation .navbar-collapse .navbar-sidenav .pull-right.nav-link-icon {
   margin-left: .3em;
 }
 .fa-spin {
@@ -301,7 +301,7 @@
 .fa-th-large:before {
   content: "";
 }
-.fa-th:before {
+.fa-th:before, #sideNavigation .navbar-collapse .navbar-sidenav .nav-item.item-addons .nav-link-icon:before {
   content: "";
 }
 .fa-th-list:before {
@@ -328,7 +328,8 @@
   content: "";
 }
 .fa-gear:before,
-.fa-cog:before {
+.fa-cog:before,
+#sideNavigation .navbar-collapse .navbar-sidenav .nav-item.item-preferences .nav-link-icon:before {
   content: "";
 }
 .fa-trash-o:before {
@@ -455,7 +456,8 @@
 }
 .fa-photo:before,
 .fa-image:before,
-.fa-picture-o:before {
+.fa-picture-o:before,
+#sideNavigation .navbar-collapse .navbar-sidenav .nav-item.item-media .nav-link-icon:before {
   content: "";
 }
 .fa-pencil:before {
@@ -658,7 +660,8 @@
   content: "";
 }
 .fa-gears:before,
-.fa-cogs:before {
+.fa-cogs:before,
+#sideNavigation .navbar-collapse .navbar-sidenav .nav-item.item-settings .nav-link-icon:before {
   content: "";
 }
 .fa-comments:before {
@@ -790,7 +793,8 @@
   content: "";
 }
 .fa-group:before,
-.fa-users:before {
+.fa-users:before,
+#sideNavigation .navbar-collapse .navbar-sidenav .nav-item.item-access .nav-link-icon:before {
   content: "";
 }
 .fa-chain:before,
@@ -808,7 +812,8 @@
   content: "";
 }
 .fa-copy:before,
-.fa-files-o:before {
+.fa-files-o:before,
+#sideNavigation .navbar-collapse .navbar-sidenav .nav-item.item-pages .nav-link-icon:before {
   content: "";
 }
 .fa-paperclip:before {
@@ -1507,7 +1512,7 @@
 .fa-cube:before {
   content: "";
 }
-.fa-cubes:before {
+.fa-cubes:before, #sideNavigation .navbar-collapse .navbar-sidenav .nav-item.item-admintools .nav-link-icon:before {
   content: "";
 }
 .fa-behance:before {
@@ -10039,25 +10044,25 @@ body.prepage #content {
 #sideNavigation .navbar-collapse .navbar-sidenav [aria-expanded="true"] + .sidenav-second-level {
   background: #2c313b;
 }
-#sideNavigation .navbar-collapse .navbar-sidenav .active > .nav-link {
+#sideNavigation .navbar-collapse .navbar-sidenav .active > .nav-link, #sideNavigation .navbar-collapse .navbar-sidenav .current > .nav-link {
   border-color: #45a246;
   color: #fff;
   background: #45a246;
 }
-#sideNavigation .navbar-collapse .navbar-sidenav .active > .nav-link:focus, #sideNavigation .navbar-collapse .navbar-sidenav .active > .nav-link:hover {
+#sideNavigation .navbar-collapse .navbar-sidenav .active > .nav-link:focus, #sideNavigation .navbar-collapse .navbar-sidenav .active > .nav-link:hover, #sideNavigation .navbar-collapse .navbar-sidenav .current > .nav-link:focus, #sideNavigation .navbar-collapse .navbar-sidenav .current > .nav-link:hover {
   border-color: #45a246;
   color: #fff;
   background: #45a246;
 }
-#sideNavigation .navbar-collapse .navbar-sidenav .active > .sidenav-second-level {
+#sideNavigation .navbar-collapse .navbar-sidenav .active > .sidenav-second-level, #sideNavigation .navbar-collapse .navbar-sidenav .current > .sidenav-second-level {
   background: #45a246;
 }
-#sideNavigation .navbar-collapse .navbar-sidenav .active > .sidenav-second-level .active > .nav-link {
+#sideNavigation .navbar-collapse .navbar-sidenav .active > .sidenav-second-level .active > .nav-link, #sideNavigation .navbar-collapse .navbar-sidenav .active > .sidenav-second-level .current > .nav-link, #sideNavigation .navbar-collapse .navbar-sidenav .current > .sidenav-second-level .active > .nav-link, #sideNavigation .navbar-collapse .navbar-sidenav .current > .sidenav-second-level .current > .nav-link {
   border-color: transparent;
   color: #45a246;
   background: #272c35;
 }
-#sideNavigation .navbar-collapse .navbar-sidenav .active > .sidenav-second-level .active > .nav-link:focus, #sideNavigation .navbar-collapse .navbar-sidenav .active > .sidenav-second-level .active > .nav-link:hover {
+#sideNavigation .navbar-collapse .navbar-sidenav .active > .sidenav-second-level .active > .nav-link:focus, #sideNavigation .navbar-collapse .navbar-sidenav .active > .sidenav-second-level .active > .nav-link:hover, #sideNavigation .navbar-collapse .navbar-sidenav .active > .sidenav-second-level .current > .nav-link:focus, #sideNavigation .navbar-collapse .navbar-sidenav .active > .sidenav-second-level .current > .nav-link:hover, #sideNavigation .navbar-collapse .navbar-sidenav .current > .sidenav-second-level .active > .nav-link:focus, #sideNavigation .navbar-collapse .navbar-sidenav .current > .sidenav-second-level .active > .nav-link:hover, #sideNavigation .navbar-collapse .navbar-sidenav .current > .sidenav-second-level .current > .nav-link:focus, #sideNavigation .navbar-collapse .navbar-sidenav .current > .sidenav-second-level .current > .nav-link:hover {
   border-color: transparent;
   color: #45a246;
   background: #272c35;

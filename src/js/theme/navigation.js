@@ -70,18 +70,8 @@ $(function () {
     var $navbarSidenav = $sideNavigation.find('.navbar-sidenav');
 
     // Workaround for fixing WBCE output to bootstrap valid output
-    var $activeNavItem = $navbarSidenav.find('li.nav-item.current');
-    if ($activeNavItem.length === 0) {
+    if ($navbarSidenav.find('li.nav-item.current').length === 0) {
         $navbarSidenav.find('li.dashboard').addClass('active');
-    } else {
-        $activeNavItem.removeClass('current').addClass('active');
     }
-    $navbarSidenav.find('li.item-preferences .nav-link-icon').append('<i class="fa fa-fw fa-cog"></i> ');
-    $navbarSidenav.find('li.item-pages .nav-link-icon').append('<i class="fa fa-fw fa-files-o"></i> ');
-    $navbarSidenav.find('li.item-media .nav-link-icon').append('<i class="fa fa-fw fa-picture-o"></i> ');
-    $navbarSidenav.find('li.item-addons .nav-link-icon').append('<i class="fa fa-fw fa-th"></i> ');
-    $navbarSidenav.find('li.item-settings .nav-link-icon').append('<i class="fa fa-fw fa-cogs"></i> ');
-    $navbarSidenav.find('li.item-admintools .nav-link-icon').append('<i class="fa fa-fw fa-cubes"></i> ');
-    $navbarSidenav.find('li.item-access .nav-link-icon').append('<i class="fa fa-fw fa-users"></i> ');
 
 });
