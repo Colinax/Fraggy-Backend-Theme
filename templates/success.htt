@@ -1,5 +1,5 @@
 <!-- BEGIN main_block -->
-<link href="../../templates/fraggy-backend-theme/css/style.css?v2.0.0-beta2" rel="stylesheet" type="text/css" />
+<link href="../../templates/fraggy-backend-theme/css/style.css?v2.0.0-beta3" rel="stylesheet" type="text/css" />
 <div class="alert alert-success">
     <p>{MESSAGE}</p>
     <!-- BEGIN show_redirect_block -->
@@ -16,7 +16,7 @@
 <script>
     if (typeof jQuery == 'undefined') {
         var script = document.createElement("SCRIPT");
-        script.src = '../../templates/fraggy-backend-theme/js/jquery.min.js?v2.0.0-beta2';
+        script.src = '../../templates/fraggy-backend-theme/js/jquery.min.js?v2.0.0-beta3';
         script.type = 'text/javascript';
         script.onload = function () {
             var $ = window.jQuery;

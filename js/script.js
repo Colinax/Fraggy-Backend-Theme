@@ -1,5 +1,5 @@
 /*
- * FRAGGY BACKEND THEME v2.0.0-beta2
+ * FRAGGY BACKEND THEME v2.0.0-beta3
  * Responsive and Bootstrap based backend theme for WBCE
  *
  * Copright (c) 2016-2017 Jonathan Nessier, Neoflow | neoflow.ch
@@ -91,13 +91,6 @@ $(function () {
         $('.content-body').prepend($adminToolCard);
     });
 
-
-    var $welcomeMessage = $('#welcomeMessage'),
-            welcomeMessageText = $welcomeMessage.text();
-
-    welcomeMessageText = welcomeMessageText.replace('imBackend', 'im Backend');
-    $welcomeMessage.text(welcomeMessageText);
-
     $('form[action="intro2.php"] table:first').addClass('table');
 
     if ($('.jcalendar').length) {
@@ -107,7 +100,6 @@ $(function () {
     if ($('.jsadmin').length) {
         $.insert(WB_URL + '/modules/jsadmin/backend.css');
     }
-    $('#publishdate, #enddate').css({'width': 150, 'display': 'inline-block'});
 
 });
 
@@ -293,16 +285,20 @@ $(function () {
 
     var $brandImg = $('.brand img'),
             backendThemeLogoUrl = WB_URL + '/media/backend-theme-logo.png';
-    $.ajax({
-        url: backendThemeLogoUrl,
-        cache: true,
-        processData: false,
-        error: function () {
-            backendThemeLogoUrl = THEME_URL + '/images/theme-logo.png';
-        },
-    }).always(function () {
-        $brandImg.attr('src', backendThemeLogoUrl).show();
-    });
+
+    if (!sessionStorage.getItem('backendThemeLogoUrl')) {
+        $.ajax({
+            url: backendThemeLogoUrl,
+            cache: true,
+            processData: false,
+            error: function () {
+                backendThemeLogoUrl = THEME_URL + '/images/theme-logo.png';
+            }
+        }).always(function () {
+            sessionStorage.setItem('backendThemeLogoUrl', backendThemeLogoUrl);
+            $brandImg.attr('src', backendThemeLogoUrl).show();
+        });
+    }
 
 });
 $(function () {

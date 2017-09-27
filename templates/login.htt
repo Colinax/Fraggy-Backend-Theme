@@ -21,7 +21,7 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link href="{THEME_URL}/css/style.css?v2.0.0-beta2" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/css/style.css?v2.0.0-beta3" rel="stylesheet" type="text/css" />
 
         <!-- WebsiteBaker CSS -->
         {BACKEND_MODULE_CSS}
@@ -35,7 +35,7 @@
         </script>
 
         <!-- Theme jQuery -->
-        <script src="{THEME_URL}/js/jquery.min.js?v2.0.0-beta2"></script>
+        <script src="{THEME_URL}/js/jquery.min.js?v2.0.0-beta3"></script>
 
         <!-- WBCE helper JavaScript -->
         <script>
@@ -46,7 +46,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.js?v2.0.0-beta2"></script>
+        <script src="{THEME_URL}/js/script.js?v2.0.0-beta3"></script>
 
         {BACKEND_MODULE_JS}
 
@@ -62,9 +62,14 @@
                         <div class="col-md-6 mx-md-auto col-lg-4">
                             <header id="prepageHeader">
                                 <span class="brand">
-                                    <img src="{THEME_URL}/images/theme-logo.png" class="img-fluid" alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" />
+                                    <img src="{THEME_URL}/images/theme-logo.png" class="img-fluid" alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" id="prepageHeaderBrandImage" />
                                 </span>
                             </header>
+                            <script>
+            if (sessionStorage.getItem('backendThemeLogoUrl')) {
+                $('#prepageHeaderBrandImage').attr('src', sessionStorage.getItem('backendThemeLogoUrl')).show();
+            }
+                            </script>
                         </div>
                     </div>
 

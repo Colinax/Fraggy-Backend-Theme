@@ -3,7 +3,7 @@
 
     <form name="settings" action="save.php" method="post" class="form-horizontal">
         <div class="row">
-            <div class="col-xl-6">
+            <div class="col-xl-7">
 
                 <div class="card">
                     <h4 class="card-header">
@@ -114,9 +114,9 @@
                     </div>
                 </div>
 
-            </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
+            </div>
+        </div>
     </form>
 
-</div><!-- /#preferencesPage -->
+</div>
 <!-- END main_block -->

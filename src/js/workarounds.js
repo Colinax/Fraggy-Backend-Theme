@@ -71,13 +71,6 @@ $(function () {
         $('.content-body').prepend($adminToolCard);
     });
 
-
-    var $welcomeMessage = $('#welcomeMessage'),
-            welcomeMessageText = $welcomeMessage.text();
-
-    welcomeMessageText = welcomeMessageText.replace('imBackend', 'im Backend');
-    $welcomeMessage.text(welcomeMessageText);
-
     $('form[action="intro2.php"] table:first').addClass('table');
 
     if ($('.jcalendar').length) {
@@ -87,7 +80,6 @@ $(function () {
     if ($('.jsadmin').length) {
         $.insert(WB_URL + '/modules/jsadmin/backend.css');
     }
-    $('#publishdate, #enddate').css({'width': 150, 'display': 'inline-block'});
 
 });
 

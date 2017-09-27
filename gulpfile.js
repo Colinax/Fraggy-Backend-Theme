@@ -29,7 +29,6 @@ gulp.task('scss:build', function () {
             .pipe(gulp.dest('./src/css'));
 });
 
-
 gulp.task('css:build', function () {
     return gulp.src(['./src/css/*.css'])
             .pipe(postcss([
