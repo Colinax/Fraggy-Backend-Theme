@@ -14631,13 +14631,10 @@ body.prepage #content {
   }
 }
 
-@media (min-width: 992px) and (min-width: 992px) {
+@media (min-width: 992px) {
   body.side-navigation-minimized #content {
     margin-left: 4rem;
   }
-}
-
-@media (min-width: 992px) {
   body.side-navigation-minimized #topNavigation {
     padding-left: 5rem;
   }

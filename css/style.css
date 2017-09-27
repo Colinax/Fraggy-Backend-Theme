@@ -12787,6 +12787,9 @@ legend {
   body.prepage #topNavigation {
     padding-left: 1rem;
   }
+  body.side-navigation-minimized #content {
+    margin-left: 4rem;
+  }
   body.side-navigation-minimized #topNavigation {
     padding-left: 5rem;
   }
@@ -13689,10 +13692,5 @@ legend {
   .form-inline .select2-container--bootstrap {
     display: inline-block;
     width: auto;
-  }
-}
-@media (min-width: 992px) and (min-width: 992px) {
-  body.side-navigation-minimized #content {
-    margin-left: 4rem;
   }
 }
