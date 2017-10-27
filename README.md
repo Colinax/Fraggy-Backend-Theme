@@ -8,7 +8,7 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Changelog
 
-## v2.0.0-beta3 - Work in progress
+## v2.0.0-beta3 - released on 2017-10-27
 
  * Removed german welcome message space fix
  * Cleaned up workarounds
