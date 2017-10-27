@@ -4,7 +4,7 @@
  * Fraggy Backend Theme
  * Responsive and Bootstrap based backend theme for WBCE
  *
- * @copyright 2016-2017 Jonathan Nessier, Neoflow (https://neoflow.ch)
+ * @copyright 2016-2017 Jonathan Nessier, Neoflow (https://www.neoflow.ch)
  * @license MIT
  */
 $template_description = 'Responsives und auf Bootstrap basierendes Backend Theme für WBCE';
