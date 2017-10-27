@@ -96,14 +96,9 @@
 
             <div class="sidenav-brand">
                 <span class="brand">
-                    <img class="img-fluid" alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" style="display: none;" id="sideNavigationBrandImage" />
+                    <img class="img-fluid" alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" src="{THEME_URL}/api/logo.php" />
                 </span>
             </div>
-            <script>
-                if (sessionStorage.getItem('backendThemeLogoUrl')) {
-                    $('#sideNavigationBrandImage').attr('src', sessionStorage.getItem('backendThemeLogoUrl')).show();
-                }
-            </script>
 
             <button class="sidenav-toggler navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#sidenavCollapse">
                 <i class="fa fa-bars" aria-hidden="true"></i>

@@ -62,14 +62,9 @@
                         <div class="col-md-6 mx-md-auto col-lg-4">
                             <header id="prepageHeader">
                                 <span class="brand">
-                                    <img src="{THEME_URL}/images/theme-logo.png" class="img-fluid" alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" id="prepageHeaderBrandImage" />
+                                    <img class="img-fluid" alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" src="{THEME_URL}/api/logo.php" />
                                 </span>
                             </header>
-                            <script>
-            if (sessionStorage.getItem('backendThemeLogoUrl')) {
-                $('#prepageHeaderBrandImage').attr('src', sessionStorage.getItem('backendThemeLogoUrl')).show();
-            }
-                            </script>
                         </div>
                     </div>
 

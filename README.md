@@ -12,7 +12,8 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
  * Removed german welcome message space fix
  * Cleaned up workarounds
- * Optimized loading for backend theme logo replacement
+ * Refactored custom backend theme logo
+ * Updated Bootstrap from 4.0.0-beta to 4.0.0-beta2
 
 ## Changes older prereleases (e.g. v2.0.0-beta2)
 
@@ -48,7 +49,7 @@ If you are installing the theme for the first time, use the template installatio
 
 ## Theme logo
 
-If you want to use a custom backend theme logo, then you have to create a logo image with the name backend-theme-logo.png and upload it in the root-directory of the media folder.
+If you want to use a custom backend theme logo, then you have to create a logo image with the name backend-theme-logo.png and upload it into the root-directory (next to the config.php) or into the media-folder of your WBCE installation.
 
 > The logo must be a PNG-based image and should have a max width of 224px and a max height of 96px.
 
