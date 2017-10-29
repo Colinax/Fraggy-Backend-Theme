@@ -81,9 +81,13 @@ body {
                         display: none;
                     }
 
+                    .nav-link {
+                        text-align: center;
+                    }
+
                     .nav-link-icon {
-                        display: block;
-                        margin-right: 0;
+                        /*display: block;*/
+                        margin: auto;
                         width: auto;
                     }
 
