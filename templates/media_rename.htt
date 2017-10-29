@@ -20,7 +20,7 @@
         <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <link href="{THEME_URL}/css/style.css?v2.0.0-beta3" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/css/style.css?v2.0.0-beta4" rel="stylesheet" type="text/css" />
 
         <!-- Initiliaze vars -->
         <script>
@@ -31,7 +31,7 @@
         </script>
 
         <!-- Theme jQuery -->
-        <script src="{THEME_URL}/js/jquery.min.js?v2.0.0-beta3"></script>
+        <script src="{THEME_URL}/js/jquery.min.js?v2.0.0-beta4"></script>
 
         <!-- WBCE helper JavaScript -->
         <script>
@@ -42,7 +42,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.js?v2.0.0-beta3"></script>
+        <script src="{THEME_URL}/js/script.js?v2.0.0-beta4"></script>
 
     </head>
     <body id="mediaRenamePage">
