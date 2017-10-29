@@ -8,7 +8,7 @@
         {FTAN}
 
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-xl-6">
 
                 <div class="card">
                     <h4 class="card-header">
@@ -26,28 +26,28 @@
                         <div class="form-group row">
                             <label for="textareaWebsiteDescription" class="col-sm-4 col-form-label">{TEXT_WEBSITE_DESCRIPTION}</label>
                             <div class="col-sm-8">
-                                <textarea id="textareaWebsiteDescription" name="website_description" rows="2" class="form-control vresize">{WEBSITE_DESCRIPTION}</textarea>
+                                <textarea id="textareaWebsiteDescription" name="website_description" rows="4" class="form-control vresize">{WEBSITE_DESCRIPTION}</textarea>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="textareaWebsiteKeywords" class="col-sm-4 col-form-label">{TEXT_WEBSITE_KEYWORDS}</label>
                             <div class="col-sm-8">
-                                <textarea id="textareaWebsiteKeywords" name="website_keywords" rows="2" class="form-control vresize">{WEBSITE_KEYWORDS}</textarea>
+                                <textarea id="textareaWebsiteKeywords" name="website_keywords" rows="4" class="form-control vresize">{WEBSITE_KEYWORDS}</textarea>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="textareaWebsiteHeader" class="col-sm-4 col-form-label">{TEXT_WEBSITE_HEADER}</label>
                             <div class="col-sm-8">
-                                <textarea id="textareaWebsiteHeader" name="website_header" rows="2" class="form-control vresize">{WEBSITE_HEADER}</textarea>
+                                <textarea id="textareaWebsiteHeader" name="website_header" rows="4" class="form-control vresize">{WEBSITE_HEADER}</textarea>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="textareaWebsiteFooter" class="col-sm-4 col-form-label">{TEXT_WEBSITE_FOOTER}</label>
                             <div class="col-sm-8">
-                                <textarea id="textareaWebsiteFooter" name="website_footer" rows="2" class="form-control vresize">{WEBSITE_FOOTER}</textarea>
+                                <textarea id="textareaWebsiteFooter" name="website_footer" rows="4" class="form-control vresize">{WEBSITE_FOOTER}</textarea>
                             </div>
                         </div>
 
@@ -362,8 +362,8 @@
                     </div>
                 </div>
 
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-6">
+            </div><!-- /.col-xl-6 -->
+            <div class="col-xl-6">
 
                 <div class="card">
                     <h4 class="card-header">
@@ -422,21 +422,21 @@
                             <div class="form-group row">
                                 <label for="textareaSearchResultsFooter" class="col-sm-4 col-form-label">{TEXT_RESULTS_FOOTER}</label>
                                 <div class="col-sm-8">
-                                    <textarea id="textareaSearchResultsFooter" name="search_results_footer" rows="2" class="form-control vresize">{SEARCH_RESULTS_FOOTER}</textarea>
+                                    <textarea id="textareaSearchResultsFooter" name="search_results_footer" rows="4" class="form-control vresize">{SEARCH_RESULTS_FOOTER}</textarea>
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label for="textareaSearchNoResults" class="col-sm-4 col-form-label">{TEXT_NO_RESULTS}</label>
                                 <div class="col-sm-8">
-                                    <textarea id="textareaSearchNoResults" name="search_no_results" rows="2" class="form-control vresize">{SEARCH_NO_RESULTS}</textarea>
+                                    <textarea id="textareaSearchNoResults" name="search_no_results" rows="4" class="form-control vresize">{SEARCH_NO_RESULTS}</textarea>
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label for="textareaSearchFooter" class="col-sm-4 col-form-label">{TEXT_FOOTER}</label>
                                 <div class="col-sm-8">
-                                    <textarea id="textareaSearchFooter" name="search_footer" rows="2" class="form-control vresize">{SEARCH_FOOTER}</textarea>
+                                    <textarea id="textareaSearchFooter" name="search_footer" rows="4" class="form-control vresize">{SEARCH_FOOTER}</textarea>
                                 </div>
                             </div>
 
@@ -792,7 +792,7 @@
                     </div>
                 </div>
 
-            </div><!-- /.col-lg-6 -->
+            </div><!-- /.col-xl-6 -->
         </div><!-- /.row -->
     </form>
 
