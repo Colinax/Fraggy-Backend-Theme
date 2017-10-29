@@ -5321,7 +5321,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 875rem;
   font-weight: 400;
   line-height: 1.5;
   color: #4a4a55;
@@ -5662,7 +5662,7 @@ h6, .h6 {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1093.75rem;
   font-weight: 300;
 }
 
@@ -5734,7 +5734,7 @@ mark,
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.25rem;
+  font-size: 1093.75rem;
 }
 
 .blockquote-footer {
@@ -6907,7 +6907,7 @@ pre code {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
+  font-size: 875rem;
   line-height: 1.5;
   color: #4a4a55;
   background-color: #fbfbfc;
@@ -6942,7 +6942,7 @@ pre code {
 }
 
 select.form-control:not([size]):not([multiple]) {
-  height: calc(2.25rem + 2px);
+  height: calc(1313.25rem + 2px);
 }
 
 select.form-control:focus::-ms-value {
@@ -6965,14 +6965,14 @@ select.form-control:focus::-ms-value {
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.2;
 }
 
@@ -6980,7 +6980,7 @@ select.form-control:focus::-ms-value {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 875rem;
 }
 
 .form-control-plaintext {
@@ -7006,7 +7006,7 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.2;
   border-radius: 0;
 }
@@ -7014,14 +7014,14 @@ select.form-control:focus::-ms-value {
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
 .input-group-sm > select.input-group-addon:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]) {
-  height: calc(1.55rem + 2px);
+  height: calc(1.4rem + 2px);
 }
 
 .form-control-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5;
   border-radius: 0;
 }
@@ -7029,7 +7029,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
 .input-group-lg > select.input-group-addon:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]) {
-  height: calc(2.6875rem + 2px);
+  height: calc(2.5rem + 2px);
 }
 
 .form-group {
@@ -7300,7 +7300,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   user-select: none;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
+  font-size: 875rem;
   line-height: 1.5;
   border-radius: 0;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -7824,14 +7824,14 @@ fieldset[disabled] a.btn {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5;
   border-radius: 0;
 }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.2;
   border-radius: 0;
 }
@@ -7915,7 +7915,7 @@ tbody.collapse.show {
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
-  font-size: 1rem;
+  font-size: 875rem;
   color: #4a4a55;
   text-align: left;
   list-style: none;
@@ -7992,7 +7992,7 @@ tbody.collapse.show {
   display: block;
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #79798c;
   white-space: nowrap;
 }
@@ -8197,7 +8197,7 @@ tbody.collapse.show {
 .input-group-addon {
   padding: 0.375rem 0.75rem;
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 875rem;
   font-weight: 400;
   line-height: 1.5;
   color: #4a4a55;
@@ -8211,7 +8211,7 @@ tbody.collapse.show {
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   border-radius: 0;
 }
 
@@ -8219,7 +8219,7 @@ tbody.collapse.show {
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn {
   padding: 0.5rem 1rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   border-radius: 0;
 }
 
@@ -8392,7 +8392,7 @@ tbody.collapse.show {
 .custom-select {
   display: inline-block;
   max-width: 100%;
-  height: calc(2.25rem + 2px);
+  height: calc(1313.25rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   line-height: 1.5;
   color: #4a4a55;
@@ -8429,7 +8429,7 @@ tbody.collapse.show {
 }
 
 .custom-select-sm {
-  height: calc(1.55rem + 2px);
+  height: calc(1.4rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 75%;
@@ -8439,14 +8439,14 @@ tbody.collapse.show {
   position: relative;
   display: inline-block;
   max-width: 100%;
-  height: calc(2.25rem + 2px);
+  height: calc(1313.25rem + 2px);
   margin-bottom: 0;
 }
 
 .custom-file-input {
   min-width: 14rem;
   max-width: 100%;
-  height: calc(2.25rem + 2px);
+  height: calc(1313.25rem + 2px);
   margin: 0;
   opacity: 0;
 }
@@ -8461,7 +8461,7 @@ tbody.collapse.show {
   right: 0;
   left: 0;
   z-index: 5;
-  height: calc(2.25rem + 2px);
+  height: calc(1313.25rem + 2px);
   padding: 0.375rem 0.75rem;
   line-height: 1.5;
   color: #4a4a55;
@@ -8491,7 +8491,7 @@ tbody.collapse.show {
   bottom: -1px;
   z-index: 6;
   display: block;
-  height: calc(2.25rem + 2px);
+  height: calc(1313.25rem + 2px);
   padding: 0.375rem 0.75rem;
   line-height: 1.5;
   color: #4a4a55;
@@ -8618,10 +8618,10 @@ tbody.collapse.show {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.65625rem;
-  padding-bottom: 0.65625rem;
+  padding-top: 656.25rem;
+  padding-bottom: 656.25rem;
   margin-right: 1rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -8662,7 +8662,7 @@ tbody.collapse.show {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1;
   background: transparent;
   border: 1px solid transparent;
@@ -9302,7 +9302,7 @@ tbody.collapse.show {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -9318,7 +9318,7 @@ tbody.collapse.show {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.2;
 }
 
@@ -9615,7 +9615,7 @@ tbody.collapse.show {
   display: flex;
   height: 1rem;
   overflow: hidden;
-  font-size: 0.75rem;
+  font-size: 656.25rem;
   background-color: #e7e7ea;
   border-radius: 0;
 }
@@ -9914,7 +9914,7 @@ button.list-group-item-dark.active {
 
 .close {
   float: right;
-  font-size: 1.5rem;
+  font-size: 1312.5rem;
   font-weight: 700;
   line-height: 1;
   color: #26262c;
@@ -10087,7 +10087,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   word-wrap: break-word;
   opacity: 0;
 }
@@ -10200,7 +10200,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -10344,7 +10344,7 @@ button.close {
 .popover-header {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 875rem;
   color: #4a4a55;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
@@ -13298,7 +13298,7 @@ a.text-dark:focus, a.text-dark:hover {
   border: 1px solid #d9d9de;
   border-radius: 0;
   color: #4a4a55;
-  font-size: 1rem;
+  font-size: 875rem;
   outline: 0;
 }
 
@@ -13316,7 +13316,7 @@ a.text-dark:focus, a.text-dark:hover {
   border: 1px solid #d9d9de;
   border-radius: 0;
   color: #4a4a55;
-  font-size: 1rem;
+  font-size: 875rem;
 }
 
 .select2-container--bootstrap .select2-search__field {
@@ -13420,7 +13420,7 @@ a.text-dark:focus, a.text-dark:hover {
   color: #79798c;
   display: block;
   padding: 0.375rem 0.75rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.5;
   white-space: nowrap;
 }
@@ -13506,7 +13506,7 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .select2-container--bootstrap .select2-selection--single {
-  height: calc(2.25rem + 2px);
+  height: calc(1313.25rem + 2px);
   line-height: 1.5;
   padding: 0.375rem 1.65rem 0.375rem 0.75rem;
   
@@ -13543,7 +13543,7 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .select2-container--bootstrap .select2-selection--multiple {
-  min-height: calc(calc(2.25rem + 2px) - 2px);
+  min-height: calc(calc(1313.25rem + 2px) - 2px);
   padding-top: 0;
   padding-bottom: 0;
   height: auto;
@@ -13578,7 +13578,7 @@ a.text-dark:focus, a.text-dark:hover {
   margin: 0.25rem 0 0 0.375rem;
   padding: 0.1875rem 0.75rem 0.1875rem 2.75rem;
   border: 1px solid transparent;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #d9d9de;
   background-color: transparent;
   background-image: none;
@@ -13613,7 +13613,7 @@ a.text-dark:focus, a.text-dark:hover {
 .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field {
   background: transparent;
   padding: 0 0.75rem;
-  height: calc(2.25rem + 2px);
+  height: calc(1313.25rem + 2px);
   line-height: 1.5;
   margin-top: 0;
   min-width: 5em;
@@ -13650,8 +13650,8 @@ a.text-dark:focus, a.text-dark:hover {
 .input-group-sm .select2-container--bootstrap .select2-selection--single,
 .form-group-sm .select2-container--bootstrap .select2-selection--single {
   border-radius: 0;
-  font-size: 0.875rem;
-  height: calc(1.55rem + 2px);
+  font-size: 0.75rem;
+  height: calc(1.4rem + 2px);
   line-height: 1.2;
   padding: 0.25rem 1.4rem 0.25rem 0.5rem;
   
@@ -13666,14 +13666,14 @@ a.text-dark:focus, a.text-dark:hover {
 .select2-container--bootstrap .select2-selection--multiple.input-sm,
 .input-group-sm .select2-container--bootstrap .select2-selection--multiple,
 .form-group-sm .select2-container--bootstrap .select2-selection--multiple {
-  min-height: calc(1.55rem + 2px);
+  min-height: calc(1.4rem + 2px);
   border-radius: 0;
 }
 
 .select2-container--bootstrap .select2-selection--multiple.input-sm .select2-selection__choice,
 .input-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice,
 .form-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.2;
   margin: 0.25rem 0 0 0.25rem;
   padding: 0 0.25rem;
@@ -13683,8 +13683,8 @@ a.text-dark:focus, a.text-dark:hover {
 .input-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field,
 .form-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field {
   padding: 0 0.5rem;
-  font-size: 0.875rem;
-  height: calc(1.55rem + 2px)-2;
+  font-size: 0.75rem;
+  height: calc(1.4rem + 2px)-2;
   line-height: 1.2;
 }
 
@@ -13698,8 +13698,8 @@ a.text-dark:focus, a.text-dark:hover {
 .input-group-lg .select2-container--bootstrap .select2-selection--single,
 .form-group-lg .select2-container--bootstrap .select2-selection--single {
   border-radius: 0;
-  font-size: 1.125rem;
-  height: calc(2.6875rem + 2px);
+  font-size: 1rem;
+  height: calc(2.5rem + 2px);
   line-height: 1.5;
   padding: 0.5rem 1.9rem 0.5rem 1rem;
   
@@ -13723,14 +13723,14 @@ a.text-dark:focus, a.text-dark:hover {
 .select2-container--bootstrap .select2-selection--multiple.input-lg,
 .input-group-lg .select2-container--bootstrap .select2-selection--multiple,
 .form-group-lg .select2-container--bootstrap .select2-selection--multiple {
-  min-height: calc(2.6875rem + 2px);
+  min-height: calc(2.5rem + 2px);
   border-radius: 0;
 }
 
 .select2-container--bootstrap .select2-selection--multiple.input-lg .select2-selection__choice,
 .input-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice,
 .form-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5;
   border-radius: 0;
   margin: -0.5rem 0 0 0.5rem;
@@ -13741,8 +13741,8 @@ a.text-dark:focus, a.text-dark:hover {
 .input-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field,
 .form-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field {
   padding: 0 1rem;
-  font-size: 1.125rem;
-  height: calc(2.6875rem + 2px)-2;
+  font-size: 1rem;
+  height: calc(2.5rem + 2px)-2;
   line-height: 1.5;
 }
 
@@ -14676,7 +14676,7 @@ body.prepage #content {
   font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 3px;
   font-weight: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #fff;
   text-align: center;
   display: block;
@@ -14944,7 +14944,7 @@ body.prepage #content {
 #sideNavigation .navbar-collapse .navbar-nav .nav-item .nav-link {
   cursor: pointer;
   font-weight: normal;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 #sideNavigation .navbar-collapse .navbar-sidenav {
@@ -15172,7 +15172,7 @@ body.prepage #content {
 #prepageFooter {
   color: #fff;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   margin: 0 0 1rem 0;
 }
 
@@ -15237,7 +15237,7 @@ body.prepage #content {
 
 .card-header {
   border-bottom-width: 1px;
-  font-size: 1.125rem;
+  font-size: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -15527,7 +15527,7 @@ body.prepage #content {
 }
 
 legend {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;
   color: #616171;
