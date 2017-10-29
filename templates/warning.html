@@ -20,33 +20,20 @@
         <link href="../images/favicons/favicon.ico" rel="shortcut icon" />
 
         <!-- Theme CSS -->
-        <script>
-            var stylesheetUrl = '../css/green.min.css?v1.7.1';
-            if (localStorage.getItem('stylesheetUrl')) {
-                stylesheetUrl = localStorage.getItem('stylesheetUrl');
-            }
-            document.write('<link id="switchable" href="' + stylesheetUrl + '" rel="stylesheet" type="text/css" />');
-        </script>
-
-        <noscript>
-        <link id="switchable" href="../css/green.min.css?v1.7.1" rel="stylesheet" type="text/css" />
-        </noscript>
-
-        <!-- Theme third-party vendor fonts -->
-        <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700%7CRoboto:400,400italic,500,700,900" rel="stylesheet" type="text/css" />
+        <link href="../css/style.css?v2.0.0-beta3" rel="stylesheet" type="text/css" />
 
         <!-- Initiliaze vars -->
         <script>
             var WB_URL = '../../..',
                     THEME_URL = '..',
-                    ADMIN_URL = '../..';
+                    ADMIN_URL = '../..',
+                    LANGUAGE_CODE = 'en';
         </script>
 
         <!-- Theme jQuery -->
-        <script src="../js/jquery.min.js?v1.7.1"></script>
+        <script src="../js/jquery.min.js?v2.0.0-beta3"></script>
 
         <!-- WBCE helper JavaScript -->
-        <script src="{WB_URL}/include/jquery/jquery-insert.js"></script>
         <script>
             function confirm_link(message, url) {
                 if (confirm(message))
@@ -55,28 +42,26 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="../js/script.min.js?v1.7.1"></script>
+        <script src="../js/script.js?v2.0.0-beta3"></script>
 
     </head>
-    <body>
-        <div id="wrapper">
-            <div id="page-wrapper-fluid">
-                <div class="page-wrapper">
-                    <div class="container">
+    <body class="fixed-nav prepage">
 
-                        <div id="loginPage">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <h1>Excessive Invalid Logins</h1>
-                                    You have attempted to login too many times
-                                </div><!-- /.col-xs-12 -->
-                            </div><!-- /.row -->
-                        </div><!-- /#loginPage -->
+        <div id="content">
+            <div class="container-fluid">
 
-                    </div><!-- /.container -->
-                </div><!-- /.page-wrapper -->
-            </div><!-- /#page-wrapper-fluid -->
-        </div><!-- /#wrapper -->
+                <div id="loginPage" class="pt-5">
+                    <div class="row">
+                        <div class="col-md-6 mx-md-auto col-lg-4">
+                            <h1 class="text-primary">Excessive Invalid Logins</h1>
+                            <p class="text-white">You have attempted to login too many times</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </body>
 </html>
 <!-- END main_block -->
