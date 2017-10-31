@@ -4,7 +4,7 @@
 
 Fraggy Backend Theme is a responsive and Bootstrap based template for the backend of [WBCE](http://wbce.org).
 
-> There might be some design issues at the backend of older modules, but usually the modules still work as expected.
+> There might be some design issues at the backend of modules, but usually the modules still work as expected.
 
 # Changelog
 
