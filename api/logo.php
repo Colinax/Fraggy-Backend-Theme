@@ -11,7 +11,7 @@ include '../../../config.php';
 
 $fileName = 'backend-theme-logo.png';
 $filePaths = [
-    WB_PATH . $fileName,
+    WB_PATH . DIRECTORY_SEPARATOR . $fileName,
     WB_PATH . DIRECTORY_SEPARATOR . 'media' . DIRECTORY_SEPARATOR . $fileName,
     WB_PATH . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'fraggy-backend-theme' . DIRECTORY_SEPARATOR . $fileName,
     WB_PATH . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'fraggy-backend-theme' . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . $fileName,
