@@ -75,4 +75,4 @@ If you like my work or are using it for commercial websites then please donate, 
 
 Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to [Jörg Laas](https://www.jlhd.com/) and [colinax](https://forum.wbce.org/profile.php?id=160) for their donations!
 
-Copyright © 2016-2017 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Licensed under MIT
+Copyright © 2016-2017 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Licensed under GNU GPLv3
