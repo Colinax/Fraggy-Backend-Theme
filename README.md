@@ -42,13 +42,14 @@ If you are installing the theme for the first time, use the template installatio
 
 ## Custom logo / favicon
 
-If you want to use a custom backend theme logo, then you have to create a logo image with the name backend-theme-logo.png and upload it into the root-directory (next to the config.php) or into the media-folder of your WBCE installation.
+If you want to use a custom logo, then you have to create an image with the name backend-theme-logo.png. The logo must be
+PNG-based image, should have a max width of 224px and a max height of 96px.
 
-> The logo must be a PNG-based image and should have a max width of 224px and a max height of 96px.
+Same as the logo, you can also create a custom favicon with the name backend-theme-favicon.png.
+Similar to custom logo, you can use a custom e favicon with the name backend-theme-favicon.png. The logo must be a PNG-based
+square-image and should have a max width of 256px and max height of 256px.
 
-Similar to custom backend theme logo, you can use a custom backend theme favicon. Create an icon image with the name backend-theme-favicon.png and upload it into the root-directory (next to the config.php) or into the media-folder of your WBCE installation.
-
-> The icon must be a PNG-based square-image and should have a max width of 256px and max height of 256px.
+Both images can be uploaded into the root-directory (next to the config.php) or into the media-folder of your WBCE installation.
 
 # Support
 
