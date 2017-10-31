@@ -16,6 +16,7 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 ### New features
  * Added custom backend theme favicon
+ * Switched license to GNU GPLv3
 
 ## Changes from older prereleases (e.g. v2.0.0-beta3)
 

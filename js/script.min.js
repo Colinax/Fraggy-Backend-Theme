@@ -1,9 +1,9 @@
 /*
- * FRAGGY BACKEND THEME v2.0.0-beta3
+ * FRAGGY BACKEND THEME v2.0.0-beta4
  * Responsive and Bootstrap based backend theme for WBCE
  *
  * Copright (c) 2016-2017 Jonathan Nessier, Neoflow | neoflow.ch
- * Licensed under MIT | github.com/Neoflow/Fraggy-Backend-Theme
+ * Licensed under GNU GPLv3 | github.com/Neoflow/Fraggy-Backend-Theme
  *
  * This template integrates components from the following projects
  *
