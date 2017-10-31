@@ -40,15 +40,11 @@ If you are installing the theme for the first time, use the template installatio
 
 > If you want to update the backend theme, then you have to uninstall the old installation first!
 
-## Theme logo
+## Custom logo / favicon
 
 If you want to use a custom backend theme logo, then you have to create a logo image with the name backend-theme-logo.png and upload it into the root-directory (next to the config.php) or into the media-folder of your WBCE installation.
 
 > The logo must be a PNG-based image and should have a max width of 224px and a max height of 96px.
-
-> Don't forget to clean your session storage or reopen your browser if you've replaced the backend theme logo.
-
-## Theme favicon
 
 Similar to custom backend theme logo, you can use a custom backend theme favicon. Create an icon image with the name backend-theme-favicon.png and upload it into the root-directory (next to the config.php) or into the media-folder of your WBCE installation.
 
