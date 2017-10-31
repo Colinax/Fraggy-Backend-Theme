@@ -15,9 +15,8 @@
         <meta name="author" content="Jonathan Nessier, Neoflow" />
 
         <!-- Theme favicons -->
-        <link href="{THEME_URL}/images/favicons/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
-        <link href="{THEME_URL}/images/favicons/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16" />
-        <link href="{THEME_URL}/images/favicons/favicon.ico" rel="shortcut icon" />
+        <link href="{THEME_URL}/api/favicon.php?size=32" rel="icon" type="image/png" sizes="32x32" />
+        <link href="{THEME_URL}/api/favicon.php?size=16" rel="shortcut icon" type="image/png" sizes="16x16" />
 
         <!-- Theme CSS -->
         <link href="{THEME_URL}/css/style.css?v2.0.0-beta4" rel="stylesheet" type="text/css" />

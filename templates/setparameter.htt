@@ -15,9 +15,8 @@
         <meta name="author" content="Jonathan Nessier, Neoflow" />
 
         <!-- Theme favicons -->
-        <link href="../../templates/fraggy-backend-theme/images/favicons/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
-        <link href="../../templates/fraggy-backend-theme/images/favicons/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16" />
-        <link href="../../templates/fraggy-backend-theme/images/favicons/favicon.ico" rel="shortcut icon" />
+        <link href="../../templates/fraggy-backend-theme/api/favicon.php?size=32" rel="icon" type="image/png" sizes="32x32" />
+        <link href="../../templates/fraggy-backend-theme/api/favicon.php?size=16" rel="shortcut icon" type="image/png" sizes="16x16" />
 
         <!-- Theme CSS -->
         <link href="../../templates/fraggy-backend-theme/css/style.css?v2.0.0-beta4" rel="stylesheet" type="text/css" />

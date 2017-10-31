@@ -12,6 +12,7 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
  * Fixed warning.html
  * Reduced font size from 1rem to .9rem
+ * Added custom backend theme favicon
 
 ## v2.0.0-beta3 - released on 2017-10-27
 
@@ -54,6 +55,12 @@ If you want to use a custom backend theme logo, then you have to create a logo i
 > The logo must be a PNG-based image and should have a max width of 224px and a max height of 96px.
 
 > Don't forget to clean your session storage or reopen your browser if you've replaced the backend theme logo.
+
+## Theme favicon
+
+Similar to custom backend theme logo, you can use a custom backend theme favicon. Create an icon image with the name backend-theme-favicon.png and upload it into the root-directory (next to the config.php) or into the media-folder of your WBCE installation.
+
+> The icon must be a PNG-based square-image and should have a max width of 256px and max height of 256px.
 
 # Support
 
