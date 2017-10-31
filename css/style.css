@@ -4909,6 +4909,10 @@ pre code {
   color: #79798c;
   opacity: 1;
 }
+.form-control::-ms-input-placeholder {
+  color: #79798c;
+  opacity: 1;
+}
 .form-control::placeholder {
   color: #79798c;
   opacity: 1;
