@@ -75,7 +75,6 @@ gulp.task('js:build', function () {
         './src/js/theme/base.js',
         './src/js/theme/functions.js',
         './src/js/theme/navigation.js',
-        './src/js/theme/brand.js',
         './src/js/theme/collapse-history.js',
 
         './src/js/theme/init/select2.js',
