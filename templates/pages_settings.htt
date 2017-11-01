@@ -102,7 +102,7 @@
                             <div class="col-sm-9">
                                 <select name="language" id="selectLanguage">
                                     <!-- BEGIN language_list_block -->
-                                    <option value="{VALUE}"{SELECTED} style="background: {FLAG_LANG_ICONS} no-repeat center left; padding-left: 20px;">{NAME}</option>
+                                    <option value="{VALUE}" {SELECTED}>{NAME}</option>
                                     <!-- END language_list_block -->
                                 </select>
                             </div>
