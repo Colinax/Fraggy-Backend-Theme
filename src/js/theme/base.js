@@ -9,17 +9,16 @@ $(function () {
     $('a[disabled]').preventDefaultClickBehaviour();
 
     // Move to the correct anchor after CKeditor instances are ready
-    if (typeof CKEDITOR !== 'undefined') {
+    if (typeof CKEDITOR !== 'undefined' && window.location.hash !== '') {
         var numberOfInstances = Object.keys(CKEDITOR.instances).length,
                 numberOfReadyInstances = 0;
 
+        // Count and move until all instances are ready
         CKEDITOR.on('instanceReady', function () {
             numberOfReadyInstances++;
             if (numberOfReadyInstances === numberOfInstances) {
-                console.log(numberOfReadyInstances);
-                location.hash = window.location.hash;
+                $(window).scrollTop($(window.location.hash).offset().top - 75);
             }
-
         });
     }
 

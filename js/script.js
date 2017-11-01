@@ -189,17 +189,15 @@ $(function () {
 
     $('a[disabled]').preventDefaultClickBehaviour();
 
-    if (typeof CKEDITOR !== 'undefined') {
+    if (typeof CKEDITOR !== 'undefined' && window.location.hash !== '') {
         var numberOfInstances = Object.keys(CKEDITOR.instances).length,
                 numberOfReadyInstances = 0;
 
         CKEDITOR.on('instanceReady', function () {
             numberOfReadyInstances++;
             if (numberOfReadyInstances === numberOfInstances) {
-                console.log(numberOfReadyInstances);
-                location.hash = window.location.hash;
+                $(window).scrollTop($(window.location.hash).offset().top - 75);
             }
-
         });
     }
 
