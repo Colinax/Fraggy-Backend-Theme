@@ -11,6 +11,7 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 ## v2.0.0-rc2 - work in progress
  * Added responsive page sections
  * Fixed Bootstrap Fileselect
+ * Fixed line-height for small fonts
 
 ## v2.0.0-rc1 - released on 2017-10-31
 
