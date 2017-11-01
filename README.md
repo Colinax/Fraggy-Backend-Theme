@@ -12,7 +12,7 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
  * Added responsive page sections
  * Fixed Bootstrap Fileselect
  * Fixed line-height for small fonts
- * Fixed anchor/hash movement for multiple CKeditor instances
+ * Fixed anchor movement for multiple CKeditor instances
 
 ## v2.0.0-rc1 - released on 2017-10-31
 
