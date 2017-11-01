@@ -345,6 +345,7 @@ $(function () {
                 theme: 'bootstrap',
                 minimumResultsForSearch: -1,
                 width: '100%',
+                dropdownAutoWidth: true,
                 templateResult: function (item) {
                     if (item.hasOwnProperty('element')) {
                         var $element = $(item.element);
