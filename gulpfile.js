@@ -1,22 +1,35 @@
-var gulp = require('gulp');
-var fs = require('fs');
-var sass = require('gulp-sass');
-var rename = require('gulp-rename');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify-es').default;
-var replace = require('gulp-replace');
-var util = require('gulp-util');
-var injectString = require('gulp-inject-string');
-var stripComments = require('gulp-strip-comments');
-var stripCssComments = require('gulp-strip-css-comments');
-var postcss = require('gulp-postcss');
-var runSequence = require('run-sequence');
-var zip = require('gulp-zip');
+var gulp = require('gulp'),
+        fs = require('fs'),
+        sass = require('gulp-sass'),
+        rename = require('gulp-rename'),
+        concat = require('gulp-concat'),
+        uglify = require('gulp-uglify-es').default,
+        replace = require('gulp-replace'),
+        util = require('gulp-util'),
+        injectString = require('gulp-inject-string'),
+        stripComments = require('gulp-strip-comments'),
+        stripCssComments = require('gulp-strip-css-comments'),
+        postcss = require('gulp-postcss'),
+        runSequence = require('run-sequence'),
+        zip = require('gulp-zip'),
+        removeMarkdown = require('gulp-remove-markdown');
 
 var pjson = require('./package.json');
 var sourceHeader = fs
         .readFileSync('./src/source-header.txt', 'utf8')
         .replace('{VERSION}', pjson.version);
+
+gulp.task('txt:build', function () {
+    return gulp.src('./README.md')
+            .pipe(removeMarkdown('', {
+                stripListLeaders: false,
+                listUnicodeChar: '',
+                gfm: true
+            }))
+            .pipe(replace(/([\r\n]{3,})/ig, '\r\n\r\n'))
+            .pipe(replace(/(^[\r\n]+|[\r\n]+$)/ig, ''))
+            .pipe(gulp.dest('./'));
+});
 
 gulp.task('scss:build', function () {
     return gulp.src('./src/sass/**/*.scss')
@@ -95,19 +108,23 @@ gulp.task('js:minify', function () {
             .pipe(injectString.prepend(sourceHeader + '\n'))
             .pipe(gulp.dest('./js'));
 });
+
 gulp.task('src:rebuild', function () {
-    runSequence('js:build', 'js:minify', 'scss:build', 'css:build', 'css:minify');
+    runSequence('js:build', 'js:minify', 'scss:build', 'css:build', 'css:minify', 'txt:build');
 });
+
 gulp.task('watch', function () {
     gulp.watch(['./src/sass/**/*.scss'], function () {
         runSequence('scss:build', 'css:build', 'css:minify');
-        //runSequence('scss:build', 'css:build');
     });
     gulp.watch(['./src/js/**/*.js'], function () {
         runSequence('js:build', 'js:minify');
-        //runSequence('js:build');
+    });
+    gulp.watch(['./README.md'], function () {
+        runSequence('txt:build');
     });
 });
+
 gulp.task('zip:build', function () {
     return gulp.src([
         './**',
@@ -116,6 +133,7 @@ gulp.task('zip:build', function () {
         '!./node_modules{,/**}',
         '!./nbproject{,/**}',
         '!./src{,/**}',
+        '!./README.md',
         '!*.zip'
     ])
             .pipe(zip(pjson.name + '-' + pjson.version + '.zip'))
