@@ -109,11 +109,7 @@ gulp.task('js:minify', function () {
             .pipe(gulp.dest('./js'));
 });
 
-gulp.task('src:rebuild', function () {
-    runSequence('js:build', 'js:minify', 'scss:build', 'css:build', 'css:minify', 'txt:build');
-});
-
-gulp.task('watch', function () {
+gulp.task('src:watch', function () {
     gulp.watch(['./src/sass/**/*.scss'], function () {
         runSequence('scss:build', 'css:build', 'css:minify');
     });
@@ -123,6 +119,14 @@ gulp.task('watch', function () {
     gulp.watch(['./README.md'], function () {
         runSequence('txt:build');
     });
+});
+
+gulp.task('src:rebuild', function () {
+    return runSequence('js:build', 'js:minify', 'scss:build', 'css:build', 'css:minify', 'txt:build');
+});
+
+gulp.task('src:release', function () {
+    runSequence('js:build', 'js:minify', 'scss:build', 'css:build', 'css:minify', 'txt:build', 'zip:build');
 });
 
 gulp.task('zip:build', function () {
