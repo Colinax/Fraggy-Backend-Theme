@@ -86,14 +86,14 @@
                 </div>
             </div>
 
-            <!--<div class="card {DISPLAY_INTRO}">
+            <div class="card {DISPLAY_INTRO}">
                 <h4 class="card-header">
                     {HEADING_MODIFY_INTRO_PAGE}
                 </h4>
                 <div class="card-body">
                     <a class="btn btn-outline-light" href="intro.php">{INTRO_LINK}</a>
                 </div>
-            </div>-->
+            </div>
 
         </div>
     </div>

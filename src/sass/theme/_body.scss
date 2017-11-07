@@ -24,7 +24,7 @@ body {
             width: 0;
         }
 
-        #content {
+        #main-content {
             margin-left: 0;
             background: theme-color('secondary');
             min-height: 100vh;
@@ -45,7 +45,7 @@ body {
 
     @include media-breakpoint-up(lg) {
         &.side-navigation-minimized {
-            #content {
+            #main-content {
                 margin-left: $side-navigation-minimized-width;
             }
 
@@ -97,7 +97,7 @@ body {
                         &:after {
                             display: none;
                         }
-                    }
+                    } 
                 }
             }
         }

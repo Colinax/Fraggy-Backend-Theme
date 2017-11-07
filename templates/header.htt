@@ -152,9 +152,9 @@
             </div>
         </nav>
 
-        <div id="content">
+        <div id="main-content">
 
-            <header id="header">
+            <header id="main-header">
                 <div class="container-fluid">
                     <div class="title">
                         <h1>

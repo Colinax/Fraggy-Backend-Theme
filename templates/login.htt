@@ -52,7 +52,7 @@
     </head>
     <body class="fixed-nav prepage">
 
-        <div id="content">
+        <div id="main-content">
             <div class="container-fluid">
 
                 <div id="prepage">

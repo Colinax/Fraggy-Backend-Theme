@@ -9938,22 +9938,22 @@ body.prepage #sideNavigation {
   display: none;
   width: 0;
 }
-body.prepage #content {
+body.prepage #main-content {
   margin-left: 0;
   background: #303641;
   min-height: 100vh;
 }
-#header {
+#main-header {
   background: #eeeef0;
   padding: 1rem 0;
 }
-#header h1 {
+#main-header h1 {
   margin: 0;
 }
-#header .buttons {
+#main-header .buttons {
   margin-bottom: 0;
 }
-#header .breadcrumb, #header .buttons .btn {
+#main-header .breadcrumb, #main-header .buttons .btn {
   margin-top: .5rem;
   margin-bottom: 0;
 }
@@ -9978,11 +9978,11 @@ body.prepage #content {
 .brand > span > span {
   color: #45a246;
 }
-#content {
+#main-content {
   overflow-x: hidden;
   background: #e0e0e4;
 }
-#content .content-body {
+#main-content .content-body {
   margin: 1rem 0;
 }
 #mediaPage iframe#mediaBrowser {
@@ -11469,7 +11469,7 @@ legend {
   .text-sm-center {
     text-align: center !important;
   }
-  #content {
+  #main-content {
     min-height: calc(100vh - 3rem);
   }
   #accessPage #usertypeBtn {
@@ -12830,7 +12830,7 @@ legend {
   body.prepage #topNavigation {
     padding-left: 1rem;
   }
-  body.side-navigation-minimized #content {
+  body.side-navigation-minimized #main-content {
     margin-left: 4rem;
   }
   body.side-navigation-minimized #topNavigation {
@@ -12870,7 +12870,7 @@ legend {
   body.side-navigation-minimized #sideNavigation .navbar-sidenav .nav-item:after, body.side-navigation-minimized #sideNavigation .navbar-sidenav .nav-link:after {
     display: none;
   }
-  #content {
+  #main-content {
     margin-left: 16rem;
   }
   #topNavigation {
