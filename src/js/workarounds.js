@@ -35,7 +35,7 @@ $(function () {
     $('input[type="text"], input[type="password"], textarea')
             .addClass('form-control');
 
-    var $contentBody = $('#content > .content-body');
+    var $contentBody = $('#main-content > .content-body');
     if ($contentBody.find('.card, .alert').length === 0) {
         $contentBody
                 .find('> div')
@@ -70,6 +70,24 @@ $(function () {
 
         $('.content-body').prepend($adminToolCard);
     });
+
+    var $introForm = $('form[action="intro2.php"]');
+    if ($introForm.length === 1) {
+
+        var $cardBody = $('<div>', {
+            'class': 'card-body'
+        }).append($introForm),
+                $card = $('<div>', {
+                    'class': 'card'
+                }).append($cardBody);
+
+        $introForm.find('td.right').addClass('text-right');
+
+        $introForm.find('td').css({'border': '0', 'padding': '0'});
+
+        $('.content-body').prepend($card);
+
+    }
 
     $('form[action="intro2.php"] table:first').addClass('table');
 
