@@ -62,8 +62,9 @@
         if ($pagesPage.parent().contents().length > 9) {
             var $cardBody = $pagesPage.find('#pageModifyCard').find('.card-body');
 
-            $cardBody.remove('.section-info');
-            $cardBody.remove('.pageModuleWrapper');
+            $cardBody.find('hr').remove();
+            $cardBody.find('.section-info').remove();
+            $cardBody.find('.pageModuleWrapper').remove();
 
             $cardBody.append($pagesPage.parent().contents().filter(function () {
                 var $this = $(this);
