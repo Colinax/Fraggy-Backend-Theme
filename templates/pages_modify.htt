@@ -34,6 +34,20 @@
                 <li class="list-inline-item">ID: {PAGE_ID}</li>
                 <!-- END show_modify_block -->
             </ul>
+
+            <!-- BEGIN section_module_block -->
+            <hr />
+            <div class="section-info" id="{SECTION_ANCHOR}" >
+                <b>{TEXT_BLOCK}:</b> {BLOCK_NAME}
+                <b>Modul:</b> {SECTION_MODULE}
+                <b>ID:</b> {SECTION_ID}
+                <b>Name:</b> {SECTION_NAME}
+            </div>
+
+            <div class="pageModuleWrapper {SECTION_MODULE}">
+                {SECTION_MODIFY_OUTPUT}
+            </div>
+            <!-- END section_module_block -->
         </div>
     </div>
 
@@ -43,19 +57,25 @@
 <script>
     $(function () {
 
-        var $pagesPage = $('#pagesPage'),
-                $pageModifyCard = $pagesPage.find('#pageModifyCard');
+        var $pagesPage = $('#pagesPage');
 
-        $pageModifyCard
-                .find('.card-body')
-                .append($pagesPage.parent().contents().filter(function () {
-                    var $this = $(this);
-                    return $this.index() !== 0 && $this.index() !== 1;
-                }))
-                .find('.section-info')
-                .before('<hr />');
+        if ($pagesPage.parent().contents().length > 9) {
+            var $cardBody = $pagesPage.find('#pageModifyCard').find('.card-body');
 
-        $(window).trigger('theme-resize');
+            $cardBody.remove('.section-info');
+            $cardBody.remove('.pageModuleWrapper');
+
+            $cardBody.append($pagesPage.parent().contents().filter(function () {
+                var $this = $(this);
+                return $this.index() !== 0 && $this.index() !== 1;
+            }))
+                    .find('.section-info')
+                    .before('<hr />');
+
+            $(window).trigger('theme-resize');
+
+        }
+
 
     });
 </script>
