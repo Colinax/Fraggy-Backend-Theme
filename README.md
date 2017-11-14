@@ -12,6 +12,7 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
  * Fixed intro page
  * Renamed content and header identifer
  * Optimized loading performance for modify page
+ * Updated select2 to v4.0.5
 
 ## v2.0.0-rc2 - released on 2017-11-07
 
@@ -19,14 +20,14 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
  * **Switched license to GNU GPLv3**
  * Added custom backend theme favicon
  * Replaced datetime picker
- * Migrated Bootstrap to 4.0.0-beta2
+ * Migrated Bootstrap to v4.0.0-beta2
  * Replaced jQuery Insert with InsertLoader
 
 ### Optimizations
  * Refactored custom backend theme logo
  * Redesigned logo
  * Redesigned favicon
- * Updated jQuery to 3.2.1
+ * Updated jQuery to v3.2.1
  * Removed color and dark styling modes
  * Fixed anchor movement for multiple CKeditor instances
  * Added responsive-friendly page sections
