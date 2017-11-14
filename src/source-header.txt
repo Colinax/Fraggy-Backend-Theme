@@ -13,7 +13,7 @@
  *   Bootstrap v4.0.0-beta2 | (c) The Bootstrap Authors | MIT
  *   InsertLoader 1.0 | (c) Jonathan Nessier, Neoflow | MIT
  *   Popper.js v1.12.0 | (c) Federico Zivolo | MIT
- *   Select2 v4.0.3 | (c) Kevin Brown, Igor Vaynberg, and Select2 contributors | MIT
+ *   Select2 v4.0.5 | (c) Kevin Brown, Igor Vaynberg, and Select2 contributors | MIT
  *   Nicescroll v3.7.6 | (c) InuYaksa | MIT
  *   Datetimepicker v2.5.4 | (c) Chupurnov Valeriy | MIT
  *   Bootstrap Fileselect v2.0.0 | (c) Jonathan Nessier, Neoflow | MIT
