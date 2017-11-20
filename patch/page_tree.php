@@ -64,7 +64,6 @@ $pageLevelLimit = $settings['value'];
 ?>
 <div class="jsadmin"></div>
 <div class="pages_list" style="display: none;">
-    <h2><?= $MENU['PAGES'] ?></h2>
     <table id="pageListHeader" class="table" <?= (count($pages) === 0 ? 'style="display:none;"' : '') ?>>
         <thead>
         <th class="toggle"></th>
@@ -81,51 +80,56 @@ $pageLevelLimit = $settings['value'];
         <th class="d-none d-md-table-cell"></th>
         </thead>
     </table>
+
     <?php if (count($pages) > 0) { ?>
         <ul class="list_pages list-unstyled" id="p0">
             <?= renderPageTree($pages, 1, $pageLevelLimit) ?>
         </ul>
-        <div class="row">
-            <div class="col-sm-6">
-                <p class="small">
-                    <a href="#" class="btn-collapse"><?= $TEXT['COLLAPSE_ALL'] ?></a> /
-                    <a href="#" class="btn-expand"><?= $TEXT['EXPAND_ALL'] ?></a>
-                </p>
-            </div>
-            <div class="hidden-xs col-sm-6">
-                <p class="text-right small"><?= $MENU['PAGES'] ?>: <?= $numberOfPages ?></p>
-            </div>
-        </div>
-    <?php } else { ?>
-        <p class="text-center">
-            <?= $TEXT['NONE_FOUND'] ?>
-        </p>
-        <?php
-    }
-    $visibilityLegends = array('public', 'hidden', 'registered', 'private', 'none', 'deleted');
+    <?php } ?>
 
-    ?>
-    <hr />
-    <p class="h5"><?= $TEXT['VISIBILITY'] ?> (<?= $MENU['PAGES'] ?>)</p>
-    <ul class="list-inline">
-        <?php foreach ($visibilityLegends as $legend) { ?>
-            <li class="list-inline-item">
-                <?php if ($legend === 'public') { ?>
-                    <i class="fa fa-fw fa-eye"></i>
-                <?php } else if ($legend === 'private') { ?>
-                    <i class="fa fa-fw fa-eye-slash"></i>
-                <?php } else if ($legend === 'registered') { ?>
-                    <i class="fa fa-fw fa-key"></i>
-                <?php } else if ($legend === 'hidden') { ?>
-                    <i class="fa fa-fw fa-lock"></i>
-                <?php } else if ($legend === 'deleted') { ?>
-                    <i class="fa fa-fw fa-trash-o"></i>
-                <?php } else { ?>
-                    <i class="fa fa-fw fa-ban"></i>
-                <?php } ?>
-                <?= $TEXT[strtoupper($legend)] ?>
-            </li>
-        <?php } ?>
-    </ul>
+    <div class="card-body">
+        <?php if (count($pages) > 0) { ?>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="small">
+                        <a href="#" class="btn-collapse"><?= $TEXT['COLLAPSE_ALL'] ?></a> /
+                        <a href="#" class="btn-expand"><?= $TEXT['EXPAND_ALL'] ?></a>
+                    </p>
+                </div>
+                <div class="hidden-xs col-sm-6">
+                    <p class="text-right small"><?= $MENU['PAGES'] ?>: <?= $numberOfPages ?></p>
+                </div>
+            </div>
+        <?php } else { ?>
+            <p class="text-center">
+                <?= $TEXT['NONE_FOUND'] ?>
+            </p>
+            <?php
+        }
+        $visibilityLegends = array('public', 'hidden', 'registered', 'private', 'none', 'deleted');
 
+        ?>
+        <hr />
+        <p class="h5"><?= $TEXT['VISIBILITY'] ?> (<?= $MENU['PAGES'] ?>)</p>
+        <ul class="list-inline">
+            <?php foreach ($visibilityLegends as $legend) { ?>
+                <li class="list-inline-item">
+                    <?php if ($legend === 'public') { ?>
+                        <i class="fa fa-fw fa-eye"></i>
+                    <?php } else if ($legend === 'private') { ?>
+                        <i class="fa fa-fw fa-eye-slash"></i>
+                    <?php } else if ($legend === 'registered') { ?>
+                        <i class="fa fa-fw fa-key"></i>
+                    <?php } else if ($legend === 'hidden') { ?>
+                        <i class="fa fa-fw fa-lock"></i>
+                    <?php } else if ($legend === 'deleted') { ?>
+                        <i class="fa fa-fw fa-trash-o"></i>
+                    <?php } else { ?>
+                        <i class="fa fa-fw fa-ban"></i>
+                    <?php } ?>
+                    <?= $TEXT[strtoupper($legend)] ?>
+                </li>
+            <?php } ?>
+        </ul>
+    </div>
 </div>
