@@ -7,47 +7,44 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
  Changelog
 
 v2.0.0-rc3 - work in progress
- * Fixed intro page
- * Renamed content and header identifer
- * Optimized loading performance for admin/pages/modify.php
- * Updated select2 to v4.0.5
- * Optimized loading performance for admin/pages/index.php
 
- v2.0.0-rc2 - released on 2017-11-07
-
-New features
+ New features
  * Switched license to GNU GPLv3
  * Added custom backend theme favicon
  * Replaced datetime picker
  * Migrated Bootstrap to v4.0.0-beta2
  * Replaced jQuery Insert with InsertLoader
 
- Optimizations
+Optimizations
  * Refactored custom backend theme logo
  * Redesigned logo
  * Redesigned favicon
+ * Updated select2 to v4.0.5
  * Updated jQuery to v3.2.1
  * Removed color and dark styling modes
  * Fixed anchor movement for multiple CKeditor instances
  * Added responsive-friendly page sections
+ * Optimized loading performance for admin/pages/modify.php
+ * Optimized loading performance for admin/pages/index.php
+ * Fixed intro page
 
-Older versions
+ Older versions
 
 You can see the summary of releases and the changes in each release here.
 
- Download
+Download
 
 You can download the newest source code release and the distributed release without source files here.
 
-Installation
+ Installation
 
- Theme
+Theme
 
 If you are installing the theme for the first time, use the template installation in the WBCE backend and follow the instructions.
 
 > If you want to update the backend theme, then you have to uninstall the old installation first!
 
-Custom logo / favicon
+ Custom logo / favicon
 
 For a custom logo you have to create an image with the name backend-theme-logo.png. The logo has to be a PNG-based image, should have a max width of 224px and a max height of 96px.
 
@@ -57,15 +54,15 @@ Both images have to be uploaded into the root-directory (next to the config.php)
 
 > The custom favicon should be a square image.
 
- Support
+Support
 
 The support is provided by the community in the forum of WBCE.
 
-Donation
+ Donation
 
 If you like my work or are using it for commercial websites then please donate, or just buy me a beer or two to help me keep Fraggy Backend Theme up to date.
 
- Author
+Author
 
 * Jonathan Nessier, Neoflow
 

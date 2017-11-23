@@ -59,6 +59,7 @@
 
         var $pagesPage = $('#pagesPage');
 
+        // Workaround for "old" admin/pages/modify.php
         if ($pagesPage.parent().contents().length > 9) {
             var $cardBody = $pagesPage.find('#pageModifyCard').find('.card-body');
 
@@ -72,11 +73,7 @@
             }))
                     .find('.section-info')
                     .before('<hr />');
-
-            $(window).trigger('theme-resize');
-
         }
-
 
     });
 </script>
