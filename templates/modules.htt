@@ -103,7 +103,7 @@
                     <form name="manual_install" action="manual_install.php" method="post" class="{INSTALL_VISIBLE} form-horizontal">
                         {FTAN}
                         <input type="hidden" name="action" value="install" />
-                        <div class="form-group">
+                        <div class="form-group row">
                             <label for="selectManualInstallModule" class="col-sm-3 col-form-label">{TEXT_FILE}: "install.php"</label>
                             <div class="col-sm-9">
                                 <select name="file" id="selectManualInstallModule" class="form-control">
@@ -114,7 +114,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group row">
                             <div class="offset-sm-3 col-sm-9">
                                 <button class="btn btn-primary" type="submit" name="submit">
                                     <i class="fa fa-fw fa-cog"></i> {TEXT_EXECUTE}
@@ -128,7 +128,7 @@
                     <form name="manual_upgrade" action="manual_install.php" method="post" class="{UPGRADE_VISIBLE} form-horizontal">
                         {FTAN}
                         <input type="hidden" name="action" value="upgrade" />
-                        <div class="form-group">
+                        <div class="form-group row">
                             <label for="selectManualUpgradeModule" class="col-sm-3 col-form-label">{TEXT_FILE}: "upgrade.php"</label>
                             <div class="col-sm-9">
                                 <select name="file" id="selectManualUpgradeModule" class="form-control">
@@ -139,7 +139,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group row">
                             <div class="offset-sm-3 col-sm-9">
                                 <button class="btn btn-primary" type="submit" name="submit">
                                     <i class="fa fa-fw fa-cog"></i> {TEXT_EXECUTE}
@@ -153,7 +153,7 @@
                     <form name="manual_uninstall" action="manual_install.php" method="post" class="{UNINSTALL_VISIBLE} form-horizontal">
                         {FTAN}
                         <input type="hidden" name="action" value="uninstall" />
-                        <div class="form-group">
+                        <div class="form-group row">
                             <label for="selectManualUninstallModule" class="col-sm-3 col-form-label">{TEXT_FILE}: "uninstall.php"</label>
                             <div class="col-sm-9">
                                 <select name="file" id="selectManualUninstallModule" class="form-control">
@@ -164,7 +164,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group row">
                             <div class="offset-sm-3 col-sm-9">
                                 <button class="btn btn-primary" type="submit" name="submit">
                                     <i class="fa fa-fw fa-cog"></i> {TEXT_EXECUTE}
