@@ -6,9 +6,13 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 > There might be some design issues at the backend of modules, but usually the modules still work as expected.
 
+# Requirements
+
+The backend theme is only working with WBCE v1.3.1 or newer.
+
 # Changelog
 
-## v2.0.0-rc3 - work in progress
+## v2.0.0-rc3 - 2017-12-19
 
 ### New features
  * **Switched license to GNU GPLv3**
