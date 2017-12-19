@@ -182,18 +182,6 @@
             $btnExpand.blur();
         });
 
-        // Workaround for "old" admin/pages/index.php
-        if ($pageListCard.find('.pages_list').length === 0) {
-            $pageListCard.find('h4.card-header').text($pageListTitle.text());
-            $pageListTitle.remove();
-
-            $pageListCard
-                    .find('.card-header')
-                    .after($pageList.find('#pageListHeader'), $pageList.find('.list_pages'));
-
-            $pageListCard.append($pageList);
-        }
-
         $pageList.show();
 
         refreshStripes();

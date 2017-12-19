@@ -50,31 +50,5 @@
             <!-- END section_module_block -->
         </div>
     </div>
-
 </div>
-
-<!-- Custom Javascript -->
-<script>
-    $(function () {
-
-        var $pagesPage = $('#pagesPage');
-
-        // Workaround for "old" admin/pages/modify.php
-        if ($pagesPage.parent().contents().length > 9) {
-            var $cardBody = $pagesPage.find('#pageModifyCard').find('.card-body');
-
-            $cardBody.find('hr').remove();
-            $cardBody.find('.section-info').remove();
-            $cardBody.find('.pageModuleWrapper').remove();
-
-            $cardBody.append($pagesPage.parent().contents().filter(function () {
-                var $this = $(this);
-                return $this.index() !== 0 && $this.index() !== 1;
-            }))
-                    .find('.section-info')
-                    .before('<hr />');
-        }
-
-    });
-</script>
 <!-- END main_block -->

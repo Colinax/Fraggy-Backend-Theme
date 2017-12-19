@@ -13,7 +13,7 @@
     "url": "https://github.com/Neoflow/Fraggy-Backend-Theme.git"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.6",
+    "autoprefixer": "^7.2.3",
     "css-mqpacker": "^6.0.1",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
@@ -27,7 +27,7 @@
     "gulp-strip-comments": "^2.5.1",
     "gulp-strip-css-comments": "^1.2.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-uglify-es": "^0.1.4",
+    "gulp-uglify-es": "^0.1.9",
     "gulp-util": "^3.0.8",
     "gulp-zip": "^4.0.0",
     "postcss-font-weights": "^4.0.0",
