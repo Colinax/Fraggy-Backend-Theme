@@ -79,14 +79,22 @@
                     <div class="col-sm-2">
                         <div class="input-group">
                             <input size="5" type="text" class="form-control" name="{FIELD_NAME_W}" value="{CUR_WIDTH}">
-                            <div class="input-group-addon">px</div>
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    px
+                                </span>
+                            </div>
                         </div>
                     </div>
                     <label class="col-sm-2 col-form-label">{HEIGHT}</label>
                     <div class="col-sm-2">
                         <div class="input-group">
                             <input size="5" type="text" class="form-control" name="{FIELD_NAME_H}" value="{CUR_HEIGHT}">
-                            <div class="input-group-addon">px</div>
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    px
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>

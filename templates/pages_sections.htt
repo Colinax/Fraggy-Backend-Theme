@@ -76,17 +76,21 @@
                                 <td class="d-none d-lg-table-cell">
                                     <div class="input-group date datetimepicker">
                                         <input type="text" name="start_date{VAR_SECTION_ID}" value="{VALUE_PUBL_START}" class="form-control" />
-                                        <span class="input-group-addon" style="cursor:pointer;">
-                                            <i class="fa fa-fw fa-calendar"></i>
-                                        </span>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">
+                                                <i class="fa fa-fw fa-calendar"></i>
+                                            </span>
+                                        </div>
                                     </div>
                                 </td>
                                 <td class="d-none d-lg-table-cell">
                                     <div class="input-group date datetimepicker">
                                         <input type="text" name="end_date{VAR_SECTION_ID}" value="{VALUE_PUBL_END}"  class="form-control"/>
-                                        <span class="input-group-addon" style="cursor:pointer;">
-                                            <i class="fa fa-fw fa-calendar"></i>
-                                        </span>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">
+                                                <i class="fa fa-fw fa-calendar"></i>
+                                            </span>
+                                        </div>
                                     </div>
                                 </td>
                                 <td>{VAR_MOVE_UP_URL}</td>

@@ -206,10 +206,14 @@
                                 <label for="inputWebsiteTitle" class="col-sm-4 col-form-label">{TEXT_REDIRECT_AFTER}</label>
                                 <div class="col-sm-8">
                                     <div class="input-group">
-                                        <div class="input-group-addon">ms</div>
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                ms
+                                            </span>
+                                        </div>
                                         <input type="text" name="redirect_timer" value="{REDIRECT_TIMER}" class="form-control" />
                                     </div>
-                                    <span class="help-block"><strong>-1</strong> = {TEXT_DISABLED} | <strong>0-10000</strong></span>
+                                    <span class="help-block small text-muted"><strong>-1</strong> = {TEXT_DISABLED} | <strong>0-10000</strong></span>
                                 </div>
                             </div>
 

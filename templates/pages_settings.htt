@@ -67,7 +67,11 @@
                             <div class="col-sm-9">
                                 <div class="input-group">
                                     <input type="text" name="link" class="form-control" id="inputFilename" value="{LINK_VALUE}" />
-                                    <div class="input-group-addon">{PAGE_EXTENSION}</div>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+                                            {PAGE_EXTENSION}
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
