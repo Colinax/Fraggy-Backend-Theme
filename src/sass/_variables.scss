@@ -126,16 +126,9 @@ $input-placeholder-color: $gray-600;
 $custom-control-indicator-focus-box-shadow: 0 0 0 1px $white, 0 0 0 3px theme-color("primary");
 
 $custom-file-text: (
-placeholder: (
-en: 'Choose file...',
-de: 'Datei wählen...',
-fr: 'Choisir le fichier...',
-),
-button-label: (
 en: 'Browse',
 de: 'Durchsuchen',
 fr: 'Feuilleter'
-)
 );
 
 // Navigation Bar (Bootstrap)

@@ -12,13 +12,13 @@ The backend theme requires [WBCE v1.3.1](https://github.com/WBCE/WBCE_CMS/releas
 
 # Changelog
 
-## v2.0.0-rc3 - 2017-12-19
+## v2.0.0 - work in progress
 
 ### New features
  * **Switched license to GNU GPLv3**
  * Added custom backend theme favicon
  * Replaced datetime picker
- * Migrated Bootstrap to v4.0.0-beta2
+ * Migrated Bootstrap to v4.0.0-beta3
  * Replaced jQuery Insert with InsertLoader
 
 ### Optimizations

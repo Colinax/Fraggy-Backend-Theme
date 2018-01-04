@@ -1,6 +1,6 @@
 {
   "name": "fraggy-backend-theme",
-  "version": "2.0.0-rc3",
+  "version": "2.0.0",
   "description": "Responsive and Bootstrap based backend theme for WBCE",
   "main": "index.php",
   "scripts": {
@@ -13,25 +13,25 @@
     "url": "https://github.com/Neoflow/Fraggy-Backend-Theme.git"
   },
   "devDependencies": {
-    "autoprefixer": "^7.2.3",
+    "autoprefixer": "^7.2.4",
     "css-mqpacker": "^6.0.1",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-inject-string": "^1.1.0",
-    "gulp-postcss": "^7.0.0",
+    "gulp-postcss": "^7.0.1",
     "gulp-remove-markdown": "^1.0.2",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
     "gulp-sass": "^3.1.0",
     "gulp-strip-comments": "^2.5.1",
-    "gulp-strip-css-comments": "^1.2.0",
+    "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.0",
     "gulp-uglify-es": "^0.1.9",
     "gulp-util": "^3.0.8",
-    "gulp-zip": "^4.0.0",
+    "gulp-zip": "^4.1.0",
     "postcss-font-weights": "^4.0.0",
-    "run-sequence": "^2.2.0"
+    "run-sequence": "^2.2.1"
   },
   "dependencies": {}
 }
