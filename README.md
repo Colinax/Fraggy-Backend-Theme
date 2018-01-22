@@ -12,13 +12,13 @@ The backend theme requires [WBCE v1.3.1](https://github.com/WBCE/WBCE_CMS/releas
 
 # Changelog
 
-## v2.0.0 - work in progress
+## v2.0.0 - released on 2018-01-22
 
 ### New features
  * **Switched license to GNU GPLv3**
  * Added custom backend theme favicon
  * Replaced datetime picker
- * Migrated Bootstrap to v4.0.0-beta3
+ * Migrated Bootstrap to v4.0.0
  * Replaced jQuery Insert with InsertLoader
 
 ### Optimizations
@@ -74,6 +74,6 @@ If you like my work or are using it for commercial websites then please donate, 
 
 * Jonathan Nessier, [Neoflow](https://www.neoflow.ch)
 
-Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to [Jörg Laas](https://www.jlhd.com/) and [colinax](https://forum.wbce.org/profile.php?id=160) for their donations!
+Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to [Jörg Laas](https://www.jlhd.com/), [colinax](https://forum.wbce.org/profile.php?id=160) and [trici](https://tricity.ch) for their donations!
 
 Copyright © 2016-2017 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Licensed under GNU GPLv3
