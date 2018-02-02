@@ -135,7 +135,7 @@
             <div class="sidenav-content small">
                 <ul class="list-inline versions">
                     <li class="list-inline-item">WBCE: {WBCE_VERSION}</li>
-                    <li class="list-inline-item">Theme: 2.0.0</li>
+                    <li class="list-inline-item">Theme: 2.0.1</li>
                 </ul>
                 <hr />
                 <p>
