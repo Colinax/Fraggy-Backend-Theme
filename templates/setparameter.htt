@@ -19,7 +19,7 @@
         <link href="../../templates/fraggy-backend-theme/api/favicon.php?size=16" rel="shortcut icon" type="image/png" sizes="16x16" />
 
         <!-- Theme CSS -->
-        <link href="../../templates/fraggy-backend-theme/css/style.min.css?v2.0.0" rel="stylesheet" type="text/css" />
+        <link href="../../templates/fraggy-backend-theme/css/style.min.css?v2.0.1" rel="stylesheet" type="text/css" />
 
         <!-- Initiliaze vars -->
         <script>
@@ -30,7 +30,7 @@
         </script>
 
         <!-- Theme jQuery -->
-        <script src="../../templates/fraggy-backend-theme/js/jquery.min.js?v2.0.0"></script>
+        <script src="../../templates/fraggy-backend-theme/js/jquery.min.js?v2.0.1"></script>
 
         <!-- WBCE helper JavaScript -->
         <script>
@@ -41,7 +41,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="../../templates/fraggy-backend-theme/js/script.min.js?v2.0.0"></script>
+        <script src="../../templates/fraggy-backend-theme/js/script.min.js?v2.0.1"></script>
 
     </head>
     <body id="setParameterPage">

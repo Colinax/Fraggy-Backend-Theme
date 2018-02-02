@@ -141,18 +141,110 @@
         </div>
     </div>
 
-    <div id="serverInfoCard" class="card">
-        <h4 class="card-header">
-            Server Information
-        </h4>
+    <div class="row">
 
+        <div class="col">
+            <div id="serverInfoCard" class="card">
+                <h4 class="card-header">
+                    Server Information
+                </h4>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div id="updaterCard" class="card">
+                <h4 class="card-header">
+                    Auto Updater
+                </h4>
+                <div class="card-body">
+                    <p class="message"></p>
+                    <div id="installInfo" style="display: none;">
+                        <ul class="list-inline small">
+                            <li class="list-inline-item version"></li>
+                            <li class="list-inline-item">
+                                <a href="#" target="_blank" class="changelog">Changelog</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-success" id="installLatestRelease">
+                            <i class="fa fa-refresh"></i> Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+
+
+
+
+
 
 </div><!-- /#startPage -->
 
 <!-- Custom JavaScript -->
 <script>
     $(function () {
+
+        var $updaterCard = $(this).find('#updaterCard');
+
+        function checkLatestRelease() {
+            $.ajax({
+                dataType: 'json',
+                url: THEME_URL + '/api/updater.php?check',
+                success: function (data) {
+
+
+                    if (localStorage.getItem('releaseInstalledMessage')) {
+                        var message = localStorage.getItem('releaseInstalledMessage');
+                        $updaterCard.find('p.message').text(message);
+                        localStorage.removeItem('releaseInstalledMessage');
+                    } else {
+
+                        $updaterCard.find('p.message').text(data.message);
+
+                        if (!data.latest) {
+                            $updaterCard.find('#installInfo').show();
+                            $updaterCard.find('#installLatestRelease').text(data.translations.install);
+                            $updaterCard.find('ul')
+                            $updaterCard.find('.version').text('Version ' + data.src.version);
+                            $updaterCard.find('.changelog').prop('href', data.src.changelog_url);
+                        }
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    $updaterCard.remove();
+                }
+            });
+        }
+
+        function installLatestRelease() {
+            $.ajax({
+                dataType: 'json',
+                url: THEME_URL + '/api/updater.php?install',
+                success: function (data) {
+                    localStorage.setItem('releaseInstalledMessage', data.message);
+                    location.reload();
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    $updaterCard.remove();
+                }
+            });
+        }
+
+        checkLatestRelease();
+
+        $updaterCard.find('#installLatestRelease').on('click', function (e) {
+            e.preventDefault();
+
+            installLatestRelease();
+        });
+
+
+    });
+
+    $(function () {
+
         var $serverInfoCard = $(this).find('#serverInfoCard'),
                 $table = $('<table>', {
                     'class': 'table table-striped',

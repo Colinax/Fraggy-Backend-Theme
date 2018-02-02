@@ -10,27 +10,9 @@ The backend theme requires WBCE v1.3.1 or newer.
 
 Changelog
 
- v2.0.0 - released on 2018-01-22
+ v2.0.1 - released on 2018-02-02
 
-New features
- * Switched license to GNU GPLv3
- * Added custom backend theme favicon
- * Replaced datetime picker
- * Migrated Bootstrap to v4.0.0
- * Replaced jQuery Insert with InsertLoader
-
- Optimizations
- * Refactored custom backend theme logo
- * Redesigned logo
- * Redesigned favicon
- * Updated select2 to v4.0.5
- * Updated jQuery to v3.2.1
- * Removed color and dark styling modes
- * Fixed anchor movement for multiple CKeditor instances
- * Added responsive-friendly page sections
- * Optimized loading performance for admin/pages/modify.php
- * Optimized loading performance for admin/pages/index.php
- * Fixed intro page
+ * Added Auto Updater
 
 Older versions
 

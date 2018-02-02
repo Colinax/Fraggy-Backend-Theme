@@ -1,6 +1,6 @@
 {
   "name": "fraggy-backend-theme",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Responsive and Bootstrap based backend theme for WBCE",
   "main": "index.php",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^7.2.5",
-    "css-mqpacker": "^6.0.1",
+    "css-mqpacker": "^6.0.2",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
