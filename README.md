@@ -14,7 +14,7 @@ The backend theme requires [WBCE v1.3.1](https://github.com/WBCE/WBCE_CMS/releas
 
 ## v2.0.1 - released on 2018-02-02
 
- * Added Auto Updater
+ * Added auto updater
 
 ## Older versions
 

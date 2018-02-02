@@ -194,7 +194,6 @@
                 url: THEME_URL + '/api/updater.php?check',
                 success: function (data) {
 
-
                     if (localStorage.getItem('releaseInstalledMessage')) {
                         var message = localStorage.getItem('releaseInstalledMessage');
                         $updaterCard.find('p.message').text(message);
@@ -203,12 +202,16 @@
 
                         $updaterCard.find('p.message').text(data.message);
 
-                        if (!data.latest) {
+                        if (data.status === 'success' && !data.latest) {
                             $updaterCard.find('#installInfo').show();
                             $updaterCard.find('#installLatestRelease').text(data.translations.install);
                             $updaterCard.find('ul')
                             $updaterCard.find('.version').text('Version ' + data.src.version);
                             $updaterCard.find('.changelog').prop('href', data.src.changelog_url);
+                        }
+
+                        if (data.status === 'error') {
+                            $updaterCard.find('p.message').addClass('text-danger');
                         }
                     }
                 },

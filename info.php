@@ -20,5 +20,5 @@ $template_license = '<a href="https://github.com/Neoflow/Fraggy-Backend-Theme/bl
 $template_license_terms = '-';
 $template_description = 'Responsive and Bootstrap based backend theme for WBCE';
 
-// Custom params
+// Custom vars
 $template_api_url = 'https://fraggy.neoflow.ch/api.php';

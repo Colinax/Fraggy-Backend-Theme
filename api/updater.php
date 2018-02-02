@@ -31,6 +31,10 @@ if (isset($_SESSION['USER_ID']) && isset($_SESSION['SYSTEM_PERMISSIONS']) && is_
 
     try {
 
+        if (!in_array('curl', get_loaded_extensions())) {
+            throw new ErrorException('Auto updater is not working. cURL as PHP extension needs to be installed and enabled.');
+        }
+
         // Check for permission
         if (in_array('templates_install', $_SESSION['SYSTEM_PERMISSIONS']) && in_array('templates_uninstall', $_SESSION['SYSTEM_PERMISSIONS'])) {
 
@@ -56,7 +60,7 @@ if (isset($_SESSION['USER_ID']) && isset($_SESSION['SYSTEM_PERMISSIONS']) && is_
                 $templateFolderPath = WB_PATH . '/templates/' . $template_directory;
                 $templatePackagePath = WB_PATH . '/temp/fraggy.zip';
 
-                if ($fraggyApi->downloadLatestRelease($templatePackagePath)) {
+                if ($fraggyApi->downloadLatestRelease($templatePackagePath) && 1 === 2) {
 
                     // Delete current template
                     rrmdir($templateFolderPath);
@@ -100,7 +104,7 @@ if (isset($_SESSION['USER_ID']) && isset($_SESSION['SYSTEM_PERMISSIONS']) && is_
             ]);
         }
     } catch (Exception $ex) {
-        http_response_code(500);
+        //http_response_code(500);
         echo json_encode([
             'status' => 'error',
             'message' => $ex->getMessage()
@@ -109,7 +113,7 @@ if (isset($_SESSION['USER_ID']) && isset($_SESSION['SYSTEM_PERMISSIONS']) && is_
 } else {
     http_response_code(401);
     echo json_encode([
-        'status' => false,
+        'status' => 'error',
         'message' => 'Unauthenticated. User is not logged in.'
     ]);
 }
