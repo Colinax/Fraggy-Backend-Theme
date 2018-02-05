@@ -216,7 +216,10 @@
                     }
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
-                    $updaterCard.remove();
+                    $updaterCard
+                            .find('p.message')
+                            .text(jqXHR.responseText)
+                            .addClass('text-danger');
                 }
             });
         }
@@ -230,7 +233,10 @@
                     location.reload();
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
-                    $updaterCard.remove();
+                    $updaterCard
+                            .find('p.message')
+                            .text(jqXHR.responseText)
+                            .addClass('text-danger');
                 }
             });
         }
@@ -260,7 +266,7 @@
 
         $.ajax({
             dataType: 'json',
-            url: THEME_URL + '/api/sysinfo.php?server',
+            url: THEME_URL + '/api/sysinfo.php?simple',
             success: function (data) {
                 $tableBody
                         .append('<tr><td>PHP Version</td><td>' + data.php.version + '</td></tr>')

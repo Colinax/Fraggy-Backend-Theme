@@ -1,5 +1,7 @@
 <?php
 
+use Neoflow\Fraggy\Api\Sysinfo;
+
 /**
  * Fraggy Backend Theme
  * Responsive and Bootstrap based backend theme for WBCE.
@@ -17,27 +19,20 @@ include 'functions/phpinfo2array.php';
 
 try {
 
-    // Check wether referer is from the same domain or throw forbidden HTTP code
+    // Initialize sysinfo API
+    $sysinfoApi = new Sysinfo();
+
+    // Check whether use is logged in and has permissions
     if (isset($_SESSION['USER_ID']) && isset($_SESSION['SYSTEM_PERMISSIONS']) && is_array($_SESSION['SYSTEM_PERMISSIONS'])) {
 
-        // Initialize updater API
-        $sysinfoApi = new Neoflow\Fraggy\Api\Sysinfo();
 
-        // Check for permission
-        if (in_array('templates_install', $_SESSION['SYSTEM_PERMISSIONS']) && in_array('templates_uninstall', $_SESSION['SYSTEM_PERMISSIONS'])) {
-
-            // Encode and render json data
-            if (isset($_GET['advanced'])) {
-                // Get advanced sysinfo
-                $sysinfoApi->advanced();
-            } elseif (isset($_GET['server'])) {
-                // Get simplified sysinfo
-                $sysinfoApi->simple();
-            } else {
-                $sysinfoApi->notFound();
-            }
+        // Execute API method
+        if (isset($_GET['advanced'])) {
+            $sysinfoApi->advanced();
+        } elseif (isset($_GET['simple'])) {
+            $sysinfoApi->simple();
         } else {
-            $sysinfoApi->unauthorized();
+            $sysinfoApi->notFound();
         }
     } else {
         $sysinfoApi->unauthenticated();

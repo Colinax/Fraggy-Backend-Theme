@@ -10,10 +10,7 @@ abstract class AbstractApi {
      */
     public function notFound()
     {
-        $this->publish([
-            'status' => 'error',
-            'message' => 'Not found. API method does not exist.'
-                ], 404);
+        $this->publish('Not found. API method does not exist.', 404);
     }
 
     /**
@@ -21,10 +18,7 @@ abstract class AbstractApi {
      */
     public function unauthorized()
     {
-        $this->publish([
-            'status' => 'error',
-            'message' => 'Unauthorized. User has no permission to install/uninstall templates.'
-                ], 403);
+        $this->publish('Unauthorized. User has no permission to install/uninstall templates.', 403);
     }
 
     /**
@@ -32,18 +26,12 @@ abstract class AbstractApi {
      */
     public function unauthenticated()
     {
-        $this->publish([
-            'status' => 'error',
-            'message' => 'Unauthenticated. User is not logged in.'
-                ], 401);
+        $this->publish('Unauthenticated. User is not logged in.', 401);
     }
 
     public function error($message)
     {
-        $this->publish([
-            'status' => 'error',
-            'message' => $message
-                ], 500);
+        $this->publish($message, 500);
     }
 
     /**
@@ -58,7 +46,12 @@ abstract class AbstractApi {
         if ($httpCode && is_int($httpCode)) {
             http_response_code($httpCode);
         }
-        echo json_encode($data);
+        if (is_array($data)) {
+            echo json_encode($data);
+        } else {
+            echo $data;
+        }
+
         exit;
     }
 

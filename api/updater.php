@@ -31,21 +31,20 @@ require $languageFile;
 
 try {
 
-    // Check wether referer is from the same domain or throw forbidden HTTP code
+    // Initialize updater API
+    $updaterApi = new Updater($releaseApiUrl, $TEXT, $MESSAGE);
+
+    // Check whether use is logged in and has permissions
     if (isset($_SESSION['USER_ID']) && isset($_SESSION['SYSTEM_PERMISSIONS']) && is_array($_SESSION['SYSTEM_PERMISSIONS'])) {
 
-        // Initialize updater API
-        $updaterApi = new Updater($releaseApiUrl, $TEXT, $MESSAGE);
 
         // Check for permission
         if (in_array('templates_install', $_SESSION['SYSTEM_PERMISSIONS']) && in_array('templates_uninstall', $_SESSION['SYSTEM_PERMISSIONS'])) {
 
+            // Execute API method
             if (isset($_GET['check'])) {
-
-                // Check for update
-                $updaterApi->check($releaseApiUrl);
+                $updaterApi->check($template_version);
             } elseif (isset($_GET['install'])) {
-                // Install latest release
                 $updaterApi->install($template_directory);
             } else {
                 $updaterApi->notFound();

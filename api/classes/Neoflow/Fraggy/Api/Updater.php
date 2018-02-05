@@ -68,7 +68,6 @@ class Updater extends AbstractApi {
      */
     public function install($templateDirectory)
     {
-
         $templateFolderPath = WB_PATH . '/templates/' . $templateDirectory;
         $templatePackagePath = WB_PATH . '/temp/fraggy.zip';
 
