@@ -1,10 +1,10 @@
 <?php
+
 namespace Neoflow\Fraggy;
 
 use RuntimeException;
 
-class Api
-{
+class ReleaseClient {
 
     /**
      * @var string
@@ -87,7 +87,7 @@ class Api
      *
      * @return array
      */
-    public function getLatestRelease()
+    public function getLatest()
     {
         $json = $this->call('?filter=latest');
         return json_decode($json, true);
@@ -100,10 +100,10 @@ class Api
      *
      * @return bool
      */
-    public function downloadLatestRelease($dest)
+    public function downloadLatest($dest)
     {
         // Get info aboute latest release
-        $latestRelease = $this->getLatestRelease();
+        $latestRelease = $this->getLatest();
 
         // Initialize file handler
         set_time_limit(0);
@@ -120,4 +120,5 @@ class Api
 
         return $result;
     }
+
 }
