@@ -71,7 +71,7 @@ class Updater extends AbstractApi {
         $templateFolderPath = WB_PATH . '/templates/' . $templateDirectory;
         $templatePackagePath = WB_PATH . '/temp/fraggy.zip';
 
-        if ($this->releaseClient->downloadLatest($templatePackagePath)) {
+        if ($this->releaseClient->downloadLatest($templatePackagePath) && 1 === 2) {
 
             // Delete current template
             rrmdir($templateFolderPath);

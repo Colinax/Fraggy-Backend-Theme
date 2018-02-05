@@ -186,45 +186,45 @@
 <script>
     $(function () {
 
-        var $updaterCard = $(this).find('#updaterCard');
+        var $updaterCard = $(this).find('#updaterCard'),
+                $messageParagraph = $updaterCard.find('p.message');
 
-        function checkLatestRelease() {
-            $.ajax({
-                dataType: 'json',
-                url: THEME_URL + '/api/updater.php?check',
-                success: function (data) {
+        $.ajax({
+            dataType: 'json',
+            url: THEME_URL + '/api/updater.php?check',
+            success: function (data) {
 
-                    if (localStorage.getItem('releaseInstalledMessage')) {
-                        var message = localStorage.getItem('releaseInstalledMessage');
-                        $updaterCard.find('p.message').text(message);
-                        localStorage.removeItem('releaseInstalledMessage');
-                    } else {
+                if (localStorage.getItem('releaseInstalledMessage')) {
+                    var message = localStorage.getItem('releaseInstalledMessage');
+                    $messageParagraph.text(message);
+                    localStorage.removeItem('releaseInstalledMessage');
+                } else {
 
-                        $updaterCard.find('p.message').text(data.message);
+                    $messageParagraph.text(data.message);
 
-                        if (data.status === 'success' && !data.latest) {
-                            $updaterCard.find('#installInfo').show();
-                            $updaterCard.find('#installLatestRelease').text(data.translations.install);
-                            $updaterCard.find('ul')
-                            $updaterCard.find('.version').text('Version ' + data.src.version);
-                            $updaterCard.find('.changelog').prop('href', data.src.changelog_url);
-                        }
-
-                        if (data.status === 'error') {
-                            $updaterCard.find('p.message').addClass('text-danger');
-                        }
+                    if (data.status === 'success' && !data.latest) {
+                        $updaterCard.find('#installInfo').show();
+                        $updaterCard.find('#installLatestRelease').text(data.translations.install);
+                        $updaterCard.find('ul')
+                        $updaterCard.find('.version').text('Version ' + data.src.version);
+                        $updaterCard.find('.changelog').prop('href', data.src.changelog_url);
                     }
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    $updaterCard
-                            .find('p.message')
-                            .text(jqXHR.responseText)
-                            .addClass('text-danger');
                 }
-            });
-        }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                $messageParagraph.text(jqXHR.responseText);
+            }
+        });
 
-        function installLatestRelease() {
+        $updaterCard.find('#installLatestRelease').on('click', function (e) {
+            e.preventDefault();
+
+            var $icon = $('<i>', {
+                'class': 'fa fa-spinner fa-pulse mr-2'
+            });
+
+            $(this).prepend($icon);
+
             $.ajax({
                 dataType: 'json',
                 url: THEME_URL + '/api/updater.php?install',
@@ -233,20 +233,9 @@
                     location.reload();
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
-                    $updaterCard
-                            .find('p.message')
-                            .text(jqXHR.responseText)
-                            .addClass('text-danger');
+                    $messageParagraph.text(jqXHR.responseText);
                 }
             });
-        }
-
-        checkLatestRelease();
-
-        $updaterCard.find('#installLatestRelease').on('click', function (e) {
-            e.preventDefault();
-
-            installLatestRelease();
         });
 
 
@@ -262,6 +251,12 @@
                 $tableBody = $('<tbody>'),
                 $tableResponsive = $('<div>', {
                     'class': 'table-responsive'
+                }),
+                $cardBody = $('<div>', {
+                    'class': 'card-body'
+                }),
+                $messageParagraph = $('<p>', {
+                    'class': 'message'
                 });
 
         $.ajax({
@@ -279,7 +274,11 @@
                 $serverInfoCard.append($tableResponsive);
             },
             error: function (jqXHR, textStatus, errorThrown) {
-                $serverInfoCard.remove();
+                $messageParagraph.text(jqXHR.responseText);
+
+                $cardBody.append($messageParagraph);
+
+                $serverInfoCard.append($cardBody);
             }
         });
 
