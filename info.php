@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Fraggy Backend Theme
  * Responsive and Bootstrap based backend theme for WBCE

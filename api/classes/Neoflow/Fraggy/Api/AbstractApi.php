@@ -1,37 +1,140 @@
 <?php
-
 namespace Neoflow\Fraggy\Api;
 
-abstract class AbstractApi {
+abstract class AbstractApi
+{
+
+    /**
+     * @var array
+     */
+    protected $TEXT;
+    protected $MESSAGE;
+
+    /**
+     * Constructor
+     * @param bool $anonymous Set TRUE to get anonymous access to the API
+     * @param array $permissions API permissions
+     */
+    public function __construct($anonymous = false, $permissions = array())
+    {
+        if (!$anonymous) {
+
+            // Check whether user is authenticated
+            if (!$this->isAuthenticated()) {
+                $this->unauthenticated();
+            }
+
+            // Check whether user is authorized
+            if (!$this->isAuthorized($permissions)) {
+                $this->unauthorized();
+            }
+        }
+
+        $this->setTranslations();
+    }
+
+    /**
+     * Load and set translations
+     * @return self
+     */
+    protected function setTranslations()
+    {
+        // Include language file
+        $languageFile = '../languages/' . LANGUAGE . '.php';
+        if (!file_exists($languageFile)) {
+            $languageFile = '../languages/EN.php';
+        }
+        require $languageFile;
+
+        $this->TEXT = $TEXT;
+        $this->MESSAGE = $MESSAGE;
+
+        return $this;
+    }
 
     /**
      * Not found API method
      * @return void
      */
-    public function notFound()
+    protected function notFound()
     {
-        $this->publish('Not found. API method does not exist.', 404);
+        $this->publish([
+            'status' => 'error',
+            'message' => 'Not found. API method does not exist or method arguments are invalid.'
+            ], 404);
+    }
+
+    /**
+     * Check whether user is authenticated
+     * @return self
+     */
+    protected function isAuthenticated()
+    {
+        return (isset($_SESSION['USER_ID']) && isset($_SESSION['SYSTEM_PERMISSIONS']) && is_array($_SESSION['SYSTEM_PERMISSIONS']));
+    }
+
+    /**
+     * Call API method
+     * @param string $method Name of method
+     * @param array $args Method arguments
+     */
+    public function call($method, $args = array())
+    {
+        try {
+            if (method_exists($this, $method)) {
+                call_user_func([$this, $method], $args);
+            }
+            $this->notFound();
+        } catch (Exception $ex) {
+            $this->error($ex->getMessage());
+        }
+    }
+
+    /**
+     * Check whether user is authorized by given permissions
+     * @param array $permissions Authorized permissions
+     * @return boolean
+     */
+    protected function isAuthorized($permissions = [])
+    {
+        if (count($permissions) > 0) {
+            foreach ($permissions as $permission) {
+                if (!in_array($permission, $_SESSION['SYSTEM_PERMISSIONS'])) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     /**
      * Unauthorized API method
      */
-    public function unauthorized()
+    protected function unauthorized()
     {
-        $this->publish('Unauthorized. User has no permission to install/uninstall templates.', 403);
+        $this->publish([
+            'status' => 'error',
+            'message' => 'Unauthorized. User has no permission to install/uninstall templates.'
+            ], 403);
     }
 
     /**
      * Unauthenticated
      */
-    public function unauthenticated()
+    protected function unauthenticated()
     {
-        $this->publish('Unauthenticated. User is not logged in.', 401);
+        $this->publish([
+            'status' => 'error',
+            'message' => 'Unauthenticated. User is not logged in.'
+            ], 401);
     }
 
-    public function error($message)
+    protected function error($message)
     {
-        $this->publish($message, 500);
+        $this->publish([
+            'status' => 'error',
+            'message' => $message
+            ], 500);
     }
 
     /**
@@ -49,10 +152,27 @@ abstract class AbstractApi {
         if (is_array($data)) {
             echo json_encode($data);
         } else {
-            echo $data;
+            echo json_encode([]);
         }
 
         exit;
     }
 
+    /**
+     * Run API
+     */
+    public function run()
+    {
+        $method = '';
+        if (isset($_GET['m'])) {
+            $method = $_GET['m'];
+        }
+
+        $args = [];
+        if (isset($_GET['args']) && is_array($_GET['args'])) {
+            $args = $_GET['args'];
+        }
+
+        $this->call($method, $args);
+    }
 }

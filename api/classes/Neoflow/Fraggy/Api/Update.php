@@ -1,85 +1,76 @@
 <?php
-
 namespace Neoflow\Fraggy\Api;
 
-use Exception;
 use Neoflow\Fraggy\ReleaseClient;
 use ZipArchive;
 use function rrmdir;
 
-class Updater extends AbstractApi {
+class Update extends AbstractApi
+{
 
     /**
      * @var ReleaseClient
      */
     protected $releaseClient;
 
-    /**
-     * @var array
-     */
-    protected $TEXT;
-    protected $MESSAGE;
-
-    /**
-     * Constructor.
-     *
-     * @params string $releaseApiUrl Release API url
-     * @params array $TEXT Text translations
-     * params array $MESSAGE Message translations
-     * @throws Exception
-     */
-    public function __construct($releaseApiUrl, $TEXT, $MESSAGE)
+    public function __construct($anonymous = false, $permissions = array())
     {
-        $this->TEXT = $TEXT;
-        $this->MESSAGE = $MESSAGE;
+        parent::__construct($anonymous, $permissions);
 
         if (!in_array('curl', get_loaded_extensions())) {
-            throw new Exception('Updater API is not working. cURL as PHP extension needs to be installed and enabled.', 500);
+            $this->error('Update API for Fraggy Backend Theme is not working. cURL as PHP extension needs to be installed and enabled.');
         }
+    }
 
-        $this->releaseClient = new ReleaseClient($releaseApiUrl);
+    /**
+     * Initialize release client
+     * @param string $url Release API url
+     * @return self
+     */
+    public function initReleaseClient($url)
+    {
+        $this->releaseClient = new ReleaseClient($url);
+        return $this;
     }
 
     /**
      * Check whether current version is older than latest release
-     * @param string $currentVersion Current version
+     * @param string $args Method API arguments
      */
-    public function check($currentVersion)
+    public function check($args)
     {
-
         $latestRelease = $this->releaseClient->getLatest();
 
-        $isLatestRelease = !version_compare($latestRelease['version'], $currentVersion, '>');
+        $isLatestRelease = !version_compare($latestRelease['version'], $args['version'], '>');
 
         $this->publish([
             'status' => 'success',
+            'message' => ($isLatestRelease ? $this->MESSAGE['NO_NEW_RELEASE'] : $this->MESSAGE['NEW_RELEASE']),
             'latest' => $isLatestRelease,
             'translations' => [
                 'install' => $this->TEXT['INSTALL'],
             ],
-            'src' => $latestRelease,
-            'message' => ($isLatestRelease ? $this->MESSAGE['NO_NEW_RELEASE'] : $this->MESSAGE['NEW_RELEASE'])
+            'release' => $latestRelease,
         ]);
     }
 
     /**
      * Install latest release
-     * @param string $templateDirectory Directory of template
+     * @param string $args Method API arguments
      */
-    public function install($templateDirectory)
+    public function install($args)
     {
-        $templateFolderPath = WB_PATH . '/templates/' . $templateDirectory;
-        $templatePackagePath = WB_PATH . '/temp/fraggy.zip';
+        $templatePackagePath = tempnam(sys_get_temp_dir(), 'Fraggy');
 
-        if ($this->releaseClient->downloadLatest($templatePackagePath)) {
+        if ($this->releaseClient->downloadLatest($templatePackagePath) && 1 === 2) {
 
             // Delete current template
-            rrmdir($templateFolderPath);
+            rrmdir(THEME_PATH);
 
             // Unpack and install new template
             $zip = new ZipArchive();
             if ($zip->open($templatePackagePath)) {
-                $zip->extractTo($templateFolderPath);
+                $zip->extractTo(THEME_PATH);
                 $zip->close();
 
                 // Delete update file
@@ -102,5 +93,4 @@ class Updater extends AbstractApi {
             ]);
         }
     }
-
 }

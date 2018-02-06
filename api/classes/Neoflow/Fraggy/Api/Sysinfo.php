@@ -1,23 +1,16 @@
 <?php
-
 namespace Neoflow\Fraggy\Api;
 
 use function phpinfo2array;
 
-class Sysinfo extends AbstractApi {
+class Sysinfo extends AbstractApi
+{
 
     /**
-     * Get advanced sysinfo
+     * Get sysinfo
+     * @param string $args Method API arguments
      */
-    public function advanced()
-    {
-        $this->publish(phpinfo2array());
-    }
-
-    /**
-     * Get simplified sysinfo
-     */
-    public function simple()
+    public function get($args)
     {
         $phpinfo = phpinfo2array('phpinfo');
         $this->publish([
@@ -32,5 +25,4 @@ class Sysinfo extends AbstractApi {
             ],
         ]);
     }
-
 }

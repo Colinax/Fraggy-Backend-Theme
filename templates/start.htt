@@ -158,14 +158,14 @@
                 </h4>
                 <div class="card-body">
                     <p class="message"></p>
-                    <div id="installInfo" style="display: none;">
+                    <div id="installPanel" style="display: none;">
                         <ul class="list-inline small">
-                            <li class="list-inline-item version"></li>
+                            <li class="list-inline-item" id="releaseVersion"></li>
                             <li class="list-inline-item">
-                                <a href="#" target="_blank" class="changelog">Changelog</a>
+                                <a href="#" target="_blank" id="releaseChangelog">Changelog</a>
                             </li>
                         </ul>
-                        <a href="#" class="btn btn-success" id="installLatestRelease">
+                        <a href="#" class="btn btn-success" id="installBtn">
                             <i class="fa fa-refresh"></i> Download
                         </a>
                     </div>
@@ -189,51 +189,66 @@
         var $updaterCard = $(this).find('#updaterCard'),
                 $messageParagraph = $updaterCard.find('p.message');
 
-        $.ajax({
-            dataType: 'json',
-            url: THEME_URL + '/api/updater.php?check',
-            success: function (data) {
+        if (localStorage.getItem('installResult')) {
+            var data = JSON.parse(localStorage.getItem('installResult'));
+            $messageParagraph.text(data.message).addClass('success');
+            localStorage.removeItem('installResult');
+        } else {
 
-                if (localStorage.getItem('releaseInstalledMessage')) {
-                    var message = localStorage.getItem('releaseInstalledMessage');
-                    $messageParagraph.text(message);
-                    localStorage.removeItem('releaseInstalledMessage');
-                } else {
+            $.ajax({
+                dataType: 'json',
+                url: THEME_URL + '/api/update.php?m=check&args[version]=' + THEME_VERSION,
+                success: function (data) {
 
                     $messageParagraph.text(data.message);
 
                     if (data.status === 'success' && !data.latest) {
-                        $updaterCard.find('#installInfo').show();
-                        $updaterCard.find('#installLatestRelease').text(data.translations.install);
-                        $updaterCard.find('ul')
-                        $updaterCard.find('.version').text('Version ' + data.src.version);
-                        $updaterCard.find('.changelog').prop('href', data.src.changelog_url);
+                        $updaterCard.find('#installPanel').show();
+                        $updaterCard.find('#installBtn').text(data.translations.install);
+                        $updaterCard.find('#releaseVersion').text('Version ' + data.release.version);
+                        $updaterCard.find('#releaseChangelog').prop('href', data.release.changelog_url);
+                    } else if (data.status === 'warning') {
+                        $messageParagraph.addClass('text-danger');
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    if (jqXHR.status === 403 || jqXHR.status === 401) {
+                        $updaterCard.parent().remove();
+                    } else {
+                        var data = $.parseJSON(jqXHR.responseText);
+                        $messageParagraph.text(data.message).addClass('text-danger');
                     }
                 }
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                $messageParagraph.text(jqXHR.responseText);
-            }
-        });
+            });
 
-        $updaterCard.find('#installLatestRelease').on('click', function (e) {
+        }
+
+        $updaterCard.find('#installBtn').on('click', function (e) {
             e.preventDefault();
 
             var $icon = $('<i>', {
-                'class': 'fa fa-spinner fa-pulse mr-2'
+                'class': 'fa fa-spinner fa-pulse ml-2'
             });
 
-            $(this).prepend($icon);
+            $(this).parent().append($icon);
 
             $.ajax({
                 dataType: 'json',
-                url: THEME_URL + '/api/updater.php?install',
+                url: THEME_URL + '/api/update.php?m=install',
                 success: function (data) {
-                    localStorage.setItem('releaseInstalledMessage', data.message);
-                    location.reload();
+                    if (data.status === 'success') {
+                        localStorage.setItem('installSuccessfully', JSON.stringify(data));
+                        location.reload();
+                    } else {
+                        $messageParagraph.text(data.message).addClass('text-danger');
+                        $updaterCard.find('#installInfo').hide();
+                    }
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
-                    $messageParagraph.text(jqXHR.responseText);
+                    $updaterCard.find('#installInfo').hide();
+
+                    var data = $.parseJSON(jqXHR.responseText);
+                    $messageParagraph.text(data.message).addClass('text-danger');
                 }
             });
         });
@@ -261,7 +276,7 @@
 
         $.ajax({
             dataType: 'json',
-            url: THEME_URL + '/api/sysinfo.php?simple',
+            url: THEME_URL + '/api/sysinfo.php?m=get',
             success: function (data) {
                 $tableBody
                         .append('<tr><td>PHP Version</td><td>' + data.php.version + '</td></tr>')
@@ -274,10 +289,9 @@
                 $serverInfoCard.append($tableResponsive);
             },
             error: function (jqXHR, textStatus, errorThrown) {
-                $messageParagraph.text(jqXHR.responseText);
-
+                var data = JSON.parse(jqXHR.responseText);
+                $messageParagraph.text(data.message).addClass('text-danger');
                 $cardBody.append($messageParagraph);
-
                 $serverInfoCard.append($cardBody);
             }
         });
