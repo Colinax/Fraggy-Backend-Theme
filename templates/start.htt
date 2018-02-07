@@ -192,8 +192,13 @@
 
         if (localStorage.getItem('installResult')) {
             var data = JSON.parse(localStorage.getItem('installResult'));
-            $messageParagraph.text(data.message).addClass('success');
+            $messageParagraph.text(data.message);
             localStorage.removeItem('installResult');
+        } else if (localStorage.getItem('releaseInstalledMessage')) {
+            // DEPRECATED: Old 2.0.1 message handler
+            var message = localStorage.getItem('releaseInstalledMessage');
+            $messageParagraph.text(message);
+            localStorage.removeItem('releaseInstalledMessage');
         } else {
 
             $.ajax({
@@ -239,7 +244,7 @@
                 url: THEME_URL + '/api/update.php?m=install',
                 success: function (data) {
                     if (data.status === 'success') {
-                        localStorage.setItem('installSuccessfully', JSON.stringify(data));
+                        localStorage.setItem('installResult', JSON.stringify(data));
                         location.reload();
                     } else {
                         $messageParagraph.text(data.message).addClass('text-danger');
