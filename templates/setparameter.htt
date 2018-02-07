@@ -26,7 +26,8 @@
             var WB_URL = '../..',
                     THEME_URL = '../../templates/fraggy-backend-theme',
                     ADMIN_URL = '{ADMIN_URL}',
-                    LANGUAGE_CODE = navigator.language || navigator.userLanguage;
+                    LANGUAGE_CODE = navigator.language || navigator.userLanguage,
+                    THEME_VERSION = '2.0.2';
         </script>
 
         <!-- Theme jQuery -->

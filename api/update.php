@@ -21,6 +21,8 @@ include 'functions/rrmdir.php';
 // Include template vars
 include '../info.php';
 
+define('API_TEST', 'download');
+
 // Create update API
 $updateApi = new Update(false, [
     'templates_install',

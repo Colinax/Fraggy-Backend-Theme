@@ -11,14 +11,14 @@ abstract class AbstractApi
     protected $MESSAGE;
 
     /**
-     * Constructor
-     * @param bool $anonymous Set TRUE to get anonymous access to the API
-     * @param array $permissions API permissions
+     * Constructor.
+     *
+     * @param bool  $anonymous   Set TRUE to get anonymous access to the API
+     * @param array $permissions Needed API permissions based on WBCE permission keys
      */
     public function __construct($anonymous = false, $permissions = array())
     {
         if (!$anonymous) {
-
             // Check whether user is authenticated
             if (!$this->isAuthenticated()) {
                 $this->unauthenticated();
@@ -34,17 +34,18 @@ abstract class AbstractApi
     }
 
     /**
-     * Load and set translations
+     * Load and set translations of Fraggy Backend Theme.
+     *
      * @return self
      */
     protected function setTranslations()
     {
         // Include language file
-        $languageFile = '../languages/' . LANGUAGE . '.php';
-        if (!file_exists($languageFile)) {
-            $languageFile = '../languages/EN.php';
+        $languageFilePath = THEME_PATH . '/languages/' . LANGUAGE . '.php';
+        if (!file_exists($languageFilePath)) {
+            $languageFilePath = THEME_PATH . '/languages/EN.php';
         }
-        require $languageFile;
+        require $languageFilePath;
 
         $this->TEXT = $TEXT;
         $this->MESSAGE = $MESSAGE;
@@ -53,30 +54,31 @@ abstract class AbstractApi
     }
 
     /**
-     * Not found API method
-     * @return void
+     * Not found API method.
      */
     protected function notFound()
     {
         $this->publish([
             'status' => 'error',
-            'message' => 'Not found. API method does not exist or method arguments are invalid.'
+            'message' => 'Not found. API method does not exist or method arguments are invalid.',
             ], 404);
     }
 
     /**
-     * Check whether user is authenticated
+     * Check whether user is authenticated.
+     *
      * @return self
      */
     protected function isAuthenticated()
     {
-        return (isset($_SESSION['USER_ID']) && isset($_SESSION['SYSTEM_PERMISSIONS']) && is_array($_SESSION['SYSTEM_PERMISSIONS']));
+        return isset($_SESSION['USER_ID']) && isset($_SESSION['SYSTEM_PERMISSIONS']) && is_array($_SESSION['SYSTEM_PERMISSIONS']);
     }
 
     /**
-     * Call API method
+     * Call API method.
+     *
      * @param string $method Name of method
-     * @param array $args Method arguments
+     * @param array  $args   Method arguments
      */
     public function call($method, $args = array())
     {
@@ -91,8 +93,10 @@ abstract class AbstractApi
     }
 
     /**
-     * Check whether user is authorized by given permissions
+     * Check whether user is authorized by given permissions.
+     *
      * @param array $permissions Authorized permissions
+     *
      * @return boolean
      */
     protected function isAuthorized($permissions = [])
@@ -104,28 +108,29 @@ abstract class AbstractApi
                 }
             }
         }
+
         return true;
     }
 
     /**
-     * Unauthorized API method
+     * Unauthorized API method.
      */
     protected function unauthorized()
     {
         $this->publish([
             'status' => 'error',
-            'message' => 'Unauthorized. User has no permission to install/uninstall templates.'
+            'message' => 'Unauthorized. User has no permission to install/uninstall templates.',
             ], 403);
     }
 
     /**
-     * Unauthenticated
+     * Unauthenticated.
      */
     protected function unauthenticated()
     {
         $this->publish([
             'status' => 'error',
-            'message' => 'Unauthenticated. User is not logged in.'
+            'message' => 'Unauthenticated. User is not logged in.',
             ], 401);
     }
 
@@ -133,15 +138,15 @@ abstract class AbstractApi
     {
         $this->publish([
             'status' => 'error',
-            'message' => $message
+            'message' => $message,
             ], 500);
     }
 
     /**
-     * Publish API response
+     * Publish API response.
+     *
      * @param array $data
-     * @param int $httpCode
-     * @return void
+     * @param int   $httpCode
      */
     protected function publish($data, $httpCode = null)
     {
@@ -159,7 +164,7 @@ abstract class AbstractApi
     }
 
     /**
-     * Run API
+     * Run API.
      */
     public function run()
     {

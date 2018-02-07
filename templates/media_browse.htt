@@ -29,7 +29,8 @@
             var WB_URL = '../../',
                     THEME_URL = '{THEME_URL}',
                     ADMIN_URL = '../../admin/',
-                    LANGUAGE_CODE = navigator.language || navigator.userLanguage;
+                    LANGUAGE_CODE = navigator.language || navigator.userLanguage,
+                    THEME_VERSION = '2.0.2';
         </script>
 
         <!-- Theme jQuery -->

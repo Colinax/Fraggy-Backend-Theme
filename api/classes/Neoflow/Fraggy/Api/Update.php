@@ -1,13 +1,12 @@
 <?php
+
 namespace Neoflow\Fraggy\Api;
 
 use Neoflow\Fraggy\ReleaseClient;
 use ZipArchive;
-use function rrmdir;
 
 class Update extends AbstractApi
 {
-
     /**
      * @var ReleaseClient
      */
@@ -23,18 +22,22 @@ class Update extends AbstractApi
     }
 
     /**
-     * Initialize release client
+     * Initialize release client.
+     *
      * @param string $url Release API url
+     *
      * @return self
      */
     public function initReleaseClient($url)
     {
         $this->releaseClient = new ReleaseClient($url);
+
         return $this;
     }
 
     /**
-     * Check whether current version is older than latest release
+     * Check whether current version is older than latest release.
+     *
      * @param string $args Method API arguments
      */
     public function check($args)
@@ -55,15 +58,15 @@ class Update extends AbstractApi
     }
 
     /**
-     * Install latest release
+     * Install latest release.
+     *
      * @param string $args Method API arguments
      */
     public function install($args)
     {
         $templatePackagePath = tempnam(sys_get_temp_dir(), 'Fraggy');
 
-        if ($this->releaseClient->downloadLatest($templatePackagePath) && 1 === 2) {
-
+        if ($this->releaseClient->downloadLatest($templatePackagePath)) {
             // Delete current template
             rrmdir(THEME_PATH);
 
@@ -78,18 +81,18 @@ class Update extends AbstractApi
 
                 $this->publish([
                     'status' => 'success',
-                    'message' => $this->MESSAGE['INSTALLATION_SUCCESSFULLY']
+                    'message' => $this->MESSAGE['INSTALLATION_SUCCESSFULLY'],
                 ]);
             } else {
                 $this->publish([
                     'status' => 'warning',
-                    'message' => $this->MESSAGE['INSTALLATION_FAILED']
+                    'message' => $this->MESSAGE['INSTALLATION_FAILED'],
                 ]);
             }
         } else {
             $this->publish([
                 'status' => 'warning',
-                'message' => $this->MESSAGE['DOWNLOAD_FAILED']
+                'message' => $this->MESSAGE['DOWNLOAD_FAILED'],
             ]);
         }
     }

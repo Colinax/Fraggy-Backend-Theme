@@ -161,6 +161,7 @@
                     <div id="installPanel" style="display: none;">
                         <ul class="list-inline small">
                             <li class="list-inline-item" id="releaseVersion"></li>
+                            <li class="list-inline-item" id="releaseDate"></li>
                             <li class="list-inline-item">
                                 <a href="#" target="_blank" id="releaseChangelog">Changelog</a>
                             </li>
@@ -206,6 +207,7 @@
                         $updaterCard.find('#installPanel').show();
                         $updaterCard.find('#installBtn').text(data.translations.install);
                         $updaterCard.find('#releaseVersion').text('Version ' + data.release.version);
+                        $updaterCard.find('#releaseDate').text(data.release.release_date);
                         $updaterCard.find('#releaseChangelog').prop('href', data.release.changelog_url);
                     } else if (data.status === 'warning') {
                         $messageParagraph.addClass('text-danger');
@@ -252,7 +254,6 @@
                 }
             });
         });
-
 
     });
 

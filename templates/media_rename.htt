@@ -26,7 +26,8 @@
             var WB_URL = '{WB_URL}',
                     THEME_URL = '{THEME_URL}',
                     ADMIN_URL = '{ADMIN_URL}',
-                    LANGUAGE_CODE = navigator.language || navigator.userLanguage;
+                    LANGUAGE_CODE = navigator.language || navigator.userLanguage,
+                    THEME_VERSION = '2.0.2';
         </script>
 
         <!-- Theme jQuery -->

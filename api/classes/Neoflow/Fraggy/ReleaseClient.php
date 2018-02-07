@@ -4,8 +4,8 @@ namespace Neoflow\Fraggy;
 
 use RuntimeException;
 
-class ReleaseClient {
-
+class ReleaseClient
+{
     /**
      * @var string
      */
@@ -25,7 +25,7 @@ class ReleaseClient {
     /**
      * Constructor.
      *
-     * @param string $apiUrl API url
+     * @param string $apiUrl Release API url
      */
     public function __construct($apiUrl)
     {
@@ -33,7 +33,7 @@ class ReleaseClient {
     }
 
     /**
-     * Call API
+     * Call release API.
      *
      * @param string $urlPath     Additional API url path
      * @param array  $curlOptions Additional cURL options
@@ -44,13 +44,13 @@ class ReleaseClient {
      */
     public function call($urlPath = '', $curlOptions = array())
     {
-        return $this->send($this->apiUrl . $urlPath, $curlOptions);
+        return $this->send($this->apiUrl.$urlPath, $curlOptions);
     }
 
     /**
      * Build and send HTTP request.
      *
-     * @param string $url     Request url
+     * @param string $url         Request url
      * @param array  $curlOptions Additional cURL options
      *
      * @return string
@@ -73,7 +73,7 @@ class ReleaseClient {
 
         // Check whether request was successful
         if (false === $response) {
-            throw new RuntimeException('Connection error. ' . curl_error($ch));
+            throw new RuntimeException('Connection error. '.curl_error($ch));
         }
 
         // Close cURL request to clear up resources
@@ -90,6 +90,7 @@ class ReleaseClient {
     public function getLatest()
     {
         $json = $this->call('?filter=latest');
+
         return json_decode($json, true);
     }
 
@@ -120,5 +121,4 @@ class ReleaseClient {
 
         return $result;
     }
-
 }
