@@ -61,7 +61,24 @@ $querySettings = $database->query('SELECT `value` FROM `' . TABLE_PREFIX . 'sett
 $settings = $querySettings->fetchRow();
 $pageLevelLimit = $settings['value'];
 
-?>
+if (count($pages) > 0) {
+
+    ?>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="small mb-0">
+                    <a href="#" class="btn-collapse"><?= $TEXT['COLLAPSE_ALL'] ?></a> /
+                    <a href="#" class="btn-expand"><?= $TEXT['EXPAND_ALL'] ?></a>
+                </p>
+            </div>
+            <div class="hidden-xs col-sm-6">
+                <p class="text-right small mb-0"><?= $MENU['PAGES'] ?>: <?= $numberOfPages ?></p>
+            </div>
+        </div>
+    </div>
+<?php } ?>
+
 <div class="jsadmin"></div>
 <div class="pages_list" style="display: none;">
     <table id="pageListHeader" class="table" <?= (count($pages) === 0 ? 'style="display:none;"' : '') ?>>
