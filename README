@@ -10,27 +10,32 @@ The backend theme requires WBCE v1.3.1 or newer.
 
 Changelog
 
- v2.0.2 - released on 2018-02-07
+ v2.0.3 - working in progress
+
+ * Added expand/collapse pagetree links to the top
+ * Added number of pages to the top
+
+v2.0.2 - released on 2018-02-07
 
  * Fixed and optimized auto updater
 
-Older versions
+ Older versions
 
 You can see the summary of releases and the changes in each release here.
 
- Download
+Download
 
 You can download the newest source code release and the distributed release without source files here.
 
-Installation
+ Installation
 
- Theme
+Theme
 
 If you are installing the theme for the first time, use the template installation in the WBCE backend and follow the instructions.
 
-> If you want to update the backend theme, then you have to uninstall the old installation first!
+> Please use the auto updater in the dashboard if you want to update the backend theme.
 
-Custom logo / favicon
+ Custom logo / favicon
 
 For a custom logo you have to create an image with the name backend-theme-logo.png. The logo has to be a PNG-based image, should have a max width of 224px and a max height of 96px.
 
@@ -40,15 +45,15 @@ Both images have to be uploaded into the root-directory (next to the config.php)
 
 > The custom favicon should be a square image.
 
- Support
+Support
 
 The support is provided by the community in the forum of WBCE.
 
-Donation
+ Donation
 
 If you like my work or are using it for commercial websites then please donate, or just buy me a beer or two to help me keep Fraggy Backend Theme up to date.
 
- Author
+Author
 
 * Jonathan Nessier, Neoflow
 

@@ -12,9 +12,10 @@ The backend theme requires [WBCE v1.3.1](https://github.com/WBCE/WBCE_CMS/releas
 
 # Changelog
 
-## v2.x.x - working in progress
+## v2.0.3 - working in progress
 
- * ???
+ * Added expand/collapse pagetree links to the top
+ * Added number of pages to the top
 
 ## v2.0.2 - released on 2018-02-07
 
