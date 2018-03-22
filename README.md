@@ -12,6 +12,10 @@ The backend theme requires [WBCE v1.3.1](https://github.com/WBCE/WBCE_CMS/releas
 
 # Changelog
 
+## v2.x.x - working in progress
+
+ * ???
+
 ## v2.0.2 - released on 2018-02-07
 
  * Fixed and optimized auto updater
@@ -30,7 +34,7 @@ You can download the newest source code release and the distributed release with
 
 If you are installing the theme for the first time, use the template installation in the WBCE backend and follow the instructions.
 
-> If you want to update the backend theme, then you have to uninstall the old installation first!
+> Please use the auto updater in the dashboard if you want to update the backend theme.
 
 ## Custom logo / favicon
 
