@@ -78,23 +78,20 @@
             <p>{MESSAGE_RELOAD_ADDONS}</p>
             <form action="{RELOAD_URL}" method="post">
                 {FTAN}
-
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label" {DISPLAY_MODULES}>
-                        <input class="form-check-input" type="checkbox" name="reload_modules" value="true" /> {MODULES}
-                    </label>
+                <div class="form-group">
+                    <div class="form-check form-check-inline" {DISPLAY_MODULES}>
+                        <input class="form-check-input" type="checkbox" id="reloadModules" name="reload_modules" value="true" />
+                        <label class="form-check-label" for="reloadModules">{MODULES}</label>
+                    </div>
+                    <div class="form-check form-check-inline" {DISPLAY_TEMPLATES}>
+                        <input class="form-check-input" type="checkbox" id="reloadTemplates" name="reload_templates" value="true" />
+                        <label class="form-check-label" for="reloadTemplates">{TEMPLATES}</label>
+                    </div>
+                    <div class="form-check form-check-inline" {DISPLAY_LANGUAGES}>
+                        <input class="form-check-input" type="checkbox" id="reloadLanguages" name="reload_languages" value="true" />
+                        <label class="form-check-label" for="reloadLanguages">{LANGUAGES}</label>
+                    </div>
                 </div>
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label" {DISPLAY_TEMPLATES}>
-                        <input class="form-check-input" type="checkbox" name="reload_templates" value="true" /> {TEMPLATES}
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label" {DISPLAY_LANGUAGES}>
-                        <input class="form-check-input" type="checkbox" name="reload_languages" value="true" /> {LANGUAGES}
-                    </label>
-                </div>
-
                 <div class="form-group">
                     <button class="btn btn-primary" type="submit" name="submit">
                         <i class="fa fa-fw fa-refresh"></i> {TEXT_RELOAD}
