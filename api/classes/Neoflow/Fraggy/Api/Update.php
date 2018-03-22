@@ -66,39 +66,34 @@ class Update extends AbstractApi
     {
         $templatePackagePath = tempnam(sys_get_temp_dir(), 'Fraggy');
 
-        $this->publish([
-            'status' => 'success',
-            'message' => $this->MESSAGE['INSTALLATION_SUCCESSFULLY'],
-        ]);
+        if ($this->releaseClient->downloadLatest($templatePackagePath)) {
+            // Delete current template
+            rrmdir(THEME_PATH);
 
-//        if ($this->releaseClient->downloadLatest($templatePackagePath)) {
-//            // Delete current template
-//            rrmdir(THEME_PATH);
-//
-//            // Unpack and install new template
-//            $zip = new ZipArchive();
-//            if ($zip->open($templatePackagePath)) {
-//                $zip->extractTo(THEME_PATH);
-//                $zip->close();
-//
-//                // Delete update file
-//                unlink($templatePackagePath);
-//
-//                $this->publish([
-//                    'status' => 'success',
-//                    'message' => $this->MESSAGE['INSTALLATION_SUCCESSFULLY'],
-//                ]);
-//            } else {
-//                $this->publish([
-//                    'status' => 'warning',
-//                    'message' => $this->MESSAGE['INSTALLATION_FAILED'],
-//                ]);
-//            }
-//        } else {
-//            $this->publish([
-//                'status' => 'warning',
-//                'message' => $this->MESSAGE['DOWNLOAD_FAILED'],
-//            ]);
-//        }
+            // Unpack and install new template
+            $zip = new ZipArchive();
+            if ($zip->open($templatePackagePath)) {
+                $zip->extractTo(THEME_PATH);
+                $zip->close();
+
+                // Delete update file
+                unlink($templatePackagePath);
+
+                $this->publish([
+                    'status' => 'success',
+                    'message' => $this->MESSAGE['INSTALLATION_SUCCESSFULLY'],
+                ]);
+            } else {
+                $this->publish([
+                    'status' => 'warning',
+                    'message' => $this->MESSAGE['INSTALLATION_FAILED'],
+                ]);
+            }
+        } else {
+            $this->publish([
+                'status' => 'warning',
+                'message' => $this->MESSAGE['DOWNLOAD_FAILED'],
+            ]);
+        }
     }
 }

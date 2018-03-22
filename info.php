@@ -21,4 +21,4 @@ $template_license_terms = '-';
 $template_description = 'Responsive and Bootstrap based backend theme for WBCE';
 
 // Custom vars
-$releaseApiUrl = 'https://fraggy.neoflow.ch/api_v2.php';
+$releaseApiUrl = 'https://fraggy.neoflow.ch/api_v2-dev.php';
