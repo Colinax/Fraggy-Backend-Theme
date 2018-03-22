@@ -6,7 +6,7 @@ $(function () {
     $('select')
             .select2({
                 theme: 'bootstrap',
-                minimumResultsForSearch: -1,
+                //  minimumResultsForSearch: -1,
                 width: '100%',
                 dropdownAutoWidth: true,
                 templateResult: function (item) {

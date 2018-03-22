@@ -16,6 +16,7 @@ The backend theme requires [WBCE v1.3.1](https://github.com/WBCE/WBCE_CMS/releas
 
  * Added expand/collapse pagetree links to the top
  * Added number of pages to the top
+ * Added search to select dropdowns
 
 ## Older versions
 

@@ -1,5 +1,5 @@
 /**
- * FRAGGY BACKEND THEME v2.0.2
+ * FRAGGY BACKEND THEME v2.0.3
  * Responsive and Bootstrap based backend theme for WBCE
  *
  * Copright (c) 2016-2017 Jonathan Nessier, Neoflow | neoflow.ch
@@ -337,7 +337,6 @@ $(function () {
     $('select')
             .select2({
                 theme: 'bootstrap',
-                minimumResultsForSearch: -1,
                 width: '100%',
                 dropdownAutoWidth: true,
                 templateResult: function (item) {
