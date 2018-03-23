@@ -1,17 +1,36 @@
 <?php
 namespace Neoflow\Fraggy\Api;
 
-use Neoflow\Fraggy\ReleaseClient;
+use Neoflow\GitHubClient;
 use ZipArchive;
+use function rrmdir;
 
 class Update extends AbstractApi
 {
 
     /**
-     * @var ReleaseClient
+     * @var GitHubClient
      */
-    protected $releaseClient;
+    protected $gitHubClient;
 
+    /**
+     * @var string
+     */
+    protected $installedVersion;
+
+    /**
+     * @var array
+     */
+    protected $apiMethods = [
+        'check',
+        'install'
+    ];
+
+    /**
+     * Constructor
+     * @param bool $anonymous Set TRUE to allow anonymous access
+     * @param array $permissions List of needed permissions to get access
+     */
     public function __construct($anonymous = false, $permissions = array())
     {
         parent::__construct($anonymous, $permissions);
@@ -22,15 +41,29 @@ class Update extends AbstractApi
     }
 
     /**
-     * Initialize release client.
+     * Set GitHub API client
      *
-     * @param string $url Release API url
+     * @param string $gitHubClient GitHub API client
      *
      * @return self
      */
-    public function initReleaseClient($url)
+    public function setGitHubClient($gitHubClient)
     {
-        $this->releaseClient = new ReleaseClient($url);
+        $this->gitHubClient = $gitHubClient;
+
+        return $this;
+    }
+
+    /**
+     * Set installed version
+     *
+     * @param string $version Current installed version
+     *
+     * @return self
+     */
+    public function setInstalledVersion($version)
+    {
+        $this->installedVersion = $version;
 
         return $this;
     }
@@ -42,18 +75,23 @@ class Update extends AbstractApi
      */
     public function check($args)
     {
-        $latestRelease = $this->releaseClient->getLatest();
+        $latestRelease = $this->gitHubClient->getLatestRelease();
 
-        $isLatestRelease = !version_compare($latestRelease['version'], $args['version'], '>');
+        // Set installed version for check when not already set as an argument
+        if (!isset($args['version'])) {
+            $args['version'] = $this->installedVersion;
+        }
+
+        $isLatestRelease = !version_compare($latestRelease['tag_name'], $args['version'], '>');
 
         $this->publish([
             'status' => 'success',
             'message' => ($isLatestRelease ? $this->MESSAGE['NO_NEW_RELEASE'] : $this->MESSAGE['NEW_RELEASE']),
-            'latest' => $isLatestRelease,
+            'is_latest' => $isLatestRelease,
             'translations' => [
                 'install' => $this->TEXT['INSTALL'],
             ],
-            'release' => $latestRelease,
+            'latest_release' => $latestRelease,
         ]);
     }
 
@@ -66,7 +104,7 @@ class Update extends AbstractApi
     {
         $templatePackagePath = tempnam(sys_get_temp_dir(), 'Fraggy');
 
-        if ($this->releaseClient->downloadLatest($templatePackagePath)) {
+        if ($this->downloadLatestRelease($templatePackagePath)) {
             // Delete current template
             rrmdir(THEME_PATH);
 
@@ -95,5 +133,38 @@ class Update extends AbstractApi
                 'message' => $this->MESSAGE['DOWNLOAD_FAILED'],
             ]);
         }
+    }
+
+    /**
+     * Download first asset of latest release (e.g. ZIP archive).
+     *
+     * @param string $dest Destination directory
+     *
+     * @return bool
+     */
+    protected function downloadLatestRelease($dest)
+    {
+        // Get info aboute latest release
+        $latestRelease = $this->gitHubClient->getLatestRelease();
+
+        if (isset($latestRelease['assets'][0]['browser_download_url'])) {
+
+            // Initialize file handler
+            set_time_limit(0);
+            $fp = fopen($dest, 'w+');
+
+            // Download file
+            $result = $this->send($latestRelease['assets'][0]['browser_download_url'], [
+                CURLOPT_TIMEOUT => 50,
+                CURLOPT_FILE => $fp,
+            ]);
+
+            // Close file handler
+            fclose($fp);
+
+            return $result;
+        }
+
+        return false;
     }
 }

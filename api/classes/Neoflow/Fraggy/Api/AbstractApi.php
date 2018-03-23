@@ -11,6 +11,11 @@ abstract class AbstractApi
     protected $MESSAGE;
 
     /**
+     * @var array
+     */
+    protected $apiMethods = [];
+
+    /**
      * Constructor.
      *
      * @param bool  $anonymous   Set TRUE to get anonymous access to the API
@@ -83,7 +88,8 @@ abstract class AbstractApi
     public function call($method, $args = array())
     {
         try {
-            if (method_exists($this, $method)) {
+            // Check if API method is valid and exists
+            if (in_array($method, $this->apiMethods) && method_exists($this, $method)) {
                 call_user_func([$this, $method], $args);
             }
             $this->notFound();

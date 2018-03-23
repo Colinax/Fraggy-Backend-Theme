@@ -12,12 +12,9 @@ The backend theme requires [WBCE v1.3.1](https://github.com/WBCE/WBCE_CMS/releas
 
 # Changelog
 
-## v2.0.3 - released on 2018-03-22
+## v2.0.4 - released on 2018-03-23
 
- * Added expand/collapse pagetree links to the top
- * Added number of pages to the top
- * Added search to select dropdowns
- * Fixed auto updater
+ * Switched auto updater to GitHub APIv3
 
 ## Older versions
 
@@ -61,4 +58,4 @@ If you like my work or are using it for commercial websites then please donate, 
 
 Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to [Jörg Laas](https://www.jlhd.com/), [colinax](https://forum.wbce.org/profile.php?id=160) and [trici](https://tricity.ch) for their donations!
 
-Copyright © 2016-2017 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Licensed under GNU GPLv3
+Copyright © 2016-2018 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Licensed under GNU GPLv3

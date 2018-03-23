@@ -194,26 +194,21 @@
             var data = JSON.parse(localStorage.getItem('installResult'));
             $messageParagraph.text(data.message);
             localStorage.removeItem('installResult');
-        } else if (localStorage.getItem('releaseInstalledMessage')) {
-            // DEPRECATED: Old 2.0.1 message handler
-            var message = localStorage.getItem('releaseInstalledMessage');
-            $messageParagraph.text(message);
-            localStorage.removeItem('releaseInstalledMessage');
         } else {
 
             $.ajax({
                 dataType: 'json',
-                url: THEME_URL + '/api/update.php?m=check&args[version]=' + THEME_VERSION,
+                url: THEME_URL + '/api/update.php?m=check',
                 success: function (data) {
 
                     $messageParagraph.text(data.message);
 
-                    if (data.status === 'success' && !data.latest) {
+                    if (data.status === 'success' && !data.is_latest) {
                         $updaterCard.find('#installPanel').show();
                         $updaterCard.find('#installBtn').text(data.translations.install);
-                        $updaterCard.find('#releaseVersion').text('Version ' + data.release.version);
-                        $updaterCard.find('#releaseDate').text(data.release.release_date);
-                        $updaterCard.find('#releaseChangelog').prop('href', data.release.changelog_url);
+                        $updaterCard.find('#releaseVersion').text('Version ' + data.latest_release.tag_name);
+                        $updaterCard.find('#releaseDate').text(data.latest_release.published_at.split('T')[0]);
+                        $updaterCard.find('#releaseChangelog').prop('href', data.latest_release.html_url);
                     } else if (data.status === 'warning') {
                         $messageParagraph.addClass('text-danger');
                     }

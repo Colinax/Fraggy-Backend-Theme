@@ -1,9 +1,16 @@
 <?php
-
 namespace Neoflow\Fraggy\Api;
 
 class Sysinfo extends AbstractApi
 {
+
+    /**
+     * @var array
+     */
+    protected $apiMethods = [
+        'get',
+    ];
+
     /**
      * Get sysinfo.
      *

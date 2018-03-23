@@ -132,6 +132,7 @@ gulp.task('src:release', function () {
 gulp.task('zip:build', function () {
     return gulp.src([
         './**',
+        '!./api/cache/{,/**}',
         '!./package*',
         '!./gulpfile.js',
         '!./node_modules{,/**}',
