@@ -106,7 +106,6 @@ class Update extends AbstractApi
 
         if ($this->downloadLatestRelease($templatePackagePath)) {
 			
-			
 			echo $templatePackagePath;
 			exit;
             // Delete current template
