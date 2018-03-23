@@ -24,7 +24,6 @@ $template_description = 'Responsive and Bootstrap based backend theme for WBCE';
 $gitHubApiUrl = 'https://api.github.com';
 $gitHubRepoPath = '/repos/neoflow/fraggy-backend-theme';
 $gitHubClientOptions = array(
-    //'cacheDirectory' => WB_PATH . '/templates/' . $template_directory . '/api/cache',
     'cacheDirectory' => sys_get_temp_dir(),
     'cacheLifetime' => 300, // 5*60 seconds = 300 seconds (5 minutes)
     'curl' => array(
