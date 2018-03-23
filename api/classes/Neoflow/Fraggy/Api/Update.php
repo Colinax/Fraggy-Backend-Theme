@@ -150,14 +150,14 @@ class Update extends AbstractApi
         if (isset($latestRelease['assets'][0]['browser_download_url'])) {
 
             // Initialize file handler
-            set_time_limit(0);
+            set_time_limit(60);
             $fp = fopen($dest, 'w+');
 
             // Download file
-            $result = $this->send($latestRelease['assets'][0]['browser_download_url'], [
+            $result = $this->gitHubClient->send($latestRelease['assets'][0]['browser_download_url'], [
                 CURLOPT_TIMEOUT => 50,
                 CURLOPT_FILE => $fp,
-            ]);
+                ], false);
 
             // Close file handler
             fclose($fp);

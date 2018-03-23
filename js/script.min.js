@@ -1,5 +1,5 @@
 /**
- * FRAGGY BACKEND THEME v2.0.3
+ * FRAGGY BACKEND THEME v2.0.4
  * Responsive and Bootstrap based backend theme for WBCE
  *
  * Copright (c) 2016-2018 Jonathan Nessier, Neoflow | neoflow.ch

@@ -52,7 +52,7 @@ class GitHubClient
     }
 
     /**
-     * Call release API.
+     * Call GitHub API.
      *
      * @param string $urlPath     Additional API url path
      * @param array  $curlOptions Additional cURL options
@@ -71,14 +71,15 @@ class GitHubClient
      *
      * @param string $url         Request url
      * @param array  $curlOptions Additional cURL options
+     * @param bool $cache Set FALSE to prevent to cache the response content
      *
      * @return string
      *
      * @throws RuntimeException
      */
-    protected function send($url = '', $curlOptions = array())
+    public function send($url = '', $curlOptions = array(), $cache = true)
     {
-        if (!$this->isCached($url)) {
+        if (!$cache || !$this->isCached($url)) {
             // Get cURL resource
             $ch = curl_init();
 
@@ -100,7 +101,9 @@ class GitHubClient
             curl_close($ch);
 
             // Set cache
-            $this->setCache($url, $response);
+            if ($cache) {
+                $this->setCache($url, $response);
+            }
 
             return $response;
         } else {
