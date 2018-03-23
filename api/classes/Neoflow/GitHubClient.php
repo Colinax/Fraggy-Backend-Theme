@@ -56,14 +56,15 @@ class GitHubClient
      *
      * @param string $urlPath     Additional API url path
      * @param array  $curlOptions Additional cURL options
+     * @param bool $cache Set FALSE to prevent to cache the response content
      *
      * @return string
      *
      * @throws RuntimeException
      */
-    public function call($urlPath = '', $curlOptions = array())
+    public function call($urlPath = '', $curlOptions = array(), $cache = true)
     {
-        return $this->send($this->apiUrl . $urlPath, $curlOptions);
+        return $this->send($this->apiUrl . $urlPath, $curlOptions, $cache);
     }
 
     /**

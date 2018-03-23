@@ -105,6 +105,10 @@ class Update extends AbstractApi
         $templatePackagePath = tempnam(sys_get_temp_dir(), 'Fraggy');
 
         if ($this->downloadLatestRelease($templatePackagePath)) {
+			
+			
+			echo $templatePackagePath;
+			exit;
             // Delete current template
             rrmdir(THEME_PATH);
 
