@@ -44,7 +44,7 @@ Both images have to be uploaded into the root-directory (next to the config.php)
 
 # Support
 
-The support is provided by the community in the [forum of WBCE](https://forum.wbce.org).
+The support is provided by the community in the [forum of WBCE](https://forum.wbce.org/viewforum.php?id=69).
 
 # Donation
 
