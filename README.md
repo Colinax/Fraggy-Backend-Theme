@@ -12,9 +12,10 @@ The backend theme requires [WBCE v1.3.1](https://github.com/WBCE/WBCE_CMS/releas
 
 # Changelog
 
-## v2.0.4 - released on 2018-03-23
+## v2.1.0 - released on 2018-03-23
 
- * Switched auto updater to GitHub APIv3
+ * Updated to Bootstrap 4.1.2
+ * Custom logo and favicon will be cached now (client-side)
 
 ## Older versions
 
