@@ -3,7 +3,7 @@
  * Fraggy Backend Theme
  * Responsive and Bootstrap based backend theme for WBCE.
  *
- * @copyright 2016-2018 Jonathan Nessier, Neoflow | neoflow.ch
+ * @copyright 2016-2018 Jonathan Nessier, Neoflow <jonathan.nessier@neoflow.ch>
  * @license GNU GPLv3
  */
 // Include WBCE config file
@@ -20,15 +20,15 @@ $filePaths = [
 foreach ($filePaths as $filePath) {
     if (is_file($filePath) && is_readable($filePath)) {
 
-        // Open the file in a binary mode
-        $filePointer = fopen($filePath, 'rb');
-
         // Send header info
         header('Content-Type: image/png');
         header('Content-Length: ' . filesize($filePath));
+        header("Cache-Control: private, max-age=10800, pre-check=10800");
+        header("Pragma: private");
+        header("Expires: " . date(DATE_RFC822, strtotime(" 1 day")));
 
         // Dump the image and stop the script
-        fpassthru($filePointer);
+        readfile($filePath);
         exit;
     }
 }
