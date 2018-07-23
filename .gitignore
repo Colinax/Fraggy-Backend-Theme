@@ -1,5 +1,2 @@
-*nbproject*
-*node_modules*
-*fraggy-backend-theme-*.zip
-*package-lock.json
-*.php_cs.cache
+# IDE files and folders
+.idea/
