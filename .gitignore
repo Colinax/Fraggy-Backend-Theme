@@ -1,3 +1,4 @@
 # IDE files and folders
 .idea/
 fraggy-*.zip
+node_modules/
