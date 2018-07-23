@@ -27,7 +27,7 @@ if (isset($_GET['size']) && $_GET['size']) {
             $imageHeight = imagesy($image);
 
             // Get requested favicon size
-            $faviconSize = (int) $_GET['size'];
+            $faviconSize = (int)$_GET['size'];
 
             // Check for a valid favicon size
             if ($faviconSize >= 16 && $faviconSize <= 256) {
@@ -49,6 +49,9 @@ if (isset($_GET['size']) && $_GET['size']) {
 
                     // Create and dump the image
                     header('Content-Type: image/png');
+                    header("Cache-Control: private, max-age=10800, pre-check=10800");
+                    header("Pragma: private");
+                    header("Expires: " . date(DATE_RFC822, strtotime(" 1 day")));
                     imagepng($faviconImage, null, 9);
                 } else {
                     http_response_code(500);
