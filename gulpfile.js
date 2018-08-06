@@ -1,70 +1,70 @@
 var gulp = require('gulp'),
-        fs = require('fs'),
-        sass = require('gulp-sass'),
-        rename = require('gulp-rename'),
-        concat = require('gulp-concat'),
-        uglify = require('gulp-uglify-es').default,
-        replace = require('gulp-replace'),
-        util = require('gulp-util'),
-        injectString = require('gulp-inject-string'),
-        stripComments = require('gulp-strip-comments'),
-        stripCssComments = require('gulp-strip-css-comments'),
-        postcss = require('gulp-postcss'),
-        runSequence = require('run-sequence'),
-        zip = require('gulp-zip'),
-        removeMarkdown = require('gulp-remove-markdown');
+    fs = require('fs'),
+    sass = require('gulp-sass'),
+    rename = require('gulp-rename'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify-es').default,
+    replace = require('gulp-replace'),
+    util = require('gulp-util'),
+    injectString = require('gulp-inject-string'),
+    stripComments = require('gulp-strip-comments'),
+    stripCssComments = require('gulp-strip-css-comments'),
+    postcss = require('gulp-postcss'),
+    runSequence = require('run-sequence'),
+    zip = require('gulp-zip'),
+    removeMarkdown = require('gulp-remove-markdown');
 
 var pjson = require('./package.json');
 var sourceHeader = fs
-        .readFileSync('./src/source-header.txt', 'utf8')
-        .replace('{VERSION}', pjson.version);
+    .readFileSync('./src/source-header.txt', 'utf8')
+    .replace('{VERSION}', pjson.version);
 
 gulp.task('txt:build', function () {
     return gulp.src('./README.md')
-            .pipe(removeMarkdown('', {
-                stripListLeaders: false,
-                listUnicodeChar: '',
-                gfm: true
-            }))
-            .pipe(replace(/([\r\n]{3,})/ig, '\r\n\r\n'))
-            .pipe(replace(/(^[\r\n]+|[\r\n]+$)/ig, ''))
-            .pipe(gulp.dest('./'));
+        .pipe(removeMarkdown('', {
+            stripListLeaders: false,
+            listUnicodeChar: '',
+            gfm: true
+        }))
+        .pipe(replace(/([\r\n]{3,})/ig, '\r\n\r\n'))
+        .pipe(replace(/(^[\r\n]+|[\r\n]+$)/ig, ''))
+        .pipe(gulp.dest('./'));
 });
 
 gulp.task('scss:build', function () {
     return gulp.src('./src/sass/**/*.scss')
-            .pipe(sass({
-                outputStyle: 'expanded'
-            }).on('error', util.log))
-            .pipe(stripCssComments({
-                preserve: false
-            }))
-            .pipe(gulp.dest('./src/css'));
+        .pipe(sass({
+            outputStyle: 'expanded'
+        }).on('error', util.log))
+        .pipe(stripCssComments({
+            preserve: false
+        }))
+        .pipe(gulp.dest('./src/css'));
 });
 
 gulp.task('css:build', function () {
     return gulp.src(['./src/css/*.css'])
-            .pipe(postcss([
-                require('autoprefixer')({browsers: ['last 2 version', '> 10%']}),
-                require('css-mqpacker')(),
-            ]))
-            .pipe(replace(/([\r\n]{2,})/igm, '\r\n'))
-            .pipe(replace(/\@charset\s\"UTF\-8\"\;/igm, ''))
-            .pipe(injectString.prepend('@charset "UTF-8";\n' + sourceHeader + '\n'))
-            .pipe(gulp.dest('./css'));
+        .pipe(postcss([
+            require('autoprefixer')({browsers: ['last 2 version', '> 10%']}),
+            require('css-mqpacker')(),
+        ]))
+        .pipe(replace(/([\r\n]{2,})/igm, '\r\n'))
+        .pipe(replace(/\@charset\s\"UTF\-8\"\;/igm, ''))
+        .pipe(injectString.prepend('@charset "UTF-8";\n' + sourceHeader + '\n'))
+        .pipe(gulp.dest('./css'));
 });
 
 gulp.task('css:minify', function () {
     return gulp.src(['./css/*.css', '!./css/*.min.css'])
-            .pipe(postcss([
-                require('cssnano')()
-            ]))
-            .pipe(replace(/\@charset\s\"UTF\-8\"\;/igm, ''))
-            .pipe(injectString.prepend('@charset "UTF-8";\n' + sourceHeader + '\n'))
-            .pipe(rename({
-                suffix: '.min'
-            }))
-            .pipe(gulp.dest('./css'));
+        .pipe(postcss([
+            require('cssnano')()
+        ]))
+        .pipe(replace(/\@charset\s\"UTF\-8\"\;/igm, ''))
+        .pipe(injectString.prepend('@charset "UTF-8";\n' + sourceHeader + '\n'))
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(gulp.dest('./css'));
 });
 
 gulp.task('js:build', function () {
@@ -94,19 +94,19 @@ gulp.task('js:build', function () {
         './src/js/theme/init/fileselect.js',
         './src/js/theme/init/datetimepicker.js'
     ])
-            .pipe(stripComments())
-            .pipe(concat('script.js'))
-            .pipe(injectString.prepend(sourceHeader + '\n'))
-            .pipe(gulp.dest('./js'));
+        .pipe(stripComments())
+        .pipe(concat('script.js'))
+        .pipe(injectString.prepend(sourceHeader + '\n'))
+        .pipe(gulp.dest('./js'));
 });
 
 
 gulp.task('js:minify', function () {
     return gulp.src(['./js/script.js'])
-            .pipe(uglify().on('error', util.log))
-            .pipe(rename({suffix: '.min'}))
-            .pipe(injectString.prepend(sourceHeader + '\n'))
-            .pipe(gulp.dest('./js'));
+        .pipe(uglify().on('error', util.log))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(injectString.prepend(sourceHeader + '\n'))
+        .pipe(gulp.dest('./js'));
 });
 
 gulp.task('src:watch', function () {
@@ -141,6 +141,6 @@ gulp.task('zip:build', function () {
         '!./README.md',
         '!*.zip'
     ])
-            .pipe(zip(pjson.name + '-' + pjson.version + '.zip'))
-            .pipe(gulp.dest('./'));
+        .pipe(zip(pjson.name + '-' + pjson.version + '.zip'))
+        .pipe(gulp.dest('./'));
 });
