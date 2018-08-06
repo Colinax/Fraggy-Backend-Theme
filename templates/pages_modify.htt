@@ -3,17 +3,17 @@
 
     <div class="card">
         <ul class="nav nav-pills flex-column flex-sm-row">
-            <!--<li class="nav-item flex-sm-fill text-sm-center">
+            <!--<li class="nav-item text-sm-center">
                 <a class="nav-link active" href="#">
                     <i class="fa fa-fw fa-pencil"></i> {HEADING_MODIFY_PAGE}
                 </a>
             </li>-->
-            <li class="nav-item flex-sm-fill text-sm-center">
+            <li class="nav-item text-sm-center">
                 <a class="nav-link" href="{ADMIN_URL}/pages/settings.php?page_id={PAGE_IDKEY}">
                     <i class="fa fa-fw fa-cog"></i> {TEXT_CHANGE_SETTINGS}
                 </a>
             </li>
-            <li class="nav-item flex-sm-fill text-sm-center">
+            <li class="nav-item text-sm-center">
                 <a class="nav-link" href="{ADMIN_URL}/pages/sections.php?page_id={PAGE_IDKEY}" style="{DISPLAY_MANAGE_SECTIONS}">
                     <i class="fa fa-fw fa-list-alt"></i> {TEXT_MANAGE_SECTIONS}
                 </a>
