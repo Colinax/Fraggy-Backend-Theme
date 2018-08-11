@@ -85,6 +85,8 @@ gulp.task('js:build', function () {
 
         './src/js/vendor/jquery-insert.js',
 
+        './src/js/vendor/jquery-migrate.min.js',
+
         './src/js/theme/base.js',
         './src/js/theme/functions.js',
         './src/js/theme/navigation.js',
@@ -109,24 +111,24 @@ gulp.task('js:minify', function () {
         .pipe(gulp.dest('./js'));
 });
 
-gulp.task('src:watch', function () {
-    gulp.watch(['./src/sass/**/*.scss'], function () {
-        runSequence('scss:build', 'css:build', 'css:minify');
+gulp.task('src:watch', function (callback) {
+    gulp.watch(['./src/sass/**/*.scss'], function (callback) {
+        runSequence('scss:build', 'css:build', 'css:minify', callback);
     });
-    gulp.watch(['./src/js/**/*.js'], function () {
-        runSequence('js:build', 'js:minify');
+    gulp.watch(['./src/js/**/*.js'], function (callback) {
+        runSequence('js:build', 'js:minify', callback);
     });
-    gulp.watch(['./README.md'], function () {
-        runSequence('txt:build');
+    gulp.watch(['./README.md'], function (callback) {
+        runSequence('txt:build', callback);
     });
 });
 
-gulp.task('src:rebuild', function () {
-    return runSequence('js:build', 'js:minify', 'scss:build', 'css:build', 'css:minify', 'txt:build');
+gulp.task('src:rebuild', function (callback) {
+    return runSequence('js:build', 'js:minify', 'scss:build', 'css:build', 'css:minify', 'txt:build', callback);
 });
 
-gulp.task('src:release', function () {
-    runSequence('js:build', 'js:minify', 'scss:build', 'css:build', 'css:minify', 'txt:build', 'zip:build');
+gulp.task('src:release', function (callback) {
+    runSequence('js:build', 'js:minify', 'scss:build', 'css:build', 'css:minify', 'txt:build', 'zip:build', callback);
 });
 
 gulp.task('zip:build', function () {
