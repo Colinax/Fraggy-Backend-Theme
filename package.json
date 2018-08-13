@@ -13,7 +13,7 @@
     "url": "https://github.com/Neoflow/Fraggy-Backend-Theme.git"
   },
   "devDependencies": {
-    "autoprefixer": "^9.1.0",
+    "autoprefixer": "^9.1.1",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.0.5",
     "gulp": "^3.9.1",

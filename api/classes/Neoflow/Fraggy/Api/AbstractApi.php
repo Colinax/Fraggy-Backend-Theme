@@ -1,9 +1,9 @@
 <?php
+
 namespace Neoflow\Fraggy\Api;
 
 abstract class AbstractApi
 {
-
     /**
      * @var array
      */
@@ -18,10 +18,10 @@ abstract class AbstractApi
     /**
      * Constructor.
      *
-     * @param bool  $anonymous   Set TRUE to get anonymous access to the API
+     * @param bool $anonymous Set TRUE to get anonymous access to the API
      * @param array $permissions Needed API permissions based on WBCE permission keys
      */
-    public function __construct($anonymous = false, $permissions = array())
+    public function __construct($anonymous = false, $permissions = [])
     {
         if (!$anonymous) {
             // Check whether user is authenticated
@@ -52,27 +52,21 @@ abstract class AbstractApi
         }
         require $languageFilePath;
 
-        $this->TEXT = $TEXT;
-        $this->MESSAGE = $MESSAGE;
+        if (isset($TEXT)) {
+            $this->TEXT = $TEXT;
+        }
+
+        if (isset($MESSAGE)) {
+            $this->MESSAGE = $MESSAGE;
+        }
 
         return $this;
     }
 
     /**
-     * Not found API method.
-     */
-    protected function notFound()
-    {
-        $this->publish([
-            'status' => 'error',
-            'message' => 'Not found. API method does not exist or method arguments are invalid.',
-            ], 404);
-    }
-
-    /**
      * Check whether user is authenticated.
      *
-     * @return self
+     * @return bool
      */
     protected function isAuthenticated()
     {
@@ -83,9 +77,9 @@ abstract class AbstractApi
      * Call API method.
      *
      * @param string $method Name of method
-     * @param array  $args   Method arguments
+     * @param array $args Method arguments
      */
-    public function call($method, $args = array())
+    public function call($method, $args = [])
     {
         try {
             // Check if API method is valid and exists
@@ -103,7 +97,7 @@ abstract class AbstractApi
      *
      * @param array $permissions Authorized permissions
      *
-     * @return boolean
+     * @return bool
      */
     protected function isAuthorized($permissions = [])
     {
@@ -126,33 +120,49 @@ abstract class AbstractApi
         $this->publish([
             'status' => 'error',
             'message' => 'Unauthorized. User has no permission to install/uninstall templates.',
-            ], 403);
+        ], 403);
     }
 
     /**
-     * Unauthenticated.
+     * Not found API method.
+     */
+    protected function notFound()
+    {
+        $this->publish([
+            'status' => 'error',
+            'message' => 'Not found. API method does not exist or method arguments are invalid.',
+        ], 404);
+    }
+
+    /**
+     * Unauthenticated API method.
      */
     protected function unauthenticated()
     {
         $this->publish([
             'status' => 'error',
             'message' => 'Unauthenticated. User is not logged in.',
-            ], 401);
+        ], 401);
     }
 
+    /**
+     * Error API method.
+     *
+     * @param $message Error message
+     */
     protected function error($message)
     {
         $this->publish([
             'status' => 'error',
             'message' => $message,
-            ], 500);
+        ], 500);
     }
 
     /**
      * Publish API response.
      *
-     * @param array $data
-     * @param int   $httpCode
+     * @param array $data Response data
+     * @param int $httpCode HTTP status code
      */
     protected function publish($data, $httpCode = null)
     {

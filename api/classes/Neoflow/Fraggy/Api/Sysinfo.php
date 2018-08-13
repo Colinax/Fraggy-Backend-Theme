@@ -1,9 +1,9 @@
 <?php
+
 namespace Neoflow\Fraggy\Api;
 
 class Sysinfo extends AbstractApi
 {
-
     /**
      * @var array
      */
@@ -12,7 +12,7 @@ class Sysinfo extends AbstractApi
     ];
 
     /**
-     * Get sysinfo.
+     * Get system info.
      *
      * @param string $args Method API arguments
      */

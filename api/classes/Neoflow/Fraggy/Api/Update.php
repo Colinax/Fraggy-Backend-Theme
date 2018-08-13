@@ -1,4 +1,5 @@
 <?php
+
 namespace Neoflow\Fraggy\Api;
 
 use Neoflow\GitHubClient;
@@ -7,7 +8,6 @@ use function rrmdir;
 
 class Update extends AbstractApi
 {
-
     /**
      * @var GitHubClient
      */
@@ -23,15 +23,16 @@ class Update extends AbstractApi
      */
     protected $apiMethods = [
         'check',
-        'install'
+        'install',
     ];
 
     /**
-     * Constructor
-     * @param bool $anonymous Set TRUE to allow anonymous access
+     * Constructor.
+     *
+     * @param bool  $anonymous   Set TRUE to allow anonymous access
      * @param array $permissions List of needed permissions to get access
      */
-    public function __construct($anonymous = false, $permissions = array())
+    public function __construct($anonymous = false, $permissions = [])
     {
         parent::__construct($anonymous, $permissions);
 
@@ -41,7 +42,7 @@ class Update extends AbstractApi
     }
 
     /**
-     * Set GitHub API client
+     * Set GitHub API client.
      *
      * @param string $gitHubClient GitHub API client
      *
@@ -55,7 +56,7 @@ class Update extends AbstractApi
     }
 
     /**
-     * Set installed version
+     * Set installed version.
      *
      * @param string $version Current installed version
      *
@@ -105,7 +106,6 @@ class Update extends AbstractApi
         $templatePackagePath = tempnam(sys_get_temp_dir(), 'Fraggy');
 
         if ($this->downloadLatestRelease($templatePackagePath)) {
-
             // Delete current template
             rrmdir(THEME_PATH);
 
@@ -139,26 +139,25 @@ class Update extends AbstractApi
     /**
      * Download first asset of latest release (e.g. ZIP archive).
      *
-     * @param string $dest Destination directory
+     * @param string $destination Destination directory
      *
      * @return bool
      */
-    protected function downloadLatestRelease($dest)
+    protected function downloadLatestRelease($destination)
     {
         // Get info aboute latest release
         $latestRelease = $this->gitHubClient->getLatestRelease();
 
         if (isset($latestRelease['assets'][0]['browser_download_url'])) {
-
             // Initialize file handler
             set_time_limit(60);
-            $fp = fopen($dest, 'w+');
+            $fp = fopen($destination, 'w+');
 
             // Download file
             $result = $this->gitHubClient->send($latestRelease['assets'][0]['browser_download_url'], [
                 CURLOPT_TIMEOUT => 50,
                 CURLOPT_FILE => $fp,
-                ], false);
+            ], false);
 
             // Close file handler
             fclose($fp);

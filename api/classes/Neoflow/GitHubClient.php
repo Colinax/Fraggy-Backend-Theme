@@ -1,11 +1,11 @@
 <?php
+
 namespace Neoflow;
 
 use RuntimeException;
 
 class GitHubClient
 {
-
     /**
      * @var string
      */
@@ -15,32 +15,31 @@ class GitHubClient
     /**
      * @var int
      */
-    protected $options = array(
+    protected $options = [
         'cacheLifetime' => 600, // 10*60 seconds = 600 seconds (10 minutes)
         'cacheDirectory' => 'cache',
-    );
+    ];
 
     /**
      * Default cURL options.
      *
      * @var array
      */
-    protected $curlOptions = array(
+    protected $curlOptions = [
         CURLOPT_RETURNTRANSFER => 1,
         CURLOPT_SSL_VERIFYHOST => 0,
         CURLOPT_SSL_VERIFYPEER => 0,
-		CURLOPT_FOLLOWLOCATION => 1
-    );
+        CURLOPT_FOLLOWLOCATION => 1,
+    ];
 
     /**
      * Constructor.
      *
-     * @param string $apiUrl      GitHub API url
-     * @param string $repoPath    Repository URL path
-     * @param array $options GitHub client options
-     * @param array  $curlOptions Additional cURL options
+     * @param string $apiUrl   GitHub API url
+     * @param string $repoPath Repository URL path
+     * @param array  $options  GitHub client options
      */
-    public function __construct($apiUrl, $repoPath, $options = array())
+    public function __construct($apiUrl, $repoPath, $options = [])
     {
         $this->apiUrl = $apiUrl;
         $this->repoPath = $repoPath;
@@ -57,15 +56,13 @@ class GitHubClient
      *
      * @param string $urlPath     Additional API url path
      * @param array  $curlOptions Additional cURL options
-     * @param bool $cache Set FALSE to prevent to cache the response content
+     * @param bool   $cache       Set FALSE to prevent to cache the response content
      *
      * @return string
-     *
-     * @throws RuntimeException
      */
-    public function call($urlPath = '', $curlOptions = array(), $cache = true)
+    public function call($urlPath = '', $curlOptions = [], $cache = true)
     {
-        return $this->send($this->apiUrl . $urlPath, $curlOptions, $cache);
+        return $this->send($this->apiUrl.$urlPath, $curlOptions, $cache);
     }
 
     /**
@@ -73,13 +70,13 @@ class GitHubClient
      *
      * @param string $url         Request url
      * @param array  $curlOptions Additional cURL options
-     * @param bool $cache Set FALSE to prevent to cache the response content
+     * @param bool   $cache       Set FALSE to prevent to cache the response content
      *
      * @return string
      *
      * @throws RuntimeException
      */
-    public function send($url = '', $curlOptions = array(), $cache = true)
+    public function send($url = '', $curlOptions = [], $cache = true)
     {
         if (!$cache || !$this->isCached($url)) {
             // Get cURL resource
@@ -96,7 +93,7 @@ class GitHubClient
 
             // Check whether request was successful
             if (false === $response) {
-                throw new RuntimeException('Connection error. ' . curl_error($ch));
+                throw new RuntimeException('Connection error. '.curl_error($ch));
             }
 
             // Close cURL request to clear up resources
@@ -123,11 +120,12 @@ class GitHubClient
     protected function createCacheFilename($url)
     {
         $urlParts = parse_url($url);
-        $cacheFilename = str_replace(array($this->repoPath, '/'), array('', '_'), $urlParts['path']);
+        $cacheFilename = str_replace([$this->repoPath, '/'], ['', '_'], $urlParts['path']);
         if (isset($urlParts['query'])) {
             $cacheFilename .= str_replace('=', '_', $urlParts['query']);
         }
-        return $this->options['cacheDirectory'] . DIRECTORY_SEPARATOR . trim($cacheFilename, '_') . '.json';
+
+        return $this->options['cacheDirectory'].DIRECTORY_SEPARATOR.trim($cacheFilename, '_').'.json';
     }
 
     /**
@@ -172,7 +170,7 @@ class GitHubClient
      *
      * @param string $url GitHub API url
      *
-     * @return type
+     * @return bool
      */
     protected function isCached($url)
     {
@@ -186,7 +184,7 @@ class GitHubClient
      */
     public function getLatestRelease()
     {
-        $json = $this->call($this->repoPath . '/releases/latest');
+        $json = $this->call($this->repoPath.'/releases/latest');
 
         return json_decode($json, true);
     }
