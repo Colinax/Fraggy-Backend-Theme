@@ -22,12 +22,12 @@ class Sysinfo extends AbstractApi
         $this->publish([
             'php' => [
                 'version' => phpversion(),
-                'version_full' => $phpinfo[0],
+                'version_full' => isset($phpinfo[0]) ? $phpinfo[0] : 'Unknown',
                 'loaded_extensions' => implode(', ', get_loaded_extensions()),
             ],
             'server' => [
-                'system' => $phpinfo['System'],
-                'server_api' => $phpinfo['Server API'],
+                'system' => isset($phpinfo['System']) ? $phpinfo['System'] : 'Unknown',
+                'server_api' => isset($phpinfo['Server API']) ? $phpinfo['Server API'] : 'Unknown',
             ],
         ]);
     }
