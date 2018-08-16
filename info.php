@@ -13,8 +13,8 @@ if (!defined('WB_PATH')) {
 $template_directory = 'fraggy-backend-theme';
 $template_name = 'Fraggy Backend Theme';
 $template_function = 'theme';
-$template_version = '2.1.0';
-$template_platform = '1.3.1';
+$template_version = '2.1.1';
+$template_platform = '1.3';
 $template_author = '2016-2018 Jonathan Nessier, <a href="https://www.neoflow.ch" target="_blank">Neoflow</a>';
 $template_license = '<a href="https://github.com/Neoflow/Fraggy-Backend-Theme/blob/master/LICENSE" target="_blank">GNU GPLv3</a>';
 $template_license_terms = '-';
@@ -23,10 +23,11 @@ $template_description = 'Responsive and Bootstrap based backend theme for WBCE';
 // GitHub API vars and GitHub Client options
 $gitHubApiUrl = 'https://api.github.com';
 $gitHubRepoPath = '/repos/neoflow/fraggy-backend-theme';
-$gitHubClientOptions = array(
+
+$gitHubClientOptions = [
     'cacheDirectory' => sys_get_temp_dir(),
     'cacheLifetime' => 300, // 5*60 seconds = 300 seconds (5 minutes)
-    'curl' => array(
-        CURLOPT_USERAGENT => 'Fraggy-Backend-Theme'
-    )
-);
+    'curl' => [
+        10018 => 'Fraggy-Backend-Theme' // Based on CURLOPT_USERAGENT
+    ]
+];

@@ -145,7 +145,7 @@ class Update extends AbstractApi
      */
     protected function downloadLatestRelease($destination)
     {
-        // Get info aboute latest release
+        // Get info about latest release
         $latestRelease = $this->gitHubClient->getLatestRelease();
 
         if (isset($latestRelease['assets'][0]['browser_download_url'])) {
