@@ -35,9 +35,9 @@ class GitHubClient
     /**
      * Constructor.
      *
-     * @param string $apiUrl   GitHub API url
+     * @param string $apiUrl GitHub API url
      * @param string $repoPath Repository URL path
-     * @param array  $options  GitHub client options
+     * @param array $options GitHub client options
      */
     public function __construct($apiUrl, $repoPath, $options = [])
     {
@@ -54,23 +54,23 @@ class GitHubClient
     /**
      * Call GitHub API.
      *
-     * @param string $urlPath     Additional API url path
-     * @param array  $curlOptions Additional cURL options
-     * @param bool   $cache       Set FALSE to prevent to cache the response content
+     * @param string $urlPath Additional API url path
+     * @param array $curlOptions Additional cURL options
+     * @param bool $cache Set FALSE to prevent to cache the response content
      *
      * @return string
      */
     public function call($urlPath = '', $curlOptions = [], $cache = true)
     {
-        return $this->send($this->apiUrl.$urlPath, $curlOptions, $cache);
+        return $this->send($this->apiUrl . $urlPath, $curlOptions, $cache);
     }
 
     /**
      * Build and send HTTP request.
      *
-     * @param string $url         Request url
-     * @param array  $curlOptions Additional cURL options
-     * @param bool   $cache       Set FALSE to prevent to cache the response content
+     * @param string $url Request url
+     * @param array $curlOptions Additional cURL options
+     * @param bool $cache Set FALSE to prevent to cache the response content
      *
      * @return string
      *
@@ -93,7 +93,7 @@ class GitHubClient
 
             // Check whether request was successful
             if (false === $response) {
-                throw new RuntimeException('Connection error. '.curl_error($ch));
+                throw new RuntimeException('Connection error. ' . curl_error($ch));
             }
 
             // Close cURL request to clear up resources
@@ -125,13 +125,13 @@ class GitHubClient
             $cacheFilename .= str_replace('=', '_', $urlParts['query']);
         }
 
-        return $this->options['cacheDirectory'].DIRECTORY_SEPARATOR.trim($cacheFilename, '_').'.json';
+        return $this->options['cacheDirectory'] . DIRECTORY_SEPARATOR . trim($cacheFilename, '_') . '.json';
     }
 
     /**
      * Cache response based on API url.
      *
-     * @param string $url  GitHub API url
+     * @param string $url GitHub API url
      * @param string $data GitHub API response
      *
      * @return self
@@ -174,7 +174,7 @@ class GitHubClient
      */
     protected function isCached($url)
     {
-        return (bool) $this->getCache($url);
+        return (bool)$this->getCache($url);
     }
 
     /**
@@ -184,9 +184,16 @@ class GitHubClient
      */
     public function getLatestRelease()
     {
-        $json = $this->call($this->repoPath.'/releases/latest');
 
-        return json_decode($json, true);
+        if ($this->options['prerelease']) {
+            $releases = json_decode($this->call($this->repoPath . '/releases'), true);
+            return $releases[0];
+        } else {
+            return json_decode($this->call($this->repoPath . '/releases/latest'), true);
+        }
+
+        return [];
+
     }
 
     /**
