@@ -1,6 +1,6 @@
 {
   "name": "fraggy-backend-theme",
-  "version": "2.2.0",
+  "version": "2.2.",
   "description": "Responsive and Bootstrap based backend theme for WBCE",
   "main": "index.php",
   "scripts": {
@@ -21,21 +21,18 @@
     "gulp-concat": "^2.6.1",
     "gulp-inject-string": "^1.1.2",
     "gulp-postcss": "^8.0.0",
-    "gulp-remove-markdown": "^1.0.2",
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
-    "gulp-strip-comments": "^2.5.2",
     "gulp-strip-css-comments": "^2.0.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-uglify-es": "^1.0.4",
+    "gulp-terser": "^1.2.0",
     "gulp-util": "^3.0.8",
-    "gulp-zip": "^5.0.0",
-    "postcss-font-weights": "^5.0.0",
-    "run-sequence": "^2.2.1"
+    "gulp-remove-markdown": "^1.0.2",
+    "gulp-zip": "^5.0.0"
   },
-  "dependencies": {
-    "concat-with-sourcemaps": "^1.1.0",
-    "js-yaml": "^3.13.1"
-  }
+  "dependencies": {},
+  "browserslist": [
+    "last 2 version",
+    "not ie <= 11"
+  ]
 }

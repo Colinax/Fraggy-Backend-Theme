@@ -2,14 +2,13 @@
  * FRAGGY BACKEND THEME v{VERSION}
  * Responsive and Bootstrap based backend theme for WBCE
  *
- * Copright (c) 2016-2018 Jonathan Nessier, Neoflow | neoflow.ch
+ * Copyright (c) 2016-2019 Jonathan Nessier, Neoflow | neoflow.ch
  * Licensed under GNU GPLv3 | github.com/Neoflow/Fraggy-Backend-Theme
  *
  * This template integrates components from the following projects
  *
  *   Roboto & Roboto Condensed | (c) Christian Robertson and Google | Apache-2.0
  *   Font Awesome 4.7.0 by @davegandy | fontawesome.io/license
- *   jQuery v3.4.1 | (c) jQuery Foundation | jquery.org/license
  *   jQuery Migrate v3.1.0 | (c) jQuery Foundation and other contributors | jquery.org/license
  *   Bootstrap v4.3.1 | (c) The Bootstrap Authors | MIT
  *   Popper.js v1.12.0 | (c) Federico Zivolo | MIT

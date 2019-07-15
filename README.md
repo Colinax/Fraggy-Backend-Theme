@@ -8,11 +8,11 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Requirements
  * [WBCE v1.3](https://github.com/WBCE/WBCE_CMS/releases) or newer
- * PHP 5.6 or newer
+ * PHP 7.1 or newer
 
 # Changelog
 
-## v2.2.0 - work in progress
+## v2.x.x - work in progress
 
  * Updated to jQuery 3.4.1
  * Updated to jQuery Migrate 3.1.0
