@@ -30,5 +30,5 @@ $gitHubClientOptions = [
     'curl' => [
         10018 => 'Fraggy-Backend-Theme' // Based on CURLOPT_USERAGENT
     ],
-    'prerelease' => true, // Set TRUE to enable installation of prerelease updates
+    'prerelease' => false, // Set TRUE to enable installation of prerelease updates
 ];
