@@ -125,7 +125,7 @@ class GitHubClient
             $cacheFilename .= str_replace('=', '_', $urlParts['query']);
         }
 
-        return $this->options['cacheDirectory'] . DIRECTORY_SEPARATOR . trim($cacheFilename, '_') . '.json';
+        return $this->options['cacheDirectory'] . DIRECTORY_SEPARATOR . 'fraggy-backend-theme-' . trim($cacheFilename, '_') . '.json';
     }
 
     /**

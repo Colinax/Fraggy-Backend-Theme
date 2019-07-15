@@ -22,11 +22,14 @@ include 'functions/rrmdir.php';
 // Include template vars
 include '../info.php';
 
+// Get WBCE version
+require_once '../../../admin/interface/version.php';
+
 // Create update API interface
 $updateApi = new Update(false, [
     'templates_install',
     'templates_uninstall'
-    ]);
+]);
 
 // Create GitHub API client
 $gitHubClient = new GitHubClient($gitHubApiUrl, $gitHubRepoPath, $gitHubClientOptions);

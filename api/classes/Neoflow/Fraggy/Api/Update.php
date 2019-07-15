@@ -29,7 +29,7 @@ class Update extends AbstractApi
     /**
      * Constructor.
      *
-     * @param bool  $anonymous   Set TRUE to allow anonymous access
+     * @param bool $anonymous Set TRUE to allow anonymous access
      * @param array $permissions List of needed permissions to get access
      */
     public function __construct($anonymous = false, $permissions = [])
@@ -83,7 +83,17 @@ class Update extends AbstractApi
             $args['version'] = $this->installedVersion;
         }
 
-        $isLatestRelease = !version_compare($latestRelease['tag_name'], $args['version'], '>');
+        $bodyParts = explode('---', $latestRelease['body']);
+
+        $versions = [NEW_WBCE_VERSION];
+        if (isset($bodyParts[1])) {
+            preg_match_all('/\[([0-9\.\-a-z]+)\]/', $bodyParts[1], $matches);
+            if (isset($matches[1])) {
+                $versions = $matches[1];
+            }
+        }
+
+        $isLatestRelease = !version_compare($latestRelease['tag_name'], $args['version'], '>') || !in_array(NEW_WBCE_VERSION, $versions);
 
         $this->publish([
             'status' => 'success',

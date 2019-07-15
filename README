@@ -5,21 +5,15 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 > There might be some design issues at the backend of modules, but usually the modules still work as expected.
 
  Requirements
- * WBCE v1.3 or newer
+ * WBCE v1.3.3
  * PHP 7.1 or newer
 
 Changelog
 
- v2.1.2-dev - work in progress
+ v2.1.3 - released on 2019-07-15
 
- * Updated to jQuery 3.4.1
- * Updated to jQuery Migrate 3.1.0
- * Updated to Select2 v4.0.7
- * Updated to Bootstrap 4.3.1
- * Added support for prerelease updates
- * Fixed #29 & #34 - A z-index conflict with CKAwesome and Select2 in Topics
- * Fixed #35 - A design bug in OPF Dashboard
- 
+ * Added WBCE version check for auto updates
+  
 Older versions
 
 You can see the summary of releases and the changes in each release here.
