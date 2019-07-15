@@ -15,7 +15,7 @@ $template_name = 'Fraggy Backend Theme';
 $template_function = 'theme';
 $template_version = '2.1.3';
 $template_platform = '1.3';
-$template_author = '2016-2018 Jonathan Nessier, <a href="https://www.neoflow.ch" target="_blank">Neoflow</a>';
+$template_author = '2016-2019 Jonathan Nessier, <a href="https://www.neoflow.ch" target="_blank">Neoflow</a>';
 $template_license = '<a href="https://github.com/Neoflow/Fraggy-Backend-Theme/blob/master/LICENSE" target="_blank">GNU GPLv3</a>';
 $template_license_terms = '-';
 $template_description = 'Responsive and Bootstrap based backend theme for WBCE';
