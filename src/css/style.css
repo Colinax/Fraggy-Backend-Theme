@@ -17283,5 +17283,5 @@ legend {
 }
 
 .modifytopic-toptable .select2-container {
-  z-index: 10000 !important;
+  z-index: 100 !important;
 }

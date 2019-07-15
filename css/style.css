@@ -11523,7 +11523,7 @@ legend {
   transition: border ease .3s, color ease .3s, background-color ease .3s;
 }
 .modifytopic-toptable .select2-container {
-  z-index: 10000 !important;
+  z-index: 100 !important;
 }
 @media (min-width: 648px) {
   .container {
