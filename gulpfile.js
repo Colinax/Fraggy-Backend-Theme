@@ -17,7 +17,7 @@ let pjson = require('./package.json'),
         .readFileSync('./src/source-header.txt', 'utf8')
         .replace('{VERSION}', pjson.version);
 
-gulp.task('txt:build', gulp.series(function () {
+gulp.task('txt:build', function () {
     return gulp.src('./README.md')
         .pipe(removeMarkdown('', {
             stripListLeaders: false,
@@ -27,7 +27,7 @@ gulp.task('txt:build', gulp.series(function () {
         .pipe(replace(/([\r\n]{3,})/ig, '\r\n\r\n'))
         .pipe(replace(/(^[\r\n]+|[\r\n]+$)/ig, ''))
         .pipe(gulp.dest('./'));
-}));
+});
 
 gulp.task('scss:build', function () {
     return gulp.src('./src/sass/style.scss')
