@@ -19,6 +19,7 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
  * Updated to Select2 v4.0.7
  * Updated to Bootstrap 4.3.1
  * Added support for prerelease updates
+ * Fixed #29 - A z-index conflict with CKAwesome and Select2 in Topics
 
 ## Older versions
 

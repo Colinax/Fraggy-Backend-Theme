@@ -26,22 +26,22 @@ $(function () {
     });
 
     $('button:not(.sidenav-toggler), input[type="button"], input[type="reset"]')
-            .addClass('btn btn-outline-light');
+        .addClass('btn btn-outline-light');
 
     $('button[type="submit"], input[type="submit"]')
-            .addClass('btn btn-primary')
-            .removeClass('btn-outline-light');
+        .addClass('btn btn-primary')
+        .removeClass('btn-outline-light');
 
     $('input[type="text"], input[type="password"], textarea')
-            .addClass('form-control');
+        .addClass('form-control');
 
     var $contentBody = $('#main-content > .content-body');
     if ($contentBody.find('.card, .alert').length === 0) {
         $contentBody
-                .find('> div')
-                .addClass('card')
-                .find('> div')
-                .addClass('card-body');
+            .find('> div')
+            .addClass('card')
+            .find('> div')
+            .addClass('card-body');
     }
 
     $('#addonsPage .nav-pills a').each(function () {
@@ -57,10 +57,10 @@ $(function () {
 
     $('.adminModuleWrapper').each(function () {
         var $adminToolCard = $('<div />', {class: 'card'}),
-                $adminToolCardHeader = $('<h4 />', {class: 'card-header'}),
-                $adminToolCardBody = $('<div />', {class: 'card-body'}),
-                $headingTitle = $('.content-body h4:first').hide(),
-                adminToolTitle = $headingTitle.find('a').prop('title');
+            $adminToolCardHeader = $('<h4 />', {class: 'card-header'}),
+            $adminToolCardBody = $('<div />', {class: 'card-body'}),
+            $headingTitle = $('.content-body h4:first').hide(),
+            adminToolTitle = $headingTitle.find('a').prop('title');
 
         $adminToolCardHeader.text(adminToolTitle);
         $adminToolCardBody.html($(this));
@@ -75,11 +75,11 @@ $(function () {
     if ($introForm.length === 1) {
 
         var $cardBody = $('<div>', {
-            'class': 'card-body'
-        }).append($introForm),
-                $card = $('<div>', {
-                    'class': 'card'
-                }).append($cardBody);
+                'class': 'card-body'
+            }).append($introForm),
+            $card = $('<div>', {
+                'class': 'card'
+            }).append($cardBody);
 
         $introForm.find('td.right').addClass('text-right');
 

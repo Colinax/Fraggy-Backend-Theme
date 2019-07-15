@@ -11522,6 +11522,9 @@ legend {
   -webkit-transition: border ease .3s, color ease .3s, background-color ease .3s;
   transition: border ease .3s, color ease .3s, background-color ease .3s;
 }
+.modifytopic-toptable .select2-container {
+  z-index: 10000 !important;
+}
 @media (min-width: 648px) {
   .container {
     max-width: 540px;
