@@ -81,7 +81,9 @@ gulp.task('js:build', function () {
 
         './src/js/vendor/jquery-insert.js',
 
-        //  './src/js/vendor/jquery-migrate.min.js',
+        './src/js/vendor/jquery-migrate.min.js',
+
+        './src/js/vendor/jquery.browser.js',
 
         './src/js/theme/base.js',
         './src/js/theme/functions.js',

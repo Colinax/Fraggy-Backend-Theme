@@ -20,8 +20,8 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
  * Updated to Bootstrap 4.3.1
  * Added support for prerelease updates
  * Fixed #29 & #34 - A z-index conflict with CKAwesome and Select2 in Topics
+ * Fixed #35 - A design bug in OPF Dashboard
  
-
 ## Older versions
 
 You can see the summary of releases and the changes in each release [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
