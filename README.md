@@ -12,10 +12,10 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Changelog
 
-## v2.1.4 - released on 2019-07-16
+## v2.2.0 - work in progress
 
- * Added workaround to get always a white background
-  
+ * Fixed #33 - By adding the password strength meter of WBCE
+ 
 ## Older versions
 
 You can see the summary of releases and the changes in each release [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
