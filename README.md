@@ -14,7 +14,8 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 ## v2.2.0 - work in progress
 
- * Fixed #33 - By adding the password strength meter of WBCE
+ * Fixed #33 - By adding the password strength meter of WBCE 1.4
+ * Fixed #37 - By adding support for session timeout handler of WBCE 1.4
  
 ## Older versions
 
