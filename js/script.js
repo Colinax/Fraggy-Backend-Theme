@@ -113,6 +113,11 @@ $(function () {
         $('.content-body').prepend($card);
     });
 
+    $('form[action$="bakery\/save_general_settings.php"]')
+        .addClass('bakery-general-settings')
+        .find('input[name="dec_point"], input[name="thousands_sep"]')
+        .css('width', '40px');
+
     if ($('.jcalendar').length) {
         $.insert(WB_URL + '/include/jscalendar/calendar-system.css');
     }
