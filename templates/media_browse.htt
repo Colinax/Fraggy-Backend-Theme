@@ -19,7 +19,7 @@
         <link href="{THEME_URL}/api/favicon.php?size=16" rel="shortcut icon" type="image/png" sizes="16x16" />
 
         <!-- Theme CSS -->
-        <link href="{THEME_URL}/css/style.min.css?v2.1.3-dev" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/css/style.min.css?v2.1.4" rel="stylesheet" type="text/css" />
 
         <!-- WebsiteBaker CSS -->
         {BACKEND_MODULE_CSS}
@@ -30,11 +30,11 @@
                     THEME_URL = '{THEME_URL}',
                     ADMIN_URL = '../../admin/',
                     LANGUAGE_CODE = navigator.language || navigator.userLanguage,
-                    THEME_VERSION = '2.1.3-dev';
+                    THEME_VERSION = '2.1.4';
         </script>
 
         <!-- Theme jQuery -->
-        <script src="{THEME_URL}/js/jquery.min.js?v2.1.3-dev"></script>
+        <script src="{THEME_URL}/js/jquery.min.js?v2.1.4"></script>
 
         <!-- WBCE helper JavaScript -->
         <script>
@@ -45,7 +45,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.min.js?v2.1.3-dev"></script>
+        <script src="{THEME_URL}/js/script.min.js?v2.1.4"></script>
 
     </head>
     <body id="mediaBrowsePage">

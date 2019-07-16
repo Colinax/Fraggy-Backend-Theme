@@ -135,14 +135,11 @@
             // Reset height first to 0 to get the real offset height of contentWindow
             this.style.height = 0;
             this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
-        });
+        }).trigger('reload');
 
         $(window).on('resize', function () {
             $mediaBrowser.trigger('reload');
         });
     });
-
-
-
 </script>
 <!-- END main_block -->

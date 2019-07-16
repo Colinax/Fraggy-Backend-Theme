@@ -1,5 +1,5 @@
 /**
- * FRAGGY BACKEND THEME v2.1.3
+ * FRAGGY BACKEND THEME v2.1.4
  * Responsive and Bootstrap based backend theme for WBCE
  *
  * Copyright (c) 2016-2019 Jonathan Nessier, Neoflow | neoflow.ch
@@ -21,7 +21,7 @@
 $(function () {
 
     $('a > img').each(function () {
-        var $this = $(this);
+        let $this = $(this);
         if ($this.prop('src').indexOf('modify_16.png') > -1) {
             $this.parent().html('<i class="fa fa-fw fa-pencil"></i>');
         } else if ($this.prop('src').indexOf('options_16.png') > -1) {
@@ -55,17 +55,9 @@ $(function () {
     $('input[type="text"], input[type="password"], textarea')
         .addClass('form-control');
 
-    var $contentBody = $('#main-content > .content-body');
-    if ($contentBody.find('.card, .alert').length === 0) {
-        $contentBody
-            .find('> div')
-            .addClass('card')
-            .find('> div')
-            .addClass('card-body');
-    }
 
     $('#addonsPage .nav-pills a').each(function () {
-        var $this = $(this).addClass('nav-link');
+        let $this = $(this).addClass('nav-link');
         if ($this.attr('href').indexOf('templates') > -1) {
             $this.prepend('<i class="fa fa-fw fa-paint-brush"></i> ');
         } else if ($this.attr('href').indexOf('modules') > -1) {
@@ -76,40 +68,50 @@ $(function () {
     });
 
     $('.adminModuleWrapper').each(function () {
-        var $adminToolCard = $('<div />', {class: 'card'}),
-            $adminToolCardHeader = $('<h4 />', {class: 'card-header'}),
-            $adminToolCardBody = $('<div />', {class: 'card-body'}),
+        let $card = $('<div />', {class: 'card'}),
+            $cardHeader = $('<h4 />', {class: 'card-header'}),
+            $cardBody = $('<div />', {class: 'card-body'}),
             $headingTitle = $('.content-body h4:first').hide(),
             adminToolTitle = $headingTitle.find('a').prop('title');
 
-        $adminToolCardHeader.text(adminToolTitle);
-        $adminToolCardBody.html($(this));
-        $adminToolCard.append($adminToolCardHeader, $adminToolCardBody);
+        $cardHeader.text(adminToolTitle);
+
+        $cardBody.html($(this));
+
+        $card.append($cardHeader, $cardBody);
 
         $headingTitle.remove();
-
-        $('.content-body').prepend($adminToolCard);
+        $('.content-body').prepend($card);
     });
 
-    var $introForm = $('form[action="intro2.php"]');
-    if ($introForm.length === 1) {
+    $('.content-body.content').each(function () {
+        let $this = $(this);
+        if ($this.find('.card, .alert').length === 0) {
+            let $card = $('<div />', {class: 'card'}),
+                $cardBody = $('<div />', {class: 'card-body'});
 
-        var $cardBody = $('<div>', {
-                'class': 'card-body'
-            }).append($introForm),
-            $card = $('<div>', {
-                'class': 'card'
-            }).append($cardBody);
+            $cardBody.html($this.children());
+            $card.append($cardBody);
 
-        $introForm.find('td.right').addClass('text-right');
+            $this.prepend($card);
+        }
+    });
 
-        $introForm.find('td').css({'border': '0', 'padding': '0'});
+    $('form[action="intro2.php"]').each(function () {
+        let $this = $(this),
+            $card = $('<div>', {'class': 'card'}),
+            $cardBody = $('<div>', {'class': 'card-body'});
+
+        $this.find('td.right').addClass('text-right');
+        $this.find('td').css({'border': '0', 'padding': '0'});
+        $this.find('table:first').addClass('table');
+
+        $cardBody.append($this);
+
+        $card.append($cardBody);
 
         $('.content-body').prepend($card);
-
-    }
-
-    $('form[action="intro2.php"] table:first').addClass('table');
+    });
 
     if ($('.jcalendar').length) {
         $.insert(WB_URL + '/include/jscalendar/calendar-system.css');
