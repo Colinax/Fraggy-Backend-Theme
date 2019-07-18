@@ -87,13 +87,13 @@ class Update extends AbstractApi
 
         $versions = [NEW_WBCE_VERSION];
         if (isset($bodyParts[1])) {
-            preg_match_all('/\[([0-9\.\-a-z]+)\]/', $bodyParts[1], $matches);
+            preg_match_all('/\[([0-9\.\-a-zA-Z]+)\]/', $bodyParts[1], $matches);
             if (isset($matches[1])) {
-                $versions = $matches[1];
+                $versions = strtolower($matches[1]);
             }
         }
 
-        $isLatestRelease = !version_compare($latestRelease['tag_name'], $args['version'], '>') || !in_array(NEW_WBCE_VERSION, $versions);
+        $isLatestRelease = !version_compare($latestRelease['tag_name'], $args['version'], '>') || !in_array(strtolower(NEW_WBCE_VERSION), $versions);
 
         $this->publish([
             'status' => 'success',
