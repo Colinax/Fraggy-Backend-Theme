@@ -3,10 +3,7 @@
   "version": "2.2.0",
   "description": "Responsive and Bootstrap based backend theme for WBCE",
   "main": "index.php",
-  "scripts": {
-    "prefix-css": "postcss --config postcss.config.js -o style.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "author": "Jonathan Nessier, Neoflow",
   "license": "GPL-3.0",
   "repository": {
