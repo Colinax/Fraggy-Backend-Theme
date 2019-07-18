@@ -39,6 +39,9 @@
 @import 'theme/bootstrap/tables';
 @import 'theme/bootstrap/nav';
 //
+// Theme-based Select2 customization
+@import 'theme/select2';
+//
 // Workarounds
-@import 'workarounds/topics';
+@import 'workarounds/bakery';
 @import 'workarounds/outputfilter-dashboard';

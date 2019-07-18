@@ -11058,6 +11058,12 @@ body.prepage #main-content {
   padding-bottom: 0;
   height: auto;
 }
+#topNavigation .wbcemm {
+  padding: 8px;
+  margin: -8px 8px;
+  border-radius: 100%;
+  background: #F0AD4E;
+}
 #topNavigation .navbar-nav .nav-link {
   padding: 0 0.66rem;
   font-family: "Roboto Condensed", sans-serif;
@@ -11522,8 +11528,16 @@ legend {
   -webkit-transition: border ease .3s, color ease .3s, background-color ease .3s;
   transition: border ease .3s, color ease .3s, background-color ease .3s;
 }
-.modifytopic-toptable .select2-container {
+.content-body .select2-container {
   z-index: 100 !important;
+}
+.bakery-general-settings input[type="text"] {
+  width: auto;
+  display: inline-block;
+  margin: 0 3px 0 0;
+}
+.content-body .mod_bakery_submit_row_b {
+  background: transparent;
 }
 .outputfilter_dashboard .select2-container--disabled .select2-selection__arrow {
   display: none;

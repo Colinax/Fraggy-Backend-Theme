@@ -14,7 +14,12 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 ## v2.2.0 - work in progress
 
- * Fixed #33 - By adding the password strength meter of WBCE
+ * Fixed #33 - Added the new password strength meter 
+ * Fixed #37 - Added the new session timeout counter
+ * Fixed #38 - Added an icon to the top navigation, when maintenance mode is activated
+ * Fixed #39 - Updated design to the latest requirements
+ * Fixed #40 - Updated settings form to the latest requirements
+ * Fixed #41 - Fixed design bugs in Bakery forms
  
 ## Older versions
 
@@ -58,4 +63,4 @@ If you like my work or are using it for commercial websites then please donate, 
 
 Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to [Jörg Laas](https://www.jlhd.com/), [colinax](https://forum.wbce.org/profile.php?id=160) and [trici](https://tricity.ch) for their donations!
 
-Copyright © 2016-2018 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Licensed under GNU GPLv3
+Copyright © 2016-2019 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Licensed under GNU GPLv3

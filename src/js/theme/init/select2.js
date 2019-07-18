@@ -3,7 +3,7 @@ $.getScript(THEME_URL + '/js/select2/i18n/' + LANGUAGE_CODE + '.js');
 
 // Initialize Select2
 $(function () {
-    $('select')
+    $('select:not(.nos2)')
         .select2({
             theme: 'bootstrap',
             //  minimumResultsForSearch: -1,
