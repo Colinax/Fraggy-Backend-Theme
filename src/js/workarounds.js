@@ -93,6 +93,12 @@ $(function () {
         $('.content-body').prepend($card);
     });
 
+    $('form[name="toggle_module_file"]').each(function () {
+        let $this = $(this);
+        $('#pageModifyCard .card-body').find('.section-info').remove();
+        $('#pageModifyCard .card-body hr').after($this.siblings('.section-info:first'), $this.siblings('h2:first'), $this, $this.siblings('p:first'), $('form[name="edit_module_file"]'));
+    });
+
     $('form[action$="bakery\/save_general_settings.php"]')
         .addClass('bakery-general-settings')
         .find('input[name="dec_point"], input[name="thousands_sep"]')

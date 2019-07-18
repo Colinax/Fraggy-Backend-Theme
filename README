@@ -12,10 +12,11 @@ Changelog
 
  v2.2.0 - work in progress
 
- * Fixed #33 - By adding the password strength meter of WBCE 1.4
- * Fixed #37 - By adding support for session timeout handler of WBCE 1.4
- * Fixed #41 - Design bugs in Bakery forms
- * Fixed #38 - By adding an icon to the top navigation, when maintenance mode is activated
+ * Fixed #33 - Added the new password strength meter 
+ * Fixed #37 - Added the new session timeout counter
+ * Fixed #38 - Added an icon to the top navigation, when maintenance mode is activated
+ * Fixed #39 - Updated design to the latest requirements
+ * Fixed #41 - Fixed design bugs in Bakery forms
  
 Older versions
 
