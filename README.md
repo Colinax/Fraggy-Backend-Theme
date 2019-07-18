@@ -18,6 +18,7 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
  * Fixed #37 - Added the new session timeout counter
  * Fixed #38 - Added an icon to the top navigation, when maintenance mode is activated
  * Fixed #39 - Updated design to the latest requirements
+ * Fixed #40 - Updated settings form to the latest requirements
  * Fixed #41 - Fixed design bugs in Bakery forms
  
 ## Older versions
