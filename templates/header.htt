@@ -48,6 +48,7 @@
     <!-- Theme JavaScript -->
     <script src="{THEME_URL}/js/script.min.js?v2.2.0"></script>
 
+    <!-- WBCE module JS -->
     {BACKEND_MODULE_JS}
 
 </head>
@@ -94,9 +95,9 @@
     </ul>
 
     <div class="sidenav-brand">
-                <span class="brand">
-                    <img class="img-fluid" alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" src="{THEME_URL}/api/logo.php"/>
-                </span>
+        <span class="brand">
+            <img class="img-fluid" alt="{WEBSITE_TITLE}" title="{WEBSITE_TITLE}" src="{THEME_URL}/api/logo.php"/>
+        </span>
     </div>
 
     <button class="sidenav-toggler navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#sidenavCollapse">
