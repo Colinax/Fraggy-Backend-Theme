@@ -16575,6 +16575,13 @@ body.prepage #main-content {
   height: auto;
 }
 
+#topNavigation .wbcemm {
+  padding: 8px;
+  margin: -8px 8px;
+  border-radius: 100%;
+  background: #F0AD4E;
+}
+
 #topNavigation .navbar-nav .nav-link {
   padding: 0 0.66rem;
   font-family: "Roboto Condensed", sans-serif;
