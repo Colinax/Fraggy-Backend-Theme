@@ -109,7 +109,7 @@
                                 <select name="file" id="selectManualInstallModule" class="form-control">
                                     <option value="" selected="selected" id="selectManualUpgradeModule">{TEXT_PLEASE_SELECT}...</option>
                                     <!-- BEGIN install_list_block -->
-                                    <option value="{VALUE}">{NAME}</option>
+                                    <option value="{IVALUE}">{INAME}</option>
                                     <!-- END install_list_block -->
                                 </select>
                             </div>
@@ -133,9 +133,9 @@
                             <div class="col-sm-9">
                                 <select name="file" id="selectManualUpgradeModule" class="form-control">
                                     <option value="" selected="selected" id="selectManualUpgradeModule">{TEXT_PLEASE_SELECT}...</option>
-                                    <!-- BEGIN install_list_block -->
-                                    <option value="{VALUE}">{NAME}</option>
-                                    <!-- END install_list_block -->
+                                    <!-- BEGIN upgrade_list_block -->
+                                    <option value="{UVALUE}">{UNAME}</option>
+                                    <!-- END upgrade_list_block -->
                                 </select>
                             </div>
                         </div>
@@ -158,9 +158,9 @@
                             <div class="col-sm-9">
                                 <select name="file" id="selectManualUninstallModule" class="form-control">
                                     <option value="" selected="selected" id="selectManualUpgradeModule">{TEXT_PLEASE_SELECT}...</option>
-                                    <!-- BEGIN install_list_block -->
-                                    <option value="{VALUE}">{NAME}</option>
-                                    <!-- END install_list_block -->
+                                    <!-- BEGIN uninstall_list_block -->
+                                    <option value="{XVALUE}">{XNAME}</option>
+                                    <!-- END uninstall_list_block -->
                                 </select>
                             </div>
                         </div>

@@ -108,6 +108,7 @@
 
                     <div class="card-body">
                         <button class="btn btn-primary" name="save" type="submit"><i class="fa fa-fw fa-floppy-o"></i> {TEXT_SAVE}</button>
+						<button  class="btn btn-primary" type="submit" value="saveandback" name="saveandback"><i class="fa fa-fw fa-check"></i> {TEXT_SAVE} &amp;  {TEXT_BACK}</button>
                     </div>
                 </form>
 
