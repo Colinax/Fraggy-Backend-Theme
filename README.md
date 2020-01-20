@@ -16,6 +16,8 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
  * Fixed - Added Theme changes from WBCE 1.4.1 
  * Fixed - Updated Select2 to v4.0.12
+ * Fixed - Datetimepicker v2.5.20
+ * Fixed - Bootstrap Fileselect v2.1.0
 
 ## v2.2.0 - released on 2019-08-18
 

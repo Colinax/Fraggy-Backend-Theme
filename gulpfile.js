@@ -12,10 +12,11 @@ let gulp = require('gulp'),
     zip = require('gulp-zip'),
     removeMarkdown = require('gulp-remove-markdown');
 
-let pjson = require('./package.json'),
-    sourceHeader = fs
-        .readFileSync('./src/source-header.txt', 'utf8')
-        .replace('{VERSION}', pjson.version)
+let package = require('./package.json');
+
+let sourceHeader = fs
+        .readFileSync(package.buildOpts.common.sourceHeader, 'utf8')
+        .replace('{VERSION}', package.version)
         .replace('{YEAR}', (new Date()).getFullYear().toString())
         .replace('{AUTHOR}', package.author);
 
@@ -123,7 +124,7 @@ gulp.task('zip:build', function () {
         '!./README.md',
         '!*.zip'
     ])
-        .pipe(zip(pjson.name + '-' + pjson.version + '.zip'))
+        .pipe(zip(package.name + '-' + package.version + '.zip'))
         .pipe(gulp.dest('./'));
 });
 
