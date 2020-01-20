@@ -10,7 +10,7 @@
  *   Roboto & Roboto Condensed | (c) Christian Robertson and Google | Apache-2.0
  *   Font Awesome 4.7.0 by @davegandy | fontawesome.io/license
  *   jQuery Migrate v3.1.0 | (c) jQuery Foundation and other contributors | jquery.org/license
- *   Bootstrap v4.3.1 | (c) The Bootstrap Authors | MIT
+ *   Bootstrap v4.4.1 | (c) The Bootstrap Authors | MIT
  *   Popper.js v1.12.0 | (c) Federico Zivolo | MIT
  *   InsertLoader 1.0.0 | (c) Jonathan Nessier, Neoflow | MIT
  *   Select2 v4.0.12 | (c) Kevin Brown, Igor Vaynberg, and Select2 contributors | MIT

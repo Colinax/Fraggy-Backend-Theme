@@ -10,21 +10,13 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 Changelog
 
- v2.3.0 - released on 2020-xx-xx
+ v2.3.0 - released on 2020-01-xx
 
  * Fixed - Added Theme changes from WBCE 1.4.1 
- * Fixed - Updated Select2 to v4.0.12
- * Fixed - Datetimepicker v2.5.20
- * Fixed - Bootstrap Fileselect v2.1.0
-
- v2.2.0 - released on 2019-08-18
-
- * Fixed 33 - Added the new password strength meter 
- * Fixed #37 - Added the new session timeout counter
- * Fixed #38 - Added an icon to the top navigation, when maintenance mode is activated
- * Fixed #39 - Updated design to the latest requirements
- * Fixed #40 - Updated settings form to the latest requirements
- * Fixed #41 - Fixed design bugs in Bakery forms
+ * Fixed - Updated Select2 v4.0.12
+ * Fixed - Updated Datetimepicker v2.5.20
+ * Fixed - Updated Bootstrap Fileselect v2.1.0
+ * Fixed - Updated Bootstrap v4.4.1
  
 Older versions
 
