@@ -16,5 +16,5 @@
  *   Select2 v4.0.12 | (c) Kevin Brown, Igor Vaynberg, and Select2 contributors | MIT
  *   Nicescroll v3.7.6 | (c) InuYaksa | MIT
  *   Datetimepicker v2.5.20 | (c) Chupurnov Valeriy | MIT
- *   Bootstrap Fileselect v2.0.0 | (c) Jonathan Nessier, Neoflow | MIT
+ *   Bootstrap Fileselect v2.1.0 | (c) Jonathan Nessier, Neoflow | MIT
  **/
