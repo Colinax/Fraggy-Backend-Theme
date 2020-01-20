@@ -15,7 +15,9 @@ let gulp = require('gulp'),
 let pjson = require('./package.json'),
     sourceHeader = fs
         .readFileSync('./src/source-header.txt', 'utf8')
-        .replace('{VERSION}', pjson.version);
+        .replace('{VERSION}', pjson.version)
+        .replace('{YEAR}', (new Date()).getFullYear().toString())
+        .replace('{AUTHOR}', package.author);
 
 gulp.task('txt:build', function () {
     return gulp.src('./README.md')
