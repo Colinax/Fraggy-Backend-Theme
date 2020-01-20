@@ -7,19 +7,18 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 > There might be some design issues at the backend of modules, but usually the modules still work as expected.
 
 # Requirements
- * [WBCE v1.4.0](https://github.com/WBCE/WBCE_CMS/releases) or newer
+ * [WBCE v1.4.1](https://github.com/WBCE/WBCE_CMS/releases) or newer
  * PHP 7.1 or newer
 
 # Changelog
 
-## v2.2.0 - released on 2019-08-18
+## v2.3.0 - released on 2020-01-xx
 
- * Fixed #33 - Added the new password strength meter 
- * Fixed #37 - Added the new session timeout counter
- * Fixed #38 - Added an icon to the top navigation, when maintenance mode is activated
- * Fixed #39 - Updated design to the latest requirements
- * Fixed #40 - Updated settings form to the latest requirements
- * Fixed #41 - Fixed design bugs in Bakery forms
+ * Fixed - Added Theme changes from WBCE 1.4.1 
+ * Fixed - Updated Select2 v4.0.12
+ * Fixed - Updated Datetimepicker v2.5.20
+ * Fixed - Updated Bootstrap Fileselect v2.1.0
+ * Fixed - Updated Bootstrap v4.4.1
  
 ## Older versions
 
@@ -63,4 +62,4 @@ If you like my work or are using it for commercial websites then please donate, 
 
 Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to [Jörg Laas](https://www.jlhd.com/), [colinax](https://forum.wbce.org/profile.php?id=160) and [trici](https://tricity.ch) for their donations!
 
-Copyright © 2016-2019 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Licensed under GNU GPLv3
+Copyright © 2016-2020 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Licensed under GNU GPLv3

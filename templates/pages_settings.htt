@@ -115,6 +115,7 @@
                         <div class="form-group row d-none d-xl-block">
                             <div class="offset-sm-3 col-sm-9">
                                 <button type="submit" name="save" class="btn btn-primary"><i class="fa fa-fw fa-floppy-o"></i> {TEXT_SAVE} {SECTION_SETTINGS}</button>
+								<button type="submit" name="saveandback" value="saveandback"  class="btn btn-primary"><i class="fa fa-fw fa-save"></i> {TEXT_SAVE} &amp; {TEXT_BACK}</button>
                             </div>
                         </div>
 
@@ -221,6 +222,7 @@
                         <div class="form-group d-xl-none row">
                             <div class="offset-sm-3 col-sm-9">
                                 <button type="submit" name="submit" class="btn btn-primary"><i class="fa fa-fw fa-floppy-o"></i> {TEXT_SAVE} {SECTION_SETTINGS}</button>
+								<button type="submit" name="saveandback" value="saveandback"  class="btn btn-primary"><i class="fa fa-fw fa-save"></i> {TEXT_SAVE} &amp; {TEXT_BACK}</button>
                             </div>
                         </div>
 

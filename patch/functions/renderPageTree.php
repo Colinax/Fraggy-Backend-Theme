@@ -50,10 +50,11 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999)
         $canModifySettings = ($admin->get_permission('pages_settings') && $canModify);
         $canManageSections = (MANAGE_SECTIONS && $admin->get_permission('pages_modify') && $canModify);
 
+		$isMenuLink = false;
         if ($canManageSections) {
             $querySections = $database->query('SELECT `module` FROM `' . TABLE_PREFIX . 'sections` WHERE `page_id` = ' . $page['page_id'] . ' AND `module` = "menu_link"');
             if ($querySections->numRows() > 0) {
-                $canManageSections = false;
+                $isMenuLink = true;
             }
         }
 
@@ -115,10 +116,17 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999)
                             <?php
                         }
                         if ($canManageSections) {
-
+							if (!$isMenuLink) {
                             ?>
                             <a href="{modifySectionsURL}" title="<?= $HEADING['MANAGE_SECTIONS'] ?>"><i class="fa fa-list-alt" aria-hidden="true"></i></a>
-                        <?php } ?>
+                        <?php } else {
+							?>
+							<a href="{modifySectionsURL}" title="<?= $HEADING['MANAGE_SECTIONS'] ?>"><i class="fa fa-link" aria-hidden="true"></i></a>
+							<?php
+							}
+						}
+						
+						?>
                     </td>
                     <td class="d-none d-lg-table-cell">
                         <?php if ($page['visibility'] != 'deleted' && $page['visibility'] != 'none') { ?>

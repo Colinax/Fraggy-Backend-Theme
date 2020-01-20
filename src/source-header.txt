@@ -2,19 +2,19 @@
  * FRAGGY BACKEND THEME v{VERSION}
  * Responsive and Bootstrap based backend theme for WBCE
  *
- * Copyright (c) 2016-2019 Jonathan Nessier, Neoflow | neoflow.ch
- * Licensed under GNU GPLv3 | github.com/Neoflow/Fraggy-Backend-Theme
+ * (c) 2016-{YEAR} {AUTHOR}
+ * Licensed under GNU GPLv3 (https://github.com/Neoflow/Fraggy-Backend-Theme/blob/master/LICENSE)
  *
  * This template integrates components from the following projects
  *
  *   Roboto & Roboto Condensed | (c) Christian Robertson and Google | Apache-2.0
  *   Font Awesome 4.7.0 by @davegandy | fontawesome.io/license
  *   jQuery Migrate v3.1.0 | (c) jQuery Foundation and other contributors | jquery.org/license
- *   Bootstrap v4.3.1 | (c) The Bootstrap Authors | MIT
+ *   Bootstrap v4.4.1 | (c) The Bootstrap Authors | MIT
  *   Popper.js v1.12.0 | (c) Federico Zivolo | MIT
  *   InsertLoader 1.0.0 | (c) Jonathan Nessier, Neoflow | MIT
- *   Select2 v4.0.7 | (c) Kevin Brown, Igor Vaynberg, and Select2 contributors | MIT
+ *   Select2 v4.0.12 | (c) Kevin Brown, Igor Vaynberg, and Select2 contributors | MIT
  *   Nicescroll v3.7.6 | (c) InuYaksa | MIT
- *   Datetimepicker v2.5.4 | (c) Chupurnov Valeriy | MIT
- *   Bootstrap Fileselect v2.0.0 | (c) Jonathan Nessier, Neoflow | MIT
+ *   Datetimepicker v2.5.20 | (c) Chupurnov Valeriy | MIT
+ *   Bootstrap Fileselect v2.1.0 | (c) Jonathan Nessier, Neoflow | MIT
  **/

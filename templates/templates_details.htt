@@ -28,6 +28,10 @@
                 <th>{TEXT_DESCRIPTION}</th>
                 <td>{DESCRIPTION}</td>
             </tr>
+			<tr>
+                <th>{TEXT_LICENSE}</th>
+                <td>{LICENSE}</td>
+            </tr>
         </table>
         <div class="card-body">
             <a href="index.php" class="btn btn-outline-light">

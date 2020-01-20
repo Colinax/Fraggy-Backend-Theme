@@ -505,7 +505,7 @@
 
                     </div>
                 </div>
-
+                <!-- BEGIN show_access_block -->
                 <div class="card">
                     <h4 class="card-header">
                         {HEADING_SERVER_SETTINGS}
@@ -700,6 +700,14 @@
                                     </table>
                                 </div>
                             </div>
+							
+							 <div class="form-group row">
+                                <label for="inputRenameFilesOnUpload" class="col-sm-4 col-form-label">{TEXT_RENAME_FILES_ON_UPLOAD}</label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="inputRenameFilesOnUpload" name="rename_files_on_upload" value="{RENAME_FILES_ON_UPLOAD}"
+                                           class="form-control"/>
+                                </div>
+                            </div>
 
                             <div class="form-group row">
                                 <label for="inputPagesDirectory" class="col-sm-4 col-form-label">{TEXT_PAGES_DIRECTORY}</label>
@@ -732,14 +740,6 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="inputRenameFilesOnUpload" class="col-sm-4 col-form-label">{TEXT_RENAME_FILES_ON_UPLOAD}</label>
-                                <div class="col-sm-8">
-                                    <input type="text" id="inputRenameFilesOnUpload" name="rename_files_on_upload" value="{RENAME_FILES_ON_UPLOAD}"
-                                           class="form-control"/>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
                                 <label for="inputSessionIdentifier" class="col-sm-4 col-form-label">{TEXT_SESSION_IDENTIFIER}</label>
                                 <div class="col-sm-8">
                                     <input type="text" id="inputSessionIdentifier" name="app_name" value="{APP_NAME}" class="form-control"/>
@@ -767,7 +767,7 @@
 
                     </div>
                 </div>
-
+                <!-- END show_access_block -->
                 <div class="card">
                     <h4 class="card-header">
                         {HEADING_WBMAILER_SETTINGS}
