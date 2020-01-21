@@ -4,10 +4,10 @@
   "description": "Responsive and Bootstrap based backend theme for WBCE",
   "scripts": {},
   "keywords": [
-      "wbce",
-      "theme",
-      "bootstrap",
-      "jquery"
+    "wbce",
+    "theme",
+    "bootstrap",
+    "jquery"
   ],
   "scope": "neoflow",
   "author": "Jonathan Nessier, Neoflow",
@@ -19,12 +19,12 @@
     "url": "https://github.com/Neoflow/Fraggy-Backend-Theme.git"
   },
   "publishConfig": {
-      "access": "public"
+    "access": "public"
   },
   "buildOpts": {
-      "common": {
-          "sourceHeader": "./src/source-header.txt"
-      }
+    "common": {
+      "sourceHeader": "./src/source-header.txt"
+    }
   },
   "devDependencies": {
     "autoprefixer": "^9.7.4",
@@ -34,13 +34,13 @@
     "gulp-concat": "^2.6.1",
     "gulp-inject-string": "^1.1.2",
     "gulp-postcss": "^8.0.0",
+    "gulp-remove-markdown": "^1.0.2",
     "gulp-rename": "^2.0.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-terser": "^1.2.0",
     "gulp-util": "^3.0.8",
-    "gulp-remove-markdown": "^1.0.2",
     "gulp-zip": "^5.0.1"
   },
   "dependencies": {},

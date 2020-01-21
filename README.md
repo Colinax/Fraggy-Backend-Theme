@@ -12,13 +12,15 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Changelog
 
-## v2.3.0 - released on 2020-01-xx
+## v2.3.0 - released on 2020-01-21
 
- * Fixed - Added Theme changes from WBCE 1.4.1 
- * Fixed - Updated Select2 v4.0.12
- * Fixed - Updated Datetimepicker v2.5.20
- * Fixed - Updated Bootstrap Fileselect v2.1.0
- * Fixed - Updated Bootstrap v4.4.1
+ * Added theme-specific changes for WBCE 1.4.1 
+ * Updated to Select2 v4.0.12
+ * Updated to Datetimepicker v2.5.20
+ * Updated to Bootstrap Fileselect v2.1.0
+ * Updated to Bootstrap v4.4.1
+ 
+ Thanks to [Colinax](https://github.com/Colinax) for his pull request to get the backend theme up to date.
  
 ## Older versions
 
@@ -60,6 +62,6 @@ If you like my work or are using it for commercial websites then please donate, 
 
 * Jonathan Nessier, [Neoflow](https://www.neoflow.ch)
 
-Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to [Jörg Laas](https://www.jlhd.com/), [colinax](https://forum.wbce.org/profile.php?id=160) and [trici](https://tricity.ch) for their donations!
+Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to [Jörg Laas](https://www.jlhd.com/), [Colinax](https://forum.wbce.org/profile.php?id=160) and [trici](https://tricity.ch) for their donations!
 
 Copyright © 2016-2020 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Licensed under GNU GPLv3
