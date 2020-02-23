@@ -23,7 +23,7 @@ include 'functions/rrmdir.php';
 include '../info.php';
 
 // Get WBCE version
-require_once '../../../admin/interface/version.php';
+require_once '../../../' . ADMIN_DIRECTORY . '/interface/version.php';
 
 // Create update API interface
 $updateApi = new Update(false, [
