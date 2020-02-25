@@ -1,7 +1,7 @@
 /*!
  * InsertLoader 1.0.1
  * (c) 2016-2020 Jonathan Nessier, Neoflow
- * Licensed under MIT (https://github.com/Neoflow/Bootstrap-Fileselect/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/Neoflow/jQuery-InsertLoader/blob/master/LICENSE)
  */
 var InsertLoader = (function () {
 

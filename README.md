@@ -12,13 +12,14 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Changelog
 
-## v2.3.0 - released on 2020-01-21
+## v2.3.1 - released on 2020-02-xx
 
- * Added theme-specific changes for WBCE 1.4.1 
- * Updated to Select2 v4.0.12
- * Updated to Datetimepicker v2.5.20
- * Updated to Bootstrap Fileselect v2.1.0
- * Updated to Bootstrap v4.4.1
+ * Remove woff and use woff2 support only
+ * use custom admin directory for update process
+ * Updated to Select2 v4.0.13
+ * Updated to Popper.js v1.16.0
+ * Updated to Bootstrap Fileselect v3.0.0
+ * Updated to InsertLoader v1.0.1
  
  Thanks to [Colinax](https://github.com/Colinax) for his pull request to get the backend theme up to date.
  

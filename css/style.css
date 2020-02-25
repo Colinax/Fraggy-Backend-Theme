@@ -1,5 +1,5 @@
 /**
- * FRAGGY BACKEND THEME v2.3.0
+ * FRAGGY BACKEND THEME v2.3.1
  * Responsive and Bootstrap based backend theme for WBCE
  *
  * (c) 2016-2020 Jonathan Nessier, Neoflow
@@ -11,12 +11,12 @@
  *   Font Awesome 4.7.0 by @davegandy | fontawesome.io/license
  *   jQuery Migrate v3.1.0 | (c) jQuery Foundation and other contributors | jquery.org/license
  *   Bootstrap v4.4.1 | (c) The Bootstrap Authors | MIT
- *   Popper.js v1.12.0 | (c) Federico Zivolo | MIT
- *   InsertLoader 1.0.0 | (c) Jonathan Nessier, Neoflow | MIT
- *   Select2 v4.0.12 | (c) Kevin Brown, Igor Vaynberg, and Select2 contributors | MIT
+ *   Popper.js v1.16.0 | (c) Federico Zivolo | MIT
+ *   InsertLoader 1.0.1 | (c) Jonathan Nessier, Neoflow | MIT
+ *   Select2 v4.0.13 | (c) Kevin Brown, Igor Vaynberg, and Select2 contributors | MIT
  *   Nicescroll v3.7.6 | (c) InuYaksa | MIT
  *   Datetimepicker v2.5.20 | (c) Chupurnov Valeriy | MIT
- *   Bootstrap Fileselect v2.1.0 | (c) Jonathan Nessier, Neoflow | MIT
+ *   Bootstrap Fileselect v3.0.0 | (c) Jonathan Nessier, Neoflow | MIT
  **/
 @charset "UTF-8";
 .noresize {
@@ -33,73 +33,73 @@
 }
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/roboto/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto/roboto-bold-webfont.woff") format("woff");
+  src: url("../fonts/roboto/roboto-bold-webfont.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/roboto/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto/roboto-bold-webfont.woff") format("woff");
+  src: url("../fonts/roboto/roboto-bold-webfont.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/roboto/roboto-italic-webfont.woff2") format("woff2"), url("../fonts/roboto/roboto-italic-webfont.woff") format("woff");
+  src: url("../fonts/roboto/roboto-italic-webfont.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/roboto/roboto-italic-webfont.woff2") format("woff2"), url("../fonts/roboto/roboto-italic-webfont.woff") format("woff");
+  src: url("../fonts/roboto/roboto-italic-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/roboto/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto/roboto-regular-webfont.woff") format("woff");
+  src: url("../fonts/roboto/roboto-regular-webfont.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/roboto/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto/roboto-regular-webfont.woff") format("woff");
+  src: url("../fonts/roboto/roboto-regular-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/roboto/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto/roboto-medium-webfont.woff") format("woff");
+  src: url("../fonts/roboto/roboto-medium-webfont.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/roboto/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto/roboto-medium-webfont.woff") format("woff");
+  src: url("../fonts/roboto/roboto-medium-webfont.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto Condensed';
-  src: url("../fonts/roboto-condensed/roboto-condensed-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-condensed/roboto-condensed-bold-webfont.woff") format("woff");
+  src: url("../fonts/roboto-condensed/roboto-condensed-bold-webfont.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto Condensed';
-  src: url("../fonts/roboto-condensed/roboto-condensed-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-condensed/roboto-condensed-bold-webfont.woff") format("woff");
+  src: url("../fonts/roboto-condensed/roboto-condensed-bold-webfont.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto Condensed';
-  src: url("../fonts/roboto-condensed/roboto-condensed-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-condensed/roboto-condensed-regular-webfont.woff") format("woff");
+  src: url("../fonts/roboto-condensed/roboto-condensed-regular-webfont.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto Condensed';
-  src: url("../fonts/roboto-condensed/roboto-condensed-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-condensed/roboto-condensed-regular-webfont.woff") format("woff");
+  src: url("../fonts/roboto-condensed/roboto-condensed-regular-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
