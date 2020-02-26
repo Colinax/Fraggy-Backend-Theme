@@ -31,7 +31,7 @@
             THEME_URL = '{THEME_URL}',
             ADMIN_URL = '{ADMIN_URL}',
             LANGUAGE_CODE = '{LANGUAGE}',
-            THEME_VERSION = '2.3.0';
+            THEME_VERSION = '2.3.1';
     </script>
 
     <!-- Theme jQuery -->
