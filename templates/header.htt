@@ -137,7 +137,7 @@
     <div class="sidenav-content small">
         <ul class="list-inline versions">
             <li class="list-inline-item nowrap">WBCE: {WBCE_VERSION}</li>
-            <li class="list-inline-item nowrap">Theme: 2.3.0</li>
+            <li class="list-inline-item nowrap">Theme: 2.3.1</li>
             <li class="list-inline-item nowrap">Session timeout: <span id="countdown" class="timer">0:00:00</span></li>
         </ul>
         <hr/>
