@@ -12,8 +12,9 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Changelog
 
-## v2.3.1 - released on 2020-02-xx
+## v2.3.1 - released on 2020-02-29
 
+ * set updater to new location
  * Remove woff and use woff2 support only
  * use custom admin directory for update process
  * Updated to Select2 v4.0.13
