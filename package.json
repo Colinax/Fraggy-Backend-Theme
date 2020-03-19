@@ -1,6 +1,6 @@
 {
   "name": "fraggy-backend-theme",
-  "version": "2.3.1",
+  "version": "2.4.0",
   "description": "Responsive and Bootstrap based backend theme for WBCE",
   "scripts": {},
   "keywords": [
@@ -9,17 +9,13 @@
     "bootstrap",
     "jquery"
   ],
-  "scope": "neoflow",
-  "author": "Jonathan Nessier, Neoflow",
+  "author": "2016-2020 Jonathan Nessier, 2019-2020 Colinax",
   "license": "GPL-3.0",
   "contributors": [],
   "main": "index.php",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Neoflow/Fraggy-Backend-Theme.git"
-  },
-  "publishConfig": {
-    "access": "public"
+    "url": "https://github.com/Colinax/Fraggy-Backend-Theme.git"
   },
   "buildOpts": {
     "common": {

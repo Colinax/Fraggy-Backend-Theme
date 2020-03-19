@@ -20,7 +20,7 @@
     <link href="{THEME_URL}/api/favicon.php?size=16" rel="shortcut icon" type="image/png" sizes="16x16"/>
 
     <!-- Theme CSS -->
-    <link href="{THEME_URL}/css/style.min.css?v2.3.1" rel="stylesheet" type="text/css"/>
+    <link href="{THEME_URL}/css/style.min.css?v2.4.0" rel="stylesheet" type="text/css"/>
 
     <!-- WBCE module CSS -->
     {BACKEND_MODULE_CSS}
@@ -31,11 +31,11 @@
             THEME_URL = '{THEME_URL}',
             ADMIN_URL = '{ADMIN_URL}',
             LANGUAGE_CODE = '{LANGUAGE}',
-            THEME_VERSION = '2.3.1';
+            THEME_VERSION = '2.4.0';
     </script>
 
     <!-- Theme jQuery -->
-    <script src="{THEME_URL}/js/jquery.min.js?v2.3.1"></script>
+    <script src="{THEME_URL}/js/jquery.min.js?v2.4.0"></script>
 
     <!-- WBCE helper JavaScript -->
     <script>
@@ -46,7 +46,7 @@
     </script>
 
     <!-- Theme JavaScript -->
-    <script src="{THEME_URL}/js/script.min.js?v2.3.1"></script>
+    <script src="{THEME_URL}/js/script.min.js?v2.4.0"></script>
 
     <!-- WBCE module JS -->
     {BACKEND_MODULE_JS}
@@ -137,7 +137,7 @@
     <div class="sidenav-content small">
         <ul class="list-inline versions">
             <li class="list-inline-item nowrap">WBCE: {WBCE_VERSION}</li>
-            <li class="list-inline-item nowrap">Theme: 2.3.1</li>
+            <li class="list-inline-item nowrap">Theme: 2.4.0</li>
             <li class="list-inline-item nowrap">Session timeout: <span id="countdown" class="timer">0:00:00</span></li>
         </ul>
         <hr/>

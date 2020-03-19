@@ -15,22 +15,10 @@ let gulp = require('gulp'),
 let package = require('./package.json');
 
 let sourceHeader = fs
-        .readFileSync(package.buildOpts.common.sourceHeader, 'utf8')
-        .replace('{VERSION}', package.version)
-        .replace('{YEAR}', (new Date()).getFullYear().toString())
-        .replace('{AUTHOR}', package.author);
-
-gulp.task('txt:build', function () {
-    return gulp.src('./README.md')
-        .pipe(removeMarkdown('', {
-            stripListLeaders: false,
-            listUnicodeChar: '',
-            gfm: true
-        }))
-        .pipe(replace(/([\r\n]{3,})/ig, '\r\n\r\n'))
-        .pipe(replace(/(^[\r\n]+|[\r\n]+$)/ig, ''))
-        .pipe(gulp.dest('./'));
-});
+    .readFileSync(package.buildOpts.common.sourceHeader, 'utf8')
+    .replace('{VERSION}', package.version)
+    .replace('{YEAR}', (new Date()).getFullYear().toString())
+    .replace('{AUTHOR}', package.author);
 
 gulp.task('scss:build', function () {
     return gulp.src('./src/sass/style.scss')
@@ -68,35 +56,35 @@ gulp.task('css:minify', function () {
 
 gulp.task('js:build', function () {
     return gulp.src([
-        './src/js/workarounds.js',
+            './src/js/workarounds.js',
 
-        './src/js/vendor/popper.min.js',
-        './src/js/vendor/bootstrap.min.js',
+            './src/js/vendor/popper.min.js',
+            './src/js/vendor/bootstrap.min.js',
 
-        './src/js/vendor/bootstrap-fileselect.min.js',
+            './src/js/vendor/bootstrap-fileselect.min.js',
 
-        './src/js/vendor/jquery.datetimepicker.full.min.js',
+            './src/js/vendor/jquery.datetimepicker.full.min.js',
 
-        './src/js/vendor/jquery.easing.min.js',
-        './src/js/vendor/jquery.nicescroll.min.js',
+            './src/js/vendor/jquery.easing.min.js',
+            './src/js/vendor/jquery.nicescroll.min.js',
 
-        './src/js/vendor/select2.min.js',
+            './src/js/vendor/select2.min.js',
 
-        './src/js/vendor/jquery-insert.js',
+            './src/js/vendor/jquery-insert.js',
 
-        './src/js/vendor/jquery-migrate.min.js',
+            './src/js/vendor/jquery-migrate.min.js',
 
-        './src/js/vendor/jquery.browser.js',
+            './src/js/vendor/jquery.browser.js',
 
-        './src/js/theme/base.js',
-        './src/js/theme/functions.js',
-        './src/js/theme/navigation.js',
-        './src/js/theme/collapse-history.js',
+            './src/js/theme/base.js',
+            './src/js/theme/functions.js',
+            './src/js/theme/navigation.js',
+            './src/js/theme/collapse-history.js',
 
-        './src/js/theme/init/select2.js',
-        './src/js/theme/init/fileselect.js',
-        './src/js/theme/init/datetimepicker.js'
-    ])
+            './src/js/theme/init/select2.js',
+            './src/js/theme/init/fileselect.js',
+            './src/js/theme/init/datetimepicker.js'
+        ])
         .pipe(concat('script.js'))
         .pipe(injectString.prepend(sourceHeader + '\n'))
         .pipe(gulp.dest('./js'));
@@ -114,16 +102,16 @@ gulp.task('js:minify', function () {
 
 gulp.task('zip:build', function () {
     return gulp.src([
-        './**',
-        '!./api/cache/{,/**}',
-        '!./package*',
-        '!./gulpfile.js',
-        '!./node_modules{,/**}',
-        '!./nbproject{,/**}',
-        '!./src{,/**}',
-        '!./README.md',
-        '!*.zip'
-    ])
+            './**',
+            '!./api/cache/{,/**}',
+            '!./package*',
+            '!./gulpfile.js',
+            '!./node_modules{,/**}',
+            '!./nbproject{,/**}',
+            '!./src{,/**}',
+            '!./README.md',
+            '!*.zip'
+        ])
         .pipe(zip(package.name + '-' + package.version + '.zip'))
         .pipe(gulp.dest('./'));
 });
@@ -131,7 +119,6 @@ gulp.task('zip:build', function () {
 gulp.task('src:watch', function () {
     gulp.watch(['./src/sass/**/*.scss'], gulp.series('css:rebuild'));
     gulp.watch(['./src/js/**/*.js'], gulp.series('js:rebuild'));
-    gulp.watch(['./README.md'], gulp.series('txt:build'));
 });
 
 gulp.task('css:rebuild', gulp.series('scss:build', 'css:build', 'css:minify'));
@@ -140,4 +127,4 @@ gulp.task('js:rebuild', gulp.series('js:build', 'js:minify'));
 
 gulp.task('src:rebuild', gulp.series('js:rebuild', 'css:rebuild'));
 
-gulp.task('src:release', gulp.series('src:rebuild', 'txt:build', 'zip:build'));
+gulp.task('src:release', gulp.series('src:rebuild', 'zip:build'));

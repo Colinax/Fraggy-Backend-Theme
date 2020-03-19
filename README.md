@@ -1,8 +1,8 @@
-![Responsive and Bootstrap based backend theme for WBCE](https://github.com/Neoflow/Fraggy-Backend-Theme/blob/master/images/example-2.0.0.png "Responsive and Bootstrap based backend theme for WBCE")
+![Responsive and Bootstrap based backend theme for WBCE](https://github.com/Colinax/Fraggy-Backend-Theme/blob/master/images/example-2.0.0.png "Responsive and Bootstrap based backend theme for WBCE")
 
 # About
 
-Fraggy Backend Theme is a responsive and Bootstrap based template for the backend of [WBCE](http://wbce.org).
+Fraggy Backend Theme is a responsive and Bootstrap based template for the backend of [WBCE](https://wbce.org).
 
 > There might be some design issues at the backend of modules, but usually the modules still work as expected.
 
@@ -12,25 +12,17 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Changelog
 
-## v2.3.1 - released on 2020-02-29
+## v2.4.0 - released on 2020-03-20
 
- * set updater to new location
- * Remove woff and use woff2 support only
- * use custom admin directory for update process
- * Updated to Select2 v4.0.13
- * Updated to Popper.js v1.16.0
- * Updated to Bootstrap Fileselect v3.0.0
- * Updated to InsertLoader v1.0.1
- 
- Thanks to [Colinax](https://github.com/Colinax) for his pull request to get the backend theme up to date.
- 
-## Older versions
-
-You can see the summary of releases and the changes in each release [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
+ * owner change
 
 # Download
 
-You can download the newest source code release and the distributed release without source files [here](https://github.com/rjgamer/Fraggy-Backend-Theme/releases).
+You can download the newest source code release and the distributed release without source files [here](https://github.com/Colinax/Fraggy-Backend-Theme/releases).
+
+## Older versions
+
+You can see the summary of releases and the changes in each release [here](https://github.com/Colinax/Fraggy-Backend-Theme/releases).
 
 # Installation
 
@@ -54,16 +46,8 @@ Both images have to be uploaded into the root-directory (next to the config.php)
 
 The support is provided by the community in the [forum of WBCE](https://forum.wbce.org/viewforum.php?id=69).
 
-# Donation
-
-If you like my work or are using it for commercial websites then please donate, or just buy me a beer or two to help me keep Fraggy Backend Theme up to date.
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/JonathanNessier)
-
 # Author
 
-* Jonathan Nessier, [Neoflow](https://www.neoflow.ch)
+Copyright © 2016-2020 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Copyright © 2019-2020 Colinax | Licensed under GNU GPLv3
 
-Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to [Jörg Laas](https://www.jlhd.com/), [Colinax](https://forum.wbce.org/profile.php?id=160) and [trici](https://tricity.ch) for their donations!
-
-Copyright © 2016-2020 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Licensed under GNU GPLv3
+Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to [Jörg Laas](https://www.jlhd.com/) and [trici](https://tricity.ch) for their donations!
