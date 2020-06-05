@@ -1,8 +1,20 @@
 {
   "name": "fraggy-backend-theme",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "Responsive and Bootstrap based backend theme for WBCE",
-  "scripts": {},
+  "scripts": {
+    "scss:build": "gulp scss:build",
+    "css:build": "gulp css:build",
+    "css:minify": "gulp css:minify",
+    "js:build": "gulp js:build",
+    "js:minify": "gulp js:minify",
+    "zip:build": "gulp zip:build",
+    "src:watch": "gulp src:watch",
+    "css:rebuild": "gulp css:rebuild",
+    "js:rebuild": "gulp js:rebuild",
+    "src:rebuild": "gulp src:rebuild",
+    "src:release": "gulp src:release"
+  },
   "keywords": [
     "wbce",
     "theme",

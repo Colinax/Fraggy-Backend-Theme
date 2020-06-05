@@ -14,8 +14,7 @@ let gulp = require('gulp'),
 
 let package = require('./package.json');
 
-let sourceHeader = fs
-    .readFileSync(package.buildOpts.common.sourceHeader, 'utf8')
+let sourceHeader = fs.readFileSync(package.buildOpts.common.sourceHeader, 'utf8')
     .replace('{VERSION}', package.version)
     .replace('{YEAR}', (new Date()).getFullYear().toString())
     .replace('{AUTHOR}', package.author);
@@ -122,9 +121,6 @@ gulp.task('src:watch', function () {
 });
 
 gulp.task('css:rebuild', gulp.series('scss:build', 'css:build', 'css:minify'));
-
 gulp.task('js:rebuild', gulp.series('js:build', 'js:minify'));
-
 gulp.task('src:rebuild', gulp.series('js:rebuild', 'css:rebuild'));
-
 gulp.task('src:release', gulp.series('src:rebuild', 'zip:build'));
