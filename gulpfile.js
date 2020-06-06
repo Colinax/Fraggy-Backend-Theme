@@ -9,8 +9,7 @@ let gulp = require('gulp'),
     injectString = require('gulp-inject-string'),
     stripCssComments = require('gulp-strip-css-comments'),
     postcss = require('gulp-postcss'),
-    zip = require('gulp-zip'),
-    removeMarkdown = require('gulp-remove-markdown');
+    zip = require('gulp-zip');
 
 let package = require('./package.json');
 
