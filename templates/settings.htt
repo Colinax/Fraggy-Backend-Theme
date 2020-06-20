@@ -91,7 +91,6 @@
                             </div>
                         </div>
 
-
                         <div class="form-group row">
                             <label for="selectFrontendSignup" class="col-sm-4 col-form-label">{TEXT_SIGNUP}</label>
                             <div class="col-sm-8">
@@ -500,43 +499,97 @@
 
                     </div>
                 </div>
-                <!-- BEGIN show_access_block -->
+                
                 <div class="card">
                     <h4 class="card-header">
                         {HEADING_SERVER_SETTINGS}
                     </h4>
                     <div class="card-body">
 
-                        <div class="form-group row" id="radiosOperationSystem">
-                            <label class="col-sm-4 col-form-label">{TEXT_SERVER_OPERATING_SYSTEM}</label>
+                        <div class="form-group row">
+                            <label for="inputPageSpacer" class="col-sm-4 col-form-label">{TEXT_PAGE_SPACER}</label>
                             <div class="col-sm-8">
-                                <label class="radio-inline">
-                                    <input type="radio" name="operating_system" id="operating_system_linux" value="linux" {LINUX_SELECTED}/>
-                                    {TEXT_LINUX_UNIX_BASED}
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="operating_system" id="operating_system_windows" value="windows" {WINDOWS_SELECTED}/>
-                                    {TEXT_WINDOWS}
-                                </label>
+                                <input type="text" id="inputPageSpacer" name="page_spacer" value="{PAGE_SPACER}" class="form-control"/>
                             </div>
                         </div>
 
-                        <div class="form-group form-write-rights">
-                            <label class="col-sm-4 col-form-label">{TEXT_FILESYSTEM_PERMISSIONS}</label>
+                        <div class="form-group row">
+                            <label for="inputSessionIdentifier" class="col-sm-4 col-form-label">{TEXT_SESSION_IDENTIFIER}</label>
                             <div class="col-sm-8">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="world_writeable" id="world_writeable" value="true" {WORLD_WRITEABLE_SELECTED}/>
-                                        {TEXT_WORLD_WRITEABLE_FILE_PERMISSIONS} (777)
-                                    </label>
-                                </div>
-                                <p class="help-block">{WORLD_WRITEABLE_WARNING}</p>
+                                <input type="text" id="inputSessionIdentifier" name="app_name" value="{APP_NAME}" class="form-control"/>
                             </div>
                         </div>
+
+                        <div class="form-group row">
+                            <label for="inputSectionAnchor" class="col-sm-4 col-form-label">{TEXT_SEC_ANCHOR}</label>
+                            <div class="col-sm-8">
+                                <input type="text" id="inputSectionAnchor" name="sec_anchor" value="{SEC_ANCHOR}" class="form-control"/>
+                            </div>
+                        </div>
+
+                        <!-- BEGIN show_access_block -->
 
                         <div class="advanced-form-group" {DISPLAY_ADVANCED}>
 
+                            <div class="form-group row">
+                                <label for="inputRenameFilesOnUpload" class="col-sm-4 col-form-label">{TEXT_RENAME_FILES_ON_UPLOAD}</label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="inputRenameFilesOnUpload" name="rename_files_on_upload" value="{RENAME_FILES_ON_UPLOAD}"
+                                            class="form-control"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="inputPagesDirectory" class="col-sm-4 col-form-label">{TEXT_PAGES_DIRECTORY}</label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="inputPagesDirectory" name="pages_directory" value="{PAGES_DIRECTORY}"
+                                            class="form-control"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="inputMediaDirectory" class="col-sm-4 col-form-label">{TEXT_MEDIA_DIRECTORY}</label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="inputMediaDirectory" name="media_directory" value="{MEDIA_DIRECTORY}"
+                                            class="form-control"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="inputPageExtension" class="col-sm-4 col-form-label">{TEXT_PAGE_EXTENSION}</label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="inputPageExtension" name="page_extension" value="{PAGE_EXTENSION}" class="form-control"/>
+                                </div>
+                            </div>
+
                             <hr/>
+
+                            <div class="form-group row" id="radiosOperationSystem">
+                                <label class="col-sm-4 col-form-label">{TEXT_SERVER_OPERATING_SYSTEM}</label>
+                                <div class="col-sm-8">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="operating_system" id="operating_system_linux" value="linux" {LINUX_SELECTED}/>
+                                        {TEXT_LINUX_UNIX_BASED}
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="operating_system" id="operating_system_windows" value="windows" {WINDOWS_SELECTED}/>
+                                        {TEXT_WINDOWS}
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group form-write-rights">
+                                <label class="col-sm-4 col-form-label">{TEXT_FILESYSTEM_PERMISSIONS}</label>
+                                <div class="col-sm-8">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="world_writeable" id="world_writeable" value="true" {WORLD_WRITEABLE_SELECTED}/>
+                                            {TEXT_WORLD_WRITEABLE_FILE_PERMISSIONS} (777)
+                                        </label>
+                                    </div>
+                                    <p class="help-block">{WORLD_WRITEABLE_WARNING}</p>
+                                </div>
+                            </div>
 
                             <div class="form-group form-write-rights">
                                 <div class="offset-sm-4 col-sm-8">
@@ -695,60 +748,10 @@
                                     </table>
                                 </div>
                             </div>
-							
-							 <div class="form-group row">
-                                <label for="inputRenameFilesOnUpload" class="col-sm-4 col-form-label">{TEXT_RENAME_FILES_ON_UPLOAD}</label>
-                                <div class="col-sm-8">
-                                    <input type="text" id="inputRenameFilesOnUpload" name="rename_files_on_upload" value="{RENAME_FILES_ON_UPLOAD}"
-                                           class="form-control"/>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="inputPagesDirectory" class="col-sm-4 col-form-label">{TEXT_PAGES_DIRECTORY}</label>
-                                <div class="col-sm-8">
-                                    <input type="text" id="inputPagesDirectory" name="pages_directory" value="{PAGES_DIRECTORY}"
-                                           class="form-control"/>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="inputMediaDirectory" class="col-sm-4 col-form-label">{TEXT_MEDIA_DIRECTORY}</label>
-                                <div class="col-sm-8">
-                                    <input type="text" id="inputMediaDirectory" name="media_directory" value="{MEDIA_DIRECTORY}"
-                                           class="form-control"/>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="inputPageExtension" class="col-sm-4 col-form-label">{TEXT_PAGE_EXTENSION}</label>
-                                <div class="col-sm-8">
-                                    <input type="text" id="inputPageExtension" name="page_extension" value="{PAGE_EXTENSION}" class="form-control"/>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="inputPageSpacer" class="col-sm-4 col-form-label">{TEXT_PAGE_SPACER}</label>
-                                <div class="col-sm-8">
-                                    <input type="text" id="inputPageSpacer" name="page_spacer" value="{PAGE_SPACER}" class="form-control"/>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="inputSessionIdentifier" class="col-sm-4 col-form-label">{TEXT_SESSION_IDENTIFIER}</label>
-                                <div class="col-sm-8">
-                                    <input type="text" id="inputSessionIdentifier" name="app_name" value="{APP_NAME}" class="form-control"/>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="inputSectionAnchor" class="col-sm-4 col-form-label">{TEXT_SEC_ANCHOR}</label>
-                                <div class="col-sm-8">
-                                    <input type="text" id="inputSectionAnchor" name="sec_anchor" value="{SEC_ANCHOR}" class="form-control"/>
-                                </div>
-                            </div>
 
                             <hr/>
+
+                            <!-- END show_access_block -->
 
                         </div><!-- /.advanced-form-group -->
 
@@ -756,13 +759,13 @@
                             <div class="offset-sm-4 col-sm-8">
                                 <button type="submit" name="submit" class="btn btn-primary"><i class="fa fa-fw fa-floppy-o"></i> {TEXT_SAVE}</button>
                                 <a href="{ADVANCED_LINK}" class="btn btn-outline-light pull-right {DISPLAY_ADVANCED_BUTTON}"
-                                   title="{MODE_SWITCH_WARNING}">{ADVANCED_BUTTON}</a>
+                                    title="{MODE_SWITCH_WARNING}">{ADVANCED_BUTTON}</a>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <!-- END show_access_block -->
+
                 <div class="card">
                     <h4 class="card-header">
                         {HEADING_WBMAILER_SETTINGS}
@@ -797,7 +800,6 @@
                                 </label>
                             </div>
                         </div>
-
 
                         <div class="form-group row form-smtp-settings" {SMTP_VISIBILITY}>
                             <div class="col-sm-8 offset-sm-4">
