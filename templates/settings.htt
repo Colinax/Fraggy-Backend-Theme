@@ -751,9 +751,9 @@
 
                             <hr/>
 
-                            <!-- END show_access_block -->
-
                         </div><!-- /.advanced-form-group -->
+
+                        <!-- END show_access_block -->
 
                         <div class="form-group row">
                             <div class="offset-sm-4 col-sm-8">
