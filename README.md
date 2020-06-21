@@ -12,8 +12,10 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Changelog
 
-## v2.5.0 - released on 2020-0x-xx
+## v2.5.0 - released on 2020-06-21
 
+ * Some QoL adjustments for WBCE 1.4.4
+ * Fixed issues with Settings view
  * Updated to jQuery Migrate v3.3.0
  * Updated to jQuery v3.5.1
  * Updated to Bootstrap Fileselect v3.1.0
