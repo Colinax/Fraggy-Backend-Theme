@@ -9,7 +9,6 @@
  */
 function renderPageTree($pages, $level = 1, $levelLimit = 999)
 {
-
     global $admin, $database, $TEXT, $HEADING, $MESSAGE;
 
     $output = '';
@@ -50,7 +49,7 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999)
         $canModifySettings = ($admin->get_permission('pages_settings') && $canModify);
         $canManageSections = (MANAGE_SECTIONS && $admin->get_permission('pages_modify') && $canModify);
 
-		$isMenuLink = false;
+        $isMenuLink = false;
         if ($canManageSections) {
             $querySections = $database->query('SELECT `module` FROM `' . TABLE_PREFIX . 'sections` WHERE `page_id` = ' . $page['page_id'] . ' AND `module` = "menu_link"');
             if ($querySections->numRows() > 0) {
@@ -70,9 +69,7 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999)
             '{restoreURL}' => '../pages/restore.php?page_id=' . $page['page_id'],
         );
 
-        ob_start();
-
-        ?>
+        ob_start(); ?>
         <li class="p<?= $page['parent'] ?> <?= ($hasChildren ? 'has-children' : '') ?>">
             <table class="table">
                 <tr class="is-<?= $page['visibility'] ?>">
@@ -108,25 +105,24 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999)
                             <?php
                         }
                         if ($page['visibility'] != 'deleted' && $canModifySettings) {
-
                             ?>
                             <a href="{modifySettingsURL}" title="<?= $HEADING['MODIFY_PAGE_SETTINGS'] ?>"><i class="fa fa-fw fa-cog"></i></a>
-                        <?php } else if ($page['visibility'] == 'deleted') { ?>
+                        <?php
+                        } else if ($page['visibility'] == 'deleted') { ?>
                             <a href="{restoreURL}" title="<?= $TEXT['RESTORE'] ?>"><i class="fa fa-fw fa-recycle"></i></a>
                             <?php
                         }
                         if ($canManageSections) {
-							if (!$isMenuLink) {
-                            ?>
+                            if (!$isMenuLink) {
+                                ?>
                             <a href="{modifySectionsURL}" title="<?= $HEADING['MANAGE_SECTIONS'] ?>"><i class="fa fa-list-alt" aria-hidden="true"></i></a>
-                        <?php } else {
-							?>
+                        <?php
+                        } else {
+                            ?>
 							<a href="{modifySectionsURL}" title="<?= $HEADING['MANAGE_SECTIONS'] ?>"><i class="fa fa-link" aria-hidden="true"></i></a>
 							<?php
-							}
-						}
-						
-						?>
+                            }
+                        } ?>
                     </td>
                     <td class="d-none d-lg-table-cell">
                         <?php if ($page['visibility'] != 'deleted' && $page['visibility'] != 'none') { ?>

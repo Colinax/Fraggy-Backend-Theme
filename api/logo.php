@@ -1,11 +1,12 @@
 <?php
 /**
  * Fraggy Backend Theme
- * Responsive and Bootstrap based backend theme for WBCE.
+ * Responsive and Bootstrap based backend theme for WBCE
  *
- * @copyright 2016-2020 Jonathan Nessier, Neoflow <jonathan.nessier@neoflow.ch>
+ * @copyright 2016-2020 Jonathan Nessier, 2019-2020 Colinax
  * @license GNU GPLv3
  */
+
 // Include WBCE config file
 include '../../../config.php';
 

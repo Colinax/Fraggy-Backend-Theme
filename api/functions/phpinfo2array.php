@@ -3,7 +3,7 @@
  * Fraggy Backend Theme
  * Responsive and Bootstrap based backend theme for WBCE
  *
- * @copyright 2016-2020 Jonathan Nessier, Neoflow <jonathan.nessier@neoflow.ch>
+ * @copyright 2016-2020 Jonathan Nessier, 2019-2020 Colinax
  * @license GNU GPLv3
  */
 if (!defined('WB_PATH')) {
@@ -50,10 +50,13 @@ function phpinfo2array($key = null)
     $matches = array();
 
     if (preg_match_all(
-            '#(?:<h2.*?>(?:<a.*?>)?(.*?)(?:<\/a>)?<\/h2>)|' .
+        '#(?:<h2.*?>(?:<a.*?>)?(.*?)(?:<\/a>)?<\/h2>)|' .
             '(?:<tr.*?><t[hd].*?>(.*?)\s*</t[hd]>(?:<t[hd].*?>' .
-            '(.*?)\s*</t[hd]>(?:<t[hd].*?>(.*?)\s*</t[hd]>)?)?</tr>)#s', $input, $matches, PREG_SET_ORDER
-        )) {
+            '(.*?)\s*</t[hd]>(?:<t[hd].*?>(.*?)\s*</t[hd]>)?)?</tr>)#s',
+        $input,
+        $matches,
+        PREG_SET_ORDER
+    )) {
         foreach ($matches as $match) {
             $fn = strpos($match[0], '<th') === false ? $plainText : $titlePlainText;
             if (strlen($match[1])) {

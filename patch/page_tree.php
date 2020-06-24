@@ -1,16 +1,19 @@
 <?php
 /**
- * WebsiteBaker Community Edition (WBCE)
+ * WBCE CMS
  * Way Better Content Editing.
- * Visit http://wbce.org to learn more and to join the community.
+ * Visit https://wbce.org to learn more and to join the community.
  *
- * @copyright Christian M. Stefan (Stefek)
+ * @copyright Ryan Djurovich (2004-2009)
+ * @copyright WebsiteBaker Org. e.V. (2009-2015)
  * @copyright WBCE Project (2015-)
  * @license GNU GPL2 (or any later version)
  */
+
 // prevent this file from being accessed directly
-if (!defined('WB_PATH'))
+if (!defined('WB_PATH')) {
     die(header('Location: ../../index.php'));
+}
 
 // Include translation
 if (is_file(WB_PATH . '/templates/fraggy-backend-theme/languages/' . LANGUAGE . '.php')) {
@@ -18,7 +21,6 @@ if (is_file(WB_PATH . '/templates/fraggy-backend-theme/languages/' . LANGUAGE . 
 } else {
     require_once WB_PATH . '/templates/fraggy-backend-theme/languages/EN.php';
 }
-
 
 // Include functions
 require_once 'functions/renderPageTree.php';
@@ -62,7 +64,6 @@ $settings = $querySettings->fetchRow();
 $pageLevelLimit = $settings['value'];
 
 if (count($pages) > 0) {
-
     ?>
     <div class="card-body">
         <div class="row">
@@ -77,7 +78,8 @@ if (count($pages) > 0) {
             </div>
         </div>
     </div>
-<?php } ?>
+<?php
+} ?>
 
 <div class="jsadmin"></div>
 <div class="pages_list" style="display: none;">

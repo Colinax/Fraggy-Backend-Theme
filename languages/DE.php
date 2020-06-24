@@ -28,4 +28,3 @@ $MESSAGE['INSTALLATION_SUCCESSFULLY'] = 'Neuer Release erfolgreich installiert.'
 $MESSAGE['INSTALLATION_FAILED'] = 'Installation fehlgeschlagen. Neuer Release konnte nicht installiert werden.';
 $MESSAGE['DOWNLOAD_FAILED'] = 'Download fehlgeschlagen. Neuer Release konnte nicht heruntergeladen werden.';
 $MESSAGE['DOWNLOAD_NOT_FOUND'] = 'Download fehlgeschlagen. Download-URL für das Update nicht gefunden.';
-

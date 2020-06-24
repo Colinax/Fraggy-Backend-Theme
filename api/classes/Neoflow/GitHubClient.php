@@ -184,7 +184,6 @@ class GitHubClient
      */
     public function getLatestRelease()
     {
-
         if ($this->options['prerelease']) {
             $releases = json_decode($this->call($this->repoPath . '/releases'), true);
             return $releases[0];
@@ -193,7 +192,6 @@ class GitHubClient
         }
 
         return [];
-
     }
 
     /**
