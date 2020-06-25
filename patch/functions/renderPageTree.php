@@ -81,13 +81,13 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999)
                     <td class="visibility">
                         <?php if ($page['visibility'] === 'public') { ?>
                             <i class="fa fa-eye"></i>
-                        <?php } else if ($page['visibility'] === 'private') { ?>
+                        <?php } elseif ($page['visibility'] === 'private') { ?>
                             <i class="fa fa-eye-slash"></i>
-                        <?php } else if ($page['visibility'] === 'registered') { ?>
+                        <?php } elseif ($page['visibility'] === 'registered') { ?>
                             <i class="fa fa-key"></i>
-                        <?php } else if ($page['visibility'] === 'hidden') { ?>
+                        <?php } elseif ($page['visibility'] === 'hidden') { ?>
                             <i class="fa fa-lock"></i>
-                        <?php } else if ($page['visibility'] === 'deleted') { ?>
+                        <?php } elseif ($page['visibility'] === 'deleted') { ?>
                             <i class="fa fa-trash-o"></i>
                         <?php } else { ?>
                             <i class="fa fa-ban"></i>
@@ -108,7 +108,7 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999)
                             ?>
                             <a href="{modifySettingsURL}" title="<?= $HEADING['MODIFY_PAGE_SETTINGS'] ?>"><i class="fa fa-fw fa-cog"></i></a>
                         <?php
-                        } else if ($page['visibility'] == 'deleted') { ?>
+                        } elseif ($page['visibility'] == 'deleted') { ?>
                             <a href="{restoreURL}" title="<?= $TEXT['RESTORE'] ?>"><i class="fa fa-fw fa-recycle"></i></a>
                             <?php
                         }
@@ -163,6 +163,5 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999)
 
         $output .= str_replace(array_keys($placeholders), array_values($placeholders), $renderedListItem);
     }
-
     return $output;
 }

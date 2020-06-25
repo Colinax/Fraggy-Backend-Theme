@@ -135,13 +135,13 @@ if (count($pages) > 0) {
                 <li class="list-inline-item">
                     <?php if ($legend === 'public') { ?>
                         <i class="fa fa-fw fa-eye"></i>
-                    <?php } else if ($legend === 'private') { ?>
+                    <?php } elseif ($legend === 'private') { ?>
                         <i class="fa fa-fw fa-eye-slash"></i>
-                    <?php } else if ($legend === 'registered') { ?>
+                    <?php } elseif ($legend === 'registered') { ?>
                         <i class="fa fa-fw fa-key"></i>
-                    <?php } else if ($legend === 'hidden') { ?>
+                    <?php } elseif ($legend === 'hidden') { ?>
                         <i class="fa fa-fw fa-lock"></i>
-                    <?php } else if ($legend === 'deleted') { ?>
+                    <?php } elseif ($legend === 'deleted') { ?>
                         <i class="fa fa-fw fa-trash-o"></i>
                     <?php } else { ?>
                         <i class="fa fa-fw fa-ban"></i>
