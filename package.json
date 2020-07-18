@@ -35,7 +35,7 @@
     }
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.2",
+    "autoprefixer": "^9.8.5",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
@@ -48,7 +48,7 @@
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-terser": "^1.2.0",
     "gulp-util": "^3.0.8",
-    "gulp-zip": "^5.0.1"
+    "gulp-zip": "^5.0.2"
   },
   "dependencies": {},
   "browserslist": [
