@@ -46,23 +46,23 @@
                     <table id="sectionTable" class="table table-striped">
                         <thead>
                             <tr>
-                                <th>{TEXT_TYPE}</th>
-                                <th>{TEXT_BLOCK}</th>
+                                <th style="width: 150px;">{TEXT_TYPE}</th>
+                                <th style="width: 150px;">{TEXT_BLOCK}</th>
                                 <th class="d-none d-sm-table-cell">{TEXT_NAMESECTION}</th>
-                                <th class="d-none d-lg-table-cell">{TEXT_PUBL_START_DATE}</th>
-                                <th class="d-none d-lg-table-cell">{TEXT_PUBL_END_DATE}</th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th class="d-none d-lg-table-cell">ID</th>
+                                <th class="d-none d-xl-table-cell">{TEXT_PUBL_START_DATE}</th>
+                                <th class="d-none d-xl-table-cell">{TEXT_PUBL_END_DATE}</th>
+                                <th class="d-none d-xl-table-cell"></th>
+                                <th class="d-none d-xl-table-cell"></th>
+                                <th class="d-none d-sm-table-cell"></th>
+                                <th class="d-none d-sm-table-cell">ID</th>
                             </tr>
                         </thead>
                         <tbody>
                             <!-- BEGIN section_block -->
 
                             <tr>
-                                <td>{LINK_MODIFY_URL_VAR_MODUL_NAME}</td>
-                                <td class="{INPUT_ATTRIBUTE}">
+                                <td style="width: 150px;">{LINK_MODIFY_URL_VAR_MODUL_NAME}</td>
+                                <td class="{INPUT_ATTRIBUTE}" style="min-width: 150px;">
                                     <select name="block{VAR_SECTION_ID}" id="selectBlock{VAR_SECTION_ID}" class="form-control">
                                         {SET_NONE_DISPLAY_OPTION}
                                         <!-- BEGIN block_block -->
@@ -73,7 +73,7 @@
                                 <td class="d-none d-sm-table-cell">
                                     <input type="text" class="form-control" id="namesection{VAR_SECTION_ID}" name="namesection{VAR_SECTION_ID}" value="{NAMESECTION}" />
                                 </td>
-                                <td class="d-none d-lg-table-cell">
+                                <td class="d-none d-xl-table-cell">
                                     <div class="input-group date datetimepicker">
                                         <input type="text" name="start_date{VAR_SECTION_ID}" value="{VALUE_PUBL_START}" class="form-control" />
                                         <div class="input-group-append">
@@ -83,7 +83,7 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td class="d-none d-lg-table-cell">
+                                <td class="d-none d-xl-table-cell">
                                     <div class="input-group date datetimepicker">
                                         <input type="text" name="end_date{VAR_SECTION_ID}" value="{VALUE_PUBL_END}"  class="form-control"/>
                                         <div class="input-group-append">
@@ -93,14 +93,14 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td>{VAR_MOVE_UP_URL}</td>
-                                <td>{VAR_MOVE_DOWN_URL}</td>
-                                <td>
+                                <td class="d-none d-xl-table-cell">{VAR_MOVE_UP_URL}</td>
+                                <td class="d-none d-xl-table-cell">{VAR_MOVE_DOWN_URL}</td>
+                                <td class="d-none d-sm-table-cell">
                                     <a href="#" onclick="javascript: confirm_link('{TEXT_ARE_YOU_SURE}', '{ADMIN_URL}/pages/sections.php?page_id={PAGE_IDKEY}&amp;section_id={VAR_SECTION_IDKEY}');">
                                         <img src="{THEME_URL}/images/{DELETE_16_PNG}" alt="{TEXT_DELETE}" width="16" height="16" />
                                     </a>
                                 </td>
-                                <td class="d-none d-lg-table-cell">{VAR_SECTION_ID}</td>
+                                <td class="d-none d-sm-table-cell">{VAR_SECTION_ID}</td>
                             </tr>
                             <!-- END section_block -->
                         </tbody>
