@@ -13,9 +13,9 @@ if (!defined('WB_PATH')) {
 $template_directory = 'fraggy-backend-theme';
 $template_name = 'Fraggy Backend Theme';
 $template_function = 'theme';
-$template_version = '2.5.2';
+$template_version = '2.6.0';
 $template_platform = '1.4';
-$template_author = '2016-2020 Jonathan Nessier, 2019-2020 Colinax';
+$template_author = '2016-2020 Jonathan Nessier, 2019-2021 Colinax';
 $template_license = '<a href="https://github.com/Colinax/Fraggy-Backend-Theme/blob/master/LICENSE" target="_blank">GNU GPLv3</a>';
 $template_license_terms = '-';
 $template_description = 'Responsive and Bootstrap based backend theme for WBCE';

@@ -1,4 +1,5 @@
 # IDE files and folders
 .idea/
 fraggy-*.zip
+package-lock.json
 node_modules/
