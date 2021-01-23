@@ -21,10 +21,6 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 You can download the newest source code release and the distributed release without source files [here](https://github.com/Colinax/Fraggy-Backend-Theme/releases).
 
-## Older versions
-
-You can see the summary of releases and the changes in each release [here](https://github.com/Colinax/Fraggy-Backend-Theme/releases).
-
 # Installation
 
 ## Theme
@@ -49,6 +45,6 @@ The support is provided by the community in the [forum of WBCE](https://forum.wb
 
 # Author
 
-Copyright © 2016-2020 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Copyright © 2019-2020 Colinax | Licensed under GNU GPLv3
+Copyright © 2016-2020 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Copyright © 2019-2021 Colinax | Licensed under GNU GPLv3
 
 Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to [Jörg Laas](https://www.jlhd.com/) and [trici](https://tricity.ch) for their donations!
