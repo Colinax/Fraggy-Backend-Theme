@@ -375,7 +375,7 @@ $(function () {
     // Add scrollbar function
     $sideNavigation.addScrollbar = function () {
         $sideNavigation.niceScroll({
-            zindex: 99999999,
+            zindex: 99999,
             cursorborder: 0,
             cursorborderradius: 0,
             cursorcolor: '#5f5f6c',
