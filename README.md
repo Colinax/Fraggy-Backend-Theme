@@ -12,8 +12,9 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Changelog
 
-## v2.6.0 - released on 2021-01-xx
+## v2.6.0 - released on 2021-01-30
 
+ * Fixed Scrollbar is above the popup
  * Updated to Bootstrap v4.6.0
  * Updated to Bootstrap Fileselect v3.1.2
 
