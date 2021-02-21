@@ -1,4 +1,4 @@
-![Responsive and Bootstrap based backend theme for WBCE](https://github.com/Colinax/Fraggy-Backend-Theme/blob/master/images/example-2.0.0.png "Responsive and Bootstrap based backend theme for WBCE")
+![Responsive and Bootstrap based backend theme for WBCE](https://github.com/Colinax/Fraggy-Backend-Theme/blob/main/images/example-2.0.0.png "Responsive and Bootstrap based backend theme for WBCE")
 
 # About
 
