@@ -1,11 +1,11 @@
 let gulp = require('gulp'),
     fs = require('fs'),
-    sass = require('gulp-sass'),
+    sass = require('gulp-dart-sass'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     terser = require('gulp-terser'),
     replace = require('gulp-replace'),
-    util = require('gulp-util'),
+    fancy = require('fancy-log'),
     injectString = require('gulp-inject-string'),
     stripCssComments = require('gulp-strip-css-comments'),
     postcss = require('gulp-postcss'),
@@ -22,7 +22,7 @@ gulp.task('scss:build', function () {
     return gulp.src('./src/sass/style.scss')
         .pipe(sass({
             outputStyle: 'expanded'
-        }).on('error', util.log))
+        }).on('error', fancy))
         .pipe(gulp.dest('./src/css'));
 });
 
@@ -30,7 +30,7 @@ gulp.task('css:build', function () {
     return gulp.src(['./src/css/style.css'])
         .pipe(postcss([
             require('autoprefixer')(),
-            require('css-mqpacker')(),
+            require('postcss-sort-media-queries')(),
         ]))
         .pipe(replace(/([\r\n]{2,})/igm, '\r\n'))
         .pipe(injectString.prepend(sourceHeader + '\n'))
