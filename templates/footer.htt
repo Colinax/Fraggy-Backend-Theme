@@ -17,7 +17,12 @@
     </div>
     </div>
 
+    <!--(PH) HTML BODY BTM+ -->
+    <!--(PH) HTML BODY BTM- -->
+    
+    <!--(PH) JS BODY BTM+ -->
     {BACKEND_BODY_MODULE_JS}
+    <!--(PH) JS BODY BTM- -->
 
     </body>
 </html>

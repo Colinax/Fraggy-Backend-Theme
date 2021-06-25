@@ -2,34 +2,36 @@
 <!DOCTYPE html>
 <html lang="{LANGUAGE}">
     <head>
-        <title>{WEBSITE_TITLE} - {TEXT_ADMINISTRATION} - {SECTION_NAME}</title>
 
-        <!-- Theme meta data -->
+        <!--(PH) META HEAD+ -->
         <meta charset="{CHARSET}">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Encoding" content="gzip" />
+        <meta http-equiv="Accept-Encoding" content="gzip, deflate" />
+        <!--(PH) META HEAD- -->
 
         <!-- Website meta data -->
-        <meta name="description" content="{TEXT_ADMINISTRATION}" />
-        <meta name="keywords" content="{TEXT_ADMINISTRATION}" />
+        <!--(PH) TITLE+ --><title>{WEBSITE_TITLE} - {TEXT_ADMINISTRATION} - {SECTION_NAME}</title><!--(PH) TITLE- -->
+        <!--(PH) META DESC+ --><meta name="description" content="{TEXT_ADMINISTRATION}" /><!--(PH) META DESC- -->
+        <!--(PH) META KEY+ --><meta name="keywords" content="{TEXT_ADMINISTRATION}" /><!--(PH) META KEY- -->
         <meta name="author" content="Jonathan Nessier, Neoflow" />
 
         <!-- Theme favicons -->
         <link href="{THEME_URL}/api/favicon.php?size=32" rel="icon" type="image/png" sizes="32x32" />
         <link href="{THEME_URL}/api/favicon.php?size=16" rel="shortcut icon" type="image/png" sizes="16x16" />
 
-        <!-- Theme CSS -->
+        <!--(PH) CSS HEAD TOP+ -->
         <link href="{THEME_URL}/css/style.min.css?v2.6.1" rel="stylesheet" type="text/css" />
+        <!--(PH) CSS HEAD TOP- -->    
 
-        <!-- WBCE module CSS -->
+        <!--(PH) CSS HEAD BTM+ -->
         {BACKEND_MODULE_CSS}
+        <!--(PH) CSS HEAD BTM- -->
 
         <!-- Initiliaze vars -->
         <script>
-            var WB_URL = '{WB_URL}',
-                THEME_URL = '{THEME_URL}',
-                ADMIN_URL = '{ADMIN_URL}',
-                LANGUAGE_CODE = '{LANGUAGE}',
+            var LANGUAGE_CODE = '{LANGUAGE}',
                 THEME_VERSION = '2.6.1';
         </script>
 
@@ -44,14 +46,22 @@
             }
         </script>
 
-        <!-- Theme JavaScript -->
+        <!--(PH) JS HEAD TOP+ -->
         <script src="{THEME_URL}/js/script.min.js?v2.6.1"></script>
+        <!--(PH) JS HEAD TOP- -->
 
-        <!-- WBCE module JS -->
-        {BACKEND_MODULE_JS}
+        <!--(PH) JS HEAD BTM+ -->
+        {BACKEND_MODULE_JS} 
+        <!--(PH) JS HEAD BTM- -->
 
     </head>
     <body class="fixed-nav">
+
+    <!--(PH) JS BODY TOP+ -->
+    <!--(PH) JS BODY TOP- -->
+
+    <!--(PH) HTML BODY TOP+ -->
+    <!--(PH) HTML BODY TOP- -->
 
     <script>
         if (localStorage.getItem('side-navigation') === 'minimized') {
