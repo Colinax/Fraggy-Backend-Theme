@@ -1,6 +1,6 @@
 let gulp = require('gulp'),
     fs = require('fs'),
-    sass = require('gulp-dart-sass'),
+    sass = require('gulp-sass')(require('sass'));
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     terser = require('gulp-terser'),
