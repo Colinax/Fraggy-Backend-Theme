@@ -47,6 +47,6 @@ The support is provided by the community in the [forum of WBCE](https://forum.wb
 
 # Author
 
-Copyright © 2016-2020 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Copyright © 2019-2021 Colinax | Licensed under GNU GPLv3
+Copyright © 2016-2021 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Copyright © 2019-2021 Colinax | Licensed under GNU GPLv3
 
 Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to [Jörg Laas](https://www.jlhd.com/) and [trici](https://tricity.ch) for their donations!
