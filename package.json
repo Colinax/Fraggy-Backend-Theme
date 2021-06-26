@@ -1,6 +1,6 @@
 {
   "name": "fraggy-backend-theme",
-  "version": "2.6.1",
+  "version": "2.6.2",
   "description": "Responsive and Bootstrap based backend theme for WBCE",
   "scripts": {
     "scss:build": "gulp scss:build",
@@ -21,7 +21,7 @@
     "bootstrap",
     "jquery"
   ],
-  "author": "2016-2020 Jonathan Nessier, 2019-2021 Colinax",
+  "author": "2016-2021 Jonathan Nessier, 2019-2021 Colinax",
   "license": "GPL-3.0",
   "contributors": [],
   "main": "index.php",
