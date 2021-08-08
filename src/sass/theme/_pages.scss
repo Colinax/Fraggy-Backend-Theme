@@ -13,10 +13,6 @@
         min-height: fit-content;
     }
 
-    .hide {
-        display: none;
-    }
-
     .table {
         margin: 0;
     }
@@ -159,8 +155,8 @@
             max-height: 80px;
         }
     }
+}
 
-    .hide {
-        display: none;
-    }
+.hide {
+    display: none;
 }
