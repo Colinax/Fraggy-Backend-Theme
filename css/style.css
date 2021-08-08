@@ -1,5 +1,5 @@
 /**
- * FRAGGY BACKEND THEME v2.6.2
+ * FRAGGY BACKEND THEME v2.6.3
  * Responsive and Bootstrap based backend theme for WBCE
  *
  * (c) 2016-2021 Jonathan Nessier, 2019-2021 Colinax
@@ -10908,10 +10908,6 @@ a.text-dark:hover, a.text-dark:focus {
 .z-1 {
   z-index: 1;
 }
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  /*text-transform: uppercase;*/
-}
 a {
   font-weight: bold;
 }
@@ -10990,9 +10986,6 @@ body.prepage #main-content {
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
-}
-#mediaBrowsePage .hide, #mediaRenamePage .hide, #setParameterPage .hide {
-  display: none;
 }
 #mediaBrowsePage .table, #mediaRenamePage .table, #setParameterPage .table {
   margin: 0;
@@ -11077,7 +11070,7 @@ body.prepage #main-content {
 #mediaBrowsePage .thumb img {
   max-height: 80px;
 }
-#mediaBrowsePage .hide {
+.hide {
   display: none;
 }
 #topNavigation {
@@ -11101,9 +11094,6 @@ body.prepage #main-content {
 }
 #topNavigation .navbar-nav .nav-item:last-child .nav-link {
   padding-right: 0;
-}
-#topNavigation .navbar-nav .active .nav-link, #topNavigation .navbar-nav .show .nav-link {
-  /*background: $gray-125;*/
 }
 #topNavigation .dropdown-toggle:after {
   display: none;

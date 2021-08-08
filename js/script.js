@@ -1,5 +1,5 @@
 /**
- * FRAGGY BACKEND THEME v2.6.2
+ * FRAGGY BACKEND THEME v2.6.3
  * Responsive and Bootstrap based backend theme for WBCE
  *
  * (c) 2016-2021 Jonathan Nessier, 2019-2021 Colinax

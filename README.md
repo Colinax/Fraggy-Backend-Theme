@@ -12,12 +12,10 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Changelog
 
-## v2.6.2 - released on 2021-06-27
+## v2.6.3 - released on 2021-08-08
 
  * Updated Deps
- * Updated to jQuery v3.6.0
- * Updated to jQuery Migrate v3.3.2
- * Fix Fraggy Theme init
+ * fix css hide function
 
 # Download
 

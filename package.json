@@ -1,6 +1,6 @@
 {
   "name": "fraggy-backend-theme",
-  "version": "2.6.2",
+  "version": "2.6.3",
   "description": "Responsive and Bootstrap based backend theme for WBCE",
   "scripts": {
     "scss:build": "gulp scss:build",
