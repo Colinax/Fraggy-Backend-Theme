@@ -3,7 +3,7 @@
  * Responsive and Bootstrap based backend theme for WBCE
  *
  * (c) {AUTHOR}
- * Licensed under GNU GPLv3 (https://github.com/Colinax/Fraggy-Backend-Theme/blob/master/LICENSE)
+ * Licensed under GNU GPLv3
  *
  * This template integrates components from the following projects
  *
@@ -11,7 +11,7 @@
  *   Font Awesome 4.7.0 by @davegandy | fontawesome.io/license
  *   jQuery v3.6.0 | (c) jQuery Foundation | jquery.org/license
  *   jQuery Migrate v3.3.2 | (c) jQuery Foundation and other contributors | jquery.org/license
- *   Bootstrap v4.6.0 | (c) The Bootstrap Authors | MIT
+ *   Bootstrap v4.6.1 | (c) The Bootstrap Authors | MIT
  *   Popper.js v1.16.0 | (c) Federico Zivolo | MIT
  *   InsertLoader 1.0.1 | (c) Jonathan Nessier, Neoflow | MIT
  *   Select2 v4.0.13 | (c) Kevin Brown, Igor Vaynberg, and Select2 contributors | MIT
