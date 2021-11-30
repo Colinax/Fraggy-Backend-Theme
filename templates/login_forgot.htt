@@ -88,6 +88,10 @@
                                                 <input type="text" maxlength="255" name="email" value="{EMAIL}" id="inputEmail" />
                                             </div>
 
+                                            <div class="form-group">
+                                                {CAPTCHA}
+                                            </div>
+
                                             <button type="submit" class="btn btn-primary">{TEXT_SEND_DETAILS}</button>
 
                                         </form>
