@@ -7,13 +7,14 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 > There might be some design issues at the backend of modules, but usually the modules still work as expected.
 
 # Requirements
- * [WBCE v1.4.4](https://github.com/WBCE/WBCE_CMS/releases) or newer
+ * [WBCE v1.5.2](https://github.com/WBCE/WBCE_CMS/releases)
  * PHP 7.1 or newer
 
 # Changelog
 
-## v2.6.5 - released on 2021-xx-xx
+## v2.6.5 - released on 2021-11-30
 
+ * Add "Forgot login" changes from WBCE 1.5.2
  * Updated Deps
  * Updated to Bootstrap 4.6.1
 
