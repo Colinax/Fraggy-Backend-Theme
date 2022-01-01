@@ -12,11 +12,9 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Changelog
 
-## v2.6.5 - released on 2021-11-30
+## v2.6.x - released on 2022-0x-xx
 
- * Add "Forgot login" changes from WBCE 1.5.2
  * Updated Deps
- * Updated to Bootstrap 4.6.1
 
 # Download
 
@@ -46,6 +44,6 @@ The support is provided by the community in the [forum of WBCE](https://forum.wb
 
 # Author
 
-Copyright © 2016-2021 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Copyright © 2019-2021 Colinax | Licensed under GNU GPLv3
+Copyright © 2016-2022 Jonathan Nessier, [Neoflow](https://www.neoflow.ch) | Copyright © 2019-2022 Colinax | Licensed under GNU GPLv3
 
 Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to [Jörg Laas](https://www.jlhd.com/) and [trici](https://tricity.ch) for their donations!
