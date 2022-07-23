@@ -12,10 +12,11 @@ Fraggy Backend Theme is a responsive and Bootstrap based template for the backen
 
 # Changelog
 
-## v2.6.6 - released on 2022-03-05
+## v2.6.7 - released on 2022-07-23
 
  * Updated Deps
- * Updated backend-theme-favicon.png
+ * fix print-color-adjust
+ * Updated Bootstrap 4.6.2
 
 # Download
 

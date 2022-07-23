@@ -13,7 +13,7 @@ if (!defined('WB_PATH')) {
 $template_directory = 'fraggy-backend-theme';
 $template_name = 'Fraggy Backend Theme';
 $template_function = 'theme';
-$template_version = '2.6.6';
+$template_version = '2.6.7';
 $template_platform = '1.5.2';
 $template_author = '2016-2022 Jonathan Nessier, 2019-2022 Colinax';
 $template_license = 'GNU General Public License v3';
