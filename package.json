@@ -1,6 +1,6 @@
 {
   "name": "fraggy-backend-theme",
-  "version": "2.6.7",
+  "version": "2.6.8",
   "description": "Responsive and Bootstrap based backend theme for WBCE",
   "scripts": {
     "scss:build": "gulp scss:build",
@@ -21,13 +21,13 @@
     "bootstrap",
     "jquery"
   ],
-  "author": "2016-2022 Jonathan Nessier, 2019-2022 Colinax",
+  "author": "2016-2022 Jonathan Nessier, 2019-2022 Colinax, 2022 WBCE Team",
   "license": "GPL-3.0",
   "contributors": [],
   "main": "index.php",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Colinax/Fraggy-Backend-Theme.git"
+    "url": "https://github.com/WBCE/Fraggy-Backend-Theme.git"
   },
   "buildOpts": {
     "common": {
@@ -35,8 +35,8 @@
     }
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "cssnano": "^5.1.12",
+    "autoprefixer": "^10.4.8",
+    "cssnano": "^5.1.13",
     "fancy-log": "^2.0.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
@@ -49,7 +49,7 @@
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-terser": "^2.1.0",
     "gulp-zip": "^5.1.0",
-    "postcss": "^8.4.14",
+    "postcss": "^8.4.16",
     "postcss-sort-media-queries": "^4.2.1"
   },
   "browserslist": [

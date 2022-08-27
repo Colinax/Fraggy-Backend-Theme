@@ -3,7 +3,7 @@
  * Fraggy Backend Theme
  * Responsive and Bootstrap based backend theme for WBCE
  *
- * @copyright 2016-2022 Jonathan Nessier, 2019-2022 Colinax
+ * @copyright 2016-2022 Jonathan Nessier, 2019-2022 Colinax, 2022 WBCE Team
  * @license GNU GPLv3
  */
 if (!defined('WB_PATH')) {
@@ -13,16 +13,16 @@ if (!defined('WB_PATH')) {
 $template_directory = 'fraggy-backend-theme';
 $template_name = 'Fraggy Backend Theme';
 $template_function = 'theme';
-$template_version = '2.6.7';
+$template_version = '2.6.8';
 $template_platform = '1.5.2';
-$template_author = '2016-2022 Jonathan Nessier, 2019-2022 Colinax';
+$template_author = '2016-2022 Jonathan Nessier, 2019-2022 Colinax, 2022 WBCE Team';
 $template_license = 'GNU General Public License v3';
 $template_license_terms = '-';
 $template_description = 'Responsive and Bootstrap based backend theme for WBCE';
 
 // GitHub API vars and GitHub Client options
 $gitHubApiUrl = 'https://api.github.com';
-$gitHubRepoPath = '/repos/colinax/fraggy-backend-theme';
+$gitHubRepoPath = '/repos/WBCE/fraggy-backend-theme';
 
 $gitHubClientOptions = [
     'cacheDirectory' => sys_get_temp_dir(),

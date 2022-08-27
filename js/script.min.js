@@ -1,8 +1,8 @@
 /**
- * FRAGGY BACKEND THEME v2.6.7
+ * FRAGGY BACKEND THEME v2.6.8
  * Responsive and Bootstrap based backend theme for WBCE
  *
- * (c) 2016-2022 Jonathan Nessier, 2019-2022 Colinax
+ * (c) 2016-2022 Jonathan Nessier, 2019-2022 Colinax, 2022 WBCE Team
  * Licensed under GNU GPLv3
  *
  * This template integrates components from the following projects
