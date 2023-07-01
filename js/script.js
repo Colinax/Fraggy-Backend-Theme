@@ -1,5 +1,5 @@
 /**
- * FRAGGY BACKEND THEME v2.7.0
+ * FRAGGY BACKEND THEME v2.7.1
  * Responsive and Bootstrap based backend theme for WBCE
  *
  * (c) 2016-2023 Jonathan Nessier, 2019-2023 Colinax, 2023 WBCE Team
@@ -13,11 +13,11 @@
  *   jQuery Migrate v3.4.1 | (c) OpenJS Foundation and other contributors | jquery.org/license
  *   Bootstrap v4.6.2 | (c) The Bootstrap Authors | MIT
  *   Popper.js v1.16.0 | (c) Federico Zivolo | MIT
- *   InsertLoader 1.0.1 | (c) Jonathan Nessier, Neoflow | MIT
+ *   InsertLoader 1.0.1 | (c) Jonathan Nessier | MIT
  *   Select2 v4.0.13 | (c) Kevin Brown, Igor Vaynberg, and Select2 contributors | MIT
  *   Nicescroll v3.7.6 | (c) InuYaksa | MIT
  *   Datetimepicker v2.5.20 | (c) Chupurnov Valeriy | MIT
- *   Bootstrap Fileselect v3.1.2 | (c) Jonathan Nessier, Neoflow | MIT
+ *   Bootstrap Fileselect v3.1.2 | (c) Jonathan Nessier | MIT
  **/
 $(function () {
 

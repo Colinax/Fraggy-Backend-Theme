@@ -7,7 +7,7 @@ use Neoflow\GitHubClient;
  * Fraggy Backend Theme
  * Responsive and Bootstrap based backend theme for WBCE
  *
- * @copyright 2016-2020 Jonathan Nessier, 2019-2020 Colinax
+ * @copyright 2016-2023 Jonathan Nessier, 2019-2023 Colinax, 2023 WBCE Team
  * @license GNU GPLv3
  */
 

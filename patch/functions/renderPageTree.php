@@ -119,8 +119,8 @@ function renderPageTree($pages, $level = 1, $levelLimit = 999)
                         <?php
                         } else {
                             ?>
-							<a href="{modifySectionsURL}" title="<?= $HEADING['MANAGE_SECTIONS'] ?>"><i class="fa fa-link" aria-hidden="true"></i></a>
-							<?php
+                            <a href="{modifySectionsURL}" title="<?= $HEADING['MANAGE_SECTIONS'] ?>"><i class="fa fa-link" aria-hidden="true"></i></a>
+                            <?php
                             }
                         } ?>
                     </td>
