@@ -12,14 +12,14 @@
         <!-- Website meta data -->
         <meta name="description" content="{TEXT_ADMINISTRATION}" />
         <meta name="keywords" content="{TEXT_ADMINISTRATION}" />
-        <meta name="author" content="Jonathan Nessier, Neoflow" />
+        <meta name="author" content="Jonathan Nessier" />
 
         <!-- Theme favicons -->
         <link href="{THEME_URL}/api/favicon.php?size=32" rel="icon" type="image/png" sizes="32x32" />
         <link href="{THEME_URL}/api/favicon.php?size=16" rel="shortcut icon" type="image/png" sizes="16x16" />
 
         <!-- Theme CSS -->
-        <link href="{THEME_URL}/css/style.min.css?v2.7.0" rel="stylesheet" type="text/css" />
+        <link href="{THEME_URL}/css/style.min.css?v2.7.1" rel="stylesheet" type="text/css" />
 
         <!-- WBCE module CSS -->
         {BACKEND_MODULE_CSS}
@@ -30,11 +30,11 @@
                 THEME_URL = '{THEME_URL}',
                 ADMIN_URL = '{ADMIN_URL}',
                 LANGUAGE_CODE = '{LANGUAGE}',
-                THEME_VERSION = '2.7.0';
+                THEME_VERSION = '2.7.1';
         </script>
 
         <!-- Theme jQuery -->
-        <script src="{THEME_URL}/js/jquery.min.js?v2.7.0"></script>
+        <script src="{THEME_URL}/js/jquery.min.js?v2.7.1"></script>
 
         <!-- WBCE helper JavaScript -->
         <script>
@@ -45,7 +45,7 @@
         </script>
 
         <!-- Theme JavaScript -->
-        <script src="{THEME_URL}/js/script.min.js?v2.7.0"></script>
+        <script src="{THEME_URL}/js/script.min.js?v2.7.1"></script>
 
         {BACKEND_MODULE_JS}
 
@@ -126,11 +126,6 @@
                                     <a href="http://www.wbce.org/" title="Way Better Content Editing" target="_blank">WBCE</a> is released under the
                                     <a href="http://www.gnu.org/licenses/gpl.html" title="Released under the GNU General Public License" target="_blank">GNU General Public License</a>.
                                     <!-- Please note: the above reference to the GNU GPL should not be removed, as it provides a link for users to read about warranty, etc. -->
-                                </p>
-                                <p class="page-license">
-                                    <!-- Please note: be fair and do not removed the link to the creator of the template -->
-                                    Theme created by <a href="https://www.neoflow.ch" title="Neoflow" target="_blank">Neoflow</a>.
-                                    <!-- Please note: be fair and do not removed the link to the creator of the template -->
                                 </p>
                             </footer>
                         </div>

@@ -1,4 +1,3 @@
 <?php
-if (!defined('WB_PATH')) {
-    die(header('Location: ../../index.php'));
-}
+
+header("Location: ../index.php", true, 301);

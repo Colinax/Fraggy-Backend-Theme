@@ -1,22 +1,22 @@
-let gulp = require('gulp'),
-    fs = require('fs'),
-    sass = require('gulp-sass')(require('sass'));
-    rename = require('gulp-rename'),
-    concat = require('gulp-concat'),
-    terser = require('gulp-terser'),
-    replace = require('gulp-replace'),
-    fancy = require('fancy-log'),
-    injectString = require('gulp-inject-string'),
-    stripCssComments = require('gulp-strip-css-comments'),
-    postcss = require('gulp-postcss'),
-    zip = require('gulp-zip');
+let gulp = require('gulp');
+let fs = require('fs');
+let sass = require('gulp-sass')(require('sass'));
+let rename = require('gulp-rename');
+let concat = require('gulp-concat');
+let terser = require('gulp-terser');
+let replace = require('gulp-replace');
+let fancy = require('fancy-log');
+let injectString = require('gulp-inject-string');
+let stripCssComments = require('gulp-strip-css-comments');
+let postcss = require('gulp-postcss');
+let zip = require('gulp-zip');
 
-let package = require('./package.json');
+let packagejson = require('./package.json');
 
-let sourceHeader = fs.readFileSync(package.buildOpts.common.sourceHeader, 'utf8')
-    .replace('{VERSION}', package.version)
+let sourceHeader = fs.readFileSync(packagejson.buildOpts.common.sourceHeader, 'utf8')
+    .replace('{VERSION}', packagejson.version)
     .replace('{YEAR}', (new Date()).getFullYear().toString())
-    .replace('{AUTHOR}', package.author);
+    .replace('{AUTHOR}', packagejson.author);
 
 gulp.task('scss:build', function () {
     return gulp.src('./src/sass/style.scss')
@@ -110,7 +110,7 @@ gulp.task('zip:build', function () {
             '!./README.md',
             '!*.zip'
         ])
-        .pipe(zip(package.name + '-' + package.version + '.zip'))
+        .pipe(zip(packagejson.name + '-' + packagejson.version + '.zip'))
         .pipe(gulp.dest('./'));
 });
 
