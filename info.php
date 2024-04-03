@@ -11,7 +11,7 @@
 $template_directory = 'fraggy-backend-theme';
 $template_name = 'Fraggy Backend Theme';
 $template_function = 'theme';
-$template_version = '2.7.1';
+$template_version = '2.7.2';
 $template_platform = '1.5.2';
 $template_author = '2016-2023 Jonathan Nessier, 2019-2023 Colinax, 2023 WBCE Team';
 $template_license = 'GNU General Public License v3';

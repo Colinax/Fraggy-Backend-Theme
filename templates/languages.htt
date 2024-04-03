@@ -24,15 +24,16 @@
                     {HEADING_INSTALL_LANGUAGE}
                 </h4>
                 <div class="card-body">
-                    <form name="install" enctype="multipart/form-data" action="install.php" method="post">
+                    <form name="install"  action="install.php" method="post">
                         {FTAN}
                         <div class="form-group">
-                            <input class="form-control" type="file" name="userfile" />
+                           {INFO_INSTALL_LANGUAGE} 
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-primary" type="submit" name="submit">
-                                <i class="fa fa-fw fa-plus"></i> {TEXT_INSTALL}
-                            </button>
+                            <button type="submit" name="submit" class="btn btn-primary">
+									<i class="fa fa-fw fa-refresh"></i>
+									{TEXT_RELOAD}
+								</button>
                         </div>
                     </form>
                 </div>
