@@ -12,7 +12,6 @@
     padding-top: 2px;
     position: absolute;
     z-index: 9999;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: none;
 }
@@ -38,11 +37,6 @@
 
 .xdsoft_noselect {
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
     user-select: none;
 }
 
@@ -61,7 +55,6 @@
 }
 
 .xdsoft_datetimepicker * {
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -574,20 +567,7 @@
     position: relative;
     padding: 4px 17px 4px 33px;
     border: 1px solid #d7d8da;
-    background: -moz-linear-gradient(top, #fff 0%, #f4f8fa 73%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(73%, #f4f8fa));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #fff 0%, #f4f8fa 73%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #fff 0%, #f4f8fa 73%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #fff 0%, #f4f8fa 73%);
-    /* IE10+ */
     background: linear-gradient(to bottom, #fff 0%, #f4f8fa 73%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#f4f8fa', GradientType=0);
-    /* IE6-9 */
 }
 
 .xdsoft_datetimepicker .blue-gradient-button:hover,
@@ -595,18 +575,5 @@
 .xdsoft_datetimepicker .blue-gradient-button:hover span,
 .xdsoft_datetimepicker .blue-gradient-button:focus span {
     color: #454551;
-    background: -moz-linear-gradient(top, #f4f8fa 0%, #FFF 73%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f8fa), color-stop(73%, #FFF));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #f4f8fa 0%, #FFF 73%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #f4f8fa 0%, #FFF 73%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #f4f8fa 0%, #FFF 73%);
-    /* IE10+ */
     background: linear-gradient(to bottom, #f4f8fa 0%, #FFF 73%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f8fa', endColorstr='#FFF', GradientType=0);
-    /* IE6-9 */
 }
