@@ -35,10 +35,10 @@
     }
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "cssnano": "^6.0.1",
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.1",
     "fancy-log": "^2.0.0",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "5.1.0",
     "sass": "1.32.13",
@@ -49,7 +49,7 @@
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-terser": "^2.1.0",
     "gulp-zip": "^5.1.0",
-    "postcss": "^8.4.24",
+    "postcss": "^8.4.38",
     "postcss-sort-media-queries": "^5.2.0"
   },
   "browserslist": [
