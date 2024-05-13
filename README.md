@@ -38,6 +38,6 @@ The support is provided by the community in the [forum of WBCE](https://forum.wb
 
 # Author
 
-Copyright © 2016-2023 Jonathan Nessier | Copyright © 2019-2023 Colinax | Copyright © 2022-2023 WBCE Team | Licensed under GNU GPLv3
+Copyright © 2016-2024 Jonathan Nessier | Copyright © 2019-2024 Colinax | Copyright © 2022-2024 WBCE Team | Licensed under GNU GPLv3
 
 Thank you to the [WBCE](http://wbce.org) community for their support and tests. But also a special thank you to [Jörg Laas](https://www.jlhd.com/) and [trici](https://tricity.ch) for their donations!

@@ -1,15 +1,15 @@
 /**
- * FRAGGY BACKEND THEME v2.7.1
+ * FRAGGY BACKEND THEME v2.7.2
  * Responsive and Bootstrap based backend theme for WBCE
  *
- * (c) 2016-2023 Jonathan Nessier, 2019-2023 Colinax, 2023 WBCE Team
+ * (c) 2016-2024 Jonathan Nessier, 2019-2024 Colinax, 2022-2024 WBCE Team
  * Licensed under GNU GPLv3
  *
  * This template integrates components from the following projects
  *
  *   Roboto & Roboto Condensed | (c) Christian Robertson and Google | Apache-2.0
  *   Font Awesome 4.7.0 by @davegandy | fontawesome.io/license
- *   jQuery v3.6.4 | (c) OpenJS Foundation and other contributors | jquery.org/license
+ *   jQuery v3.7.1 | (c) OpenJS Foundation and other contributors | jquery.org/license
  *   jQuery Migrate v3.4.1 | (c) OpenJS Foundation and other contributors | jquery.org/license
  *   Bootstrap v4.6.2 | (c) The Bootstrap Authors | MIT
  *   Popper.js v1.16.0 | (c) Federico Zivolo | MIT

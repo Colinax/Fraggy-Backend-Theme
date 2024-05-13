@@ -1,15 +1,15 @@
 /**
- * FRAGGY BACKEND THEME v2.7.1
+ * FRAGGY BACKEND THEME v2.7.2
  * Responsive and Bootstrap based backend theme for WBCE
  *
- * (c) 2016-2023 Jonathan Nessier, 2019-2023 Colinax, 2023 WBCE Team
+ * (c) 2016-2024 Jonathan Nessier, 2019-2024 Colinax, 2022-2024 WBCE Team
  * Licensed under GNU GPLv3
  *
  * This template integrates components from the following projects
  *
  *   Roboto & Roboto Condensed | (c) Christian Robertson and Google | Apache-2.0
  *   Font Awesome 4.7.0 by @davegandy | fontawesome.io/license
- *   jQuery v3.6.4 | (c) OpenJS Foundation and other contributors | jquery.org/license
+ *   jQuery v3.7.1 | (c) OpenJS Foundation and other contributors | jquery.org/license
  *   jQuery Migrate v3.4.1 | (c) OpenJS Foundation and other contributors | jquery.org/license
  *   Bootstrap v4.6.2 | (c) The Bootstrap Authors | MIT
  *   Popper.js v1.16.0 | (c) Federico Zivolo | MIT
@@ -9266,7 +9266,6 @@ a.text-dark:hover, a.text-dark:focus {
 .select2-hidden-accessible {
   border: 0 !important;
   clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
   clip-path: inset(50%) !important;
   height: 1px !important;
   overflow: hidden !important;
@@ -9934,9 +9933,8 @@ a.text-dark:hover, a.text-dark:focus {
 .xdsoft_noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .xdsoft_noselect::-moz-selection {
   background: transparent;
@@ -10383,30 +10381,14 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
   padding: 4px 17px 4px 33px;
   border: 1px solid #d7d8da;
-  /* FF3.6+ */
-  /* Chrome,Safari4+ */
-  /* Chrome10+,Safari5.1+ */
-  /* Opera 11.10+ */
-  /* IE10+ */
   background: linear-gradient(to bottom, #fff 0%, #f4f8fa 73%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fff", endColorstr="#f4f8fa", GradientType=0);
-  /* IE6-9 */
 }
 .xdsoft_datetimepicker .blue-gradient-button:hover,
 .xdsoft_datetimepicker .blue-gradient-button:focus,
 .xdsoft_datetimepicker .blue-gradient-button:hover span,
 .xdsoft_datetimepicker .blue-gradient-button:focus span {
   color: #454551;
-  /* FF3.6+ */
-  /* Chrome,Safari4+ */
-  /* Chrome10+,Safari5.1+ */
-  /* Opera 11.10+ */
-  /* IE10+ */
   background: linear-gradient(to bottom, #f4f8fa 0%, #FFF 73%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4f8fa", endColorstr="#FFF", GradientType=0);
-  /* IE6-9 */
 }
 .smaller {
   font-size: 0.7rem;
